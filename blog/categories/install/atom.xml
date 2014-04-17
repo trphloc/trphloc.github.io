@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Phuoc-Loc's blog]]></title>
-  <link href="http://trphloc.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Install | Phuoc-Loc's blog]]></title>
+  <link href="http://trphloc.github.io/blog/categories/install/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
   <updated>2014-04-17T12:44:53+07:00</updated>
   <id>http://trphloc.github.io/</id>

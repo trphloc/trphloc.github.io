@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Ruby Devkit | Phuoc-Loc's blog]]></title>
+  <link href="http://trphloc.github.io/blog/categories/ruby-devkit/atom.xml" rel="self"/>
+  <link href="http://trphloc.github.io/"/>
+  <updated>2014-04-17T12:44:53+07:00</updated>
+  <id>http://trphloc.github.io/</id>
+  <author>
+    <name><![CDATA[Phuoc-Loc Truong]]></name>
+    <email><![CDATA[trphloc@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Setup Ruby DevKit Windows]]></title>
+    <link href="http://trphloc.github.io/blog/2014/04/17/setup-ruby-devkit-windows/"/>
+    <updated>2014-04-17T12:15:43+07:00</updated>
+    <id>http://trphloc.github.io/blog/2014/04/17/setup-ruby-devkit-windows</id>
+    <content type="html"><![CDATA[<!-- ================================================================= -->
+
+
+<h2>Môi trường</h2>
+
+<ul>
+<li>Windows 8.1</li>
+<li>Ruby DevKit 4.7.2</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Thực hiện</h2>
+
+<ul>
+<li>Truy cập <a href="trang%20ch%E1%BB%A7%20c%E1%BB%A7a%20Ruby">http://rubyinstaller.org/ </a></li>
+<li>Vào mục <a href="downloads">http://rubyinstaller.org/downloads/ </a> xem và download phần Development Kit (phiên bản 4.7.2 cho 64bits tên file DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe)</li>
+<li>Chạy tập tin DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe và làm theo hướng dẫn (chọn thư mục cài đặt C:\abc\RubyDevKit)</li>
+<li>Thêm đường dẫn &ldquo;C:\abc\RubyDevKit\bin&rdquo; vào biến môi trường (Environment variables) &ldquo;Path&rdquo;</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

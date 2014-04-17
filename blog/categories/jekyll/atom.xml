@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Jekyll | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/jekyll/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-04-16T16:41:55+07:00</updated>
+  <updated>2014-04-17T12:44:53+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -24,20 +24,42 @@
 <h2>Thông tin cơ bản</h2>
 
 <ul>
-<li></li>
+<li>GitHub Pages: một dự án để mọi người tạo trang web cá nhân hoặc nhóm. Nó chỉ là một repo trên GitHub, trong đó chứa các tập tin web và được trỏ đến domain xxx.github.io</li>
+<li>Một số cách để sử dụng GitHub Pages
+&mdash; Thêm trang web lên trên repo
+&mdash; Sử dụng Jekyll: <a href="http://jekyllrb.com/docs/home/">Link</a>
+&mdash; Sử dụng Octopress: <a href="http://octopress.org/docs/">Link</a>
+=> Trong bài viết này sẽ hướng dẫn sử dụng octopress trên github</li>
 </ul>
 
 
 <!-- ================================================================= -->
 
 
-<h2>Cấu hình</h2>
+<h2>Môi trường sử dụng</h2>
 
 <ul>
 <li>Windows 8.1</li>
 <li>Python 2.7.6</li>
 <li>Ruby 2.0.0</li>
-<li>Ruby DevKit</li>
+<li>Ruby DevKit 4.7.2</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Hướng dẫn</h2>
+
+<h3>Cài đặt Python 2.7.6 trên windows 8.1</h3>
+
+<ul>
+<li><h3>Cài đặt Ruby 2.0.0 trên windows 8.1</h3></li>
+<li><h3>Cài đặt Ruby DevKit 4.7.2 trên windows 8.1</h3>
+
+&ndash;
+
+<h3>Cài đặt</h3></li>
 </ul>
 
 
@@ -47,7 +69,7 @@
 <h2>Tài liệu tham khảo</h2>
 
 <ul>
-<li><a href="GitHub%20Pages">https://pages.github.com/</a></li>
+<li><a href="https://pages.github.com/">GitHub Pages</a></li>
 <li>Testing</li>
 </ul>
 

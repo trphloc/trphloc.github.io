@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Ruy | Phuoc-Loc's blog]]></title>
+  <link href="http://trphloc.github.io/blog/categories/ruy/atom.xml" rel="self"/>
+  <link href="http://trphloc.github.io/"/>
+  <updated>2014-04-17T12:44:53+07:00</updated>
+  <id>http://trphloc.github.io/</id>
+  <author>
+    <name><![CDATA[Phuoc-Loc Truong]]></name>
+    <email><![CDATA[trphloc@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Setup Ruby Windows]]></title>
+    <link href="http://trphloc.github.io/blog/2014/04/17/setup-ruby-windows/"/>
+    <updated>2014-04-17T12:15:31+07:00</updated>
+    <id>http://trphloc.github.io/blog/2014/04/17/setup-ruby-windows</id>
+    <content type="html"><![CDATA[<!-- ================================================================= -->
+
+
+<h2>Môi trường</h2>
+
+<ul>
+<li>Windows 8.1</li>
+<li>Ruby 2.0.0</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Thực hiện</h2>
+
+<ul>
+<li>Truy cập <a href="trang%20ch%E1%BB%A7%20c%E1%BB%A7a%20Ruby">http://rubyinstaller.org/ </a></li>
+<li>Vào mục <a href="downloads">http://rubyinstaller.org/downloads/ </a> để tải phiên bản phù hợp (phiên bản 2.0.0)</li>
+<li>Chạy tập tin Ruby &hellip;.msi và làm theo hướng dẫn (chọn thư mục cài đặt C:\abc\Ruby200)</li>
+<li>Thêm đường dẫn &ldquo;C:\abc\Ruby200\bin&rdquo; vào biến môi trường (Environment variables) &ldquo;Path&rdquo;</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

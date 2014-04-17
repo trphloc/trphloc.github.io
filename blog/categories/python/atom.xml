@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Python | Phuoc-Loc's blog]]></title>
+  <link href="http://trphloc.github.io/blog/categories/python/atom.xml" rel="self"/>
+  <link href="http://trphloc.github.io/"/>
+  <updated>2014-04-17T12:44:53+07:00</updated>
+  <id>http://trphloc.github.io/</id>
+  <author>
+    <name><![CDATA[Phuoc-Loc Truong]]></name>
+    <email><![CDATA[trphloc@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Cài đặt Python Trên Windows]]></title>
+    <link href="http://trphloc.github.io/blog/2014/04/17/setup-python-windows/"/>
+    <updated>2014-04-17T12:15:14+07:00</updated>
+    <id>http://trphloc.github.io/blog/2014/04/17/setup-python-windows</id>
+    <content type="html"><![CDATA[<!-- ================================================================= -->
+
+
+<h2>Môi trường</h2>
+
+<ul>
+<li>Windows 8.1</li>
+<li>Python 2.7.6</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Thực hiện</h2>
+
+<ul>
+<li>Truy cập <a href="trang%20ch%E1%BB%A7%20c%E1%BB%A7a%20Python">https://www.python.org </a></li>
+<li>Vào mục <a href="downloads">https://www.python.org/downloads/ </a> để tải phiên bản phù hợp (phiên bản 2.7.6)</li>
+<li>Chạy tập tin Python-&hellip;.msi và làm theo hướng dẫn (chọn thư mục cài đặt C:\abc\Python2.7.6)</li>
+<li>Thêm đường dẫn &ldquo;C:\abc\Python2.7.6&rdquo; vào biến môi trường (Environment variables) &ldquo;Path&rdquo;</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

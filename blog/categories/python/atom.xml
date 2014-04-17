@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Python | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/python/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-04-17T12:44:53+07:00</updated>
+  <updated>2014-04-17T13:06:40+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -35,8 +35,8 @@
 <h2>Thực hiện</h2>
 
 <ul>
-<li>Truy cập <a href="trang%20ch%E1%BB%A7%20c%E1%BB%A7a%20Python">https://www.python.org </a></li>
-<li>Vào mục <a href="downloads">https://www.python.org/downloads/ </a> để tải phiên bản phù hợp (phiên bản 2.7.6)</li>
+<li>Truy cập <a href="https://www.python.org">trang chủ của Python</a></li>
+<li>Vào mục <a href="https://www.python.org/downloads/">downloads</a> để tải phiên bản phù hợp (phiên bản 2.7.6)</li>
 <li>Chạy tập tin Python-&hellip;.msi và làm theo hướng dẫn (chọn thư mục cài đặt C:\abc\Python2.7.6)</li>
 <li>Thêm đường dẫn &ldquo;C:\abc\Python2.7.6&rdquo; vào biến môi trường (Environment variables) &ldquo;Path&rdquo;</li>
 </ul>

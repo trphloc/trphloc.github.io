@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Git | Phuoc-Loc's blog]]></title>
+  <link href="http://trphloc.github.io/blog/categories/git/atom.xml" rel="self"/>
+  <link href="http://trphloc.github.io/"/>
+  <updated>2014-04-17T13:48:53+07:00</updated>
+  <id>http://trphloc.github.io/</id>
+  <author>
+    <name><![CDATA[Phuoc-Loc Truong]]></name>
+    <email><![CDATA[trphloc@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Hướng Dẫn Sử Dụng Git Trên Windows]]></title>
+    <link href="http://trphloc.github.io/blog/2014/04/17/using-git-windows/"/>
+    <updated>2014-04-17T13:44:05+07:00</updated>
+    <id>http://trphloc.github.io/blog/2014/04/17/using-git-windows</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cài đặt Git Trên Windows]]></title>
+    <link href="http://trphloc.github.io/blog/2014/04/17/setup-git-windows/"/>
+    <updated>2014-04-17T13:43:21+07:00</updated>
+    <id>http://trphloc.github.io/blog/2014/04/17/setup-git-windows</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+</feed>

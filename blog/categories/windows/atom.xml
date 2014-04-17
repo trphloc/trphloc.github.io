@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Windows | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/windows/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-04-17T13:08:51+07:00</updated>
+  <updated>2014-04-17T13:48:53+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -12,6 +12,24 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Hướng Dẫn Sử Dụng Git Trên Windows]]></title>
+    <link href="http://trphloc.github.io/blog/2014/04/17/using-git-windows/"/>
+    <updated>2014-04-17T13:44:05+07:00</updated>
+    <id>http://trphloc.github.io/blog/2014/04/17/using-git-windows</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cài đặt Git Trên Windows]]></title>
+    <link href="http://trphloc.github.io/blog/2014/04/17/setup-git-windows/"/>
+    <updated>2014-04-17T13:43:21+07:00</updated>
+    <id>http://trphloc.github.io/blog/2014/04/17/setup-git-windows</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Cài đặt Ruby DevKit Trên Windows]]></title>

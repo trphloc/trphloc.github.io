@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Wamp | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/wamp/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-04-18T15:37:28+07:00</updated>
+  <updated>2014-04-18T16:07:10+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -37,7 +37,7 @@
 <ul>
 <li>Windows 8.1</li>
 <li>Wamp</li>
-<li>Dreamweaver CS6</li>
+<li>Dreamweaver CS6 và CS3</li>
 </ul>
 
 
@@ -94,19 +94,44 @@
 <!-- ================================================================= -->
 
 
-<h2>Thực thi tập tin *.php sử dụng dreamweaver</h2>
+<h2>Thực thi tập tin *.php sử dụng dreamweaver CS6</h2>
 
-<p><ol>
+<ol>
 <li> Tạo site </li>
 <img src="http://trphloc.github.io/images/2014-04-18-setup-wamp-and-config-dreamweaver 7.png"/>
 <li>Thông tin của site </li>
 <img src="http://trphloc.github.io/images/2014-04-18-setup-wamp-and-config-dreamweaver 8.png"/>
-<li>Thông tin server của site => lưu ý thông tin trong <b>&ldquo;Server Folder&rdquo;</b> và <b>&ldquo;Web Url&rdquo;</b> </li>
+<li>Thông tin server của site => lưu ý thông tin trong <b>"Server Folder"</b> và <b>"Web Url"</b> </li>
 <img src="http://trphloc.github.io/images/2014-04-18-setup-wamp-and-config-dreamweaver 9.png"/>
 <img src="http://trphloc.github.io/images/2014-04-18-setup-wamp-and-config-dreamweaver 10.png"/>
 <li>Sau đó có thể chạy bằng F12 </li>
+</ol>
+
+
+<br>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Thực thi tập tin *.php sử dụng dreamweaver CS3</h2>
+
 <ol>
-<br></p>
+<li> Tạo site: tên site và đường dẫn thực thi </li>
+<img src="http://trphloc.github.io/images/2014-04-18-setup-wamp-and-config-dreamweaver 12.jpg"/>
+<li> Chọn ngôn ngữ thực thi là php và mysql</li>
+<img src="http://trphloc.github.io/images/2014-04-18-setup-wamp-and-config-dreamweaver 13.jpg"/>
+<li> Chọn thư mục chứa các tập tin php </li>
+<img src="http://trphloc.github.io/images/2014-04-18-setup-wamp-and-config-dreamweaver 14.jpg"/>
+<li> Chọn thư mục bên trong server </li>
+<img src="http://trphloc.github.io/images/2014-04-18-setup-wamp-and-config-dreamweaver 15.jpg"/>
+<li> Chọn lại đường dẫn khi thực thi </li>
+<img src="http://trphloc.github.io/images/2014-04-18-setup-wamp-and-config-dreamweaver 16.jpg"/>
+<li> Chọn done và xong => nhớ kiểm thư mục sẽ thực thi trong wamp </li>
+<img src="http://trphloc.github.io/images/2014-04-18-setup-wamp-and-config-dreamweaver 17.jpg"/>
+<img src="http://trphloc.github.io/images/2014-04-18-setup-wamp-and-config-dreamweaver 18.jpg"/>
+</ol>
+
 ]]></content>
   </entry>
   

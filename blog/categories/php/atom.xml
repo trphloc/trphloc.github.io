@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Setup | Phuoc-Loc's blog]]></title>
-  <link href="http://trphloc.github.io/blog/categories/setup/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Php | Phuoc-Loc's blog]]></title>
+  <link href="http://trphloc.github.io/blog/categories/php/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
   <updated>2014-04-18T15:02:10+07:00</updated>
   <id>http://trphloc.github.io/</id>
@@ -101,108 +101,6 @@
 <li>Sau đó có thể chạy bằng F12 </li>
 <ol>
 <br></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Cài đặt Git Trên Windows]]></title>
-    <link href="http://trphloc.github.io/blog/2014/04/17/setup-git-windows/"/>
-    <updated>2014-04-17T13:43:21+07:00</updated>
-    <id>http://trphloc.github.io/blog/2014/04/17/setup-git-windows</id>
-    <content type="html"><![CDATA[
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Cài đặt Ruby DevKit Trên Windows]]></title>
-    <link href="http://trphloc.github.io/blog/2014/04/17/setup-ruby-devkit-windows/"/>
-    <updated>2014-04-17T12:15:43+07:00</updated>
-    <id>http://trphloc.github.io/blog/2014/04/17/setup-ruby-devkit-windows</id>
-    <content type="html"><![CDATA[<!-- ================================================================= -->
-
-
-<h2>Môi trường</h2>
-
-<ul>
-<li>Windows 8.1</li>
-<li>Ruby DevKit 4.7.2</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Thực hiện</h2>
-
-<ul>
-<li>Truy cập <a href="http://rubyinstaller.org/">trang chủ của Ruby</a></li>
-<li>Vào mục <a href="http://rubyinstaller.org/downloads/">downloads</a> xem và download phần Development Kit (phiên bản 4.7.2 cho 64bits tên file DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe)</li>
-<li>Chạy tập tin DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe và làm theo hướng dẫn (chọn thư mục cài đặt C:\abc\RubyDevKit)</li>
-<li>Thêm đường dẫn &ldquo;C:\abc\RubyDevKit\bin&rdquo; vào biến môi trường (Environment variables) &ldquo;Path&rdquo;</li>
-</ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Cài đặt Ruby Trên Windows]]></title>
-    <link href="http://trphloc.github.io/blog/2014/04/17/setup-ruby-windows/"/>
-    <updated>2014-04-17T12:15:31+07:00</updated>
-    <id>http://trphloc.github.io/blog/2014/04/17/setup-ruby-windows</id>
-    <content type="html"><![CDATA[<!-- ================================================================= -->
-
-
-<h2>Môi trường</h2>
-
-<ul>
-<li>Windows 8.1</li>
-<li>Ruby 2.0.0</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Thực hiện</h2>
-
-<ul>
-<li>Truy cập <a href="http://rubyinstaller.org/">trang chủ của Ruby</a></li>
-<li>Vào mục <a href="http://rubyinstaller.org/downloads/">downloads</a> để tải phiên bản phù hợp (phiên bản 2.0.0)</li>
-<li>Chạy tập tin Ruby &hellip;.msi và làm theo hướng dẫn (chọn thư mục cài đặt C:\abc\Ruby200)</li>
-<li>Thêm đường dẫn &ldquo;C:\abc\Ruby200\bin&rdquo; vào biến môi trường (Environment variables) &ldquo;Path&rdquo;</li>
-</ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Cài đặt Python Trên Windows]]></title>
-    <link href="http://trphloc.github.io/blog/2014/04/17/setup-python-windows/"/>
-    <updated>2014-04-17T12:15:14+07:00</updated>
-    <id>http://trphloc.github.io/blog/2014/04/17/setup-python-windows</id>
-    <content type="html"><![CDATA[<!-- ================================================================= -->
-
-
-<h2>Môi trường</h2>
-
-<ul>
-<li>Windows 8.1</li>
-<li>Python 2.7.6</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Thực hiện</h2>
-
-<ul>
-<li>Truy cập <a href="https://www.python.org">trang chủ của Python</a></li>
-<li>Vào mục <a href="https://www.python.org/downloads/">downloads</a> để tải phiên bản phù hợp (phiên bản 2.7.6)</li>
-<li>Chạy tập tin Python-&hellip;.msi và làm theo hướng dẫn (chọn thư mục cài đặt C:\abc\Python2.7.6)</li>
-<li>Thêm đường dẫn &ldquo;C:\abc\Python2.7.6&rdquo; vào biến môi trường (Environment variables) &ldquo;Path&rdquo;</li>
-</ul>
-
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-04-17T13:51:21+07:00</updated>
+  <updated>2014-04-18T15:02:10+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -12,6 +12,97 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Cài đặt Wamp và Cấu Hình Dreamweaver để Chạy Php]]></title>
+    <link href="http://trphloc.github.io/blog/2014/04/18/setup-wamp-and-config-dreamweaver/"/>
+    <updated>2014-04-18T14:16:02+07:00</updated>
+    <id>http://trphloc.github.io/blog/2014/04/18/setup-wamp-and-config-dreamweaver</id>
+    <content type="html"><![CDATA[<!-- ================================================================= -->
+
+
+<h2>Giới thiệu</h2>
+
+<ul>
+<li>Cài đặt phần mềm để lập trình php => dành cho người mới bắt đầu</li>
+<li>Cấu hình dreamweaver để viết code và chạy thử php</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Môi trường</h2>
+
+<ul>
+<li>Windows 8.1</li>
+<li>Wamp</li>
+<li>Dreamweaver CS6</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Cài đặt wamp</h2>
+
+<ul>
+<li>Truy cập <a href="http://www.wampserver.com/en/">trang web của wamp</a></li>
+<li>Vào mục download để tải phiên bản phù hợp (chú ý win 32bits hay 64bits) => tập tin &ldquo;Wampserver xxx.exe&rdquo;</li>
+<li>Chạy tập tin để cài đặt (nên để mặc định) => có thể chọn thư mục cài đặt (C:\wamp)</li>
+<li>Sau khi cài xong, chạy wampserver sẽ có biểu tưởng màu xanh trên taskbar của windows như hình bên dưới<br>
+<img src="http://trphloc.github.io/images/2014-04-18-setup-wamp-and-config-dreamweaver 1.png"/> <br></li>
+<li>Nếu biểu tượng màu cam thì có thể do đụng độ port => Chỉnh lại như sau: <br></li>
+</ul>
+
+
+<ol>
+<li> Chuột trái vào biểu tượng => apache => httpd.conf <br> </li>
+<img src="http://trphloc.github.io/images/2014-04-18-setup-wamp-and-config-dreamweaver 2.png"/> <br>
+<li> Tìm vào chỉnh port cho phù hợp: như trong hình là 8082 </li>
+<img src="http://trphloc.github.io/images/2014-04-18-setup-wamp-and-config-dreamweaver 3.png"/>
+<li> Khởi động lại tất cả services </li>
+<img src="http://trphloc.github.io/images/2014-04-18-setup-wamp-and-config-dreamweaver 4.png"/>
+</ol>
+
+
+<br>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Thực thi tập tin *.php</h2>
+
+<ul>
+<li>Sao chép vào thư mục &ldquo;&lt;Thư mục cài đặt>\www&rdquo; => Ví dụ: thư mục &ldquo;abc&rdquo; chứa tập tin &ldquo;1.php&rdquo; trong &ldquo;www&rdquo;
+<img src="http://trphloc.github.io/images/2014-04-18-setup-wamp-and-config-dreamweaver 5.png"/></li>
+<li>Chạy tập tin &ldquo;1.php&rdquo; bằng cách sử dụng đường link &ldquo;<a href="http://localhost:8082/abc/1.php">http://localhost:8082/abc/1.php</a>&rdquo;
+<img src="http://trphloc.github.io/images/2014-04-18-setup-wamp-and-config-dreamweaver 6.png"/></li>
+</ul>
+
+
+<br>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Thực thi tập tin *.php sử dụng dreamweaver</h2>
+
+<p><ol>
+<li> Tạo site </li>
+<img src="http://trphloc.github.io/images/2014-04-18-setup-wamp-and-config-dreamweaver 7.png"/>
+<li>Thông tin của site </li>
+<img src="http://trphloc.github.io/images/2014-04-18-setup-wamp-and-config-dreamweaver 8.png"/>
+<li>Thông tin server của site => lưu ý thông tin trong <b>&ldquo;Server Folder&rdquo;</b> và <b>&ldquo;Web Url&rdquo;</b> </li>
+<img src="http://trphloc.github.io/images/2014-04-18-setup-wamp-and-config-dreamweaver 9.png"/>
+<img src="http://trphloc.github.io/images/2014-04-18-setup-wamp-and-config-dreamweaver 10.png"/>
+<li>Sau đó có thể chạy bằng F12 </li>
+<ol>
+<br></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Hướng Dẫn Sử Dụng Git Trên Windows]]></title>

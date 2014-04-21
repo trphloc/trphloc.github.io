@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Eclipse | Phuoc-Loc's blog]]></title>
+  <link href="http://trphloc.github.io/blog/categories/eclipse/atom.xml" rel="self"/>
+  <link href="http://trphloc.github.io/"/>
+  <updated>2014-04-21T16:26:30+07:00</updated>
+  <id>http://trphloc.github.io/</id>
+  <author>
+    <name><![CDATA[Phuoc-Loc Truong]]></name>
+    <email><![CDATA[trphloc@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Hướng Dẫn Sử Dụng Junit Trong Eclipse]]></title>
+    <link href="http://trphloc.github.io/blog/2014/04/21/setup-junit-windows/"/>
+    <updated>2014-04-21T14:16:02+07:00</updated>
+    <id>http://trphloc.github.io/blog/2014/04/21/setup-junit-windows</id>
+    <content type="html"><![CDATA[<!-- ================================================================= -->
+
+
+<h2>Giới thiệu Unit test</h2>
+
+<ul>
+<li>Unit testing là phương pháp kiểm thử được thực hiện bằng cách sử dụng các đoạn mã có cấu trúc giống như các đối tượng được xây dựng để kiểm tra các thành phần nhỏ trong hệ thống phần mềm như các lớp, hàm, thủ tục, phương thức, …</li>
+<li>Sau khi đã soạn ra các đoạn mã, quá trình unit testing có thể được thực hiện tự động, liên tục hoặc định kì được gọi để thăm dò và phát hiện các lỗi kĩ thuật trong suốt quá trình  phát triển.</li>
+<li>Các trạng thải trong quá trình unit testing
+
+<ul>
+<li>Pass</li>
+<li>Fail</li>
+<li>Ignore</li>
+</ul>
+</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Giới thiệu JUnit</h2>
+
+<ul>
+<li>Bộ xUnit là các công cụ hỗ trợ thực hiện unit testing với các ngôn ngữ khác nhau:
+
+<ul>
+<li>CppUnit dùng để test các đoạn mã viết bằng ngôn ngữ C++.</li>
+<li>NUnit dùng để test các đoạn mã viết bằng các ngôn ngữ trong .NET Framework.</li>
+<li>&hellip;</li>
+</ul>
+</li>
+<li>JUnit đã được tích hợp sẵn trong các IDE thông dụng (Netbean, Eclipse) hỗ trợ lập trình java. Nếu công cụ bạn sử dụng không hỗ trợ thì có thể download tại trang web <a href="http://www.junit.org.">http://www.junit.org.</a></li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Môi trường</h2>
+
+<ul>
+<li>Windows 8.1</li>
+<li><a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">JDK 7x</a></li>
+<li><a href="www.eclipse.org/downloads/">Eclipse (Phiên bản kepler)</a> và JUnit</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Hướng dẫn sử dụng</h2>
+
+<p>Trong phần này, tôi tạo ra 1 lớp đối tượng PhanSo (thuộc tính và một số hàm) và lớp đối tượng để kiểm thử (PhanSoTest)</p>
+
+<ul>
+<li>Tao Project
+
+<ol>
+<li> Menu File => New => Project&hellip;
+<img src="http://trphloc.github.io/images/setup junit windows 2.png"/></li>
+<li> Chọn Java Project trong hộp thoại New Project và nhấn Next
+<img src="http://trphloc.github.io/images/setup junit windows 3.png"/></li>
+<li> Trong hộp thoại New Java Project điền thông tin và chọn Next
+
+<ul>
+<li>Project name: tên của project</li>
+<li>Chọn jre: phiên bản của thư viện và máy ảo java
+<img src="http://trphloc.github.io/images/setup junit windows 4.png"/></li>
+</ul>
+</li>
+<li> Cấu hình thư viện (nếu không có thì để mặc định) và nhấn Finish
+<img src="http://trphloc.github.io/images/setup junit windows 5.png"/></li>
+<li> Kết quả</li>
+</ol>
+
+
+<p>  <img src="http://trphloc.github.io/images/setup junit windows 6.png"/></p></li>
+<li>Tạo lớp trong java (PhanSo)
+
+<ol>
+<li> Click chuột phải vào thư mục src => chọn New => chọn Class
+<img src="http://trphloc.github.io/images/setup junit windows 10.png"/></li>
+<li> Trong hộp thoại New Java Class điền các giá trị sau và chọn Finish
+
+<ul>
+<li>Package: demo => phân nhóm các lớp đối tượng</li>
+<li>Name: PhanSo</li>
+<li>SuperClass: lớp cha (nếu có)</li>
+<li>Interfaces: các interface cần thực thi (nếu có)
+<img src="http://trphloc.github.io/images/setup junit windows 11.png"/></li>
+</ul>
+</li>
+<li> Trong lớp PhanSo, định nghĩa các thuộc tính, hàm khởi tạo mặc định và hàm cộng
+<img src="http://trphloc.github.io/images/setup junit windows 12.png"/></li>
+</ol>
+</li>
+<li>Tạo lớp PhanSoTest trong test package
+
+<ol>
+<li> Chuột phải vào Project => chọn New => chọn Junit Test case
+<img src="http://trphloc.github.io/images/setup junit windows 16.png"/></li>
+<li> Trong hộp thoại New Junit Test case chú ý các thuộc tính sau và chọn Next
+
+<ul>
+<li>Package: tên package</li>
+<li>Name: tên lớp</li>
+<li>Class under Test: tên lớp được test
+<img src="http://trphloc.github.io/images/setup junit windows 17.png"/></li>
+</ul>
+</li>
+<li> Muốn test hàm/phương thức nào thì chọn và nhấn Finish
+<img src="http://trphloc.github.io/images/setup junit windows 18.png"/></li>
+<li> Kết quả</li>
+</ol>
+
+
+<p>  <img src="http://trphloc.github.io/images/setup junit windows 19.png"/></p></li>
+<li>Sử dụng các hàm AssertXXX để so sánh kết quả
+  <img src="http://trphloc.github.io/images/setup junit windows 20.png"/></li>
+<li>Chạy Junit bằng cách click chuột phải vào project => chọn Run as => chọn Junit
+  <img src="http://trphloc.github.io/images/setup junit windows 21.png"/></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

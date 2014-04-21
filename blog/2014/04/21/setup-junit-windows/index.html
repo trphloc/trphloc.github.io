@@ -1,0 +1,343 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Hướng Dẫn Sử Dụng Junit Trong Eclipse - Phuoc-Loc's blog</title>
+  <meta name="author" content="Phuoc-Loc Truong">
+
+  
+  <meta name="description" content="Giới thiệu Unit test Unit testing là phương pháp kiểm thử được thực hiện bằng cách sử dụng các đoạn mã có cấu trúc giống như các đối tượng được xây &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://trphloc.github.io/blog/2014/04/21/setup-junit-windows">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Phuoc-Loc's blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Phuoc-Loc's blog</a></h1>
+  
+    <h2>Một số hướng dẫn ...</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss email">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+    <li><a href="trphloc@gmail.com" rel="subscribe-email" title="subscribe via email">Email</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:trphloc.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Hướng Dẫn Sử Dụng Junit Trong Eclipse</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-21T14:16:02+07:00" pubdate data-updated="true">Apr 21<span>st</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><!-- ================================================================= -->
+
+
+<h2>Giới thiệu Unit test</h2>
+
+<ul>
+<li>Unit testing là phương pháp kiểm thử được thực hiện bằng cách sử dụng các đoạn mã có cấu trúc giống như các đối tượng được xây dựng để kiểm tra các thành phần nhỏ trong hệ thống phần mềm như các lớp, hàm, thủ tục, phương thức, …</li>
+<li>Sau khi đã soạn ra các đoạn mã, quá trình unit testing có thể được thực hiện tự động, liên tục hoặc định kì được gọi để thăm dò và phát hiện các lỗi kĩ thuật trong suốt quá trình  phát triển.</li>
+<li>Các trạng thải trong quá trình unit testing
+
+<ul>
+<li>Pass</li>
+<li>Fail</li>
+<li>Ignore</li>
+</ul>
+</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Giới thiệu JUnit</h2>
+
+<ul>
+<li>Bộ xUnit là các công cụ hỗ trợ thực hiện unit testing với các ngôn ngữ khác nhau:
+
+<ul>
+<li>CppUnit dùng để test các đoạn mã viết bằng ngôn ngữ C++.</li>
+<li>NUnit dùng để test các đoạn mã viết bằng các ngôn ngữ trong .NET Framework.</li>
+<li>&hellip;</li>
+</ul>
+</li>
+<li>JUnit đã được tích hợp sẵn trong các IDE thông dụng (Netbean, Eclipse) hỗ trợ lập trình java. Nếu công cụ bạn sử dụng không hỗ trợ thì có thể download tại trang web <a href="http://www.junit.org.">http://www.junit.org.</a></li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Môi trường</h2>
+
+<ul>
+<li>Windows 8.1</li>
+<li><a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">JDK 7x</a></li>
+<li><a href="www.eclipse.org/downloads/">Eclipse (Phiên bản kepler)</a> và JUnit</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Hướng dẫn sử dụng</h2>
+
+<p>Trong phần này, tôi tạo ra 1 lớp đối tượng PhanSo (thuộc tính và một số hàm) và lớp đối tượng để kiểm thử (PhanSoTest)</p>
+
+<ul>
+<li>Tao Project
+
+<ol>
+<li> Menu File => New => Project&hellip;
+<img src="/images/setup junit windows 2.png"/></li>
+<li> Chọn Java Project trong hộp thoại New Project và nhấn Next
+<img src="/images/setup junit windows 3.png"/></li>
+<li> Trong hộp thoại New Java Project điền thông tin và chọn Next
+
+<ul>
+<li>Project name: tên của project</li>
+<li>Chọn jre: phiên bản của thư viện và máy ảo java
+<img src="/images/setup junit windows 4.png"/></li>
+</ul>
+</li>
+<li> Cấu hình thư viện (nếu không có thì để mặc định) và nhấn Finish
+<img src="/images/setup junit windows 5.png"/></li>
+<li> Kết quả</li>
+</ol>
+
+
+<p>  <img src="/images/setup junit windows 6.png"/></p></li>
+<li>Tạo lớp trong java (PhanSo)
+
+<ol>
+<li> Click chuột phải vào thư mục src => chọn New => chọn Class
+<img src="/images/setup junit windows 10.png"/></li>
+<li> Trong hộp thoại New Java Class điền các giá trị sau và chọn Finish
+
+<ul>
+<li>Package: demo => phân nhóm các lớp đối tượng</li>
+<li>Name: PhanSo</li>
+<li>SuperClass: lớp cha (nếu có)</li>
+<li>Interfaces: các interface cần thực thi (nếu có)
+<img src="/images/setup junit windows 11.png"/></li>
+</ul>
+</li>
+<li> Trong lớp PhanSo, định nghĩa các thuộc tính, hàm khởi tạo mặc định và hàm cộng
+<img src="/images/setup junit windows 12.png"/></li>
+</ol>
+</li>
+<li>Tạo lớp PhanSoTest trong test package
+
+<ol>
+<li> Chuột phải vào Project => chọn New => chọn Junit Test case
+<img src="/images/setup junit windows 16.png"/></li>
+<li> Trong hộp thoại New Junit Test case chú ý các thuộc tính sau và chọn Next
+
+<ul>
+<li>Package: tên package</li>
+<li>Name: tên lớp</li>
+<li>Class under Test: tên lớp được test
+<img src="/images/setup junit windows 17.png"/></li>
+</ul>
+</li>
+<li> Muốn test hàm/phương thức nào thì chọn và nhấn Finish
+<img src="/images/setup junit windows 18.png"/></li>
+<li> Kết quả</li>
+</ol>
+
+
+<p>  <img src="/images/setup junit windows 19.png"/></p></li>
+<li>Sử dụng các hàm AssertXXX để so sánh kết quả
+  <img src="/images/setup junit windows 20.png"/></li>
+<li>Chạy Junit bằng cách click chuột phải vào project => chọn Run as => chọn Junit
+  <img src="/images/setup junit windows 21.png"/></li>
+</ul>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">trphloc</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-21T14:16:02+07:00" pubdate data-updated="true">Apr 21<span>st</span>, 2014</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/junit/'>JUnit</a>, <a class='category' href='/blog/categories/config/'>config</a>, <a class='category' href='/blog/categories/eclipse/'>eclipse</a>, <a class='category' href='/blog/categories/install/'>install</a>, <a class='category' href='/blog/categories/setup/'>setup</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://trphloc.github.io/blog/2014/04/21/setup-junit-windows/" data-via="" data-counturl="http://trphloc.github.io/blog/2014/04/21/setup-junit-windows/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/04/18/setup-wamp-and-config-dreamweaver/" title="Previous Post: Cài đặt wamp và cấu hình dreamweaver để chạy php">&laquo; Cài đặt wamp và cấu hình dreamweaver để chạy php</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/04/21/setup-junit-windows/">Hướng Dẫn Sử Dụng Junit Trong Eclipse</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/04/18/setup-wamp-and-config-dreamweaver/">Cài đặt Wamp và Cấu Hình Dreamweaver để Chạy Php</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/04/17/using-git-windows/">Hướng Dẫn Sử Dụng Git Trên Windows</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/04/17/setup-git-windows/">Cài đặt Git Trên Windows</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/04/17/setup-ruby-devkit-windows/">Cài đặt Ruby DevKit Trên Windows</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - Phuoc-Loc Truong -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

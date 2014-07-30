@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Blog | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/blog/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-07-30T11:47:08+07:00</updated>
+  <updated>2014-07-30T12:51:30+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -26,10 +26,10 @@
 <ul>
 <li>GitHub Pages: một dự án để mọi người tạo trang web cá nhân hoặc nhóm. Nó chỉ là một repo trên GitHub, trong đó chứa các tập tin web và được trỏ đến domain xxx.github.io</li>
 <li>Một số cách để sử dụng GitHub Pages
-&mdash; Thêm trang web lên trên repo
-&mdash; Sử dụng Jekyll: <a href="http://jekyllrb.com/docs/home/">Link</a>
-&mdash; Sử dụng Octopress: <a href="http://octopress.org/docs/">Link</a>
-=> Trong bài viết này sẽ hướng dẫn sử dụng octopress trên github</li>
+  &mdash; Thêm trang web lên trên repo
+  &mdash; Sử dụng Jekyll: <a href="http://jekyllrb.com/docs/home/">Link</a>
+  &mdash; Sử dụng Octopress: <a href="http://octopress.org/docs/">Link</a>
+  => Trong bài viết này sẽ hướng dẫn sử dụng octopress trên github</li>
 </ul>
 
 
@@ -65,6 +65,27 @@
 <h3>Cài đặt và sử dụng git trên windows</h3></li>
 <li><a href="blog/2014/04/17/setup-git-windows/">Hướng dẫn cài đặt</a></li>
 <li><a href="blog/2014/04/17/using-git-windows/">Hướng dẫn sử dụng</a></li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Các bước thực hiện</h2>
+
+<ul>
+<li>B1: Tạo 1 tài khoản github</li>
+<li>B2: Download src của octopress từ <a href="https://github.com/imathis/octopress">https://github.com/imathis/octopress</a></li>
+<li>B3: Sử dụng với các lệnh sau (bundle exec)
+
+<ul>
+<li>rake new_post[&ldquo;&hellip;&rdquo;]: tạo 1 bài post</li>
+<li>rake new_page[&ldquo;&hellip;&rdquo;]: tạo 1 trang mới</li>
+<li>rake preview: xem trên localhost</li>
+<li>rake generate: phát sinh trang html</li>
+<li>rake deploy: up len github (nhập user và password của tài khoản trên github)</li>
+</ul>
+</li>
 </ul>
 
 

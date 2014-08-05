@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Terminal | Phuoc-Loc's blog]]></title>
+  <link href="http://trphloc.github.io/blog/categories/terminal/atom.xml" rel="self"/>
+  <link href="http://trphloc.github.io/"/>
+  <updated>2014-08-05T09:41:12+07:00</updated>
+  <id>http://trphloc.github.io/</id>
+  <author>
+    <name><![CDATA[Phuoc-Loc Truong]]></name>
+    <email><![CDATA[trphloc@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Terminate on Mac - 10.9]]></title>
+    <link href="http://trphloc.github.io/blog/2014/08/01/terminate-on-mac/"/>
+    <updated>2014-08-01T21:23:57+07:00</updated>
+    <id>http://trphloc.github.io/blog/2014/08/01/terminate-on-mac</id>
+    <content type="html"><![CDATA[<h2>Các lệnh trên terminal của Mac</h2>
+
+<p>{:toc}</p>
+
+<!-- ================================================================= -->
+
+
+<h2>Một số lệch thông dụng</h2>
+
+<ul>
+<li>sudo: thực hiện lệch dưới quyền admin</li>
+<li>ls: liệt kê danh sách tập tin</li>
+<li>cd: di chuyển tới thư mục</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>MySQL</h2>
+
+<ul>
+<li>Khởi động: sudo /usr/local/mysql/support-files/mysql.server start</li>
+<li>Dừng: sudo /usr/local/mysql/support-files/mysql.server stop</li>
+<li>Khởi động lại: sudo /usr/local/mysql/support-files/mysql.server restart</li>
+<li>Đăng nhập: mysql -u username</li>
+<li>Tạo người dùng:
+
+<ul>
+<li>CREATE USER &lsquo;admin&rsquo;@&lsquo;localhost&rsquo;;</li>
+<li>GRANT ALL PRIVILEGES ON <em>.</em> TO &lsquo;admin&rsquo;@&lsquo;localhost&rsquo;;</li>
+</ul>
+</li>
+<li>Tạo cơ sở dữ liệu: create database name</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Development | Phuoc-Loc's blog]]></title>
-  <link href="http://trphloc.github.io/blog/categories/development/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Java | Phuoc-Loc's blog]]></title>
+  <link href="http://trphloc.github.io/blog/categories/java/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
   <updated>2014-08-05T10:24:25+07:00</updated>
   <id>http://trphloc.github.io/</id>
@@ -66,31 +66,6 @@
 <!-- ================================================================= -->
 
 
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Eclipse Notes]]></title>
-    <link href="http://trphloc.github.io/blog/2014/08/05/eclipse-notes/"/>
-    <updated>2014-08-05T09:35:28+07:00</updated>
-    <id>http://trphloc.github.io/blog/2014/08/05/eclipse-notes</id>
-    <content type="html"><![CDATA[<h2>Một số ghi chú khi sử dụng Eclipse</h2>
-
-<p>{:toc}</p>
-
-<!-- ================================================================= -->
-
-
-<h2>Một số phím tắt</h2>
-
-<ul>
-<li><b>Ctrl + Shift + L: xem danh sách phím tắt</b></li>
-<li>Alt + Shift + Q, P: xem package explorer</li>
-<li>Alt + Shift + Q, C: xem console</li>
-<li>Alt + Shift + Q, L: xem error Log</li>
-<li>Alt + F5: update project</li>
-</ul>
 
 ]]></content>
   </entry>

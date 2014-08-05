@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Eclipse | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/eclipse/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-08-05T09:41:12+07:00</updated>
+  <updated>2014-08-05T10:24:25+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -32,6 +32,7 @@
 <li>Alt + Shift + Q, P: xem package explorer</li>
 <li>Alt + Shift + Q, C: xem console</li>
 <li>Alt + Shift + Q, L: xem error Log</li>
+<li>Alt + F5: update project</li>
 </ul>
 
 ]]></content>

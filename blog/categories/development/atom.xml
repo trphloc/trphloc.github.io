@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Development | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/development/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-08-05T10:24:25+07:00</updated>
+  <updated>2014-08-08T18:13:25+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -90,6 +90,10 @@
 <li>Alt + Shift + Q, C: xem console</li>
 <li>Alt + Shift + Q, L: xem error Log</li>
 <li>Alt + F5: update project</li>
+<li>Ctrl + Shift + R: mở tập tin workspace</li>
+<li>Ctrl + Shift + T: mở tập tin trong jar, thư viện, &hellip;</li>
+<li>Ctrl + H: tìm kiếm</li>
+<li>Ctrl + M: phóng to cửa sổ hiện hành</li>
 </ul>
 
 ]]></content>

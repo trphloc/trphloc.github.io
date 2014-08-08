@@ -4,7 +4,7 @@
   <title><![CDATA[Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-08-05T10:24:25+07:00</updated>
+  <updated>2014-08-08T18:13:25+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -12,6 +12,35 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Windows Notes]]></title>
+    <link href="http://trphloc.github.io/blog/2014/08/08/windows-notes/"/>
+    <updated>2014-08-08T18:07:41+07:00</updated>
+    <id>http://trphloc.github.io/blog/2014/08/08/windows-notes</id>
+    <content type="html"><![CDATA[<h2>Đang cập nhật</h2>
+
+<!-- ================================================================= -->
+
+
+<h2>Một số lệnh command</h2>
+
+<ul>
+<li>Tạo một symbolic link: mklink [[/d] | [/h] | [/j]] <Link> <Target>
+
+<ul>
+<li>/d tạo một thư mục &ndash; directory symbolic link (mặc định là tạo tập tin &ndash; file)</li>
+<li>/h tạo một hard link thay vì symbolic link</li>
+<li>/j tạo directory junction</li>
+<li>link: đường dẫn</li>
+<li>target: nơi liên kết tới</li>
+<li>Ví dụ: mklink /d \MyDocs \Users\User1\Documents tạo \MyDocs liên kết tới Documents</li>
+</ul>
+</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Java Notes]]></title>
@@ -90,6 +119,10 @@
 <li>Alt + Shift + Q, C: xem console</li>
 <li>Alt + Shift + Q, L: xem error Log</li>
 <li>Alt + F5: update project</li>
+<li>Ctrl + Shift + R: mở tập tin workspace</li>
+<li>Ctrl + Shift + T: mở tập tin trong jar, thư viện, &hellip;</li>
+<li>Ctrl + H: tìm kiếm</li>
+<li>Ctrl + M: phóng to cửa sổ hiện hành</li>
 </ul>
 
 ]]></content>

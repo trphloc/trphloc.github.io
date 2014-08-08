@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Windows | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/windows/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-08-05T10:24:25+07:00</updated>
+  <updated>2014-08-08T18:13:25+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -12,6 +12,35 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Windows Notes]]></title>
+    <link href="http://trphloc.github.io/blog/2014/08/08/windows-notes/"/>
+    <updated>2014-08-08T18:07:41+07:00</updated>
+    <id>http://trphloc.github.io/blog/2014/08/08/windows-notes</id>
+    <content type="html"><![CDATA[<h2>Đang cập nhật</h2>
+
+<!-- ================================================================= -->
+
+
+<h2>Một số lệnh command</h2>
+
+<ul>
+<li>Tạo một symbolic link: mklink [[/d] | [/h] | [/j]] <Link> <Target>
+
+<ul>
+<li>/d tạo một thư mục &ndash; directory symbolic link (mặc định là tạo tập tin &ndash; file)</li>
+<li>/h tạo một hard link thay vì symbolic link</li>
+<li>/j tạo directory junction</li>
+<li>link: đường dẫn</li>
+<li>target: nơi liên kết tới</li>
+<li>Ví dụ: mklink /d \MyDocs \Users\User1\Documents tạo \MyDocs liên kết tới Documents</li>
+</ul>
+</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Hướng Dẫn Sử Dụng Subversion (Tortoise Svn) Trên Windows]]></title>
@@ -231,37 +260,6 @@
 <li>Vào mục <a href="http://rubyinstaller.org/downloads/">downloads</a> xem và download phần Development Kit (phiên bản 4.7.2 cho 64bits tên file DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe)</li>
 <li>Chạy tập tin DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe và làm theo hướng dẫn (chọn thư mục cài đặt C:\abc\RubyDevKit)</li>
 <li>Thêm đường dẫn &ldquo;C:\abc\RubyDevKit\bin&rdquo; vào biến môi trường (Environment variables) &ldquo;Path&rdquo;</li>
-</ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Cài đặt Ruby Trên Windows]]></title>
-    <link href="http://trphloc.github.io/blog/2014/04/17/setup-ruby-windows/"/>
-    <updated>2014-04-17T12:15:31+07:00</updated>
-    <id>http://trphloc.github.io/blog/2014/04/17/setup-ruby-windows</id>
-    <content type="html"><![CDATA[<!-- ================================================================= -->
-
-
-<h2>Môi trường</h2>
-
-<ul>
-<li>Windows 8.1</li>
-<li>Ruby 2.0.0</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Thực hiện</h2>
-
-<ul>
-<li>Truy cập <a href="http://rubyinstaller.org/">trang chủ của Ruby</a></li>
-<li>Vào mục <a href="http://rubyinstaller.org/downloads/">downloads</a> để tải phiên bản phù hợp (phiên bản 2.0.0)</li>
-<li>Chạy tập tin Ruby &hellip;.msi và làm theo hướng dẫn (chọn thư mục cài đặt C:\abc\Ruby200)</li>
-<li>Thêm đường dẫn &ldquo;C:\abc\Ruby200\bin&rdquo; vào biến môi trường (Environment variables) &ldquo;Path&rdquo;</li>
 </ul>
 
 ]]></content>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Php | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/php/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-08-08T18:13:25+07:00</updated>
+  <updated>2014-08-09T15:25:00+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -12,6 +12,183 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Terminate on Mac - 10.9]]></title>
+    <link href="http://trphloc.github.io/blog/2014/08/01/terminate-on-mac/"/>
+    <updated>2014-08-01T21:23:57+07:00</updated>
+    <id>http://trphloc.github.io/blog/2014/08/01/terminate-on-mac</id>
+    <content type="html"><![CDATA[<h2>Các lệnh trên terminal của Mac</h2>
+
+<p>{:toc}</p>
+
+<!-- ================================================================= -->
+
+
+<h2>Một số lệch thông dụng</h2>
+
+<ul>
+<li>sudo: thực hiện lệch dưới quyền admin</li>
+<li>ls: liệt kê danh sách tập tin</li>
+<li>cd: di chuyển tới thư mục</li>
+<li>sudo chmod -R 777 XXX: chỉnh permission của thư mục XXX (-R: bao gồm cả thư mục con)</li>
+<li>chmod +x file: chuyển thành tập tin thực thi được</li>
+<li>Thêm đường dẫn tới biến PATH
+
+<ul>
+<li>export PATH=xxx:$PATH</li>
+<li>Chỉnh sửa tập tin .profile trong thư mục home</li>
+</ul>
+</li>
+<li>Tạo một liên kết (symbolic link): chi tiết <a href="http://linux.about.com/od/commands/l/blcmdl1_ln.htm">link1</a> <a href="http://hints.macworld.com/article.php?story=2001110610290643">link2</a>
+
+<ul>
+<li>Di chuyển tới thư mục cần tạo</li>
+<li>ln -Ffhinsv src dis => src: thư mục cần liên kết, dis tên liên kết</li>
+<li>Vd: ln -s /Volumes/Classic/ Classic</li>
+</ul>
+</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Apache</h2>
+
+<ul>
+<li>Tham khảo: <a href="http://jason.pureconcepts.net/2012/10/install-apache-php-mysql-mac-os-x/">link</a></li>
+<li>Sử dụng
+
+<ul>
+<li>sudo su</li>
+<li>apachectl start: khởi động => chạy localhost sẽ thấy &ldquo;It works&rdquo;</li>
+<li>apachectl restart</li>
+</ul>
+</li>
+<li>Kích hoạt php
+
+<ul>
+<li>Sao lưu tập tin cấu hình
+
+<ul>
+<li>cd /etc/apache2/</li>
+<li>cp httpd.conf httpd.conf.bak</li>
+</ul>
+</li>
+<li>Thay đổi tập tin cấu hình bằng chương trình vi
+
+<ul>
+<li>vi httpd.conf</li>
+</ul>
+</li>
+<li>Bỏ dấu # trước dòng LoadModule php5_module libexec/apache2/libphp5.sLoado</li>
+<li>Lưu lại và khởi động lại</li>
+</ul>
+</li>
+<li>Tạo virtualHosts
+
+<ul>
+<li>&ldquo;<a href="http://localhost/somesite/">http://localhost/somesite/</a>&rdquo; liên kết với &ldquo;/Library/WebServer/Documents/somesite&rdquo;</li>
+</ul>
+</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>MySQLrestart</h2>
+
+<ul>
+<li>Cài đặt
+
+<ul>
+<li>Download tại trang <a href="http://dev.mysql.com/downloads/mysql/">http://dev.mysql.com/downloads/mysql/</a></li>
+<li>Cài đặt</li>
+<li>Cập nhật đường dẫn path tới mysql (khi khởi động không cần đường dẫn)
+
+<ul>
+<li>export PATH=/usr/local/mysql/bin:$PATH</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Sử dụng
+
+<ul>
+<li>Lệnh mysql để chạy</li>
+<li>Đăng nhập: mysql -u username</li>
+<li>Hiển thị danh sách người dùng (root)
+
+<ul>
+<li>select * from mysql.user;</li>
+<li>desc mysql.user;</li>
+<li>select host, user, password from mysql.user;</li>
+</ul>
+</li>
+<li>Tạo người dùng: (root)
+
+<ul>
+<li>CREATE USER &lsquo;admin&rsquo;@&lsquo;localhost&rsquo;;</li>
+<li>GRANT ALL PRIVILEGES ON <em>.</em> TO &lsquo;admin&rsquo;@&lsquo;localhost&rsquo;;</li>
+</ul>
+</li>
+<li>Cập nhật mật khẩu: (root)
+
+<ul>
+<li>UPDATE mysql.user SET Password=PASSWORD(&lsquo;YOUR_PASSWORD&rsquo;) WHERE Host=&lsquo;localhost&rsquo; AND User=&lsquo;root&rsquo;;</li>
+</ul>
+</li>
+<li>Phân quyền cho database
+
+<ul>
+<li>GRANT ALL ON mydb.* TO &lsquo;someuser&rsquo;@&lsquo;somehost&rsquo;;</li>
+</ul>
+</li>
+<li>Tạo cơ sở dữ liệu: create database name</li>
+<li>Khởi động nhanh server: sudo /usr/local/mysql/support-files/mysql.server start (nếu cập nhật path thì không cần đường dẫn)</li>
+<li>Dừng: sudo /usr/local/mysql/support-files/mysql.server stop</li>
+<li>Khởi động lại: sudo /usr/local/mysql/support-files/mysql.server restart</li>
+</ul>
+</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>PHP</h2>
+
+<ul>
+<li>Cài đặt 5.5 <a href="http://coolestguidesontheplanet.com/upgrade-to-php-5-4-or-5-5-mac-osx-10-8-mountain-lion/">link</a>
+
+<ul>
+<li>curl -s <a href="http://php-osx.liip.ch/install.sh">http://php-osx.liip.ch/install.sh</a> | bash -s 5.5</li>
+</ul>
+</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Kết nối PHP và MySQL</h2>
+
+<ul>
+<li>Sư dụng các lệnh sau (phải chạy dưới quyền root)
+
+<ul>
+<li>cd /var</li>
+<li>mkdir mysql</li>
+<li>cd mysql</li>
+<li>ln -s /tmp/mysql.sock mysql.sock</li>
+</ul>
+</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Cài đặt Wamp và Cấu Hình Dreamweaver để Chạy Php]]></title>

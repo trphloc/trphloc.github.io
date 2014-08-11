@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Blog | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/blog/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-08-08T18:13:25+07:00</updated>
+  <updated>2014-08-11T21:33:53+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -84,6 +84,26 @@
 <li>rake preview: xem trên localhost</li>
 <li>rake generate: phát sinh trang html</li>
 <li>rake deploy: up len github (nhập user và password của tài khoản trên github)</li>
+<li>Nếu có lỗi không thể deploy thì có thể làm tay
+
+<ul>
+<li>mkdir _deploy</li>
+<li>git clone &lt;deploy_repo> _deploy</li>
+<li>rake gen_deploy</li>
+</ul>
+</li>
+<li>Nếu không nhận ra bundle
+
+<ul>
+<li>cd C:/RubyDevKit</li>
+<li>ruby dk.rb init</li>
+<li>ruby dk.rb install</li>
+<li>cd thư mục chưa octopress</li>
+<li>gem install bundler</li>
+<li>gem install RedCloth -v &lsquo;4.2.9&rsquo;</li>
+<li>bundle install</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

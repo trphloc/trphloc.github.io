@@ -338,6 +338,26 @@ Vào mục downloads xem và download phần Development Kit (phiên bản 4.7 &
 <li>rake preview: xem trên localhost</li>
 <li>rake generate: phát sinh trang html</li>
 <li>rake deploy: up len github (nhập user và password của tài khoản trên github)</li>
+<li>Nếu có lỗi không thể deploy thì có thể làm tay
+
+<ul>
+<li>mkdir _deploy</li>
+<li>git clone &lt;deploy_repo> _deploy</li>
+<li>rake gen_deploy</li>
+</ul>
+</li>
+<li>Nếu không nhận ra bundle
+
+<ul>
+<li>cd C:/RubyDevKit</li>
+<li>ruby dk.rb init</li>
+<li>ruby dk.rb install</li>
+<li>cd thư mục chưa octopress</li>
+<li>gem install bundler</li>
+<li>gem install RedCloth -v &lsquo;4.2.9&rsquo;</li>
+<li>bundle install</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

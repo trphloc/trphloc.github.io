@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Development | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/development/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-08-08T18:13:25+07:00</updated>
+  <updated>2014-08-11T21:33:53+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -96,6 +96,88 @@
 <li>Ctrl + M: phóng to cửa sổ hiện hành</li>
 </ul>
 
+
+<!-- ================================================================= -->
+
+
+<h2>Cài đặt Maven trên windows</h2>
+
+<ul>
+<li>Link to download: <a href="http://maven.apache.org/download.cgi">Apache maven</a>
+
+<ul>
+<li>Tải tập tin nhị phân mới nhất (tùy vào phiên bản)</li>
+</ul>
+</li>
+<li>Giải nén vào thư mục. Ví dụ: C\abc\Maven</li>
+<li>Điền đường dẫn &ldquo;C\abc\Maven\bin&rdquo; vào biến tài nguyên của windows</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Cài đặt Tomcat trên windows</h2>
+
+<ul>
+<li>Link to download: <a href="http://tomcat.apache.org/download-70.cgi">Apache tomcat 7.0</a></li>
+<li>Giải nén vào thư mục. ví dụ: C\abc\Tomcat7.0</li>
+<li>Mở Eclipse => menu windows => chọn preferences => chọn Server => chọn Runtime Environments</li>
+<li>Nhấn nút Add => chọn Apache => chọn Apache tomcat 7.0 => chọn Next</li>
+<li>Chọn đường dẫn C\abc\Tomcat7.0 và JRE phù hợp</li>
+<li>Chọn Finish
+
+<h3>Phát sinh keystore</h3></li>
+<li>Mở cmd</li>
+<li>Chạy lệnh và làm theo hướng dẫn: keytool -genkey -alias tomcat -keyalg RSA</li>
+<li>Keystore sẽ được lưu trong: &ldquo;C:\Users\trphloc.keystore&rdquo; (trphloc: là tên tài khoản trên máy)</li>
+<li>Vào thư mục cài đặt tomcat (C:\abc\Tomcat7.0) => vào thư mục conf => mở tập tin server.xml</li>
+<li>Tìm đoạn sau
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>linenos:true </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/li>
+</span><span class='line'>&lt;/ul>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>&lt;!--
+</span><span class='line'>&lt;Connector port="8443" protocol="HTTP/1.1" SSLEnabled="true"
+</span><span class='line'>    maxThreads="150" scheme="https" secure="true"
+</span><span class='line'>    clientAuth="false" sslProtocol="TLS" />
+</span><span class='line'>-->
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div>
+&ndash; Bỏ comment và sửa thành như sau: trong đó &ldquo;password&rdquo; thay bằng password của bạn khi tạo keystore
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>linenos:true </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Connector SSLEnabled=&ldquo;true&rdquo; acceptCount=&ldquo;100&rdquo; clientAuth=&ldquo;false&rdquo;&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>disableUploadTimeout="true" enableLookups="false" maxThreads="25"
+</span><span class='line'>port="8443" keystoreFile="/Users/loiane/.keystore" keystorePass="password"
+</span><span class='line'>protocol="org.apache.coyote.http11.Http11NioProtocol" scheme="https"
+</span><span class='line'>secure="true" sslProtocol="TLS" /&gt;
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
 ]]></content>
   </entry>
   

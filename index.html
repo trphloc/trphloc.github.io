@@ -257,6 +257,78 @@
 <li>Ctrl + M: phóng to cửa sổ hiện hành</li>
 </ul>
 
+
+<!-- ================================================================= -->
+
+
+<h2>Cài đặt Maven trên windows</h2>
+
+<ul>
+<li>Link to download: <a href="http://maven.apache.org/download.cgi">Apache maven</a>
+
+<ul>
+<li>Tải tập tin nhị phân mới nhất (tùy vào phiên bản)</li>
+</ul>
+</li>
+<li>Giải nén vào thư mục. Ví dụ: C\abc\Maven</li>
+<li>Điền đường dẫn &ldquo;C\abc\Maven\bin&rdquo; vào biến tài nguyên của windows</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Cài đặt Tomcat trên windows</h2>
+
+<ul>
+<li>Link to download: <a href="http://tomcat.apache.org/download-70.cgi">Apache tomcat 7.0</a></li>
+<li>Giải nén vào thư mục. ví dụ: C\abc\Tomcat7.0</li>
+<li>Mở Eclipse => menu windows => chọn preferences => chọn Server => chọn Runtime Environments</li>
+<li>Nhấn nút Add => chọn Apache => chọn Apache tomcat 7.0 => chọn Next</li>
+<li>Chọn đường dẫn C\abc\Tomcat7.0 và JRE phù hợp</li>
+<li>Chọn Finish
+
+<h3>Phát sinh keystore</h3></li>
+<li>Mở cmd</li>
+<li>Chạy lệnh và làm theo hướng dẫn: keytool -genkey -alias tomcat -keyalg RSA</li>
+<li>Keystore sẽ được lưu trong: &ldquo;C:\Users\trphloc.keystore&rdquo; (trphloc: là tên tài khoản trên máy)</li>
+<li>Vào thư mục cài đặt tomcat (C:\abc\Tomcat7.0) => vào thư mục conf => mở tập tin server.xml</li>
+<li>Tìm đoạn sau</li>
+</ul>
+
+
+<figure class='code'><figcaption><span>linenos:true </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;!--
+</span><span class='line'>&lt;Connector port="8443" protocol="HTTP/1.1" SSLEnabled="true"
+</span><span class='line'>    maxThreads="150" scheme="https" secure="true"
+</span><span class='line'>    clientAuth="false" sslProtocol="TLS" />
+</span><span class='line'>--></span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Bỏ comment và sửa thành như sau: trong đó &ldquo;password&rdquo; thay bằng password của bạn khi tạo keystore</li>
+</ul>
+
+
+<figure class='code'><figcaption><span>linenos:true </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Connector SSLEnabled="true" acceptCount="100" clientAuth="false"
+</span><span class='line'>    disableUploadTimeout="true" enableLookups="false" maxThreads="25"
+</span><span class='line'>    port="8443" keystoreFile="/Users/loiane/.keystore" keystorePass="password"
+</span><span class='line'>    protocol="org.apache.coyote.http11.Http11NioProtocol" scheme="https"
+</span><span class='line'>    secure="true" sslProtocol="TLS" /></span></code></pre></td></tr></table></div></figure>
+
+
+
 </div>
   
   
@@ -305,27 +377,160 @@
 <li>sudo: thực hiện lệch dưới quyền admin</li>
 <li>ls: liệt kê danh sách tập tin</li>
 <li>cd: di chuyển tới thư mục</li>
+<li>sudo chmod -R 777 XXX: chỉnh permission của thư mục XXX (-R: bao gồm cả thư mục con)</li>
+<li>chmod +x file: chuyển thành tập tin thực thi được</li>
+<li>Thêm đường dẫn tới biến PATH
+
+<ul>
+<li>export PATH=xxx:$PATH</li>
+<li>Chỉnh sửa tập tin .profile trong thư mục home</li>
+</ul>
+</li>
+<li>Tạo một liên kết (symbolic link): chi tiết <a href="http://linux.about.com/od/commands/l/blcmdl1_ln.htm">link1</a> <a href="http://hints.macworld.com/article.php?story=2001110610290643">link2</a>
+
+<ul>
+<li>Di chuyển tới thư mục cần tạo</li>
+<li>ln -Ffhinsv src dis => src: thư mục cần liên kết, dis tên liên kết</li>
+<li>Vd: ln -s /Volumes/Classic/ Classic</li>
+</ul>
+</li>
 </ul>
 
 
 <!-- ================================================================= -->
 
 
-<h2>MySQL</h2>
+<h2>Apache</h2>
 
 <ul>
-<li>Khởi động: sudo /usr/local/mysql/support-files/mysql.server start</li>
-<li>Dừng: sudo /usr/local/mysql/support-files/mysql.server stop</li>
-<li>Khởi động lại: sudo /usr/local/mysql/support-files/mysql.server restart</li>
+<li>Tham khảo: <a href="http://jason.pureconcepts.net/2012/10/install-apache-php-mysql-mac-os-x/">link</a></li>
+<li>Sử dụng
+
+<ul>
+<li>sudo su</li>
+<li>apachectl start: khởi động => chạy localhost sẽ thấy &ldquo;It works&rdquo;</li>
+<li>apachectl restart</li>
+</ul>
+</li>
+<li>Kích hoạt php
+
+<ul>
+<li>Sao lưu tập tin cấu hình
+
+<ul>
+<li>cd /etc/apache2/</li>
+<li>cp httpd.conf httpd.conf.bak</li>
+</ul>
+</li>
+<li>Thay đổi tập tin cấu hình bằng chương trình vi
+
+<ul>
+<li>vi httpd.conf</li>
+</ul>
+</li>
+<li>Bỏ dấu # trước dòng LoadModule php5_module libexec/apache2/libphp5.sLoado</li>
+<li>Lưu lại và khởi động lại</li>
+</ul>
+</li>
+<li>Tạo virtualHosts
+
+<ul>
+<li>&ldquo;<a href="http://localhost/somesite/">http://localhost/somesite/</a>&rdquo; liên kết với &ldquo;/Library/WebServer/Documents/somesite&rdquo;</li>
+</ul>
+</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>MySQLrestart</h2>
+
+<ul>
+<li>Cài đặt
+
+<ul>
+<li>Download tại trang <a href="http://dev.mysql.com/downloads/mysql/">http://dev.mysql.com/downloads/mysql/</a></li>
+<li>Cài đặt</li>
+<li>Cập nhật đường dẫn path tới mysql (khi khởi động không cần đường dẫn)
+
+<ul>
+<li>export PATH=/usr/local/mysql/bin:$PATH</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Sử dụng
+
+<ul>
+<li>Lệnh mysql để chạy</li>
 <li>Đăng nhập: mysql -u username</li>
-<li>Tạo người dùng:
+<li>Hiển thị danh sách người dùng (root)
+
+<ul>
+<li>select * from mysql.user;</li>
+<li>desc mysql.user;</li>
+<li>select host, user, password from mysql.user;</li>
+</ul>
+</li>
+<li>Tạo người dùng: (root)
 
 <ul>
 <li>CREATE USER &lsquo;admin&rsquo;@&lsquo;localhost&rsquo;;</li>
 <li>GRANT ALL PRIVILEGES ON <em>.</em> TO &lsquo;admin&rsquo;@&lsquo;localhost&rsquo;;</li>
 </ul>
 </li>
+<li>Cập nhật mật khẩu: (root)
+
+<ul>
+<li>UPDATE mysql.user SET Password=PASSWORD(&lsquo;YOUR_PASSWORD&rsquo;) WHERE Host=&lsquo;localhost&rsquo; AND User=&lsquo;root&rsquo;;</li>
+</ul>
+</li>
+<li>Phân quyền cho database
+
+<ul>
+<li>GRANT ALL ON mydb.* TO &lsquo;someuser&rsquo;@&lsquo;somehost&rsquo;;</li>
+</ul>
+</li>
 <li>Tạo cơ sở dữ liệu: create database name</li>
+<li>Khởi động nhanh server: sudo /usr/local/mysql/support-files/mysql.server start (nếu cập nhật path thì không cần đường dẫn)</li>
+<li>Dừng: sudo /usr/local/mysql/support-files/mysql.server stop</li>
+<li>Khởi động lại: sudo /usr/local/mysql/support-files/mysql.server restart</li>
+</ul>
+</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>PHP</h2>
+
+<ul>
+<li>Cài đặt 5.5 <a href="http://coolestguidesontheplanet.com/upgrade-to-php-5-4-or-5-5-mac-osx-10-8-mountain-lion/">link</a>
+
+<ul>
+<li>curl -s <a href="http://php-osx.liip.ch/install.sh">http://php-osx.liip.ch/install.sh</a> | bash -s 5.5</li>
+</ul>
+</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Kết nối PHP và MySQL</h2>
+
+<ul>
+<li>Sư dụng các lệnh sau (phải chạy dưới quyền root)
+
+<ul>
+<li>cd /var</li>
+<li>mkdir mysql</li>
+<li>cd mysql</li>
+<li>ln -s /tmp/mysql.sock mysql.sock</li>
+</ul>
+</li>
 </ul>
 
 </div>

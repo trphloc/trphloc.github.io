@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tutorial | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/tutorial/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-08-11T21:37:44+07:00</updated>
+  <updated>2014-08-11T21:54:19+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -192,7 +192,74 @@
     <link href="http://trphloc.github.io/blog/2014/04/17/using-git-windows/"/>
     <updated>2014-04-17T13:44:05+07:00</updated>
     <id>http://trphloc.github.io/blog/2014/04/17/using-git-windows</id>
-    <content type="html"><![CDATA[<h2>Đang cập nhật</h2>
+    <content type="html"><![CDATA[<!-- ================================================================= -->
+
+
+<h2>Một số trường hợp thường dùng</h2>
+
+<ul>
+<li>Tạo thư mục làm việc liên kết với git
+
+<ul>
+<li>&ldquo;Git clone <path> &lt;Thư mục>&rdquo;"</li>
+<li><path>: là đường dẫn tới server</li>
+<li>&lt;Thư mục>: tên thư mục trên máy</li>
+</ul>
+</li>
+<li>Thêm các thay đổi
+
+<ul>
+<li>&ldquo;git add .&rdquo; => thêm tất cả</li>
+<li>&ldquo;git add -a .&rdquo; => thêm tất cả có theo vết (trường hợp rename)</li>
+</ul>
+</li>
+<li>Xem các thay đổi
+
+<ul>
+<li>&ldquo;git status&rdquo;</li>
+</ul>
+</li>
+<li>Xem so sánh với server
+
+<ul>
+<li>&ldquo;git diff HEAD&rdquo;</li>
+<li>Để thoát thì nhấn Esc và lệnh :q (thoát) hoặc các lệnh bên dưới
+
+<ul>
+<li>:q! thoát nhưng không lưu</li>
+<li>:wq ghi và thoát</li>
+<li>:x ghi và thoát</li>
+<li>:qa thoát tất cả</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Đọc các thay đổi từ server
+
+<ul>
+<li>git pull</li>
+<li>git pull origin master</li>
+</ul>
+</li>
+<li>Cập nhật thay đổi lên server
+
+<ul>
+<li>git push origin master</li>
+</ul>
+</li>
+<li>Chọn tất cả <b> nội dung của mình </b>khi có conflict (cẩn thận khi xài => phải xem xét kỹ)
+
+<ul>
+<li>git checkout &mdash;ours . # checkout our local version of all files</li>
+<li>git add -u            # mark all conflicted files as merged</li>
+<li>git commit            # commit the merge</li>
+</ul>
+</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Technical | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/technical/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-08-12T10:29:16+07:00</updated>
+  <updated>2014-08-14T11:54:24+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -23,6 +23,16 @@
 <!-- ================================================================= -->
 
 
+<h2>Tạo USB khôi phục cho windows, Linux, và Mac</h2>
+
+<ul>
+<li><a href="http://www.pcworld.com.vn/articles/cong-nghe/lam-the-nao/2014/08/1235685/tao-usb-khoi-phuc-cho-windows-linux-mac-va-chrome-os/">Tham khảo</a></li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
 <h2>Một số lệnh command</h2>
 
 <ul>
@@ -35,6 +45,14 @@
 <li>link: đường dẫn</li>
 <li>target: nơi liên kết tới</li>
 <li>Ví dụ: mklink /d \MyDocs \Users\User1\Documents tạo \MyDocs liên kết tới Documents</li>
+</ul>
+</li>
+<li>runas /user:Administrator cmd</li>
+<li>Xóa thư mục
+
+<ul>
+<li>rmdir c:\test /s</li>
+<li>rmdir c:\test /s /q</li>
 </ul>
 </li>
 </ul>

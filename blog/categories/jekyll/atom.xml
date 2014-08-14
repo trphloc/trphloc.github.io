@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Jekyll | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/jekyll/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-08-12T10:29:16+07:00</updated>
+  <updated>2014-08-14T11:54:24+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -118,9 +118,9 @@
 <li>Hình ảnh: &lt; Image sr=&ldquo;&rdquo;/></li>
 <li>Link tham khảo: [chuỗi mô tả](đường link)</li>
 <li>Code block:
-  {% codeblock [lang:language] [title] [url] [link text] [start:#] [mark:#,#&ndash;#] [linenos:false] %}
+  {\% codeblock [lang:language] [title] [url] [link text] [start:#] [mark:#,#&ndash;#] [linenos:false] \%}
   code snippet
-  {% endcodeblock %}</li>
+  {\% endcodeblock \%}</li>
 </ul>
 
 

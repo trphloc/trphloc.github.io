@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Guide | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/guide/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-08-12T10:29:16+07:00</updated>
+  <updated>2014-08-14T11:54:24+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -253,6 +253,26 @@
 <li>git checkout &mdash;ours . # checkout our local version of all files</li>
 <li>git add -u            # mark all conflicted files as merged</li>
 <li>git commit            # commit the merge</li>
+</ul>
+</li>
+<li>Tạo một branch
+
+<ul>
+<li>git branch branch_name</li>
+</ul>
+</li>
+<li>Checkout một branch
+
+<ul>
+<li>git fetch</li>
+<li>git checkout branch_name</li>
+</ul>
+</li>
+<li>Trộn (merge) lại vào master
+
+<ul>
+<li>git checkout master</li>
+<li>git merge branch_name</li>
 </ul>
 </li>
 </ul>

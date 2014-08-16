@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tutorial | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/tutorial/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-08-16T22:54:38+07:00</updated>
+  <updated>2014-08-16T23:56:48+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -21,9 +21,7 @@
     <content type="html"><![CDATA[<h2>Đang cập nhật</h2>
 
 <ul>
-<li>Thay doi hot key</li>
-<li>So sanh: window, buffer, frame</li>
-<li>close buffer</li>
+<li>So sanh: window, buffer, frame?</li>
 <li>minibuffer</li>
 </ul>
 
@@ -53,13 +51,29 @@
 <h2>Một số cấu hình cần chỉnh trước khi sử dụng</h2>
 
 <ul>
-<li>Chỉnh một số cấu hình (Options &ndash; sau khi chỉnh phải nhấn lưu lại)
+<li>Thay đổi một số cấu hình (Options &ndash; sau khi chỉnh phải nhấn lưu lại)
 
 <ul>
+<li>Menu Options => chọn Highlight Matching Parenthese</li>
 <li>Menu Options => chọn Use CUA keys (Cut/Paste &hellip;)</li>
 <li>Menu Options => Multilingual Environment => set Language environment => UTF-8</li>
 <li>Menu Options => show/hide => bỏ chọn tool-bar</li>
+<li>Menu Options => show/hide => chọn line numbers</li>
+<li>Menu Options => show/hide => chọn column numbers</li>
 <li>Menu Options => Customize Emacs => Custom themes => manoj-dark => lưu</li>
+</ul>
+</li>
+<li>Thay đổi phím mặc định
+
+<ul>
+<li>Tắt màn hình hiện hành mà không phải xác nhận
+
+<ul>
+<li>Mở tập tin .emacs: Alt-x dired => Ctrl-c Ctrl-f ~/.emacs</li>
+<li>Dán nội dung sau vào: (global-set-key [(control x) (k)] &lsquo;kill-this-buffer)</li>
+<li>Lưu lại</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -77,6 +91,21 @@
 <li>dired: quản lý thư mục tập tin</li>
 <li>calc: máy tính</li>
 <li>calendar: lịch => thoát thì gõ q</li>
+</ul>
+</li>
+<li>Alt-`: sử dụng menu</li>
+<li>Thông tin cấu hình
+
+<ul>
+<li>Hầu hết cấu hình được lưu trong biến, tham khảo <a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Variable-Index.html#Variable-Index">danh sach biến</a></li>
+<li>Alt-x customize: thay đổi cấu hình <a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Easy-Customization.html#Easy-Customization">tham khảo</a></li>
+<li>Thay đổi phím tắt (<a href="http://www.informatik.uni-hamburg.de/RZ/software/emacs/xemacs/new-users-guide_6.html">tham khảo</a>)
+
+<ul>
+<li>Ghi trực tiếp vào tập tin cấu hình => Ctrl-c Ctrl-f => gõ ~/.emacs</li>
+<li>Điền nội dung vào và lưu lại. Ví dụ: (global-set-key [(control x) (k)] &lsquo;kill-this-buffer)</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

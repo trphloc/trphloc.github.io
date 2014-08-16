@@ -5,11 +5,13 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Windows Notes - Phuoc-Loc's blog</title>
+  <title>Emacs Note - Phuoc-Loc's blog</title>
   <meta name="author" content="Phuoc-Loc Truong">
 
   
-  <meta name="description" content="Đang cập nhật Một số thủ thuật Tạo USB khôi phục cho windows, Linux, và Mac Tham khảo Phần mềm hỗ trợ download http://www.tincongnghe.com.vn/2014/08/ &hellip;">
+  <meta name="description" content="Đang cập nhật Một số phím thông dụng Alt-X: gọi thực thi lệnh dired: quản lý thư mục tập tin
+calc: máy tính
+calendar: lịch => thoát thì gõ q Quản &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +20,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://trphloc.github.io/blog/2014/08/08/windows-notes">
+  <link rel="canonical" href="http://trphloc.github.io/blog/2014/08/15/emacs-note">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Phuoc-Loc's blog" type="application/atom+xml">
@@ -70,7 +72,7 @@
   
   <header>
     
-      <h1 class="entry-title">Windows Notes</h1>
+      <h1 class="entry-title">Emacs Note</h1>
     
     
       <p class="meta">
@@ -86,7 +88,7 @@
   
 
 
-<time datetime="2014-08-08T18:07:41+07:00" pubdate data-updated="true">Aug 8<span>th</span>, 2014</time>
+<time datetime="2014-08-15T17:25:59+07:00" pubdate data-updated="true">Aug 15<span>th</span>, 2014</time>
         
       </p>
     
@@ -98,19 +100,15 @@
 <!-- ================================================================= -->
 
 
-<h2>Một số thủ thuật</h2>
+<h2>Một số phím thông dụng</h2>
 
 <ul>
-<li>Tạo USB khôi phục cho windows, Linux, và Mac
+<li>Alt-X: gọi thực thi lệnh
 
 <ul>
-<li><a href="http://www.pcworld.com.vn/articles/cong-nghe/lam-the-nao/2014/08/1235685/tao-usb-khoi-phuc-cho-windows-linux-mac-va-chrome-os/">Tham khảo</a></li>
-</ul>
-</li>
-<li>Phần mềm hỗ trợ download
-
-<ul>
-<li><a href="http://www.tincongnghe.com.vn/2014/08/391621">http://www.tincongnghe.com.vn/2014/08/391621</a></li>
+<li>dired: quản lý thư mục tập tin</li>
+<li>calc: máy tính</li>
+<li>calendar: lịch => thoát thì gõ q</li>
 </ul>
 </li>
 </ul>
@@ -119,28 +117,84 @@
 <!-- ================================================================= -->
 
 
-<h2>Một số lệnh command</h2>
+<h2>Quản lý màn hình &ndash; window management</h2>
 
 <ul>
-<li>Tạo một symbolic link: mklink [[/d] | [/h] | [/j]] <Link> <Target>
+<li>Nhân đôi màn hình
 
 <ul>
-<li>/d tạo một thư mục &ndash; directory symbolic link (mặc định là tạo tập tin &ndash; file)</li>
-<li>/h tạo một hard link thay vì symbolic link</li>
-<li>/j tạo directory junction</li>
-<li>link: đường dẫn</li>
-<li>target: nơi liên kết tới</li>
-<li>Ví dụ: mklink /d \MyDocs \Users\User1\Documents tạo \MyDocs liên kết tới Documents</li>
+<li>Ctrl-x 2: bên dưới</li>
+<li>Ctrl-x 3: bên phải</li>
+<li>Ctrl-x 1: tắt hết các màn hình</li>
+<li>Ctrl-x 0: tắt màn hình hiện hành
+&ndash;: chuyển đổi các màn hình</li>
+<li>Ctrl-x o: di chuyển giữa các màn hình (trên xuống dưới và trái qua phari0</li>
 </ul>
 </li>
-<li>runas /user:Administrator cmd</li>
-<li>Xóa thư mục
+<li>Alt-x: so sánh màn hình, tìm chỗ kế tiếp nơi mà chuỗi trong màn hình được chọn không giống với chuỗi trong màn hình kế tiếp</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Quản lý thư mục &ndash; file management</h2>
 
 <ul>
-<li>rmdir c:\test /s</li>
-<li>rmdir c:\test /s /q</li>
+<li>^: thư mục cha</li>
+<li>Enter: mở tập tin</li>
+<li>m: đánh dấu 1 tập tin &ndash; mark a file</li>
+<li>u: bỏ đánh dấu một tập tin &ndash; unmark</li>
+<li>U: bỏ đánh dấu tất cả tập tin &ndash; unmark all marked</li>
+<li>%m: đánh dấu dựa vào mẫu &ndash; mark by pattern</li>
+<li>A: tìm kiếm tập tin &ndash; search Files</li>
+<li>q: đóng thư mục &ndash; close the dir</li>
+<li>C: copy tập tin &ndash; copy file</li>
+<li>R: đổi tên/di chuyển tập tin &ndash; Rename/move file</li>
+<li>D: xoá tập tin &ndash; Delete file  => x: xác nhận</li>
+<li>+: tạo thư mục mới &ndash; create a new dir</li>
+<li>Z: nén/giải nén  tập tin bởi zip &ndash; compress/decompress the file by gzip</li>
+<li>!: shell command</li>
+<li>S: Symlink to &hellip;</li>
+<li>H: Hardlink to &hellip;</li>
+<li>T: thay đổi Timestamp &hellip;</li>
+<li>M: thay đổi Mode &hellip;</li>
+<li>G: thay đổi Group &hellip;</li>
+<li>O: thay đổi Owner &hellip;</li>
 </ul>
-</li>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Buffer management</h2>
+
+<ul>
+<li>Ctrl-x Ctrl-b: hiển thị danh sách buffer</li>
+<li>Ctrl-x Left/Right: di chuyển tới buffer trước hoặc sau</li>
+<li>Ctrl-x k: tắt buffer, ko lưu</li>
+<li>Ctrl-x s: tắt và lưu</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Chỉnh sửa tập tin &ndash; Editor</h2>
+
+<ul>
+<li>Ctrl-x Ctrl-f: mở (tìm) tập tin</li>
+<li>Ctrl-x Ctrl-s: lưu tập tin hiện hành</li>
+<li>Ctrl-x Ctrl-w: save-as</li>
+<li>Ctrl-x s: lưu tất cả tập tin chưa lưu</li>
+<li>Ctrl-x u: quay lại (undo)</li>
+<li>Ctrl-s: tìm chuỗi</li>
+<li>Ctrl-f/b/n/p: di chuyển trước 1 ký tự/sau 1 ký tự/dòng tiếp theo/dòng phía trước</li>
+<li>Alt-f/b: di chuyển trước 1 từ/sau 1 từ</li>
+<li>Ctrl-a/e: di chuyển đầu dòng/cuối dòng</li>
+<li>Alt-a/e: di chuyển đầu đoạn văn/cuối đoạn văn</li>
+<li>Ctrl-v: di chuyển page down</li>
+<li>Alt-v/</>: di chuyển page up/bắt đầu tập tin/kết thúc tập tin</li>
 </ul>
 
 </div>
@@ -165,12 +219,12 @@
   
 
 
-<time datetime="2014-08-08T18:07:41+07:00" pubdate data-updated="true">Aug 8<span>th</span>, 2014</time>
+<time datetime="2014-08-15T17:25:59+07:00" pubdate data-updated="true">Aug 15<span>th</span>, 2014</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/note/'>note</a>, <a class='category' href='/blog/categories/technical/'>technical</a>, <a class='category' href='/blog/categories/windows/'>windows</a>
+    <a class='category' href='/blog/categories/emacs/'>emacs</a>, <a class='category' href='/blog/categories/guide/'>guide</a>, <a class='category' href='/blog/categories/tutorial/'>tutorial</a>
   
 </span>
 
@@ -179,7 +233,7 @@
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://trphloc.github.io/blog/2014/08/08/windows-notes/" data-via="" data-counturl="http://trphloc.github.io/blog/2014/08/08/windows-notes/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://trphloc.github.io/blog/2014/08/15/emacs-note/" data-via="" data-counturl="http://trphloc.github.io/blog/2014/08/15/emacs-note/" >Tweet</a>
   
   
   
@@ -188,10 +242,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2014/08/05/java-notes/" title="Previous Post: java notes">&laquo; java notes</a>
+        <a class="basic-alignment left" href="/blog/2014/08/08/windows-notes/" title="Previous Post: Windows notes">&laquo; Windows notes</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2014/08/15/emacs-note/" title="Next Post: emacs note">emacs note &raquo;</a>
       
     </p>
   </footer>

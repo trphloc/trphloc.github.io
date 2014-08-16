@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Guide | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/guide/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-08-14T11:57:19+07:00</updated>
+  <updated>2014-08-16T09:24:27+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -12,6 +12,116 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Emacs Note]]></title>
+    <link href="http://trphloc.github.io/blog/2014/08/15/emacs-note/"/>
+    <updated>2014-08-15T17:25:59+07:00</updated>
+    <id>http://trphloc.github.io/blog/2014/08/15/emacs-note</id>
+    <content type="html"><![CDATA[<h2>Đang cập nhật</h2>
+
+<!-- ================================================================= -->
+
+
+<h2>Một số phím thông dụng</h2>
+
+<ul>
+<li>Alt-X: gọi thực thi lệnh
+
+<ul>
+<li>dired: quản lý thư mục tập tin</li>
+<li>calc: máy tính</li>
+<li>calendar: lịch => thoát thì gõ q</li>
+</ul>
+</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Quản lý màn hình &ndash; window management</h2>
+
+<ul>
+<li>Nhân đôi màn hình
+
+<ul>
+<li>Ctrl-x 2: bên dưới</li>
+<li>Ctrl-x 3: bên phải</li>
+<li>Ctrl-x 1: tắt hết các màn hình</li>
+<li>Ctrl-x 0: tắt màn hình hiện hành
+&ndash;: chuyển đổi các màn hình</li>
+<li>Ctrl-x o: di chuyển giữa các màn hình (trên xuống dưới và trái qua phari0</li>
+</ul>
+</li>
+<li>Alt-x: so sánh màn hình, tìm chỗ kế tiếp nơi mà chuỗi trong màn hình được chọn không giống với chuỗi trong màn hình kế tiếp</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Quản lý thư mục &ndash; file management</h2>
+
+<ul>
+<li>^: thư mục cha</li>
+<li>Enter: mở tập tin</li>
+<li>m: đánh dấu 1 tập tin &ndash; mark a file</li>
+<li>u: bỏ đánh dấu một tập tin &ndash; unmark</li>
+<li>U: bỏ đánh dấu tất cả tập tin &ndash; unmark all marked</li>
+<li>%m: đánh dấu dựa vào mẫu &ndash; mark by pattern</li>
+<li>A: tìm kiếm tập tin &ndash; search Files</li>
+<li>q: đóng thư mục &ndash; close the dir</li>
+<li>C: copy tập tin &ndash; copy file</li>
+<li>R: đổi tên/di chuyển tập tin &ndash; Rename/move file</li>
+<li>D: xoá tập tin &ndash; Delete file  => x: xác nhận</li>
+<li>+: tạo thư mục mới &ndash; create a new dir</li>
+<li>Z: nén/giải nén  tập tin bởi zip &ndash; compress/decompress the file by gzip</li>
+<li>!: shell command</li>
+<li>S: Symlink to &hellip;</li>
+<li>H: Hardlink to &hellip;</li>
+<li>T: thay đổi Timestamp &hellip;</li>
+<li>M: thay đổi Mode &hellip;</li>
+<li>G: thay đổi Group &hellip;</li>
+<li>O: thay đổi Owner &hellip;</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Buffer management</h2>
+
+<ul>
+<li>Ctrl-x Ctrl-b: hiển thị danh sách buffer</li>
+<li>Ctrl-x Left/Right: di chuyển tới buffer trước hoặc sau</li>
+<li>Ctrl-x k: tắt buffer, ko lưu</li>
+<li>Ctrl-x s: tắt và lưu</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Chỉnh sửa tập tin &ndash; Editor</h2>
+
+<ul>
+<li>Ctrl-x Ctrl-f: mở (tìm) tập tin</li>
+<li>Ctrl-x Ctrl-s: lưu tập tin hiện hành</li>
+<li>Ctrl-x Ctrl-w: save-as</li>
+<li>Ctrl-x s: lưu tất cả tập tin chưa lưu</li>
+<li>Ctrl-x u: quay lại (undo)</li>
+<li>Ctrl-s: tìm chuỗi</li>
+<li>Ctrl-f/b/n/p: di chuyển trước 1 ký tự/sau 1 ký tự/dòng tiếp theo/dòng phía trước</li>
+<li>Alt-f/b: di chuyển trước 1 từ/sau 1 từ</li>
+<li>Ctrl-a/e: di chuyển đầu dòng/cuối dòng</li>
+<li>Alt-a/e: di chuyển đầu đoạn văn/cuối đoạn văn</li>
+<li>Ctrl-v: di chuyển page down</li>
+<li>Alt-v/</>: di chuyển page up/bắt đầu tập tin/kết thúc tập tin</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Hướng Dẫn Sử Dụng Subversion (Tortoise Svn) Trên Windows]]></title>

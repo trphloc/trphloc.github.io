@@ -32,6 +32,9 @@ Chạy tập &hellip;">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="/javascripts/jquery.tableofcontents.min.js" type="text/javascript"></script>
+<script src="/javascripts/generate-toc.js" type="text/javascript"></script>
 
   
 
@@ -164,7 +167,7 @@ Chạy tập &hellip;">
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2014/04/14/setup-github-pages/" title="Previous Post: Cài đặt github pages">&laquo; Cài đặt github pages</a>
+        <a class="basic-alignment left" href="/blog/2014/04/14/setup-github-pages/" title="Previous Post: Cài đặt và sử dụng github pages">&laquo; Cài đặt và sử dụng github pages</a>
       
       
         <a class="basic-alignment right" href="/blog/2014/04/17/setup-ruby-windows/" title="Next Post: Cài đặt Ruby trên windows">Cài đặt Ruby trên windows &raquo;</a>
@@ -240,6 +243,12 @@ Chạy tập &hellip;">
 
 
 
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        // Put a TOC right before the entry content.
+        generateTOC('Table of Contents');
+    });
+</script>
 
 
 </body>

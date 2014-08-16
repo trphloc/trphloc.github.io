@@ -9,9 +9,10 @@
   <meta name="author" content="Phuoc-Loc Truong">
 
   
-  <meta name="description" content="Các lệnh trên terminal của Mac {:toc} Một số lệch thông dụng sudo: thực hiện lệch dưới quyền admin
+  <meta name="description" content="Một số lệch thông dụng sudo: thực hiện lệch dưới quyền admin
 ls: liệt kê danh sách tập tin
-cd: di chuyển tới &hellip;">
+cd: di chuyển tới thư mục
+sudo chmod -R 777 XXX: chỉnh &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -31,6 +32,9 @@ cd: di chuyển tới &hellip;">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="/javascripts/jquery.tableofcontents.min.js" type="text/javascript"></script>
+<script src="/javascripts/generate-toc.js" type="text/javascript"></script>
 
   
 
@@ -95,11 +99,7 @@ cd: di chuyển tới &hellip;">
   </header>
 
 
-<div class="entry-content"><h2>Các lệnh trên terminal của Mac</h2>
-
-<p>{:toc}</p>
-
-<!-- ================================================================= -->
+<div class="entry-content"><!-- ================================================================= -->
 
 
 <h2>Một số lệch thông dụng</h2>
@@ -385,6 +385,12 @@ cd: di chuyển tới &hellip;">
 
 
 
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        // Put a TOC right before the entry content.
+        generateTOC('Table of Contents');
+    });
+</script>
 
 
 </body>

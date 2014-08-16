@@ -4,7 +4,7 @@
   <title><![CDATA[Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-08-16T09:24:27+07:00</updated>
+  <updated>2014-08-16T22:43:06+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -19,6 +19,32 @@
     <updated>2014-08-15T17:25:59+07:00</updated>
     <id>http://trphloc.github.io/blog/2014/08/15/emacs-note</id>
     <content type="html"><![CDATA[<h2>Đang cập nhật</h2>
+
+<ul>
+<li>Thay doi hot key</li>
+<li>So sanh: window, buffer, frame</li>
+<li>close buffer</li>
+<li>minibuffer</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Một số cấu hình cần chỉnh trước khi sử dụng</h2>
+
+<ul>
+<li>Chỉnh một số cấu hình (Options &ndash; sau khi chỉnh phải nhấn lưu lại)
+
+<ul>
+<li>Menu Options => chọn Use CUA keys (Cut/Paste &hellip;)</li>
+<li>Menu Options => Multilingual Environment => set Language environment => UTF-8</li>
+<li>Menu Options => show/hide => bỏ chọn tool-bar</li>
+<li>Menu Options => Customize Emacs => Custom themes => manoj-dark => lưu</li>
+</ul>
+</li>
+</ul>
+
 
 <!-- ================================================================= -->
 
@@ -40,7 +66,7 @@
 <!-- ================================================================= -->
 
 
-<h2>Quản lý màn hình &ndash; window management</h2>
+<h2>Quản lý màn hình &ndash; window management</h2>
 
 <ul>
 <li>Nhân đôi màn hình
@@ -49,12 +75,12 @@
 <li>Ctrl-x 2: bên dưới</li>
 <li>Ctrl-x 3: bên phải</li>
 <li>Ctrl-x 1: tắt hết các màn hình</li>
-<li>Ctrl-x 0: tắt màn hình hiện hành
-&ndash;: chuyển đổi các màn hình</li>
-<li>Ctrl-x o: di chuyển giữa các màn hình (trên xuống dưới và trái qua phari0</li>
+<li>Ctrl-x 0: tắt màn hình hiện hành</li>
+<li>: chuyển đổi các màn hình</li>
+<li>Ctrl-x o: di chuyển giữa các màn hình (trên xuống dưới, trái qua phải)</li>
 </ul>
 </li>
-<li>Alt-x: so sánh màn hình, tìm chỗ kế tiếp nơi mà chuỗi trong màn hình được chọn không giống với chuỗi trong màn hình kế tiếp</li>
+<li>Alt-x: so sánh màn hình, tìm chỗ kế tiếp nơi mà chuỗi trong màn hình hiện hành không giống vơi chuỗi trong màn hình kế tiếp</li>
 </ul>
 
 
@@ -69,12 +95,12 @@
 <li>m: đánh dấu 1 tập tin &ndash; mark a file</li>
 <li>u: bỏ đánh dấu một tập tin &ndash; unmark</li>
 <li>U: bỏ đánh dấu tất cả tập tin &ndash; unmark all marked</li>
-<li>%m: đánh dấu dựa vào mẫu &ndash; mark by pattern</li>
-<li>A: tìm kiếm tập tin &ndash; search Files</li>
+<li>%m: đánh dấu dựa vào mẫu &ndash; mark by patter- A: tìm kiếm tập tin &ndash; search Files</li>
 <li>q: đóng thư mục &ndash; close the dir</li>
+<li>g: cập nhật danh sách thư mục/tập tin con &ndash; refresh list</li>
 <li>C: copy tập tin &ndash; copy file</li>
 <li>R: đổi tên/di chuyển tập tin &ndash; Rename/move file</li>
-<li>D: xoá tập tin &ndash; Delete file  => x: xác nhận</li>
+<li>D: xoá tập tin &ndash; Delete file  => x: xác nhận</li>
 <li>+: tạo thư mục mới &ndash; create a new dir</li>
 <li>Z: nén/giải nén  tập tin bởi zip &ndash; compress/decompress the file by gzip</li>
 <li>!: shell command</li>
@@ -93,8 +119,8 @@
 <h2>Buffer management</h2>
 
 <ul>
-<li>Ctrl-x Ctrl-b: hiển thị danh sách buffer</li>
-<li>Ctrl-x Left/Right: di chuyển tới buffer trước hoặc sau</li>
+<li>Ctrl-x Ctrl-b: hiển thị danh sách buffer</li>
+<li>Ctrl-x Left/Right: di chuyển tới buffer trước hoặc sau</li>
 <li>Ctrl-x k: tắt buffer, ko lưu</li>
 <li>Ctrl-x s: tắt và lưu</li>
 </ul>
@@ -103,21 +129,20 @@
 <!-- ================================================================= -->
 
 
-<h2>Chỉnh sửa tập tin &ndash; Editor</h2>
+<h2>Chỉnh sửa tập tin &ndash; Editor</h2>
 
 <ul>
-<li>Ctrl-x Ctrl-f: mở (tìm) tập tin</li>
-<li>Ctrl-x Ctrl-s: lưu tập tin hiện hành</li>
+<li>Ctrl-x Ctrl-f: mở (tìm) tập tin</li>
+<li>Ctrl-x Ctrl-s: lưu tập tin hiện hành</li>
 <li>Ctrl-x Ctrl-w: save-as</li>
-<li>Ctrl-x s: lưu tất cả tập tin chưa lưu</li>
-<li>Ctrl-x u: quay lại (undo)</li>
-<li>Ctrl-s: tìm chuỗi</li>
-<li>Ctrl-f/b/n/p: di chuyển trước 1 ký tự/sau 1 ký tự/dòng tiếp theo/dòng phía trước</li>
-<li>Alt-f/b: di chuyển trước 1 từ/sau 1 từ</li>
-<li>Ctrl-a/e: di chuyển đầu dòng/cuối dòng</li>
-<li>Alt-a/e: di chuyển đầu đoạn văn/cuối đoạn văn</li>
-<li>Ctrl-v: di chuyển page down</li>
-<li>Alt-v/</>: di chuyển page up/bắt đầu tập tin/kết thúc tập tin</li>
+<li>Ctrl-x s: lưu tất cả tập tin chưa lưu</li>
+<li>Ctrl-x u: quay lại (undo)</li>
+<li>Ctrl-s: tìm chuỗi</li>
+<li>Ctrl-f/b/n/p: di chuyển trước 1 ký tự/sau 1 ký tự/dòng tiếp theo/dòng phía trước</li>
+<li>Alt-f/b: di chuyển trước 1 từ/sau 1 từ</li>
+<li>Ctrl-a/e: di chuyển đầu dòng/cuối dòng</li>
+<li>Alt-a/e: di chuyển đầu đoạn văn/cuối đoạn văn</li>
+<li>Alt-&lt;/>: di chuyển bắt đầu tập tin/kết thúc tập tin</li>
 </ul>
 
 ]]></content>
@@ -186,11 +211,7 @@
     <link href="http://trphloc.github.io/blog/2014/08/05/java-notes/"/>
     <updated>2014-08-05T10:13:10+07:00</updated>
     <id>http://trphloc.github.io/blog/2014/08/05/java-notes</id>
-    <content type="html"><![CDATA[<h2>Một số ghi chú khi sử dụng Eclipse (đang cập nhật)</h2>
-
-<p>{:toc}</p>
-
-<!-- ================================================================= -->
+    <content type="html"><![CDATA[<!-- ================================================================= -->
 
 
 <h2>Framework</h2>
@@ -243,11 +264,7 @@
     <link href="http://trphloc.github.io/blog/2014/08/05/eclipse-notes/"/>
     <updated>2014-08-05T09:35:28+07:00</updated>
     <id>http://trphloc.github.io/blog/2014/08/05/eclipse-notes</id>
-    <content type="html"><![CDATA[<h2>Một số ghi chú khi sử dụng Eclipse</h2>
-
-<p>{:toc}</p>
-
-<!-- ================================================================= -->
+    <content type="html"><![CDATA[<!-- ================================================================= -->
 
 
 <h2>Một số phím tắt</h2>
@@ -344,11 +361,7 @@
     <link href="http://trphloc.github.io/blog/2014/08/01/terminate-on-mac/"/>
     <updated>2014-08-01T21:23:57+07:00</updated>
     <id>http://trphloc.github.io/blog/2014/08/01/terminate-on-mac</id>
-    <content type="html"><![CDATA[<h2>Các lệnh trên terminal của Mac</h2>
-
-<p>{:toc}</p>
-
-<!-- ================================================================= -->
+    <content type="html"><![CDATA[<!-- ================================================================= -->
 
 
 <h2>Một số lệch thông dụng</h2>
@@ -1222,7 +1235,7 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Cài đặt Github Pages]]></title>
+    <title type="html"><![CDATA[Cài đặt và Sử Dụng Github Pages]]></title>
     <link href="http://trphloc.github.io/blog/2014/04/14/setup-github-pages/"/>
     <updated>2014-04-14T16:33:14+07:00</updated>
     <id>http://trphloc.github.io/blog/2014/04/14/setup-github-pages</id>
@@ -1333,6 +1346,95 @@
 <li>{ % endcodeblock % }</li>
 </ul>
 </li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Cài đặt và sử dụng mục lục trong octopress</h2>
+
+<ul>
+<li>Cài đặt
+
+<ul>
+<li>Download từ <a href="http://trphloc.github.io/files/jquery.toc.zip">link</a></li>
+<li>Giải nén
+
+<ul>
+<li>Copy các tập tin trong thư mục js vào thư mục &ldquo;source/javascripts&rdquo;</li>
+<li>Copy các tập tin trong thư mục css vào thư mục &ldquo;source/stylesheets&rdquo;</li>
+</ul>
+</li>
+<li>Tạo tập tin &ldquo;javascripts/generate-toc.js&rdquo; với nội dung sau</li>
+</ul>
+</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>function generateTOC(heading) {
+</span><span class='line'>         var container = jQuery("&lt;section>&lt;/section>");
+</span><span class='line'>     var div = jQuery("&lt;ul id='toc'>&lt;/ul>");
+</span><span class='line'>     var content = jQuery('.sidebar');
+</span><span class='line'>
+</span><span class='line'>     if (heading != undefined && heading != null) {
+</span><span class='line'>        container.append('&lt;h1 class="tocHeading">' + heading + '&lt;/h1>');
+</span><span class='line'>     }
+</span><span class='line'>
+</span><span class='line'>     div.tableOfContents("#content",{startLevel: 2});
+</span><span class='line'>     container.append(div);
+</span><span class='line'>     content.prepend(container);
+</span><span class='line'>  }</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Thêm đoạn code sau vào tập tin &ldquo;source/_includes/custom/head.html&rdquo;</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;script src="http://code.jquery.com/jquery-1.10.1.min.js">&lt;/script>
+</span><span class='line'>     &lt;script src="http://trphloc.github.io/javascripts/jquery.tableofcontents.min.js" type="text/javascript">&lt;/script>
+</span><span class='line'>     &lt;script src="http://trphloc.github.io/javascripts/generate-toc.js" type="text/javascript">&lt;/script></span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Thêm đoạn code sau vào tập tin &ldquo;source/_includes/custom/after_footer.html&rdquo;</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;script type="text/javascript">
+</span><span class='line'>    jQuery(document).ready(function() {
+</span><span class='line'>        // Put a TOC right before the entry content.
+</span><span class='line'>        generateTOC('Table of Contents');
+</span><span class='line'>    });
+</span><span class='line'>    &lt;/script></span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Sử dụng: trong phần head của mỗi bài post hay page, thêm vào &ldquo;toc: true&rdquo;</li>
+<li>Tham khảo: <a href="http://jkamenik.github.io/blog/2013/07/07/octopress-toc/">link</a></li>
 </ul>
 
 

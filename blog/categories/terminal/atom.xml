@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Terminal | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/terminal/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-08-16T09:24:27+07:00</updated>
+  <updated>2014-08-16T22:43:06+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -18,11 +18,7 @@
     <link href="http://trphloc.github.io/blog/2014/08/01/terminate-on-mac/"/>
     <updated>2014-08-01T21:23:57+07:00</updated>
     <id>http://trphloc.github.io/blog/2014/08/01/terminate-on-mac</id>
-    <content type="html"><![CDATA[<h2>Các lệnh trên terminal của Mac</h2>
-
-<p>{:toc}</p>
-
-<!-- ================================================================= -->
+    <content type="html"><![CDATA[<!-- ================================================================= -->
 
 
 <h2>Một số lệch thông dụng</h2>

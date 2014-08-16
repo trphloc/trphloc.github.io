@@ -30,6 +30,9 @@
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="/javascripts/jquery.tableofcontents.min.js" type="text/javascript"></script>
+<script src="/javascripts/generate-toc.js" type="text/javascript"></script>
 
   
 
@@ -284,7 +287,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2014/04/14/setup-github-pages/">Cài đặt Github Pages</a></h1>
+      <h1 class="entry-title"><a href="/blog/2014/04/14/setup-github-pages/">Cài đặt và Sử Dụng Github Pages</a></h1>
     
     
       <p class="meta">
@@ -420,6 +423,95 @@
 <!-- ================================================================= -->
 
 
+<h2>Cài đặt và sử dụng mục lục trong octopress</h2>
+
+<ul>
+<li>Cài đặt
+
+<ul>
+<li>Download từ <a href="/files/jquery.toc.zip">link</a></li>
+<li>Giải nén
+
+<ul>
+<li>Copy các tập tin trong thư mục js vào thư mục &ldquo;source/javascripts&rdquo;</li>
+<li>Copy các tập tin trong thư mục css vào thư mục &ldquo;source/stylesheets&rdquo;</li>
+</ul>
+</li>
+<li>Tạo tập tin &ldquo;javascripts/generate-toc.js&rdquo; với nội dung sau</li>
+</ul>
+</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>function generateTOC(heading) {
+</span><span class='line'>         var container = jQuery("&lt;section>&lt;/section>");
+</span><span class='line'>     var div = jQuery("&lt;ul id='toc'>&lt;/ul>");
+</span><span class='line'>     var content = jQuery('.sidebar');
+</span><span class='line'>
+</span><span class='line'>     if (heading != undefined && heading != null) {
+</span><span class='line'>        container.append('&lt;h1 class="tocHeading">' + heading + '&lt;/h1>');
+</span><span class='line'>     }
+</span><span class='line'>
+</span><span class='line'>     div.tableOfContents("#content",{startLevel: 2});
+</span><span class='line'>     container.append(div);
+</span><span class='line'>     content.prepend(container);
+</span><span class='line'>  }</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Thêm đoạn code sau vào tập tin &ldquo;source/_includes/custom/head.html&rdquo;</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;script src="http://code.jquery.com/jquery-1.10.1.min.js">&lt;/script>
+</span><span class='line'>     &lt;script src="/javascripts/jquery.tableofcontents.min.js" type="text/javascript">&lt;/script>
+</span><span class='line'>     &lt;script src="/javascripts/generate-toc.js" type="text/javascript">&lt;/script></span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Thêm đoạn code sau vào tập tin &ldquo;source/_includes/custom/after_footer.html&rdquo;</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;script type="text/javascript">
+</span><span class='line'>    jQuery(document).ready(function() {
+</span><span class='line'>        // Put a TOC right before the entry content.
+</span><span class='line'>        generateTOC('Table of Contents');
+</span><span class='line'>    });
+</span><span class='line'>    &lt;/script></span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Sử dụng: trong phần head của mỗi bài post hay page, thêm vào &ldquo;toc: true&rdquo;</li>
+<li>Tham khảo: <a href="http://jkamenik.github.io/blog/2013/07/07/octopress-toc/">link</a></li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
 <h2>Tài liệu tham khảo</h2>
 
 <ul>
@@ -505,6 +597,12 @@
 
 
 
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        // Put a TOC right before the entry content.
+        generateTOC('Table of Contents');
+    });
+</script>
 
 
 </body>

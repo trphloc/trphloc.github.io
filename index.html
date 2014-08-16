@@ -9,9 +9,10 @@
   <meta name="author" content="Phuoc-Loc Truong">
 
   
-  <meta name="description" content="Đang cập nhật Một số phím thông dụng Alt-X: gọi thực thi lệnh dired: quản lý thư mục tập tin
-calc: máy tính
-calendar: lịch => thoát thì gõ q Quản &hellip;">
+  <meta name="description" content="Đang cập nhật Thay doi hot key
+So sanh: window, buffer, frame
+close buffer
+minibuffer Một số cấu hình cần chỉnh trước khi sử dụng Chỉnh một số cấu &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -31,6 +32,9 @@ calendar: lịch => thoát thì gõ q Quản &hellip;">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="/javascripts/jquery.tableofcontents.min.js" type="text/javascript"></script>
+<script src="/javascripts/generate-toc.js" type="text/javascript"></script>
 
   
 
@@ -100,6 +104,32 @@ calendar: lịch => thoát thì gõ q Quản &hellip;">
 
   <div class="entry-content"><h2>Đang cập nhật</h2>
 
+<ul>
+<li>Thay doi hot key</li>
+<li>So sanh: window, buffer, frame</li>
+<li>close buffer</li>
+<li>minibuffer</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Một số cấu hình cần chỉnh trước khi sử dụng</h2>
+
+<ul>
+<li>Chỉnh một số cấu hình (Options &ndash; sau khi chỉnh phải nhấn lưu lại)
+
+<ul>
+<li>Menu Options => chọn Use CUA keys (Cut/Paste &hellip;)</li>
+<li>Menu Options => Multilingual Environment => set Language environment => UTF-8</li>
+<li>Menu Options => show/hide => bỏ chọn tool-bar</li>
+<li>Menu Options => Customize Emacs => Custom themes => manoj-dark => lưu</li>
+</ul>
+</li>
+</ul>
+
+
 <!-- ================================================================= -->
 
 
@@ -120,7 +150,7 @@ calendar: lịch => thoát thì gõ q Quản &hellip;">
 <!-- ================================================================= -->
 
 
-<h2>Quản lý màn hình &ndash; window management</h2>
+<h2>Quản lý màn hình &ndash; window management</h2>
 
 <ul>
 <li>Nhân đôi màn hình
@@ -129,12 +159,12 @@ calendar: lịch => thoát thì gõ q Quản &hellip;">
 <li>Ctrl-x 2: bên dưới</li>
 <li>Ctrl-x 3: bên phải</li>
 <li>Ctrl-x 1: tắt hết các màn hình</li>
-<li>Ctrl-x 0: tắt màn hình hiện hành
-&ndash;: chuyển đổi các màn hình</li>
-<li>Ctrl-x o: di chuyển giữa các màn hình (trên xuống dưới và trái qua phari0</li>
+<li>Ctrl-x 0: tắt màn hình hiện hành</li>
+<li>: chuyển đổi các màn hình</li>
+<li>Ctrl-x o: di chuyển giữa các màn hình (trên xuống dưới, trái qua phải)</li>
 </ul>
 </li>
-<li>Alt-x: so sánh màn hình, tìm chỗ kế tiếp nơi mà chuỗi trong màn hình được chọn không giống với chuỗi trong màn hình kế tiếp</li>
+<li>Alt-x: so sánh màn hình, tìm chỗ kế tiếp nơi mà chuỗi trong màn hình hiện hành không giống vơi chuỗi trong màn hình kế tiếp</li>
 </ul>
 
 
@@ -149,12 +179,12 @@ calendar: lịch => thoát thì gõ q Quản &hellip;">
 <li>m: đánh dấu 1 tập tin &ndash; mark a file</li>
 <li>u: bỏ đánh dấu một tập tin &ndash; unmark</li>
 <li>U: bỏ đánh dấu tất cả tập tin &ndash; unmark all marked</li>
-<li>%m: đánh dấu dựa vào mẫu &ndash; mark by pattern</li>
-<li>A: tìm kiếm tập tin &ndash; search Files</li>
+<li>%m: đánh dấu dựa vào mẫu &ndash; mark by patter- A: tìm kiếm tập tin &ndash; search Files</li>
 <li>q: đóng thư mục &ndash; close the dir</li>
+<li>g: cập nhật danh sách thư mục/tập tin con &ndash; refresh list</li>
 <li>C: copy tập tin &ndash; copy file</li>
 <li>R: đổi tên/di chuyển tập tin &ndash; Rename/move file</li>
-<li>D: xoá tập tin &ndash; Delete file  => x: xác nhận</li>
+<li>D: xoá tập tin &ndash; Delete file  => x: xác nhận</li>
 <li>+: tạo thư mục mới &ndash; create a new dir</li>
 <li>Z: nén/giải nén  tập tin bởi zip &ndash; compress/decompress the file by gzip</li>
 <li>!: shell command</li>
@@ -173,8 +203,8 @@ calendar: lịch => thoát thì gõ q Quản &hellip;">
 <h2>Buffer management</h2>
 
 <ul>
-<li>Ctrl-x Ctrl-b: hiển thị danh sách buffer</li>
-<li>Ctrl-x Left/Right: di chuyển tới buffer trước hoặc sau</li>
+<li>Ctrl-x Ctrl-b: hiển thị danh sách buffer</li>
+<li>Ctrl-x Left/Right: di chuyển tới buffer trước hoặc sau</li>
 <li>Ctrl-x k: tắt buffer, ko lưu</li>
 <li>Ctrl-x s: tắt và lưu</li>
 </ul>
@@ -183,21 +213,20 @@ calendar: lịch => thoát thì gõ q Quản &hellip;">
 <!-- ================================================================= -->
 
 
-<h2>Chỉnh sửa tập tin &ndash; Editor</h2>
+<h2>Chỉnh sửa tập tin &ndash; Editor</h2>
 
 <ul>
-<li>Ctrl-x Ctrl-f: mở (tìm) tập tin</li>
-<li>Ctrl-x Ctrl-s: lưu tập tin hiện hành</li>
+<li>Ctrl-x Ctrl-f: mở (tìm) tập tin</li>
+<li>Ctrl-x Ctrl-s: lưu tập tin hiện hành</li>
 <li>Ctrl-x Ctrl-w: save-as</li>
-<li>Ctrl-x s: lưu tất cả tập tin chưa lưu</li>
-<li>Ctrl-x u: quay lại (undo)</li>
-<li>Ctrl-s: tìm chuỗi</li>
-<li>Ctrl-f/b/n/p: di chuyển trước 1 ký tự/sau 1 ký tự/dòng tiếp theo/dòng phía trước</li>
-<li>Alt-f/b: di chuyển trước 1 từ/sau 1 từ</li>
-<li>Ctrl-a/e: di chuyển đầu dòng/cuối dòng</li>
-<li>Alt-a/e: di chuyển đầu đoạn văn/cuối đoạn văn</li>
-<li>Ctrl-v: di chuyển page down</li>
-<li>Alt-v/</>: di chuyển page up/bắt đầu tập tin/kết thúc tập tin</li>
+<li>Ctrl-x s: lưu tất cả tập tin chưa lưu</li>
+<li>Ctrl-x u: quay lại (undo)</li>
+<li>Ctrl-s: tìm chuỗi</li>
+<li>Ctrl-f/b/n/p: di chuyển trước 1 ký tự/sau 1 ký tự/dòng tiếp theo/dòng phía trước</li>
+<li>Alt-f/b: di chuyển trước 1 từ/sau 1 từ</li>
+<li>Ctrl-a/e: di chuyển đầu dòng/cuối dòng</li>
+<li>Alt-a/e: di chuyển đầu đoạn văn/cuối đoạn văn</li>
+<li>Alt-&lt;/>: di chuyển bắt đầu tập tin/kết thúc tập tin</li>
 </ul>
 
 </div>
@@ -320,11 +349,7 @@ calendar: lịch => thoát thì gõ q Quản &hellip;">
   </header>
 
 
-  <div class="entry-content"><h2>Một số ghi chú khi sử dụng Eclipse (đang cập nhật)</h2>
-
-<p>{:toc}</p>
-
-<!-- ================================================================= -->
+  <div class="entry-content"><!-- ================================================================= -->
 
 
 <h2>Framework</h2>
@@ -404,11 +429,7 @@ calendar: lịch => thoát thì gõ q Quản &hellip;">
   </header>
 
 
-  <div class="entry-content"><h2>Một số ghi chú khi sử dụng Eclipse</h2>
-
-<p>{:toc}</p>
-
-<!-- ================================================================= -->
+  <div class="entry-content"><!-- ================================================================= -->
 
 
 <h2>Một số phím tắt</h2>
@@ -532,11 +553,7 @@ calendar: lịch => thoát thì gõ q Quản &hellip;">
   </header>
 
 
-  <div class="entry-content"><h2>Các lệnh trên terminal của Mac</h2>
-
-<p>{:toc}</p>
-
-<!-- ================================================================= -->
+  <div class="entry-content"><!-- ================================================================= -->
 
 
 <h2>Một số lệch thông dụng</h2>
@@ -1518,6 +1535,12 @@ calendar: lịch => thoát thì gõ q Quản &hellip;">
 
 
 
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        // Put a TOC right before the entry content.
+        generateTOC('Table of Contents');
+    });
+</script>
 
 
 </body>

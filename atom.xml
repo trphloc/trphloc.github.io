@@ -4,7 +4,7 @@
   <title><![CDATA[Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-08-16T23:56:48+07:00</updated>
+  <updated>2014-08-17T15:31:26+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -33,7 +33,7 @@
 
 <ul>
 <li>Emacs là một chương trình hỗ trợ nhiều tác vụ: quản lý thư mục tập tin, chỉnh sửa tập tin, lịch, máy tính, &hellip;</li>
-<li>Khi người dùng thực hiện 1 hành động, emacs sẽ tạo 1 buffer đại diện cho hành động đó. Ví dụ: người dùng đang xem 1 thư mục x, đang sửa nội dung 1 tập tin y, đang xem lịch thì emacs đang tạo ra 3 buffer đại diện cho 3 hành động đó.</li>
+<li>Buffer &ndash; Khi người dùng thực hiện 1 hành động, emacs sẽ tạo 1 buffer đại diện cho hành động đó. Ví dụ: người dùng đang xem 1 thư mục x, đang sửa nội dung 1 tập tin y, đang xem lịch thì emacs đang tạo ra 3 buffer đại diện cho 3 hành động đó.</li>
 <li>Window là màn hình hiển thị của buffer. Trong emacs, tại một thời điểm, màn hình chính (window) có thể được chia làm nhiều màn hình con (windows)
 
 <ul>
@@ -42,6 +42,7 @@
 <li>Mỗi màn hình có con trỏ, vị trí của riêng nó. Ví dụ: 2 màn hình cùng hiển thị hành động chỉnh sửa tập tin x, nhưng màn hình 1 có thể đang ở đầu tập tin và màn hình 2 ở cuối tập tin</li>
 </ul>
 </li>
+<li>Frame là màn hình giao diện của emacs khi bắt đầu trên một hệ điều hành. Một frame có menu, thanh công cụ, và 1 màn hình. Màn hình đó có thể được chia thành nhiều windows. Bạn có thể tạo thêm frame khi cần. Nhiều frame được tạo trong cùng 1 phiên làm việc của Emacs sẽ dùng chung các buffers và dữ liệu.</li>
 </ul>
 
 
@@ -114,6 +115,52 @@
 <!-- ================================================================= -->
 
 
+<h2>Các bước cài đặt Package sử dụng ELPA, MELPA, Marmalade</h2>
+
+<ul>
+<li>Alt-x list-packages</li>
+<li>Một số thao tác
+
+<ul>
+<li>Enter: xem mô tả package</li>
+<li>i: đánh dấu để cài đặt</li>
+<li>u: bỏ đánh dấu</li>
+<li>d: đánh dấu để xóa (các packages đã cài đặt)</li>
+<li>r: refresh lại danh sách</li>
+<li>U: cập nhật tất cả packages nếu có bản cập nhật</li>
+</ul>
+</li>
+<li>x: thực thi hành động</li>
+<li>Các repos lưu trữ package
+
+<ul>
+<li><a href="http://elpa.gnu.org/">http://elpa.gnu.org/</a> Default. Official GNU Emacs package repository. This repository contains the minimal set, and are FSF signed.</li>
+<li><a href="http://tromey.com/elpa/">http://tromey.com/elpa/</a> ELPA (being phased out as of 2012-07-03).</li>
+<li><a href="http://marmalade-repo.org/">http://marmalade-repo.org/</a> Marmalade. More extensive number of packages.</li>
+<li><a href="http://melpa.milkbox.net/">http://melpa.milkbox.net/</a> MELPA. As of 2012-10-18, MELPA has most packages, and updated daily.</li>
+<li>Để thêm vào danh sách, ghi vào tập tin khởi tạo</li>
+</ul>
+</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>(when (>= emacs-major-version 24)
+</span><span class='line'>        (require 'package)
+</span><span class='line'>        (package-initialize)
+</span><span class='line'>        (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
+</span><span class='line'>    )</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<!-- ================================================================= -->
+
+
 <h2>Quản lý màn hình &ndash; window management</h2>
 
 <ul>
@@ -177,6 +224,11 @@
 <!-- ================================================================= -->
 
 
+<h2>Frame management</h2>
+
+<!-- ================================================================= -->
+
+
 <h2>Chỉnh sửa tập tin &ndash; Editor</h2>
 
 <ul>
@@ -219,6 +271,12 @@
 
 <ul>
 <li><a href="http://www.tincongnghe.com.vn/2014/08/391621">http://www.tincongnghe.com.vn/2014/08/391621</a></li>
+</ul>
+</li>
+<li>Ổ cứng mạng NAS &ndash; buffalo
+
+<ul>
+<li><a href="http://ducquang415.com/view-43494/kien-thuc-co-ban-va-huong-dan-su-dung-nas-buffalo--o-cung-mang/">http://ducquang415.com/view-43494/kien-thuc-co-ban-va-huong-dan-su-dung-nas-buffalo&#8211;o-cung-mang/</a></li>
 </ul>
 </li>
 </ul>

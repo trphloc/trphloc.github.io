@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Guide | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/guide/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-08-18T10:37:23+07:00</updated>
+  <updated>2014-08-18T13:18:29+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -23,7 +23,6 @@
 <ul>
 <li>So sanh: window, buffer, frame?</li>
 <li>minibuffer</li>
-<li>magit</li>
 <li>compress</li>
 </ul>
 
@@ -63,7 +62,7 @@
 <li>Menu Options => show/hide => bỏ chọn tool-bar</li>
 <li>Menu Options => show/hide => chọn line numbers</li>
 <li>Menu Options => show/hide => chọn column numbers</li>
-<li>Menu Options => Customize Emacs => Custom themes => manoj-dark => lưu</li>
+<li>Menu Options => Customize Emacs => Custom themes => tango-dark => lưu</li>
 </ul>
 </li>
 <li>Thay đổi phím mặc định
@@ -214,8 +213,8 @@
 <li>M: thay đổi Mode &hellip;</li>
 <li>G: thay đổi Group &hellip;</li>
 <li>O: thay đổi Owner &hellip;</li>
-<li>Ctrl-c Ctrl-f: tìm tập tin</li>
-<li>Ctrl-c Ctrl-v: mở tập tin/thư mục</li>
+<li>Ctrl-c Ctrl-f: tìm tập tin</li>
+<li>Ctrl-c Ctrl-v: mở tập tin/thư mục</li>
 </ul>
 
 
@@ -256,7 +255,7 @@
 <li>Alt-f/b: di chuyển trước 1 từ/sau 1 từ</li>
 <li>Ctrl-a/e: di chuyển đầu dòng/cuối dòng</li>
 <li>Alt-a/e: di chuyển đầu đoạn văn/cuối đoạn văn</li>
-<li>Ctrl-v/Alt-v: page up/page down</li>
+<li>Ctrl-v/Alt-v: page down/page up</li>
 <li>Alt-&lt;/>: di chuyển bắt đầu tập tin/kết thúc tập tin</li>
 </ul>
 

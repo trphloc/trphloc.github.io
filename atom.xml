@@ -4,7 +4,7 @@
   <title><![CDATA[Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-08-18T13:18:29+07:00</updated>
+  <updated>2014-08-18T13:21:42+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -93,12 +93,13 @@
 <li>dired: quản lý thư mục tập tin</li>
 <li>calc: máy tính</li>
 <li>calendar: lịch => thoát thì gõ q</li>
-<li>shell: thực thi các lệnh command</li>
+<li>shell: thực thi các lệnh command</li>
 <li>set-input-method: vietnamese-telex/british</li>
 </ul>
 </li>
 <li>Alt-`: sử dụng menu</li>
-<li>Ctrl-g: hủy thao tác đang làm</li>
+<li>Ctrl-g: hủy thao tác đang làm</li>
+<li>Ctrl-s: tìm kiếm</li>
 <li>Thông tin cấu hình
 
 <ul>

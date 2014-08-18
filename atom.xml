@@ -4,7 +4,7 @@
   <title><![CDATA[Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-08-17T15:31:26+07:00</updated>
+  <updated>2014-08-18T10:37:23+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -23,6 +23,8 @@
 <ul>
 <li>So sanh: window, buffer, frame?</li>
 <li>minibuffer</li>
+<li>magit</li>
+<li>compress</li>
 </ul>
 
 
@@ -92,9 +94,12 @@
 <li>dired: quản lý thư mục tập tin</li>
 <li>calc: máy tính</li>
 <li>calendar: lịch => thoát thì gõ q</li>
+<li>shell: thực thi các lệnh command</li>
+<li>set-input-method: vietnamese-telex/british</li>
 </ul>
 </li>
 <li>Alt-`: sử dụng menu</li>
+<li>Ctrl-g: hủy thao tác đang làm</li>
 <li>Thông tin cấu hình
 
 <ul>
@@ -103,8 +108,7 @@
 <li>Thay đổi phím tắt (<a href="http://www.informatik.uni-hamburg.de/RZ/software/emacs/xemacs/new-users-guide_6.html">tham khảo</a>)
 
 <ul>
-<li>Ghi trực tiếp vào tập tin cấu hình => Ctrl-c Ctrl-f => gõ ~/.emacs</li>
-<li>Điền nội dung vào và lưu lại. Ví dụ: (global-set-key [(control x) (k)] &lsquo;kill-this-buffer)</li>
+<li>Ghi trực tiếp vào tập tin cấu hình => Ctrl-c Ctrl-f => gõ ~/.emacs    &ndash; Điền nội dung vào và lưu lại. Ví dụ: (global-set-key [(control x) (k)] &lsquo;kill-this-buffer)</li>
 </ul>
 </li>
 </ul>
@@ -115,7 +119,9 @@
 <!-- ================================================================= -->
 
 
-<h2>Các bước cài đặt Package sử dụng ELPA, MELPA, Marmalade</h2>
+<h2>Các bước cài đặt Package</h2>
+
+<h3>Sử dụng ELPA, MELPA, Marmalade</h3>
 
 <ul>
 <li>Alt-x list-packages</li>
@@ -135,9 +141,9 @@
 
 <ul>
 <li><a href="http://elpa.gnu.org/">http://elpa.gnu.org/</a> Default. Official GNU Emacs package repository. This repository contains the minimal set, and are FSF signed.</li>
-<li><a href="http://tromey.com/elpa/">http://tromey.com/elpa/</a> ELPA (being phased out as of 2012-07-03).</li>
-<li><a href="http://marmalade-repo.org/">http://marmalade-repo.org/</a> Marmalade. More extensive number of packages.</li>
-<li><a href="http://melpa.milkbox.net/">http://melpa.milkbox.net/</a> MELPA. As of 2012-10-18, MELPA has most packages, and updated daily.</li>
+<li><a href="HTTP://TROMEY.COM/ELPA/">HTTP://TROMEY.COM/ELPA/</a> ELPA (BEING PHASED OUT AS OF 2012-07-03).</li>
+<li><a href="HTTP://MARMALADE-REPO.ORG/">HTTP://MARMALADE-REPO.ORG/</a> MARMALADE. MORE EXTENSIVE NUMBER OF PACKAGES.</li>
+<li><a href="HTTP://MELPA.MILKBOX.NET/">HTTP://MELPA.MILKBOX.NET/</a> MELPA. AS OF 2012-10-18, MELPA has most packages, and updated daily</li>
 <li>Để thêm vào danh sách, ghi vào tập tin khởi tạo</li>
 </ul>
 </li>
@@ -156,6 +162,14 @@
 </span><span class='line'>    )</span></code></pre></td></tr></table></div></figure>
 
 
+<ul>
+<li><a href="http://ergoemacs.org/emacs/emacs_package_system.html">Tham khảo</a>
+
+<h3>Sử dụng gói cài đặt</h3></li>
+<li>Đọc và sử dụng trong phiên làm việc đó</li>
+<li>Đọc khi bắt đầu</li>
+<li><a href="http://ergoemacs.org/emacs/emacs_installing_packages.html">Tham khảo</a></li>
+</ul>
 
 
 <!-- ================================================================= -->
@@ -190,7 +204,8 @@
 <li>m: đánh dấu 1 tập tin &ndash; mark a file</li>
 <li>u: bỏ đánh dấu một tập tin &ndash; unmark</li>
 <li>U: bỏ đánh dấu tất cả tập tin &ndash; unmark all marked</li>
-<li>%m: đánh dấu dựa vào mẫu &ndash; mark by patter- A: tìm kiếm tập tin &ndash; search Files</li>
+<li>i: hiển thị danh sách thư mục</li>
+<li>A: tìm kiếm tập tin &ndash; search Files %m: đánh dấu dựa vào mẫu &ndash; mark by pattern</li>
 <li>q: đóng thư mục &ndash; close the dir</li>
 <li>g: cập nhật danh sách thư mục/tập tin con &ndash; refresh list</li>
 <li>C: copy tập tin &ndash; copy file</li>
@@ -205,6 +220,8 @@
 <li>M: thay đổi Mode &hellip;</li>
 <li>G: thay đổi Group &hellip;</li>
 <li>O: thay đổi Owner &hellip;</li>
+<li>Ctrl-c Ctrl-f: tìm tập tin</li>
+<li>Ctrl-c Ctrl-v: mở tập tin/thư mục</li>
 </ul>
 
 
@@ -237,11 +254,15 @@
 <li>Ctrl-x Ctrl-w: save-as</li>
 <li>Ctrl-x s: lưu tất cả tập tin chưa lưu</li>
 <li>Ctrl-x u: quay lại (undo)</li>
+<li>Ctrl-w: copy</li>
+<li>Atl-w: cut</li>
+<li>Ctrl-y: paste</li>
 <li>Ctrl-s: tìm chuỗi</li>
 <li>Ctrl-f/b/n/p: di chuyển trước 1 ký tự/sau 1 ký tự/dòng tiếp theo/dòng phía trước</li>
 <li>Alt-f/b: di chuyển trước 1 từ/sau 1 từ</li>
 <li>Ctrl-a/e: di chuyển đầu dòng/cuối dòng</li>
 <li>Alt-a/e: di chuyển đầu đoạn văn/cuối đoạn văn</li>
+<li>Ctrl-v/Alt-v: page up/page down</li>
 <li>Alt-&lt;/>: di chuyển bắt đầu tập tin/kết thúc tập tin</li>
 </ul>
 

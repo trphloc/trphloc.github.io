@@ -227,9 +227,30 @@ sudo chmod -R 777 XXX: chỉnh &hellip;">
 <li>Khởi động nhanh server: sudo /usr/local/mysql/support-files/mysql.server start (nếu cập nhật path thì không cần đường dẫn)</li>
 <li>Dừng: sudo /usr/local/mysql/support-files/mysql.server stop</li>
 <li>Khởi động lại: sudo /usr/local/mysql/support-files/mysql.server restart</li>
+<li>Bật log để theo dõi các thay đổi trên mysql (tất cả)</li>
 </ul>
 </li>
 </ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>SET GLOBAL log_output = "FILE"; //which is set by default.
+</span><span class='line'>    SET GLOBAL general_log_file = "/path/to/your/logfile.log";
+</span><span class='line'>    SET GLOBAL general_log = 'ON';</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>SET GLOBAL log_output = 'TABLE';
+</span><span class='line'>    SET GLOBAL general_log = 'ON';
+</span><span class='line'>    //Take a look at the table mysql.general_log</span></code></pre></td></tr></table></div></figure>
+
+
 
 
 <!-- ================================================================= -->

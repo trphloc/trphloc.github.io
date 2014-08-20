@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Mysql | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/mysql/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-08-18T13:27:53+07:00</updated>
+  <updated>2014-08-21T01:29:12+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -146,6 +146,21 @@
 <li>Khởi động nhanh server: sudo /usr/local/mysql/support-files/mysql.server start (nếu cập nhật path thì không cần đường dẫn)</li>
 <li>Dừng: sudo /usr/local/mysql/support-files/mysql.server stop</li>
 <li>Khởi động lại: sudo /usr/local/mysql/support-files/mysql.server restart</li>
+<li>Bật log để theo dõi các thay đổi trên mysql (tất cả)
+<div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>SET GLOBAL log_output = &ldquo;FILE&rdquo;; //which is set by default.
+</span><span class='line'>SET GLOBAL general_log_file = &ldquo;/path/to/your/logfile.log&rdquo;;
+</span><span class='line'>SET GLOBAL general_log = &lsquo;ON&rsquo;;</span></code></pre></td></tr></table></div></figure></notextile></div>
+<div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;br/>
+</span><span class='line'>SET GLOBAL log_output = &lsquo;TABLE&rsquo;;
+</span><span class='line'>SET GLOBAL general_log = &lsquo;ON&rsquo;;
+</span><span class='line'>//Take a look at the table mysql.general_log  &lt;br/></span></code></pre></td></tr></table></div></figure></notextile></div></li>
 </ul>
 </li>
 </ul>

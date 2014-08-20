@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Windows | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/windows/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-08-18T13:27:53+07:00</updated>
+  <updated>2014-08-21T01:29:12+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -72,6 +72,8 @@
 <li>rmdir c:\test /s /q</li>
 </ul>
 </li>
+<li>where command_name: tìm vị trí của lệnh command</li>
+<li>nslookup: truy vết domain</li>
 </ul>
 
 ]]></content>

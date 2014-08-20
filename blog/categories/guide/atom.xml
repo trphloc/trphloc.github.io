@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Guide | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/guide/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-08-18T13:27:53+07:00</updated>
+  <updated>2014-08-21T01:29:12+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -21,7 +21,7 @@
     <content type="html"><![CDATA[<h2>Đang cập nhật</h2>
 
 <ul>
-<li>So sanh: window, buffer, frame?</li>
+<li>magit <a href="http://magit.github.io/master/magit.html">tham khảo</a></li>
 <li>minibuffer</li>
 <li>compress</li>
 </ul>
@@ -44,6 +44,29 @@
 </ul>
 </li>
 <li>Frame là màn hình giao diện của emacs khi bắt đầu trên một hệ điều hành. Một frame có menu, thanh công cụ, và 1 màn hình. Màn hình đó có thể được chia thành nhiều windows. Bạn có thể tạo thêm frame khi cần. Nhiều frame được tạo trong cùng 1 phiên làm việc của Emacs sẽ dùng chung các buffers và dữ liệu.</li>
+<li><a href="https://www.gnu.org/software/emacs/manual/html_mono/efaq-w32.html">Windows</a></li>
+<li><a href="http:/www.ergoemacs.org">Emacs</a></li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Các hình thức/chương trình/mode trong emacs</h2>
+
+<ul>
+<li>Dired</li>
+<li>Editor
+
+<ul>
+<li>Fundamental</li>
+<li>PHP mode</li>
+<li>Java mode</li>
+<li>Markdown</li>
+</ul>
+</li>
+<li>Calc</li>
+<li>Schedule</li>
 </ul>
 
 
@@ -97,6 +120,7 @@
 <li>set-input-method: vietnamese-telex/british</li>
 </ul>
 </li>
+<li>Ctrl-h: help</li>
 <li>Alt-`: sử dụng menu</li>
 <li>Ctrl-g: hủy thao tác đang làm</li>
 <li>Ctrl-s: tìm kiếm</li>
@@ -150,11 +174,11 @@
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
 <span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>(when (>= emacs-major-version 24)
-</span><span class='line'>      (require &lsquo;package)
-</span><span class='line'>  (package-initialize)
-</span><span class='line'>  (add-to-list 'package-archives &rsquo;(&ldquo;melpa&rdquo; . &ldquo;&lt;a href="http://melpa.milkbox.net/packages/">http://melpa.milkbox.net/packages/&lt;/a>&rdquo;) t)
-</span><span class='line'>)</span></code></pre></td></tr></table></div></figure></notextile></div></li>
+</pre></td><td class='code'><pre><code class=''><span class='line'>(setq package-archives &lsquo;((&ldquo;gnu&rdquo; . &ldquo;&lt;a href="http://elpa.gnu.org/packages/">http://elpa.gnu.org/packages/&lt;/a>&rdquo;)
+</span><span class='line'>         (&ldquo;marmalade&rdquo; . &ldquo;&lt;a href="http://marmalade-repo.org/packages/">http://marmalade-repo.org/packages/&lt;/a>&rdquo;)
+</span><span class='line'>         (&ldquo;ELPA&rdquo; . &ldquo;&lt;a href="http://tromey.com/elpa/">http://tromey.com/elpa/&lt;/a>&rdquo;)
+</span><span class='line'>         (&ldquo;melpa&rdquo; . &ldquo;&lt;a href="http://melpa.milkbox.net/packages/">http://melpa.milkbox.net/packages/&lt;/a>&rdquo;)
+</span><span class='line'>         (&ldquo;SC&rdquo;   . &ldquo;&lt;a href="http://joseito.republika.pl/sunrise-commander/">http://joseito.republika.pl/sunrise-commander/&lt;/a>&rdquo;)))</span></code></pre></td></tr></table></div></figure></notextile></div></li>
 </ul>
 </li>
 <li><a href="http://ergoemacs.org/emacs/emacs_package_system.html">Tham khảo</a>
@@ -216,6 +240,8 @@
 <li>O: thay đổi Owner &hellip;</li>
 <li>Ctrl-c Ctrl-f: tìm tập tin</li>
 <li>Ctrl-c Ctrl-v: mở tập tin/thư mục</li>
+<li>! 7z a zipfilename * RET: nén tập tin sử dụng 7zip</li>
+<li>! 7z e * RET: giải nén tập tin</li>
 </ul>
 
 
@@ -236,6 +262,15 @@
 
 
 <h2>Frame management</h2>
+
+<ul>
+<li>Ctrl-x 5 2: tạo frame mới</li>
+<li>Ctrl-x 5 b bufname <RET>: chọn buffer trong frame mới, tương đương: switch-to-buffer-other-frame</li>
+<li>Ctrl-x 5 f filename <RET>: mở tập tin trong frame mới, tương đương: find-file-other-frame</li>
+<li>Ctrl-x 5 d directory <RET>: mở thư mục trong frame mới, tương đương: dired-other-frame</li>
+<li><a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Creating-Frames.html#Creating-Frames">Tham khảo</a></li>
+</ul>
+
 
 <!-- ================================================================= -->
 
@@ -258,6 +293,177 @@
 <li>Alt-a/e: di chuyển đầu đoạn văn/cuối đoạn văn</li>
 <li>Ctrl-v/Alt-v: page down/page up</li>
 <li>Alt-&lt;/>: di chuyển bắt đầu tập tin/kết thúc tập tin</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Cài đặt và sử dụng elscreen</h2>
+
+<ul>
+<li>Alt-x => list-package => elscreen => install</li>
+<li><p>Cấu hình: thêm các dòng sau vào tập tin .emacs
+<div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>;; ============================================================
+</span><span class='line'>;; keeping related buffers together with elscreen
+</span><span class='line'>;; Ref:
+</span><span class='line'>;;   &lt;a href="http://emacs-fu.blogspot.com/2009/07/keeping-related-buffers-together-with.html">http://emacs-fu.blogspot.com/2009/07/keeping-related-buffers-together-with.html&lt;/a>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>(load &ldquo;elscreen&rdquo; &ldquo;ElScreen&rdquo; )&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>;; Windowskey+F9 creates a new elscreen, Windowskey+F10 kills it
+</span><span class='line'>(global-set-key (kbd &ldquo;&lt;s-f9>&rdquo;    ) &lsquo;elscreen-create)
+</span><span class='line'>(global-set-key (kbd &ldquo;&lt;s-f10>&rdquo;  ) 'elscreen-kill)&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>;; Windowskey+PgUP/PgDown switches between elscreens
+</span><span class='line'>(global-set-key (kbd &ldquo;&lt;s-prior>&rdquo;) &lsquo;elscreen-previous)
+</span><span class='line'>(global-set-key (kbd &ldquo;&lt;s-next>&rdquo;)  'elscreen-next)
+</span><span class='line'>(global-set-key (kbd &ldquo;M-0&rdquo;) &rsquo;(lambda() (interactive) (hajime-startup)))&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>(defvar is-hajime-startup nil
+</span><span class='line'>&ldquo;Indicate if the hajime-startup process has been activated or not.&rdquo;)&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>(defun hajime-startup ()
+</span><span class='line'>&ldquo;Doing some customization at startup time.&rdquo;
+</span><span class='line'>(interactive)
+</span><span class='line'>(unless is-hajime-startup
+</span><span class='line'>  (setq is-hajime-startup t)
+</span><span class='line'>  (hajime-elscreen))
+</span><span class='line'>)&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>;; ;; startup settings
+</span><span class='line'>(defun hajime-elscreen ()
+</span><span class='line'>(interactive)
+</span><span class='line'>(elscreen-start)
+</span><span class='line'>(elscreen-create)
+</span><span class='line'>(elscreen-screen-nickname &ldquo;box&rdquo;)
+</span><span class='line'>(elscreen-create)
+</span><span class='line'>(elscreen-screen-nickname &ldquo;box&rdquo;)
+</span><span class='line'>(elscreen-create)
+</span><span class='line'>(elscreen-screen-nickname &ldquo;box&rdquo;)
+</span><span class='line'>(elscreen-create)
+</span><span class='line'>(elscreen-screen-nickname &ldquo;box&rdquo;)
+</span><span class='line'>(elscreen-create)
+</span><span class='line'>(elscreen-screen-nickname &ldquo;shell&rdquo;)
+</span><span class='line'>(elscreen-create)
+</span><span class='line'>(elscreen-screen-nickname &ldquo;dired&rdquo;)
+</span><span class='line'>(elscreen-create)
+</span><span class='line'>(elscreen-screen-nickname &ldquo;&hellip;&rdquo;)
+</span><span class='line'>(elscreen-create)
+</span><span class='line'>(elscreen-screen-nickname &ldquo;&hellip;&rdquo;)
+</span><span class='line'>(elscreen-create)
+</span><span class='line'>(elscreen-screen-nickname &ldquo;&hellip;&rdquo;)&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>(elscreen-goto 0)
+</span><span class='line'>(elscreen-kill)&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>;; keybinding for switching workspaces
+</span><span class='line'>(global-set-key &ldquo;\M-1&rdquo; &lsquo;(lambda () (interactive) (elscreen-goto 1)))
+</span><span class='line'>(global-set-key &ldquo;\M-2&rdquo; &rsquo;(lambda () (interactive) (elscreen-goto 2)))
+</span><span class='line'>(global-set-key &ldquo;\M-3&rdquo; &lsquo;(lambda () (interactive) (elscreen-goto 3)))
+</span><span class='line'>(global-set-key &ldquo;\M-4&rdquo; &rsquo;(lambda () (interactive) (elscreen-goto 4)))
+</span><span class='line'>(global-set-key &ldquo;\M-5&rdquo; &lsquo;(lambda () (interactive) (elscreen-goto 5)))
+</span><span class='line'>(global-set-key &ldquo;\M-6&rdquo; &rsquo;(lambda () (interactive) (elscreen-goto 6)))
+</span><span class='line'>(global-set-key &ldquo;\M-7&rdquo; &lsquo;(lambda () (interactive) (elscreen-goto 7)))
+</span><span class='line'>(global-set-key &ldquo;\M-8&rdquo; &rsquo;(lambda () (interactive) (elscreen-goto 8)))
+</span><span class='line'>(global-set-key &ldquo;\M-9&rdquo; &lsquo;(lambda () (interactive) (elscreen-goto 9)))&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>;; keybinding for moving a buffer to a specific workspace
+</span><span class='line'>(global-set-key (kbd &ldquo;&lt;M-S-f1>&rdquo;) &lsquo;(lambda () (interactive) (hajime-move-buffer-to-elscreen 1)))
+</span><span class='line'>(global-set-key (kbd &ldquo;&lt;M-S-f2>&rdquo;) &rsquo;(lambda () (interactive) (hajime-move-buffer-to-elscreen 2)))
+</span><span class='line'>(global-set-key (kbd &ldquo;&lt;M-S-f3>&rdquo;) &lsquo;(lambda () (interactive) (hajime-move-buffer-to-elscreen 3)))
+</span><span class='line'>(global-set-key (kbd &ldquo;&lt;M-S-f4>&rdquo;) &rsquo;(lambda () (interactive) (hajime-move-buffer-to-elscreen 4)))
+</span><span class='line'>(global-set-key (kbd &ldquo;&lt;M-S-f5>&rdquo;) &lsquo;(lambda () (interactive) (hajime-move-buffer-to-elscreen 5)))
+</span><span class='line'>(global-set-key (kbd &ldquo;&lt;M-S-f6>&rdquo;) &rsquo;(lambda () (interactive) (hajime-move-buffer-to-elscreen 6)))
+</span><span class='line'>(global-set-key (kbd &ldquo;&lt;M-S-f7>&rdquo;) &lsquo;(lambda () (interactive) (hajime-move-buffer-to-elscreen 7)))
+</span><span class='line'>(global-set-key (kbd &ldquo;&lt;M-S-f8>&rdquo;) &rsquo;(lambda () (interactive) (hajime-move-buffer-to-elscreen 8)))
+</span><span class='line'>(global-set-key (kbd &ldquo;&lt;M-S-f9>&rdquo;) &lsquo;(lambda () (interactive) (hajime-move-buffer-to-elscreen 9)))
+</span><span class='line'>)</span></code></pre></td></tr></table></div></figure></notextile></div></p></li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Network</h2>
+
+<ul>
+<li><a href="http://www.masteringemacs.org/articles/2011/03/02/network-utilities-emacs/">Tham khảo</a></li>
 </ul>
 
 ]]></content>

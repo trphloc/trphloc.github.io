@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Python | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/python/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-08-21T11:19:14+07:00</updated>
+  <updated>2014-08-21T21:13:58+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -12,6 +12,25 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Python on Emacs]]></title>
+    <link href="http://trphloc.github.io/blog/2014/08/21/python-on-emacs/"/>
+    <updated>2014-08-21T11:53:45+07:00</updated>
+    <id>http://trphloc.github.io/blog/2014/08/21/python-on-emacs</id>
+    <content type="html"><![CDATA[<p>Đang cập nhật</p>
+
+<!-- ================================================================= -->
+
+
+<h2>Cài đặt và cấu hình</h2>
+
+<ul>
+<li>Cài đặt Python-mode package</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Cài đặt Python Trên Windows]]></title>

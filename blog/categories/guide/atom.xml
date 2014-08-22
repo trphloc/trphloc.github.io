@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Guide | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/guide/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-08-22T18:34:06+07:00</updated>
+  <updated>2014-08-22T21:15:11+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -55,6 +55,15 @@
 <h2>Các hình thức/chương trình/mode trong emacs</h2>
 
 <ul>
+<li>Viết tắt:
+
+<ul>
+<li>C tương đương Ctrl</li>
+<li>M tương đương Alt</li>
+<li>S tương đương Shìft</li>
+<li>RET tương đương enter</li>
+</ul>
+</li>
 <li>Dired</li>
 <li>Editor
 
@@ -477,6 +486,17 @@
 
 <ul>
 <li><a href="http://www.masteringemacs.org/articles/2011/03/02/network-utilities-emacs/">Tham khảo</a></li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Sử dụng bundle</h2>
+
+<ul>
+<li>Cài đặt package: rvm</li>
+<li>Trước khi sử dụng: Alt-x rvm-use-default</li>
 </ul>
 
 ]]></content>

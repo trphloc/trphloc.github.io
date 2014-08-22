@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Mysql | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/mysql/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-08-22T18:34:06+07:00</updated>
+  <updated>2014-08-22T21:15:11+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -14,10 +14,10 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Terminate on Mac - 10.9]]></title>
-    <link href="http://trphloc.github.io/blog/2014/08/01/terminate-on-mac/"/>
+    <title type="html"><![CDATA[Terminal on Mac - 10.9]]></title>
+    <link href="http://trphloc.github.io/blog/2014/08/01/terminal-on-mac/"/>
     <updated>2014-08-01T21:23:57+07:00</updated>
-    <id>http://trphloc.github.io/blog/2014/08/01/terminate-on-mac</id>
+    <id>http://trphloc.github.io/blog/2014/08/01/terminal-on-mac</id>
     <content type="html"><![CDATA[<!-- ================================================================= -->
 
 
@@ -29,6 +29,7 @@
 <li>cd: di chuyển tới thư mục</li>
 <li>sudo chmod -R 777 XXX: chỉnh permission của thư mục XXX (-R: bao gồm cả thư mục con)</li>
 <li>chmod +x file: chuyển thành tập tin thực thi được</li>
+<li>Tìm vị trí của lệnh: which name</li>
 <li>Thêm đường dẫn tới biến PATH
 
 <ul>

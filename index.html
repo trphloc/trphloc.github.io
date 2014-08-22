@@ -194,6 +194,8 @@
 </li>
 <li>Calc</li>
 <li>Schedule</li>
+<li>git</li>
+<li>eshell/shell</li>
 </ul>
 
 
@@ -228,7 +230,34 @@
 </li>
 </ul>
 </li>
+<li>Fullscreen khi bắt đầu</li>
 </ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>(custom-set-variables
+</span><span class='line'> '(initial-frame-alist (quote ((fullscreen . maximized)))))</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Khởi tạo font chữ default</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>(set-frame-font "Courier New-16" nil t)</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Tắt màn hình giới thiệu khi bắt đầu</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>(setq inhibit-startup-message t)        ; Disable startup message</span></code></pre></td></tr></table></div></figure>
+
+
 
 
 <!-- ================================================================= -->

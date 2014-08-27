@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Windows | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/windows/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-08-27T17:55:14+07:00</updated>
+  <updated>2014-08-27T17:59:08+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -64,9 +64,9 @@
 </ul>
 
 
-<p>&lsquo;&rsquo;&lsquo;
+<p><code>
 python get-pip.py
-&rsquo;&lsquo;&rsquo;</p>
+</code></p>
 
 <ul>
 <li>Gán biến môi trường cho thư mục Scripts trong thư mục cài đặt Python</li>
@@ -83,9 +83,9 @@ python get-pip.py
 </ul>
 
 
-<p>&lsquo;&rsquo;&lsquo;
+<p><code>
 pip install ipython
-&rsquo;&lsquo;&rsquo;</p>
+</code></p>
 ]]></content>
   </entry>
   

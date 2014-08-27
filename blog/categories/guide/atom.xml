@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Guide | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/guide/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-08-27T17:55:14+07:00</updated>
+  <updated>2014-08-27T17:59:08+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -126,9 +126,9 @@
 </ul>
 
 
-<p>&lsquo;&rsquo;&lsquo;
+<p><code>
 (w32-send-sys-command 61488)
-&rsquo;&lsquo;&rsquo;</p>
+</code></p>
 
 <ul>
 <li>Khởi tạo font chữ default

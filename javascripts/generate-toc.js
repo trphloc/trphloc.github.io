@@ -9,5 +9,5 @@
 
 	   div.tableOfContents("#content",{startLevel: 2});
 	   container.append(div);
-	   content.prepend(container);
+	   content.append(container);
   }

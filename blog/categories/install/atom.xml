@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Install | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/install/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-08-27T10:12:58+07:00</updated>
+  <updated>2014-08-27T16:47:30+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -12,6 +12,48 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Python Notes]]></title>
+    <link href="http://trphloc.github.io/blog/2014/08/27/python-notes/"/>
+    <updated>2014-08-27T16:28:01+07:00</updated>
+    <id>http://trphloc.github.io/blog/2014/08/27/python-notes</id>
+    <content type="html"><![CDATA[<!-- ================================================================= -->
+
+
+<h2>Cài đặt Python trên môi trường windows</h2>
+
+<h3>Môi trường</h3>
+
+<ul>
+<li>Windows 8.1</li>
+<li>Python 2.7.6</li>
+</ul>
+
+
+<h3>Thực hiện</h3>
+
+<ul>
+<li>Truy cập <a href="https://www.python.org">trang chủ của Python</a></li>
+<li>Vào mục <a href="https://www.python.org/downloads/">downloads</a> để tải phiên bản phù hợp (phiên bản 2.7.6)</li>
+<li>Chạy tập tin Python-&hellip;.msi và làm theo hướng dẫn (chọn thư mục cài đặt C:\abc\Python2.7.6)</li>
+<li>Thêm đường dẫn &ldquo;C:\abc\Python2.7.6&rdquo; vào biến môi trường (Environment variables) &ldquo;Path&rdquo;</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Python trên emacs</h2>
+
+<h3>Cài đặt và cấu hình</h3>
+
+<ul>
+<li>Cài đặt Python-mode package</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Hướng Dẫn Sử Dụng Junit Trong Eclipse]]></title>
@@ -303,37 +345,6 @@
 <li>Vào mục <a href="http://rubyinstaller.org/downloads/">downloads</a> xem và download phần Development Kit (phiên bản 4.7.2 cho 64bits tên file DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe)</li>
 <li>Chạy tập tin DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe và làm theo hướng dẫn (chọn thư mục cài đặt C:\abc\RubyDevKit)</li>
 <li>Thêm đường dẫn &ldquo;C:\abc\RubyDevKit\bin&rdquo; vào biến môi trường (Environment variables) &ldquo;Path&rdquo;</li>
-</ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Cài đặt Ruby Trên Windows]]></title>
-    <link href="http://trphloc.github.io/blog/2014/04/17/setup-ruby-windows/"/>
-    <updated>2014-04-17T12:15:31+07:00</updated>
-    <id>http://trphloc.github.io/blog/2014/04/17/setup-ruby-windows</id>
-    <content type="html"><![CDATA[<!-- ================================================================= -->
-
-
-<h2>Môi trường</h2>
-
-<ul>
-<li>Windows 8.1</li>
-<li>Ruby 2.0.0</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Thực hiện</h2>
-
-<ul>
-<li>Truy cập <a href="http://rubyinstaller.org/">trang chủ của Ruby</a></li>
-<li>Vào mục <a href="http://rubyinstaller.org/downloads/">downloads</a> để tải phiên bản phù hợp (phiên bản 2.0.0)</li>
-<li>Chạy tập tin Ruby &hellip;.msi và làm theo hướng dẫn (chọn thư mục cài đặt C:\abc\Ruby200)</li>
-<li>Thêm đường dẫn &ldquo;C:\abc\Ruby200\bin&rdquo; vào biến môi trường (Environment variables) &ldquo;Path&rdquo;</li>
 </ul>
 
 ]]></content>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Python | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/python/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-08-27T10:12:58+07:00</updated>
+  <updated>2014-08-27T16:47:30+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -14,33 +14,16 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Python on Emacs]]></title>
-    <link href="http://trphloc.github.io/blog/2014/08/21/python-on-emacs/"/>
-    <updated>2014-08-21T11:53:45+07:00</updated>
-    <id>http://trphloc.github.io/blog/2014/08/21/python-on-emacs</id>
-    <content type="html"><![CDATA[<p>Đang cập nhật</p>
-
-<!-- ================================================================= -->
-
-
-<h2>Cài đặt và cấu hình</h2>
-
-<ul>
-<li>Cài đặt Python-mode package</li>
-</ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Cài đặt Python Trên Windows]]></title>
-    <link href="http://trphloc.github.io/blog/2014/04/17/setup-python-windows/"/>
-    <updated>2014-04-17T12:15:14+07:00</updated>
-    <id>http://trphloc.github.io/blog/2014/04/17/setup-python-windows</id>
+    <title type="html"><![CDATA[Python Notes]]></title>
+    <link href="http://trphloc.github.io/blog/2014/08/27/python-notes/"/>
+    <updated>2014-08-27T16:28:01+07:00</updated>
+    <id>http://trphloc.github.io/blog/2014/08/27/python-notes</id>
     <content type="html"><![CDATA[<!-- ================================================================= -->
 
 
-<h2>Môi trường</h2>
+<h2>Cài đặt Python trên môi trường windows</h2>
+
+<h3>Môi trường</h3>
 
 <ul>
 <li>Windows 8.1</li>
@@ -48,16 +31,25 @@
 </ul>
 
 
-<!-- ================================================================= -->
-
-
-<h2>Thực hiện</h2>
+<h3>Thực hiện</h3>
 
 <ul>
 <li>Truy cập <a href="https://www.python.org">trang chủ của Python</a></li>
 <li>Vào mục <a href="https://www.python.org/downloads/">downloads</a> để tải phiên bản phù hợp (phiên bản 2.7.6)</li>
 <li>Chạy tập tin Python-&hellip;.msi và làm theo hướng dẫn (chọn thư mục cài đặt C:\abc\Python2.7.6)</li>
 <li>Thêm đường dẫn &ldquo;C:\abc\Python2.7.6&rdquo; vào biến môi trường (Environment variables) &ldquo;Path&rdquo;</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Python trên emacs</h2>
+
+<h3>Cài đặt và cấu hình</h3>
+
+<ul>
+<li>Cài đặt Python-mode package</li>
 </ul>
 
 ]]></content>

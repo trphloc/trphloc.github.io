@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Guide | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/guide/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-08-27T16:47:30+07:00</updated>
+  <updated>2014-08-27T17:14:30+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -112,11 +112,25 @@
 </li>
 </ul>
 </li>
-<li>Fullscreen khi bắt đầu
-<div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<li>Fullscreen khi bắt đầu &ndash; Mac:</li>
+</ul>
+
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>(custom-set-variables
-</span><span class='line'>&lsquo;(initial-frame-alist (quote ((fullscreen . maximized)))))</span></code></pre></td></tr></table></div></figure></notextile></div></li>
+</span><span class='line'> &lsquo;(initial-frame-alist (quote ((fullscreen . maximized)))))</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<ul>
+<li>Fullscreen khi bắt đầu &ndash; windows:</li>
+</ul>
+
+
+<p>&lsquo;&rsquo;&lsquo;
+(w32-send-sys-command 61488)
+&rsquo;&lsquo;&rsquo;</p>
+
+<ul>
 <li>Khởi tạo font chữ default
 <div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>(set-frame-font &ldquo;Courier New-16&rdquo; nil t)</span></code></pre></td></tr></table></div></figure></notextile></div></li>
@@ -529,11 +543,22 @@
 <h2>ace-jump-mode package</h2>
 
 <ul>
-<li>[Tham khảo]###################£££</li>
+<li>Sử dụng:
+
+<ul>
+<li>ace-jump-word-mode: enter first character of a word, select the highlighted key to move to it.</li>
+<li>ace-jump-char-mode: enter a character for query, select the highlighted key to move to it. (Ctrl-c SPC)</li>
+<li>ace-jump-line-mode: each non-empty line will be marked, select the highlighted key to move to it.</li>
+</ul>
+</li>
+<li><p>Cấu hình: gán key mặc định cho hành động ace-jump-char-mode</p>
+
+<p>  &lsquo;&rsquo;&lsquo;
+  (define-key global-map (kbd &ldquo;C-c SPC&rdquo;) 'ace-jump-char-mode)
+  &rsquo;&lsquo;&rsquo;</p></li>
+<li><p><a href="https://github.com/winterTTr/ace-jump-mode">Tham khảo</a></p></li>
 </ul>
 
-
-<p>£</p>
 ]]></content>
   </entry>
   

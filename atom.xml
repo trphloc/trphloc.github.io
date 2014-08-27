@@ -4,7 +4,7 @@
   <title><![CDATA[Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-08-27T16:47:30+07:00</updated>
+  <updated>2014-08-27T17:14:30+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -154,7 +154,7 @@
 </li>
 </ul>
 </li>
-<li>Fullscreen khi bắt đầu</li>
+<li>Fullscreen khi bắt đầu &ndash; Mac:</li>
 </ul>
 
 
@@ -163,6 +163,15 @@
 </pre></td><td class='code'><pre><code class=''><span class='line'>(custom-set-variables
 </span><span class='line'> '(initial-frame-alist (quote ((fullscreen . maximized)))))</span></code></pre></td></tr></table></div></figure>
 
+
+<ul>
+<li>Fullscreen khi bắt đầu &ndash; windows:</li>
+</ul>
+
+
+<p>&lsquo;&rsquo;&lsquo;
+(w32-send-sys-command 61488)
+&rsquo;&lsquo;&rsquo;</p>
 
 <ul>
 <li>Khởi tạo font chữ default</li>
@@ -601,11 +610,22 @@
 <h2>ace-jump-mode package</h2>
 
 <ul>
-<li>[Tham khảo]###################£££</li>
+<li>Sử dụng:
+
+<ul>
+<li>ace-jump-word-mode: enter first character of a word, select the highlighted key to move to it.</li>
+<li>ace-jump-char-mode: enter a character for query, select the highlighted key to move to it. (Ctrl-c SPC)</li>
+<li>ace-jump-line-mode: each non-empty line will be marked, select the highlighted key to move to it.</li>
+</ul>
+</li>
+<li><p>Cấu hình: gán key mặc định cho hành động ace-jump-char-mode</p>
+
+<p>  &lsquo;&rsquo;&lsquo;
+  (define-key global-map (kbd &ldquo;C-c SPC&rdquo;) &#8216;ace-jump-char-mode)
+  &rsquo;&lsquo;&rsquo;</p></li>
+<li><p><a href="https://github.com/winterTTr/ace-jump-mode">Tham khảo</a></p></li>
 </ul>
 
-
-<p>£</p>
 ]]></content>
   </entry>
   
@@ -1741,7 +1761,7 @@
 <h3>Cài đặt Python 2.7.6 trên windows</h3>
 
 <ul>
-<li><a href="http://trphloc.github.io/blog/2014/08/27/Python-notes/">Hướng dẫn cài đặt</a>
+<li><a href="http://trphloc.github.io/blog/2014/08/27/python-notes/">Hướng dẫn cài đặt</a>
 
 <h3>Cài đặt Ruby 2.0.0 trên windows</h3></li>
 <li><a href="http://trphloc.github.io/blog/2014/04/17/setup-ruby-windows/">Hướng dẫn cài đặt</a>

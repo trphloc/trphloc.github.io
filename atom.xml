@@ -4,7 +4,7 @@
   <title><![CDATA[Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-08-27T17:14:30+07:00</updated>
+  <updated>2014-08-27T17:55:14+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -52,6 +52,40 @@
 <li>Cài đặt Python-mode package</li>
 </ul>
 
+
+<!-- ================================================================= -->
+
+
+<h2>Cài đặt pip trên windows 8</h2>
+
+<ul>
+<li>Download từ <a href="http://trphloc.github.io/files/get-pip.py">link</a> nguồn: <a href="https://pip.pypa.io/en/latest/installing.html">https://pip.pypa.io/en/latest/installing.html</a></li>
+<li>Thực thi lệnh</li>
+</ul>
+
+
+<p>&lsquo;&rsquo;&lsquo;
+python get-pip.py
+&rsquo;&lsquo;&rsquo;</p>
+
+<ul>
+<li>Gán biến môi trường cho thư mục Scripts trong thư mục cài đặt Python</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Cài đặt iPython (sau khi đã có pip)</h2>
+
+<ul>
+<li>Thực thi lệnh sau để cài đặt:</li>
+</ul>
+
+
+<p>&lsquo;&rsquo;&lsquo;
+pip install ipython
+&rsquo;&lsquo;&rsquo;</p>
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Emacs | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/emacs/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-08-27T18:07:20+07:00</updated>
+  <updated>2014-08-28T14:10:36+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -44,18 +44,6 @@
 <!-- ================================================================= -->
 
 
-<h2>Python trên emacs</h2>
-
-<h3>Cài đặt và cấu hình</h3>
-
-<ul>
-<li>Cài đặt Python-mode package</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
 <h2>Cài đặt pip trên windows 8</h2>
 
 <ul>
@@ -86,6 +74,67 @@ python get-pip.py
 <p><code>
 pip install ipython
 </code></p>
+
+<!-- ================================================================= -->
+
+
+<h2>Python trên emacs</h2>
+
+<h3>Cài đặt và cấu hình</h3>
+
+<ul>
+<li>Cài thêm gói role/flake8/jedi cho python: thực thi lệnh</li>
+</ul>
+
+
+<p><code>
+pip install flake8
+pip install rope
+pip install jedi
+</code></p>
+
+<ul>
+<li>Cài đặt Python-mode package, iPython package. Cấu hình</li>
+</ul>
+
+
+<p><code>
+; python-mode
+(setq py-install-directory "~/.emacs.d/elpa/python-mode-6.1.3")
+(add-to-list 'load-path py-install-directory)
+(require 'python-mode)
+; use IPython
+(setq-default py-shell-name "ipython")
+(setq-default py-which-bufname "IPython")
+; use the wx backend, for both mayavi and matplotlib
+(setq py-python-command-args
+  '("--gui=wx" "--pylab=wx" "-colors" "Linux"))
+(setq py-force-py-shell-name-p t)
+; switch to the interpreter after executing code
+(setq py-shell-switch-buffers-on-execute-p t)
+(setq py-switch-buffers-on-execute-p t)
+; don't split windows
+;(setq py-split-windows-on-execute-p nil)
+; try to automagically figure out indentation
+(setq py-smart-indentation t)
+</code></p>
+
+<ul>
+<li>Cài đặt elpy package</li>
+<li>Cấu hình trong emacs. Thêm vào file cấu hình .emacs:</li>
+</ul>
+
+
+<p><code>
+(package-initialize)
+(elpy-enable)
+</code></p>
+
+<h3>Sử dụng</h3>
+
+<p>TODO TPL</p>
+
+<h2>&ndash; Mở tập tin python, nhấn &ldquo;Ctrl-c !&rdquo; => cửa sổ thực thi của iPython sẽ hiện ra</h2>
 ]]></content>
   </entry>
   
@@ -302,6 +351,16 @@ pip install ipython
 <li>Đọc và sử dụng trong phiên làm việc đó</li>
 <li>Đọc khi bắt đầu</li>
 <li><a href="http://ergoemacs.org/emacs/emacs_installing_packages.html">Tham khảo</a></li>
+</ul>
+
+
+<h2>Xóa package</h2>
+
+<ul>
+<li>Vào danh sách package: Alt-x list-packages</li>
+<li>Chọn package cần xoá bằng phím d</li>
+<li>Alt-x package-menu-execute</li>
+<li>yes</li>
 </ul>
 
 

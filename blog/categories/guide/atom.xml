@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Guide | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/guide/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-08-27T18:07:20+07:00</updated>
+  <updated>2014-08-28T14:10:36+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -226,6 +226,16 @@
 <li>Đọc và sử dụng trong phiên làm việc đó</li>
 <li>Đọc khi bắt đầu</li>
 <li><a href="http://ergoemacs.org/emacs/emacs_installing_packages.html">Tham khảo</a></li>
+</ul>
+
+
+<h2>Xóa package</h2>
+
+<ul>
+<li>Vào danh sách package: Alt-x list-packages</li>
+<li>Chọn package cần xoá bằng phím d</li>
+<li>Alt-x package-menu-execute</li>
+<li>yes</li>
 </ul>
 
 

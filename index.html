@@ -127,18 +127,6 @@ Vào mục downloads để tải phiên &hellip;">
 <!-- ================================================================= -->
 
 
-<h2>Python trên emacs</h2>
-
-<h3>Cài đặt và cấu hình</h3>
-
-<ul>
-<li>Cài đặt Python-mode package</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
 <h2>Cài đặt pip trên windows 8</h2>
 
 <ul>
@@ -169,6 +157,89 @@ Vào mục downloads để tải phiên &hellip;">
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>pip install ipython</span></code></pre></td></tr></table></div></figure>
 
+
+
+
+<!-- ================================================================= -->
+
+
+<h2>Python trên emacs</h2>
+
+<h3>Cài đặt và cấu hình</h3>
+
+<ul>
+<li>Cài thêm gói role/flake8/jedi cho python: thực thi lệnh</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>pip install flake8
+</span><span class='line'>pip install rope
+</span><span class='line'>pip install jedi</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Cài đặt Python-mode package, iPython package. Cấu hình</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>; python-mode
+</span><span class='line'>(setq py-install-directory "~/.emacs.d/elpa/python-mode-6.1.3")
+</span><span class='line'>(add-to-list 'load-path py-install-directory)
+</span><span class='line'>(require 'python-mode)
+</span><span class='line'>; use IPython
+</span><span class='line'>(setq-default py-shell-name "ipython")
+</span><span class='line'>(setq-default py-which-bufname "IPython")
+</span><span class='line'>; use the wx backend, for both mayavi and matplotlib
+</span><span class='line'>(setq py-python-command-args
+</span><span class='line'>  '("--gui=wx" "--pylab=wx" "-colors" "Linux"))
+</span><span class='line'>(setq py-force-py-shell-name-p t)
+</span><span class='line'>; switch to the interpreter after executing code
+</span><span class='line'>(setq py-shell-switch-buffers-on-execute-p t)
+</span><span class='line'>(setq py-switch-buffers-on-execute-p t)
+</span><span class='line'>; don't split windows
+</span><span class='line'>;(setq py-split-windows-on-execute-p nil)
+</span><span class='line'>; try to automagically figure out indentation
+</span><span class='line'>(setq py-smart-indentation t)</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Cài đặt elpy package</li>
+<li>Cấu hình trong emacs. Thêm vào file cấu hình .emacs:</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>(package-initialize)
+</span><span class='line'>(elpy-enable)</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Sử dụng</h3>
+
+<p>TODO TPL</p>
+
+<h2>&ndash; Mở tập tin python, nhấn &ldquo;Ctrl-c !&rdquo; => cửa sổ thực thi của iPython sẽ hiện ra</h2>
 </div>
   
   
@@ -429,6 +500,16 @@ Vào mục downloads để tải phiên &hellip;">
 <li>Đọc và sử dụng trong phiên làm việc đó</li>
 <li>Đọc khi bắt đầu</li>
 <li><a href="http://ergoemacs.org/emacs/emacs_installing_packages.html">Tham khảo</a></li>
+</ul>
+
+
+<h2>Xóa package</h2>
+
+<ul>
+<li>Vào danh sách package: Alt-x list-packages</li>
+<li>Chọn package cần xoá bằng phím d</li>
+<li>Alt-x package-menu-execute</li>
+<li>yes</li>
 </ul>
 
 

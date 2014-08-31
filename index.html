@@ -9,9 +9,10 @@
   <meta name="author" content="Phuoc-Loc Truong">
 
   
-  <meta name="description" content="Cài đặt Môi trường windows 8
-Download tại trang web
-Tiến hành cài đặt Một số lệnh thường dùng (window, mac, linux) Tạo thư mục làm việc liên kết với &hellip;">
+  <meta name="description" content="Cài đặt Ruby 2.0.0 Môi trường Windows và Ruby 2.0.0
+Truy cập trang chủ của Ruby
+Vào mục downloads để tải phiên bản phù hợp (phiên bản 2.0.0)
+Chạy &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -72,6 +73,68 @@ Tiến hành cài đặt Một số lệnh thường dùng (window, mac, linux) 
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/08/31/ruby-notes/">Ruby Notes</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-08-31T21:07:13+07:00" pubdate data-updated="true">Aug 31<span>st</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><!-- ================================================================= -->
+
+
+<h2>Cài đặt Ruby 2.0.0</h2>
+
+<ul>
+<li>Môi trường Windows và Ruby 2.0.0</li>
+<li>Truy cập <a href="http://rubyinstaller.org/">trang chủ của Ruby</a></li>
+<li>Vào mục <a href="http://rubyinstaller.org/downloads/">downloads</a> để tải phiên bản phù hợp (phiên bản 2.0.0)</li>
+<li>Chạy tập tin Ruby &hellip;.msi và làm theo hướng dẫn (chọn thư mục cài đặt C:\abc\Ruby200)</li>
+<li>Thêm đường dẫn &ldquo;C:\abc\Ruby200\bin&rdquo; vào biến môi trường (Environment variables) &ldquo;Path&rdquo;</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Cài đặt RubyDevKit</h2>
+
+<ul>
+<li>Môi trường Windows và Ruby DevKit 4.7.2</li>
+<li>Truy cập <a href="http://rubyinstaller.org/">trang chủ của Ruby</a></li>
+<li>Vào mục <a href="http://rubyinstaller.org/downloads/">downloads</a> xem và download phần Development Kit (phiên bản 4.7.2 cho 64bits tên file DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe)</li>
+<li>Chạy tập tin DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe và làm theo hướng dẫn (chọn thư mục cài đặt C:\abc\RubyDevKit)</li>
+<li>Thêm đường dẫn &ldquo;C:\abc\RubyDevKit\bin&rdquo; vào biến môi trường (Environment variables) &ldquo;Path&rdquo;</li>
+</ul>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -1903,166 +1966,6 @@ Tiến hành cài đặt Một số lệnh thường dùng (window, mac, linux) 
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/04/21/setup-junit-windows/">Hướng Dẫn Sử Dụng Junit Trong Eclipse</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-04-21T14:16:02+07:00" pubdate data-updated="true">Apr 21<span>st</span>, 2014</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><!-- ================================================================= -->
-
-
-<h2>Giới thiệu Unit test</h2>
-
-<ul>
-<li>Unit testing là phương pháp kiểm thử được thực hiện bằng cách sử dụng các đoạn mã có cấu trúc giống như các đối tượng được xây dựng để kiểm tra các thành phần nhỏ trong hệ thống phần mềm như các lớp, hàm, thủ tục, phương thức, …</li>
-<li>Sau khi đã soạn ra các đoạn mã, quá trình unit testing có thể được thực hiện tự động, liên tục hoặc định kì được gọi để thăm dò và phát hiện các lỗi kĩ thuật trong suốt quá trình  phát triển.</li>
-<li>Các trạng thải trong quá trình unit testing
-
-<ul>
-<li>Pass</li>
-<li>Fail</li>
-<li>Ignore</li>
-</ul>
-</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Giới thiệu JUnit</h2>
-
-<ul>
-<li>Bộ xUnit là các công cụ hỗ trợ thực hiện unit testing với các ngôn ngữ khác nhau:
-
-<ul>
-<li>CppUnit dùng để test các đoạn mã viết bằng ngôn ngữ C++.</li>
-<li>NUnit dùng để test các đoạn mã viết bằng các ngôn ngữ trong .NET Framework.</li>
-<li>&hellip;</li>
-</ul>
-</li>
-<li>JUnit đã được tích hợp sẵn trong các IDE thông dụng (Netbean, Eclipse) hỗ trợ lập trình java. Nếu công cụ bạn sử dụng không hỗ trợ thì có thể download tại trang web <a href="http://www.junit.org.">http://www.junit.org.</a></li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Môi trường</h2>
-
-<ul>
-<li>Windows 8.1</li>
-<li><a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">JDK 7x</a></li>
-<li><a href="www.eclipse.org/downloads/">Eclipse (Phiên bản kepler)</a> và JUnit</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Hướng dẫn sử dụng</h2>
-
-<p>Trong phần này, tôi tạo ra 1 lớp đối tượng PhanSo (thuộc tính và một số hàm) và lớp đối tượng để kiểm thử (PhanSoTest)</p>
-
-<ul>
-<li>Tao Project
-
-<ol>
-<li> Menu File => New => Project&hellip;
-<img src="/images/setup junit windows 2.png"/></li>
-<li> Chọn Java Project trong hộp thoại New Project và nhấn Next
-<img src="/images/setup junit windows 3.png"/></li>
-<li> Trong hộp thoại New Java Project điền thông tin và chọn Next
-
-<ul>
-<li>Project name: tên của project</li>
-<li>Chọn jre: phiên bản của thư viện và máy ảo java
-<img src="/images/setup junit windows 4.png"/></li>
-</ul>
-</li>
-<li> Cấu hình thư viện (nếu không có thì để mặc định) và nhấn Finish
-<img src="/images/setup junit windows 5.png"/></li>
-<li> Kết quả</li>
-</ol>
-
-
-<p>  <img src="/images/setup junit windows 6.png"/></p></li>
-<li>Tạo lớp trong java (PhanSo)
-
-<ol>
-<li> Click chuột phải vào thư mục src => chọn New => chọn Class
-<img src="/images/setup junit windows 10.png"/></li>
-<li> Trong hộp thoại New Java Class điền các giá trị sau và chọn Finish
-
-<ul>
-<li>Package: demo => phân nhóm các lớp đối tượng</li>
-<li>Name: PhanSo</li>
-<li>SuperClass: lớp cha (nếu có)</li>
-<li>Interfaces: các interface cần thực thi (nếu có)
-<img src="/images/setup junit windows 11.png"/></li>
-</ul>
-</li>
-<li> Trong lớp PhanSo, định nghĩa các thuộc tính, hàm khởi tạo mặc định và hàm cộng
-<img src="/images/setup junit windows 12.png"/></li>
-</ol>
-</li>
-<li>Tạo lớp PhanSoTest trong test package
-
-<ol>
-<li> Chuột phải vào Project => chọn New => chọn Junit Test case
-<img src="/images/setup junit windows 16.png"/></li>
-<li> Trong hộp thoại New Junit Test case chú ý các thuộc tính sau và chọn Next
-
-<ul>
-<li>Package: tên package</li>
-<li>Name: tên lớp</li>
-<li>Class under Test: tên lớp được test
-<img src="/images/setup junit windows 17.png"/></li>
-</ul>
-</li>
-<li> Muốn test hàm/phương thức nào thì chọn và nhấn Finish
-<img src="/images/setup junit windows 18.png"/></li>
-<li> Kết quả</li>
-</ol>
-
-
-<p>  <img src="/images/setup junit windows 19.png"/></p></li>
-<li>Sử dụng các hàm AssertXXX để so sánh kết quả
-  <img src="/images/setup junit windows 20.png"/></li>
-<li>Chạy Junit bằng cách click chuột phải vào project => chọn Run as => chọn Junit
-  <img src="/images/setup junit windows 21.png"/></li>
-</ul>
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -2078,6 +1981,10 @@ Tiến hành cài đặt Một số lệnh thường dùng (window, mac, linux) 
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/08/31/ruby-notes/">Ruby Notes</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/08/31/git-notes/">Git Notes</a>
       </li>
     
@@ -2091,10 +1998,6 @@ Tiến hành cài đặt Một số lệnh thường dùng (window, mac, linux) 
     
       <li class="post">
         <a href="/blog/2014/08/08/windows-notes/">Windows Notes</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/08/05/java-notes/">Java Notes</a>
       </li>
     
   </ul>

@@ -9,9 +9,9 @@
   <meta name="author" content="Phuoc-Loc Truong">
 
   
-  <meta name="description" content="Cài đặt Python trên môi trường windows Môi trường Windows 8.1
-Python 2.7.6 Thực hiện Truy cập trang chủ của Python
-Vào mục downloads để tải phiên &hellip;">
+  <meta name="description" content="Cài đặt Môi trường windows 8
+Download tại trang web
+Tiến hành cài đặt Một số lệnh thường dùng (window, mac, linux) Tạo thư mục làm việc liên kết với &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -72,6 +72,147 @@ Vào mục downloads để tải phiên &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/08/31/git-notes/">Git Notes</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-08-31T20:54:05+07:00" pubdate data-updated="true">Aug 31<span>st</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><!-- ================================================================= -->
+
+
+<h2>Cài đặt</h2>
+
+<ul>
+<li>Môi trường windows 8</li>
+<li>Download tại <a href="http://git-scm.com/downloads">trang web</a></li>
+<li>Tiến hành cài đặt</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Một số lệnh thường dùng (window, mac, linux)</h2>
+
+<ul>
+<li>Tạo thư mục làm việc liên kết với git
+
+<ul>
+<li>&ldquo;Git clone <path> &lt;Thư mục>&rdquo;&#8221;</li>
+<li><path>: là đường dẫn tới server</li>
+<li>&lt;Thư mục>: tên thư mục trên máy</li>
+</ul>
+</li>
+<li>Thêm các thay đổi
+
+<ul>
+<li>&ldquo;git add .&rdquo; => thêm tất cả</li>
+<li>&ldquo;git add &mdash;all .&rdquo; => thêm tất cả có theo vết (trường hợp rename)</li>
+</ul>
+</li>
+<li>Xem các thay đổi
+
+<ul>
+<li>&ldquo;git status&rdquo;</li>
+</ul>
+</li>
+<li>Xem so sánh với server
+
+<ul>
+<li>&ldquo;git diff HEAD&rdquo;</li>
+<li>Để thoát thì nhấn Esc và lệnh :q (thoát) hoặc các lệnh bên dưới
+
+<ul>
+<li>:q! thoát nhưng không lưu</li>
+<li>:wq ghi và thoát</li>
+<li>:x ghi và thoát</li>
+<li>:qa thoát tất cả</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Đọc các thay đổi từ server
+
+<ul>
+<li>git pull</li>
+<li>git pull origin master</li>
+</ul>
+</li>
+<li>Cập nhật thay đổi lên server
+
+<ul>
+<li>git push origin master</li>
+</ul>
+</li>
+<li>Chọn tất cả <b> nội dung của mình </b>khi có conflict (cẩn thận khi xài => phải xem xét kỹ)
+
+<ul>
+<li>git checkout &mdash;ours . # checkout our local version of all files</li>
+<li>git add -u            # mark all conflicted files as merged</li>
+<li>git commit            # commit the merge
+
+<ul>
+<li>git commit -m &ldquo;&hellip;.&rdquo;</li>
+<li>git commit &mdash;amend -m &ldquo;&hellip;.&rdquo;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Tạo một branch
+
+<ul>
+<li>git branch branch_name</li>
+</ul>
+</li>
+<li>Checkout một branch
+
+<ul>
+<li>git fetch</li>
+<li>git checkout branch_name</li>
+</ul>
+</li>
+<li>Trộn (merge) lại vào master
+
+<ul>
+<li>git checkout master</li>
+<li>git merge branch_name</li>
+</ul>
+</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -237,9 +378,88 @@ Vào mục downloads để tải phiên &hellip;">
 
 <h3>Sử dụng</h3>
 
-<p>TODO TPL</p>
+<ul>
+<li>Mở tập tin python, nhấn &ldquo;Ctrl-c !&rdquo; => cửa sổ thực thi của iPython sẽ hiện ra
+=> không sử dụng vì dùng command.</li>
+</ul>
 
-<h2>&ndash; Mở tập tin python, nhấn &ldquo;Ctrl-c !&rdquo; => cửa sổ thực thi của iPython sẽ hiện ra</h2>
+
+<!-- ================================================================= -->
+
+
+<h2>Python Tools/Utilities</h2>
+
+<p>TODO TPL
+&ndash; <em>dis</em> module: disassembler
+&ndash; <em>pdb</em> module: debug
+&ndash; <em>profile</em> module
+&ndash; <em>tabnanny</em> module</p>
+
+<!-- ================================================================= -->
+
+
+<h2>Một số lưu ý</h2>
+
+<ul>
+<li>Tên biến:
+
+<ul>
+<li>Bắt đầu bởi A &ndash;> Z hoặc a &ndash;> z hoặc underscore(_)</li>
+<li>Không cho phép ký tự @, $, %</li>
+<li>Phân biệt viết hoa, viết thường</li>
+</ul>
+</li>
+<li>Code blocks: Không được bao bởi các dấu ( { [. Được nhận biết bởi dòng và <strong>canh lề</strong></li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>if True:
+</span><span class='line'>    print "Answer"
+</span><span class='line'>    print "True"
+</span><span class='line'>else:
+</span><span class='line'>    print "Answer"
+</span><span class='line'>  print "False"</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>1 dòng lệnh trên nhiều dòng sẽ dùng dấu <strong>\</strong></li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>total = item_one + \
+</span><span class='line'>        item_two + \
+</span><span class='line'>        item_three</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Dấu &lsquo;, &ldquo;, &rsquo;&lsquo;&rsquo; hoặc &rdquo;&ldquo;&rdquo;</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>word = 'word'
+</span><span class='line'>sentence = "This is a sentence."
+</span><span class='line'>paragraph = """This is a paragraph. It is
+</span><span class='line'>made up of multiple lines and sentences."""</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Ghi chú: sử dụng <strong>#</strong></li>
+<li>Xử lý</li>
+</ul>
+
 </div>
   
   
@@ -1843,155 +2063,6 @@ Vào mục downloads để tải phiên &hellip;">
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/04/18/setup-wamp-and-config-dreamweaver/">Cài đặt Wamp và Cấu Hình Dreamweaver để Chạy Php</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-04-18T14:16:02+07:00" pubdate data-updated="true">Apr 18<span>th</span>, 2014</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><!-- ================================================================= -->
-
-
-<h2>Giới thiệu</h2>
-
-<ul>
-<li>Cài đặt phần mềm để lập trình php => dành cho người mới bắt đầu</li>
-<li>Cấu hình dreamweaver để viết code và chạy thử php</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Môi trường</h2>
-
-<ul>
-<li>Windows 8.1</li>
-<li>Wamp</li>
-<li>Dreamweaver CS6 và CS3</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Cài đặt wamp</h2>
-
-<ul>
-<li>Truy cập <a href="http://www.wampserver.com/en/">trang web của wamp</a></li>
-<li>Vào mục download để tải phiên bản phù hợp (chú ý win 32bits hay 64bits) => tập tin &ldquo;Wampserver xxx.exe&rdquo;</li>
-<li>Chạy tập tin để cài đặt (nên để mặc định) => có thể chọn thư mục cài đặt (C:\wamp)</li>
-<li>Sau khi cài xong, chạy wampserver sẽ có biểu tưởng màu xanh trên taskbar của windows như hình bên dưới<br>
-<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 1.png"/> <br></li>
-<li>Nếu biểu tượng màu cam thì có thể do đụng độ port => Chỉnh lại như sau: <br></li>
-</ul>
-
-
-<ol>
-<li> Chuột trái vào biểu tượng => apache => httpd.conf <br> </li>
-<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 2.png"/> <br>
-<li> Tìm vào chỉnh port cho phù hợp: như trong hình là 8082 </li>
-<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 3.png"/>
-<li> Khởi động lại tất cả services </li>
-<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 4.png"/>
-</ol>
-
-
-<ul>
-<li>Kết quả
-<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 11.png"/></li>
-</ul>
-
-
-<br>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Thực thi tập tin *.php</h2>
-
-<ul>
-<li>Sao chép vào thư mục &ldquo;&lt;Thư mục cài đặt>\www&rdquo; => Ví dụ: thư mục &ldquo;abc&rdquo; chứa tập tin &ldquo;1.php&rdquo; trong &ldquo;www&rdquo;
-<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 5.png"/></li>
-<li>Chạy tập tin &ldquo;1.php&rdquo; bằng cách sử dụng đường link &ldquo;<a href="http://localhost:8082/abc/1.php">http://localhost:8082/abc/1.php</a>&rdquo;
-<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 6.png"/></li>
-</ul>
-
-
-<br>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Thực thi tập tin *.php sử dụng dreamweaver CS6</h2>
-
-<ol>
-<li> Tạo site </li>
-<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 7.png"/>
-<li>Thông tin của site </li>
-<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 8.png"/>
-<li>Thông tin server của site => lưu ý thông tin trong <b>&#8220;Server Folder&#8221;</b> và <b>&#8220;Web Url&#8221;</b> </li>
-<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 9.png"/>
-<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 10.png"/>
-<li>Sau đó có thể chạy bằng F12 </li>
-</ol>
-
-
-<br>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Thực thi tập tin *.php sử dụng dreamweaver CS3</h2>
-
-<ol>
-<li> Tạo site: tên site và đường dẫn thực thi </li>
-<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 12.png"/>
-<li> Chọn ngôn ngữ thực thi là php và mysql</li>
-<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 13.png"/>
-<li> Chọn thư mục chứa các tập tin php </li>
-<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 14.png"/>
-<li> Chọn thư mục bên trong server </li>
-<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 15.png"/>
-<li> Chọn lại đường dẫn khi thực thi </li>
-<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 16.png"/>
-<li> Chọn done và xong => nhớ kiểm thư mục sẽ thực thi trong wamp </li>
-<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 17.png"/>
-<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 18.png"/>
-</ol>
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -2007,6 +2078,10 @@ Vào mục downloads để tải phiên &hellip;">
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/08/31/git-notes/">Git Notes</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/08/27/python-notes/">Python Notes</a>
       </li>
     
@@ -2020,10 +2095,6 @@ Vào mục downloads để tải phiên &hellip;">
     
       <li class="post">
         <a href="/blog/2014/08/05/java-notes/">Java Notes</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/08/05/eclipse-notes/">Eclipse Notes</a>
       </li>
     
   </ul>

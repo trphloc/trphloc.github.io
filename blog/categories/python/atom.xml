@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Python | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/python/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-08-28T14:10:36+07:00</updated>
+  <updated>2014-08-31T20:59:21+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -132,9 +132,87 @@ pip install jedi
 
 <h3>Sử dụng</h3>
 
-<p>TODO TPL</p>
+<ul>
+<li>Mở tập tin python, nhấn &ldquo;Ctrl-c !&rdquo; => cửa sổ thực thi của iPython sẽ hiện ra
+=> không sử dụng vì dùng command.</li>
+</ul>
 
-<h2>&ndash; Mở tập tin python, nhấn &ldquo;Ctrl-c !&rdquo; => cửa sổ thực thi của iPython sẽ hiện ra</h2>
+
+<!-- ================================================================= -->
+
+
+<h2>Python Tools/Utilities</h2>
+
+<p>TODO TPL
+&ndash; <em>dis</em> module: disassembler
+&ndash; <em>pdb</em> module: debug
+&ndash; <em>profile</em> module
+&ndash; <em>tabnanny</em> module</p>
+
+<!-- ================================================================= -->
+
+
+<h2>Một số lưu ý</h2>
+
+<ul>
+<li>Tên biến:
+
+<ul>
+<li>Bắt đầu bởi A &ndash;> Z hoặc a &ndash;> z hoặc underscore(_)</li>
+<li>Không cho phép ký tự @, $, %</li>
+<li>Phân biệt viết hoa, viết thường</li>
+</ul>
+</li>
+<li>Code blocks: Không được bao bởi các dấu ( { [. Được nhận biết bởi dòng và <strong>canh lề</strong></li>
+</ul>
+
+
+<p>```
+if True:</p>
+
+<pre><code>print "Answer"
+print "True"
+</code></pre>
+
+<p>else:</p>
+
+<pre><code>print "Answer"
+</code></pre>
+
+<p>  print &ldquo;False&rdquo;
+```</p>
+
+<ul>
+<li>1 dòng lệnh trên nhiều dòng sẽ dùng dấu <strong>\</strong></li>
+</ul>
+
+
+<p>```
+total = item_one + \</p>
+
+<pre><code>    item_two + \
+    item_three
+</code></pre>
+
+<p>```</p>
+
+<ul>
+<li>Dấu &lsquo;, &ldquo;, &rsquo;&lsquo;&rsquo; hoặc &rdquo;&ldquo;&rdquo;</li>
+</ul>
+
+
+<p><code>
+word = 'word'
+sentence = "This is a sentence."
+paragraph = """This is a paragraph. It is
+made up of multiple lines and sentences."""
+</code></p>
+
+<ul>
+<li>Ghi chú: sử dụng <strong>#</strong></li>
+<li>Xử lý</li>
+</ul>
+
 ]]></content>
   </entry>
   

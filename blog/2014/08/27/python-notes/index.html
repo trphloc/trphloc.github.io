@@ -234,9 +234,88 @@ Vào mục downloads để tải phiên &hellip;">
 
 <h3>Sử dụng</h3>
 
-<p>TODO TPL</p>
+<ul>
+<li>Mở tập tin python, nhấn &ldquo;Ctrl-c !&rdquo; => cửa sổ thực thi của iPython sẽ hiện ra
+=> không sử dụng vì dùng command.</li>
+</ul>
 
-<h2>&ndash; Mở tập tin python, nhấn &ldquo;Ctrl-c !&rdquo; => cửa sổ thực thi của iPython sẽ hiện ra</h2>
+
+<!-- ================================================================= -->
+
+
+<h2>Python Tools/Utilities</h2>
+
+<p>TODO TPL
+&ndash; <em>dis</em> module: disassembler
+&ndash; <em>pdb</em> module: debug
+&ndash; <em>profile</em> module
+&ndash; <em>tabnanny</em> module</p>
+
+<!-- ================================================================= -->
+
+
+<h2>Một số lưu ý</h2>
+
+<ul>
+<li>Tên biến:
+
+<ul>
+<li>Bắt đầu bởi A &ndash;> Z hoặc a &ndash;> z hoặc underscore(_)</li>
+<li>Không cho phép ký tự @, $, %</li>
+<li>Phân biệt viết hoa, viết thường</li>
+</ul>
+</li>
+<li>Code blocks: Không được bao bởi các dấu ( { [. Được nhận biết bởi dòng và <strong>canh lề</strong></li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>if True:
+</span><span class='line'>    print "Answer"
+</span><span class='line'>    print "True"
+</span><span class='line'>else:
+</span><span class='line'>    print "Answer"
+</span><span class='line'>  print "False"</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>1 dòng lệnh trên nhiều dòng sẽ dùng dấu <strong>\</strong></li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>total = item_one + \
+</span><span class='line'>        item_two + \
+</span><span class='line'>        item_three</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Dấu &lsquo;, &ldquo;, &rsquo;&lsquo;&rsquo; hoặc &rdquo;&ldquo;&rdquo;</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>word = 'word'
+</span><span class='line'>sentence = "This is a sentence."
+</span><span class='line'>paragraph = """This is a paragraph. It is
+</span><span class='line'>made up of multiple lines and sentences."""</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Ghi chú: sử dụng <strong>#</strong></li>
+<li>Xử lý</li>
+</ul>
+
 </div>
 
 
@@ -285,6 +364,8 @@ Vào mục downloads để tải phiên &hellip;">
         <a class="basic-alignment left" href="/blog/2014/08/15/emacs-note/" title="Previous Post: emacs note">&laquo; emacs note</a>
       
       
+        <a class="basic-alignment right" href="/blog/2014/08/31/git-notes/" title="Next Post: Git Notes">Git Notes &raquo;</a>
+      
     </p>
   </footer>
 </article>
@@ -296,6 +377,10 @@ Vào mục downloads để tải phiên &hellip;">
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/08/31/git-notes/">Git Notes</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2014/08/27/python-notes/">Python Notes</a>
@@ -311,10 +396,6 @@ Vào mục downloads để tải phiên &hellip;">
     
       <li class="post">
         <a href="/blog/2014/08/05/java-notes/">Java Notes</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/08/05/eclipse-notes/">Eclipse Notes</a>
       </li>
     
   </ul>

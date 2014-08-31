@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Git | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/git/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-08-28T14:10:36+07:00</updated>
+  <updated>2014-08-31T20:59:21+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -14,14 +14,26 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Hướng Dẫn Sử Dụng Git Trên Windows]]></title>
-    <link href="http://trphloc.github.io/blog/2014/04/17/using-git-windows/"/>
-    <updated>2014-04-17T13:44:05+07:00</updated>
-    <id>http://trphloc.github.io/blog/2014/04/17/using-git-windows</id>
+    <title type="html"><![CDATA[Git Notes]]></title>
+    <link href="http://trphloc.github.io/blog/2014/08/31/git-notes/"/>
+    <updated>2014-08-31T20:54:05+07:00</updated>
+    <id>http://trphloc.github.io/blog/2014/08/31/git-notes</id>
     <content type="html"><![CDATA[<!-- ================================================================= -->
 
 
-<h2>Một số trường hợp thường dùng</h2>
+<h2>Cài đặt</h2>
+
+<ul>
+<li>Môi trường windows 8</li>
+<li>Download tại <a href="http://git-scm.com/downloads">trang web</a></li>
+<li>Tiến hành cài đặt</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Một số lệnh thường dùng (window, mac, linux)</h2>
 
 <ul>
 <li>Tạo thư mục làm việc liên kết với git
@@ -36,7 +48,7 @@
 
 <ul>
 <li>&ldquo;git add .&rdquo; => thêm tất cả</li>
-<li>&ldquo;git add -a .&rdquo; => thêm tất cả có theo vết (trường hợp rename)</li>
+<li>&ldquo;git add &mdash;all .&rdquo; => thêm tất cả có theo vết (trường hợp rename)</li>
 </ul>
 </li>
 <li>Xem các thay đổi
@@ -112,15 +124,6 @@
 
 <!-- ================================================================= -->
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Cài đặt Git Trên Windows]]></title>
-    <link href="http://trphloc.github.io/blog/2014/04/17/setup-git-windows/"/>
-    <updated>2014-04-17T13:43:21+07:00</updated>
-    <id>http://trphloc.github.io/blog/2014/04/17/setup-git-windows</id>
-    <content type="html"><![CDATA[<h2>Đang cập nhật</h2>
 ]]></content>
   </entry>
   

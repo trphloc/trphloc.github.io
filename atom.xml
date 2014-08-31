@@ -4,7 +4,7 @@
   <title><![CDATA[Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-08-28T14:10:36+07:00</updated>
+  <updated>2014-08-31T20:59:21+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -12,6 +12,120 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Git Notes]]></title>
+    <link href="http://trphloc.github.io/blog/2014/08/31/git-notes/"/>
+    <updated>2014-08-31T20:54:05+07:00</updated>
+    <id>http://trphloc.github.io/blog/2014/08/31/git-notes</id>
+    <content type="html"><![CDATA[<!-- ================================================================= -->
+
+
+<h2>Cài đặt</h2>
+
+<ul>
+<li>Môi trường windows 8</li>
+<li>Download tại <a href="http://git-scm.com/downloads">trang web</a></li>
+<li>Tiến hành cài đặt</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Một số lệnh thường dùng (window, mac, linux)</h2>
+
+<ul>
+<li>Tạo thư mục làm việc liên kết với git
+
+<ul>
+<li>&ldquo;Git clone <path> &lt;Thư mục>&rdquo;&#8221;</li>
+<li><path>: là đường dẫn tới server</li>
+<li>&lt;Thư mục>: tên thư mục trên máy</li>
+</ul>
+</li>
+<li>Thêm các thay đổi
+
+<ul>
+<li>&ldquo;git add .&rdquo; => thêm tất cả</li>
+<li>&ldquo;git add &mdash;all .&rdquo; => thêm tất cả có theo vết (trường hợp rename)</li>
+</ul>
+</li>
+<li>Xem các thay đổi
+
+<ul>
+<li>&ldquo;git status&rdquo;</li>
+</ul>
+</li>
+<li>Xem so sánh với server
+
+<ul>
+<li>&ldquo;git diff HEAD&rdquo;</li>
+<li>Để thoát thì nhấn Esc và lệnh :q (thoát) hoặc các lệnh bên dưới
+
+<ul>
+<li>:q! thoát nhưng không lưu</li>
+<li>:wq ghi và thoát</li>
+<li>:x ghi và thoát</li>
+<li>:qa thoát tất cả</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Đọc các thay đổi từ server
+
+<ul>
+<li>git pull</li>
+<li>git pull origin master</li>
+</ul>
+</li>
+<li>Cập nhật thay đổi lên server
+
+<ul>
+<li>git push origin master</li>
+</ul>
+</li>
+<li>Chọn tất cả <b> nội dung của mình </b>khi có conflict (cẩn thận khi xài => phải xem xét kỹ)
+
+<ul>
+<li>git checkout &mdash;ours . # checkout our local version of all files</li>
+<li>git add -u            # mark all conflicted files as merged</li>
+<li>git commit            # commit the merge
+
+<ul>
+<li>git commit -m &ldquo;&hellip;.&rdquo;</li>
+<li>git commit &mdash;amend -m &ldquo;&hellip;.&rdquo;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Tạo một branch
+
+<ul>
+<li>git branch branch_name</li>
+</ul>
+</li>
+<li>Checkout một branch
+
+<ul>
+<li>git fetch</li>
+<li>git checkout branch_name</li>
+</ul>
+</li>
+<li>Trộn (merge) lại vào master
+
+<ul>
+<li>git checkout master</li>
+<li>git merge branch_name</li>
+</ul>
+</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Python Notes]]></title>
@@ -154,9 +268,88 @@
 
 <h3>Sử dụng</h3>
 
-<p>TODO TPL</p>
+<ul>
+<li>Mở tập tin python, nhấn &ldquo;Ctrl-c !&rdquo; => cửa sổ thực thi của iPython sẽ hiện ra
+=> không sử dụng vì dùng command.</li>
+</ul>
 
-<h2>&ndash; Mở tập tin python, nhấn &ldquo;Ctrl-c !&rdquo; => cửa sổ thực thi của iPython sẽ hiện ra</h2>
+
+<!-- ================================================================= -->
+
+
+<h2>Python Tools/Utilities</h2>
+
+<p>TODO TPL
+&ndash; <em>dis</em> module: disassembler
+&ndash; <em>pdb</em> module: debug
+&ndash; <em>profile</em> module
+&ndash; <em>tabnanny</em> module</p>
+
+<!-- ================================================================= -->
+
+
+<h2>Một số lưu ý</h2>
+
+<ul>
+<li>Tên biến:
+
+<ul>
+<li>Bắt đầu bởi A &ndash;> Z hoặc a &ndash;> z hoặc underscore(_)</li>
+<li>Không cho phép ký tự @, $, %</li>
+<li>Phân biệt viết hoa, viết thường</li>
+</ul>
+</li>
+<li>Code blocks: Không được bao bởi các dấu ( { [. Được nhận biết bởi dòng và <strong>canh lề</strong></li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>if True:
+</span><span class='line'>    print "Answer"
+</span><span class='line'>    print "True"
+</span><span class='line'>else:
+</span><span class='line'>    print "Answer"
+</span><span class='line'>  print "False"</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>1 dòng lệnh trên nhiều dòng sẽ dùng dấu <strong>\</strong></li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>total = item_one + \
+</span><span class='line'>        item_two + \
+</span><span class='line'>        item_three</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Dấu &lsquo;, &ldquo;, &rsquo;&lsquo;&rsquo; hoặc &rdquo;&ldquo;&rdquo;</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>word = 'word'
+</span><span class='line'>sentence = "This is a sentence."
+</span><span class='line'>paragraph = """This is a paragraph. It is
+</span><span class='line'>made up of multiple lines and sentences."""</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Ghi chú: sử dụng <strong>#</strong></li>
+<li>Xử lý</li>
+</ul>
+
 ]]></content>
   </entry>
   
@@ -1659,117 +1852,6 @@
 <img src="http://trphloc.github.io/images/2014-04-18-setup-wamp-and-config-dreamweaver 18.png"/>
 </ol>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Hướng Dẫn Sử Dụng Git Trên Windows]]></title>
-    <link href="http://trphloc.github.io/blog/2014/04/17/using-git-windows/"/>
-    <updated>2014-04-17T13:44:05+07:00</updated>
-    <id>http://trphloc.github.io/blog/2014/04/17/using-git-windows</id>
-    <content type="html"><![CDATA[<!-- ================================================================= -->
-
-
-<h2>Một số trường hợp thường dùng</h2>
-
-<ul>
-<li>Tạo thư mục làm việc liên kết với git
-
-<ul>
-<li>&ldquo;Git clone <path> &lt;Thư mục>&rdquo;&#8221;</li>
-<li><path>: là đường dẫn tới server</li>
-<li>&lt;Thư mục>: tên thư mục trên máy</li>
-</ul>
-</li>
-<li>Thêm các thay đổi
-
-<ul>
-<li>&ldquo;git add .&rdquo; => thêm tất cả</li>
-<li>&ldquo;git add -a .&rdquo; => thêm tất cả có theo vết (trường hợp rename)</li>
-</ul>
-</li>
-<li>Xem các thay đổi
-
-<ul>
-<li>&ldquo;git status&rdquo;</li>
-</ul>
-</li>
-<li>Xem so sánh với server
-
-<ul>
-<li>&ldquo;git diff HEAD&rdquo;</li>
-<li>Để thoát thì nhấn Esc và lệnh :q (thoát) hoặc các lệnh bên dưới
-
-<ul>
-<li>:q! thoát nhưng không lưu</li>
-<li>:wq ghi và thoát</li>
-<li>:x ghi và thoát</li>
-<li>:qa thoát tất cả</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Đọc các thay đổi từ server
-
-<ul>
-<li>git pull</li>
-<li>git pull origin master</li>
-</ul>
-</li>
-<li>Cập nhật thay đổi lên server
-
-<ul>
-<li>git push origin master</li>
-</ul>
-</li>
-<li>Chọn tất cả <b> nội dung của mình </b>khi có conflict (cẩn thận khi xài => phải xem xét kỹ)
-
-<ul>
-<li>git checkout &mdash;ours . # checkout our local version of all files</li>
-<li>git add -u            # mark all conflicted files as merged</li>
-<li>git commit            # commit the merge
-
-<ul>
-<li>git commit -m &ldquo;&hellip;.&rdquo;</li>
-<li>git commit &mdash;amend -m &ldquo;&hellip;.&rdquo;</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Tạo một branch
-
-<ul>
-<li>git branch branch_name</li>
-</ul>
-</li>
-<li>Checkout một branch
-
-<ul>
-<li>git fetch</li>
-<li>git checkout branch_name</li>
-</ul>
-</li>
-<li>Trộn (merge) lại vào master
-
-<ul>
-<li>git checkout master</li>
-<li>git merge branch_name</li>
-</ul>
-</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Cài đặt Git Trên Windows]]></title>
-    <link href="http://trphloc.github.io/blog/2014/04/17/setup-git-windows/"/>
-    <updated>2014-04-17T13:43:21+07:00</updated>
-    <id>http://trphloc.github.io/blog/2014/04/17/setup-git-windows</id>
-    <content type="html"><![CDATA[<h2>Đang cập nhật</h2>
 ]]></content>
   </entry>
   

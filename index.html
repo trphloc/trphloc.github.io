@@ -331,9 +331,10 @@ Chạy &hellip;">
 <!-- ================================================================= -->
 
 
-<h2>Cài đặt pip trên windows 8</h2>
+<h2>Cài đặt pip</h2>
 
 <ul>
+<li>Môi trường windows</li>
 <li>Download từ <a href="/files/get-pip.py">link</a> nguồn: <a href="https://pip.pypa.io/en/latest/installing.html">https://pip.pypa.io/en/latest/installing.html</a></li>
 <li>Thực thi lệnh</li>
 </ul>
@@ -362,6 +363,40 @@ Chạy &hellip;">
 </pre></td><td class='code'><pre><code class=''><span class='line'>pip install ipython</span></code></pre></td></tr></table></div></figure>
 
 
+
+
+<!-- ================================================================= -->
+
+
+<h2>Virtualenv</h2>
+
+<h3>Cài đặt virtualenv</h3>
+
+<ul>
+<li>Môi trường windows</li>
+<li>Sử dụng lệnh: &ldquo;easy_install virtualenv&rdquo; trong cmd</li>
+</ul>
+
+
+<h3>Sử dụng</h3>
+
+<ul>
+<li>Tạo môi trường tên abc
+
+<ul>
+<li>virtualenv &mdash;no-site-packages abc: tạo môi trường không sử dụng các packages</li>
+<li>virtualenv abc</li>
+</ul>
+</li>
+<li>Kích hoạt môi trường bằng cách chạy scripts của nó
+
+<ul>
+<li>&ldquo;abc/bin/activate&rdquo;: trên windows</li>
+<li>&ldquo;source working/bin/activate&rdquo;: trên linux hay MAC</li>
+</ul>
+</li>
+<li>Chạy lệnh &ldquo;deactive&rdquo; để thoát</li>
+</ul>
 
 
 <!-- ================================================================= -->
@@ -521,6 +556,17 @@ Chạy &hellip;">
 <ul>
 <li>Ghi chú: sử dụng <strong>#</strong></li>
 <li>Xử lý</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Subprocess</h2>
+
+<ul>
+<li>import subprocess</li>
+<li>subprocess.call([some_command, some_argument, another_argument_or_path])</li>
 </ul>
 
 </div>
@@ -1472,7 +1518,7 @@ Chạy &hellip;">
   <div class="entry-content"><!-- ================================================================= -->
 
 
-<h2>Một số lệch thông dụng</h2>
+<h2>Một số lệnh</h2>
 
 <ul>
 <li>sudo: thực hiện lệch dưới quyền admin</li>
@@ -1496,6 +1542,9 @@ Chạy &hellip;">
 <li>Vd: ln -s /Volumes/Classic/ Classic</li>
 </ul>
 </li>
+<li>uname -a: thông tin hệ thống</li>
+<li>df -h: thông tin lưu trữ</li>
+<li>source scripts: thực thi scripts</li>
 </ul>
 
 

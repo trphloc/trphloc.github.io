@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Windows | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/windows/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-09-01T14:36:29+07:00</updated>
+  <updated>2014-09-04T20:27:34+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -152,6 +152,14 @@
 <ul>
 <li>git checkout master</li>
 <li>git merge branch_name</li>
+</ul>
+</li>
+<li>Tag
+
+<ul>
+<li>git tag tag_name: tạo một tag</li>
+<li>git push &mdash;tags: cập nhật tất cả tag tới server</li>
+<li>git push origin tag tag_name: cập nhật 1 tag tới server</li>
 </ul>
 </li>
 </ul>

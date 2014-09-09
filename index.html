@@ -249,6 +249,7 @@ Chạy &hellip;">
 
 <ul>
 <li>git branch branch_name</li>
+<li>git chekcout -b newbranch tag_name: tạo 1 branch từ tag tên tag_name</li>
 </ul>
 </li>
 <li>Checkout một branch
@@ -761,7 +762,13 @@ Chạy &hellip;">
 <li>set-input-method: vietnamese-telex/british</li>
 </ul>
 </li>
-<li>Ctrl-h: help</li>
+<li>Ctrl-h: help
+
+<ul>
+<li>Ctrl-h v: biến</li>
+<li>Ctrl-h c:</li>
+</ul>
+</li>
 <li>Alt-`: sử dụng menu</li>
 <li>Alt-;: ghi chú hoặc bỏ ghi chú các dòng được chọn</li>
 <li>Ctrl-g: hủy thao tác đang làm</li>
@@ -905,7 +912,103 @@ Chạy &hellip;">
 <li>Alt-x grep:</li>
 <li>Alt-x grep-find:</li>
 <li>Alt-x find-name-dired:</li>
+<li>Mở tập tin bằng ứng dụng ngoài: thêm vào tập tin cấu hình</li>
 </ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>;;Open File in External App
+</span><span class='line'>(defun xah-open-in-external-app (&optional file)
+</span><span class='line'>  "Open the current file or dired marked files in external app. The app is chosen from your OS's preference."
+</span><span class='line'>  (interactive)
+</span><span class='line'>  (let ( doIt
+</span><span class='line'>         (myFileList
+</span><span class='line'>          (cond
+</span><span class='line'>           ((string-equal major-mode "dired-mode") (dired-get-marked-files))
+</span><span class='line'>           ((not file) (list (buffer-file-name)))
+</span><span class='line'>           (file (list file)))))
+</span><span class='line'>    
+</span><span class='line'>    (setq doIt (if (&lt;= (length myFileList) 5)
+</span><span class='line'>                   t
+</span><span class='line'>                 (y-or-n-p "Open more than 5 files? ") ) )
+</span><span class='line'>    
+</span><span class='line'>    (when doIt
+</span><span class='line'>      (cond
+</span><span class='line'>       ((string-equal system-type "windows-nt")
+</span><span class='line'>        (mapc (lambda (fPath) (w32-shell-execute "open" (replace-regexp-in-string "/" "\\" fPath t t)) ) myFileList))
+</span><span class='line'>       ((string-equal system-type "darwin")
+</span><span class='line'>        (mapc (lambda (fPath) (shell-command (format "open \"%s\"" fPath)) )  myFileList) )
+</span><span class='line'>       ((string-equal system-type "gnu/linux")
+</span><span class='line'>        (mapc (lambda (fPath) (let ((process-connection-type nil)) (start-process "" nil "xdg-open" fPath)) ) myFileList) ) ) ) ) )
+</span><span class='line'>
+</span><span class='line'>;; define key for dired mode
+</span><span class='line'>(require 'dired )
+</span><span class='line'>(define-key dired-mode-map (kbd "C-c a") 'xah-open-in-external-app)</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Mở thư mục trong explorer: thêm vào tập tin cấu hình</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>;;Open File in Desktop
+</span><span class='line'>(defun xah-open-in-desktop ()
+</span><span class='line'>  "Show current file in desktop (OS's file manager)."
+</span><span class='line'>  (interactive)
+</span><span class='line'>  (cond
+</span><span class='line'>   ((string-equal system-type "windows-nt")
+</span><span class='line'>    (w32-shell-execute "explore" (replace-regexp-in-string "/" "\\" default-directory t t)))
+</span><span class='line'>   ((string-equal system-type "darwin") (shell-command "open ."))
+</span><span class='line'>   ((string-equal system-type "gnu/linux")
+</span><span class='line'>    (let ((process-connection-type nil)) (start-process "" nil "xdg-open" "."))
+</span><span class='line'>    ;; (shell-command "xdg-open .") ;; 2013-02-10 this sometimes froze emacs till the folder is closed. ⁖ with nautilus
+</span><span class='line'>    ) ))
+</span><span class='line'>
+</span><span class='line'>;; define key for dired mode
+</span><span class='line'>(define-key dired-mode-map (kbd "C-c d") 'xah-open-in-desktop)</span></code></pre></td></tr></table></div></figure>
+
+
 
 
 <!-- ================================================================= -->

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Git | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/git/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-09-04T20:27:34+07:00</updated>
+  <updated>2014-09-09T15:06:25+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -103,6 +103,7 @@
 
 <ul>
 <li>git branch branch_name</li>
+<li>git chekcout -b newbranch tag_name: tạo 1 branch từ tag tên tag_name</li>
 </ul>
 </li>
 <li>Checkout một branch

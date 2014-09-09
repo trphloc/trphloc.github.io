@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Emacs | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/emacs/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-09-04T20:27:34+07:00</updated>
+  <updated>2014-09-09T15:06:25+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -405,7 +405,13 @@ made up of multiple lines and sentences."""
 <li>set-input-method: vietnamese-telex/british</li>
 </ul>
 </li>
-<li>Ctrl-h: help</li>
+<li>Ctrl-h: help
+
+<ul>
+<li>Ctrl-h v: biến</li>
+<li>Ctrl-h c:</li>
+</ul>
+</li>
 <li>Alt-`: sử dụng menu</li>
 <li>Alt-;: ghi chú hoặc bỏ ghi chú các dòng được chọn</li>
 <li>Ctrl-g: hủy thao tác đang làm</li>
@@ -543,8 +549,69 @@ made up of multiple lines and sentences."""
 <li>Alt-x grep:</li>
 <li>Alt-x grep-find:</li>
 <li>Alt-x find-name-dired:</li>
+<li>Mở tập tin bằng ứng dụng ngoài: thêm vào tập tin cấu hình</li>
 </ul>
 
+
+<p>```
+;;Open File in External App
+(defun xah-open-in-external-app (&amp;optional file)
+  &ldquo;Open the current file or dired marked files in external app. The app is chosen from your OS&rsquo;s preference.&rdquo;
+  (interactive)
+  (let ( doIt</p>
+
+<pre><code>     (myFileList
+      (cond
+       ((string-equal major-mode "dired-mode") (dired-get-marked-files))
+       ((not file) (list (buffer-file-name)))
+       (file (list file)))))
+
+(setq doIt (if (&lt;= (length myFileList) 5)
+               t
+             (y-or-n-p "Open more than 5 files? ") ) )
+
+(when doIt
+  (cond
+   ((string-equal system-type "windows-nt")
+    (mapc (lambda (fPath) (w32-shell-execute "open" (replace-regexp-in-string "/" "\\" fPath t t)) ) myFileList))
+   ((string-equal system-type "darwin")
+    (mapc (lambda (fPath) (shell-command (format "open \"%s\"" fPath)) )  myFileList) )
+   ((string-equal system-type "gnu/linux")
+    (mapc (lambda (fPath) (let ((process-connection-type nil)) (start-process "" nil "xdg-open" fPath)) ) myFileList) ) ) ) ) )
+</code></pre>
+
+<p>;; define key for dired mode
+(require &lsquo;dired )
+(define-key dired-mode-map (kbd &ldquo;C-c a&rdquo;) 'xah-open-in-external-app)
+```</p>
+
+<ul>
+<li>Mở thư mục trong explorer: thêm vào tập tin cấu hình</li>
+</ul>
+
+
+<p>```
+;;Open File in Desktop
+(defun xah-open-in-desktop ()
+  &ldquo;Show current file in desktop (OS&rsquo;s file manager).&rdquo;
+  (interactive)
+  (cond
+   ((string-equal system-type &ldquo;windows-nt&rdquo;)</p>
+
+<pre><code>(w32-shell-execute "explore" (replace-regexp-in-string "/" "\\" default-directory t t)))
+</code></pre>
+
+<p>   ((string-equal system-type &ldquo;darwin&rdquo;) (shell-command &ldquo;open .&rdquo;))
+   ((string-equal system-type &ldquo;gnu/linux&rdquo;)</p>
+
+<pre><code>(let ((process-connection-type nil)) (start-process "" nil "xdg-open" "."))
+;; (shell-command "xdg-open .") ;; 2013-02-10 this sometimes froze emacs till the folder is closed. ⁖ with nautilus
+) ))
+</code></pre>
+
+<p>;; define key for dired mode
+(define-key dired-mode-map (kbd &ldquo;C-c d&rdquo;) &lsquo;xah-open-in-desktop)
+```</p>
 
 <!-- ================================================================= -->
 

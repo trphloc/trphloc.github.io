@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tutorial | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/tutorial/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-09-09T15:06:25+07:00</updated>
+  <updated>2014-09-10T12:14:28+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -760,6 +760,18 @@
   (define-key global-map (kbd &ldquo;C-c SPC&rdquo;) 'ace-jump-char-mode)
   &rsquo;&lsquo;&rsquo;</p></li>
 <li><p><a href="https://github.com/winterTTr/ace-jump-mode">Tham khảo</a></p></li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Bookmark</h2>
+
+<ul>
+<li>C-x r m <RET>: thêm bookmark</li>
+<li>C-x r b: chuyển bookmark</li>
+<li>C-x r l: hiển thị danh sách bookmarks</li>
 </ul>
 
 ]]></content>

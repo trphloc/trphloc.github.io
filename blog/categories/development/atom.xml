@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Development | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/development/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-09-09T15:06:25+07:00</updated>
+  <updated>2014-09-10T12:14:28+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -86,6 +86,10 @@
 <li>Ctrl + Shift + T: mở tập tin trong jar, thư viện, &hellip;</li>
 <li>Ctrl + H: tìm kiếm</li>
 <li>Ctrl + M: phóng to cửa sổ hiện hành</li>
+<li>Alt + F7: Next Page</li>
+<li>Alt + Page down: Next sub-tab</li>
+<li>Ctrl + F6: Next Editor</li>
+<li>Ctrl + F7: Next View</li>
 </ul>
 
 

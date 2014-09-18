@@ -1089,6 +1089,48 @@ Vào mục downloads để tải phiên bản phù hợp ( &hellip;">
 </ul>
 
 
+<h3>Soạn thảo tập tin với quyền root</h3>
+
+<ul>
+<li>Copy đoạn mã sau vào tập tin cấu hình</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>;; editor as root
+</span><span class='line'>(defun sudo-edit (&optional arg)
+</span><span class='line'>  "Edit currently visited file as root.
+</span><span class='line'>
+</span><span class='line'>With a prefix ARG prompt for a file to visit.
+</span><span class='line'>Will also prompt for a file to visit if current
+</span><span class='line'>buffer is not visiting a file."
+</span><span class='line'>  (interactive "P")
+</span><span class='line'>  (if (or arg (not buffer-file-name))
+</span><span class='line'>      (find-file (concat "/sudo:root@localhost:"
+</span><span class='line'>                         (ido-read-file-name "Find file(as root): ")))
+</span><span class='line'>    (find-alternate-file (concat "/sudo:root@localhost:" buffer-file-name))))
+</span><span class='line'>
+</span><span class='line'>(global-set-key (kbd "C-x C-r") 'sudo-edit)</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Mở tập tin => gõ lệnh Ctrl-x Ctrl-r</li>
+</ul>
+
+
 <!-- ================================================================= -->
 
 
@@ -1999,46 +2041,6 @@ Vào mục downloads để tải phiên bản phù hợp ( &hellip;">
 <!-- ================================================================= -->
 
 
-<h2>Soạn thảo tập tin với quyền root</h2>
-
-<ul>
-<li>Copy đoạn mã sau vào tập tin cấu hình</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>;; editor as root
-</span><span class='line'>(defun sudo-edit (&optional arg)
-</span><span class='line'>  "Edit currently visited file as root.
-</span><span class='line'>
-</span><span class='line'>With a prefix ARG prompt for a file to visit.
-</span><span class='line'>Will also prompt for a file to visit if current
-</span><span class='line'>buffer is not visiting a file."
-</span><span class='line'>  (interactive "P")
-</span><span class='line'>  (if (or arg (not buffer-file-name))
-</span><span class='line'>      (find-file (concat "/sudo:root@localhost:"
-</span><span class='line'>                         (ido-read-file-name "Find file(as root): ")))
-</span><span class='line'>    (find-alternate-file (concat "/sudo:root@localhost:" buffer-file-name))))
-</span><span class='line'>
-</span><span class='line'>(global-set-key (kbd "C-x C-r") 'sudo-edit)</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>Mở tập tin => gõ lệnh Ctrl-x Ctrl-r</li>
-</ul>
 
 </div>
   

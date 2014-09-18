@@ -5,14 +5,14 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Terminal on Mac - 10.9 - Phuoc-Loc's blog</title>
+  <title>Mac Notes - Phuoc-Loc's blog</title>
   <meta name="author" content="Phuoc-Loc Truong">
 
   
-  <meta name="description" content="Một số lệnh sudo: thực hiện lệch dưới quyền admin
+  <meta name="description" content="Một số lệnh trên terminate sudo: thực hiện lệch dưới quyền admin
 ls: liệt kê danh sách tập tin
 cd: di chuyển tới thư mục
-sudo chmod -R 777 XXX: chỉnh permission &hellip;">
+sudo chmod -R 777 XXX: &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -21,7 +21,7 @@ sudo chmod -R 777 XXX: chỉnh permission &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://trphloc.github.io/blog/2014/08/01/terminal-on-mac">
+  <link rel="canonical" href="http://trphloc.github.io/blog/2014/08/01/mac-os-notes">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Phuoc-Loc's blog" type="application/atom+xml">
@@ -76,7 +76,7 @@ sudo chmod -R 777 XXX: chỉnh permission &hellip;">
   
   <header>
     
-      <h1 class="entry-title">Terminal on Mac - 10.9</h1>
+      <h1 class="entry-title">Mac Notes</h1>
     
     
       <p class="meta">
@@ -102,7 +102,7 @@ sudo chmod -R 777 XXX: chỉnh permission &hellip;">
 <div class="entry-content"><!-- ================================================================= -->
 
 
-<h2>Một số lệnh</h2>
+<h2>Một số lệnh trên terminate</h2>
 
 <ul>
 <li>sudo: thực hiện lệch dưới quyền admin</li>
@@ -129,6 +129,29 @@ sudo chmod -R 777 XXX: chỉnh permission &hellip;">
 <li>uname -a: thông tin hệ thống</li>
 <li>df -h: thông tin lưu trữ</li>
 <li>source scripts: thực thi scripts</li>
+<li>Hiển thị tất cả tập tin trong Finder (thực thi 2 lệnh sau)
+
+<ul>
+<li>defaults write com.apple.finder AppleShowAllFiles YES</li>
+<li>killall Finder /System/Library/CoreServices/Finder.app</li>
+<li>Nếu muốn hiển thị bình thường thì chỉnh YES thành NO trong câu lệnh 1</li>
+</ul>
+</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Một số thao tác</h2>
+
+<ul>
+<li>Command-C: copy</li>
+<li>Command-V: paste</li>
+<li>Command-Option-V: paste (cut)</li>
+<li>Command-M: thu nhỏ màn hình</li>
+<li>Command-Tab và phím lên/xuống: để di chuyển đến màn hình đang thu nhỏ</li>
+<li>Danh sách phím tắt: <a href="http://support.apple.com/kb/ht1343">tham khảo</a></li>
 </ul>
 
 
@@ -138,7 +161,13 @@ sudo chmod -R 777 XXX: chỉnh permission &hellip;">
 <h2>Apache</h2>
 
 <ul>
+<li>Cài đặt
+
+<ul>
+<li>Đã được cài mặt định trong mac</li>
 <li>Tham khảo: <a href="http://jason.pureconcepts.net/2012/10/install-apache-php-mysql-mac-os-x/">link</a></li>
+</ul>
+</li>
 <li>Sử dụng
 
 <ul>
@@ -289,6 +318,105 @@ sudo chmod -R 777 XXX: chỉnh permission &hellip;">
 </li>
 </ul>
 
+
+<!-- ================================================================= -->
+
+
+<h2>vi editor</h2>
+
+<ul>
+<li>Sử dụng
+
+<ul>
+<li>Bắt đầu: vi tentaptin</li>
+<li>Thoát và lưu: ZZ hoặc :wq</li>
+<li>Thoát và không lưu: :q</li>
+<li>Lưu: :w</li>
+</ul>
+</li>
+<li>Di chuyển trang
+
+<ul>
+<li>G &ndash; di chuyển tới dòng cuối cùng trong tập tin</li>
+<li>xG &ndash; di chuyển tơí dòng x</li>
+<li>^F &ndash; pagedown</li>
+<li>^D &ndash; pagedown</li>
+<li>^U &ndash; pageup</li>
+</ul>
+</li>
+<li>Thêm
+
+<ul>
+<li>r &ndash; thay ký tự ngay con trỏ bằng ký tự liền sau</li>
+<li>i &ndash; thêm trước con trỏ</li>
+<li>a &ndash; thêm sau con trỏ</li>
+<li>A &ndash; thêm vào cuối dòng</li>
+</ul>
+</li>
+<li>Xoá
+
+<ul>
+<li>x &ndash; xóa ký tự ngay con trỏ</li>
+<li>dd &ndash; xóa dòng ngay con trỏ</li>
+<li>dw &ndash; xóa từ ngay con trỏ</li>
+<li>db &ndash; xóa từ trước con trỏ</li>
+</ul>
+</li>
+<li>Tìm kiếm
+
+<ul>
+<li>? &ndash; tìm từ phía sau</li>
+<li>/ &ndash; tìm từ phía trước</li>
+</ul>
+</li>
+<li><a href="http://www.cs.rit.edu/~cslab/vi.html">Tham khảo</a></li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Soạn thảo tập tin với quyền root</h2>
+
+<ul>
+<li>Copy đoạn mã sau vào tập tin cấu hình</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>;; editor as root
+</span><span class='line'>(defun sudo-edit (&optional arg)
+</span><span class='line'>  "Edit currently visited file as root.
+</span><span class='line'>
+</span><span class='line'>With a prefix ARG prompt for a file to visit.
+</span><span class='line'>Will also prompt for a file to visit if current
+</span><span class='line'>buffer is not visiting a file."
+</span><span class='line'>  (interactive "P")
+</span><span class='line'>  (if (or arg (not buffer-file-name))
+</span><span class='line'>      (find-file (concat "/sudo:root@localhost:"
+</span><span class='line'>                         (ido-read-file-name "Find file(as root): ")))
+</span><span class='line'>    (find-alternate-file (concat "/sudo:root@localhost:" buffer-file-name))))
+</span><span class='line'>
+</span><span class='line'>(global-set-key (kbd "C-x C-r") 'sudo-edit)</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Mở tập tin => gõ lệnh Ctrl-x Ctrl-r</li>
+</ul>
+
 </div>
 
 
@@ -325,7 +453,7 @@ sudo chmod -R 777 XXX: chỉnh permission &hellip;">
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://trphloc.github.io/blog/2014/08/01/terminal-on-mac/" data-via="" data-counturl="http://trphloc.github.io/blog/2014/08/01/terminal-on-mac/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://trphloc.github.io/blog/2014/08/01/mac-os-notes/" data-via="" data-counturl="http://trphloc.github.io/blog/2014/08/01/mac-os-notes/" >Tweet</a>
   
   
   
@@ -364,7 +492,7 @@ sudo chmod -R 777 XXX: chỉnh permission &hellip;">
       </li>
     
       <li class="post">
-        <a href="/blog/2014/08/15/emacs-note/">Emacs Note</a>
+        <a href="/blog/2014/08/15/emacs-notes/">Emacs Note</a>
       </li>
     
       <li class="post">

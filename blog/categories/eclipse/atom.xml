@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Eclipse | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/eclipse/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-09-10T12:14:28+07:00</updated>
+  <updated>2014-09-18T10:32:09+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -23,6 +23,8 @@
 
 <h2>Một số phím tắt</h2>
 
+<h3>Windows</h3>
+
 <ul>
 <li><b>Ctrl + Shift + L: xem danh sách phím tắt</b></li>
 <li>Alt + Shift + Q, P: xem package explorer</li>
@@ -37,6 +39,21 @@
 <li>Alt + Page down: Next sub-tab</li>
 <li>Ctrl + F6: Next Editor</li>
 <li>Ctrl + F7: Next View</li>
+<li>Ctrl + 1: quick fix</li>
+</ul>
+
+
+<h3>Mac</h3>
+
+<ul>
+<li><b> CMD + Shift + L: xem danh sách phím tắt </b></li>
+<li>Alt + CMD + Q, P: xem package explorer</li>
+<li>Alt + CMD + Q, C: xem console</li>
+<li>Alt + CMD + Q, L: xem error log</li>
+<li>Alt + F5: update project</li>
+<li>CMD + Shift + R: mở tập tin workspace</li>
+<li>CMD + Shift + T: mở tập tin trong jar, thư viện, &hellip;</li>
+<li>CMD + H: tìm kiếm</li>
 </ul>
 
 
@@ -68,9 +85,16 @@
 <li>Mở Eclipse => menu windows => chọn preferences => chọn Server => chọn Runtime Environments</li>
 <li>Nhấn nút Add => chọn Apache => chọn Apache tomcat 7.0 => chọn Next</li>
 <li>Chọn đường dẫn C\abc\Tomcat7.0 và JRE phù hợp</li>
-<li>Chọn Finish
+<li>Chọn Finish</li>
+</ul>
 
-<h3>Phát sinh keystore</h3></li>
+
+<!-- ================================================================= -->
+
+
+<h2>Phát sinh keystore</h2>
+
+<ul>
 <li>Mở cmd</li>
 <li>Chạy lệnh và làm theo hướng dẫn: keytool -genkey -alias tomcat -keyalg RSA</li>
 <li>Keystore sẽ được lưu trong: &ldquo;C:\Users\trphloc.keystore&rdquo; (trphloc: là tên tài khoản trên máy)</li>
@@ -121,6 +145,37 @@
 </span><span class='line'>&lt;/code>&lt;/pre>
 </span><span class='line'>
 </span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<!-- ================================================================= -->
+
+
+<h2>Cài đặt plugin</h2>
+
+<h3>Cách 1</h3>
+
+<ul>
+<li>Menu Help => chọn Install New Software</li>
+<li>Chọn add site:
+
+<ul>
+<li>Gõ tên: &hellip;</li>
+<li>Gõ đường dẫn đến server</li>
+</ul>
+</li>
+<li>Chọn plugin cần cài đặt trong danh sách bên dưới</li>
+<li>Chọn next</li>
+<li>Chọn accept và next &hellip;</li>
+</ul>
+
+
+<h3>Cách 2</h3>
+
+<ul>
+<li>Vào menu Help => Eclipse Marketplace => Gõ &ldquo;tên&rdquo; vào ô tìm kiếm => chọn tìm</li>
+<li>Chọn install</li>
+<li>Chọn all và nhấn nút Confirm</li>
+</ul>
+
 ]]></content>
   </entry>
   

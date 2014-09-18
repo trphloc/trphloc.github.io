@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Install | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/install/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-09-10T12:14:28+07:00</updated>
+  <updated>2014-09-18T10:32:09+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -21,7 +21,7 @@
     <content type="html"><![CDATA[<!-- ================================================================= -->
 
 
-<h2>Cài đặt Ruby 2.0.0</h2>
+<h2>Cài đặt Ruby 2.0.0 trên môi trường windows</h2>
 
 <ul>
 <li>Môi trường Windows và Ruby 2.0.0</li>
@@ -35,7 +35,7 @@
 <!-- ================================================================= -->
 
 
-<h2>Cài đặt RubyDevKit</h2>
+<h2>Cài đặt RubyDevKit trên môi trường windows</h2>
 
 <ul>
 <li>Môi trường Windows và Ruby DevKit 4.7.2</li>
@@ -45,6 +45,31 @@
 <li>Thêm đường dẫn &ldquo;C:\abc\RubyDevKit\bin&rdquo; vào biến môi trường (Environment variables) &ldquo;Path&rdquo;</li>
 </ul>
 
+
+<!-- ================================================================= -->
+
+
+<h2>Ruby trên Mac OS &ndash; Maverick</h2>
+
+<ul>
+<li>Đã có sẵn</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Bundle trên Mac OS &ndash; Maverick</h2>
+
+<ul>
+<li>Chạy các lệnh sau</li>
+</ul>
+
+
+<p><code>
+sudo gem install bundler
+bundle install
+</code></p>
 ]]></content>
   </entry>
   

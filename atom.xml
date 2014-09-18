@@ -4,7 +4,7 @@
   <title><![CDATA[Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-09-10T12:14:28+07:00</updated>
+  <updated>2014-09-18T10:32:09+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -21,7 +21,7 @@
     <content type="html"><![CDATA[<!-- ================================================================= -->
 
 
-<h2>Cài đặt Ruby 2.0.0</h2>
+<h2>Cài đặt Ruby 2.0.0 trên môi trường windows</h2>
 
 <ul>
 <li>Môi trường Windows và Ruby 2.0.0</li>
@@ -35,7 +35,7 @@
 <!-- ================================================================= -->
 
 
-<h2>Cài đặt RubyDevKit</h2>
+<h2>Cài đặt RubyDevKit trên môi trường windows</h2>
 
 <ul>
 <li>Môi trường Windows và Ruby DevKit 4.7.2</li>
@@ -44,6 +44,32 @@
 <li>Chạy tập tin DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe và làm theo hướng dẫn (chọn thư mục cài đặt C:\abc\RubyDevKit)</li>
 <li>Thêm đường dẫn &ldquo;C:\abc\RubyDevKit\bin&rdquo; vào biến môi trường (Environment variables) &ldquo;Path&rdquo;</li>
 </ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Ruby trên Mac OS &ndash; Maverick</h2>
+
+<ul>
+<li>Đã có sẵn</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Bundle trên Mac OS &ndash; Maverick</h2>
+
+<ul>
+<li>Chạy các lệnh sau</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo gem install bundler
+</span><span class='line'>bundle install</span></code></pre></td></tr></table></div></figure>
 
 ]]></content>
   </entry>
@@ -445,9 +471,9 @@
   
   <entry>
     <title type="html"><![CDATA[Emacs Note]]></title>
-    <link href="http://trphloc.github.io/blog/2014/08/15/emacs-note/"/>
+    <link href="http://trphloc.github.io/blog/2014/08/15/emacs-notes/"/>
     <updated>2014-08-15T17:25:59+07:00</updated>
-    <id>http://trphloc.github.io/blog/2014/08/15/emacs-note</id>
+    <id>http://trphloc.github.io/blog/2014/08/15/emacs-notes</id>
     <content type="html"><![CDATA[<h2>Đang cập nhật</h2>
 
 <ul>
@@ -1273,6 +1299,8 @@
 
 <h2>Một số phím tắt</h2>
 
+<h3>Windows</h3>
+
 <ul>
 <li><b>Ctrl + Shift + L: xem danh sách phím tắt</b></li>
 <li>Alt + Shift + Q, P: xem package explorer</li>
@@ -1287,6 +1315,21 @@
 <li>Alt + Page down: Next sub-tab</li>
 <li>Ctrl + F6: Next Editor</li>
 <li>Ctrl + F7: Next View</li>
+<li>Ctrl + 1: quick fix</li>
+</ul>
+
+
+<h3>Mac</h3>
+
+<ul>
+<li><b> CMD + Shift + L: xem danh sách phím tắt </b></li>
+<li>Alt + CMD + Q, P: xem package explorer</li>
+<li>Alt + CMD + Q, C: xem console</li>
+<li>Alt + CMD + Q, L: xem error log</li>
+<li>Alt + F5: update project</li>
+<li>CMD + Shift + R: mở tập tin workspace</li>
+<li>CMD + Shift + T: mở tập tin trong jar, thư viện, &hellip;</li>
+<li>CMD + H: tìm kiếm</li>
 </ul>
 
 
@@ -1318,9 +1361,16 @@
 <li>Mở Eclipse => menu windows => chọn preferences => chọn Server => chọn Runtime Environments</li>
 <li>Nhấn nút Add => chọn Apache => chọn Apache tomcat 7.0 => chọn Next</li>
 <li>Chọn đường dẫn C\abc\Tomcat7.0 và JRE phù hợp</li>
-<li>Chọn Finish
+<li>Chọn Finish</li>
+</ul>
 
-<h3>Phát sinh keystore</h3></li>
+
+<!-- ================================================================= -->
+
+
+<h2>Phát sinh keystore</h2>
+
+<ul>
 <li>Mở cmd</li>
 <li>Chạy lệnh và làm theo hướng dẫn: keytool -genkey -alias tomcat -keyalg RSA</li>
 <li>Keystore sẽ được lưu trong: &ldquo;C:\Users\trphloc.keystore&rdquo; (trphloc: là tên tài khoản trên máy)</li>
@@ -1361,18 +1411,49 @@
 
 
 
+
+<!-- ================================================================= -->
+
+
+<h2>Cài đặt plugin</h2>
+
+<h3>Cách 1</h3>
+
+<ul>
+<li>Menu Help => chọn Install New Software</li>
+<li>Chọn add site:
+
+<ul>
+<li>Gõ tên: &hellip;</li>
+<li>Gõ đường dẫn đến server</li>
+</ul>
+</li>
+<li>Chọn plugin cần cài đặt trong danh sách bên dưới</li>
+<li>Chọn next</li>
+<li>Chọn accept và next &hellip;</li>
+</ul>
+
+
+<h3>Cách 2</h3>
+
+<ul>
+<li>Vào menu Help => Eclipse Marketplace => Gõ &ldquo;tên&rdquo; vào ô tìm kiếm => chọn tìm</li>
+<li>Chọn install</li>
+<li>Chọn all và nhấn nút Confirm</li>
+</ul>
+
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Terminal on Mac - 10.9]]></title>
-    <link href="http://trphloc.github.io/blog/2014/08/01/terminal-on-mac/"/>
+    <title type="html"><![CDATA[Mac Notes]]></title>
+    <link href="http://trphloc.github.io/blog/2014/08/01/mac-os-notes/"/>
     <updated>2014-08-01T21:23:57+07:00</updated>
-    <id>http://trphloc.github.io/blog/2014/08/01/terminal-on-mac</id>
+    <id>http://trphloc.github.io/blog/2014/08/01/mac-os-notes</id>
     <content type="html"><![CDATA[<!-- ================================================================= -->
 
 
-<h2>Một số lệnh</h2>
+<h2>Một số lệnh trên terminate</h2>
 
 <ul>
 <li>sudo: thực hiện lệch dưới quyền admin</li>
@@ -1399,6 +1480,29 @@
 <li>uname -a: thông tin hệ thống</li>
 <li>df -h: thông tin lưu trữ</li>
 <li>source scripts: thực thi scripts</li>
+<li>Hiển thị tất cả tập tin trong Finder (thực thi 2 lệnh sau)
+
+<ul>
+<li>defaults write com.apple.finder AppleShowAllFiles YES</li>
+<li>killall Finder /System/Library/CoreServices/Finder.app</li>
+<li>Nếu muốn hiển thị bình thường thì chỉnh YES thành NO trong câu lệnh 1</li>
+</ul>
+</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Một số thao tác</h2>
+
+<ul>
+<li>Command-C: copy</li>
+<li>Command-V: paste</li>
+<li>Command-Option-V: paste (cut)</li>
+<li>Command-M: thu nhỏ màn hình</li>
+<li>Command-Tab và phím lên/xuống: để di chuyển đến màn hình đang thu nhỏ</li>
+<li>Danh sách phím tắt: <a href="http://support.apple.com/kb/ht1343">tham khảo</a></li>
 </ul>
 
 
@@ -1408,7 +1512,13 @@
 <h2>Apache</h2>
 
 <ul>
+<li>Cài đặt
+
+<ul>
+<li>Đã được cài mặt định trong mac</li>
 <li>Tham khảo: <a href="http://jason.pureconcepts.net/2012/10/install-apache-php-mysql-mac-os-x/">link</a></li>
+</ul>
+</li>
 <li>Sử dụng
 
 <ul>
@@ -1557,6 +1667,105 @@
 <li>ln -s /tmp/mysql.sock mysql.sock</li>
 </ul>
 </li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>vi editor</h2>
+
+<ul>
+<li>Sử dụng
+
+<ul>
+<li>Bắt đầu: vi tentaptin</li>
+<li>Thoát và lưu: ZZ hoặc :wq</li>
+<li>Thoát và không lưu: :q</li>
+<li>Lưu: :w</li>
+</ul>
+</li>
+<li>Di chuyển trang
+
+<ul>
+<li>G &ndash; di chuyển tới dòng cuối cùng trong tập tin</li>
+<li>xG &ndash; di chuyển tơí dòng x</li>
+<li>^F &ndash; pagedown</li>
+<li>^D &ndash; pagedown</li>
+<li>^U &ndash; pageup</li>
+</ul>
+</li>
+<li>Thêm
+
+<ul>
+<li>r &ndash; thay ký tự ngay con trỏ bằng ký tự liền sau</li>
+<li>i &ndash; thêm trước con trỏ</li>
+<li>a &ndash; thêm sau con trỏ</li>
+<li>A &ndash; thêm vào cuối dòng</li>
+</ul>
+</li>
+<li>Xoá
+
+<ul>
+<li>x &ndash; xóa ký tự ngay con trỏ</li>
+<li>dd &ndash; xóa dòng ngay con trỏ</li>
+<li>dw &ndash; xóa từ ngay con trỏ</li>
+<li>db &ndash; xóa từ trước con trỏ</li>
+</ul>
+</li>
+<li>Tìm kiếm
+
+<ul>
+<li>? &ndash; tìm từ phía sau</li>
+<li>/ &ndash; tìm từ phía trước</li>
+</ul>
+</li>
+<li><a href="http://www.cs.rit.edu/~cslab/vi.html">Tham khảo</a></li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Soạn thảo tập tin với quyền root</h2>
+
+<ul>
+<li>Copy đoạn mã sau vào tập tin cấu hình</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>;; editor as root
+</span><span class='line'>(defun sudo-edit (&optional arg)
+</span><span class='line'>  "Edit currently visited file as root.
+</span><span class='line'>
+</span><span class='line'>With a prefix ARG prompt for a file to visit.
+</span><span class='line'>Will also prompt for a file to visit if current
+</span><span class='line'>buffer is not visiting a file."
+</span><span class='line'>  (interactive "P")
+</span><span class='line'>  (if (or arg (not buffer-file-name))
+</span><span class='line'>      (find-file (concat "/sudo:root@localhost:"
+</span><span class='line'>                         (ido-read-file-name "Find file(as root): ")))
+</span><span class='line'>    (find-alternate-file (concat "/sudo:root@localhost:" buffer-file-name))))
+</span><span class='line'>
+</span><span class='line'>(global-set-key (kbd "C-x C-r") 'sudo-edit)</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Mở tập tin => gõ lệnh Ctrl-x Ctrl-r</li>
 </ul>
 
 ]]></content>
@@ -2092,10 +2301,9 @@
 <!-- ================================================================= -->
 
 
-<h2>Môi trường sử dụng</h2>
+<h2>Công cụ sử dụng</h2>
 
 <ul>
-<li>Windows 8.1</li>
 <li>Python 2.7.6</li>
 <li>Ruby 2.0.0</li>
 <li>Ruby DevKit 4.7.2</li>
@@ -2107,20 +2315,24 @@
 
 <h2>Hướng dẫn</h2>
 
-<h3>Cài đặt Python 2.7.6 trên windows</h3>
+<h3>Cài đặt Python 2.7.6</h3>
 
 <ul>
-<li><a href="http://trphloc.github.io/blog/2014/08/27/python-notes/">Hướng dẫn cài đặt</a>
+<li><a href="http://trphloc.github.io/blog/2014/08/27/python-notes/">Hướng dẫn cài đặt</a></li>
+</ul>
 
-<h3>Cài đặt Ruby 2.0.0 trên windows</h3></li>
-<li><a href="http://trphloc.github.io/blog/2014/04/17/setup-ruby-windows/">Hướng dẫn cài đặt</a>
 
-<h3>Cài đặt Ruby DevKit 4.7.2 trên windows</h3></li>
-<li><a href="http://trphloc.github.io/blog/2014/04/17/setup-ruby-devkit-windows/">Hướng dẫn cài đặt</a>
+<h3>Cài đặt Ruby 2.0.0 và Ruby DevKit</h3>
 
-<h3>Cài đặt và sử dụng git trên windows</h3></li>
-<li><a href="http://trphloc.github.io/blog/2014/04/17/setup-git-windows/">Hướng dẫn cài đặt</a></li>
-<li><a href="http://trphloc.github.io/blog/2014/04/17/using-git-windows/">Hướng dẫn sử dụng</a></li>
+<ul>
+<li><a href="http://trphloc.github.io/blog/2014/08/31/ruby-notes/">Hướng dẫn cài đặt</a></li>
+</ul>
+
+
+<h3>Cài đặt và sử dụng git trên windows</h3>
+
+<ul>
+<li><a href="http://trphloc.github.io/blog/2014/08/31/git-notes/">Hướng dẫn cài đặt</a></li>
 </ul>
 
 

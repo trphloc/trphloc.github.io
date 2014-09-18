@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Mysql | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/mysql/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-09-10T12:14:28+07:00</updated>
+  <updated>2014-09-18T10:32:09+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -14,14 +14,14 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Terminal on Mac - 10.9]]></title>
-    <link href="http://trphloc.github.io/blog/2014/08/01/terminal-on-mac/"/>
+    <title type="html"><![CDATA[Mac Notes]]></title>
+    <link href="http://trphloc.github.io/blog/2014/08/01/mac-os-notes/"/>
     <updated>2014-08-01T21:23:57+07:00</updated>
-    <id>http://trphloc.github.io/blog/2014/08/01/terminal-on-mac</id>
+    <id>http://trphloc.github.io/blog/2014/08/01/mac-os-notes</id>
     <content type="html"><![CDATA[<!-- ================================================================= -->
 
 
-<h2>Một số lệnh</h2>
+<h2>Một số lệnh trên terminate</h2>
 
 <ul>
 <li>sudo: thực hiện lệch dưới quyền admin</li>
@@ -48,6 +48,29 @@
 <li>uname -a: thông tin hệ thống</li>
 <li>df -h: thông tin lưu trữ</li>
 <li>source scripts: thực thi scripts</li>
+<li>Hiển thị tất cả tập tin trong Finder (thực thi 2 lệnh sau)
+
+<ul>
+<li>defaults write com.apple.finder AppleShowAllFiles YES</li>
+<li>killall Finder /System/Library/CoreServices/Finder.app</li>
+<li>Nếu muốn hiển thị bình thường thì chỉnh YES thành NO trong câu lệnh 1</li>
+</ul>
+</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Một số thao tác</h2>
+
+<ul>
+<li>Command-C: copy</li>
+<li>Command-V: paste</li>
+<li>Command-Option-V: paste (cut)</li>
+<li>Command-M: thu nhỏ màn hình</li>
+<li>Command-Tab và phím lên/xuống: để di chuyển đến màn hình đang thu nhỏ</li>
+<li>Danh sách phím tắt: <a href="http://support.apple.com/kb/ht1343">tham khảo</a></li>
 </ul>
 
 
@@ -57,7 +80,13 @@
 <h2>Apache</h2>
 
 <ul>
+<li>Cài đặt
+
+<ul>
+<li>Đã được cài mặt định trong mac</li>
 <li>Tham khảo: <a href="http://jason.pureconcepts.net/2012/10/install-apache-php-mysql-mac-os-x/">link</a></li>
+</ul>
+</li>
 <li>Sử dụng
 
 <ul>
@@ -200,6 +229,94 @@
 <li>ln -s /tmp/mysql.sock mysql.sock</li>
 </ul>
 </li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>vi editor</h2>
+
+<ul>
+<li>Sử dụng
+
+<ul>
+<li>Bắt đầu: vi tentaptin</li>
+<li>Thoát và lưu: ZZ hoặc :wq</li>
+<li>Thoát và không lưu: :q</li>
+<li>Lưu: :w</li>
+</ul>
+</li>
+<li>Di chuyển trang
+
+<ul>
+<li>G &ndash; di chuyển tới dòng cuối cùng trong tập tin</li>
+<li>xG &ndash; di chuyển tơí dòng x</li>
+<li>^F &ndash; pagedown</li>
+<li>^D &ndash; pagedown</li>
+<li>^U &ndash; pageup</li>
+</ul>
+</li>
+<li>Thêm
+
+<ul>
+<li>r &ndash; thay ký tự ngay con trỏ bằng ký tự liền sau</li>
+<li>i &ndash; thêm trước con trỏ</li>
+<li>a &ndash; thêm sau con trỏ</li>
+<li>A &ndash; thêm vào cuối dòng</li>
+</ul>
+</li>
+<li>Xoá
+
+<ul>
+<li>x &ndash; xóa ký tự ngay con trỏ</li>
+<li>dd &ndash; xóa dòng ngay con trỏ</li>
+<li>dw &ndash; xóa từ ngay con trỏ</li>
+<li>db &ndash; xóa từ trước con trỏ</li>
+</ul>
+</li>
+<li>Tìm kiếm
+
+<ul>
+<li>? &ndash; tìm từ phía sau</li>
+<li>/ &ndash; tìm từ phía trước</li>
+</ul>
+</li>
+<li><a href="http://www.cs.rit.edu/~cslab/vi.html">Tham khảo</a></li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Soạn thảo tập tin với quyền root</h2>
+
+<ul>
+<li>Copy đoạn mã sau vào tập tin cấu hình</li>
+</ul>
+
+
+<p>```
+;; editor as root
+(defun sudo-edit (&amp;optional arg)
+  &ldquo;Edit currently visited file as root.</p>
+
+<p>With a prefix ARG prompt for a file to visit.
+Will also prompt for a file to visit if current
+buffer is not visiting a file.&ldquo;
+  (interactive "P&rdquo;)
+  (if (or arg (not buffer-file-name))</p>
+
+<pre><code>  (find-file (concat "/sudo:root@localhost:"
+                     (ido-read-file-name "Find file(as root): ")))
+(find-alternate-file (concat "/sudo:root@localhost:" buffer-file-name))))
+</code></pre>
+
+<p>(global-set-key (kbd &ldquo;C-x C-r&rdquo;) &lsquo;sudo-edit)
+```</p>
+
+<ul>
+<li>Mở tập tin => gõ lệnh Ctrl-x Ctrl-r</li>
 </ul>
 
 ]]></content>

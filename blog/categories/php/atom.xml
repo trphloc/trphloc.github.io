@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Php | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/php/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-09-18T10:37:51+07:00</updated>
+  <updated>2014-09-28T20:34:02+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -56,6 +56,8 @@
 <li>Nếu muốn hiển thị bình thường thì chỉnh YES thành NO trong câu lệnh 1</li>
 </ul>
 </li>
+<li>rm file_name: xóa tập tin</li>
+<li>rm -rf directory_name: xóa thư mục (r: recursive, f: force)</li>
 </ul>
 
 
@@ -65,11 +67,14 @@
 <h2>Một số thao tác</h2>
 
 <ul>
+<li>Ctrol-Shift-Power: sleep</li>
+<li>Power (2s): hộp thoại sleep/shutdown/restart</li>
 <li>Command-C: copy</li>
 <li>Command-V: paste</li>
 <li>Command-Option-V: paste (cut)</li>
 <li>Command-M: thu nhỏ màn hình</li>
 <li>Command-Tab và phím lên/xuống: để di chuyển đến màn hình đang thu nhỏ</li>
+<li>Command-Shift-3: chụp toàn bộ màn hình (4: chụp 1 phần)</li>
 <li>Danh sách phím tắt: <a href="http://support.apple.com/kb/ht1343">tham khảo</a></li>
 </ul>
 
@@ -143,7 +148,7 @@
 </li>
 </ul>
 </li>
-<li>Sử dụng
+<li><p>Sử dụng</p>
 
 <ul>
 <li>Lệnh mysql để chạy</li>
@@ -196,6 +201,34 @@
 </span><span class='line'>//Take a look at the table mysql.general_log  &lt;br/></span></code></pre></td></tr></table></div></figure></notextile></div></li>
 </ul>
 </li>
+<li><p>Một số lỗi:</p>
+
+<ul>
+<li>Warning: mysql_connect(): [2002] No such file or directory
+
+<ul>
+<li>Nếu có <em>/tmp/mysql.sock</em> và không có <em>/var/mysql/mysql.sock</em>
+
+<ul>
+<li>cd /var</li>
+<li>sudo mkdir mysql</li>
+<li>sudo chmod 755 mysql</li>
+<li>cd mysql</li>
+<li>ln -s /tmp/mysql.sock mysql.sock</li>
+</ul>
+</li>
+<li>Nếu không có <em>/tmp/mysql.sock</em> và có <em>/var/mysql/mysql.sock</em>
+
+<ul>
+<li>cd /tmp</li>
+<li>ln -s /var/mysql/mysql.sock mysql.sock</li>
+</ul>
+</li>
+<li>Tham khảo: <a href="http://stackoverflow.com/questions/4219970/warning-mysql-connect-2002-no-such-file-or-directory-trying-to-connect-vi">http://stackoverflow.com/questions/4219970/warning-mysql-connect-2002-no-such-file-or-directory-trying-to-connect-vi</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
 
@@ -209,6 +242,69 @@
 
 <ul>
 <li>curl -s <a href="http://php-osx.liip.ch/install.sh">http://php-osx.liip.ch/install.sh</a> | bash -s 5.5</li>
+</ul>
+</li>
+<li>Cài đặt <strong>mcrypt</strong>
+
+<ul>
+<li>Cài đặt <strong>Xcode command line tools</strong> (nếu chưa có): xcode-select &mdash;install</li>
+<li>Tạo thư mục <strong>mcrypt</strong> trong thư mục home
+
+<ul>
+<li>cd ~</li>
+<li>mkdir mcrypt</li>
+</ul>
+</li>
+<li>Download libmcrypt từ <a href="http://sourceforge.net/projects/mcrypt/files/Libmcrypt/">sourceforge</a> hoặc <a href="files/libmcrypt-2.5.8.tar.gz">phiên bản 2.5.6</a></li>
+<li>Vào thư mục mcrypt, giải nén tập tin mới download và xóa tập tin nén
+
+<ul>
+<li>cd ~/mcrypt</li>
+<li>tar -zxvf libmcrypt-2.5.8.tar.gz</li>
+<li>rm *.gz</li>
+</ul>
+</li>
+<li>Vào thư mục libmcrypt và cài đặt
+
+<ul>
+<li>cd ~/mcrypt/libmcrypt-2.5.8</li>
+<li>./configure</li>
+<li>make</li>
+<li>sudo make install</li>
+</ul>
+</li>
+<li>Tải Autoconf và cài đặt
+
+<ul>
+<li>Tải tại đường dẫn <a href="http://ftp.gnu.org/gnu/autoconf/autoconf-latest.tar.gz">http://ftp.gnu.org/gnu/autoconf/autoconf-latest.tar.gz</a> hoặc <a href="files/autoconf-latest.tar.gz">tại đây</a></li>
+<li>Giải nén vào thư mục ~/mcrypt</li>
+<li>cd ~/mcrypt/autoconf-2.69</li>
+<li>./configure</li>
+<li>make</li>
+<li>sudo make install</li>
+</ul>
+</li>
+<li>Biên dịch mcrypt php extension
+
+<ul>
+<li>Tải src của php tại đường dẫn <a href="http://php.net/releases/index.php">http://php.net/releases/index.php</a> hoặc <a href="files/php-5.5.16.tar.gz">tại đây</a></li>
+<li>Giải nén vào thư mục ~/mcrypt</li>
+<li>cd ~/mcrypt/php-5.5.16/ext/mcrypt/</li>
+<li>/usr/bin/phpize => Kết quả: <img src="http://trphloc.github.io/images/php-mcrypt1.png"></li>
+<li>./configure</li>
+<li>make</li>
+<li>sudo make install => Kết quả: <img src="http://trphloc.github.io/images/php-mcrypt2.png" ></li>
+</ul>
+</li>
+<li>Kích hoạt mcrypt.so
+
+<ul>
+<li>Mở tập tin /etc/php.ini (nếu chưa có thì copy từ /etc/php.ini.default</li>
+<li>Thêm dòng &ldquo;extension=mcrypt.so&rdquo;</li>
+</ul>
+</li>
+<li>Khởi động lại apache => sudo apachectl restart</li>
+<li>Tham khảo: <a href="http://coolestguidesontheplanet.com/how-to-install-mcrypt-for-php-on-mac-osx-lion-10-7-development-server/">10.7 và 10.8</a> hoặc <a href="http://coolestguidesontheplanet.com/install-mcrypt-php-mac-osx-10-9-mavericks-development-server/">10.9</a></li>
 </ul>
 </li>
 </ul>
@@ -289,6 +385,44 @@
 <!-- ================================================================= -->
 
 
+<h2>Homebrew</h2>
+
+<ul>
+<li>Chạy lệnh sau trong terminal</li>
+</ul>
+
+
+<p><code>
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+</code></p>
+
+<ul>
+<li>Tham khảo: <a href="http://brew.sh/">http://brew.sh/</a></li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Axel &ndash; chương trình hỗ trợ download</h2>
+
+<h3>Cài đặt</h3>
+
+<ul>
+<li><b>Phải cài đặt homebrew trước</b>, thực thi lệnh sau</li>
+</ul>
+
+
+<p><code>
+brew install axel
+</code></p>
+
+<h3>Sử dụng</h3>
+
+<ul>
+<li>axel url</li>
+<li>Ví dụ: axel -n 10 <a href="http://example.com/some_file.mov">http://example.com/some_file.mov</a></li>
+</ul>
 
 ]]></content>
   </entry>

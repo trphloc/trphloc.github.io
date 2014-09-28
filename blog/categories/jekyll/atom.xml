@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Jekyll | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/jekyll/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-09-18T10:37:51+07:00</updated>
+  <updated>2014-09-28T20:34:02+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -90,9 +90,9 @@
 <li>Nếu có lỗi không thể deploy thì có thể làm tay
 
 <ul>
-<li>mkdir _deploy</li>
-<li>git clone &lt;deploy_repo> _deploy</li>
-<li>rake gen_deploy</li>
+<li>Tạo thư mục chứa các tập tin/thư mục để đưa lên sever. Sử dụng lệnh: &ldquo;mkdir _deploy&rdquo;</li>
+<li>Tạo kết nối của thư mục <em>deploy và repo của github. Sử dụng lệnh: &ldquo;git clone &lt;deploy_repo> </em>deploy&rdquo;</li>
+<li>Khởi tạo. Sử dụng lệnh: &ldquo;rake gen_deploy&rdquo;</li>
 </ul>
 </li>
 <li>Nếu không nhận ra bundle

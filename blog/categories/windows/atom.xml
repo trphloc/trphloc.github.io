@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Windows | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/windows/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-09-18T10:37:51+07:00</updated>
+  <updated>2014-09-28T20:34:02+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -229,8 +229,11 @@ bundle install
 
 <h2>Cài đặt pip</h2>
 
+<p><a href="https://pip.pypa.io/en/latest/installing.html#install-pip">Tham khảo</a></p>
+
+<h3>Môi trường windows</h3>
+
 <ul>
-<li>Môi trường windows</li>
 <li>Download từ <a href="/files/get-pip.py">link</a> nguồn: <a href="https://pip.pypa.io/en/latest/installing.html">https://pip.pypa.io/en/latest/installing.html</a></li>
 <li>Thực thi lệnh</li>
 </ul>
@@ -244,6 +247,26 @@ python get-pip.py
 <li>Gán biến môi trường cho thư mục Scripts trong thư mục cài đặt Python</li>
 </ul>
 
+
+<h3>Môi trường Mac</h3>
+
+<ul>
+<li>Thực thi lệnh sau</li>
+</ul>
+
+
+<p><code>
+sudo easy_install pip
+</code></p>
+
+<ul>
+<li>Hoặc download và di chuyển tới thư mục chứa tập tin get-pip.py thực thi lệnh</li>
+</ul>
+
+
+<p><code>
+sudo python get-pip.py
+</code></p>
 
 <!-- ================================================================= -->
 
@@ -267,8 +290,8 @@ pip install ipython
 <h3>Cài đặt virtualenv</h3>
 
 <ul>
-<li>Môi trường windows</li>
-<li>Sử dụng lệnh: &ldquo;easy_install virtualenv&rdquo; trong cmd</li>
+<li>Trên windows: sử dụng lệnh: &ldquo;easy_install virtualenv&rdquo; trong cmd</li>
+<li>Trên Mac: sử dụng lệnh: &ldquo;sudo easy_install virtualenv&rdquo; trong terminal</li>
 </ul>
 
 

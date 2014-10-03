@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tutorial | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/tutorial/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-09-28T20:34:02+07:00</updated>
+  <updated>2014-10-03T12:13:13+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -12,6 +12,37 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Shell Notes]]></title>
+    <link href="http://trphloc.github.io/blog/2014/09/30/shell-notes/"/>
+    <updated>2014-09-30T17:27:38+07:00</updated>
+    <id>http://trphloc.github.io/blog/2014/09/30/shell-notes</id>
+    <content type="html"><![CDATA[<!-- ================================================================= -->
+
+
+<h2>Tạo 1 tập tin thực thi</h2>
+
+<ul>
+<li>Tạo một tập tin abc</li>
+<li>Chỉnh cấu hình cho tập tin có thể thực thi</li>
+</ul>
+
+
+<p><code>
+chmod 755 abc
+</code></p>
+
+<ul>
+<li>Thực thi các lệnh trong tập tin abc</li>
+</ul>
+
+
+<p><code>
+./abc
+</code></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Git Notes]]></title>

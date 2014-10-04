@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Development | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/development/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-10-03T12:21:25+07:00</updated>
+  <updated>2014-10-04T15:16:31+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -109,6 +109,20 @@
 <li>CMD + H: tìm kiếm</li>
 </ul>
 
+
+<!-- ================================================================= -->
+
+
+<h2>Một số thư mục/tập tin tự phát sinh trong eclipse (có thể xóa)</h2>
+
+<p><code>
+.settings
+.classpath
+.project
+gen
+bin
+target
+</code></p>
 
 <!-- ================================================================= -->
 

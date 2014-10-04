@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Guide | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/guide/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-10-03T12:21:25+07:00</updated>
+  <updated>2014-10-04T15:16:31+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -167,6 +167,7 @@
 <li>Alt-;: ghi chú hoặc bỏ ghi chú các dòng được chọn</li>
 <li>Ctrl-g: hủy thao tác đang làm</li>
 <li>Ctrl-s: tìm kiếm</li>
+<li>Ctrl-space: bắt đầu chọn</li>
 <li>Thông tin cấu hình
 
 <ul>

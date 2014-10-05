@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tutorial | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/tutorial/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-10-06T00:09:09+07:00</updated>
+  <updated>2014-10-06T00:25:41+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -1208,6 +1208,20 @@ buffer is not visiting a file.&ldquo;
 <li>C-x r m <RET>: thêm bookmark</li>
 <li>C-x r b: chuyển bookmark</li>
 <li>C-x r l: hiển thị danh sách bookmarks</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Shell</h2>
+
+<ul>
+<li>C-c C-u: xóa toàn bộ lệnh</li>
+<li>C-c C-w: xóa 1 từ phía trước</li>
+<li>C-c C-c: ngắt lệnh đang thực thi</li>
+<li>C-c C-z: dừng lệnh đang thực thi</li>
+<li>M-p hoặc M-n: lệnh trước đó</li>
 </ul>
 
 ]]></content>

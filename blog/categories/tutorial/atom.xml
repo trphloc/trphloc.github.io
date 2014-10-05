@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tutorial | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/tutorial/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-10-04T15:16:31+07:00</updated>
+  <updated>2014-10-06T00:09:09+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -12,6 +12,379 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Slate]]></title>
+    <link href="http://trphloc.github.io/blog/2014/10/05/slate/"/>
+    <updated>2014-10-05T14:37:16+07:00</updated>
+    <id>http://trphloc.github.io/blog/2014/10/05/slate</id>
+    <content type="html"><![CDATA[<!-- ================================================================= -->
+
+
+<h2>Giới thiệu</h2>
+
+<ul>
+<li>Ứng dụng quản lý (tạo, di chuyển, chuyển đổi, &hellip;) các cửa sổ trên MAC OS</li>
+<li>Một số chức năng
+
+<ul>
+<li>Move/Resize/Shift windows</li>
+<li>Switch Windows</li>
+<li>Manage multiple monitors</li>
+<li>Save window layouts</li>
+</ul>
+</li>
+<li>Chương trình tương tự: SizeUp, Mizage &ndash; Divvy, Hyperspaces, VirtueDesktops, Cinch, &hellip;</li>
+<li>Tham khảo
+
+<ul>
+<li><a href="https://github.com/jigish/slate">https://github.com/jigish/slate</a></li>
+<li><a href="http://thume.ca/howto/2012/11/19/using-slate/">http://thume.ca/howto/2012/11/19/using-slate/</a></li>
+<li><a href="http://mauriciogardini.com/post/43348489262/slate-a-mac-os-x-window-manager-for-power-users">http://mauriciogardini.com/post/43348489262/slate-a-mac-os-x-window-manager-for-power-users</a></li>
+<li><a href="http://cereal.rutgers.edu/~vverna/keyboard-focused-workflow-macs.html">http://cereal.rutgers.edu/~vverna/keyboard-focused-workflow-macs.html</a></li>
+</ul>
+</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Các thao tác hỗ trợ</h2>
+
+<ul>
+<li><strong>Chỉ quản lý màn hình (screen), chưa hỗ trợ space</strong></li>
+<li>move/resize: di chuyển/thay đổi kích thước cửa sổ</li>
+<li>push: di chuyển cửa sổ tới cạnh của màn hình</li>
+<li>nudge: dịch chuyển cửa sổ theo hướng</li>
+<li>throw: di chuyển cửa sổ tới màn hình khác</li>
+<li>corner: di chuyển tới góc màn hình</li>
+<li>shell: thực thi lệnh</li>
+<li>hide: ẩn ứng dụng</li>
+<li>show: hiển thị ứng dụng</li>
+<li>focus: chọn cửa sổ hiện hành</li>
+<li>hint: hiển thị các cửa sổ đang chạy</li>
+<li>undo: quay lại</li>
+<li>source: đọc tập tin cấu hình</li>
+<li>snapshot/delete-snapshot/active-snapshot: chụp ảnh màn hình</li>
+<li>toggle/chain/sequence: không biết?</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Cấu hình</h2>
+
+<ul>
+<li>Tập tin cấu hình tên <strong>.slate</strong> trong thư mục home. Nếu không có tập tin, ứng dụng sẽ đọc cấu hình mặc định (giống nội dung tập tin <em>default.slate</em> trong <a href="https://github.com/jigish/slate/blob/master/Slate/default.slate">https://github.com/jigish/slate/blob/master/Slate/default.slate</a></li>
+<li>Tập tin cấu hình gồm các phần sau
+
+<ul>
+<li>config: các cấu hình chung</li>
+<li>allias: tạo các biến allias</li>
+<li>layout: cấu hình layouts</li>
+<li>default: cấu hình màn hình để hỗ trợ layouts</li>
+<li>bind: tạo phím tắt cho các hành động</li>
+<li>source: đọc cấu hình từ các tập tin khác</li>
+</ul>
+</li>
+<li>Tập tin cấu hình mẫu: <a href="https://github.com/jigish/dotfiles/blob/master/slate">https://github.com/jigish/dotfiles/blob/master/slate</a></li>
+</ul>
+
+
+<p>```</p>
+
+<h1>Configs</h1>
+
+<p>config defaultToCurrentScreen true
+config nudgePercentOf screenSize
+config resizePercentOf screenSize
+config secondsBetweenRepeat 0.1
+config checkDefaultsOnLoad true
+config focusCheckWidthMax 3000</p>
+
+<h1>Monitor Aliases</h1>
+
+<p>alias mon-laptop      1680x1050
+alias mon-thunderbolt 2560x1440
+alias mon-hp22inch    1920x1080</p>
+
+<h1>Position Aliases</h1>
+
+<p>alias 1-chat  move screenOriginX;screenOriginY                               screenSizeX/9;screenSizeY       ${mon-laptop}
+alias 1-main  move screenOriginX+screenSizeX/9;screenOriginY                 8<em>screenSizeX/9;screenSizeY     ${mon-laptop}
+alias 2-bot   move screenOriginX;screenOriginY+screenSizeY/2                 screenSizeX;screenSizeY/2       ${mon-thunderbolt}
+alias 2-bot-l move screenOriginX;screenOriginY+screenSizeY/2                 screenSizeX/3;screenSizeY/2     ${mon-thunderbolt}
+alias 2-bot-m move screenOriginX+screenSizeX/3;screenOriginY+screenSizeY/2   screenSizeX/3;screenSizeY/2     ${mon-thunderbolt}
+alias 2-bot-r move screenOriginX+2</em>screenSizeX/3;screenOriginY+screenSizeY/2 screenSizeX/3;screenSizeY/2     ${mon-thunderbolt}
+alias 2-mid   move screenOriginX+screenSizeX/8;screenOriginY+screenSizeY/8   3<em>screenSizeX/4;3</em>screenSizeY/4 ${mon-thunderbolt}
+alias 2-top   move screenOriginX;screenOriginY                               screenSizeX;screenSizeY/2       ${mon-thunderbolt}
+alias 2-top-l move screenOriginX;screenOriginY                               screenSizeX/2;screenSizeY/2     ${mon-thunderbolt}
+alias 2-top-m move screenOriginX+screenSizeX/6;screenOriginY                 2*screenSizeX/3;screenSizeY/2   ${mon-thunderbolt}
+alias 2-top-r move screenOriginX+screenSizeX/2;screenOriginY                 screenSizeX/2;screenSizeY/2     ${mon-thunderbolt}
+alias 2-left  move screenOriginX;screenOriginY                               screenSizeX/2;screenSizeY       ${mon-thunderbolt}
+alias 2-right move screenOriginX+screenSizeX/2;screenOriginY                 screenSizeX/2;screenSizeY       ${mon-thunderbolt}
+alias 3-l-bot move screenOriginX;screenOriginY+screenSizeY/2                 screenSizeX/2;screenSizeY/2     ${mon-hp22inch}
+alias 3-l-top move screenOriginX;screenOriginY                               screenSizeX/2;screenSizeY/2     ${mon-hp22inch}
+alias 3-right move screenOriginX+screenSizeX/2;screenOriginY                 screenSizeX/2;screenSizeY       ${mon-hp22inch}</p>
+
+<h1>3 Monitor layout</h1>
+
+<p>layout 3monitors &lsquo;iTerm&rsquo;:SORT_TITLE                       ${2-bot-l} | ${2-bot-m} | ${2-bot-r}
+layout 3monitors &lsquo;Google Chrome&rsquo;:REPEAT_LAST,TITLE_ORDER_REGEX=^Developer\sTools\s-\s.+$  ${3-right} | ${1-main}
+layout 3monitors &lsquo;MacVim&rsquo;                                 ${2-top-r} | ${2-top-l} | ${2-top-m}
+layout 3monitors &lsquo;Flex Builder&rsquo;                           ${2-top-l}
+layout 3monitors &lsquo;GitX&rsquo;:REPEAT                            ${3-right}
+layout 3monitors &lsquo;Ooyala Player Debug Console&rsquo;            ${3-l-bot}
+layout 3monitors &lsquo;Adium&rsquo;:IGNORE_FAIL,TITLE_ORDER=Contacts ${1-chat} | ${3-l-bot}
+layout 3monitors &lsquo;Firefox&rsquo;:REPEAT                         ${2-mid}
+layout 3monitors &lsquo;Xcode&rsquo;:REPEAT                           ${2-top}
+layout 3monitors &lsquo;Eclipse&rsquo;:REPEAT                         ${2-bot}
+layout 3monitors &lsquo;Spotify&rsquo;:REPEAT                         ${3-l-top}</p>
+
+<h1>2 Monitor layout</h1>
+
+<p>layout 2monitors &lsquo;iTerm&rsquo;:SORT_TITLE                       ${2-bot-l} | ${2-bot-m} | ${2-bot-r}
+layout 2monitors &lsquo;Google Chrome&rsquo;:REPEAT                   ${1-main}
+layout 2monitors &lsquo;MacVim&rsquo;                                 ${2-top-r} | ${2-top-l} | ${2-top-m}
+layout 2monitors &lsquo;Flex Builder&rsquo;                           ${2-top-l}
+layout 2monitors &lsquo;GitX&rsquo;:REPEAT                            ${1-main}
+layout 2monitors &lsquo;Ooyala Player Debug Console&rsquo;            ${1-main}
+layout 2monitors &lsquo;Adium&rsquo;:IGNORE_FAIL,TITLE_ORDER=Contacts ${1-chat} | ${1-main}
+layout 2monitors &lsquo;Firefox&rsquo;:REPEAT                         ${2-mid}
+layout 2monitors &lsquo;Xcode&rsquo;:REPEAT                           ${2-top}
+layout 2monitors &lsquo;Eclipse&rsquo;:REPEAT                         ${2-bot}
+layout 2monitors &lsquo;Spotify&rsquo;:REPEAT                         ${1-main}</p>
+
+<h1>1 Monitor layout</h1>
+
+<p>layout 1monitor &lsquo;iTerm&rsquo;:SORT_TITLE,REPEAT                ${1-main}
+layout 1monitor &lsquo;Google Chrome&rsquo;:REPEAT                   ${1-main}
+layout 1monitor &lsquo;MacVim&rsquo;:REPEAT                          ${1-main}
+layout 1monitor &lsquo;Flex Builder&rsquo;:REPEAT                    ${1-main}
+layout 1monitor &lsquo;GitX&rsquo;:REPEAT                            ${1-main}
+layout 1monitor &lsquo;Ooyala Player Debug Console&rsquo;:REPEAT     ${1-main}
+layout 1monitor &lsquo;Adium&rsquo;:IGNORE_FAIL,TITLE_ORDER=Contacts ${1-chat} | ${1-main}
+layout 1monitor &lsquo;Firefox&rsquo;:REPEAT                         ${1-main}
+layout 1monitor &lsquo;Xcode&rsquo;:REPEAT                           ${1-main}
+layout 1monitor &lsquo;Eclipse&rsquo;:REPEAT                         ${1-main}
+layout 1monitor &lsquo;Spotify&rsquo;:REPEAT                         ${1-main}</p>
+
+<h1>Default Layouts</h1>
+
+<p>default 3monitors resolutions:${mon-laptop};${mon-thunderbolt};${mon-hp22inch}
+default 2monitors resolutions:${mon-laptop};${mon-thunderbolt}
+default 1monitor  resolutions:${mon-laptop}</p>
+
+<h1>Basic location Bindings</h1>
+
+<p>bind pad0:ctrl ${1-chat}
+bind [:ctrl    ${1-chat}
+bind pad.:ctrl ${1-main}
+bind ]:ctrl    ${1-main}
+bind pad1:ctrl ${2-bot-l}
+bind pad2:ctrl ${2-bot-m}
+bind pad3:ctrl ${2-bot-r}
+bind pad4:ctrl ${2-left}
+bind pad5:ctrl ${2-mid}
+bind pad6:ctrl ${2-right}
+bind pad7:ctrl ${2-top-l}
+bind pad8:ctrl ${2-top-m}
+bind pad9:ctrl ${2-top-r}
+bind pad=:ctrl ${2-top}
+bind pad/:ctrl ${2-bot}
+bind pad*:ctrl ${3-l-bot}
+bind pad-:ctrl ${3-l-top}
+bind pad+:ctrl ${3-right}</p>
+
+<h1>Resize Bindings</h1>
+
+<h1>NOTE: some of these may <em>not</em> work if you have not removed the expose/spaces/mission control bindings</h1>
+
+<p>bind right:ctrl resize +10% +0
+bind left:ctrl  resize -10% +0
+bind up:ctrl    resize +0   -10%
+bind down:ctrl  resize +0   +10%
+bind right:alt  resize -10% +0 bottom-right
+bind left:alt   resize +10% +0 bottom-right
+bind up:alt     resize +0   +10% bottom-right
+bind down:alt   resize +0   -10% bottom-right</p>
+
+<h1>Push Bindings</h1>
+
+<h1>NOTE: some of these may <em>not</em> work if you have not removed the expose/spaces/mission control bindings</h1>
+
+<p>bind right:ctrl;shift push right bar-resize:screenSizeX/3
+bind left:ctrl;shift  push left  bar-resize:screenSizeX/3
+bind up:ctrl;shift    push up    bar-resize:screenSizeY/2
+bind down:ctrl;shift  push down  bar-resize:screenSizeY/2</p>
+
+<h1>Nudge Bindings</h1>
+
+<h1>NOTE: some of these may <em>not</em> work if you have not removed the expose/spaces/mission control bindings</h1>
+
+<p>bind right:ctrl;alt nudge +10% +0
+bind left:ctrl;alt  nudge -10% +0
+bind up:ctrl;alt    nudge +0   -10%
+bind down:ctrl;alt  nudge +0   +10%</p>
+
+<h1>Throw Bindings</h1>
+
+<h1>NOTE: some of these may <em>not</em> work if you have not removed the expose/spaces/mission control bindings</h1>
+
+<p>bind pad1:ctrl;alt      throw 2 resize
+bind pad2:ctrl;alt      throw 1 resize
+bind pad3:ctrl;alt      throw 0 resize
+bind right:ctrl;alt;cmd throw right resize
+bind left:ctrl;alt;cmd  throw left  resize
+bind up:ctrl;alt;cmd    throw up    resize
+bind down:ctrl;alt;cmd  throw down  resize</p>
+
+<h1>Focus Bindings</h1>
+
+<h1>NOTE: some of these may <em>not</em> work if you have not removed the expose/spaces/mission control bindings</h1>
+
+<p>bind right:cmd    focus right
+bind left:cmd     focus left
+bind up:cmd       focus up
+bind down:cmd     focus down
+bind up:cmd;alt   focus behind
+bind down:cmd;alt focus behind</p>
+
+<h1>Layout Bindings</h1>
+
+<p>bind padEnter:ctrl layout 3monitors</p>
+
+<h1>Window Hints</h1>
+
+<p>bind esc:cmd hint</p>
+
+<h1>Switch currently doesn&rsquo;t work well so I&rsquo;m commenting it out until I fix it.</h1>
+
+<h1>bind tab:ctrl switch</h1>
+
+<h1>Grid</h1>
+
+<p>bind esc:ctrl grid</p>
+
+<h1>Test Cases</h1>
+
+<p>source .slate.test if_exists
+```</p>
+
+<!-- ================================================================= -->
+
+
+<h2>Danh sách phím trong tập tin cấu hình</h2>
+
+<p>```
+'</p>
+
+<h2>,</h2>
+
+<p>.
+/
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9</p>
+
+<h1>;</h1>
+
+<p>`
+a
+b
+backslash
+c
+caps
+d
+delete
+down
+e
+end
+esc
+f
+f1
+f10
+f11
+f12
+f13
+f14
+f15
+f16
+f17
+f18
+f19
+f2
+f20
+f3
+f4
+f5
+f6
+f7
+f8
+f9
+g
+h
+help
+home
+i
+j
+k
+l
+left
+m
+mute
+n
+o
+p
+pad*
+pad+
+pad-
+pad.
+pad/
+pad0
+pad1
+pad2
+pad3
+pad4
+pad5
+pad6
+pad7
+pad8
+pad9
+pad=
+padClear
+padEnter
+pageDown
+pageUp
+q
+r
+return
+right
+s
+space
+t
+tab
+u
+up
+v
+w
+x
+y
+z
+[
+]
+```</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Shell Notes]]></title>

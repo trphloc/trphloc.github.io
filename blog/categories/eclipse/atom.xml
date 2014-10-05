@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Eclipse | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/eclipse/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-10-04T15:16:31+07:00</updated>
+  <updated>2014-10-06T00:09:09+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -31,6 +31,7 @@
 <li>Alt + Shift + Q, C: xem console</li>
 <li>Alt + Shift + Q, L: xem error Log</li>
 <li>Alt + F5: update project</li>
+<li>Ctrl + Shift + O: thêm các thư viện còn thiếu</li>
 <li>Ctrl + Shift + R: mở tập tin workspace</li>
 <li>Ctrl + Shift + T: mở tập tin trong jar, thư viện, &hellip;</li>
 <li>Ctrl + H: tìm kiếm</li>
@@ -51,6 +52,7 @@
 <li>Alt + CMD + Q, C: xem console</li>
 <li>Alt + CMD + Q, L: xem error log</li>
 <li>Alt + F5: update project</li>
+<li>CMD + Shift + O: thêm các thư viện còn thiếu</li>
 <li>CMD + Shift + R: mở tập tin workspace</li>
 <li>CMD + Shift + T: mở tập tin trong jar, thư viện, &hellip;</li>
 <li>CMD + H: tìm kiếm</li>

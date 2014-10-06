@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Emacs | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/emacs/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-10-06T12:22:10+07:00</updated>
+  <updated>2014-10-06T15:04:02+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -290,12 +290,12 @@ made up of multiple lines and sentences."""
     <link href="http://trphloc.github.io/blog/2014/08/15/emacs-notes/"/>
     <updated>2014-08-15T17:25:59+07:00</updated>
     <id>http://trphloc.github.io/blog/2014/08/15/emacs-notes</id>
-    <content type="html"><![CDATA[<h2>Đang cập nhật</h2>
+    <content type="html"><![CDATA[<h2>Đang cập nhật TODO</h2>
 
 <ul>
-<li>magit <a href="http://magit.github.io/master/magit.html">tham khảo</a></li>
 <li>minibuffer</li>
 <li>compress</li>
+<li>shell trên mac chạy không giống terminal (lỗi unicode khi build octopress, không tìm thấy ipython, &hellip;)</li>
 </ul>
 
 
@@ -1043,6 +1043,44 @@ buffer is not visiting a file.&ldquo;
 </ul>
 </li>
 <li>Tham khảo: <a href="https://github.com/emacsmirror/multiple-cursors">https://github.com/emacsmirror/multiple-cursors</a></li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Magit</h2>
+
+<ul>
+<li>Danh sách thao tác
+
+<ul>
+<li>M-x magit-status hoặc M-x gst => chuyển qua mode git để thực hiện các thao tác</li>
+<li>g => đọc lại danh sách thay đổi</li>
+<li>M-1, 2, 3, 4 (hoặc 1, 2, 3, 4) => xem chi tiết các thay đổi</li>
+<li>i (hoặc C-u i) thêm vào .gitignore</li>
+<li>s hoặc S => chuyển trạng thái một/tất cả tập tin tới stage</li>
+<li>u hoặc U => chuyển trạng thái một/tất cả tập tin tới unstage</li>
+<li>k => hủy các thay đổi</li>
+<li>c => chuẩn bị commit: hiển thị thông tin và viết ghi chú/lịch sử/log</li>
+<li>C-c C-c => thực thi lệnh commit</li>
+<li>C-c C-a => thêm vào lệnh commit cũ</li>
+<li>l (hoặc L hoặc C-u l) => lịch sử</li>
+<li>a hoặc A => stage hoặc commit trên nhánh hiện hành (current branch)</li>
+<li>d hoặc D => hiển thị sự thay đổi giữa thư mục làm việc và HEAD</li>
+<li>b hoặc B => chuyển hoặc tạo mới và chuyển tới nhánh mới</li>
+<li>m hoặc M => merge nhánh vào nhánh hiện hành</li>
+<li>P => push</li>
+<li>F => pull</li>
+</ul>
+</li>
+<li>Tài liệu tham khảo:
+
+<ul>
+<li><a href="http://magit.github.io/master/magit.html">http://magit.github.io/master/magit.html</a></li>
+<li><a href="http://daemianmack.com/magit-cheatsheet.html">http://daemianmack.com/magit-cheatsheet.html</a></li>
+</ul>
+</li>
 </ul>
 
 ]]></content>

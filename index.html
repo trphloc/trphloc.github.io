@@ -1706,7 +1706,7 @@ Switch Windows &hellip;">
 </span><span class='line'>        (mapc (lambda (fPath) (let ((process-connection-type nil)) (start-process "" nil "xdg-open" fPath)) ) myFileList) ) ) ) ) )
 </span><span class='line'>
 </span><span class='line'>;; define key for dired mode
-</span><span class='line'>(require 'dired )
+</span><span class='line'>  (require 'dired )
 </span><span class='line'>(define-key dired-mode-map (kbd "C-c a") 'xah-open-in-external-app)</span></code></pre></td></tr></table></div></figure>
 
 
@@ -2098,6 +2098,84 @@ Switch Windows &hellip;">
 <li>C-c C-c: ngắt lệnh đang thực thi</li>
 <li>C-c C-z: dừng lệnh đang thực thi</li>
 <li>M-p hoặc M-n: lệnh trước đó</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Multiple cursors</h2>
+
+<ul>
+<li>Hiện nhiều con trỏ trên màn hình cùng lúc: thay đổi nhiều vị trí</li>
+<li>Cài đặt: M-x package-install multiple-cursors</li>
+<li>Cấu hình để emacs khởi động multiple-cursors khi khởi động. Thêm đoạn code sau vào tập tin cấu hình <strong>.emacs</strong></li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>(require 'multiple-cursors)</span></code></pre></td></tr></table></div></figure>
+
+
+<p>hoặc</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>(require 'multiple-cursors-core "~/.emacs.d/elpa/multiple-cursors-20141003.551/multiple-cursors-core.el")
+</span><span class='line'>(require 'mc-hide-unmatched-lines-mode "~/.emacs.d/elpa/multiple-cursors-20141003.551/mc-hide-unmatched-lines-mode.el")
+</span><span class='line'>(require 'rectangular-region-mode "~/.emacs.d/elpa/multiple-cursors-20141003.551/rectangular-region-mode.el")
+</span><span class='line'>(require 'mc-separate-operations "~/.emacs.d/elpa/multiple-cursors-20141003.551/mc-separate-operations.el")
+</span><span class='line'>(require 'mc-mark-pop "~/.emacs.d/elpa/multiple-cursors-20141003.551/mc-mark-pop.el")
+</span><span class='line'>(require 'mc-mark-more "~/.emacs.d/elpa/multiple-cursors-20141003.551/mc-mark-more.el")
+</span><span class='line'>(require 'mc-cycle-cursors "~/.emacs.d/elpa/multiple-cursors-20141003.551/mc-cycle-cursors.el")
+</span><span class='line'>(require 'mc-edit-lines "~/.emacs.d/elpa/multiple-cursors-20141003.551/mc-edit-lines.el")
+</span><span class='line'>(require 'multiple-cursors "~/.emacs.d/elpa/multiple-cursors-20141003.551/multiple-cursors.el")</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Cầu hình phím tắt</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>;; thêm con trỏ tới từng dòng
+</span><span class='line'>(global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
+</span><span class='line'>
+</span><span class='line'>;; thêm con trỏ dựa trên từ khóa (vùng đang được chọn)
+</span><span class='line'>(global-set-key (kbd "C-&gt;") 'mc/mark-next-like-this)
+</span><span class='line'>(global-set-key (kbd "C-&lt;") 'mc/mark-previous-like-this)
+</span><span class='line'>(global-set-key (kbd "C-c C-&lt;") 'mc/mark-all-like-this)</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Chức năng:
+
+<ul>
+<li>mc/mark-next-like-this: tìm phần giống phần đang chọn ở phía sau và thêm con trỏ vào.</li>
+<li>mc/mark-next-word-like-this: giống mc/mark-next-like-this nhưng cho toàn bộ từ.</li>
+<li>mc/mark-next-symbol-like-this: giống mc/mark-next-like-this nhưng cho ký hiệu.</li>
+<li>mc/mark-previous-like-this: tìm phần giống phần đang chọn ở phía trước và thêm con trỏ vào.</li>
+<li>mc/mark-previous-word-like-this: giống mc/mark-previous-like-this nhưng cho toàn bộ từ.</li>
+<li>mc/mark-previous-symbol-like-this: &hellip;</li>
+<li>mc/mark-more-like-this-extended: &hellip;</li>
+<li>mc/add-cursor-on-click: &hellip;</li>
+<li>mc/mark-pop: &hellip;</li>
+</ul>
+</li>
+<li>Tham khảo: <a href="https://github.com/emacsmirror/multiple-cursors">https://github.com/emacsmirror/multiple-cursors</a></li>
 </ul>
 
 </div>

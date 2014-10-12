@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Apache | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/apache/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-10-12T22:59:47+07:00</updated>
+  <updated>2014-10-12T23:07:30+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -563,8 +563,15 @@ sudo ln -s /usr/local/lib/p7zip/7za /bin/7za
 <h3>Sử dụng</h3>
 
 <p><code>
-unrar x &lt;filename&gt;
+unrar -pPASSWORD -y -ad x &lt;filename&gt;
 </code></p>
+
+<h3>Tham khảo</h3>
+
+<ul>
+<li><a href="http://best-mac-tips.com/2013/02/02/extract-rar-archive-command-line-mac-terminal/">http://best-mac-tips.com/2013/02/02/extract-rar-archive-command-line-mac-terminal/</a></li>
+</ul>
+
 
 <!-- ================================================================= -->
 

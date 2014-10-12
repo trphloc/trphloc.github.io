@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Terminal | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/terminal/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-10-12T23:07:30+07:00</updated>
+  <updated>2014-10-13T00:45:01+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -12,6 +12,26 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[GCC - the GNU Compiler Collection]]></title>
+    <link href="http://trphloc.github.io/blog/2014/10/13/gcc-the-gnu-compiler-collection/"/>
+    <updated>2014-10-13T00:41:00+07:00</updated>
+    <id>http://trphloc.github.io/blog/2014/10/13/gcc-the-gnu-compiler-collection</id>
+    <content type="html"><![CDATA[<p>TODO &ndash; TPL</p>
+
+<!-- ================================================================= -->
+
+
+<h2>Tài liệu tham khảo</h2>
+
+<ul>
+<li><a href="https://gcc.gnu.org/">https://gcc.gnu.org/</a></li>
+<li><a href="https://solarianprogrammer.com/2013/06/11/compiling-gcc-mac-os-x/">https://solarianprogrammer.com/2013/06/11/compiling-gcc-mac-os-x/</a></li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Mac Notes]]></title>

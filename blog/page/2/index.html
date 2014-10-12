@@ -9,10 +9,10 @@
   <meta name="author" content="Phuoc-Loc Truong">
 
   
-  <meta name="description" content="Đang cập nhật Các phần và hàm thường dùng Iterator &ndash; duyệt
-Capacity &ndash; số lượng
-Element access &ndash; truy cập từng phần tử
-Modifiers & &hellip;">
+  <meta name="description" content="Một số lệnh trên terminate sudo: thực hiện lệch dưới quyền admin
+ls: liệt kê danh sách tập tin
+cd: di chuyển tới thư mục
+sudo chmod -R 777 XXX: &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -74,6 +74,661 @@ Modifiers & &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/08/01/mac-os-notes/">Mac Notes</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-08-01T21:23:57+07:00" pubdate data-updated="true">Aug 1<span>st</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><!-- ================================================================= -->
+
+
+<h2>Một số lệnh trên terminate</h2>
+
+<ul>
+<li>sudo: thực hiện lệch dưới quyền admin</li>
+<li>ls: liệt kê danh sách tập tin</li>
+<li>cd: di chuyển tới thư mục</li>
+<li>sudo chmod -R 777 XXX: chỉnh permission của thư mục XXX (-R: bao gồm cả thư mục con)</li>
+<li>chmod +x file: chuyển thành tập tin thực thi được</li>
+<li>sudo chown -R trphloc:admin /directory => thay đổi chủ sở hữu của thư mục</li>
+<li>Tìm vị trí của lệnh: which name</li>
+<li>Thêm đường dẫn tới biến PATH
+
+<ul>
+<li>export PATH=xxx:$PATH</li>
+<li>Chỉnh sửa tập tin .profile trong thư mục home</li>
+</ul>
+</li>
+<li>Tạo một liên kết (symbolic link): chi tiết <a href="http://linux.about.com/od/commands/l/blcmdl1_ln.htm">link1</a> <a href="http://hints.macworld.com/article.php?story=2001110610290643">link2</a>
+
+<ul>
+<li>Di chuyển tới thư mục cần tạo</li>
+<li>ln -Ffhinsv src dis => src: thư mục cần liên kết, dis tên liên kết</li>
+<li>Vd: ln -s /Volumes/Classic/ Classic</li>
+</ul>
+</li>
+<li>uname -a: thông tin hệ thống</li>
+<li>df -h: thông tin lưu trữ</li>
+<li>source scripts: thực thi scripts</li>
+<li>Hiển thị tất cả tập tin trong Finder (thực thi 2 lệnh sau)
+
+<ul>
+<li>defaults write com.apple.finder AppleShowAllFiles YES</li>
+<li>killall Finder /System/Library/CoreServices/Finder.app</li>
+<li>Nếu muốn hiển thị bình thường thì chỉnh YES thành NO trong câu lệnh 1</li>
+</ul>
+</li>
+<li>rm file_name: xóa tập tin</li>
+<li>rm -rf directory_name: xóa thư mục (r: recursive, f: force)</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Một số thao tác</h2>
+
+<ul>
+<li>Ctrol-Shift-Power: sleep</li>
+<li>Power (2s): hộp thoại sleep/shutdown/restart</li>
+<li>Command-C: copy</li>
+<li>Command-V: paste</li>
+<li>Command-Option-V: paste (cut)</li>
+<li>Command-M: thu nhỏ màn hình</li>
+<li>Command-Tab và phím lên/xuống: để di chuyển đến màn hình đang thu nhỏ</li>
+<li>Command-Shift-3: chụp toàn bộ màn hình (4: chụp 1 phần)</li>
+<li>Danh sách phím tắt: <a href="http://support.apple.com/kb/ht1343">tham khảo</a></li>
+<li>Delete: chức năng backspace</li>
+<li>Fn-Delete: chức năng delete</li>
+<li>Thay đổi shortcut của chương trình: <a href="http://lifehacker.com/5720087/how-to-remap-any-keyboard-shortcut-in-mac-os-x">http://lifehacker.com/5720087/how-to-remap-any-keyboard-shortcut-in-mac-os-x</a>
+
+<ul>
+<li>Thay đổi paste (cut) thành Control-Command-V: System References => Keyboard => Shortcuts => chọn App Shortcuts => Nhấn dấu + => chọn Finder => điền <strong>Move Item Here</strong> trong menu tile => chọn phím <strong>Control-Command-V</strong> trong Keyboard Shortcuts => chọn OK.</li>
+</ul>
+</li>
+</ul>
+
+
+<h3>Sử dụng các phím F1, F2, &hellip; như mặc định</h3>
+
+<ul>
+<li>Trong MAC, dòng phím trên cùng là kết hợp của F1, F2, &hellip; và các chức năng. Muốn sử dụng các phím F1, F2, &hellip; phải dùng kèm với phím fn</li>
+<li>Để F1, F2, &hellip; là mặc định thì chỉnh như sau
+
+<ul>
+<li>Chạy System Preferences từ Apple menu.</li>
+<li>Chọn Keyboard (hoặc Keyboard &amp; Mouse trong Mac OS X v10.5.8 và các phiên bản sớm hơn).</li>
+<li>Chọn Keyboard, nếu có</li>
+<li>Chọn enable &ldquo;Use all F1, F2, etc. keys as standard function keys.&rdquo;</li>
+</ul>
+</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Apache</h2>
+
+<ul>
+<li>Cài đặt
+
+<ul>
+<li>Đã được cài mặt định trong mac</li>
+<li>Tham khảo: <a href="http://jason.pureconcepts.net/2012/10/install-apache-php-mysql-mac-os-x/">link</a></li>
+</ul>
+</li>
+<li>Sử dụng
+
+<ul>
+<li>sudo su</li>
+<li>apachectl start: khởi động => chạy localhost sẽ thấy &ldquo;It works&rdquo;</li>
+<li>apachectl restart</li>
+</ul>
+</li>
+<li>Kích hoạt php
+
+<ul>
+<li>Sao lưu tập tin cấu hình
+
+<ul>
+<li>cd /etc/apache2/</li>
+<li>cp httpd.conf httpd.conf.bak</li>
+</ul>
+</li>
+<li>Thay đổi tập tin cấu hình bằng chương trình vi
+
+<ul>
+<li>vi httpd.conf</li>
+</ul>
+</li>
+<li>Bỏ dấu # trước dòng LoadModule php5_module libexec/apache2/libphp5.sLoado</li>
+<li>Lưu lại và khởi động lại</li>
+</ul>
+</li>
+<li>Tạo virtualHosts
+
+<ul>
+<li>&ldquo;<a href="http://localhost/somesite/">http://localhost/somesite/</a>&rdquo; liên kết với &ldquo;/Library/WebServer/Documents/somesite&rdquo;</li>
+</ul>
+</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>MySQLrestart</h2>
+
+<ul>
+<li>Cài đặt
+
+<ul>
+<li>Download tại trang <a href="http://dev.mysql.com/downloads/mysql/">http://dev.mysql.com/downloads/mysql/</a></li>
+<li>Cài đặt</li>
+<li>Cập nhật đường dẫn path tới mysql (khi khởi động không cần đường dẫn)
+
+<ul>
+<li>export PATH=/usr/local/mysql/bin:$PATH</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Sử dụng
+
+<ul>
+<li>Lệnh mysql để chạy</li>
+<li>Đăng nhập: mysql -u username</li>
+<li>Hiển thị danh sách người dùng (root)
+
+<ul>
+<li>select * from mysql.user;</li>
+<li>desc mysql.user;</li>
+<li>select host, user, password from mysql.user;</li>
+</ul>
+</li>
+<li>Tạo người dùng: (root)
+
+<ul>
+<li>CREATE USER &lsquo;admin&rsquo;@&lsquo;localhost&rsquo;;</li>
+<li>GRANT ALL PRIVILEGES ON <em>.</em> TO &lsquo;admin&rsquo;@&lsquo;localhost&rsquo;;</li>
+</ul>
+</li>
+<li>Cập nhật mật khẩu: (root)
+
+<ul>
+<li>UPDATE mysql.user SET Password=PASSWORD(&lsquo;YOUR_PASSWORD&rsquo;) WHERE Host=&lsquo;localhost&rsquo; AND User=&lsquo;root&rsquo;;</li>
+</ul>
+</li>
+<li>Phân quyền cho database
+
+<ul>
+<li>GRANT ALL ON mydb.* TO &lsquo;someuser&rsquo;@&lsquo;somehost&rsquo;;</li>
+</ul>
+</li>
+<li>Tạo cơ sở dữ liệu: create database name</li>
+<li>Khởi động nhanh server: sudo /usr/local/mysql/support-files/mysql.server start (nếu cập nhật path thì không cần đường dẫn)</li>
+<li>Dừng: sudo /usr/local/mysql/support-files/mysql.server stop</li>
+<li>Khởi động lại: sudo /usr/local/mysql/support-files/mysql.server restart</li>
+<li>Bật log để theo dõi các thay đổi trên mysql (tất cả)</li>
+</ul>
+</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>SET GLOBAL log_output = "FILE"; //which is set by default.
+</span><span class='line'>    SET GLOBAL general_log_file = "/path/to/your/logfile.log";
+</span><span class='line'>    SET GLOBAL general_log = 'ON';</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>SET GLOBAL log_output = 'TABLE';
+</span><span class='line'>    SET GLOBAL general_log = 'ON';
+</span><span class='line'>    //Take a look at the table mysql.general_log</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Một số lỗi:
+
+<ul>
+<li>Warning: mysql_connect(): [2002] No such file or directory
+
+<ul>
+<li>Nếu có <em>/tmp/mysql.sock</em> và không có <em>/var/mysql/mysql.sock</em>
+
+<ul>
+<li>cd /var</li>
+<li>sudo mkdir mysql</li>
+<li>sudo chmod 755 mysql</li>
+<li>cd mysql</li>
+<li>ln -s /tmp/mysql.sock mysql.sock</li>
+</ul>
+</li>
+<li>Nếu không có <em>/tmp/mysql.sock</em> và có <em>/var/mysql/mysql.sock</em>
+
+<ul>
+<li>cd /tmp</li>
+<li>ln -s /var/mysql/mysql.sock mysql.sock</li>
+</ul>
+</li>
+<li>Tham khảo: <a href="http://stackoverflow.com/questions/4219970/warning-mysql-connect-2002-no-such-file-or-directory-trying-to-connect-vi">http://stackoverflow.com/questions/4219970/warning-mysql-connect-2002-no-such-file-or-directory-trying-to-connect-vi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>PHP</h2>
+
+<ul>
+<li>Cài đặt 5.5 <a href="http://coolestguidesontheplanet.com/upgrade-to-php-5-4-or-5-5-mac-osx-10-8-mountain-lion/">link</a>
+
+<ul>
+<li>curl -s <a href="http://php-osx.liip.ch/install.sh">http://php-osx.liip.ch/install.sh</a> | bash -s 5.5</li>
+</ul>
+</li>
+<li>Cài đặt <strong>mcrypt</strong>
+
+<ul>
+<li>Cài đặt <strong>Xcode command line tools</strong> (nếu chưa có): xcode-select &mdash;install</li>
+<li>Tạo thư mục <strong>mcrypt</strong> trong thư mục home
+
+<ul>
+<li>cd ~</li>
+<li>mkdir mcrypt</li>
+</ul>
+</li>
+<li>Download libmcrypt từ <a href="http://sourceforge.net/projects/mcrypt/files/Libmcrypt/">sourceforge</a> hoặc <a href="files/libmcrypt-2.5.8.tar.gz">phiên bản 2.5.6</a></li>
+<li>Vào thư mục mcrypt, giải nén tập tin mới download và xóa tập tin nén
+
+<ul>
+<li>cd ~/mcrypt</li>
+<li>tar -zxvf libmcrypt-2.5.8.tar.gz</li>
+<li>rm *.gz</li>
+</ul>
+</li>
+<li>Vào thư mục libmcrypt và cài đặt
+
+<ul>
+<li>cd ~/mcrypt/libmcrypt-2.5.8</li>
+<li>./configure</li>
+<li>make</li>
+<li>sudo make install</li>
+</ul>
+</li>
+<li>Tải Autoconf và cài đặt
+
+<ul>
+<li>Tải tại đường dẫn <a href="http://ftp.gnu.org/gnu/autoconf/autoconf-latest.tar.gz">http://ftp.gnu.org/gnu/autoconf/autoconf-latest.tar.gz</a> hoặc <a href="files/autoconf-latest.tar.gz">tại đây</a></li>
+<li>Giải nén vào thư mục ~/mcrypt</li>
+<li>cd ~/mcrypt/autoconf-2.69</li>
+<li>./configure</li>
+<li>make</li>
+<li>sudo make install</li>
+</ul>
+</li>
+<li>Biên dịch mcrypt php extension
+
+<ul>
+<li>Tải src của php tại đường dẫn <a href="http://php.net/releases/index.php">http://php.net/releases/index.php</a> hoặc <a href="files/php-5.5.16.tar.gz">tại đây</a></li>
+<li>Giải nén vào thư mục ~/mcrypt</li>
+<li>cd ~/mcrypt/php-5.5.16/ext/mcrypt/</li>
+<li>/usr/bin/phpize => Kết quả: <img src="/images/php-mcrypt1.png"></li>
+<li>./configure</li>
+<li>make</li>
+<li>sudo make install => Kết quả: <img src="/images/php-mcrypt2.png" ></li>
+</ul>
+</li>
+<li>Kích hoạt mcrypt.so
+
+<ul>
+<li>Mở tập tin /etc/php.ini (nếu chưa có thì copy từ /etc/php.ini.default</li>
+<li>Thêm dòng &ldquo;extension=mcrypt.so&rdquo;</li>
+</ul>
+</li>
+<li>Khởi động lại apache => sudo apachectl restart</li>
+<li>Tham khảo: <a href="http://coolestguidesontheplanet.com/how-to-install-mcrypt-for-php-on-mac-osx-lion-10-7-development-server/">10.7 và 10.8</a> hoặc <a href="http://coolestguidesontheplanet.com/install-mcrypt-php-mac-osx-10-9-mavericks-development-server/">10.9</a></li>
+</ul>
+</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Kết nối PHP và MySQL</h2>
+
+<ul>
+<li>Sư dụng các lệnh sau (phải chạy dưới quyền root)
+
+<ul>
+<li>cd /var</li>
+<li>mkdir mysql</li>
+<li>cd mysql</li>
+<li>ln -s /tmp/mysql.sock mysql.sock</li>
+</ul>
+</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>vi editor</h2>
+
+<ul>
+<li>Sử dụng
+
+<ul>
+<li>Bắt đầu: vi tentaptin</li>
+<li>Thoát và lưu: ZZ hoặc :wq</li>
+<li>Thoát và không lưu: :q</li>
+<li>Lưu: :w</li>
+</ul>
+</li>
+<li>Di chuyển trang
+
+<ul>
+<li>G &ndash; di chuyển tới dòng cuối cùng trong tập tin</li>
+<li>xG &ndash; di chuyển tơí dòng x</li>
+<li>^F &ndash; pagedown</li>
+<li>^D &ndash; pagedown</li>
+<li>^U &ndash; pageup</li>
+</ul>
+</li>
+<li>Thêm
+
+<ul>
+<li>r &ndash; thay ký tự ngay con trỏ bằng ký tự liền sau</li>
+<li>i &ndash; thêm trước con trỏ</li>
+<li>a &ndash; thêm sau con trỏ</li>
+<li>A &ndash; thêm vào cuối dòng</li>
+</ul>
+</li>
+<li>Xoá
+
+<ul>
+<li>x &ndash; xóa ký tự ngay con trỏ</li>
+<li>dd &ndash; xóa dòng ngay con trỏ</li>
+<li>dw &ndash; xóa từ ngay con trỏ</li>
+<li>db &ndash; xóa từ trước con trỏ</li>
+</ul>
+</li>
+<li>Tìm kiếm
+
+<ul>
+<li>? &ndash; tìm từ phía sau</li>
+<li>/ &ndash; tìm từ phía trước</li>
+</ul>
+</li>
+<li><a href="http://www.cs.rit.edu/~cslab/vi.html">Tham khảo</a></li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Homebrew</h2>
+
+<ul>
+<li>Chạy lệnh sau trong terminal</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Tham khảo: <a href="http://brew.sh/">http://brew.sh/</a></li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Axel &ndash; chương trình hỗ trợ download</h2>
+
+<h3>Cài đặt</h3>
+
+<ul>
+<li><b>Phải cài đặt homebrew trước</b>, thực thi lệnh sau</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>brew install axel</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Sử dụng</h3>
+
+<ul>
+<li>axel url</li>
+<li>Ví dụ: axel -n 10 <a href="http://example.com/some_file.mov">http://example.com/some_file.mov</a></li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>p7zip &ndash; chương trình nén và giải nén tập tin/thư mục</h2>
+
+<h3>Cài đặt</h3>
+
+<ul>
+<li><b>Phải cài đặt homebrew trước</b>, thực thi lệnh sau để cài đặt</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>brew install p7zip</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Tạo symbolic link trong thư mục /bin bằng lệnh sau</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo ln -s /usr/local/lib/p7zip/7za /bin/7za</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Sử dụng</h3>
+
+<ul>
+<li>7za x a.zip -o* => giải nén tập tin a vào thư mục a</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Usage: 7za &lt;command&gt; [&lt;switches&gt;...] &lt;archive_name&gt; [&lt;file_names&gt;...]
+</span><span class='line'>       [&lt;@listfiles...&gt;]
+</span><span class='line'>
+</span><span class='line'>&lt;Commands&gt;
+</span><span class='line'>  a: Add files to archive
+</span><span class='line'>  b: Benchmark
+</span><span class='line'>  d: Delete files from archive
+</span><span class='line'>  e: Extract files from archive (without using directory names)
+</span><span class='line'>  l: List contents of archive
+</span><span class='line'>  t: Test integrity of archive
+</span><span class='line'>  u: Update files to archive
+</span><span class='line'>  x: eXtract files with full paths
+</span><span class='line'>&lt;Switches&gt;
+</span><span class='line'>  -ai[r[-|0]]{@listfile|!wildcard}: Include archives
+</span><span class='line'>  -ax[r[-|0]]{@listfile|!wildcard}: eXclude archives
+</span><span class='line'>  -bd: Disable percentage indicator
+</span><span class='line'>  -i[r[-|0]]{@listfile|!wildcard}: Include filenames
+</span><span class='line'>  -m{Parameters}: set compression Method
+</span><span class='line'>  -o{Directory}: set Output directory
+</span><span class='line'>  -p{Password}: set Password
+</span><span class='line'>  -r[-|0]: Recurse subdirectories
+</span><span class='line'>  -scs{UTF-8 | WIN | DOS}: set charset for list files
+</span><span class='line'>  -sfx[{name}]: Create SFX archive
+</span><span class='line'>  -si[{name}]: read data from stdin
+</span><span class='line'>  -slt: show technical information for l (List) command
+</span><span class='line'>  -so: write data to stdout
+</span><span class='line'>  -ssc[-]: set sensitive case mode
+</span><span class='line'>  -t{Type}: Set type of archive
+</span><span class='line'>  -u[-][p#][q#][r#][x#][y#][z#][!newArchiveName]: Update options
+</span><span class='line'>  -v{Size}[b|k|m|g]: Create volumes
+</span><span class='line'>  -w[{path}]: assign Work directory. Empty path means a temporary directory
+</span><span class='line'>  -x[r[-|0]]]{@listfile|!wildcard}: eXclude filenames
+</span><span class='line'>  -y: assume Yes on all queries
+</span><span class='line'>
+</span><span class='line'>$ ./7za a 7za.7z 7za 
+</span><span class='line'>
+</span><span class='line'>7-Zip (A) [64] 9.20  Copyright (c) 1999-2010 Igor Pavlov  2010-11-18
+</span><span class='line'>p7zip Version 9.20 (locale=de_DE.UTF-8,Utf16=on,HugeFiles=on,4 CPUs)
+</span><span class='line'>Scanning
+</span><span class='line'>
+</span><span class='line'>Creating archive 7za.7z
+</span><span class='line'>
+</span><span class='line'>Compressing  7za      
+</span><span class='line'>
+</span><span class='line'>Everything is Ok
+</span><span class='line'>
+</span><span class='line'>$ ls
+</span><span class='line'>7za    7za.7z</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<!-- ================================================================= -->
+
+
+<h2>unrar &ndash; chương trình giải nén tập tin rar</h2>
+
+<h3>Cài đặt</h3>
+
+<ul>
+<li><b>Phải cài đặt homebrew trước</b>, thực thi lệnh sau để cài đặt</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>brew install unrar</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Tạo symbolic link trong thư mục /bin bằng lệnh sau</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo ln -s /usr/local/lib/p7zip/7za /bin/7za</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Sử dụng</h3>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>unrar -pPASSWORD -y -ad x &lt;filename&gt;</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Tham khảo</h3>
+
+<ul>
+<li><a href="http://best-mac-tips.com/2013/02/02/extract-rar-archive-command-line-mac-terminal/">http://best-mac-tips.com/2013/02/02/extract-rar-archive-command-line-mac-terminal/</a></li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Excel</h2>
+
+<ul>
+<li>Ctrl-U: sửa ô hiện hành</li>
+<li>Command-T: chuyển đổi địa chỉ trong công thức thành tuyệt đối, tương đối</li>
+</ul>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -782,7 +1437,8 @@ Modifiers & &hellip;">
 <li>B3: Sử dụng với các lệnh sau (bundle exec)
 
 <ul>
-<li>rake new_post[&ldquo;&hellip;&rdquo;]: tạo 1 bài post</li>
+<li>rake new_post[&ldquo;&hellip;&rdquo;]: tạo 1 bài post
+=> Sử dụng trong zsh: <strong>bundle exec rake &ldquo;new_post[test]&rdquo;</strong></li>
 <li>rake new_page[&ldquo;&hellip;&rdquo;]: tạo 1 trang mới</li>
 <li>rake preview: xem trên localhost</li>
 <li>rake generate: phát sinh trang html</li>
@@ -951,6 +1607,10 @@ Modifiers & &hellip;">
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/10/13/gcc-the-gnu-compiler-collection/">GCC - the GNU Compiler Collection</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/10/05/slate/">Slate</a>
       </li>
     
@@ -964,10 +1624,6 @@ Modifiers & &hellip;">
     
       <li class="post">
         <a href="/blog/2014/08/31/git-notes/">Git Notes</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/08/27/python-notes/">Python Notes</a>
       </li>
     
   </ul>

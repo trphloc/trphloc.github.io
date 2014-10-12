@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Mysql | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/mysql/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-10-06T15:04:02+07:00</updated>
+  <updated>2014-10-12T22:59:47+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -29,6 +29,7 @@
 <li>cd: di chuyển tới thư mục</li>
 <li>sudo chmod -R 777 XXX: chỉnh permission của thư mục XXX (-R: bao gồm cả thư mục con)</li>
 <li>chmod +x file: chuyển thành tập tin thực thi được</li>
+<li>sudo chown -R trphloc:admin /directory => thay đổi chủ sở hữu của thư mục</li>
 <li>Tìm vị trí của lệnh: which name</li>
 <li>Thêm đường dẫn tới biến PATH
 
@@ -448,6 +449,122 @@ brew install axel
 <li>Ví dụ: axel -n 10 <a href="http://example.com/some_file.mov">http://example.com/some_file.mov</a></li>
 </ul>
 
+
+<!-- ================================================================= -->
+
+
+<h2>p7zip &ndash; chương trình nén và giải nén tập tin/thư mục</h2>
+
+<h3>Cài đặt</h3>
+
+<ul>
+<li><b>Phải cài đặt homebrew trước</b>, thực thi lệnh sau để cài đặt</li>
+</ul>
+
+
+<p><code>
+brew install p7zip
+</code></p>
+
+<ul>
+<li>Tạo symbolic link trong thư mục /bin bằng lệnh sau</li>
+</ul>
+
+
+<p><code>
+sudo ln -s /usr/local/lib/p7zip/7za /bin/7za
+</code></p>
+
+<h3>Sử dụng</h3>
+
+<ul>
+<li>7za x a.zip -o* => giải nén tập tin a vào thư mục a</li>
+</ul>
+
+
+<p>```
+Usage: 7za <command> [<switches>&hellip;] &lt;archive_name> [&lt;file_names>&hellip;]</p>
+
+<pre><code>   [&lt;@listfiles...&gt;]
+</code></pre>
+
+<p><Commands>
+  a: Add files to archive
+  b: Benchmark
+  d: Delete files from archive
+  e: Extract files from archive (without using directory names)
+  l: List contents of archive
+  t: Test integrity of archive
+  u: Update files to archive
+  x: eXtract files with full paths
+<Switches>
+  -ai[r[&ndash;|0]]{@listfile|!wildcard}: Include archives
+  -ax[r[&ndash;|0]]{@listfile|!wildcard}: eXclude archives
+  -bd: Disable percentage indicator
+  -i[r[&ndash;|0]]{@listfile|!wildcard}: Include filenames
+  -m{Parameters}: set compression Method
+  -o{Directory}: set Output directory
+  -p{Password}: set Password
+  -r[&ndash;|0]: Recurse subdirectories
+  -scs{UTF-8 | WIN | DOS}: set charset for list files
+  -sfx[{name}]: Create SFX archive
+  -si[{name}]: read data from stdin
+  -slt: show technical information for l (List) command
+  -so: write data to stdout
+  -ssc[&ndash;]: set sensitive case mode
+  -t{Type}: Set type of archive
+  -u[&ndash;][p#][q#][r#][x#][y#][z#][!newArchiveName]: Update options
+  -v{Size}[b|k|m|g]: Create volumes
+  -w[{path}]: assign Work directory. Empty path means a temporary directory
+  -x[r[&ndash;|0]]]{@listfile|!wildcard}: eXclude filenames
+  -y: assume Yes on all queries</p>
+
+<p>$ ./7za a 7za.7z 7za</p>
+
+<p>7-Zip (A) [64] 9.20  Copyright &copy; 1999-2010 Igor Pavlov  2010-11-18
+p7zip Version 9.20 (locale=de_DE.UTF-8,Utf16=on,HugeFiles=on,4 CPUs)
+Scanning</p>
+
+<p>Creating archive 7za.7z</p>
+
+<p>Compressing  7za</p>
+
+<p>Everything is Ok</p>
+
+<p>$ ls
+7za    7za.7z
+```</p>
+
+<!-- ================================================================= -->
+
+
+<h2>unrar &ndash; chương trình giải nén tập tin rar</h2>
+
+<h3>Cài đặt</h3>
+
+<ul>
+<li><b>Phải cài đặt homebrew trước</b>, thực thi lệnh sau để cài đặt</li>
+</ul>
+
+
+<p><code>
+brew install unrar
+</code></p>
+
+<ul>
+<li>Tạo symbolic link trong thư mục /bin bằng lệnh sau</li>
+</ul>
+
+
+<p><code>
+sudo ln -s /usr/local/lib/p7zip/7za /bin/7za
+</code></p>
+
+<h3>Sử dụng</h3>
+
+<p><code>
+unrar x &lt;filename&gt;
+</code></p>
 
 <!-- ================================================================= -->
 

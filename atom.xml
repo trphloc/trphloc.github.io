@@ -4,7 +4,7 @@
   <title><![CDATA[Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-10-06T15:04:02+07:00</updated>
+  <updated>2014-10-12T22:59:47+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -1428,6 +1428,15 @@
 <li>Ctrl-c Ctrl-v: mở tập tin/thư mục</li>
 <li>! 7z a zipfilename * RET: nén tập tin sử dụng 7zip</li>
 <li>! 7z e * RET: giải nén tập tin</li>
+<li>! 7za x a.zip -o* (sử dụng trên mac os)</li>
+<li>! unrar -pSECRET -y -ad x
+
+<ul>
+<li>-pSECRET: SECRET là mật khẩu</li>
+<li>-y: trả lời -y tất cả câu hỏi</li>
+<li>-ad: tạo thư mục riêng</li>
+</ul>
+</li>
 <li>Alt-x grep:</li>
 <li>Alt-x grep-find:</li>
 <li>Alt-x find-name-dired:</li>
@@ -2320,6 +2329,7 @@
 <li>cd: di chuyển tới thư mục</li>
 <li>sudo chmod -R 777 XXX: chỉnh permission của thư mục XXX (-R: bao gồm cả thư mục con)</li>
 <li>chmod +x file: chuyển thành tập tin thực thi được</li>
+<li>sudo chown -R trphloc:admin /directory => thay đổi chủ sở hữu của thư mục</li>
 <li>Tìm vị trí của lệnh: which name</li>
 <li>Thêm đường dẫn tới biến PATH
 
@@ -2746,6 +2756,171 @@
 <li>axel url</li>
 <li>Ví dụ: axel -n 10 <a href="http://example.com/some_file.mov">http://example.com/some_file.mov</a></li>
 </ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>p7zip &ndash; chương trình nén và giải nén tập tin/thư mục</h2>
+
+<h3>Cài đặt</h3>
+
+<ul>
+<li><b>Phải cài đặt homebrew trước</b>, thực thi lệnh sau để cài đặt</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>brew install p7zip</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Tạo symbolic link trong thư mục /bin bằng lệnh sau</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo ln -s /usr/local/lib/p7zip/7za /bin/7za</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Sử dụng</h3>
+
+<ul>
+<li>7za x a.zip -o* => giải nén tập tin a vào thư mục a</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Usage: 7za &lt;command&gt; [&lt;switches&gt;...] &lt;archive_name&gt; [&lt;file_names&gt;...]
+</span><span class='line'>       [&lt;@listfiles...&gt;]
+</span><span class='line'>
+</span><span class='line'>&lt;Commands&gt;
+</span><span class='line'>  a: Add files to archive
+</span><span class='line'>  b: Benchmark
+</span><span class='line'>  d: Delete files from archive
+</span><span class='line'>  e: Extract files from archive (without using directory names)
+</span><span class='line'>  l: List contents of archive
+</span><span class='line'>  t: Test integrity of archive
+</span><span class='line'>  u: Update files to archive
+</span><span class='line'>  x: eXtract files with full paths
+</span><span class='line'>&lt;Switches&gt;
+</span><span class='line'>  -ai[r[-|0]]{@listfile|!wildcard}: Include archives
+</span><span class='line'>  -ax[r[-|0]]{@listfile|!wildcard}: eXclude archives
+</span><span class='line'>  -bd: Disable percentage indicator
+</span><span class='line'>  -i[r[-|0]]{@listfile|!wildcard}: Include filenames
+</span><span class='line'>  -m{Parameters}: set compression Method
+</span><span class='line'>  -o{Directory}: set Output directory
+</span><span class='line'>  -p{Password}: set Password
+</span><span class='line'>  -r[-|0]: Recurse subdirectories
+</span><span class='line'>  -scs{UTF-8 | WIN | DOS}: set charset for list files
+</span><span class='line'>  -sfx[{name}]: Create SFX archive
+</span><span class='line'>  -si[{name}]: read data from stdin
+</span><span class='line'>  -slt: show technical information for l (List) command
+</span><span class='line'>  -so: write data to stdout
+</span><span class='line'>  -ssc[-]: set sensitive case mode
+</span><span class='line'>  -t{Type}: Set type of archive
+</span><span class='line'>  -u[-][p#][q#][r#][x#][y#][z#][!newArchiveName]: Update options
+</span><span class='line'>  -v{Size}[b|k|m|g]: Create volumes
+</span><span class='line'>  -w[{path}]: assign Work directory. Empty path means a temporary directory
+</span><span class='line'>  -x[r[-|0]]]{@listfile|!wildcard}: eXclude filenames
+</span><span class='line'>  -y: assume Yes on all queries
+</span><span class='line'>
+</span><span class='line'>$ ./7za a 7za.7z 7za 
+</span><span class='line'>
+</span><span class='line'>7-Zip (A) [64] 9.20  Copyright (c) 1999-2010 Igor Pavlov  2010-11-18
+</span><span class='line'>p7zip Version 9.20 (locale=de_DE.UTF-8,Utf16=on,HugeFiles=on,4 CPUs)
+</span><span class='line'>Scanning
+</span><span class='line'>
+</span><span class='line'>Creating archive 7za.7z
+</span><span class='line'>
+</span><span class='line'>Compressing  7za      
+</span><span class='line'>
+</span><span class='line'>Everything is Ok
+</span><span class='line'>
+</span><span class='line'>$ ls
+</span><span class='line'>7za    7za.7z</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<!-- ================================================================= -->
+
+
+<h2>unrar &ndash; chương trình giải nén tập tin rar</h2>
+
+<h3>Cài đặt</h3>
+
+<ul>
+<li><b>Phải cài đặt homebrew trước</b>, thực thi lệnh sau để cài đặt</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>brew install unrar</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Tạo symbolic link trong thư mục /bin bằng lệnh sau</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo ln -s /usr/local/lib/p7zip/7za /bin/7za</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Sử dụng</h3>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>unrar x &lt;filename&gt;</span></code></pre></td></tr></table></div></figure>
+
+
 
 
 <!-- ================================================================= -->

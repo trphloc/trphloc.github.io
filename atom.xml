@@ -4,7 +4,7 @@
   <title><![CDATA[Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-10-13T00:50:06+07:00</updated>
+  <updated>2014-10-14T21:26:03+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -23,12 +23,97 @@
 <!-- ================================================================= -->
 
 
+<h2>Cài đặt</h2>
+
+<ul>
+<li>Trên Mac: cài đặt xcode command line tools
+
+<ul>
+<li>Mở terminal</li>
+<li>Gọi lệnh xcode-select &mdash;install</li>
+<li>Kiểm tra cài đặt
+
+<ul>
+<li>Gọi lệnh: <strong>xcode-select -p</strong> thì kết quả là: <em>/Library/Developer/CommandLineTools</em></li>
+<li>Gọi lệnh: <strong>gcc &mdash;version</strong> thì kết quả <em>&hellip; Apple LLVM version 6.0 (clang-600.0.54) (based on LLVM 3.5svn) &hellip;</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Trên windows
+
+<ul>
+<li>Cách 1
+
+<ul>
+<li>Download <strong>MinGW</strong> tại đường link <a href="http://sourceforge.net/projects/mingw/files/">http://sourceforge.net/projects/mingw/files/</a></li>
+<li>Cài đặt và được kết quả</li>
+<li><img src="images/gcc_1.png" /></li>
+<li>Chuột phải vào gcc cho C++ => menu File => chọn Apply changes</li>
+</ul>
+</li>
+<li>Cách 2
+
+<ul>
+<li>Truy cập <a href="http://mingw-w64.sourceforge.net/">http://mingw-w64.sourceforge.net/</a></li>
+<li>Tải gcc phiên bản mới nhất</li>
+<li>Giải nén vào thư mục <strong>C:\abc\gcc-4.9-win64</strong></li>
+<li>Thêm <strong>C:\abc\gcc-4.9-win64\bin</strong> vào biến PATH</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+<h2>Sử dụng</h2>
+
+<ul>
+<li>Viết code cho chương trình hello như sau</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>//Tap tin program1.cpp
+</span><span class='line'>#include &lt;iostream&gt;
+</span><span class='line'>using namespace std;
+</span><span class='line'>
+</span><span class='line'>int main()
+</span><span class='line'>{
+</span><span class='line'>  cout &lt;&lt; "Hello world ..." &lt;&lt; endl;
+</span><span class='line'>}
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Biên dịch bằng lệnh sau</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>g++ -o hello.exe program1.cpp</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Chạy chương trình hello.exe ta được kết quả <strong>Hello world &hellip;</strong></li>
+</ul>
+
+
 <h2>Tài liệu tham khảo</h2>
 
 <ul>
-<li><a href="https://gcc.gnu.org/">https://gcc.gnu.org/</a></li>
-<li><a href="http://stackoverflow.com/questions/6394755/how-to-install-gcc-on-windows-7-machine">http://stackoverflow.com/questions/6394755/how-to-install-gcc-on-windows-7-machine</a></li>
-<li><a href="https://solarianprogrammer.com/2013/06/11/compiling-gcc-mac-os-x/">https://solarianprogrammer.com/2013/06/11/compiling-gcc-mac-os-x/</a></li>
+<li>Giới thiệu: <a href="https://gcc.gnu.org/">https://gcc.gnu.org/</a></li>
+<li>Cài đặt windows: <a href="http://stackoverflow.com/questions/6394755/how-to-install-gcc-on-windows-7-machine">http://stackoverflow.com/questions/6394755/how-to-install-gcc-on-windows-7-machine</a></li>
+<li>Cài đặt mac: <a href="https://solarianprogrammer.com/2013/06/11/compiling-gcc-mac-os-x/">https://solarianprogrammer.com/2013/06/11/compiling-gcc-mac-os-x/</a></li>
+<li>Cài đặt mac: <a href="http://railsapps.github.io/xcode-command-line-tools.html">http://railsapps.github.io/xcode-command-line-tools.html</a></li>
+<li>Sử dụng: <a href="http://pages.cs.wisc.edu/~beechung/ref/gcc-intro.html">http://pages.cs.wisc.edu/~beechung/ref/gcc-intro.html</a></li>
 </ul>
 
 ]]></content>

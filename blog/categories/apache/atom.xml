@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Apache | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/apache/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-10-31T16:57:04+07:00</updated>
+  <updated>2014-10-31T17:09:12+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -574,20 +574,37 @@ brew install aria2
 
 <ul>
 <li>aria2c [options]</li>
-<li>Basic options
-
-<ul>
-<li>&ldquo;-d, &mdash;dir=<DIR>&rdquo;</li>
-<li>&ldquo;-i, &mdash;input-file=<FILE>&rdquo;</li>
-<li>&ldquo;-l, &mdash;log=<LOG>&rdquo;</li>
-<li>&ldquo;-j, &mdash;max-concurrent-downloads=<N>&rdquo;</li>
-<li>&ldquo;-V, &mdash;check-integrity[=true|false]&rdquo;</li>
-<li>&ldquo;-c, &mdash;continue[=true|false]&rdquo;</li>
-<li>&ldquo;-h, &mdash;help[=<TAG>|<KEYWORD>]&rdquo;</li>
-</ul>
-</li>
+<li>Một số tham số</li>
 </ul>
 
+
+<p><code>
+-d, --dir=&lt;DIR&gt;
+</code></p>
+
+<p><code>
+-i, --input-file=&lt;FILE&gt;
+</code></p>
+
+<p><code>
+-l, --log=&lt;LOG&gt;
+</code></p>
+
+<p><code>
+-j, --max-concurrent-downloads=&lt;N&gt;
+</code></p>
+
+<p><code>
+-V, --check-integrity[=true|false]
+</code></p>
+
+<p><code>
+-c, --continue[=true|false]
+</code></p>
+
+<p><code>
+-h, --help[=&lt;TAG&gt;|&lt;KEYWORD&gt;]
+</code></p>
 
 <!-- ================================================================= -->
 

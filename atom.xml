@@ -4,7 +4,7 @@
   <title><![CDATA[Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-10-29T10:56:35+07:00</updated>
+  <updated>2014-10-31T16:57:04+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -1692,6 +1692,8 @@
 <li>Alt-f/b: di chuyển trước 1 từ/sau 1 từ</li>
 <li>Ctrl-a/e: di chuyển đầu dòng/cuối dòng</li>
 <li>Alt-a/e: di chuyển đầu đoạn văn/cuối đoạn văn</li>
+<li>Ctrl-d: xóa ký tự</li>
+<li>Alt-d: xóa từ</li>
 <li>Ctrl-v/Alt-v: page down/page up</li>
 <li>Alt-&lt;/>: di chuyển bắt đầu tập tin/kết thúc tập tin</li>
 <li>Alt-x replace-string: thay thế chuỗi (replact) &ndash; Alt-%</li>
@@ -2916,6 +2918,41 @@
 <ul>
 <li>axel url</li>
 <li>Ví dụ: axel -n 10 <a href="http://example.com/some_file.mov">http://example.com/some_file.mov</a></li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Aria2 &ndash; chương trình hỗ trợ download</h2>
+
+<h3>Cài đặt</h3>
+
+<ul>
+<li><b>Phải cài đặt homebrew trước</b>, thực thi lệnh sau</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>brew install aria2</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Sử dụng</h3>
+
+<ul>
+<li>aria2c [options]</li>
+<li>Basic options
+
+<ul>
+<li>&ldquo;-d, &mdash;dir=<DIR>&rdquo;</li>
+<li>&ldquo;-i, &mdash;input-file=<FILE>&rdquo;</li>
+<li>&ldquo;-l, &mdash;log=<LOG>&rdquo;</li>
+<li>&ldquo;-j, &mdash;max-concurrent-downloads=<N>&rdquo;</li>
+<li>&ldquo;-V, &mdash;check-integrity[=true|false]&rdquo;</li>
+<li>&ldquo;-c, &mdash;continue[=true|false]&rdquo;</li>
+<li>&ldquo;-h, &mdash;help[=<TAG>|<KEYWORD>]&rdquo;</li>
+</ul>
+</li>
 </ul>
 
 

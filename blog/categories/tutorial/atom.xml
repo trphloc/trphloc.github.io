@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tutorial | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/tutorial/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-10-29T10:56:35+07:00</updated>
+  <updated>2014-10-31T16:57:04+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -951,6 +951,8 @@ chmod 755 abc
 <li>Alt-f/b: di chuyển trước 1 từ/sau 1 từ</li>
 <li>Ctrl-a/e: di chuyển đầu dòng/cuối dòng</li>
 <li>Alt-a/e: di chuyển đầu đoạn văn/cuối đoạn văn</li>
+<li>Ctrl-d: xóa ký tự</li>
+<li>Alt-d: xóa từ</li>
 <li>Ctrl-v/Alt-v: page down/page up</li>
 <li>Alt-&lt;/>: di chuyển bắt đầu tập tin/kết thúc tập tin</li>
 <li>Alt-x replace-string: thay thế chuỗi (replact) &ndash; Alt-%</li>

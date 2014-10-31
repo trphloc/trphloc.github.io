@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Apache | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/apache/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-10-29T10:56:35+07:00</updated>
+  <updated>2014-10-31T16:57:04+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -551,6 +551,41 @@ brew install axel
 <ul>
 <li>axel url</li>
 <li>Ví dụ: axel -n 10 <a href="http://example.com/some_file.mov">http://example.com/some_file.mov</a></li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Aria2 &ndash; chương trình hỗ trợ download</h2>
+
+<h3>Cài đặt</h3>
+
+<ul>
+<li><b>Phải cài đặt homebrew trước</b>, thực thi lệnh sau</li>
+</ul>
+
+
+<p><code>
+brew install aria2
+</code></p>
+
+<h3>Sử dụng</h3>
+
+<ul>
+<li>aria2c [options]</li>
+<li>Basic options
+
+<ul>
+<li>&ldquo;-d, &mdash;dir=<DIR>&rdquo;</li>
+<li>&ldquo;-i, &mdash;input-file=<FILE>&rdquo;</li>
+<li>&ldquo;-l, &mdash;log=<LOG>&rdquo;</li>
+<li>&ldquo;-j, &mdash;max-concurrent-downloads=<N>&rdquo;</li>
+<li>&ldquo;-V, &mdash;check-integrity[=true|false]&rdquo;</li>
+<li>&ldquo;-c, &mdash;continue[=true|false]&rdquo;</li>
+<li>&ldquo;-h, &mdash;help[=<TAG>|<KEYWORD>]&rdquo;</li>
+</ul>
+</li>
 </ul>
 
 

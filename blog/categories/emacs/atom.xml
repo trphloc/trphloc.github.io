@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Emacs | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/emacs/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-10-31T17:09:12+07:00</updated>
+  <updated>2014-11-10T13:51:55+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -660,6 +660,19 @@ made up of multiple lines and sentences."""
 <li>Ctrl-x Left/Right: di chuyển tới buffer trước hoặc sau</li>
 <li>Ctrl-x k: tắt buffer, ko lưu</li>
 <li>Ctrl-x s: tắt và lưu</li>
+<li>iBuffer
+
+<ul>
+<li>Cấu hình phím C-x C-b sử dụng ibuffer
+
+<ul>
+<li>(global-set-key (kbd &ldquo;C-x C-b&rdquo;) &lsquo;ibuffer)</li>
+</ul>
+</li>
+<li>h: hướng dẫn sử dụng</li>
+<li>D: kill các buffers đang được chọn</li>
+</ul>
+</li>
 </ul>
 
 
@@ -1094,6 +1107,54 @@ buffer is not visiting a file.&ldquo;
 </li>
 </ul>
 
+
+<!-- ================================================================= -->
+
+
+<h2>Recent files</h2>
+
+<ul>
+<li>Mặc định trong emacs 21 hoặc download tại trang: <a href="http://www.emacswiki.org/RecentFiles">http://www.emacswiki.org/RecentFiles</a></li>
+<li>Để kích hoạt thêm đoạn cấu hình sau vào tập tin ~/.emacs</li>
+</ul>
+
+
+<p>```</p>
+
+<pre><code>(require 'recentf)
+(recentf-mode 1)
+(setq recentf-max-menu-items 25)
+(global-set-key "\C-x\ \C-r" 'recentf-open-files)
+</code></pre>
+
+<p>```</p>
+
+<ul>
+<li>Sử dụng: nhấn tổ hợp phím C-x và C-r để hiển thị danh sách</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Highlight-symbol</h2>
+
+<ul>
+<li>Cài đặt trong list-packages</li>
+<li>Cấu hình</li>
+</ul>
+
+
+<p>```</p>
+
+<pre><code>;; Highlight-symbol
+(require 'highlight-symbol)
+(global-set-key (kbd "C-x C-a") 'highlight-symbol-at-point)
+(global-set-key (kbd "C-x M-a") 'highlight-symbol-query-replace)
+(global-set-key (kbd "C-x a") 'highlight-symbol-remove-all)
+</code></pre>
+
+<p>```</p>
 ]]></content>
   </entry>
   

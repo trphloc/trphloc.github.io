@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tutorial | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/tutorial/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-11-18T09:59:42+07:00</updated>
+  <updated>2014-12-31T22:33:39+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -573,6 +573,40 @@ chmod 755 abc
 <li>Frame là màn hình giao diện của emacs khi bắt đầu trên một hệ điều hành. Một frame có menu, thanh công cụ, và 1 màn hình. Màn hình đó có thể được chia thành nhiều windows. Bạn có thể tạo thêm frame khi cần. Nhiều frame được tạo trong cùng 1 phiên làm việc của Emacs sẽ dùng chung các buffers và dữ liệu.</li>
 <li><a href="https://www.gnu.org/software/emacs/manual/html_mono/efaq-w32.html">Windows</a></li>
 <li><a href="http:/www.ergoemacs.org">Emacs</a></li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Cài đặt</h2>
+
+<h3>Windows</h3>
+
+<ul>
+<li>Emacs: <a href="http://www.gnu.org/software/emacs/">http://www.gnu.org/software/emacs/</a></li>
+<li>Cấu hình:</li>
+<li>Cấu hình
+
+<ul>
+<li>.emacs => ~/.emacs</li>
+<li>.emacs.d => ~/.emacs.d</li>
+</ul>
+</li>
+</ul>
+
+
+<h3>Mac</h3>
+
+<ul>
+<li>Aquamacs: <a href="http://aquamacs.org/">http://aquamacs.org/</a></li>
+<li>Cấu hình
+
+<ul>
+<li>.emacs => ~/Library/Preferences/Aquamacs Emacs/Preferences.el</li>
+<li>.emacs.d => ~/Library/Preferences/Aquamacs Emacs/Packages</li>
+</ul>
+</li>
 </ul>
 
 

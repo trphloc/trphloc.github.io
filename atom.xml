@@ -4,7 +4,7 @@
   <title><![CDATA[Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-11-18T09:59:42+07:00</updated>
+  <updated>2014-12-31T22:33:39+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -1265,6 +1265,40 @@
 <li>Frame là màn hình giao diện của emacs khi bắt đầu trên một hệ điều hành. Một frame có menu, thanh công cụ, và 1 màn hình. Màn hình đó có thể được chia thành nhiều windows. Bạn có thể tạo thêm frame khi cần. Nhiều frame được tạo trong cùng 1 phiên làm việc của Emacs sẽ dùng chung các buffers và dữ liệu.</li>
 <li><a href="https://www.gnu.org/software/emacs/manual/html_mono/efaq-w32.html">Windows</a></li>
 <li><a href="http:/www.ergoemacs.org">Emacs</a></li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Cài đặt</h2>
+
+<h3>Windows</h3>
+
+<ul>
+<li>Emacs: <a href="http://www.gnu.org/software/emacs/">http://www.gnu.org/software/emacs/</a></li>
+<li>Cấu hình:</li>
+<li>Cấu hình
+
+<ul>
+<li>.emacs => ~/.emacs</li>
+<li>.emacs.d => ~/.emacs.d</li>
+</ul>
+</li>
+</ul>
+
+
+<h3>Mac</h3>
+
+<ul>
+<li>Aquamacs: <a href="http://aquamacs.org/">http://aquamacs.org/</a></li>
+<li>Cấu hình
+
+<ul>
+<li>.emacs => ~/Library/Preferences/Aquamacs Emacs/Preferences.el</li>
+<li>.emacs.d => ~/Library/Preferences/Aquamacs Emacs/Packages</li>
+</ul>
+</li>
 </ul>
 
 
@@ -2635,6 +2669,13 @@
 </ul>
 
 
+<h3>Cấu hình zoom</h3>
+
+<ul>
+<li>System Preference => Accessibility => trong phần bên trái chọn zoom và chỉnh phím tắt cho phù hợp</li>
+</ul>
+
+
 <!-- ================================================================= -->
 
 
@@ -3233,6 +3274,29 @@
 <ul>
 <li>Ctrl-U: sửa ô hiện hành</li>
 <li>Command-T: chuyển đổi địa chỉ trong công thức thành tuyệt đối, tương đối</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Cài đặt java</h2>
+
+<ul>
+<li>JDK 7</li>
+<li>JavaForOSX2014-001 => <a href="http://support.apple.com/kb/DL1572?viewlocale=en_US&amp;locale=en_US">http://support.apple.com/kb/DL1572?viewlocale=en_US&amp;locale=en_US</a></li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Cài đặt lập trình android</h2>
+
+<ul>
+<li>Android studio: <a href="http://developer.android.com/sdk/index.html">http://developer.android.com/sdk/index.html</a></li>
+<li>Virtual box: <a href="https://www.virtualbox.org/wiki/Downloads">https://www.virtualbox.org/wiki/Downloads</a></li>
+<li>Genymotion: <a href="https://www.genymotion.com/#!/">https://www.genymotion.com/#!/</a></li>
 </ul>
 
 ]]></content>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Mysql | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/mysql/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-11-18T09:59:42+07:00</updated>
+  <updated>2014-12-31T22:33:39+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -205,6 +205,13 @@ g++ -o hello.exe program1.cpp
 <li>Chọn enable &ldquo;Use all F1, F2, etc. keys as standard function keys.&rdquo;</li>
 </ul>
 </li>
+</ul>
+
+
+<h3>Cấu hình zoom</h3>
+
+<ul>
+<li>System Preference => Accessibility => trong phần bên trái chọn zoom và chỉnh phím tắt cho phù hợp</li>
 </ul>
 
 
@@ -737,6 +744,29 @@ unrar -pPASSWORD -y -ad x &lt;filename&gt;
 <ul>
 <li>Ctrl-U: sửa ô hiện hành</li>
 <li>Command-T: chuyển đổi địa chỉ trong công thức thành tuyệt đối, tương đối</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Cài đặt java</h2>
+
+<ul>
+<li>JDK 7</li>
+<li>JavaForOSX2014-001 => <a href="http://support.apple.com/kb/DL1572?viewlocale=en_US&amp;locale=en_US">http://support.apple.com/kb/DL1572?viewlocale=en_US&amp;locale=en_US</a></li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Cài đặt lập trình android</h2>
+
+<ul>
+<li>Android studio: <a href="http://developer.android.com/sdk/index.html">http://developer.android.com/sdk/index.html</a></li>
+<li>Virtual box: <a href="https://www.virtualbox.org/wiki/Downloads">https://www.virtualbox.org/wiki/Downloads</a></li>
+<li>Genymotion: <a href="https://www.genymotion.com/#!/">https://www.genymotion.com/#!/</a></li>
 </ul>
 
 ]]></content>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Php | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/php/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2014-12-31T22:33:39+07:00</updated>
+  <updated>2015-01-09T23:35:23+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -129,7 +129,12 @@ g++ -o hello.exe program1.cpp
 
 <ul>
 <li>sudo: thực hiện lệch dưới quyền admin</li>
-<li>ls: liệt kê danh sách tập tin</li>
+<li>ls: liệt kê danh sách tập tin
+
+<ul>
+<li>ls | tr &lsquo;\n&rsquo; &lsquo;\n&rsquo;</li>
+</ul>
+</li>
 <li>cd: di chuyển tới thư mục</li>
 <li>sudo chmod -R 777 XXX: chỉnh permission của thư mục XXX (-R: bao gồm cả thư mục con)</li>
 <li>chmod +x file: chuyển thành tập tin thực thi được</li>

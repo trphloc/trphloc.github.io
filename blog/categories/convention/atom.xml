@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Convention | Phuoc-Loc's blog]]></title>
+  <link href="http://trphloc.github.io/blog/categories/convention/atom.xml" rel="self"/>
+  <link href="http://trphloc.github.io/"/>
+  <updated>2015-01-13T13:25:07+07:00</updated>
+  <id>http://trphloc.github.io/</id>
+  <author>
+    <name><![CDATA[Phuoc-Loc Truong]]></name>
+    <email><![CDATA[trphloc@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Coding Standards]]></title>
+    <link href="http://trphloc.github.io/blog/2015/01/13/coding-standards/"/>
+    <updated>2015-01-13T11:13:04+07:00</updated>
+    <id>http://trphloc.github.io/blog/2015/01/13/coding-standards</id>
+    <content type="html"><![CDATA[<p>TODO &ndash; TPL</p>
+
+<!-- ================================================================= -->
+
+
+<h2>Một số công cụ kiểm tra convention</h2>
+
+<ul>
+<li>Checkstyle</li>
+<li>Findbugs</li>
+<li>Fxcop</li>
+<li>Cppcheck</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

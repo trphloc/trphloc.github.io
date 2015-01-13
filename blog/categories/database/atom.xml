@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Database | Phuoc-Loc's blog]]></title>
+  <link href="http://trphloc.github.io/blog/categories/database/atom.xml" rel="self"/>
+  <link href="http://trphloc.github.io/"/>
+  <updated>2015-01-13T13:25:07+07:00</updated>
+  <id>http://trphloc.github.io/</id>
+  <author>
+    <name><![CDATA[Phuoc-Loc Truong]]></name>
+    <email><![CDATA[trphloc@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Database]]></title>
+    <link href="http://trphloc.github.io/blog/2015/01/10/database/"/>
+    <updated>2015-01-10T16:04:13+07:00</updated>
+    <id>http://trphloc.github.io/blog/2015/01/10/database</id>
+    <content type="html"><![CDATA[<p>TODO &ndash; TPL</p>
+
+<!-- ================================================================= -->
+
+
+<h2>Loại cơ sở dữ liệu</h2>
+
+<ul>
+<li>Navigational DBMS</li>
+<li>Relational DBMS</li>
+<li>Object-oriented</li>
+<li>NoSQL và NewSQL</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Hệ quản trị cơ sở dữ liệu</h2>
+
+<ul>
+<li>Oracle</li>
+<li>MongoDB</li>
+<li>Cassandra</li>
+<li>Hbase</li>
+<li>SAP</li>
+<li>Postgre</li>
+<li>MySQL</li>
+<li>IBM DB2</li>
+<li>SQL server</li>
+<li>Access</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

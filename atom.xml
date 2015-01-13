@@ -4,7 +4,7 @@
   <title><![CDATA[Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2015-01-09T23:35:23+07:00</updated>
+  <updated>2015-01-13T13:25:07+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -12,6 +12,137 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Coding Standards]]></title>
+    <link href="http://trphloc.github.io/blog/2015/01/13/coding-standards/"/>
+    <updated>2015-01-13T11:13:04+07:00</updated>
+    <id>http://trphloc.github.io/blog/2015/01/13/coding-standards</id>
+    <content type="html"><![CDATA[<p>TODO &ndash; TPL</p>
+
+<!-- ================================================================= -->
+
+
+<h2>Một số công cụ kiểm tra convention</h2>
+
+<ul>
+<li>Checkstyle</li>
+<li>Findbugs</li>
+<li>Fxcop</li>
+<li>Cppcheck</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Automation Tools]]></title>
+    <link href="http://trphloc.github.io/blog/2015/01/10/automation-tools/"/>
+    <updated>2015-01-10T16:14:23+07:00</updated>
+    <id>http://trphloc.github.io/blog/2015/01/10/automation-tools</id>
+    <content type="html"><![CDATA[<p>TODO &ndash; TPL</p>
+
+<!-- ================================================================= -->
+
+
+<h2>AutoHotkey</h2>
+
+<ul>
+<li>Sử dụng cho windows</li>
+<li>Tham khảo:
+
+<ul>
+<li><a href="http://www.autohotkey.com/">http://www.autohotkey.com/</a></li>
+</ul>
+</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Mjolnir</h2>
+
+<ul>
+<li>Sử dụng cho Mac</li>
+<li>Tham khảo:
+
+<ul>
+<li><a href="http://mjolnir.io/">http://mjolnir.io/</a></li>
+<li><a href="http://thume.ca/howto/2014/12/02/using-mjolnir-an-extensible-osx-window-manager/">http://thume.ca/howto/2014/12/02/using-mjolnir-an-extensible-osx-window-manager/</a></li>
+</ul>
+</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Slate</h2>
+
+<ul>
+<li>Sử dụng cho Mac</li>
+<li>Tham khảo:
+
+<ul>
+<li><a href="http://thume.ca/howto/2012/11/19/using-slate/">http://thume.ca/howto/2012/11/19/using-slate/</a></li>
+</ul>
+</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>SizeUp</h2>
+
+<ul>
+<li>Sử dụng cho Mac</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Database]]></title>
+    <link href="http://trphloc.github.io/blog/2015/01/10/database/"/>
+    <updated>2015-01-10T16:04:13+07:00</updated>
+    <id>http://trphloc.github.io/blog/2015/01/10/database</id>
+    <content type="html"><![CDATA[<p>TODO &ndash; TPL</p>
+
+<!-- ================================================================= -->
+
+
+<h2>Loại cơ sở dữ liệu</h2>
+
+<ul>
+<li>Navigational DBMS</li>
+<li>Relational DBMS</li>
+<li>Object-oriented</li>
+<li>NoSQL và NewSQL</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Hệ quản trị cơ sở dữ liệu</h2>
+
+<ul>
+<li>Oracle</li>
+<li>MongoDB</li>
+<li>Cassandra</li>
+<li>Hbase</li>
+<li>SAP</li>
+<li>Postgre</li>
+<li>MySQL</li>
+<li>IBM DB2</li>
+<li>SQL server</li>
+<li>Access</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[GCC - the GNU Compiler Collection]]></title>

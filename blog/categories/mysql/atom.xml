@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Mysql | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/mysql/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2015-01-13T13:25:07+07:00</updated>
+  <updated>2015-01-14T16:17:22+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -772,6 +772,17 @@ unrar -pPASSWORD -y -ad x &lt;filename&gt;
 <li>Android studio: <a href="http://developer.android.com/sdk/index.html">http://developer.android.com/sdk/index.html</a></li>
 <li>Virtual box: <a href="https://www.virtualbox.org/wiki/Downloads">https://www.virtualbox.org/wiki/Downloads</a></li>
 <li>Genymotion: <a href="https://www.genymotion.com/#!/">https://www.genymotion.com/#!/</a></li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Phần mềm đọc tập tin chm</h2>
+
+<ul>
+<li>Tên phần mềm: ichm</li>
+<li>Link: <a href="https://code.google.com/p/ichm/">https://code.google.com/p/ichm/</a></li>
 </ul>
 
 ]]></content>

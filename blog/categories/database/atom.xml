@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Database | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/database/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2015-01-13T13:25:07+07:00</updated>
+  <updated>2015-01-14T16:17:22+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -49,6 +49,17 @@
 <li>IBM DB2</li>
 <li>SQL server</li>
 <li>Access</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Công cụ quản trị cơ sơ dữ liệu</h2>
+
+<ul>
+<li>Navicat</li>
+<li>Oracle sql developer tool</li>
 </ul>
 
 ]]></content>

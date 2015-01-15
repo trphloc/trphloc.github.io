@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: SQL Server | Phuoc-Loc's blog]]></title>
+  <link href="http://trphloc.github.io/blog/categories/sql-server/atom.xml" rel="self"/>
+  <link href="http://trphloc.github.io/"/>
+  <updated>2015-01-15T10:28:15+07:00</updated>
+  <id>http://trphloc.github.io/</id>
+  <author>
+    <name><![CDATA[Phuoc-Loc Truong]]></name>
+    <email><![CDATA[trphloc@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Connect to SQL Server Using Oracle SQL Developer]]></title>
+    <link href="http://trphloc.github.io/blog/2015/01/15/connect-to-sql-server-using-oracl-sql-developer/"/>
+    <updated>2015-01-15T10:06:00+07:00</updated>
+    <id>http://trphloc.github.io/blog/2015/01/15/connect-to-sql-server-using-oracl-sql-developer</id>
+    <content type="html"><![CDATA[<!-- ================================================================= -->
+
+
+<h2>Sử dụng Oracle SQL developer kết nối tới SQL Server</h2>
+
+<h3>Download tập tin jTDS</h3>
+
+<ul>
+<li><a href="http://sourceforge.net/projects/jtds/files/">http://sourceforge.net/projects/jtds/files/</a></li>
+<li>Sử dụng phiên bản mới nhất</li>
+<li>Giải nén vào thư mục abc_xyz</li>
+</ul>
+
+
+<h3>Cấu hình Oracle SQL Developer</h3>
+
+<ul>
+<li>Mở cấu hình trong Oracle SQL Developer
+
+<ul>
+<li>Windows: <strong>menu Tools</strong> => <strong>Preferences</strong></li>
+<li>Mac: <strong>Oracle SQL Developer</strong> => <strong>Preferences</strong></li>
+</ul>
+</li>
+<li>Chọn <strong>Database</strong> => <strong>Third party JDBC drivers</strong></li>
+<li>Chọn <strong>add entry</strong></li>
+</ul>
+
+
+<p><img src="http://trphloc.github.io/images/Oracle-Developer-1.png" /></p>
+
+<ul>
+<li>Chọn tập tin <strong>jtds-x.x.jar</strong></li>
+<li>Lưu và tắt preferences</li>
+<li>Khởi động lại Oracle SQL developer</li>
+</ul>
+
+
+<h3>Kết nối</h3>
+
+<ul>
+<li>Chọn new connection</li>
+<li>Chọn SQLserver và điền thông tin</li>
+</ul>
+
+
+<p><img src="http://trphloc.github.io/images/Oracle-Developer-2.png" /></p>
+
+<ul>
+<li>Test và kết nối</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Tài liệu tham khảo</h2>
+
+<ul>
+<li><a href="http://kentgraziano.com/2013/01/14/tech-tip-connect-to-sql-server-using-oracle-sql-developer/">http://kentgraziano.com/2013/01/14/tech-tip-connect-to-sql-server-using-oracle-sql-developer/</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

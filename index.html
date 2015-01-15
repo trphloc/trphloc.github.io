@@ -9,10 +9,8 @@
   <meta name="author" content="Phuoc-Loc Truong">
 
   
-  <meta name="description" content="TODO &ndash; TPL Một số công cụ kiểm tra convention Checkstyle
-Findbugs
-Fxcop
-Cppcheck ">
+  <meta name="description" content="Sử dụng Oracle SQL developer kết nối tới SQL Server Download tập tin jTDS http://sourceforge.net/projects/jtds/files/
+Sử dụng phiên bản mới nhất &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -74,6 +72,103 @@ Cppcheck ">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/01/15/connect-to-sql-server-using-oracl-sql-developer/">Connect to SQL Server Using Oracle SQL Developer</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-01-15T10:06:00+07:00" pubdate data-updated="true">Jan 15<span>th</span>, 2015</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><!-- ================================================================= -->
+
+
+<h2>Sử dụng Oracle SQL developer kết nối tới SQL Server</h2>
+
+<h3>Download tập tin jTDS</h3>
+
+<ul>
+<li><a href="http://sourceforge.net/projects/jtds/files/">http://sourceforge.net/projects/jtds/files/</a></li>
+<li>Sử dụng phiên bản mới nhất</li>
+<li>Giải nén vào thư mục abc_xyz</li>
+</ul>
+
+
+<h3>Cấu hình Oracle SQL Developer</h3>
+
+<ul>
+<li>Mở cấu hình trong Oracle SQL Developer
+
+<ul>
+<li>Windows: <strong>menu Tools</strong> => <strong>Preferences</strong></li>
+<li>Mac: <strong>Oracle SQL Developer</strong> => <strong>Preferences</strong></li>
+</ul>
+</li>
+<li>Chọn <strong>Database</strong> => <strong>Third party JDBC drivers</strong></li>
+<li>Chọn <strong>add entry</strong></li>
+</ul>
+
+
+<p><img src="/images/Oracle-Developer-1.png" /></p>
+
+<ul>
+<li>Chọn tập tin <strong>jtds-x.x.jar</strong></li>
+<li>Lưu và tắt preferences</li>
+<li>Khởi động lại Oracle SQL developer</li>
+</ul>
+
+
+<h3>Kết nối</h3>
+
+<ul>
+<li>Chọn new connection</li>
+<li>Chọn SQLserver và điền thông tin</li>
+</ul>
+
+
+<p><img src="/images/Oracle-Developer-2.png" /></p>
+
+<ul>
+<li>Test và kết nối</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Tài liệu tham khảo</h2>
+
+<ul>
+<li><a href="http://kentgraziano.com/2013/01/14/tech-tip-connect-to-sql-server-using-oracle-sql-developer/">http://kentgraziano.com/2013/01/14/tech-tip-connect-to-sql-server-using-oracle-sql-developer/</a></li>
+</ul>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -1679,1022 +1774,6 @@ Cppcheck ">
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/08/15/emacs-notes/">Emacs Note</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-08-15T17:25:59+07:00" pubdate data-updated="true">Aug 15<span>th</span>, 2014</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>Đang cập nhật TODO</h2>
-
-<ul>
-<li>minibuffer</li>
-<li>compress</li>
-<li>shell trên mac chạy không giống terminal (lỗi unicode khi build octopress, không tìm thấy ipython, &hellip;)</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Giới thiệu</h2>
-
-<ul>
-<li>Emacs là một chương trình hỗ trợ nhiều tác vụ: quản lý thư mục tập tin, chỉnh sửa tập tin, lịch, máy tính, &hellip;</li>
-<li>Buffer &ndash; Khi người dùng thực hiện 1 hành động, emacs sẽ tạo 1 buffer đại diện cho hành động đó. Ví dụ: người dùng đang xem 1 thư mục x, đang sửa nội dung 1 tập tin y, đang xem lịch thì emacs đang tạo ra 3 buffer đại diện cho 3 hành động đó.</li>
-<li>Window là màn hình hiển thị của buffer. Trong emacs, tại một thời điểm, màn hình chính (window) có thể được chia làm nhiều màn hình con (windows)
-
-<ul>
-<li>Một buffer có thể được hiển thị cùng lúc bởi nhiều màn hình</li>
-<li>Một màn hình chỉ hiển thị 1 buffer</li>
-<li>Mỗi màn hình có con trỏ, vị trí của riêng nó. Ví dụ: 2 màn hình cùng hiển thị hành động chỉnh sửa tập tin x, nhưng màn hình 1 có thể đang ở đầu tập tin và màn hình 2 ở cuối tập tin</li>
-</ul>
-</li>
-<li>Frame là màn hình giao diện của emacs khi bắt đầu trên một hệ điều hành. Một frame có menu, thanh công cụ, và 1 màn hình. Màn hình đó có thể được chia thành nhiều windows. Bạn có thể tạo thêm frame khi cần. Nhiều frame được tạo trong cùng 1 phiên làm việc của Emacs sẽ dùng chung các buffers và dữ liệu.</li>
-<li><a href="https://www.gnu.org/software/emacs/manual/html_mono/efaq-w32.html">Windows</a></li>
-<li><a href="http:/www.ergoemacs.org">Emacs</a></li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Cài đặt</h2>
-
-<h3>Windows</h3>
-
-<ul>
-<li>Emacs: <a href="http://www.gnu.org/software/emacs/">http://www.gnu.org/software/emacs/</a></li>
-<li>Cấu hình:</li>
-<li>Cấu hình
-
-<ul>
-<li>.emacs => ~/.emacs</li>
-<li>.emacs.d => ~/.emacs.d</li>
-</ul>
-</li>
-</ul>
-
-
-<h3>Mac</h3>
-
-<ul>
-<li>Aquamacs: <a href="http://aquamacs.org/">http://aquamacs.org/</a></li>
-<li>Cấu hình
-
-<ul>
-<li>.emacs => ~/Library/Preferences/Aquamacs Emacs/Preferences.el</li>
-<li>.emacs.d => ~/Library/Preferences/Aquamacs Emacs/Packages</li>
-</ul>
-</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Các hình thức/chương trình/mode trong emacs</h2>
-
-<ul>
-<li>Viết tắt:
-
-<ul>
-<li>C tương đương Ctrl</li>
-<li>M tương đương Alt</li>
-<li>S tương đương Shìft</li>
-<li>RET tương đương enter</li>
-</ul>
-</li>
-<li>Dired</li>
-<li>Editor
-
-<ul>
-<li>Fundamental</li>
-<li>PHP mode</li>
-<li>Java mode</li>
-<li>Markdown</li>
-</ul>
-</li>
-<li>Calc</li>
-<li>Schedule</li>
-<li>git</li>
-<li>eshell/shell</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Một số cấu hình cần chỉnh trước khi sử dụng</h2>
-
-<ul>
-<li>Thay đổi một số cấu hình (Options &ndash; sau khi chỉnh phải nhấn lưu lại)
-
-<ul>
-<li>Menu Options => chọn Highlight Matching Parenthese</li>
-<li>Menu Options => chọn Use CUA keys (Cut/Paste &hellip;)</li>
-<li>Menu Options => Multilingual Environment => set Language environment => UTF-8</li>
-<li>Menu Options => show/hide => bỏ chọn tool-bar</li>
-<li>Menu Options => show/hide => chọn line numbers</li>
-<li>Menu Options => show/hide => chọn column numbers</li>
-<li>Menu Options => Customize Emacs => Custom themes => tango-dark => lưu</li>
-</ul>
-</li>
-<li>Thay đổi phím mặc định
-
-<ul>
-<li>Tắt màn hình hiện hành mà không phải xác nhận
-
-<ul>
-<li>Mở tập tin .emacs: Alt-x dired => Ctrl-c Ctrl-f ~/.emacs</li>
-<li>Dán nội dung sau vào: (global-set-key [(control x) (k)] &lsquo;kill-this-buffer)</li>
-<li>Lưu lại</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Fullscreen khi bắt đầu &ndash; Mac:</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>(custom-set-variables
-</span><span class='line'> '(initial-frame-alist (quote ((fullscreen . maximized)))))</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>Fullscreen khi bắt đầu &ndash; windows:</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>(w32-send-sys-command 61488)</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>Khởi tạo font chữ default</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>(set-frame-font "Courier New-16" nil t)</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>Tắt màn hình giới thiệu khi bắt đầu</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>(setq inhibit-startup-message t)        ; Disable startup message</span></code></pre></td></tr></table></div></figure>
-
-
-
-
-<!-- ================================================================= -->
-
-
-<h2>Một số phím thông dụng</h2>
-
-<ul>
-<li>Alt-X: gọi thực thi lệnh
-
-<ul>
-<li>dired: quản lý thư mục tập tin</li>
-<li>calc: máy tính</li>
-<li>calendar: lịch => thoát thì gõ q</li>
-<li>shell: thực thi các lệnh command</li>
-<li>set-input-method: vietnamese-telex/british</li>
-</ul>
-</li>
-<li>Ctrl-h: help
-
-<ul>
-<li>Ctrl-h v: biến</li>
-<li>Ctrl-h c:</li>
-</ul>
-</li>
-<li>Alt-`: sử dụng menu</li>
-<li>Alt-;: ghi chú hoặc bỏ ghi chú các dòng được chọn</li>
-<li>Ctrl-g: hủy thao tác đang làm</li>
-<li>Ctrl-s: tìm kiếm</li>
-<li>Ctrl-space: bắt đầu chọn</li>
-<li>Thông tin cấu hình
-
-<ul>
-<li>Hầu hết cấu hình được lưu trong biến, tham khảo <a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Variable-Index.html#Variable-Index">danh sach biến</a></li>
-<li>Alt-x customize: thay đổi cấu hình <a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Easy-Customization.html#Easy-Customization">tham khảo</a></li>
-<li>Thay đổi phím tắt (<a href="http://www.informatik.uni-hamburg.de/RZ/software/emacs/xemacs/new-users-guide_6.html">tham khảo</a>)
-
-<ul>
-<li>Ghi trực tiếp vào tập tin cấu hình => Ctrl-c Ctrl-f => gõ ~/.emacs    &ndash; Điền nội dung vào và lưu lại. Ví dụ: (global-set-key [(control x) (k)] &lsquo;kill-this-buffer)</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>C-h k C-x i – describe-key</li>
-<li>C-h f function-name – describe function</li>
-<li>C-h m – show key bindings for major and minor mode</li>
-<li>C-h – show all keys w/ that prefix</li>
-<li>C-h C-h – list all functions</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Các bước cài đặt Package</h2>
-
-<h3>Sử dụng ELPA, MELPA, Marmalade</h3>
-
-<ul>
-<li>Alt-x list-packages</li>
-<li>Một số thao tác
-
-<ul>
-<li>Enter: xem mô tả package</li>
-<li>i: đánh dấu để cài đặt</li>
-<li>u: bỏ đánh dấu</li>
-<li>d: đánh dấu để xóa (các packages đã cài đặt)</li>
-<li>r: refresh lại danh sách</li>
-<li>U: cập nhật tất cả packages nếu có bản cập nhật</li>
-</ul>
-</li>
-<li>x: thực thi hành động</li>
-<li>Các repos lưu trữ package
-
-<ul>
-<li><a href="http://elpa.gnu.org/">http://elpa.gnu.org/</a> Default. Official GNU Emacs package repository. This repository contains the minimal set, and are FSF signed.</li>
-<li><a href="HTTP://TROMEY.COM/ELPA/">HTTP://TROMEY.COM/ELPA/</a> ELPA (BEING PHASED OUT AS OF 2012-07-03).</li>
-<li><a href="HTTP://MARMALADE-REPO.ORG/">HTTP://MARMALADE-REPO.ORG/</a> MARMALADE. MORE EXTENSIVE NUMBER OF PACKAGES.</li>
-<li><a href="HTTP://MELPA.MILKBOX.NET/">HTTP://MELPA.MILKBOX.NET/</a> MELPA. AS OF 2012-10-18, MELPA has most packages, and updated daily</li>
-<li>Để thêm vào danh sách, ghi vào tập tin khởi tạo</li>
-</ul>
-</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
-</span><span class='line'>           ("marmalade" . "http://marmalade-repo.org/packages/")
-</span><span class='line'>           ("ELPA" . "http://tromey.com/elpa/")
-</span><span class='line'>           ("melpa" . "http://melpa.milkbox.net/packages/")
-</span><span class='line'>           ("SC"   . "http://joseito.republika.pl/sunrise-commander/")))</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li><a href="http://ergoemacs.org/emacs/emacs_package_system.html">Tham khảo</a>
-
-<h3>Sử dụng gói cài đặt</h3>
-
-<p>TODO TPL?</p></li>
-<li>Đọc và sử dụng trong phiên làm việc đó</li>
-<li>Đọc khi bắt đầu</li>
-<li><a href="http://ergoemacs.org/emacs/emacs_installing_packages.html">Tham khảo</a></li>
-</ul>
-
-
-<h2>Xóa package</h2>
-
-<ul>
-<li>Vào danh sách package: Alt-x list-packages</li>
-<li>Chọn package cần xoá bằng phím d</li>
-<li>Alt-x package-menu-execute</li>
-<li>yes</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Quản lý màn hình &ndash; window management</h2>
-
-<ul>
-<li>Nhân đôi màn hình
-
-<ul>
-<li>Ctrl-x 2: bên dưới</li>
-<li>Ctrl-x 3: bên phải</li>
-<li>Ctrl-x 1: tắt hết các màn hình</li>
-<li>Ctrl-x 0: tắt màn hình hiện hành</li>
-<li>: chuyển đổi các màn hình</li>
-<li>Ctrl-x o: di chuyển giữa các màn hình (trên xuống dưới, trái qua phải)</li>
-</ul>
-</li>
-<li>Alt-x: so sánh màn hình, tìm chỗ kế tiếp nơi mà chuỗi trong màn hình hiện hành không giống vơi chuỗi trong màn hình kế tiếp</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Quản lý thư mục &ndash; file management</h2>
-
-<ul>
-<li>^: thư mục cha</li>
-<li>Enter: mở tập tin</li>
-<li>m: đánh dấu 1 tập tin &ndash; mark a file</li>
-<li>%m: đánh dấu dựa vào từ khóa (. là toàn bộ thư mục tập tin)</li>
-<li>**: đánh dấu tất cả tập tin</li>
-<li>*/: đánh dấu tất cả thư mục</li>
-<li>u: bỏ đánh dấu một tập tin &ndash; unmark</li>
-<li>U: bỏ đánh dấu tất cả tập tin &ndash; unmark all marked</li>
-<li>i: hiển thị danh sách thư mục</li>
-<li>A: tìm kiếm tập tin &ndash; search Files %m: đánh dấu dựa vào mẫu &ndash; mark by pattern</li>
-<li>q: đóng thư mục &ndash; close the dir</li>
-<li>g: cập nhật danh sách thư mục/tập tin con &ndash; refresh list</li>
-<li>C: copy tập tin &ndash; copy file</li>
-<li>R: đổi tên/di chuyển tập tin &ndash; Rename/move file</li>
-<li>D: xoá tập tin &ndash; Delete file  => x: xác nhận</li>
-<li>+: tạo thư mục mới &ndash; create a new dir</li>
-<li>Z: nén/giải nén  tập tin bởi zip &ndash; compress/decompress the file by gzip</li>
-<li>!: shell command</li>
-<li>S: Symlink to &hellip;</li>
-<li>H: Hardlink to &hellip;</li>
-<li>T: thay đổi Timestamp &hellip;</li>
-<li>M: thay đổi Mode &hellip;</li>
-<li>G: thay đổi Group &hellip;</li>
-<li>O: thay đổi Owner &hellip;</li>
-<li>Ctrl-c Ctrl-f: tìm tập tin</li>
-<li>Ctrl-c Ctrl-v: mở tập tin/thư mục</li>
-<li>! 7z a zipfilename * RET: nén tập tin sử dụng 7zip</li>
-<li>! 7z e * RET: giải nén tập tin</li>
-<li>! 7za x a.zip -o* (sử dụng trên mac os)</li>
-<li>! unrar -pSECRET -y -ad x
-
-<ul>
-<li>-pSECRET: SECRET là mật khẩu</li>
-<li>-y: trả lời -y tất cả câu hỏi</li>
-<li>-ad: tạo thư mục riêng</li>
-</ul>
-</li>
-<li>Alt-x grep:</li>
-<li>Alt-x grep-find:</li>
-<li>Alt-x find-name-dired:</li>
-<li>Mở tập tin bằng ứng dụng ngoài: thêm vào tập tin cấu hình</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>;;Open File in External App
-</span><span class='line'>(defun xah-open-in-external-app (&optional file)
-</span><span class='line'>  "Open the current file or dired marked files in external app. The app is chosen from your OS's preference."
-</span><span class='line'>  (interactive)
-</span><span class='line'>  (let ( doIt
-</span><span class='line'>         (myFileList
-</span><span class='line'>          (cond
-</span><span class='line'>           ((string-equal major-mode "dired-mode") (dired-get-marked-files))
-</span><span class='line'>           ((not file) (list (buffer-file-name)))
-</span><span class='line'>           (file (list file)))))
-</span><span class='line'>    
-</span><span class='line'>    (setq doIt (if (&lt;= (length myFileList) 5)
-</span><span class='line'>                   t
-</span><span class='line'>                 (y-or-n-p "Open more than 5 files? ") ) )
-</span><span class='line'>    
-</span><span class='line'>    (when doIt
-</span><span class='line'>      (cond
-</span><span class='line'>       ((string-equal system-type "windows-nt")
-</span><span class='line'>        (mapc (lambda (fPath) (w32-shell-execute "open" (replace-regexp-in-string "/" "\\" fPath t t)) ) myFileList))
-</span><span class='line'>       ((string-equal system-type "darwin")
-</span><span class='line'>        (mapc (lambda (fPath) (shell-command (format "open \"%s\"" fPath)) )  myFileList) )
-</span><span class='line'>       ((string-equal system-type "gnu/linux")
-</span><span class='line'>        (mapc (lambda (fPath) (let ((process-connection-type nil)) (start-process "" nil "xdg-open" fPath)) ) myFileList) ) ) ) ) )
-</span><span class='line'>
-</span><span class='line'>;; define key for dired mode
-</span><span class='line'>  (require 'dired )
-</span><span class='line'>(define-key dired-mode-map (kbd "C-c a") 'xah-open-in-external-app)</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>Mở thư mục trong explorer: thêm vào tập tin cấu hình</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>;;Open File in Desktop
-</span><span class='line'>(defun xah-open-in-desktop ()
-</span><span class='line'>  "Show current file in desktop (OS's file manager)."
-</span><span class='line'>  (interactive)
-</span><span class='line'>  (cond
-</span><span class='line'>   ((string-equal system-type "windows-nt")
-</span><span class='line'>    (w32-shell-execute "explore" (replace-regexp-in-string "/" "\\" default-directory t t)))
-</span><span class='line'>   ((string-equal system-type "darwin") (shell-command "open ."))
-</span><span class='line'>   ((string-equal system-type "gnu/linux")
-</span><span class='line'>    (let ((process-connection-type nil)) (start-process "" nil "xdg-open" "."))
-</span><span class='line'>    ;; (shell-command "xdg-open .") ;; 2013-02-10 this sometimes froze emacs till the folder is closed. ⁖ with nautilus
-</span><span class='line'>    ) ))
-</span><span class='line'>
-</span><span class='line'>;; define key for dired mode
-</span><span class='line'>(define-key dired-mode-map (kbd "C-c d") 'xah-open-in-desktop)</span></code></pre></td></tr></table></div></figure>
-
-
-
-
-<!-- ================================================================= -->
-
-
-<h2>Buffer management</h2>
-
-<ul>
-<li>Ctrl-x Ctrl-b: hiển thị danh sách buffer</li>
-<li>Ctrl-x b: chuyển buffer (switch to buffer &hellip;)</li>
-<li>Ctrl-x Left/Right: di chuyển tới buffer trước hoặc sau</li>
-<li>Ctrl-x k: tắt buffer, ko lưu</li>
-<li>Ctrl-x s: tắt và lưu</li>
-<li>iBuffer
-
-<ul>
-<li>Cấu hình phím C-x C-b sử dụng ibuffer
-
-<ul>
-<li>(global-set-key (kbd &ldquo;C-x C-b&rdquo;) &lsquo;ibuffer)</li>
-</ul>
-</li>
-<li>h: hướng dẫn sử dụng</li>
-<li>D: kill các buffers đang được chọn</li>
-</ul>
-</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Frame management</h2>
-
-<ul>
-<li>Ctrl-x 5 2: tạo frame mới</li>
-<li>Ctrl-x 5 b bufname <RET>: chọn buffer trong frame mới, tương đương: switch-to-buffer-other-frame</li>
-<li>Ctrl-x 5 f filename <RET>: mở tập tin trong frame mới, tương đương: find-file-other-frame</li>
-<li>Ctrl-x 5 d directory <RET>: mở thư mục trong frame mới, tương đương: dired-other-frame</li>
-<li><a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Creating-Frames.html#Creating-Frames">Tham khảo</a></li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Chỉnh sửa tập tin &ndash; Editor</h2>
-
-<ul>
-<li>Ctrl-x Ctrl-f: mở (tìm) tập tin</li>
-<li>Ctrl-x Ctrl-s: lưu tập tin hiện hành</li>
-<li>Ctrl-x Ctrl-w: save-as</li>
-<li>Ctrl-x s: lưu tất cả tập tin chưa lưu</li>
-<li>Ctrl-x u: quay lại (undo)</li>
-<li>Ctrl-w: copy</li>
-<li>Atl-w: cut</li>
-<li>Ctrl-y: paste</li>
-<li>Ctrl-s: tìm chuỗi</li>
-<li>Ctrl-f/b/n/p: di chuyển trước 1 ký tự/sau 1 ký tự/dòng tiếp theo/dòng phía trước</li>
-<li>Alt-f/b: di chuyển trước 1 từ/sau 1 từ</li>
-<li>Ctrl-a/e: di chuyển đầu dòng/cuối dòng</li>
-<li>Alt-a/e: di chuyển đầu đoạn văn/cuối đoạn văn</li>
-<li>Ctrl-d: xóa ký tự</li>
-<li>Alt-d: xóa từ</li>
-<li>Ctrl-v/Alt-v: page down/page up</li>
-<li>Alt-&lt;/>: di chuyển bắt đầu tập tin/kết thúc tập tin</li>
-<li>Alt-x replace-string: thay thế chuỗi (replact) &ndash; Alt-%</li>
-</ul>
-
-
-<h3>Soạn thảo tập tin với quyền root</h3>
-
-<ul>
-<li>Copy đoạn mã sau vào tập tin cấu hình</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>;; editor as root
-</span><span class='line'>(defun sudo-edit (&optional arg)
-</span><span class='line'>  "Edit currently visited file as root.
-</span><span class='line'>
-</span><span class='line'>With a prefix ARG prompt for a file to visit.
-</span><span class='line'>Will also prompt for a file to visit if current
-</span><span class='line'>buffer is not visiting a file."
-</span><span class='line'>  (interactive "P")
-</span><span class='line'>  (if (or arg (not buffer-file-name))
-</span><span class='line'>      (find-file (concat "/sudo:root@localhost:"
-</span><span class='line'>                         (ido-read-file-name "Find file(as root): ")))
-</span><span class='line'>    (find-alternate-file (concat "/sudo:root@localhost:" buffer-file-name))))
-</span><span class='line'>
-</span><span class='line'>(global-set-key (kbd "C-x C-r") 'sudo-edit)</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>Mở tập tin => gõ lệnh Ctrl-x Ctrl-r</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Cài đặt và sử dụng elscreen</h2>
-
-<ul>
-<li>Alt-x => list-package => elscreen => install</li>
-<li>Cấu hình: thêm các dòng sau vào tập tin .emacs</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
-<span class='line-number'>33</span>
-<span class='line-number'>34</span>
-<span class='line-number'>35</span>
-<span class='line-number'>36</span>
-<span class='line-number'>37</span>
-<span class='line-number'>38</span>
-<span class='line-number'>39</span>
-<span class='line-number'>40</span>
-<span class='line-number'>41</span>
-<span class='line-number'>42</span>
-<span class='line-number'>43</span>
-<span class='line-number'>44</span>
-<span class='line-number'>45</span>
-<span class='line-number'>46</span>
-<span class='line-number'>47</span>
-<span class='line-number'>48</span>
-<span class='line-number'>49</span>
-<span class='line-number'>50</span>
-<span class='line-number'>51</span>
-<span class='line-number'>52</span>
-<span class='line-number'>53</span>
-<span class='line-number'>54</span>
-<span class='line-number'>55</span>
-<span class='line-number'>56</span>
-<span class='line-number'>57</span>
-<span class='line-number'>58</span>
-<span class='line-number'>59</span>
-<span class='line-number'>60</span>
-<span class='line-number'>61</span>
-<span class='line-number'>62</span>
-<span class='line-number'>63</span>
-<span class='line-number'>64</span>
-<span class='line-number'>65</span>
-<span class='line-number'>66</span>
-<span class='line-number'>67</span>
-<span class='line-number'>68</span>
-<span class='line-number'>69</span>
-<span class='line-number'>70</span>
-<span class='line-number'>71</span>
-<span class='line-number'>72</span>
-<span class='line-number'>73</span>
-<span class='line-number'>74</span>
-<span class='line-number'>75</span>
-<span class='line-number'>76</span>
-<span class='line-number'>77</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>;; ============================================================
-</span><span class='line'>  ;; keeping related buffers together with elscreen
-</span><span class='line'>  ;; Ref:
-</span><span class='line'>  ;;   http://emacs-fu.blogspot.com/2009/07/keeping-related-buffers-together-with.html
-</span><span class='line'>
-</span><span class='line'>  (load "elscreen" "ElScreen" )
-</span><span class='line'>
-</span><span class='line'>  ;; Windowskey+F9 creates a new elscreen, Windowskey+F10 kills it
-</span><span class='line'>  (global-set-key (kbd "&lt;s-f9>"    ) 'elscreen-create)
-</span><span class='line'>  (global-set-key (kbd "&lt;s-f10>"  ) 'elscreen-kill)
-</span><span class='line'>
-</span><span class='line'>
-</span><span class='line'>  ;; Windowskey+PgUP/PgDown switches between elscreens
-</span><span class='line'>  (global-set-key (kbd "&lt;s-prior>") 'elscreen-previous)
-</span><span class='line'>  (global-set-key (kbd "&lt;s-next>")  'elscreen-next)
-</span><span class='line'>  (global-set-key (kbd "M-0") '(lambda() (interactive) (hajime-startup)))
-</span><span class='line'>
-</span><span class='line'>
-</span><span class='line'>  (defvar is-hajime-startup nil
-</span><span class='line'>  "Indicate if the hajime-startup process has been activated or not.")
-</span><span class='line'>
-</span><span class='line'>  (defun hajime-startup ()
-</span><span class='line'>  "Doing some customization at startup time."
-</span><span class='line'>  (interactive)
-</span><span class='line'>  (unless is-hajime-startup
-</span><span class='line'>    (setq is-hajime-startup t)
-</span><span class='line'>    (hajime-elscreen))
-</span><span class='line'>  )
-</span><span class='line'>
-</span><span class='line'>  ;; ;; startup settings
-</span><span class='line'>  (defun hajime-elscreen ()
-</span><span class='line'>  (interactive)
-</span><span class='line'>  (elscreen-start)
-</span><span class='line'>  (elscreen-create)
-</span><span class='line'>  (elscreen-screen-nickname "box")
-</span><span class='line'>  (elscreen-create)
-</span><span class='line'>  (elscreen-screen-nickname "box")
-</span><span class='line'>  (elscreen-create)
-</span><span class='line'>  (elscreen-screen-nickname "box")
-</span><span class='line'>  (elscreen-create)
-</span><span class='line'>  (elscreen-screen-nickname "box")
-</span><span class='line'>  (elscreen-create)
-</span><span class='line'>  (elscreen-screen-nickname "shell")
-</span><span class='line'>  (elscreen-create)
-</span><span class='line'>  (elscreen-screen-nickname "dired")
-</span><span class='line'>  (elscreen-create)
-</span><span class='line'>  (elscreen-screen-nickname "...")
-</span><span class='line'>  (elscreen-create)
-</span><span class='line'>  (elscreen-screen-nickname "...")
-</span><span class='line'>  (elscreen-create)
-</span><span class='line'>  (elscreen-screen-nickname "...")
-</span><span class='line'>
-</span><span class='line'>  (elscreen-goto 0)
-</span><span class='line'>  (elscreen-kill)
-</span><span class='line'>
-</span><span class='line'>  ;; keybinding for switching workspaces
-</span><span class='line'>  (global-set-key "\M-1" '(lambda () (interactive) (elscreen-goto 1)))
-</span><span class='line'>  (global-set-key "\M-2" '(lambda () (interactive) (elscreen-goto 2)))
-</span><span class='line'>  (global-set-key "\M-3" '(lambda () (interactive) (elscreen-goto 3)))
-</span><span class='line'>  (global-set-key "\M-4" '(lambda () (interactive) (elscreen-goto 4)))
-</span><span class='line'>  (global-set-key "\M-5" '(lambda () (interactive) (elscreen-goto 5)))
-</span><span class='line'>  (global-set-key "\M-6" '(lambda () (interactive) (elscreen-goto 6)))
-</span><span class='line'>  (global-set-key "\M-7" '(lambda () (interactive) (elscreen-goto 7)))
-</span><span class='line'>  (global-set-key "\M-8" '(lambda () (interactive) (elscreen-goto 8)))
-</span><span class='line'>  (global-set-key "\M-9" '(lambda () (interactive) (elscreen-goto 9)))
-</span><span class='line'>
-</span><span class='line'>  ;; keybinding for moving a buffer to a specific workspace
-</span><span class='line'>  (global-set-key (kbd "&lt;M-S-f1>") '(lambda () (interactive) (hajime-move-buffer-to-elscreen 1)))
-</span><span class='line'>  (global-set-key (kbd "&lt;M-S-f2>") '(lambda () (interactive) (hajime-move-buffer-to-elscreen 2)))
-</span><span class='line'>  (global-set-key (kbd "&lt;M-S-f3>") '(lambda () (interactive) (hajime-move-buffer-to-elscreen 3)))
-</span><span class='line'>  (global-set-key (kbd "&lt;M-S-f4>") '(lambda () (interactive) (hajime-move-buffer-to-elscreen 4)))
-</span><span class='line'>  (global-set-key (kbd "&lt;M-S-f5>") '(lambda () (interactive) (hajime-move-buffer-to-elscreen 5)))
-</span><span class='line'>  (global-set-key (kbd "&lt;M-S-f6>") '(lambda () (interactive) (hajime-move-buffer-to-elscreen 6)))
-</span><span class='line'>  (global-set-key (kbd "&lt;M-S-f7>") '(lambda () (interactive) (hajime-move-buffer-to-elscreen 7)))
-</span><span class='line'>  (global-set-key (kbd "&lt;M-S-f8>") '(lambda () (interactive) (hajime-move-buffer-to-elscreen 8)))
-</span><span class='line'>  (global-set-key (kbd "&lt;M-S-f9>") '(lambda () (interactive) (hajime-move-buffer-to-elscreen 9)))
-</span><span class='line'>  )</span></code></pre></td></tr></table></div></figure>
-
-
-
-
-<!-- ================================================================= -->
-
-
-<h2>Network</h2>
-
-<ul>
-<li><a href="http://www.masteringemacs.org/articles/2011/03/02/network-utilities-emacs/">Tham khảo</a></li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Sử dụng bundle</h2>
-
-<ul>
-<li>Cài đặt package: rvm</li>
-<li>Trước khi sử dụng: Alt-x rvm-use-default</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Projectile package</h2>
-
-<p>TODO TPL
-&ndash; Sử dụng
-&ndash; Loại bỏ 1 project nào đó?
-&ndash; <a href="https://github.com/bbatsov/projectile">Tham khảo</a></p>
-
-<!-- ================================================================= -->
-
-
-<h2>Helm-swoop package</h2>
-
-<p>TODO TPL
-&ndash; <a href="https://github.com/ShingoFukuyama/helm-swoop">Tham khảo</a></p>
-
-<!-- ================================================================= -->
-
-
-<h2>ace-jump-mode package</h2>
-
-<ul>
-<li>Sử dụng:
-
-<ul>
-<li>ace-jump-word-mode: enter first character of a word, select the highlighted key to move to it.</li>
-<li>ace-jump-char-mode: enter a character for query, select the highlighted key to move to it. (Ctrl-c SPC)</li>
-<li>ace-jump-line-mode: each non-empty line will be marked, select the highlighted key to move to it.</li>
-</ul>
-</li>
-<li><p>Cấu hình: gán key mặc định cho hành động ace-jump-char-mode</p>
-
-<p>  &lsquo;&rsquo;&lsquo;
-  (define-key global-map (kbd &ldquo;C-c SPC&rdquo;) &#8216;ace-jump-char-mode)
-  &rsquo;&lsquo;&rsquo;</p></li>
-<li><p><a href="https://github.com/winterTTr/ace-jump-mode">Tham khảo</a></p></li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Bookmark</h2>
-
-<ul>
-<li>C-x r m <RET>: thêm bookmark</li>
-<li>C-x r b: chuyển bookmark</li>
-<li>C-x r l: hiển thị danh sách bookmarks</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Shell</h2>
-
-<ul>
-<li>C-c C-u: xóa toàn bộ lệnh</li>
-<li>C-c C-w: xóa 1 từ phía trước</li>
-<li>C-c C-c: ngắt lệnh đang thực thi</li>
-<li>C-c C-z: dừng lệnh đang thực thi</li>
-<li>M-p hoặc M-n: lệnh trước đó</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Multiple cursors</h2>
-
-<ul>
-<li>Hiện nhiều con trỏ trên màn hình cùng lúc: thay đổi nhiều vị trí</li>
-<li>Cài đặt: M-x package-install multiple-cursors</li>
-<li>Cấu hình để emacs khởi động multiple-cursors khi khởi động. Thêm đoạn code sau vào tập tin cấu hình <strong>.emacs</strong></li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>(require 'multiple-cursors)</span></code></pre></td></tr></table></div></figure>
-
-
-<p>hoặc</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>(require 'multiple-cursors-core "~/.emacs.d/elpa/multiple-cursors-20141003.551/multiple-cursors-core.el")
-</span><span class='line'>(require 'mc-hide-unmatched-lines-mode "~/.emacs.d/elpa/multiple-cursors-20141003.551/mc-hide-unmatched-lines-mode.el")
-</span><span class='line'>(require 'rectangular-region-mode "~/.emacs.d/elpa/multiple-cursors-20141003.551/rectangular-region-mode.el")
-</span><span class='line'>(require 'mc-separate-operations "~/.emacs.d/elpa/multiple-cursors-20141003.551/mc-separate-operations.el")
-</span><span class='line'>(require 'mc-mark-pop "~/.emacs.d/elpa/multiple-cursors-20141003.551/mc-mark-pop.el")
-</span><span class='line'>(require 'mc-mark-more "~/.emacs.d/elpa/multiple-cursors-20141003.551/mc-mark-more.el")
-</span><span class='line'>(require 'mc-cycle-cursors "~/.emacs.d/elpa/multiple-cursors-20141003.551/mc-cycle-cursors.el")
-</span><span class='line'>(require 'mc-edit-lines "~/.emacs.d/elpa/multiple-cursors-20141003.551/mc-edit-lines.el")
-</span><span class='line'>(require 'multiple-cursors "~/.emacs.d/elpa/multiple-cursors-20141003.551/multiple-cursors.el")</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>Cầu hình phím tắt</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>;; thêm con trỏ tới từng dòng
-</span><span class='line'>(global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
-</span><span class='line'>
-</span><span class='line'>;; thêm con trỏ dựa trên từ khóa (vùng đang được chọn)
-</span><span class='line'>(global-set-key (kbd "C-&gt;") 'mc/mark-next-like-this)
-</span><span class='line'>(global-set-key (kbd "C-&lt;") 'mc/mark-previous-like-this)
-</span><span class='line'>(global-set-key (kbd "C-c C-&lt;") 'mc/mark-all-like-this)</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>Chức năng:
-
-<ul>
-<li>mc/mark-next-like-this: tìm phần giống phần đang chọn ở phía sau và thêm con trỏ vào.</li>
-<li>mc/mark-next-word-like-this: giống mc/mark-next-like-this nhưng cho toàn bộ từ.</li>
-<li>mc/mark-next-symbol-like-this: giống mc/mark-next-like-this nhưng cho ký hiệu.</li>
-<li>mc/mark-previous-like-this: tìm phần giống phần đang chọn ở phía trước và thêm con trỏ vào.</li>
-<li>mc/mark-previous-word-like-this: giống mc/mark-previous-like-this nhưng cho toàn bộ từ.</li>
-<li>mc/mark-previous-symbol-like-this: &hellip;</li>
-<li>mc/mark-more-like-this-extended: &hellip;</li>
-<li>mc/add-cursor-on-click: &hellip;</li>
-<li>mc/mark-pop: &hellip;</li>
-</ul>
-</li>
-<li>Tham khảo: <a href="https://github.com/emacsmirror/multiple-cursors">https://github.com/emacsmirror/multiple-cursors</a></li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Magit</h2>
-
-<ul>
-<li>Danh sách thao tác
-
-<ul>
-<li>M-x magit-status hoặc M-x gst => chuyển qua mode git để thực hiện các thao tác</li>
-<li>g => đọc lại danh sách thay đổi</li>
-<li>M-1, 2, 3, 4 (hoặc 1, 2, 3, 4) => xem chi tiết các thay đổi</li>
-<li>i (hoặc C-u i) thêm vào .gitignore</li>
-<li>s hoặc S => chuyển trạng thái một/tất cả tập tin tới stage</li>
-<li>u hoặc U => chuyển trạng thái một/tất cả tập tin tới unstage</li>
-<li>k => hủy các thay đổi</li>
-<li>c => chuẩn bị commit: hiển thị thông tin và viết ghi chú/lịch sử/log</li>
-<li>C-c C-c => thực thi lệnh commit</li>
-<li>C-c C-a => thêm vào lệnh commit cũ</li>
-<li>l (hoặc L hoặc C-u l) => lịch sử</li>
-<li>a hoặc A => stage hoặc commit trên nhánh hiện hành (current branch)</li>
-<li>d hoặc D => hiển thị sự thay đổi giữa thư mục làm việc và HEAD</li>
-<li>b hoặc B => chuyển hoặc tạo mới và chuyển tới nhánh mới</li>
-<li>m hoặc M => merge nhánh vào nhánh hiện hành</li>
-<li>P => push</li>
-<li>F => pull</li>
-</ul>
-</li>
-<li>Tài liệu tham khảo:
-
-<ul>
-<li><a href="http://magit.github.io/master/magit.html">http://magit.github.io/master/magit.html</a></li>
-<li><a href="http://daemianmack.com/magit-cheatsheet.html">http://daemianmack.com/magit-cheatsheet.html</a></li>
-</ul>
-</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Recent files</h2>
-
-<ul>
-<li>Mặc định trong emacs 21 hoặc download tại trang: <a href="http://www.emacswiki.org/RecentFiles">http://www.emacswiki.org/RecentFiles</a></li>
-<li>Để kích hoạt thêm đoạn cấu hình sau vào tập tin ~/.emacs</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>(require 'recentf)
-</span><span class='line'>(recentf-mode 1)
-</span><span class='line'>(setq recentf-max-menu-items 25)
-</span><span class='line'>(global-set-key "\C-x\ \C-r" 'recentf-open-files)</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>Sử dụng: nhấn tổ hợp phím C-x và C-r để hiển thị danh sách</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Highlight-symbol</h2>
-
-<ul>
-<li>Cài đặt trong list-packages</li>
-<li>Cấu hình</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>;; Highlight-symbol
-</span><span class='line'>(require 'highlight-symbol)
-</span><span class='line'>(global-set-key (kbd "C-x C-a") 'highlight-symbol-at-point)
-</span><span class='line'>(global-set-key (kbd "C-x M-a") 'highlight-symbol-query-replace)
-</span><span class='line'>(global-set-key (kbd "C-x a") 'highlight-symbol-remove-all)</span></code></pre></td></tr></table></div></figure>
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -2710,6 +1789,10 @@ Cppcheck ">
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2015/01/15/connect-to-sql-server-using-oracl-sql-developer/">Connect to SQL Server Using Oracle SQL Developer</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2015/01/13/coding-standards/">Coding Standards</a>
       </li>
     
@@ -2723,10 +1806,6 @@ Cppcheck ">
     
       <li class="post">
         <a href="/blog/2014/10/13/gcc-the-gnu-compiler-collection/">GCC - the GNU Compiler Collection</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/10/05/slate/">Slate</a>
       </li>
     
   </ul>

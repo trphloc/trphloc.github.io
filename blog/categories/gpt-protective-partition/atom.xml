@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: GPT Protective Partition | Phuoc-Loc's blog]]></title>
+  <link href="http://trphloc.github.io/blog/categories/gpt-protective-partition/atom.xml" rel="self"/>
+  <link href="http://trphloc.github.io/"/>
+  <updated>2015-01-15T21:42:48+07:00</updated>
+  <id>http://trphloc.github.io/</id>
+  <author>
+    <name><![CDATA[Phuoc-Loc Truong]]></name>
+    <email><![CDATA[trphloc@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Diskpart]]></title>
+    <link href="http://trphloc.github.io/blog/2015/01/15/diskpart/"/>
+    <updated>2015-01-15T21:31:06+07:00</updated>
+    <id>http://trphloc.github.io/blog/2015/01/15/diskpart</id>
+    <content type="html"><![CDATA[<!-- ================================================================= -->
+
+
+<h2>Công cụ hỗ trợ xử lý đĩa cứng</h2>
+
+<ul>
+<li>Thực thi lệnh <strong>diskpart</strong> trong cửa sổ command</li>
+<li>Một số lệnh thông dụng
+
+<ul>
+<li>List disk: hiển thị thông tin các ổ đĩa</li>
+<li>Select disk &hellip; : chọn ổ đĩa hiện hành (các thao tác sẽ thực thi trên ổ đĩa này)</li>
+<li>Select partition &hellip;: chọn partition hiện hành</li>
+<li>Select volume &hellip;: chọn volume hiện hành</li>
+<li>detail disk: thông tin ổ đĩa</li>
+<li>clean: xóa toàn bộ thông tin ổ đĩa</li>
+<li>create partition &hellip;: tạo partition mới</li>
+</ul>
+</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Xử lý &ldquo;GPT Protective Partition&rdquo; trên windows xp</h2>
+
+<ul>
+<li>Chọn phím <strong> Windows + R </strong></li>
+<li>Gõ lệnh <strong>diskpart</strong></li>
+<li>Thực thi lệnh <strong>List disk</strong></li>
+<li>Chọn ổ đĩa cần xử lý <strong> Select disk &hellip; </strong></li>
+<li>Thực thi lệnh <strong>clean</strong> => sẽ xóa toàn bộ dữ liệu trên ổ đĩa</li>
+<li>Thực thi lệnh <strong>create partition primary</strong></li>
+<li>Thực thi lệnh <strong>assign G</strong> (G là ổ đĩa map với ổ cứng)</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<ul>
+<li>Tài liệu tham khảo
+
+<ul>
+<li><a href="http://support.microsoft.com/kb/300415">http://support.microsoft.com/kb/300415</a></li>
+<li><a href="http://technet.microsoft.com/en-us/library/cc766465%28v=ws.10%29.aspx">http://technet.microsoft.com/en-us/library/cc766465%28v=ws.10%29.aspx</a></li>
+</ul>
+</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

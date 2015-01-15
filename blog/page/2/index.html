@@ -9,9 +9,9 @@
   <meta name="author" content="Phuoc-Loc Truong">
 
   
-  <meta name="description" content="Đang cập nhật TODO minibuffer
-compress
-shell trên mac chạy không giống terminal (lỗi unicode khi build octopress, không tìm thấy ipython, &hellip;) &hellip;">
+  <meta name="description" content="Cài đặt Python trên môi trường windows Môi trường Windows 8.1
+Python 2.7.6 Thực hiện Truy cập trang chủ của Python
+Vào mục downloads để tải phiên &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -73,6 +73,330 @@ shell trên mac chạy không giống terminal (lỗi unicode khi build octopres
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/08/27/python-notes/">Python Notes</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-08-27T16:28:01+07:00" pubdate data-updated="true">Aug 27<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><!-- ================================================================= -->
+
+
+<h2>Cài đặt Python trên môi trường windows</h2>
+
+<h3>Môi trường</h3>
+
+<ul>
+<li>Windows 8.1</li>
+<li>Python 2.7.6</li>
+</ul>
+
+
+<h3>Thực hiện</h3>
+
+<ul>
+<li>Truy cập <a href="https://www.python.org">trang chủ của Python</a></li>
+<li>Vào mục <a href="https://www.python.org/downloads/">downloads</a> để tải phiên bản phù hợp (phiên bản 2.7.6)</li>
+<li>Chạy tập tin Python-&hellip;.msi và làm theo hướng dẫn (chọn thư mục cài đặt C:\abc\Python2.7.6)</li>
+<li>Thêm đường dẫn &ldquo;C:\abc\Python2.7.6&rdquo; vào biến môi trường (Environment variables) &ldquo;Path&rdquo;</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Cài đặt pip</h2>
+
+<p><a href="https://pip.pypa.io/en/latest/installing.html#install-pip">Tham khảo</a></p>
+
+<h3>Môi trường windows</h3>
+
+<ul>
+<li>Download từ <a href="/files/get-pip.py">link</a> nguồn: <a href="https://pip.pypa.io/en/latest/installing.html">https://pip.pypa.io/en/latest/installing.html</a></li>
+<li>Thực thi lệnh</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>python get-pip.py</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Gán biến môi trường cho thư mục Scripts trong thư mục cài đặt Python</li>
+</ul>
+
+
+<h3>Môi trường Mac</h3>
+
+<ul>
+<li>Thực thi lệnh sau</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo easy_install pip</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Hoặc download và di chuyển tới thư mục chứa tập tin get-pip.py thực thi lệnh</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo python get-pip.py</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<!-- ================================================================= -->
+
+
+<h2>Cài đặt iPython (sau khi đã có pip)</h2>
+
+<ul>
+<li>Thực thi lệnh sau để cài đặt:</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>pip install ipython</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<!-- ================================================================= -->
+
+
+<h2>Virtualenv</h2>
+
+<h3>Cài đặt virtualenv</h3>
+
+<ul>
+<li>Trên windows: sử dụng lệnh: &ldquo;easy_install virtualenv&rdquo; trong cmd</li>
+<li>Trên Mac: sử dụng lệnh: &ldquo;sudo easy_install virtualenv&rdquo; trong terminal</li>
+</ul>
+
+
+<h3>Sử dụng</h3>
+
+<ul>
+<li>Tạo môi trường tên abc
+
+<ul>
+<li>virtualenv &mdash;no-site-packages abc: tạo môi trường không sử dụng các packages</li>
+<li>virtualenv abc</li>
+</ul>
+</li>
+<li>Kích hoạt môi trường bằng cách chạy scripts của nó
+
+<ul>
+<li>&ldquo;abc/bin/activate&rdquo;: trên windows</li>
+<li>&ldquo;source working/bin/activate&rdquo;: trên linux hay MAC</li>
+</ul>
+</li>
+<li>Chạy lệnh &ldquo;deactive&rdquo; để thoát</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Python trên emacs</h2>
+
+<h3>Cài đặt và cấu hình</h3>
+
+<ul>
+<li>Cài thêm gói role/flake8/jedi cho python: thực thi lệnh</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>pip install flake8
+</span><span class='line'>pip install rope
+</span><span class='line'>pip install jedi</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Cài đặt Python-mode package, iPython package. Cấu hình</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>; python-mode
+</span><span class='line'>(setq py-install-directory "~/.emacs.d/elpa/python-mode-6.1.3")
+</span><span class='line'>(add-to-list 'load-path py-install-directory)
+</span><span class='line'>(require 'python-mode)
+</span><span class='line'>; use IPython
+</span><span class='line'>(setq-default py-shell-name "ipython")
+</span><span class='line'>(setq-default py-which-bufname "IPython")
+</span><span class='line'>; use the wx backend, for both mayavi and matplotlib
+</span><span class='line'>(setq py-python-command-args
+</span><span class='line'>  '("--gui=wx" "--pylab=wx" "-colors" "Linux"))
+</span><span class='line'>(setq py-force-py-shell-name-p t)
+</span><span class='line'>; switch to the interpreter after executing code
+</span><span class='line'>(setq py-shell-switch-buffers-on-execute-p t)
+</span><span class='line'>(setq py-switch-buffers-on-execute-p t)
+</span><span class='line'>; don't split windows
+</span><span class='line'>;(setq py-split-windows-on-execute-p nil)
+</span><span class='line'>; try to automagically figure out indentation
+</span><span class='line'>(setq py-smart-indentation t)</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Cài đặt elpy package</li>
+<li>Cấu hình trong emacs. Thêm vào file cấu hình .emacs:</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>(package-initialize)
+</span><span class='line'>(elpy-enable)</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Sử dụng</h3>
+
+<ul>
+<li>Mở tập tin python, nhấn &ldquo;Ctrl-c !&rdquo; => cửa sổ thực thi của iPython sẽ hiện ra
+=> không sử dụng vì dùng command.</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Python Tools/Utilities</h2>
+
+<p>TODO TPL
+&ndash; <em>dis</em> module: disassembler
+&ndash; <em>pdb</em> module: debug
+&ndash; <em>profile</em> module
+&ndash; <em>tabnanny</em> module</p>
+
+<!-- ================================================================= -->
+
+
+<h2>Một số lưu ý</h2>
+
+<ul>
+<li>Tên biến:
+
+<ul>
+<li>Bắt đầu bởi A &ndash;> Z hoặc a &ndash;> z hoặc underscore(_)</li>
+<li>Không cho phép ký tự @, $, %</li>
+<li>Phân biệt viết hoa, viết thường</li>
+</ul>
+</li>
+<li>Code blocks: Không được bao bởi các dấu ( { [. Được nhận biết bởi dòng và <strong>canh lề</strong></li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>if True:
+</span><span class='line'>    print "Answer"
+</span><span class='line'>    print "True"
+</span><span class='line'>else:
+</span><span class='line'>    print "Answer"
+</span><span class='line'>  print "False"</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>1 dòng lệnh trên nhiều dòng sẽ dùng dấu <strong>\</strong></li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>total = item_one + \
+</span><span class='line'>        item_two + \
+</span><span class='line'>        item_three</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Dấu &lsquo;, &ldquo;, &rsquo;&lsquo;&rsquo; hoặc &rdquo;&ldquo;&rdquo;</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>word = 'word'
+</span><span class='line'>sentence = "This is a sentence."
+</span><span class='line'>paragraph = """This is a paragraph. It is
+</span><span class='line'>made up of multiple lines and sentences."""</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Ghi chú: sử dụng <strong>#</strong></li>
+<li>Xử lý</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Subprocess</h2>
+
+<ul>
+<li>import subprocess</li>
+<li>subprocess.call([some_command, some_argument, another_argument_or_path])</li>
+</ul>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -2915,254 +3239,9 @@ shell trên mac chạy không giống terminal (lỗi unicode khi build octopres
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/04/14/github-pages/">Github Pages</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-04-14T16:33:14+07:00" pubdate data-updated="true">Apr 14<span>th</span>, 2014</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><!-- ================================================================= -->
-
-
-<h2>Thông tin cơ bản</h2>
-
-<ul>
-<li>GitHub Pages: một dự án để mọi người tạo trang web cá nhân hoặc nhóm. Nó chỉ là một repo trên GitHub, trong đó chứa các tập tin web và được trỏ đến domain xxx.github.io</li>
-<li>Một số cách để sử dụng GitHub Pages
-  &mdash; Thêm trang web lên trên repo
-  &mdash; Sử dụng Jekyll: <a href="http://jekyllrb.com/docs/home/">Link</a>
-  &mdash; Sử dụng Octopress: <a href="http://octopress.org/docs/">Link</a>
-  => Trong bài viết này sẽ hướng dẫn sử dụng octopress trên github</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Công cụ sử dụng</h2>
-
-<ul>
-<li>Python 2.7.6</li>
-<li>Ruby 2.0.0</li>
-<li>Ruby DevKit 4.7.2</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Hướng dẫn</h2>
-
-<h3>Cài đặt Python 2.7.6</h3>
-
-<ul>
-<li><a href="/blog/2014/08/27/python-notes/">Hướng dẫn cài đặt</a></li>
-</ul>
-
-
-<h3>Cài đặt Ruby 2.0.0 và Ruby DevKit</h3>
-
-<ul>
-<li><a href="/blog/2014/08/31/ruby-notes/">Hướng dẫn cài đặt</a></li>
-</ul>
-
-
-<h3>Cài đặt và sử dụng git trên windows</h3>
-
-<ul>
-<li><a href="/blog/2014/08/31/git-notes/">Hướng dẫn cài đặt</a></li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Các bước thực hiện</h2>
-
-<ul>
-<li>B1: Tạo 1 tài khoản github</li>
-<li>B2: Download src của octopress từ <a href="https://github.com/imathis/octopress">https://github.com/imathis/octopress</a></li>
-<li>B3: Sử dụng với các lệnh sau (bundle exec)
-
-<ul>
-<li>rake new_post[&ldquo;&hellip;&rdquo;]: tạo 1 bài post
-=> Sử dụng trong zsh: <strong>bundle exec rake &ldquo;new_post[test]&rdquo;</strong></li>
-<li>rake new_page[&ldquo;&hellip;&rdquo;]: tạo 1 trang mới</li>
-<li>rake preview: xem trên localhost</li>
-<li>rake generate: phát sinh trang html</li>
-<li>rake deploy: up len github (nhập user và password của tài khoản trên github)</li>
-<li>Nếu có lỗi không thể deploy thì có thể làm tay
-
-<ul>
-<li>Tạo thư mục chứa các tập tin/thư mục để đưa lên sever. Sử dụng lệnh: &ldquo;mkdir _deploy&rdquo;</li>
-<li>Tạo kết nối của thư mục <em>deploy và repo của github. Sử dụng lệnh: &ldquo;git clone &lt;deploy_repo> </em>deploy&rdquo;</li>
-<li>Khởi tạo. Sử dụng lệnh: &ldquo;rake gen_deploy&rdquo;</li>
-</ul>
-</li>
-<li>Nếu không nhận ra bundle
-
-<ul>
-<li>cd C:/RubyDevKit</li>
-<li>ruby dk.rb init</li>
-<li>ruby dk.rb install</li>
-<li>cd thư mục chưa octopress</li>
-<li>gem install bundler</li>
-<li>gem install RedCloth -v &lsquo;4.2.9&rsquo;</li>
-<li>bundle install</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Một số cú pháp thông dụng</h2>
-
-<ul>
-<li>Hình ảnh: &lt; Image sr=&ldquo;&rdquo;/></li>
-<li>Link tham khảo: [chuỗi mô tả](đường link)</li>
-<li>Code block:
-
-<ul>
-<li>{ % codeblock [lang:language] [title] [url] [link text] [start:#] [mark:#,#&ndash;#] [linenos:false] % }</li>
-<li>code snippet</li>
-<li>{ % endcodeblock % }</li>
-</ul>
-</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Cài đặt và sử dụng mục lục trong octopress</h2>
-
-<ul>
-<li>Cài đặt
-
-<ul>
-<li>Download từ <a href="/files/jquery.toc.zip">link</a></li>
-<li>Giải nén
-
-<ul>
-<li>Copy các tập tin trong thư mục js vào thư mục &ldquo;source/javascripts&rdquo;</li>
-<li>Copy các tập tin trong thư mục css vào thư mục &ldquo;source/stylesheets&rdquo;</li>
-</ul>
-</li>
-<li>Tạo tập tin &ldquo;javascripts/generate-toc.js&rdquo; với nội dung sau</li>
-</ul>
-</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>function generateTOC(heading) {
-</span><span class='line'>         var container = jQuery("&lt;section>&lt;/section>");
-</span><span class='line'>     var div = jQuery("&lt;ul id='toc'>&lt;/ul>");
-</span><span class='line'>     var content = jQuery('.sidebar');
-</span><span class='line'>
-</span><span class='line'>     if (heading != undefined && heading != null) {
-</span><span class='line'>        container.append('&lt;h1 class="tocHeading">' + heading + '&lt;/h1>');
-</span><span class='line'>     }
-</span><span class='line'>
-</span><span class='line'>     div.tableOfContents("#content",{startLevel: 2});
-</span><span class='line'>     container.append(div);
-</span><span class='line'>     content.prepend(container);
-</span><span class='line'>  }</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>Thêm đoạn code sau vào tập tin &ldquo;source/_includes/custom/head.html&rdquo;</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;script src="http://code.jquery.com/jquery-1.10.1.min.js">&lt;/script>
-</span><span class='line'>     &lt;script src="/javascripts/jquery.tableofcontents.min.js" type="text/javascript">&lt;/script>
-</span><span class='line'>     &lt;script src="/javascripts/generate-toc.js" type="text/javascript">&lt;/script></span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>Thêm đoạn code sau vào tập tin &ldquo;source/_includes/custom/after_footer.html&rdquo;</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;script type="text/javascript">
-</span><span class='line'>    jQuery(document).ready(function() {
-</span><span class='line'>        // Put a TOC right before the entry content.
-</span><span class='line'>        generateTOC('Table of Contents');
-</span><span class='line'>    });
-</span><span class='line'>    &lt;/script></span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>Sử dụng: trong phần head của mỗi bài post hay page, thêm vào &ldquo;toc: true&rdquo;</li>
-<li>Tham khảo: <a href="http://jkamenik.github.io/blog/2013/07/07/octopress-toc/">link</a></li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Tài liệu tham khảo</h2>
-
-<ul>
-<li><a href="https://pages.github.com/">GitHub Pages</a></li>
-</ul>
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
+    
+      <a class="prev" href="/blog/page/3/">&larr; Older</a>
     
     <a href="/blog/archives">Blog Archives</a>
     
@@ -3175,6 +3254,10 @@ shell trên mac chạy không giống terminal (lỗi unicode khi build octopres
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2015/01/15/diskpart/">Diskpart</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2015/01/15/connect-to-sql-server-using-oracl-sql-developer/">Connect to SQL Server Using Oracle SQL Developer</a>
@@ -3190,10 +3273,6 @@ shell trên mac chạy không giống terminal (lỗi unicode khi build octopres
     
       <li class="post">
         <a href="/blog/2015/01/10/database/">Database</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/10/13/gcc-the-gnu-compiler-collection/">GCC - the GNU Compiler Collection</a>
       </li>
     
   </ul>

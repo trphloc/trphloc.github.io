@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Windows | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/windows/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2015-01-15T10:28:15+07:00</updated>
+  <updated>2015-01-15T21:42:48+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -12,6 +12,65 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Diskpart]]></title>
+    <link href="http://trphloc.github.io/blog/2015/01/15/diskpart/"/>
+    <updated>2015-01-15T21:31:06+07:00</updated>
+    <id>http://trphloc.github.io/blog/2015/01/15/diskpart</id>
+    <content type="html"><![CDATA[<!-- ================================================================= -->
+
+
+<h2>Công cụ hỗ trợ xử lý đĩa cứng</h2>
+
+<ul>
+<li>Thực thi lệnh <strong>diskpart</strong> trong cửa sổ command</li>
+<li>Một số lệnh thông dụng
+
+<ul>
+<li>List disk: hiển thị thông tin các ổ đĩa</li>
+<li>Select disk &hellip; : chọn ổ đĩa hiện hành (các thao tác sẽ thực thi trên ổ đĩa này)</li>
+<li>Select partition &hellip;: chọn partition hiện hành</li>
+<li>Select volume &hellip;: chọn volume hiện hành</li>
+<li>detail disk: thông tin ổ đĩa</li>
+<li>clean: xóa toàn bộ thông tin ổ đĩa</li>
+<li>create partition &hellip;: tạo partition mới</li>
+</ul>
+</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Xử lý &ldquo;GPT Protective Partition&rdquo; trên windows xp</h2>
+
+<ul>
+<li>Chọn phím <strong> Windows + R </strong></li>
+<li>Gõ lệnh <strong>diskpart</strong></li>
+<li>Thực thi lệnh <strong>List disk</strong></li>
+<li>Chọn ổ đĩa cần xử lý <strong> Select disk &hellip; </strong></li>
+<li>Thực thi lệnh <strong>clean</strong> => sẽ xóa toàn bộ dữ liệu trên ổ đĩa</li>
+<li>Thực thi lệnh <strong>create partition primary</strong></li>
+<li>Thực thi lệnh <strong>assign G</strong> (G là ổ đĩa map với ổ cứng)</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<ul>
+<li>Tài liệu tham khảo
+
+<ul>
+<li><a href="http://support.microsoft.com/kb/300415">http://support.microsoft.com/kb/300415</a></li>
+<li><a href="http://technet.microsoft.com/en-us/library/cc766465%28v=ws.10%29.aspx">http://technet.microsoft.com/en-us/library/cc766465%28v=ws.10%29.aspx</a></li>
+</ul>
+</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Ruby Notes]]></title>
@@ -530,180 +589,6 @@ made up of multiple lines and sentences."""
 <li>where command_name: tìm vị trí của lệnh command</li>
 <li>nslookup: truy vết domain</li>
 </ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Hướng Dẫn Sử Dụng Subversion (Tortoise Svn) Trên Windows]]></title>
-    <link href="http://trphloc.github.io/blog/2014/05/08/svn-tutorial/"/>
-    <updated>2014-05-08T10:18:39+07:00</updated>
-    <id>http://trphloc.github.io/blog/2014/05/08/svn-tutorial</id>
-    <content type="html"><![CDATA[<!-- ================================================================= -->
-
-
-<h2>Thông tin cơ bản</h2>
-
-<ul>
-<li>Subversion: công cụ giúp lập trình viên quản lý các phiên bản/sự thay đổi của mã nguồn</li>
-<li>Lưu ý: chỉ cập nhật các phiên bản chạy được lên máy chủ</li>
-<li>Trong bài viết này hướng dẫn sử dụng công cụ Tortoise svn trên windows</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Môi trường sử dụng</h2>
-
-<ul>
-<li>Windows 8.1</li>
-<li>Tortoise svn 1.8.4</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Cài đặt</h2>
-
-<ul>
-<li>Truy cập vào trang web <a href="http://tortoisesvn.net/">http://tortoisesvn.net/</a> để tải phiên bản tortoise svn phù hợp</li>
-</ul>
-
-
-<br><img src="http://trphloc.github.io/images/svn tutorial 1.png"/><br>
-
-
-<ul>
-<li>Chạy chương trình và để các thông số mặc định. Sau khi cài đặt xong, kết quả như sau</li>
-</ul>
-
-
-<br><img src="http://trphloc.github.io/images/svn tutorial 2.png"/><br>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Một số chức năng thường sử dụng</h2>
-
-<ul>
-<li>Check-out</li>
-<li>Update</li>
-<li>Commit</li>
-<li>Show log</li>
-<li>Resovle conflict</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Hướng dẫn</h2>
-
-<ul>
-<li>Check-out: sử dụng để tải toàn bộ tài liệu trên máy chủ về thư mục làm việc
-
-<ul>
-<li>Tạo thư mục làm việc => chuột phải vào thư mục => chọn check-out
-<br><img src="http://trphloc.github.io/images/svn tutorial 3.png"/><br></li>
-<li>Trong màn hình Check-out: chú ý các thông tin sau
-
-<ul>
-<li>URL of repository: đường dẫn chỉ đến máy chủ</li>
-<li>Checkout directory: thư mục làm việc</li>
-<li>Checkout Depth: toàn bộ hay từng phần</li>
-<li>Revision: tải phiên bản mới nhất hay là phiên bản cũ</li>
-<li>=> Trong ví dụ này chọn phiên bản mới nhất và tải toàn bộ
-<br><img src="http://trphloc.github.io/images/svn tutorial 4.png"/><br></li>
-</ul>
-</li>
-<li>Kết quả sẽ tải toàn bộ về thư mục làm việc
-<br><img src="http://trphloc.github.io/images/svn tutorial 5.png"/><br></li>
-</ul>
-</li>
-<li>Update: đọc các thay đổi của những thành viên khác trong nhóm trên máy chủ và lưu xuống thư mục làm việc
-
-<ul>
-<li>Mở thư mục => click chuột phải => chọn update
-<br><img src="http://trphloc.github.io/images/svn tutorial 6.png"/><br></li>
-<li>Kết quả: sẽ hiển thị các thay đổi, tài khoản người thay đổi và ghi chú cho mỗi thay đổi
-<br><img src="http://trphloc.github.io/images/svn tutorial 7.png"/><br></li>
-</ul>
-</li>
-<li>Commit: cập nhật các thay đổi trong thư mục làm việc lên máy chủ
-
-<ul>
-<li>Lưu ý: phải thực hiện hành động &ldquo;update&rdquo; trước</li>
-<li>Khi thay đổi, thư mục làm việc có ký hiệu khác màu xanh lá => có thay đổi => khi làm xong 1 việc nên commit
-<br><img src="http://trphloc.github.io/images/svn tutorial 8.png"/><br>
-
-<ul>
-<li>Một số ký hiệu
-<br><img src="http://trphloc.github.io/images/svn tutorial 8 1.png"/><br></li>
-</ul>
-</li>
-<li>Thực hiện: chuột phải vào &ldquo;thư mục muốn commit&rdquo; => chọn commit &hellip;
-<br><img src="http://trphloc.github.io/images/svn tutorial 10.png"/><br></li>
-<li>Trong cửa sổ commit:
-
-<ul>
-<li>Xem xét các tập tin có thay đổi hoặc tập tin mới hoặc tập tin bị xóa</li>
-<li>Viết các ghi chú để dễ dàng tìm kiếm sau này
-<br><img src="http://trphloc.github.io/images/svn tutorial 11.png"/><br></li>
-</ul>
-</li>
-<li>Chọn Ok và được kết quả
-<br><img src="http://trphloc.github.io/images/svn tutorial 12.png"/><br></li>
-</ul>
-</li>
-<li>Show log: xem các thay đổi xảy trên 1 tập tin hoặc thư mục nào đó
-
-<ul>
-<li>Chuột phải vào thư mục/tập tin mới theo dõi
-<br><img src="http://trphloc.github.io/images/svn tutorial 13.png"/><br></li>
-<li>Trong màn hình Log messages
-
-<ul>
-<li>Danh sách các thay đổi</li>
-<li>Chọn 1 thay đổi sẽ xem được:
-
-<ul>
-<li>Các thư mục/tập tin thay đổi trong phiên bản đó</li>
-<li>Ghi chú</li>
-</ul>
-</li>
-<li>Muốn xem tập tin đã thay đổi gì có thể double-click vào tập tin đó
-<br><img src="http://trphloc.github.io/images/svn tutorial 14.png"/><br></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Resovle conflict: xảy ra khi 2 người dùng cùng thay đổi trên 1 tập tin
-
-<ul>
-<li>Xảy ra khi người dùng thực hiện update trước khi commit
-<br><img src="http://trphloc.github.io/images/svn tutorial 15.png"/><br></li>
-<li>Click chuột phải vào tập tin bị conflict và chọn chức năng edit conflict
-<br><img src="http://trphloc.github.io/images/svn tutorial 16.png"/><br></li>
-<li>Màn hình chỉnh sửa conflict hiện ra như sau
-<br><img src="http://trphloc.github.io/images/svn tutorial 17.png"/><br></li>
-<li>Click chuột phải vào dòng &ldquo;??????????????????????&rdquo; để chọn nội dung muốn dùng
-<br><img src="http://trphloc.github.io/images/svn tutorial 18.png"/><br></li>
-<li>Sau khi quyết định xong thì chọn đã giải quyết conflict
-<br><img src="http://trphloc.github.io/images/svn tutorial 19.png"/><br></li>
-<li>Kết quả như sau
-<br><img src="http://trphloc.github.io/images/svn tutorial 20.png"/><br></li>
-<li>Thực hiện commit như bình thường
-<br><img src="http://trphloc.github.io/images/svn tutorial 21.png"/><br></li>
-<li>Nhấn ok và kết thúc</li>
-</ul>
-</li>
-</ul>
-
-
-<!-- ================================================================= -->
 
 ]]></content>
   </entry>

@@ -4,7 +4,7 @@
   <title><![CDATA[Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2015-01-15T10:28:15+07:00</updated>
+  <updated>2015-01-15T21:42:48+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -12,6 +12,65 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Diskpart]]></title>
+    <link href="http://trphloc.github.io/blog/2015/01/15/diskpart/"/>
+    <updated>2015-01-15T21:31:06+07:00</updated>
+    <id>http://trphloc.github.io/blog/2015/01/15/diskpart</id>
+    <content type="html"><![CDATA[<!-- ================================================================= -->
+
+
+<h2>Công cụ hỗ trợ xử lý đĩa cứng</h2>
+
+<ul>
+<li>Thực thi lệnh <strong>diskpart</strong> trong cửa sổ command</li>
+<li>Một số lệnh thông dụng
+
+<ul>
+<li>List disk: hiển thị thông tin các ổ đĩa</li>
+<li>Select disk &hellip; : chọn ổ đĩa hiện hành (các thao tác sẽ thực thi trên ổ đĩa này)</li>
+<li>Select partition &hellip;: chọn partition hiện hành</li>
+<li>Select volume &hellip;: chọn volume hiện hành</li>
+<li>detail disk: thông tin ổ đĩa</li>
+<li>clean: xóa toàn bộ thông tin ổ đĩa</li>
+<li>create partition &hellip;: tạo partition mới</li>
+</ul>
+</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Xử lý &ldquo;GPT Protective Partition&rdquo; trên windows xp</h2>
+
+<ul>
+<li>Chọn phím <strong> Windows + R </strong></li>
+<li>Gõ lệnh <strong>diskpart</strong></li>
+<li>Thực thi lệnh <strong>List disk</strong></li>
+<li>Chọn ổ đĩa cần xử lý <strong> Select disk &hellip; </strong></li>
+<li>Thực thi lệnh <strong>clean</strong> => sẽ xóa toàn bộ dữ liệu trên ổ đĩa</li>
+<li>Thực thi lệnh <strong>create partition primary</strong></li>
+<li>Thực thi lệnh <strong>assign G</strong> (G là ổ đĩa map với ổ cứng)</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<ul>
+<li>Tài liệu tham khảo
+
+<ul>
+<li><a href="http://support.microsoft.com/kb/300415">http://support.microsoft.com/kb/300415</a></li>
+<li><a href="http://technet.microsoft.com/en-us/library/cc766465%28v=ws.10%29.aspx">http://technet.microsoft.com/en-us/library/cc766465%28v=ws.10%29.aspx</a></li>
+</ul>
+</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Connect to SQL Server Using Oracle SQL Developer]]></title>
@@ -4038,226 +4097,6 @@
 <img src="http://trphloc.github.io/images/2014-04-18-setup-wamp-and-config-dreamweaver 17.png"/>
 <img src="http://trphloc.github.io/images/2014-04-18-setup-wamp-and-config-dreamweaver 18.png"/>
 </ol>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Github Pages]]></title>
-    <link href="http://trphloc.github.io/blog/2014/04/14/github-pages/"/>
-    <updated>2014-04-14T16:33:14+07:00</updated>
-    <id>http://trphloc.github.io/blog/2014/04/14/github-pages</id>
-    <content type="html"><![CDATA[<!-- ================================================================= -->
-
-
-<h2>Thông tin cơ bản</h2>
-
-<ul>
-<li>GitHub Pages: một dự án để mọi người tạo trang web cá nhân hoặc nhóm. Nó chỉ là một repo trên GitHub, trong đó chứa các tập tin web và được trỏ đến domain xxx.github.io</li>
-<li>Một số cách để sử dụng GitHub Pages
-  &mdash; Thêm trang web lên trên repo
-  &mdash; Sử dụng Jekyll: <a href="http://jekyllrb.com/docs/home/">Link</a>
-  &mdash; Sử dụng Octopress: <a href="http://octopress.org/docs/">Link</a>
-  => Trong bài viết này sẽ hướng dẫn sử dụng octopress trên github</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Công cụ sử dụng</h2>
-
-<ul>
-<li>Python 2.7.6</li>
-<li>Ruby 2.0.0</li>
-<li>Ruby DevKit 4.7.2</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Hướng dẫn</h2>
-
-<h3>Cài đặt Python 2.7.6</h3>
-
-<ul>
-<li><a href="http://trphloc.github.io/blog/2014/08/27/python-notes/">Hướng dẫn cài đặt</a></li>
-</ul>
-
-
-<h3>Cài đặt Ruby 2.0.0 và Ruby DevKit</h3>
-
-<ul>
-<li><a href="http://trphloc.github.io/blog/2014/08/31/ruby-notes/">Hướng dẫn cài đặt</a></li>
-</ul>
-
-
-<h3>Cài đặt và sử dụng git trên windows</h3>
-
-<ul>
-<li><a href="http://trphloc.github.io/blog/2014/08/31/git-notes/">Hướng dẫn cài đặt</a></li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Các bước thực hiện</h2>
-
-<ul>
-<li>B1: Tạo 1 tài khoản github</li>
-<li>B2: Download src của octopress từ <a href="https://github.com/imathis/octopress">https://github.com/imathis/octopress</a></li>
-<li>B3: Sử dụng với các lệnh sau (bundle exec)
-
-<ul>
-<li>rake new_post[&ldquo;&hellip;&rdquo;]: tạo 1 bài post
-=> Sử dụng trong zsh: <strong>bundle exec rake &ldquo;new_post[test]&rdquo;</strong></li>
-<li>rake new_page[&ldquo;&hellip;&rdquo;]: tạo 1 trang mới</li>
-<li>rake preview: xem trên localhost</li>
-<li>rake generate: phát sinh trang html</li>
-<li>rake deploy: up len github (nhập user và password của tài khoản trên github)</li>
-<li>Nếu có lỗi không thể deploy thì có thể làm tay
-
-<ul>
-<li>Tạo thư mục chứa các tập tin/thư mục để đưa lên sever. Sử dụng lệnh: &ldquo;mkdir _deploy&rdquo;</li>
-<li>Tạo kết nối của thư mục <em>deploy và repo của github. Sử dụng lệnh: &ldquo;git clone &lt;deploy_repo> </em>deploy&rdquo;</li>
-<li>Khởi tạo. Sử dụng lệnh: &ldquo;rake gen_deploy&rdquo;</li>
-</ul>
-</li>
-<li>Nếu không nhận ra bundle
-
-<ul>
-<li>cd C:/RubyDevKit</li>
-<li>ruby dk.rb init</li>
-<li>ruby dk.rb install</li>
-<li>cd thư mục chưa octopress</li>
-<li>gem install bundler</li>
-<li>gem install RedCloth -v &lsquo;4.2.9&rsquo;</li>
-<li>bundle install</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Một số cú pháp thông dụng</h2>
-
-<ul>
-<li>Hình ảnh: &lt; Image sr=&ldquo;&rdquo;/></li>
-<li>Link tham khảo: [chuỗi mô tả](đường link)</li>
-<li>Code block:
-
-<ul>
-<li>{ % codeblock [lang:language] [title] [url] [link text] [start:#] [mark:#,#&ndash;#] [linenos:false] % }</li>
-<li>code snippet</li>
-<li>{ % endcodeblock % }</li>
-</ul>
-</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Cài đặt và sử dụng mục lục trong octopress</h2>
-
-<ul>
-<li>Cài đặt
-
-<ul>
-<li>Download từ <a href="http://trphloc.github.io/files/jquery.toc.zip">link</a></li>
-<li>Giải nén
-
-<ul>
-<li>Copy các tập tin trong thư mục js vào thư mục &ldquo;source/javascripts&rdquo;</li>
-<li>Copy các tập tin trong thư mục css vào thư mục &ldquo;source/stylesheets&rdquo;</li>
-</ul>
-</li>
-<li>Tạo tập tin &ldquo;javascripts/generate-toc.js&rdquo; với nội dung sau</li>
-</ul>
-</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>function generateTOC(heading) {
-</span><span class='line'>         var container = jQuery("&lt;section>&lt;/section>");
-</span><span class='line'>     var div = jQuery("&lt;ul id='toc'>&lt;/ul>");
-</span><span class='line'>     var content = jQuery('.sidebar');
-</span><span class='line'>
-</span><span class='line'>     if (heading != undefined && heading != null) {
-</span><span class='line'>        container.append('&lt;h1 class="tocHeading">' + heading + '&lt;/h1>');
-</span><span class='line'>     }
-</span><span class='line'>
-</span><span class='line'>     div.tableOfContents("#content",{startLevel: 2});
-</span><span class='line'>     container.append(div);
-</span><span class='line'>     content.prepend(container);
-</span><span class='line'>  }</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>Thêm đoạn code sau vào tập tin &ldquo;source/_includes/custom/head.html&rdquo;</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;script src="http://code.jquery.com/jquery-1.10.1.min.js">&lt;/script>
-</span><span class='line'>     &lt;script src="http://trphloc.github.io/javascripts/jquery.tableofcontents.min.js" type="text/javascript">&lt;/script>
-</span><span class='line'>     &lt;script src="http://trphloc.github.io/javascripts/generate-toc.js" type="text/javascript">&lt;/script></span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>Thêm đoạn code sau vào tập tin &ldquo;source/_includes/custom/after_footer.html&rdquo;</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;script type="text/javascript">
-</span><span class='line'>    jQuery(document).ready(function() {
-</span><span class='line'>        // Put a TOC right before the entry content.
-</span><span class='line'>        generateTOC('Table of Contents');
-</span><span class='line'>    });
-</span><span class='line'>    &lt;/script></span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>Sử dụng: trong phần head của mỗi bài post hay page, thêm vào &ldquo;toc: true&rdquo;</li>
-<li>Tham khảo: <a href="http://jkamenik.github.io/blog/2013/07/07/octopress-toc/">link</a></li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Tài liệu tham khảo</h2>
-
-<ul>
-<li><a href="https://pages.github.com/">GitHub Pages</a></li>
-</ul>
 
 ]]></content>
   </entry>

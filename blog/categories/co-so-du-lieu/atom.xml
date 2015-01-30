@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Cơ Sở Dữ Liệu | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/co-so-du-lieu/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2015-01-15T21:42:48+07:00</updated>
+  <updated>2015-01-30T09:34:42+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -60,6 +60,18 @@
 <ul>
 <li>Navicat</li>
 <li>Oracle sql developer tool</li>
+<li><a href="http://www.gfi.com/blog/top-10-free-database-tools-for-sys-admins/">http://www.gfi.com/blog/top-10-free-database-tools-for-sys-admins/</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Comparison_of_database_tools">http://en.wikipedia.org/wiki/Comparison_of_database_tools</a></li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Profiler</h2>
+
+<ul>
+<li>SQL Profiler sử dụng cho SQL server</li>
 </ul>
 
 ]]></content>

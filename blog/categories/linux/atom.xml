@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Linux | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/linux/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2015-01-30T09:34:42+07:00</updated>
+  <updated>2015-03-19T14:30:51+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -25,13 +25,28 @@
 
 <ul>
 <li>Tạo một tập tin abc</li>
+</ul>
+
+
+<p>```</p>
+
+<pre><code>#!/bin/bash
+</code></pre>
+
+<p>```</p>
+
+<ul>
 <li>Chỉnh cấu hình cho tập tin có thể thực thi</li>
 </ul>
 
 
-<p><code>
-chmod 755 abc
-</code></p>
+<p>```</p>
+
+<pre><code>chmod 755 abc
+chmod +x abc
+</code></pre>
+
+<p>```</p>
 
 <ul>
 <li>Thực thi các lệnh trong tập tin abc</li>

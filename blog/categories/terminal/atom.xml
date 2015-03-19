@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Terminal | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/terminal/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2015-01-30T09:34:42+07:00</updated>
+  <updated>2015-03-19T14:30:51+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -168,6 +168,25 @@ g++ -o hello.exe program1.cpp
 </li>
 <li>rm file_name: xóa tập tin</li>
 <li>rm -rf directory_name: xóa thư mục (r: recursive, f: force)</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Một số lệnh sử dụng monitor hệ thống</h2>
+
+<ul>
+<li>opensnoop:
+
+<ul>
+<li>sudo opensnoop -n applicationName</li>
+<li>sudo opensnoop -p PID</li>
+<li>sudo opensnoop -f filename</li>
+<li>Tham khảo: <a href="http://osxdaily.com/2010/10/06/monitor-how-and-when-a-process-accesses-files-with-opensnoop/">http://osxdaily.com/2010/10/06/monitor-how-and-when-a-process-accesses-files-with-opensnoop/</a></li>
+</ul>
+</li>
+<li>Tham khảo: <a href="http://dtrace.org/blogs/brendan/2011/10/10/top-10-dtrace-scripts-for-mac-os-x/">http://dtrace.org/blogs/brendan/2011/10/10/top-10-dtrace-scripts-for-mac-os-x/</a></li>
 </ul>
 
 

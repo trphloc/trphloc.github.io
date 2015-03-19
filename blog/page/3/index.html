@@ -9,7 +9,8 @@
   <meta name="author" content="Phuoc-Loc Truong">
 
   
-  <meta name="description" content="Thông tin cơ bản GitHub Pages: một dự án để mọi người tạo trang web cá nhân hoặc nhóm. Nó chỉ là một repo trên GitHub, trong đó chứa các tập tin web &hellip;">
+  <meta name="description" content="Thông tin cơ bản Subversion: công cụ giúp lập trình viên quản lý các phiên bản/sự thay đổi của mã nguồn
+Lưu ý: chỉ cập nhật các phiên bản chạy được &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -71,6 +72,516 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/05/08/svn-tutorial/">Hướng Dẫn Sử Dụng Subversion (Tortoise Svn) Trên Windows</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-05-08T10:18:39+07:00" pubdate data-updated="true">May 8<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><!-- ================================================================= -->
+
+
+<h2>Thông tin cơ bản</h2>
+
+<ul>
+<li>Subversion: công cụ giúp lập trình viên quản lý các phiên bản/sự thay đổi của mã nguồn</li>
+<li>Lưu ý: chỉ cập nhật các phiên bản chạy được lên máy chủ</li>
+<li>Trong bài viết này hướng dẫn sử dụng công cụ Tortoise svn trên windows</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Môi trường sử dụng</h2>
+
+<ul>
+<li>Windows 8.1</li>
+<li>Tortoise svn 1.8.4</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Cài đặt</h2>
+
+<ul>
+<li>Truy cập vào trang web <a href="http://tortoisesvn.net/">http://tortoisesvn.net/</a> để tải phiên bản tortoise svn phù hợp</li>
+</ul>
+
+
+<br><img src="/images/svn tutorial 1.png"/><br>
+
+
+<ul>
+<li>Chạy chương trình và để các thông số mặc định. Sau khi cài đặt xong, kết quả như sau</li>
+</ul>
+
+
+<br><img src="/images/svn tutorial 2.png"/><br>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Một số chức năng thường sử dụng</h2>
+
+<ul>
+<li>Check-out</li>
+<li>Update</li>
+<li>Commit</li>
+<li>Show log</li>
+<li>Resovle conflict</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Hướng dẫn</h2>
+
+<ul>
+<li>Check-out: sử dụng để tải toàn bộ tài liệu trên máy chủ về thư mục làm việc
+
+<ul>
+<li>Tạo thư mục làm việc => chuột phải vào thư mục => chọn check-out
+<br><img src="/images/svn tutorial 3.png"/><br></li>
+<li>Trong màn hình Check-out: chú ý các thông tin sau
+
+<ul>
+<li>URL of repository: đường dẫn chỉ đến máy chủ</li>
+<li>Checkout directory: thư mục làm việc</li>
+<li>Checkout Depth: toàn bộ hay từng phần</li>
+<li>Revision: tải phiên bản mới nhất hay là phiên bản cũ</li>
+<li>=> Trong ví dụ này chọn phiên bản mới nhất và tải toàn bộ
+<br><img src="/images/svn tutorial 4.png"/><br></li>
+</ul>
+</li>
+<li>Kết quả sẽ tải toàn bộ về thư mục làm việc
+<br><img src="/images/svn tutorial 5.png"/><br></li>
+</ul>
+</li>
+<li>Update: đọc các thay đổi của những thành viên khác trong nhóm trên máy chủ và lưu xuống thư mục làm việc
+
+<ul>
+<li>Mở thư mục => click chuột phải => chọn update
+<br><img src="/images/svn tutorial 6.png"/><br></li>
+<li>Kết quả: sẽ hiển thị các thay đổi, tài khoản người thay đổi và ghi chú cho mỗi thay đổi
+<br><img src="/images/svn tutorial 7.png"/><br></li>
+</ul>
+</li>
+<li>Commit: cập nhật các thay đổi trong thư mục làm việc lên máy chủ
+
+<ul>
+<li>Lưu ý: phải thực hiện hành động &ldquo;update&rdquo; trước</li>
+<li>Khi thay đổi, thư mục làm việc có ký hiệu khác màu xanh lá => có thay đổi => khi làm xong 1 việc nên commit
+<br><img src="/images/svn tutorial 8.png"/><br>
+
+<ul>
+<li>Một số ký hiệu
+<br><img src="/images/svn tutorial 8 1.png"/><br></li>
+</ul>
+</li>
+<li>Thực hiện: chuột phải vào &ldquo;thư mục muốn commit&rdquo; => chọn commit &hellip;
+<br><img src="/images/svn tutorial 10.png"/><br></li>
+<li>Trong cửa sổ commit:
+
+<ul>
+<li>Xem xét các tập tin có thay đổi hoặc tập tin mới hoặc tập tin bị xóa</li>
+<li>Viết các ghi chú để dễ dàng tìm kiếm sau này
+<br><img src="/images/svn tutorial 11.png"/><br></li>
+</ul>
+</li>
+<li>Chọn Ok và được kết quả
+<br><img src="/images/svn tutorial 12.png"/><br></li>
+</ul>
+</li>
+<li>Show log: xem các thay đổi xảy trên 1 tập tin hoặc thư mục nào đó
+
+<ul>
+<li>Chuột phải vào thư mục/tập tin mới theo dõi
+<br><img src="/images/svn tutorial 13.png"/><br></li>
+<li>Trong màn hình Log messages
+
+<ul>
+<li>Danh sách các thay đổi</li>
+<li>Chọn 1 thay đổi sẽ xem được:
+
+<ul>
+<li>Các thư mục/tập tin thay đổi trong phiên bản đó</li>
+<li>Ghi chú</li>
+</ul>
+</li>
+<li>Muốn xem tập tin đã thay đổi gì có thể double-click vào tập tin đó
+<br><img src="/images/svn tutorial 14.png"/><br></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Resovle conflict: xảy ra khi 2 người dùng cùng thay đổi trên 1 tập tin
+
+<ul>
+<li>Xảy ra khi người dùng thực hiện update trước khi commit
+<br><img src="/images/svn tutorial 15.png"/><br></li>
+<li>Click chuột phải vào tập tin bị conflict và chọn chức năng edit conflict
+<br><img src="/images/svn tutorial 16.png"/><br></li>
+<li>Màn hình chỉnh sửa conflict hiện ra như sau
+<br><img src="/images/svn tutorial 17.png"/><br></li>
+<li>Click chuột phải vào dòng &ldquo;??????????????????????&rdquo; để chọn nội dung muốn dùng
+<br><img src="/images/svn tutorial 18.png"/><br></li>
+<li>Sau khi quyết định xong thì chọn đã giải quyết conflict
+<br><img src="/images/svn tutorial 19.png"/><br></li>
+<li>Kết quả như sau
+<br><img src="/images/svn tutorial 20.png"/><br></li>
+<li>Thực hiện commit như bình thường
+<br><img src="/images/svn tutorial 21.png"/><br></li>
+<li>Nhấn ok và kết thúc</li>
+</ul>
+</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/04/21/setup-junit-windows/">Hướng Dẫn Sử Dụng Junit Trong Eclipse</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-21T14:16:02+07:00" pubdate data-updated="true">Apr 21<span>st</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><!-- ================================================================= -->
+
+
+<h2>Giới thiệu Unit test</h2>
+
+<ul>
+<li>Unit testing là phương pháp kiểm thử được thực hiện bằng cách sử dụng các đoạn mã có cấu trúc giống như các đối tượng được xây dựng để kiểm tra các thành phần nhỏ trong hệ thống phần mềm như các lớp, hàm, thủ tục, phương thức, …</li>
+<li>Sau khi đã soạn ra các đoạn mã, quá trình unit testing có thể được thực hiện tự động, liên tục hoặc định kì được gọi để thăm dò và phát hiện các lỗi kĩ thuật trong suốt quá trình  phát triển.</li>
+<li>Các trạng thải trong quá trình unit testing
+
+<ul>
+<li>Pass</li>
+<li>Fail</li>
+<li>Ignore</li>
+</ul>
+</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Giới thiệu JUnit</h2>
+
+<ul>
+<li>Bộ xUnit là các công cụ hỗ trợ thực hiện unit testing với các ngôn ngữ khác nhau:
+
+<ul>
+<li>CppUnit dùng để test các đoạn mã viết bằng ngôn ngữ C++.</li>
+<li>NUnit dùng để test các đoạn mã viết bằng các ngôn ngữ trong .NET Framework.</li>
+<li>&hellip;</li>
+</ul>
+</li>
+<li>JUnit đã được tích hợp sẵn trong các IDE thông dụng (Netbean, Eclipse) hỗ trợ lập trình java. Nếu công cụ bạn sử dụng không hỗ trợ thì có thể download tại trang web <a href="http://www.junit.org.">http://www.junit.org.</a></li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Môi trường</h2>
+
+<ul>
+<li>Windows 8.1</li>
+<li><a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">JDK 7x</a></li>
+<li><a href="www.eclipse.org/downloads/">Eclipse (Phiên bản kepler)</a> và JUnit</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Hướng dẫn sử dụng</h2>
+
+<p>Trong phần này, tôi tạo ra 1 lớp đối tượng PhanSo (thuộc tính và một số hàm) và lớp đối tượng để kiểm thử (PhanSoTest)</p>
+
+<ul>
+<li>Tao Project
+
+<ol>
+<li> Menu File => New => Project&hellip;
+<img src="/images/setup junit windows 2.png"/></li>
+<li> Chọn Java Project trong hộp thoại New Project và nhấn Next
+<img src="/images/setup junit windows 3.png"/></li>
+<li> Trong hộp thoại New Java Project điền thông tin và chọn Next
+
+<ul>
+<li>Project name: tên của project</li>
+<li>Chọn jre: phiên bản của thư viện và máy ảo java
+<img src="/images/setup junit windows 4.png"/></li>
+</ul>
+</li>
+<li> Cấu hình thư viện (nếu không có thì để mặc định) và nhấn Finish
+<img src="/images/setup junit windows 5.png"/></li>
+<li> Kết quả</li>
+</ol>
+
+
+<p>  <img src="/images/setup junit windows 6.png"/></p></li>
+<li>Tạo lớp trong java (PhanSo)
+
+<ol>
+<li> Click chuột phải vào thư mục src => chọn New => chọn Class
+<img src="/images/setup junit windows 10.png"/></li>
+<li> Trong hộp thoại New Java Class điền các giá trị sau và chọn Finish
+
+<ul>
+<li>Package: demo => phân nhóm các lớp đối tượng</li>
+<li>Name: PhanSo</li>
+<li>SuperClass: lớp cha (nếu có)</li>
+<li>Interfaces: các interface cần thực thi (nếu có)
+<img src="/images/setup junit windows 11.png"/></li>
+</ul>
+</li>
+<li> Trong lớp PhanSo, định nghĩa các thuộc tính, hàm khởi tạo mặc định và hàm cộng
+<img src="/images/setup junit windows 12.png"/></li>
+</ol>
+</li>
+<li>Tạo lớp PhanSoTest trong test package
+
+<ol>
+<li> Chuột phải vào Project => chọn New => chọn Junit Test case
+<img src="/images/setup junit windows 16.png"/></li>
+<li> Trong hộp thoại New Junit Test case chú ý các thuộc tính sau và chọn Next
+
+<ul>
+<li>Package: tên package</li>
+<li>Name: tên lớp</li>
+<li>Class under Test: tên lớp được test
+<img src="/images/setup junit windows 17.png"/></li>
+</ul>
+</li>
+<li> Muốn test hàm/phương thức nào thì chọn và nhấn Finish
+<img src="/images/setup junit windows 18.png"/></li>
+<li> Kết quả</li>
+</ol>
+
+
+<p>  <img src="/images/setup junit windows 19.png"/></p></li>
+<li>Sử dụng các hàm AssertXXX để so sánh kết quả
+  <img src="/images/setup junit windows 20.png"/></li>
+<li>Chạy Junit bằng cách click chuột phải vào project => chọn Run as => chọn Junit
+  <img src="/images/setup junit windows 21.png"/></li>
+</ul>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/04/18/setup-wamp-and-config-dreamweaver/">Cài đặt Wamp và Cấu Hình Dreamweaver để Chạy Php</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-18T14:16:02+07:00" pubdate data-updated="true">Apr 18<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><!-- ================================================================= -->
+
+
+<h2>Giới thiệu</h2>
+
+<ul>
+<li>Cài đặt phần mềm để lập trình php => dành cho người mới bắt đầu</li>
+<li>Cấu hình dreamweaver để viết code và chạy thử php</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Môi trường</h2>
+
+<ul>
+<li>Windows 8.1</li>
+<li>Wamp</li>
+<li>Dreamweaver CS6 và CS3</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Cài đặt wamp</h2>
+
+<ul>
+<li>Truy cập <a href="http://www.wampserver.com/en/">trang web của wamp</a></li>
+<li>Vào mục download để tải phiên bản phù hợp (chú ý win 32bits hay 64bits) => tập tin &ldquo;Wampserver xxx.exe&rdquo;</li>
+<li>Chạy tập tin để cài đặt (nên để mặc định) => có thể chọn thư mục cài đặt (C:\wamp)</li>
+<li>Sau khi cài xong, chạy wampserver sẽ có biểu tưởng màu xanh trên taskbar của windows như hình bên dưới<br>
+<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 1.png"/> <br></li>
+<li>Nếu biểu tượng màu cam thì có thể do đụng độ port => Chỉnh lại như sau: <br></li>
+</ul>
+
+
+<ol>
+<li> Chuột trái vào biểu tượng => apache => httpd.conf <br> </li>
+<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 2.png"/> <br>
+<li> Tìm vào chỉnh port cho phù hợp: như trong hình là 8082 </li>
+<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 3.png"/>
+<li> Khởi động lại tất cả services </li>
+<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 4.png"/>
+</ol>
+
+
+<ul>
+<li>Kết quả
+<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 11.png"/></li>
+</ul>
+
+
+<br>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Thực thi tập tin *.php</h2>
+
+<ul>
+<li>Sao chép vào thư mục &ldquo;&lt;Thư mục cài đặt>\www&rdquo; => Ví dụ: thư mục &ldquo;abc&rdquo; chứa tập tin &ldquo;1.php&rdquo; trong &ldquo;www&rdquo;
+<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 5.png"/></li>
+<li>Chạy tập tin &ldquo;1.php&rdquo; bằng cách sử dụng đường link &ldquo;<a href="http://localhost:8082/abc/1.php">http://localhost:8082/abc/1.php</a>&rdquo;
+<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 6.png"/></li>
+</ul>
+
+
+<br>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Thực thi tập tin *.php sử dụng dreamweaver CS6</h2>
+
+<ol>
+<li> Tạo site </li>
+<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 7.png"/>
+<li>Thông tin của site </li>
+<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 8.png"/>
+<li>Thông tin server của site => lưu ý thông tin trong <b>&#8220;Server Folder&#8221;</b> và <b>&#8220;Web Url&#8221;</b> </li>
+<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 9.png"/>
+<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 10.png"/>
+<li>Sau đó có thể chạy bằng F12 </li>
+</ol>
+
+
+<br>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Thực thi tập tin *.php sử dụng dreamweaver CS3</h2>
+
+<ol>
+<li> Tạo site: tên site và đường dẫn thực thi </li>
+<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 12.png"/>
+<li> Chọn ngôn ngữ thực thi là php và mysql</li>
+<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 13.png"/>
+<li> Chọn thư mục chứa các tập tin php </li>
+<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 14.png"/>
+<li> Chọn thư mục bên trong server </li>
+<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 15.png"/>
+<li> Chọn lại đường dẫn khi thực thi </li>
+<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 16.png"/>
+<li> Chọn done và xong => nhớ kiểm thư mục sẽ thực thi trong wamp </li>
+<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 17.png"/>
+<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 18.png"/>
+</ol>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -334,23 +845,23 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2015/03/16/nokia-x/">Nokia X</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/03/06/c-plus-plus/">C++</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/02/04/test-management/">Test Management</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2015/01/15/diskpart/">Diskpart</a>
       </li>
     
       <li class="post">
         <a href="/blog/2015/01/15/connect-to-sql-server-using-oracl-sql-developer/">Connect to SQL Server Using Oracle SQL Developer</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2015/01/13/coding-standards/">Coding Standards</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2015/01/10/automation-tools/">Automation Tools</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2015/01/10/database/">Database</a>
       </li>
     
   </ul>

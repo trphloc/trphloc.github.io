@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Emacs | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/emacs/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2015-03-19T14:30:51+07:00</updated>
+  <updated>2015-03-31T14:41:44+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -1083,7 +1083,7 @@ buffer is not visiting a file.&ldquo;
 <p>```</p>
 
 <pre><code>;; thêm con trỏ tới từng dòng
-(global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
+(global-set-key (kbd "C-c C-l") 'mc/edit-lines)
 
 ;; thêm con trỏ dựa trên từ khóa (vùng đang được chọn)
 (global-set-key (kbd "C-&gt;") 'mc/mark-next-like-this)

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Php | Phuoc-Loc's blog]]></title>
   <link href="http://trphloc.github.io/blog/categories/php/atom.xml" rel="self"/>
   <link href="http://trphloc.github.io/"/>
-  <updated>2015-03-19T14:30:51+07:00</updated>
+  <updated>2015-03-31T14:41:44+07:00</updated>
   <id>http://trphloc.github.io/</id>
   <author>
     <name><![CDATA[Phuoc-Loc Truong]]></name>
@@ -274,9 +274,10 @@ g++ -o hello.exe program1.cpp
 
 <ul>
 <li>vi httpd.conf</li>
+<li>Bỏ dấu # trước dòng LoadModule php5_module libexec/apache2/libphp5.sLoado</li>
+<li>Bỏ dấu # trước module CGI để có thực thi được một số ngôn ngữ scripts khác</li>
 </ul>
 </li>
-<li>Bỏ dấu # trước dòng LoadModule php5_module libexec/apache2/libphp5.sLoado</li>
 <li>Lưu lại và khởi động lại</li>
 </ul>
 </li>
@@ -292,7 +293,24 @@ g++ -o hello.exe program1.cpp
 <!-- ================================================================= -->
 
 
-<h2>MySQLrestart</h2>
+<h2>MySQL sử dụng xampp</h2>
+
+<ul>
+<li>Tạo symbolic link của tập tin my.cnf</li>
+</ul>
+
+
+<p>```</p>
+
+<pre><code>sudo ln -Ffhinsv /Applications/XAMPP/etc/my.cnf /etc/my.cnf
+</code></pre>
+
+<p>```</p>
+
+<!-- ================================================================= -->
+
+
+<h2>MySQL</h2>
 
 <ul>
 <li>Cài đặt
@@ -382,9 +400,21 @@ g++ -o hello.exe program1.cpp
 <ul>
 <li>cd /tmp</li>
 <li>ln -s /var/mysql/mysql.sock mysql.sock</li>
+<li>Tham khảo: <a href="http://stackoverflow.com/questions/4219970/warning-mysql-connect-2002-no-such-file-or-directory-trying-to-connect-vi">http://stackoverflow.com/questions/4219970/warning-mysql-connect-2002-no-such-file-or-directory-trying-to-connect-vi</a></li>
 </ul>
 </li>
-<li>Tham khảo: <a href="http://stackoverflow.com/questions/4219970/warning-mysql-connect-2002-no-such-file-or-directory-trying-to-connect-vi">http://stackoverflow.com/questions/4219970/warning-mysql-connect-2002-no-such-file-or-directory-trying-to-connect-vi</a></li>
+</ul>
+</li>
+<li>Lỗi trên không cần sửa => có thể start mysql trong System References
+
+<ul>
+<li>Tham khảo:
+
+<ul>
+<li><a href="http://stackoverflow.com/questions/1676688/php-mysql-connection-not-working-2002-no-such-file-or-directory">http://stackoverflow.com/questions/1676688/php-mysql-connection-not-working-2002-no-such-file-or-directory</a></li>
+<li><a href="http://stackoverflow.com/questions/26514757/how-to-get-mysql-server-working-after-osx-yosemite-upgrade/26523977#26523977">http://stackoverflow.com/questions/26514757/how-to-get-mysql-server-working-after-osx-yosemite-upgrade/26523977#26523977</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -456,7 +486,7 @@ g++ -o hello.exe program1.cpp
 <li>sudo make install => Kết quả: <img src="http://trphloc.github.io/images/php-mcrypt2.png" ></li>
 </ul>
 </li>
-<li>Kích hoạt mcrypt.so
+<li>Kích hoạt mcrypt.so hay một số module khác của php
 
 <ul>
 <li>Mở tập tin /etc/php.ini (nếu chưa có thì copy từ /etc/php.ini.default</li>

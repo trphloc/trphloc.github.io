@@ -22,7 +22,7 @@
     </url>
     <url>
         <loc>http://trphloc.github.io/blog/2014/08/01/mac-os-notes/</loc>
-        <lastmod>2015-03-18T00:09:42+07:00</lastmod>
+        <lastmod>2015-03-31T14:03:55+07:00</lastmod>
     </url>
     <url>
         <loc>http://trphloc.github.io/blog/2014/08/05/eclipse-notes/</loc>
@@ -38,7 +38,7 @@
     </url>
     <url>
         <loc>http://trphloc.github.io/blog/2014/08/15/emacs-notes/</loc>
-        <lastmod>2015-01-06T10:18:26+07:00</lastmod>
+        <lastmod>2015-03-31T10:40:08+07:00</lastmod>
     </url>
     <url>
         <loc>http://trphloc.github.io/blog/2014/08/27/python-notes/</loc>
@@ -69,8 +69,8 @@
         <lastmod>2015-01-20T09:59:47+07:00</lastmod>
     </url>
     <url>
-        <loc>http://trphloc.github.io/blog/2015/01/10/automation-tools/</loc>
-        <lastmod>2015-01-10T16:20:32+07:00</lastmod>
+        <loc>http://trphloc.github.io/blog/2015/01/10/tools/</loc>
+        <lastmod>2015-03-27T13:14:48+07:00</lastmod>
     </url>
     <url>
         <loc>http://trphloc.github.io/blog/2015/01/13/coding-standards/</loc>
@@ -99,12 +99,20 @@
         <lastmod>2015-03-16T12:46:43+07:00</lastmod>
     </url>
     <url>
+        <loc>http://trphloc.github.io/blog/2015/03/31/perl/</loc>
+        <lastmod>2015-03-31T13:51:04+07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://trphloc.github.io/blog/2015/03/31/bugzilla/</loc>
+        <lastmod>2015-03-31T14:41:39+07:00</lastmod>
+    </url>
+    <url>
         <loc>http://trphloc.github.io/blog/archives/</loc>
-        <lastmod>2015-03-19T14:29:51+07:00</lastmod>
+        <lastmod>2015-03-31T14:41:39+07:00</lastmod>
     </url>
     <url>
         <loc>http://trphloc.github.io/</loc>
-        <lastmod>2015-03-19T14:29:51+07:00</lastmod>
+        <lastmod>2015-03-31T14:41:39+07:00</lastmod>
     </url>
     <url>
         <loc>http://trphloc.github.io/keyword/</loc>
@@ -112,11 +120,11 @@
     </url>
     <url>
         <loc>http://trphloc.github.io/lat-vat/</loc>
-        <lastmod>2015-02-04T02:17:10+07:00</lastmod>
+        <lastmod>2015-03-24T11:46:44+07:00</lastmod>
     </url>
     <url>
         <loc>http://trphloc.github.io/random/</loc>
-        <lastmod>2015-01-26T13:09:18+07:00</lastmod>
+        <lastmod>2015-03-19T16:36:51+07:00</lastmod>
     </url>
     <url>
         <loc>http://trphloc.github.io/robots.txt</loc>

@@ -9,7 +9,9 @@
   <meta name="author" content="Phuoc-Loc Truong">
 
   
-  <meta name="description" content="Cài đặt play store không cần root Tài liệu tham khảo: http://www.howtogeek.com/167723/how-to-disable-driver-signature-verification-on-64-bit-windows- &hellip;">
+  <meta name="description" content="Cài đặt bugzilla trên mac os B1: Cài đặt perl Sử dụng ActivePerl
+Hoặc sử dụng Perlbrew
+=> Sau khi cài đặt phải tạo biến (symbolic link) của perl tới &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -71,6 +73,352 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/03/31/bugzilla/">Bugzilla</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-03-31T14:04:52+07:00" pubdate data-updated="true">Mar 31<span>st</span>, 2015</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2>Cài đặt bugzilla trên mac os</h2>
+
+<!-- ================================================================= -->
+
+
+<h2>B1: Cài đặt perl</h2>
+
+<ul>
+<li>Sử dụng ActivePerl</li>
+<li>Hoặc sử dụng Perlbrew
+=> Sau khi cài đặt phải tạo biến (symbolic link) của perl tới thư mục mặc định</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo ln -s /usr/local/ActivePerl-5.8/bin/perl /usr/bin/perl</span></code></pre></td></tr></table></div></figure>
+
+
+<p>hoặc</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo ln -s /Users/trphloc/perl5/perlbrew/perls/perl-5.20.1/bin/perl /usr/bin/perl</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<!-- ================================================================= -->
+
+
+<h2>B2: Cài đặt make</h2>
+
+<ul>
+<li>Thực hiện các lệnh sau (các lệnh sau, phải thực hiện trong cpan</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cpan
+</span><span class='line'>o conf make '/usr/bin/make'
+</span><span class='line'>o conf commit
+</span><span class='line'>exit</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Tham khảo: <a href="http://askubuntu.com/questions/161060/how-do-i-install-make">http://askubuntu.com/questions/161060/how-do-i-install-make</a></li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>B3: Một số gói cần cài đặt (tùy chọn)</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>brew install libgd</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cpan install patchutils
+</span><span class='line'>cpan upgrade DBI</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<!-- ================================================================= -->
+
+
+<h2>B4: Cài đặt Driver cho cơ sở dữ liệu</h2>
+
+<ul>
+<li>Postgres</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo perl -MCPAN -e "install DBD::Pg"</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>mysql</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo -H cpan DBD::mysql</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<!-- ================================================================= -->
+
+
+<h2>B5: Cài đặt bugzilla</h2>
+
+<ul>
+<li>Lấy mã nguồn theo đường dẫn: &ldquo;sudo git clone &mdash;branch bugzilla-4.4-stable <a href="https://git.mozilla.org/bugzilla/bugzilla">https://git.mozilla.org/bugzilla/bugzilla</a>&rdquo;</li>
+<li>Di chuyển vào thư mục bugzilla</li>
+<li>Thực thi lệnh</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo perl ./checksetup.pl</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Nếu có lỗi (báo thiếu module) thì cài thêm module theo hướng dẫn hoặc có thể thực hiện lệnh sau</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo perl install-module.pl --all</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Nếu ko có lỗi (hoặc đã cài bổ sung đủ module) thì thực thi lại lệnh checksetup, lệnh sẽ phát sinh thêm <strong>localconfig</strong> trong cùng thư mục</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo perl ./checksetup.pl</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Vào tập tin localconfig sửa các thông tin của database</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$db_host = 'localhost';
+</span><span class='line'>   
+</span><span class='line'>   # The name of the database. For Oracle, this is the database's SID. For
+</span><span class='line'>   # SQLite, this is a name (or path) for the DB file.
+</span><span class='line'>   $db_name = 'bugzilla';
+</span><span class='line'>   
+</span><span class='line'>   # Who we connect to the database as.
+</span><span class='line'>   $db_user = 'postgres';
+</span><span class='line'>   
+</span><span class='line'>   # Enter your database password here. It's normally advisable to specify
+</span><span class='line'>   # a password for your bugzilla database user.
+</span><span class='line'>   # If you use apostrophe (') or a backslash (\) in your password, you'll
+</span><span class='line'>   # need to escape it by preceding it with a '\' character. (\') or (\)
+</span><span class='line'>   # (It is far simpler to just not use those characters.)
+</span><span class='line'>   $db_pass = '';
+</span><span class='line'>   
+</span><span class='line'>   # Sometimes the database server is running on a non-standard port. If that's
+</span><span class='line'>   # the case for your database server, set this to the port number that your
+</span><span class='line'>   # database server is running on. Setting this to 0 means "use the default
+</span><span class='line'>   # port for my database server."
+</span><span class='line'>   $db_port = 5432;</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Thực thi lại lệnh checksetup</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo perl ./checksetup.pl</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Thành công thì có thể truy cập vào theo đường dẫn</li>
+</ul>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/03/31/perl/">Perl</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-03-31T11:39:38+07:00" pubdate data-updated="true">Mar 31<span>st</span>, 2015</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1>Perl trên mac os</h1>
+
+<!-- ================================================================= -->
+
+
+<h2>ActivePerl</h2>
+
+<h3>Cài đặt</h3>
+
+<ul>
+<li>Tải tại đây (<a href="http://www.activestate.com/activeperl/downloads">http://www.activestate.com/activeperl/downloads</a>) và cài đặt theo chỉ dẫn</li>
+<li>Thêm đường dẫn vào biến PATH (sử dụng file .profile)</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>export PATH=/usr/local/ActivePerl-5.8/bin:$PATH
+</span><span class='line'>export PATH=/usr/local/ActivePerl-5.8/site/bin:$PATH</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Tạo Symbolic link tới /usr/bin/perl và ppm</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ln -s /usr/local/ActivePerl-5.8/bin/perl /usr/bin/perl
+</span><span class='line'>ln -s /usr/local/ActivePerl-5.8/bin/ppm /usr/bin/ppm</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Xóa</h3>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo /usr/local/ActivePerl-5.8/bin/ap-uninstall
+</span><span class='line'>rm /Users/&lt;username&gt;/bin/perl</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Tham khảo:
+
+<ul>
+<li><a href="http://docs.activestate.com/activeperl/5.8/install.html#installing%20activeperl%20on%20mac%20os%20x%20(x86,%20powerpc">docs.activestate.com</a>)</li>
+</ul>
+</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Perlbrew</h2>
+
+<ul>
+<li>Cài đặt nhiều phiên bản perl trên máy, chọn sử dụng version phù hợp cho mỗi tác vụ</li>
+<li>Cài đặt perlbrew</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>\curl -L http://install.perlbrew.pl | bash</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Cài đặt và sử dụng 1 phiên bản perl cụ thể</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>perlbrew install perl-5.16.0
+</span><span class='line'>perlbrew switch perl-5.16.0</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Tham khảo:
+
+<ul>
+<li><a href="http://perlbrew.pl/">http://perlbrew.pl/</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -436,7 +784,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2015/01/10/automation-tools/">Automation Tools</a></h1>
+      <h1 class="entry-title"><a href="/blog/2015/01/10/tools/">Tools</a></h1>
     
     
       <p class="meta">
@@ -484,11 +832,65 @@
 
 <ul>
 <li>Sử dụng cho Mac</li>
+<li>Download: <a href="https://github.com/sdegutis/mjolnir/releases/latest">https://github.com/sdegutis/mjolnir/releases/latest</a></li>
+<li>Cài đặt một số modules</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>brew install lua
+</span><span class='line'>brew install luarocks
+</span><span class='line'>mkdir -p ~/.luarocks
+</span><span class='line'>echo 'rocks_servers = { "http://rocks.moonscript.org" }' &gt; ~/.luarocks/config.lua</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>luarocks install mjolnir.hotkey
+</span><span class='line'>luarocks install mjolnir.application</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Cấu hình: tạo tập tin trong <strong>~/.mjolnir/init.lua</strong> => tham khảo thêm <a href="http://thume.ca/howto/2014/12/02/using-mjolnir-an-extensible-osx-window-manager/">http://thume.ca/howto/2014/12/02/using-mjolnir-an-extensible-osx-window-manager/</a></li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>local application = require "mjolnir.application"
+</span><span class='line'>local hotkey = require "mjolnir.hotkey"
+</span><span class='line'>local window = require "mjolnir.window"
+</span><span class='line'>local fnutils = require "mjolnir.fnutils"</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Xóa</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>luarocks purge --tree=/usr/local
+</span><span class='line'>brew uninstall lua luarocks
+</span><span class='line'>rm ~/.luarocks/config.lua</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Tương tự: <a href="http://www.hammerspoon.org/go/">http://www.hammerspoon.org/go/</a></li>
 <li>Tham khảo:
 
 <ul>
 <li><a href="http://mjolnir.io/">http://mjolnir.io/</a></li>
 <li><a href="http://thume.ca/howto/2014/12/02/using-mjolnir-an-extensible-osx-window-manager/">http://thume.ca/howto/2014/12/02/using-mjolnir-an-extensible-osx-window-manager/</a></li>
+<li><a href="https://github.com/jhgg/Hydra-Config/tree/master/modules">https://github.com/jhgg/Hydra-Config/tree/master/modules</a></li>
 </ul>
 </li>
 </ul>
@@ -617,767 +1019,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/10/13/gcc-the-gnu-compiler-collection/">GCC - the GNU Compiler Collection</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-10-13T00:41:00+07:00" pubdate data-updated="true">Oct 13<span>th</span>, 2014</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>TODO &ndash; TPL</p>
-
-<!-- ================================================================= -->
-
-
-<h2>Cài đặt</h2>
-
-<ul>
-<li>Trên Mac: cài đặt xcode command line tools
-
-<ul>
-<li>Mở terminal</li>
-<li>Gọi lệnh xcode-select &mdash;install</li>
-<li>Kiểm tra cài đặt
-
-<ul>
-<li>Gọi lệnh: <strong>xcode-select -p</strong> thì kết quả là: <em>/Library/Developer/CommandLineTools</em></li>
-<li>Gọi lệnh: <strong>gcc &mdash;version</strong> thì kết quả <em>&hellip; Apple LLVM version 6.0 (clang-600.0.54) (based on LLVM 3.5svn) &hellip;</em></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Trên windows
-
-<ul>
-<li>Cách 1
-
-<ul>
-<li>Download <strong>MinGW</strong> tại đường link <a href="http://sourceforge.net/projects/mingw/files/">http://sourceforge.net/projects/mingw/files/</a></li>
-<li>Cài đặt và được kết quả</li>
-<li><img src="images/gcc_1.png" /></li>
-<li>Chuột phải vào gcc cho C++ => menu File => chọn Apply changes</li>
-</ul>
-</li>
-<li>Cách 2
-
-<ul>
-<li>Truy cập <a href="http://mingw-w64.sourceforge.net/">http://mingw-w64.sourceforge.net/</a></li>
-<li>Tải gcc phiên bản mới nhất</li>
-<li>Giải nén vào thư mục <strong>C:\abc\gcc-4.9-win64</strong></li>
-<li>Thêm <strong>C:\abc\gcc-4.9-win64\bin</strong> vào biến PATH</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-
-<h2>Sử dụng</h2>
-
-<ul>
-<li>Viết code cho chương trình hello như sau</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>//Tap tin program1.cpp
-</span><span class='line'>#include &lt;iostream&gt;
-</span><span class='line'>using namespace std;
-</span><span class='line'>
-</span><span class='line'>int main()
-</span><span class='line'>{
-</span><span class='line'>  cout &lt;&lt; "Hello world ..." &lt;&lt; endl;
-</span><span class='line'>}
-</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>Biên dịch bằng lệnh sau</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>g++ -o hello.exe program1.cpp</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>Chạy chương trình hello.exe ta được kết quả <strong>Hello world &hellip;</strong></li>
-</ul>
-
-
-<h2>Tài liệu tham khảo</h2>
-
-<ul>
-<li>Giới thiệu: <a href="https://gcc.gnu.org/">https://gcc.gnu.org/</a></li>
-<li>Cài đặt windows: <a href="http://stackoverflow.com/questions/6394755/how-to-install-gcc-on-windows-7-machine">http://stackoverflow.com/questions/6394755/how-to-install-gcc-on-windows-7-machine</a></li>
-<li>Cài đặt mac: <a href="https://solarianprogrammer.com/2013/06/11/compiling-gcc-mac-os-x/">https://solarianprogrammer.com/2013/06/11/compiling-gcc-mac-os-x/</a></li>
-<li>Cài đặt mac: <a href="http://railsapps.github.io/xcode-command-line-tools.html">http://railsapps.github.io/xcode-command-line-tools.html</a></li>
-<li>Sử dụng: <a href="http://pages.cs.wisc.edu/~beechung/ref/gcc-intro.html">http://pages.cs.wisc.edu/~beechung/ref/gcc-intro.html</a></li>
-</ul>
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/10/05/slate/">Slate</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-10-05T14:37:16+07:00" pubdate data-updated="true">Oct 5<span>th</span>, 2014</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><!-- ================================================================= -->
-
-
-<h2>Giới thiệu</h2>
-
-<ul>
-<li>Ứng dụng quản lý (tạo, di chuyển, chuyển đổi, &hellip;) các cửa sổ trên MAC OS</li>
-<li>Một số chức năng
-
-<ul>
-<li>Move/Resize/Shift windows</li>
-<li>Switch Windows</li>
-<li>Manage multiple monitors</li>
-<li>Save window layouts</li>
-</ul>
-</li>
-<li>Chương trình tương tự: SizeUp, Mizage &ndash; Divvy, Hyperspaces, VirtueDesktops, Cinch, &hellip;</li>
-<li>Tham khảo
-
-<ul>
-<li><a href="https://github.com/jigish/slate">https://github.com/jigish/slate</a></li>
-<li><a href="http://thume.ca/howto/2012/11/19/using-slate/">http://thume.ca/howto/2012/11/19/using-slate/</a></li>
-<li><a href="http://mauriciogardini.com/post/43348489262/slate-a-mac-os-x-window-manager-for-power-users">http://mauriciogardini.com/post/43348489262/slate-a-mac-os-x-window-manager-for-power-users</a></li>
-<li><a href="http://cereal.rutgers.edu/~vverna/keyboard-focused-workflow-macs.html">http://cereal.rutgers.edu/~vverna/keyboard-focused-workflow-macs.html</a></li>
-</ul>
-</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Các thao tác hỗ trợ</h2>
-
-<ul>
-<li><strong>Chỉ quản lý màn hình (screen), chưa hỗ trợ space</strong></li>
-<li>move/resize: di chuyển/thay đổi kích thước cửa sổ</li>
-<li>push: di chuyển cửa sổ tới cạnh của màn hình</li>
-<li>nudge: dịch chuyển cửa sổ theo hướng</li>
-<li>throw: di chuyển cửa sổ tới màn hình khác</li>
-<li>corner: di chuyển tới góc màn hình</li>
-<li>shell: thực thi lệnh</li>
-<li>hide: ẩn ứng dụng</li>
-<li>show: hiển thị ứng dụng</li>
-<li>focus: chọn cửa sổ hiện hành</li>
-<li>hint: hiển thị các cửa sổ đang chạy</li>
-<li>undo: quay lại</li>
-<li>source: đọc tập tin cấu hình</li>
-<li>snapshot/delete-snapshot/active-snapshot: chụp ảnh màn hình</li>
-<li>toggle/chain/sequence: không biết?</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Cấu hình</h2>
-
-<ul>
-<li>Tập tin cấu hình tên <strong>.slate</strong> trong thư mục home. Nếu không có tập tin, ứng dụng sẽ đọc cấu hình mặc định (giống nội dung tập tin <em>default.slate</em> trong <a href="https://github.com/jigish/slate/blob/master/Slate/default.slate">https://github.com/jigish/slate/blob/master/Slate/default.slate</a></li>
-<li>Tập tin cấu hình gồm các phần sau
-
-<ul>
-<li>config: các cấu hình chung</li>
-<li>allias: tạo các biến allias</li>
-<li>layout: cấu hình layouts</li>
-<li>default: cấu hình màn hình để hỗ trợ layouts</li>
-<li>bind: tạo phím tắt cho các hành động</li>
-<li>source: đọc cấu hình từ các tập tin khác</li>
-</ul>
-</li>
-<li>Tập tin cấu hình mẫu: <a href="https://github.com/jigish/dotfiles/blob/master/slate">https://github.com/jigish/dotfiles/blob/master/slate</a></li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
-<span class='line-number'>33</span>
-<span class='line-number'>34</span>
-<span class='line-number'>35</span>
-<span class='line-number'>36</span>
-<span class='line-number'>37</span>
-<span class='line-number'>38</span>
-<span class='line-number'>39</span>
-<span class='line-number'>40</span>
-<span class='line-number'>41</span>
-<span class='line-number'>42</span>
-<span class='line-number'>43</span>
-<span class='line-number'>44</span>
-<span class='line-number'>45</span>
-<span class='line-number'>46</span>
-<span class='line-number'>47</span>
-<span class='line-number'>48</span>
-<span class='line-number'>49</span>
-<span class='line-number'>50</span>
-<span class='line-number'>51</span>
-<span class='line-number'>52</span>
-<span class='line-number'>53</span>
-<span class='line-number'>54</span>
-<span class='line-number'>55</span>
-<span class='line-number'>56</span>
-<span class='line-number'>57</span>
-<span class='line-number'>58</span>
-<span class='line-number'>59</span>
-<span class='line-number'>60</span>
-<span class='line-number'>61</span>
-<span class='line-number'>62</span>
-<span class='line-number'>63</span>
-<span class='line-number'>64</span>
-<span class='line-number'>65</span>
-<span class='line-number'>66</span>
-<span class='line-number'>67</span>
-<span class='line-number'>68</span>
-<span class='line-number'>69</span>
-<span class='line-number'>70</span>
-<span class='line-number'>71</span>
-<span class='line-number'>72</span>
-<span class='line-number'>73</span>
-<span class='line-number'>74</span>
-<span class='line-number'>75</span>
-<span class='line-number'>76</span>
-<span class='line-number'>77</span>
-<span class='line-number'>78</span>
-<span class='line-number'>79</span>
-<span class='line-number'>80</span>
-<span class='line-number'>81</span>
-<span class='line-number'>82</span>
-<span class='line-number'>83</span>
-<span class='line-number'>84</span>
-<span class='line-number'>85</span>
-<span class='line-number'>86</span>
-<span class='line-number'>87</span>
-<span class='line-number'>88</span>
-<span class='line-number'>89</span>
-<span class='line-number'>90</span>
-<span class='line-number'>91</span>
-<span class='line-number'>92</span>
-<span class='line-number'>93</span>
-<span class='line-number'>94</span>
-<span class='line-number'>95</span>
-<span class='line-number'>96</span>
-<span class='line-number'>97</span>
-<span class='line-number'>98</span>
-<span class='line-number'>99</span>
-<span class='line-number'>100</span>
-<span class='line-number'>101</span>
-<span class='line-number'>102</span>
-<span class='line-number'>103</span>
-<span class='line-number'>104</span>
-<span class='line-number'>105</span>
-<span class='line-number'>106</span>
-<span class='line-number'>107</span>
-<span class='line-number'>108</span>
-<span class='line-number'>109</span>
-<span class='line-number'>110</span>
-<span class='line-number'>111</span>
-<span class='line-number'>112</span>
-<span class='line-number'>113</span>
-<span class='line-number'>114</span>
-<span class='line-number'>115</span>
-<span class='line-number'>116</span>
-<span class='line-number'>117</span>
-<span class='line-number'>118</span>
-<span class='line-number'>119</span>
-<span class='line-number'>120</span>
-<span class='line-number'>121</span>
-<span class='line-number'>122</span>
-<span class='line-number'>123</span>
-<span class='line-number'>124</span>
-<span class='line-number'>125</span>
-<span class='line-number'>126</span>
-<span class='line-number'>127</span>
-<span class='line-number'>128</span>
-<span class='line-number'>129</span>
-<span class='line-number'>130</span>
-<span class='line-number'>131</span>
-<span class='line-number'>132</span>
-<span class='line-number'>133</span>
-<span class='line-number'>134</span>
-<span class='line-number'>135</span>
-<span class='line-number'>136</span>
-<span class='line-number'>137</span>
-<span class='line-number'>138</span>
-<span class='line-number'>139</span>
-<span class='line-number'>140</span>
-<span class='line-number'>141</span>
-<span class='line-number'>142</span>
-<span class='line-number'>143</span>
-<span class='line-number'>144</span>
-<span class='line-number'>145</span>
-<span class='line-number'>146</span>
-<span class='line-number'>147</span>
-<span class='line-number'>148</span>
-<span class='line-number'>149</span>
-<span class='line-number'>150</span>
-<span class='line-number'>151</span>
-<span class='line-number'>152</span>
-<span class='line-number'>153</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'># Configs
-</span><span class='line'>config defaultToCurrentScreen true
-</span><span class='line'>config nudgePercentOf screenSize
-</span><span class='line'>config resizePercentOf screenSize
-</span><span class='line'>config secondsBetweenRepeat 0.1
-</span><span class='line'>config checkDefaultsOnLoad true
-</span><span class='line'>config focusCheckWidthMax 3000
-</span><span class='line'>
-</span><span class='line'># Monitor Aliases
-</span><span class='line'>alias mon-laptop      1680x1050
-</span><span class='line'>alias mon-thunderbolt 2560x1440
-</span><span class='line'>alias mon-hp22inch    1920x1080
-</span><span class='line'>
-</span><span class='line'># Position Aliases
-</span><span class='line'>alias 1-chat  move screenOriginX;screenOriginY                               screenSizeX/9;screenSizeY       ${mon-laptop}
-</span><span class='line'>alias 1-main  move screenOriginX+screenSizeX/9;screenOriginY                 8*screenSizeX/9;screenSizeY     ${mon-laptop}
-</span><span class='line'>alias 2-bot   move screenOriginX;screenOriginY+screenSizeY/2                 screenSizeX;screenSizeY/2       ${mon-thunderbolt}
-</span><span class='line'>alias 2-bot-l move screenOriginX;screenOriginY+screenSizeY/2                 screenSizeX/3;screenSizeY/2     ${mon-thunderbolt}
-</span><span class='line'>alias 2-bot-m move screenOriginX+screenSizeX/3;screenOriginY+screenSizeY/2   screenSizeX/3;screenSizeY/2     ${mon-thunderbolt}
-</span><span class='line'>alias 2-bot-r move screenOriginX+2*screenSizeX/3;screenOriginY+screenSizeY/2 screenSizeX/3;screenSizeY/2     ${mon-thunderbolt}
-</span><span class='line'>alias 2-mid   move screenOriginX+screenSizeX/8;screenOriginY+screenSizeY/8   3*screenSizeX/4;3*screenSizeY/4 ${mon-thunderbolt}
-</span><span class='line'>alias 2-top   move screenOriginX;screenOriginY                               screenSizeX;screenSizeY/2       ${mon-thunderbolt}
-</span><span class='line'>alias 2-top-l move screenOriginX;screenOriginY                               screenSizeX/2;screenSizeY/2     ${mon-thunderbolt}
-</span><span class='line'>alias 2-top-m move screenOriginX+screenSizeX/6;screenOriginY                 2*screenSizeX/3;screenSizeY/2   ${mon-thunderbolt}
-</span><span class='line'>alias 2-top-r move screenOriginX+screenSizeX/2;screenOriginY                 screenSizeX/2;screenSizeY/2     ${mon-thunderbolt}
-</span><span class='line'>alias 2-left  move screenOriginX;screenOriginY                               screenSizeX/2;screenSizeY       ${mon-thunderbolt}
-</span><span class='line'>alias 2-right move screenOriginX+screenSizeX/2;screenOriginY                 screenSizeX/2;screenSizeY       ${mon-thunderbolt}
-</span><span class='line'>alias 3-l-bot move screenOriginX;screenOriginY+screenSizeY/2                 screenSizeX/2;screenSizeY/2     ${mon-hp22inch}
-</span><span class='line'>alias 3-l-top move screenOriginX;screenOriginY                               screenSizeX/2;screenSizeY/2     ${mon-hp22inch}
-</span><span class='line'>alias 3-right move screenOriginX+screenSizeX/2;screenOriginY                 screenSizeX/2;screenSizeY       ${mon-hp22inch}
-</span><span class='line'>
-</span><span class='line'># 3 Monitor layout
-</span><span class='line'>layout 3monitors 'iTerm':SORT_TITLE                       ${2-bot-l} | ${2-bot-m} | ${2-bot-r}
-</span><span class='line'>layout 3monitors 'Google Chrome':REPEAT_LAST,TITLE_ORDER_REGEX=^Developer\sTools\s-\s.+$  ${3-right} | ${1-main}
-</span><span class='line'>layout 3monitors 'MacVim'                                 ${2-top-r} | ${2-top-l} | ${2-top-m}
-</span><span class='line'>layout 3monitors 'Flex Builder'                           ${2-top-l}
-</span><span class='line'>layout 3monitors 'GitX':REPEAT                            ${3-right}
-</span><span class='line'>layout 3monitors 'Ooyala Player Debug Console'            ${3-l-bot}
-</span><span class='line'>layout 3monitors 'Adium':IGNORE_FAIL,TITLE_ORDER=Contacts ${1-chat} | ${3-l-bot}
-</span><span class='line'>layout 3monitors 'Firefox':REPEAT                         ${2-mid}
-</span><span class='line'>layout 3monitors 'Xcode':REPEAT                           ${2-top}
-</span><span class='line'>layout 3monitors 'Eclipse':REPEAT                         ${2-bot}
-</span><span class='line'>layout 3monitors 'Spotify':REPEAT                         ${3-l-top}
-</span><span class='line'>
-</span><span class='line'># 2 Monitor layout
-</span><span class='line'>layout 2monitors 'iTerm':SORT_TITLE                       ${2-bot-l} | ${2-bot-m} | ${2-bot-r}
-</span><span class='line'>layout 2monitors 'Google Chrome':REPEAT                   ${1-main}
-</span><span class='line'>layout 2monitors 'MacVim'                                 ${2-top-r} | ${2-top-l} | ${2-top-m}
-</span><span class='line'>layout 2monitors 'Flex Builder'                           ${2-top-l}
-</span><span class='line'>layout 2monitors 'GitX':REPEAT                            ${1-main}
-</span><span class='line'>layout 2monitors 'Ooyala Player Debug Console'            ${1-main}
-</span><span class='line'>layout 2monitors 'Adium':IGNORE_FAIL,TITLE_ORDER=Contacts ${1-chat} | ${1-main}
-</span><span class='line'>layout 2monitors 'Firefox':REPEAT                         ${2-mid}
-</span><span class='line'>layout 2monitors 'Xcode':REPEAT                           ${2-top}
-</span><span class='line'>layout 2monitors 'Eclipse':REPEAT                         ${2-bot}
-</span><span class='line'>layout 2monitors 'Spotify':REPEAT                         ${1-main}
-</span><span class='line'>
-</span><span class='line'># 1 Monitor layout
-</span><span class='line'>layout 1monitor 'iTerm':SORT_TITLE,REPEAT                ${1-main}
-</span><span class='line'>layout 1monitor 'Google Chrome':REPEAT                   ${1-main}
-</span><span class='line'>layout 1monitor 'MacVim':REPEAT                          ${1-main}
-</span><span class='line'>layout 1monitor 'Flex Builder':REPEAT                    ${1-main}
-</span><span class='line'>layout 1monitor 'GitX':REPEAT                            ${1-main}
-</span><span class='line'>layout 1monitor 'Ooyala Player Debug Console':REPEAT     ${1-main}
-</span><span class='line'>layout 1monitor 'Adium':IGNORE_FAIL,TITLE_ORDER=Contacts ${1-chat} | ${1-main}
-</span><span class='line'>layout 1monitor 'Firefox':REPEAT                         ${1-main}
-</span><span class='line'>layout 1monitor 'Xcode':REPEAT                           ${1-main}
-</span><span class='line'>layout 1monitor 'Eclipse':REPEAT                         ${1-main}
-</span><span class='line'>layout 1monitor 'Spotify':REPEAT                         ${1-main}
-</span><span class='line'>
-</span><span class='line'># Default Layouts
-</span><span class='line'>default 3monitors resolutions:${mon-laptop};${mon-thunderbolt};${mon-hp22inch}
-</span><span class='line'>default 2monitors resolutions:${mon-laptop};${mon-thunderbolt}
-</span><span class='line'>default 1monitor  resolutions:${mon-laptop}
-</span><span class='line'>
-</span><span class='line'># Basic location Bindings
-</span><span class='line'>bind pad0:ctrl ${1-chat}
-</span><span class='line'>bind [:ctrl    ${1-chat}
-</span><span class='line'>bind pad.:ctrl ${1-main}
-</span><span class='line'>bind ]:ctrl    ${1-main}
-</span><span class='line'>bind pad1:ctrl ${2-bot-l}
-</span><span class='line'>bind pad2:ctrl ${2-bot-m}
-</span><span class='line'>bind pad3:ctrl ${2-bot-r}
-</span><span class='line'>bind pad4:ctrl ${2-left}
-</span><span class='line'>bind pad5:ctrl ${2-mid}
-</span><span class='line'>bind pad6:ctrl ${2-right}
-</span><span class='line'>bind pad7:ctrl ${2-top-l}
-</span><span class='line'>bind pad8:ctrl ${2-top-m}
-</span><span class='line'>bind pad9:ctrl ${2-top-r}
-</span><span class='line'>bind pad=:ctrl ${2-top}
-</span><span class='line'>bind pad/:ctrl ${2-bot}
-</span><span class='line'>bind pad*:ctrl ${3-l-bot}
-</span><span class='line'>bind pad-:ctrl ${3-l-top}
-</span><span class='line'>bind pad+:ctrl ${3-right}
-</span><span class='line'>
-</span><span class='line'># Resize Bindings
-</span><span class='line'># NOTE: some of these may *not* work if you have not removed the expose/spaces/mission control bindings
-</span><span class='line'>bind right:ctrl resize +10% +0
-</span><span class='line'>bind left:ctrl  resize -10% +0
-</span><span class='line'>bind up:ctrl    resize +0   -10%
-</span><span class='line'>bind down:ctrl  resize +0   +10%
-</span><span class='line'>bind right:alt  resize -10% +0 bottom-right
-</span><span class='line'>bind left:alt   resize +10% +0 bottom-right
-</span><span class='line'>bind up:alt     resize +0   +10% bottom-right
-</span><span class='line'>bind down:alt   resize +0   -10% bottom-right
-</span><span class='line'>
-</span><span class='line'># Push Bindings
-</span><span class='line'># NOTE: some of these may *not* work if you have not removed the expose/spaces/mission control bindings
-</span><span class='line'>bind right:ctrl;shift push right bar-resize:screenSizeX/3
-</span><span class='line'>bind left:ctrl;shift  push left  bar-resize:screenSizeX/3
-</span><span class='line'>bind up:ctrl;shift    push up    bar-resize:screenSizeY/2
-</span><span class='line'>bind down:ctrl;shift  push down  bar-resize:screenSizeY/2
-</span><span class='line'>
-</span><span class='line'># Nudge Bindings
-</span><span class='line'># NOTE: some of these may *not* work if you have not removed the expose/spaces/mission control bindings
-</span><span class='line'>bind right:ctrl;alt nudge +10% +0
-</span><span class='line'>bind left:ctrl;alt  nudge -10% +0
-</span><span class='line'>bind up:ctrl;alt    nudge +0   -10%
-</span><span class='line'>bind down:ctrl;alt  nudge +0   +10%
-</span><span class='line'>
-</span><span class='line'># Throw Bindings
-</span><span class='line'># NOTE: some of these may *not* work if you have not removed the expose/spaces/mission control bindings
-</span><span class='line'>bind pad1:ctrl;alt      throw 2 resize
-</span><span class='line'>bind pad2:ctrl;alt      throw 1 resize
-</span><span class='line'>bind pad3:ctrl;alt      throw 0 resize
-</span><span class='line'>bind right:ctrl;alt;cmd throw right resize
-</span><span class='line'>bind left:ctrl;alt;cmd  throw left  resize
-</span><span class='line'>bind up:ctrl;alt;cmd    throw up    resize
-</span><span class='line'>bind down:ctrl;alt;cmd  throw down  resize
-</span><span class='line'>
-</span><span class='line'># Focus Bindings
-</span><span class='line'># NOTE: some of these may *not* work if you have not removed the expose/spaces/mission control bindings
-</span><span class='line'>bind right:cmd    focus right
-</span><span class='line'>bind left:cmd     focus left
-</span><span class='line'>bind up:cmd       focus up
-</span><span class='line'>bind down:cmd     focus down
-</span><span class='line'>bind up:cmd;alt   focus behind
-</span><span class='line'>bind down:cmd;alt focus behind
-</span><span class='line'>
-</span><span class='line'># Layout Bindings
-</span><span class='line'>bind padEnter:ctrl layout 3monitors
-</span><span class='line'>
-</span><span class='line'># Window Hints
-</span><span class='line'>bind esc:cmd hint
-</span><span class='line'>
-</span><span class='line'># Switch currently doesn't work well so I'm commenting it out until I fix it.
-</span><span class='line'>#bind tab:ctrl switch
-</span><span class='line'>
-</span><span class='line'># Grid
-</span><span class='line'>bind esc:ctrl grid
-</span><span class='line'>
-</span><span class='line'># Test Cases
-</span><span class='line'>source .slate.test if_exists</span></code></pre></td></tr></table></div></figure>
-
-
-
-
-<!-- ================================================================= -->
-
-
-<h2>Danh sách phím trong tập tin cấu hình</h2>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
-<span class='line-number'>33</span>
-<span class='line-number'>34</span>
-<span class='line-number'>35</span>
-<span class='line-number'>36</span>
-<span class='line-number'>37</span>
-<span class='line-number'>38</span>
-<span class='line-number'>39</span>
-<span class='line-number'>40</span>
-<span class='line-number'>41</span>
-<span class='line-number'>42</span>
-<span class='line-number'>43</span>
-<span class='line-number'>44</span>
-<span class='line-number'>45</span>
-<span class='line-number'>46</span>
-<span class='line-number'>47</span>
-<span class='line-number'>48</span>
-<span class='line-number'>49</span>
-<span class='line-number'>50</span>
-<span class='line-number'>51</span>
-<span class='line-number'>52</span>
-<span class='line-number'>53</span>
-<span class='line-number'>54</span>
-<span class='line-number'>55</span>
-<span class='line-number'>56</span>
-<span class='line-number'>57</span>
-<span class='line-number'>58</span>
-<span class='line-number'>59</span>
-<span class='line-number'>60</span>
-<span class='line-number'>61</span>
-<span class='line-number'>62</span>
-<span class='line-number'>63</span>
-<span class='line-number'>64</span>
-<span class='line-number'>65</span>
-<span class='line-number'>66</span>
-<span class='line-number'>67</span>
-<span class='line-number'>68</span>
-<span class='line-number'>69</span>
-<span class='line-number'>70</span>
-<span class='line-number'>71</span>
-<span class='line-number'>72</span>
-<span class='line-number'>73</span>
-<span class='line-number'>74</span>
-<span class='line-number'>75</span>
-<span class='line-number'>76</span>
-<span class='line-number'>77</span>
-<span class='line-number'>78</span>
-<span class='line-number'>79</span>
-<span class='line-number'>80</span>
-<span class='line-number'>81</span>
-<span class='line-number'>82</span>
-<span class='line-number'>83</span>
-<span class='line-number'>84</span>
-<span class='line-number'>85</span>
-<span class='line-number'>86</span>
-<span class='line-number'>87</span>
-<span class='line-number'>88</span>
-<span class='line-number'>89</span>
-<span class='line-number'>90</span>
-<span class='line-number'>91</span>
-<span class='line-number'>92</span>
-<span class='line-number'>93</span>
-<span class='line-number'>94</span>
-<span class='line-number'>95</span>
-<span class='line-number'>96</span>
-<span class='line-number'>97</span>
-<span class='line-number'>98</span>
-<span class='line-number'>99</span>
-<span class='line-number'>100</span>
-<span class='line-number'>101</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>'
-</span><span class='line'>,
-</span><span class='line'>-
-</span><span class='line'>.
-</span><span class='line'>/
-</span><span class='line'>0
-</span><span class='line'>1
-</span><span class='line'>2
-</span><span class='line'>3
-</span><span class='line'>4
-</span><span class='line'>5
-</span><span class='line'>6
-</span><span class='line'>7
-</span><span class='line'>8
-</span><span class='line'>9
-</span><span class='line'>;
-</span><span class='line'>=
-</span><span class='line'>`
-</span><span class='line'>a
-</span><span class='line'>b
-</span><span class='line'>backslash
-</span><span class='line'>c
-</span><span class='line'>caps
-</span><span class='line'>d
-</span><span class='line'>delete
-</span><span class='line'>down
-</span><span class='line'>e
-</span><span class='line'>end
-</span><span class='line'>esc
-</span><span class='line'>f
-</span><span class='line'>f1
-</span><span class='line'>f10
-</span><span class='line'>f11
-</span><span class='line'>f12
-</span><span class='line'>f13
-</span><span class='line'>f14
-</span><span class='line'>f15
-</span><span class='line'>f16
-</span><span class='line'>f17
-</span><span class='line'>f18
-</span><span class='line'>f19
-</span><span class='line'>f2
-</span><span class='line'>f20
-</span><span class='line'>f3
-</span><span class='line'>f4
-</span><span class='line'>f5
-</span><span class='line'>f6
-</span><span class='line'>f7
-</span><span class='line'>f8
-</span><span class='line'>f9
-</span><span class='line'>g
-</span><span class='line'>h
-</span><span class='line'>help
-</span><span class='line'>home
-</span><span class='line'>i
-</span><span class='line'>j
-</span><span class='line'>k
-</span><span class='line'>l
-</span><span class='line'>left
-</span><span class='line'>m
-</span><span class='line'>mute
-</span><span class='line'>n
-</span><span class='line'>o
-</span><span class='line'>p
-</span><span class='line'>pad*
-</span><span class='line'>pad+
-</span><span class='line'>pad-
-</span><span class='line'>pad.
-</span><span class='line'>pad/
-</span><span class='line'>pad0
-</span><span class='line'>pad1
-</span><span class='line'>pad2
-</span><span class='line'>pad3
-</span><span class='line'>pad4
-</span><span class='line'>pad5
-</span><span class='line'>pad6
-</span><span class='line'>pad7
-</span><span class='line'>pad8
-</span><span class='line'>pad9
-</span><span class='line'>pad=
-</span><span class='line'>padClear
-</span><span class='line'>padEnter
-</span><span class='line'>pageDown
-</span><span class='line'>pageUp
-</span><span class='line'>q
-</span><span class='line'>r
-</span><span class='line'>return
-</span><span class='line'>right
-</span><span class='line'>s
-</span><span class='line'>space
-</span><span class='line'>t
-</span><span class='line'>tab
-</span><span class='line'>u
-</span><span class='line'>up
-</span><span class='line'>v
-</span><span class='line'>w
-</span><span class='line'>x
-</span><span class='line'>y
-</span><span class='line'>z
-</span><span class='line'>[
-</span><span class='line'>]</span></code></pre></td></tr></table></div></figure>
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -1393,6 +1034,14 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2015/03/31/bugzilla/">Bugzilla</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/03/31/perl/">Perl</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2015/03/16/nokia-x/">Nokia X</a>
       </li>
     
@@ -1402,14 +1051,6 @@
     
       <li class="post">
         <a href="/blog/2015/02/04/test-management/">Test Management</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2015/01/15/diskpart/">Diskpart</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2015/01/15/connect-to-sql-server-using-oracl-sql-developer/">Connect to SQL Server Using Oracle SQL Developer</a>
       </li>
     
   </ul>

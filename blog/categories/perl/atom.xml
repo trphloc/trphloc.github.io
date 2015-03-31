@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Perl | Phuoc-Loc's blog]]></title>
+  <link href="http://trphloc.github.io/blog/categories/perl/atom.xml" rel="self"/>
+  <link href="http://trphloc.github.io/"/>
+  <updated>2015-03-31T14:41:44+07:00</updated>
+  <id>http://trphloc.github.io/</id>
+  <author>
+    <name><![CDATA[Phuoc-Loc Truong]]></name>
+    <email><![CDATA[trphloc@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Perl]]></title>
+    <link href="http://trphloc.github.io/blog/2015/03/31/perl/"/>
+    <updated>2015-03-31T11:39:38+07:00</updated>
+    <id>http://trphloc.github.io/blog/2015/03/31/perl</id>
+    <content type="html"><![CDATA[<h1>Perl trên mac os</h1>
+
+<!-- ================================================================= -->
+
+
+<h2>ActivePerl</h2>
+
+<h3>Cài đặt</h3>
+
+<ul>
+<li>Tải tại đây (<a href="http://www.activestate.com/activeperl/downloads">http://www.activestate.com/activeperl/downloads</a>) và cài đặt theo chỉ dẫn</li>
+<li>Thêm đường dẫn vào biến PATH (sử dụng file .profile)</li>
+</ul>
+
+
+<p>```</p>
+
+<pre><code>export PATH=/usr/local/ActivePerl-5.8/bin:$PATH
+export PATH=/usr/local/ActivePerl-5.8/site/bin:$PATH
+</code></pre>
+
+<p>```</p>
+
+<ul>
+<li>Tạo Symbolic link tới /usr/bin/perl và ppm</li>
+</ul>
+
+
+<p>```</p>
+
+<pre><code>ln -s /usr/local/ActivePerl-5.8/bin/perl /usr/bin/perl
+ln -s /usr/local/ActivePerl-5.8/bin/ppm /usr/bin/ppm
+</code></pre>
+
+<p>```</p>
+
+<h3>Xóa</h3>
+
+<p>```</p>
+
+<pre><code>sudo /usr/local/ActivePerl-5.8/bin/ap-uninstall
+rm /Users/&lt;username&gt;/bin/perl
+</code></pre>
+
+<p>```</p>
+
+<ul>
+<li>Tham khảo:
+
+<ul>
+<li><a href="http://docs.activestate.com/activeperl/5.8/install.html#installing%20activeperl%20on%20mac%20os%20x%20(x86,%20powerpc">docs.activestate.com</a>)</li>
+</ul>
+</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Perlbrew</h2>
+
+<ul>
+<li>Cài đặt nhiều phiên bản perl trên máy, chọn sử dụng version phù hợp cho mỗi tác vụ</li>
+<li>Cài đặt perlbrew</li>
+</ul>
+
+
+<p>```</p>
+
+<pre><code>\curl -L http://install.perlbrew.pl | bash
+</code></pre>
+
+<p>```
+&ndash; Cài đặt và sử dụng 1 phiên bản perl cụ thể</p>
+
+<p>```</p>
+
+<pre><code>perlbrew install perl-5.16.0
+perlbrew switch perl-5.16.0
+</code></pre>
+
+<p>```</p>
+
+<ul>
+<li>Tham khảo:
+
+<ul>
+<li><a href="http://perlbrew.pl/">http://perlbrew.pl/</a></li>
+</ul>
+</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

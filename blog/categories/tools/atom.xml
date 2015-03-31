@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Tools | Phuoc-Loc's blog]]></title>
+  <link href="http://trphloc.github.io/blog/categories/tools/atom.xml" rel="self"/>
+  <link href="http://trphloc.github.io/"/>
+  <updated>2015-03-31T14:41:44+07:00</updated>
+  <id>http://trphloc.github.io/</id>
+  <author>
+    <name><![CDATA[Phuoc-Loc Truong]]></name>
+    <email><![CDATA[trphloc@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Tools]]></title>
+    <link href="http://trphloc.github.io/blog/2015/01/10/tools/"/>
+    <updated>2015-01-10T16:14:23+07:00</updated>
+    <id>http://trphloc.github.io/blog/2015/01/10/tools</id>
+    <content type="html"><![CDATA[<p>TODO &ndash; TPL</p>
+
+<!-- ================================================================= -->
+
+
+<h2>AutoHotkey</h2>
+
+<ul>
+<li>Sử dụng cho windows</li>
+<li>Tham khảo:
+
+<ul>
+<li><a href="http://www.autohotkey.com/">http://www.autohotkey.com/</a></li>
+</ul>
+</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Mjolnir</h2>
+
+<ul>
+<li>Sử dụng cho Mac</li>
+<li>Download: <a href="https://github.com/sdegutis/mjolnir/releases/latest">https://github.com/sdegutis/mjolnir/releases/latest</a></li>
+<li>Cài đặt một số modules</li>
+</ul>
+
+
+<p>```</p>
+
+<pre><code>brew install lua
+brew install luarocks
+mkdir -p ~/.luarocks
+echo 'rocks_servers = { "http://rocks.moonscript.org" }' &gt; ~/.luarocks/config.lua
+</code></pre>
+
+<p>```</p>
+
+<p>```</p>
+
+<pre><code>luarocks install mjolnir.hotkey
+luarocks install mjolnir.application
+</code></pre>
+
+<p>```</p>
+
+<ul>
+<li>Cấu hình: tạo tập tin trong <strong>~/.mjolnir/init.lua</strong> => tham khảo thêm <a href="http://thume.ca/howto/2014/12/02/using-mjolnir-an-extensible-osx-window-manager/">http://thume.ca/howto/2014/12/02/using-mjolnir-an-extensible-osx-window-manager/</a></li>
+</ul>
+
+
+<p>```</p>
+
+<pre><code>local application = require "mjolnir.application"
+local hotkey = require "mjolnir.hotkey"
+local window = require "mjolnir.window"
+local fnutils = require "mjolnir.fnutils"
+</code></pre>
+
+<p>```</p>
+
+<ul>
+<li>Xóa</li>
+</ul>
+
+
+<p>```</p>
+
+<pre><code>luarocks purge --tree=/usr/local
+brew uninstall lua luarocks
+rm ~/.luarocks/config.lua
+</code></pre>
+
+<p>```</p>
+
+<ul>
+<li>Tương tự: <a href="http://www.hammerspoon.org/go/">http://www.hammerspoon.org/go/</a></li>
+<li>Tham khảo:
+
+<ul>
+<li><a href="http://mjolnir.io/">http://mjolnir.io/</a></li>
+<li><a href="http://thume.ca/howto/2014/12/02/using-mjolnir-an-extensible-osx-window-manager/">http://thume.ca/howto/2014/12/02/using-mjolnir-an-extensible-osx-window-manager/</a></li>
+<li><a href="https://github.com/jhgg/Hydra-Config/tree/master/modules">https://github.com/jhgg/Hydra-Config/tree/master/modules</a></li>
+</ul>
+</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>Slate</h2>
+
+<ul>
+<li>Sử dụng cho Mac</li>
+<li>Tham khảo:
+
+<ul>
+<li><a href="http://thume.ca/howto/2012/11/19/using-slate/">http://thume.ca/howto/2012/11/19/using-slate/</a></li>
+</ul>
+</li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>SizeUp</h2>
+
+<ul>
+<li>Sử dụng cho Mac</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

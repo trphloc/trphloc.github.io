@@ -1,0 +1,421 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Bugzilla - Phuoc-Loc's blog</title>
+  <meta name="author" content="Phuoc-Loc Truong">
+
+  
+  <meta name="description" content="Cài đặt bugzilla trên mac os B1: Cài đặt perl Sử dụng ActivePerl
+Hoặc sử dụng Perlbrew
+=> Sau khi cài đặt phải tạo biến (symbolic link) của perl tới &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://trphloc.github.io/blog/2015/03/31/bugzilla">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Phuoc-Loc's blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="/javascripts/jquery.tableofcontents.min.js" type="text/javascript"></script>
+<script src="/javascripts/generate-toc.js" type="text/javascript"></script>
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Phuoc-Loc's blog</a></h1>
+  
+    <h2>Một số hướng dẫn ...</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss email">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+    <li><a href="trphloc@gmail.com" rel="subscribe-email" title="subscribe via email">Email</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:trphloc.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/lat-vat">Lặt vặt</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Bugzilla</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-03-31T14:04:52+07:00" pubdate data-updated="true">Mar 31<span>st</span>, 2015</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><h2>Cài đặt bugzilla trên mac os</h2>
+
+<!-- ================================================================= -->
+
+
+<h2>B1: Cài đặt perl</h2>
+
+<ul>
+<li>Sử dụng ActivePerl</li>
+<li>Hoặc sử dụng Perlbrew
+=> Sau khi cài đặt phải tạo biến (symbolic link) của perl tới thư mục mặc định</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo ln -s /usr/local/ActivePerl-5.8/bin/perl /usr/bin/perl</span></code></pre></td></tr></table></div></figure>
+
+
+<p>hoặc</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo ln -s /Users/trphloc/perl5/perlbrew/perls/perl-5.20.1/bin/perl /usr/bin/perl</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<!-- ================================================================= -->
+
+
+<h2>B2: Cài đặt make</h2>
+
+<ul>
+<li>Thực hiện các lệnh sau (các lệnh sau, phải thực hiện trong cpan</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cpan
+</span><span class='line'>o conf make '/usr/bin/make'
+</span><span class='line'>o conf commit
+</span><span class='line'>exit</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Tham khảo: <a href="http://askubuntu.com/questions/161060/how-do-i-install-make">http://askubuntu.com/questions/161060/how-do-i-install-make</a></li>
+</ul>
+
+
+<!-- ================================================================= -->
+
+
+<h2>B3: Một số gói cần cài đặt (tùy chọn)</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>brew install libgd</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cpan install patchutils
+</span><span class='line'>cpan upgrade DBI</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<!-- ================================================================= -->
+
+
+<h2>B4: Cài đặt Driver cho cơ sở dữ liệu</h2>
+
+<ul>
+<li>Postgres</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo perl -MCPAN -e "install DBD::Pg"</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>mysql</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo -H cpan DBD::mysql</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<!-- ================================================================= -->
+
+
+<h2>B5: Cài đặt bugzilla</h2>
+
+<ul>
+<li>Lấy mã nguồn theo đường dẫn: &ldquo;sudo git clone &mdash;branch bugzilla-4.4-stable <a href="https://git.mozilla.org/bugzilla/bugzilla">https://git.mozilla.org/bugzilla/bugzilla</a>&rdquo;</li>
+<li>Di chuyển vào thư mục bugzilla</li>
+<li>Thực thi lệnh</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo perl ./checksetup.pl</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Nếu có lỗi (báo thiếu module) thì cài thêm module theo hướng dẫn hoặc có thể thực hiện lệnh sau</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo perl install-module.pl --all</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Nếu ko có lỗi (hoặc đã cài bổ sung đủ module) thì thực thi lại lệnh checksetup, lệnh sẽ phát sinh thêm <strong>localconfig</strong> trong cùng thư mục</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo perl ./checksetup.pl</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Vào tập tin localconfig sửa các thông tin của database</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$db_host = 'localhost';
+</span><span class='line'>   
+</span><span class='line'>   # The name of the database. For Oracle, this is the database's SID. For
+</span><span class='line'>   # SQLite, this is a name (or path) for the DB file.
+</span><span class='line'>   $db_name = 'bugzilla';
+</span><span class='line'>   
+</span><span class='line'>   # Who we connect to the database as.
+</span><span class='line'>   $db_user = 'postgres';
+</span><span class='line'>   
+</span><span class='line'>   # Enter your database password here. It's normally advisable to specify
+</span><span class='line'>   # a password for your bugzilla database user.
+</span><span class='line'>   # If you use apostrophe (') or a backslash (\) in your password, you'll
+</span><span class='line'>   # need to escape it by preceding it with a '\' character. (\') or (\)
+</span><span class='line'>   # (It is far simpler to just not use those characters.)
+</span><span class='line'>   $db_pass = '';
+</span><span class='line'>   
+</span><span class='line'>   # Sometimes the database server is running on a non-standard port. If that's
+</span><span class='line'>   # the case for your database server, set this to the port number that your
+</span><span class='line'>   # database server is running on. Setting this to 0 means "use the default
+</span><span class='line'>   # port for my database server."
+</span><span class='line'>   $db_port = 5432;</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Thực thi lại lệnh checksetup</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo perl ./checksetup.pl</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Thành công thì có thể truy cập vào theo đường dẫn</li>
+</ul>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">trphloc</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-03-31T14:04:52+07:00" pubdate data-updated="true">Mar 31<span>st</span>, 2015</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/bugzilla/'>bugzilla</a>, <a class='category' href='/blog/categories/mac-os/'>mac os</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://trphloc.github.io/blog/2015/03/31/bugzilla/" data-via="" data-counturl="http://trphloc.github.io/blog/2015/03/31/bugzilla/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2015/03/31/perl/" title="Previous Post: Perl">&laquo; Perl</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2015/03/31/bugzilla/">Bugzilla</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/03/31/perl/">Perl</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/03/16/nokia-x/">Nokia X</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/03/06/c-plus-plus/">C++</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/02/04/test-management/">Test Management</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2015 - Phuoc-Loc Truong -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        // Put a TOC right before the entry content.
+        generateTOC('Table of Contents');
+    });
+</script>
+
+
+</body>
+</html>

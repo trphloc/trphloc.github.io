@@ -5,14 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Automation Tools - Phuoc-Loc's blog</title>
+  <title>Perl - Phuoc-Loc's blog</title>
   <meta name="author" content="Phuoc-Loc Truong">
 
   
-  <meta name="description" content="TODO &ndash; TPL AutoHotkey Sử dụng cho windows
-Tham khảo: http://www.autohotkey.com/ Mjolnir Sử dụng cho Mac
-Tham khảo: http://mjolnir.io/
-http:// &hellip;">
+  <meta name="description" content="Perl trên mac os ActivePerl Cài đặt Tải tại đây (http://www.activestate.com/activeperl/downloads) và cài đặt theo chỉ dẫn
+Thêm đường dẫn vào biến &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -21,7 +19,7 @@ http:// &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://trphloc.github.io/blog/2015/01/10/automation-tools">
+  <link rel="canonical" href="http://trphloc.github.io/blog/2015/03/31/perl">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Phuoc-Loc's blog" type="application/atom+xml">
@@ -77,7 +75,7 @@ http:// &hellip;">
   
   <header>
     
-      <h1 class="entry-title">Automation Tools</h1>
+      <h1 class="entry-title">Perl</h1>
     
     
       <p class="meta">
@@ -93,26 +91,58 @@ http:// &hellip;">
   
 
 
-<time datetime="2015-01-10T16:14:23+07:00" pubdate data-updated="true">Jan 10<span>th</span>, 2015</time>
+<time datetime="2015-03-31T11:39:38+07:00" pubdate data-updated="true">Mar 31<span>st</span>, 2015</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>TODO &ndash; TPL</p>
+<div class="entry-content"><h1>Perl trên mac os</h1>
 
 <!-- ================================================================= -->
 
 
-<h2>AutoHotkey</h2>
+<h2>ActivePerl</h2>
+
+<h3>Cài đặt</h3>
 
 <ul>
-<li>Sử dụng cho windows</li>
+<li>Tải tại đây (<a href="http://www.activestate.com/activeperl/downloads">http://www.activestate.com/activeperl/downloads</a>) và cài đặt theo chỉ dẫn</li>
+<li>Thêm đường dẫn vào biến PATH (sử dụng file .profile)</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>export PATH=/usr/local/ActivePerl-5.8/bin:$PATH
+</span><span class='line'>export PATH=/usr/local/ActivePerl-5.8/site/bin:$PATH</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Tạo Symbolic link tới /usr/bin/perl và ppm</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ln -s /usr/local/ActivePerl-5.8/bin/perl /usr/bin/perl
+</span><span class='line'>ln -s /usr/local/ActivePerl-5.8/bin/ppm /usr/bin/ppm</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Xóa</h3>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo /usr/local/ActivePerl-5.8/bin/ap-uninstall
+</span><span class='line'>rm /Users/&lt;username&gt;/bin/perl</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
 <li>Tham khảo:
 
 <ul>
-<li><a href="http://www.autohotkey.com/">http://www.autohotkey.com/</a></li>
+<li><a href="http://docs.activestate.com/activeperl/5.8/install.html#installing%20activeperl%20on%20mac%20os%20x%20(x86,%20powerpc">docs.activestate.com</a>)</li>
 </ul>
 </li>
 </ul>
@@ -121,43 +151,36 @@ http:// &hellip;">
 <!-- ================================================================= -->
 
 
-<h2>Mjolnir</h2>
+<h2>Perlbrew</h2>
 
 <ul>
-<li>Sử dụng cho Mac</li>
+<li>Cài đặt nhiều phiên bản perl trên máy, chọn sử dụng version phù hợp cho mỗi tác vụ</li>
+<li>Cài đặt perlbrew</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>\curl -L http://install.perlbrew.pl | bash</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Cài đặt và sử dụng 1 phiên bản perl cụ thể</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>perlbrew install perl-5.16.0
+</span><span class='line'>perlbrew switch perl-5.16.0</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
 <li>Tham khảo:
 
 <ul>
-<li><a href="http://mjolnir.io/">http://mjolnir.io/</a></li>
-<li><a href="http://thume.ca/howto/2014/12/02/using-mjolnir-an-extensible-osx-window-manager/">http://thume.ca/howto/2014/12/02/using-mjolnir-an-extensible-osx-window-manager/</a></li>
+<li><a href="http://perlbrew.pl/">http://perlbrew.pl/</a></li>
 </ul>
 </li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Slate</h2>
-
-<ul>
-<li>Sử dụng cho Mac</li>
-<li>Tham khảo:
-
-<ul>
-<li><a href="http://thume.ca/howto/2012/11/19/using-slate/">http://thume.ca/howto/2012/11/19/using-slate/</a></li>
-</ul>
-</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>SizeUp</h2>
-
-<ul>
-<li>Sử dụng cho Mac</li>
 </ul>
 
 </div>
@@ -182,12 +205,12 @@ http:// &hellip;">
   
 
 
-<time datetime="2015-01-10T16:14:23+07:00" pubdate data-updated="true">Jan 10<span>th</span>, 2015</time>
+<time datetime="2015-03-31T11:39:38+07:00" pubdate data-updated="true">Mar 31<span>st</span>, 2015</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/automation-tools/'>automation tools</a>
+    <a class='category' href='/blog/categories/mac-os/'>mac os</a>, <a class='category' href='/blog/categories/perl/'>perl</a>
   
 </span>
 
@@ -196,7 +219,7 @@ http:// &hellip;">
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://trphloc.github.io/blog/2015/01/10/automation-tools/" data-via="" data-counturl="http://trphloc.github.io/blog/2015/01/10/automation-tools/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://trphloc.github.io/blog/2015/03/31/perl/" data-via="" data-counturl="http://trphloc.github.io/blog/2015/03/31/perl/" >Tweet</a>
   
   
   
@@ -205,10 +228,10 @@ http:// &hellip;">
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2015/01/10/database/" title="Previous Post: Database">&laquo; Database</a>
+        <a class="basic-alignment left" href="/blog/2015/03/16/nokia-x/" title="Previous Post: Nokia X">&laquo; Nokia X</a>
       
       
-        <a class="basic-alignment right" href="/blog/2015/01/13/coding-standards/" title="Next Post: Coding standards">Coding standards &raquo;</a>
+        <a class="basic-alignment right" href="/blog/2015/03/31/bugzilla/" title="Next Post: Bugzilla">Bugzilla &raquo;</a>
       
     </p>
   </footer>
@@ -223,6 +246,14 @@ http:// &hellip;">
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2015/03/31/bugzilla/">Bugzilla</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/03/31/perl/">Perl</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2015/03/16/nokia-x/">Nokia X</a>
       </li>
     
@@ -232,14 +263,6 @@ http:// &hellip;">
     
       <li class="post">
         <a href="/blog/2015/02/04/test-management/">Test Management</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2015/01/15/diskpart/">Diskpart</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2015/01/15/connect-to-sql-server-using-oracl-sql-developer/">Connect to SQL Server Using Oracle SQL Developer</a>
       </li>
     
   </ul>

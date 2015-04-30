@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+    <title><![CDATA[Category: ruby | Phuoc-Loc 's blog]]></title>
+    <link href="http://www.trphloc.com/blog/categories/ruby/atom.xml" rel="self"/>
+    <link href="http://www.trphloc.com/"/>
+    <updated>2015-05-01T01:01:30+07:00</updated>
+    <id>http://www.trphloc.com/</id>
+    <author>
+        <name><![CDATA[trphloc]]></name>
+        <email><![CDATA[trphloc]]></email>
+      </author>
+    <generator uri="http://octopress.org/">Octopress</generator>
+
+    
+    <entry>
+        <title type="html"><![CDATA[Ruby notes]]></title>
+        <link href="http://www.trphloc.com/blog/2014/08/31/ruby-notes/"/>
+        <updated>2014-08-31T21:07:13+07:00</updated>
+        <id>http://www.trphloc.com/blog/2014/08/31/ruby-notes</id>
+        <content type="html"><![CDATA[<ul id="markdown-toc">
+  <li><a href="#ci-t-ruby-200-trn-mi-trng-windows">Cài đặt Ruby 2.0.0 trên môi trường windows</a></li>
+  <li><a href="#ci-t-rubydevkit-trn-mi-trng-windows">Cài đặt RubyDevKit trên môi trường windows</a></li>
+  <li><a href="#ruby-trn-mac-os---maverick">Ruby trên Mac OS - Maverick</a></li>
+  <li><a href="#bundle-trn-mac-os---maverick">Bundle trên Mac OS - Maverick</a></li>
+</ul>
+
+<!-- ================================================================= -->
+
+<h2 id="ci-t-ruby-200-trn-mi-trng-windows">Cài đặt Ruby 2.0.0 trên môi trường windows</h2>
+<ul>
+  <li>Môi trường Windows và Ruby 2.0.0</li>
+  <li>Truy cập <a href="http://rubyinstaller.org/">trang chủ của Ruby</a></li>
+  <li>Vào mục <a href="http://rubyinstaller.org/downloads/">downloads</a> để tải phiên bản phù hợp (phiên bản 2.0.0)</li>
+  <li>Chạy tập tin Ruby ….msi và làm theo hướng dẫn (chọn thư mục cài đặt C:\abc\Ruby200)</li>
+  <li>Thêm đường dẫn “C:\abc\Ruby200\bin” vào biến môi trường (Environment variables) “Path”</li>
+</ul>
+
+<!-- ================================================================= -->
+
+<h2 id="ci-t-rubydevkit-trn-mi-trng-windows">Cài đặt RubyDevKit trên môi trường windows</h2>
+<ul>
+  <li>Môi trường Windows và Ruby DevKit 4.7.2</li>
+  <li>Truy cập <a href="http://rubyinstaller.org/">trang chủ của Ruby</a></li>
+  <li>Vào mục <a href="http://rubyinstaller.org/downloads/">downloads</a> xem và download phần Development Kit (phiên bản 4.7.2 cho 64bits tên file DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe)</li>
+  <li>Chạy tập tin DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe và làm theo hướng dẫn (chọn thư mục cài đặt C:\abc\RubyDevKit)</li>
+  <li>Thêm đường dẫn “C:\abc\RubyDevKit\bin” vào biến môi trường (Environment variables) “Path”</li>
+</ul>
+
+<!-- ================================================================= -->
+
+<h2 id="ruby-trn-mac-os---maverick">Ruby trên Mac OS - Maverick</h2>
+
+<ul>
+  <li>Đã có sẵn</li>
+</ul>
+
+<!-- ================================================================= -->
+
+<h2 id="bundle-trn-mac-os---maverick">Bundle trên Mac OS - Maverick</h2>
+
+<ul>
+  <li>Chạy các lệnh sau</li>
+</ul>
+
+<p><code>
+sudo gem install bundler
+bundle install
+</code></p>
+]]></content>
+    </entry>
+    
+</feed>

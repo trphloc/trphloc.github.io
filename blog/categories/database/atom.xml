@@ -1,80 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Database | Phuoc-Loc's blog]]></title>
-  <link href="http://trphloc.github.io/blog/categories/database/atom.xml" rel="self"/>
-  <link href="http://trphloc.github.io/"/>
-  <updated>2015-03-31T14:41:44+07:00</updated>
-  <id>http://trphloc.github.io/</id>
-  <author>
-    <name><![CDATA[Phuoc-Loc Truong]]></name>
-    <email><![CDATA[trphloc@gmail.com]]></email>
-  </author>
-  <generator uri="http://octopress.org/">Octopress</generator>
+    <title><![CDATA[Category: Database | Phuoc-Loc 's blog]]></title>
+    <link href="http://www.trphloc.com/blog/categories/database/atom.xml" rel="self"/>
+    <link href="http://www.trphloc.com/"/>
+    <updated>2015-04-30T22:22:23+07:00</updated>
+    <id>http://www.trphloc.com/</id>
+    <author>
+        <name><![CDATA[trphloc]]></name>
+        <email><![CDATA[trphloc]]></email>
+      </author>
+    <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Database]]></title>
-    <link href="http://trphloc.github.io/blog/2015/01/10/database/"/>
-    <updated>2015-01-10T16:04:13+07:00</updated>
-    <id>http://trphloc.github.io/blog/2015/01/10/database</id>
-    <content type="html"><![CDATA[<p>TODO &ndash; TPL</p>
+    
+    <entry>
+        <title type="html"><![CDATA[Database]]></title>
+        <link href="http://www.trphloc.com/blog/2015/01/10/database/"/>
+        <updated>2015-01-10T16:04:13+07:00</updated>
+        <id>http://www.trphloc.com/blog/2015/01/10/database</id>
+        <content type="html"><![CDATA[<p>TODO - TPL</p>
+
+<ul id="markdown-toc">
+  <li><a href="#loi-c-s-d-liu">Loại cơ sở dữ liệu</a></li>
+  <li><a href="#h-qun-tr-c-s-d-liu">Hệ quản trị cơ sở dữ liệu</a></li>
+  <li><a href="#cng-c-qun-tr-c-s-d-liu">Công cụ quản trị cơ sơ dữ liệu</a></li>
+  <li><a href="#profiler">Profiler</a></li>
+</ul>
 
 <!-- ================================================================= -->
 
-
-<h2>Loại cơ sở dữ liệu</h2>
-
+<h2 id="loi-c-s-d-liu">Loại cơ sở dữ liệu</h2>
 <ul>
-<li>Navigational DBMS</li>
-<li>Relational DBMS</li>
-<li>Object-oriented</li>
-<li>NoSQL và NewSQL</li>
+  <li>Navigational DBMS</li>
+  <li>Relational DBMS</li>
+  <li>Object-oriented</li>
+  <li>NoSQL và NewSQL</li>
 </ul>
-
 
 <!-- ================================================================= -->
 
-
-<h2>Hệ quản trị cơ sở dữ liệu</h2>
-
+<h2 id="h-qun-tr-c-s-d-liu">Hệ quản trị cơ sở dữ liệu</h2>
 <ul>
-<li>Oracle</li>
-<li>MongoDB</li>
-<li>Cassandra</li>
-<li>Hbase</li>
-<li>SAP</li>
-<li>Postgre</li>
-<li>MySQL</li>
-<li>IBM DB2</li>
-<li>SQL server</li>
-<li>Access</li>
+  <li>Oracle</li>
+  <li>MongoDB</li>
+  <li>Cassandra</li>
+  <li>Hbase</li>
+  <li>SAP</li>
+  <li>Postgre</li>
+  <li>MySQL</li>
+  <li>IBM DB2</li>
+  <li>SQL server</li>
+  <li>Access</li>
 </ul>
-
 
 <!-- ================================================================= -->
 
-
-<h2>Công cụ quản trị cơ sơ dữ liệu</h2>
-
+<h2 id="cng-c-qun-tr-c-s-d-liu">Công cụ quản trị cơ sơ dữ liệu</h2>
 <ul>
-<li>Navicat</li>
-<li>Oracle sql developer tool</li>
-<li><a href="http://www.gfi.com/blog/top-10-free-database-tools-for-sys-admins/">http://www.gfi.com/blog/top-10-free-database-tools-for-sys-admins/</a></li>
-<li><a href="http://en.wikipedia.org/wiki/Comparison_of_database_tools">http://en.wikipedia.org/wiki/Comparison_of_database_tools</a></li>
+  <li>Navicat</li>
+  <li>Oracle sql developer tool</li>
+  <li>http://www.gfi.com/blog/top-10-free-database-tools-for-sys-admins/</li>
+  <li>http://en.wikipedia.org/wiki/Comparison_of_database_tools</li>
 </ul>
-
 
 <!-- ================================================================= -->
 
-
-<h2>Profiler</h2>
-
+<h2 id="profiler">Profiler</h2>
 <ul>
-<li>SQL Profiler sử dụng cho SQL server</li>
+  <li>SQL Profiler sử dụng cho SQL server</li>
 </ul>
-
 ]]></content>
-  </entry>
-  
+    </entry>
+    
 </feed>

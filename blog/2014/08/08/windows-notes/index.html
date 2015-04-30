@@ -1,262 +1,306 @@
+<!doctype html>
+    <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+    <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+    <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+    <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>Windows Notes - Phuoc-Loc's blog</title>
-  <meta name="author" content="Phuoc-Loc Truong">
+    
+      
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Windows notes - Phuoc-Loc 's blog</title>
+        <meta name="author" content="trphloc">
+        
+        <meta name="description" content="Windows notes note technical windows Một số thủ thuật Một số lệnh command Một số thủ thuật Tạo USB khôi phục cho windows, Linux, và Mac Tham khảo &hellip;">
+        
+        <meta name="viewport" content="width=device-width">
+        <link rel="canonical" href="http://www.trphloc.com/blog/2014/08/08/windows-notes">
 
-  
-  <meta name="description" content="Đang cập nhật Một số thủ thuật Tạo USB khôi phục cho windows, Linux, và Mac Tham khảo Phần mềm hỗ trợ download http://www.tincongnghe.com.vn/2014/08/ &hellip;">
-  
+        <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic' rel='stylesheet' type='text/css'>
+        <link href="http://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet" type="text/css">
 
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link href="/favicon.png" rel="icon">
+        <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet">
+        <link href="/atom.xml" rel="alternate" title="Phuoc-Loc 's blog" type="application/atom+xml">
+    </head>
 
-  
-  <link rel="canonical" href="http://trphloc.github.io/blog/2014/08/08/windows-notes">
-  <link href="/favicon.png" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="Phuoc-Loc's blog" type="application/atom+xml">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-<script src="/javascripts/jquery.tableofcontents.min.js" type="text/javascript"></script>
-<script src="/javascripts/generate-toc.js" type="text/javascript"></script>
 
-  
+    <body >
 
-</head>
-
-<body   >
-  <header role="banner"><hgroup>
-  <h1><a href="/">Phuoc-Loc's blog</a></h1>
-  
-    <h2>Một số hướng dẫn ...</h2>
-  
-</hgroup>
-
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss email">
-  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-    <li><a href="trphloc@gmail.com" rel="subscribe-email" title="subscribe via email">Email</a></li>
-  
-</ul>
-  
-<form action="https://www.google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:trphloc.github.io" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
-<ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
-  <li><a href="/lat-vat">Lặt vặt</a></li>
+        <header id="header">
+    <div class="row">
+    <div class="col-xs-12 col-sm-8 col-md-4">
+        <a href="/" class="site-title">Phuoc-Loc 's blog</a>
+    </div>
+    <div class="col-xs-12 col-sm-4 col-md-8">
+        <nav>
+    <input type="checkbox" id="toggle">
+    <label for="toggle" class="toggle" data-open="Main Menu" data-close="Close Menu"></label>
+    <ul class="menu">
+    <li><a href="/">Trang chủ</a></li>
+    <li><a href="/blog/archives">Danh mục</a></li>
+    <li><a href="/lat-vat">Lặt vặt</a></li>
 </ul>
 
 </nav>
-  <div id="main">
-    <div id="content">
-      <div>
-<article class="hentry" role="article">
-  
-  <header>
+
+    </div>
+</div>
+
+</header>
+
+
+        <div id="main-content">
+
+            <!--[if lte IE 9]>
+<div class="row upgrade-row">
+    <div class="col-lg-12">
+        <div class="upgrade">
+            <i class="upgrade__icon fa fa-warning"></i>
+            <h1 class="upgrade__title h6">Ohnoes!</h1>
+            <p class="upgrade__text">
+                Unfortunately, certain parts of this site may not display correctly in your version of Internet Explorer!<br>
+                If possible, you should consider <a href="http://browsehappy.com/">upgrading your browser</a>.
+            </p>
+        </div>
+    </div>
+</div>
+<!-- <![endif]-->
+
+
+            
+
+            <div class="row top-xs center-sm center-md center-lg site-wrapper">
+                
+                <div class="col-xs-12 col-sm-10 col-md-8 col-lg-8">
+                
+                    <article class="article article--single">
+    <header class="article__header">
     
-      <h1 class="entry-title">Windows Notes</h1>
+        <h1 class="article__title">Windows notes</h1>
     
+
     
-      <p class="meta">
+        <div class="article__meta clearfix">
+            
+
+
+
+
+
+
+    <time class="article__date pull-left" datetime="" pubdate><i class="fa fa-calendar"></i> </time>
+
+
+
+
+            
+
+    <div class="article__tags pull-left">
+        <i class="fa fa-tags"></i>
+        <ul class="unstyled">
         
 
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-08-08T18:07:41+07:00" pubdate data-updated="true">Aug 8<span>th</span>, 2014</time>
+            
+                <li><a class='category' href='/blog/categories/note/'>note</a></li>
+            
+                <li><a class='category' href='/blog/categories/technical/'>technical</a></li>
+            
+                <li><a class='category' href='/blog/categories/windows/'>windows</a></li>
+            
         
-      </p>
+        </ul>
+    </div>
+
+
+            
+        </div>
     
-  </header>
+</header>
 
 
-<div class="entry-content"><h2>Đang cập nhật</h2>
+
+
+    <ul id="markdown-toc">
+  <li><a href="#mt-s-th-thut">Một số thủ thuật</a></li>
+  <li><a href="#mt-s-lnh-command">Một số lệnh command</a></li>
+</ul>
 
 <!-- ================================================================= -->
 
-
-<h2>Một số thủ thuật</h2>
-
-<ul>
-<li>Tạo USB khôi phục cho windows, Linux, và Mac
+<h2 id="mt-s-th-thut">Một số thủ thuật</h2>
 
 <ul>
-<li><a href="http://www.pcworld.com.vn/articles/cong-nghe/lam-the-nao/2014/08/1235685/tao-usb-khoi-phuc-cho-windows-linux-mac-va-chrome-os/">Tham khảo</a></li>
+  <li>Tạo USB khôi phục cho windows, Linux, và Mac
+    <ul>
+      <li><a href="http://www.pcworld.com.vn/articles/cong-nghe/lam-the-nao/2014/08/1235685/tao-usb-khoi-phuc-cho-windows-linux-mac-va-chrome-os/">Tham khảo</a></li>
+    </ul>
+  </li>
+  <li>Phần mềm hỗ trợ download
+    <ul>
+      <li>http://www.tincongnghe.com.vn/2014/08/391621</li>
+    </ul>
+  </li>
+  <li>Ổ cứng mạng NAS - buffalo
+    <ul>
+      <li>http://ducquang415.com/view-43494/kien-thuc-co-ban-va-huong-dan-su-dung-nas-buffalo–o-cung-mang/</li>
+    </ul>
+  </li>
 </ul>
-</li>
-<li>Phần mềm hỗ trợ download
-
-<ul>
-<li><a href="http://www.tincongnghe.com.vn/2014/08/391621">http://www.tincongnghe.com.vn/2014/08/391621</a></li>
-</ul>
-</li>
-<li>Ổ cứng mạng NAS &ndash; buffalo
-
-<ul>
-<li><a href="http://ducquang415.com/view-43494/kien-thuc-co-ban-va-huong-dan-su-dung-nas-buffalo--o-cung-mang/">http://ducquang415.com/view-43494/kien-thuc-co-ban-va-huong-dan-su-dung-nas-buffalo&#8211;o-cung-mang/</a></li>
-</ul>
-</li>
-</ul>
-
 
 <!-- ================================================================= -->
 
-
-<h2>Một số lệnh command</h2>
-
+<h2 id="mt-s-lnh-command">Một số lệnh command</h2>
 <ul>
-<li>Tạo một symbolic link: mklink [[/d] | [/h] | [/j]] <Link> <Target>
-
-<ul>
-<li>/d tạo một thư mục &ndash; directory symbolic link (mặc định là tạo tập tin &ndash; file)</li>
-<li>/h tạo một hard link thay vì symbolic link</li>
-<li>/j tạo directory junction</li>
-<li>link: đường dẫn</li>
-<li>target: nơi liên kết tới</li>
-<li>Ví dụ: mklink /d \MyDocs \Users\User1\Documents tạo \MyDocs liên kết tới Documents</li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>Tạo một symbolic link: mklink [[/d]</td>
+          <td>[/h]</td>
+          <td>[/j]] <link /> <target /></td>
+        </tr>
+      </tbody>
+    </table>
+    <ul>
+      <li>/d tạo một thư mục - directory symbolic link (mặc định là tạo tập tin - file)</li>
+      <li>/h tạo một hard link thay vì symbolic link</li>
+      <li>/j tạo directory junction</li>
+      <li>link: đường dẫn</li>
+      <li>target: nơi liên kết tới</li>
+      <li>Ví dụ: mklink /d \MyDocs \Users\User1\Documents tạo \MyDocs liên kết tới Documents</li>
+    </ul>
+  </li>
+  <li>runas /user:Administrator cmd</li>
+  <li>Xóa thư mục
+    <ul>
+      <li>rmdir c:\test /s</li>
+      <li>rmdir c:\test /s /q</li>
+    </ul>
+  </li>
+  <li>where command_name: tìm vị trí của lệnh command</li>
+  <li>nslookup: truy vết domain</li>
 </ul>
-</li>
-<li>runas /user:Administrator cmd</li>
-<li>Xóa thư mục
-
-<ul>
-<li>rmdir c:\test /s</li>
-<li>rmdir c:\test /s /q</li>
-</ul>
-</li>
-<li>where command_name: tìm vị trí của lệnh command</li>
-<li>nslookup: truy vết domain</li>
-</ul>
-
-</div>
-
-
-  <footer>
-    <p class="meta">
-      
-  
-
-<span class="byline author vcard">Posted by <span class="fn">trphloc</span></span>
-
-      
 
 
 
-
-
-
-
-
-  
-
-
-<time datetime="2014-08-08T18:07:41+07:00" pubdate data-updated="true">Aug 8<span>th</span>, 2014</time>
-      
-
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/note/'>note</a>, <a class='category' href='/blog/categories/technical/'>technical</a>, <a class='category' href='/blog/categories/windows/'>windows</a>
-  
-</span>
-
-
-    </p>
-    
-      <div class="sharing">
-  
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://trphloc.github.io/blog/2014/08/08/windows-notes/" data-via="" data-counturl="http://trphloc.github.io/blog/2014/08/08/windows-notes/" >Tweet</a>
-  
-  
-  
-</div>
-
-    
-    <p class="meta">
-      
-        <a class="basic-alignment left" href="/blog/2014/08/05/java-notes/" title="Previous Post: java notes">&laquo; java notes</a>
-      
-      
-        <a class="basic-alignment right" href="/blog/2014/08/15/emacs-notes/" title="Next Post: emacs note">emacs note &raquo;</a>
-      
-    </p>
-  </footer>
 </article>
 
-</div>
 
-<aside class="sidebar">
-  
-    <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
+
+                </div>
+
+                
+                <aside class="sidebar col-xs-12 col-md-4 col-lg-4">
+                    <div class="row">
+
+  <img class="hero__gravatar" src="/images/gravatar.jpg" width="150" height="150">
+
     
-      <li class="post">
-        <a href="/blog/2015/03/31/bugzilla/">Bugzilla</a>
-      </li>
+
     
-      <li class="post">
-        <a href="/blog/2015/03/31/perl/">Perl</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2015/03/16/nokia-x/">Nokia X</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2015/03/06/c-plus-plus/">C++</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2015/02/04/test-management/">Test Management</a>
-      </li>
-    
-  </ul>
+<section class="social col-xs-12 col-sm-6 col-md-12">
+    <h1>
+        Follow me!
+    </h1>
+    <ul class="unstyled">
+        
+        
+        
+        
+        <li><a class="github" href="//github.com/trphloc"><i class="fa fa-github"></i> Github</a></li>
+        <li><a class="googleplus" href="//plus.google.com/117995923407783054772"><i class="fa fa-google-plus-square"></i> Google+</a></li>
+        
+        
+        
+        
+        
+        <li><a class="stackoverflow" href="//stackoverflow.com/users/4848966/phuoc-loc-truong"><i class="fa fa-stack-overflow"></i> StackOverflow</a></li>
+        <li><a class="twitter" href="//twitter.com/trphloc"><i class="fa fa-twitter"></i> Twitter</a></li>
+        <li><a class="youtube" href="//youtube.com/user/trphloc"><i class="fa fa-youtube"></i> YouTube</a></li>
+    </ul>
+</section>
+
+
+
+  <section class="hire--aside col-xs-12 col-sm-10 col-md-12">
+  <h1>Search
+  </h1>
+  <form action="http://google.com/search" method="get" >
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:www.trphloc.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+  </form>
+        </section>  
+
+    <section id="recent-posts" class="col-xs-12 col-sm-6 col-md-12">
+    <h1>Recent Posts</h1>
+    <ul class="divided">
+        
+        <li class="post">
+            <a href="/blog/2015/04/30/mono-project/">Mono-project</a>
+        </li>
+        
+        <li class="post">
+            <a href="/blog/2015/03/31/bugzilla/">Bugzilla</a>
+        </li>
+        
+        <li class="post">
+            <a href="/blog/2015/03/31/perl/">Perl</a>
+        </li>
+        
+        <li class="post">
+            <a href="/blog/2015/03/16/nokia-x/">Nokia X</a>
+        </li>
+        
+        <li class="post">
+            <a href="/blog/2015/03/06/c-plus-plus/">C++</a>
+        </li>
+        
+    </ul>
 </section>
 
 
 
 
 
-  
-</aside>
+
+</div>
+
+                </aside>
+                
+            </div>
+        </div>
+
+        
+
+    
+    
 
 
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
-  Copyright &copy; 2015 - Phuoc-Loc Truong -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+
+
+<footer class="footer">
+    <div class="row middle-xs">
+        
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <p class="footer__copyright">
+    All content copyright trphloc, email: trphloc.<br>
 </p>
 
+        </div>
+        
+        
+    </div>
 </footer>
-  
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="//crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
+<script defer src="/javascripts/octopress.js"></script>
 
 
 
@@ -264,25 +308,13 @@
 
 
 
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = '//platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
 
 
 
-<script type="text/javascript">
-    jQuery(document).ready(function() {
-        // Put a TOC right before the entry content.
-        generateTOC('Table of Contents');
-    });
-</script>
 
 
-</body>
+
+
+    </body>
+
 </html>

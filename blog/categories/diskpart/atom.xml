@@ -1,75 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Diskpart | Phuoc-Loc's blog]]></title>
-  <link href="http://trphloc.github.io/blog/categories/diskpart/atom.xml" rel="self"/>
-  <link href="http://trphloc.github.io/"/>
-  <updated>2015-03-31T14:41:44+07:00</updated>
-  <id>http://trphloc.github.io/</id>
-  <author>
-    <name><![CDATA[Phuoc-Loc Truong]]></name>
-    <email><![CDATA[trphloc@gmail.com]]></email>
-  </author>
-  <generator uri="http://octopress.org/">Octopress</generator>
+    <title><![CDATA[Category: diskpart | Phuoc-Loc 's blog]]></title>
+    <link href="http://www.trphloc.com/blog/categories/diskpart/atom.xml" rel="self"/>
+    <link href="http://www.trphloc.com/"/>
+    <updated>2015-04-30T22:22:23+07:00</updated>
+    <id>http://www.trphloc.com/</id>
+    <author>
+        <name><![CDATA[trphloc]]></name>
+        <email><![CDATA[trphloc]]></email>
+      </author>
+    <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Diskpart]]></title>
-    <link href="http://trphloc.github.io/blog/2015/01/15/diskpart/"/>
-    <updated>2015-01-15T21:31:06+07:00</updated>
-    <id>http://trphloc.github.io/blog/2015/01/15/diskpart</id>
-    <content type="html"><![CDATA[<!-- ================================================================= -->
-
-
-<h2>Công cụ hỗ trợ xử lý đĩa cứng</h2>
-
-<ul>
-<li>Thực thi lệnh <strong>diskpart</strong> trong cửa sổ command</li>
-<li>Một số lệnh thông dụng
-
-<ul>
-<li>List disk: hiển thị thông tin các ổ đĩa</li>
-<li>Select disk &hellip; : chọn ổ đĩa hiện hành (các thao tác sẽ thực thi trên ổ đĩa này)</li>
-<li>Select partition &hellip;: chọn partition hiện hành</li>
-<li>Select volume &hellip;: chọn volume hiện hành</li>
-<li>detail disk: thông tin ổ đĩa</li>
-<li>clean: xóa toàn bộ thông tin ổ đĩa</li>
-<li>create partition &hellip;: tạo partition mới</li>
+    
+    <entry>
+        <title type="html"><![CDATA[Diskpart]]></title>
+        <link href="http://www.trphloc.com/blog/2015/01/15/diskpart/"/>
+        <updated>2015-01-15T21:31:06+07:00</updated>
+        <id>http://www.trphloc.com/blog/2015/01/15/diskpart</id>
+        <content type="html"><![CDATA[<ul id="markdown-toc">
+  <li><a href="#cng-c-h-tr-x-l-a-cng">Công cụ hỗ trợ xử lý đĩa cứng</a></li>
+  <li><a href="#x-l-gpt-protective-partition-trn-windows-xp">Xử lý “GPT Protective Partition” trên windows xp</a></li>
 </ul>
-</li>
-</ul>
-
 
 <!-- ================================================================= -->
 
-
-<h2>Xử lý &ldquo;GPT Protective Partition&rdquo; trên windows xp</h2>
-
+<h2 id="cng-c-h-tr-x-l-a-cng">Công cụ hỗ trợ xử lý đĩa cứng</h2>
 <ul>
-<li>Chọn phím <strong> Windows + R </strong></li>
-<li>Gõ lệnh <strong>diskpart</strong></li>
-<li>Thực thi lệnh <strong>List disk</strong></li>
-<li>Chọn ổ đĩa cần xử lý <strong> Select disk &hellip; </strong></li>
-<li>Thực thi lệnh <strong>clean</strong> => sẽ xóa toàn bộ dữ liệu trên ổ đĩa</li>
-<li>Thực thi lệnh <strong>create partition primary</strong></li>
-<li>Thực thi lệnh <strong>assign G</strong> (G là ổ đĩa map với ổ cứng)</li>
+  <li>Thực thi lệnh <strong>diskpart</strong> trong cửa sổ command</li>
+  <li>Một số lệnh thông dụng
+    <ul>
+      <li>List disk: hiển thị thông tin các ổ đĩa</li>
+      <li>Select disk … : chọn ổ đĩa hiện hành (các thao tác sẽ thực thi trên ổ đĩa này)</li>
+      <li>Select partition …: chọn partition hiện hành</li>
+      <li>Select volume …: chọn volume hiện hành</li>
+      <li>detail disk: thông tin ổ đĩa</li>
+      <li>clean: xóa toàn bộ thông tin ổ đĩa</li>
+      <li>create partition …: tạo partition mới</li>
+    </ul>
+  </li>
 </ul>
-
 
 <!-- ================================================================= -->
 
+<h2 id="x-l-gpt-protective-partition-trn-windows-xp">Xử lý “GPT Protective Partition” trên windows xp</h2>
+<ul>
+  <li>Chọn phím ** Windows + R **</li>
+  <li>Gõ lệnh <strong>diskpart</strong></li>
+  <li>Thực thi lệnh <strong>List disk</strong></li>
+  <li>Chọn ổ đĩa cần xử lý ** Select disk … **</li>
+  <li>Thực thi lệnh <strong>clean</strong> =&gt; sẽ xóa toàn bộ dữ liệu trên ổ đĩa</li>
+  <li>Thực thi lệnh <strong>create partition primary</strong></li>
+  <li>Thực thi lệnh <strong>assign G</strong> (G là ổ đĩa map với ổ cứng)</li>
+</ul>
+
+<!-- ================================================================= -->
 
 <ul>
-<li>Tài liệu tham khảo
-
-<ul>
-<li><a href="http://support.microsoft.com/kb/300415">http://support.microsoft.com/kb/300415</a></li>
-<li><a href="http://technet.microsoft.com/en-us/library/cc766465%28v=ws.10%29.aspx">http://technet.microsoft.com/en-us/library/cc766465%28v=ws.10%29.aspx</a></li>
+  <li>Tài liệu tham khảo
+    <ul>
+      <li>http://support.microsoft.com/kb/300415</li>
+      <li>http://technet.microsoft.com/en-us/library/cc766465%28v=ws.10%29.aspx</li>
+    </ul>
+  </li>
 </ul>
-</li>
-</ul>
-
 ]]></content>
-  </entry>
-  
+    </entry>
+    
 </feed>

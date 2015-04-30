@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: 
+Disallow:
 
-Sitemap: http://trphloc.github.io/sitemap.xml 
+Sitemap: http://www.trphloc.com/sitemap.xml

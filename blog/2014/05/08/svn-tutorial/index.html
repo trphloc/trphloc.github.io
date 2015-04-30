@@ -1,371 +1,332 @@
+<!doctype html>
+    <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+    <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+    <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+    <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>Hướng Dẫn Sử Dụng Subversion (Tortoise Svn) Trên Windows - Phuoc-Loc's blog</title>
-  <meta name="author" content="Phuoc-Loc Truong">
+    
+      
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Hướng dẫn sử dụng subversion (tortoise svn) trên windows - Phuoc-Loc 's blog</title>
+        <meta name="author" content="trphloc">
+        
+        <meta name="description" content="Hướng dẫn sử dụng subversion (tortoise svn) trên windows guide svn tutorial windows ##Thông tin cơ bản
+- Subversion: công cụ giúp lập trình viên &hellip;">
+        
+        <meta name="viewport" content="width=device-width">
+        <link rel="canonical" href="http://www.trphloc.com/blog/2014/05/08/svn-tutorial">
 
-  
-  <meta name="description" content="Thông tin cơ bản Subversion: công cụ giúp lập trình viên quản lý các phiên bản/sự thay đổi của mã nguồn
-Lưu ý: chỉ cập nhật các phiên bản chạy được &hellip;">
-  
+        <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic' rel='stylesheet' type='text/css'>
+        <link href="http://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet" type="text/css">
 
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link href="/favicon.png" rel="icon">
+        <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet">
+        <link href="/atom.xml" rel="alternate" title="Phuoc-Loc 's blog" type="application/atom+xml">
+    </head>
 
-  
-  <link rel="canonical" href="http://trphloc.github.io/blog/2014/05/08/svn-tutorial">
-  <link href="/favicon.png" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="Phuoc-Loc's blog" type="application/atom+xml">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-<script src="/javascripts/jquery.tableofcontents.min.js" type="text/javascript"></script>
-<script src="/javascripts/generate-toc.js" type="text/javascript"></script>
 
-  
+    <body >
 
-</head>
-
-<body   >
-  <header role="banner"><hgroup>
-  <h1><a href="/">Phuoc-Loc's blog</a></h1>
-  
-    <h2>Một số hướng dẫn ...</h2>
-  
-</hgroup>
-
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss email">
-  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-    <li><a href="trphloc@gmail.com" rel="subscribe-email" title="subscribe via email">Email</a></li>
-  
-</ul>
-  
-<form action="https://www.google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:trphloc.github.io" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
-<ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
-  <li><a href="/lat-vat">Lặt vặt</a></li>
+        <header id="header">
+    <div class="row">
+    <div class="col-xs-12 col-sm-8 col-md-4">
+        <a href="/" class="site-title">Phuoc-Loc 's blog</a>
+    </div>
+    <div class="col-xs-12 col-sm-4 col-md-8">
+        <nav>
+    <input type="checkbox" id="toggle">
+    <label for="toggle" class="toggle" data-open="Main Menu" data-close="Close Menu"></label>
+    <ul class="menu">
+    <li><a href="/">Trang chủ</a></li>
+    <li><a href="/blog/archives">Danh mục</a></li>
+    <li><a href="/lat-vat">Lặt vặt</a></li>
 </ul>
 
 </nav>
-  <div id="main">
-    <div id="content">
-      <div>
-<article class="hentry" role="article">
-  
-  <header>
-    
-      <h1 class="entry-title">Hướng Dẫn Sử Dụng Subversion (Tortoise Svn) Trên Windows</h1>
-    
-    
-      <p class="meta">
-        
 
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-05-08T10:18:39+07:00" pubdate data-updated="true">May 8<span>th</span>, 2014</time>
-        
-      </p>
-    
-  </header>
-
-
-<div class="entry-content"><!-- ================================================================= -->
-
-
-<h2>Thông tin cơ bản</h2>
-
-<ul>
-<li>Subversion: công cụ giúp lập trình viên quản lý các phiên bản/sự thay đổi của mã nguồn</li>
-<li>Lưu ý: chỉ cập nhật các phiên bản chạy được lên máy chủ</li>
-<li>Trong bài viết này hướng dẫn sử dụng công cụ Tortoise svn trên windows</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Môi trường sử dụng</h2>
-
-<ul>
-<li>Windows 8.1</li>
-<li>Tortoise svn 1.8.4</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Cài đặt</h2>
-
-<ul>
-<li>Truy cập vào trang web <a href="http://tortoisesvn.net/">http://tortoisesvn.net/</a> để tải phiên bản tortoise svn phù hợp</li>
-</ul>
-
-
-<br><img src="/images/svn tutorial 1.png"/><br>
-
-
-<ul>
-<li>Chạy chương trình và để các thông số mặc định. Sau khi cài đặt xong, kết quả như sau</li>
-</ul>
-
-
-<br><img src="/images/svn tutorial 2.png"/><br>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Một số chức năng thường sử dụng</h2>
-
-<ul>
-<li>Check-out</li>
-<li>Update</li>
-<li>Commit</li>
-<li>Show log</li>
-<li>Resovle conflict</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Hướng dẫn</h2>
-
-<ul>
-<li>Check-out: sử dụng để tải toàn bộ tài liệu trên máy chủ về thư mục làm việc
-
-<ul>
-<li>Tạo thư mục làm việc => chuột phải vào thư mục => chọn check-out
-<br><img src="/images/svn tutorial 3.png"/><br></li>
-<li>Trong màn hình Check-out: chú ý các thông tin sau
-
-<ul>
-<li>URL of repository: đường dẫn chỉ đến máy chủ</li>
-<li>Checkout directory: thư mục làm việc</li>
-<li>Checkout Depth: toàn bộ hay từng phần</li>
-<li>Revision: tải phiên bản mới nhất hay là phiên bản cũ</li>
-<li>=> Trong ví dụ này chọn phiên bản mới nhất và tải toàn bộ
-<br><img src="/images/svn tutorial 4.png"/><br></li>
-</ul>
-</li>
-<li>Kết quả sẽ tải toàn bộ về thư mục làm việc
-<br><img src="/images/svn tutorial 5.png"/><br></li>
-</ul>
-</li>
-<li>Update: đọc các thay đổi của những thành viên khác trong nhóm trên máy chủ và lưu xuống thư mục làm việc
-
-<ul>
-<li>Mở thư mục => click chuột phải => chọn update
-<br><img src="/images/svn tutorial 6.png"/><br></li>
-<li>Kết quả: sẽ hiển thị các thay đổi, tài khoản người thay đổi và ghi chú cho mỗi thay đổi
-<br><img src="/images/svn tutorial 7.png"/><br></li>
-</ul>
-</li>
-<li>Commit: cập nhật các thay đổi trong thư mục làm việc lên máy chủ
-
-<ul>
-<li>Lưu ý: phải thực hiện hành động &ldquo;update&rdquo; trước</li>
-<li>Khi thay đổi, thư mục làm việc có ký hiệu khác màu xanh lá => có thay đổi => khi làm xong 1 việc nên commit
-<br><img src="/images/svn tutorial 8.png"/><br>
-
-<ul>
-<li>Một số ký hiệu
-<br><img src="/images/svn tutorial 8 1.png"/><br></li>
-</ul>
-</li>
-<li>Thực hiện: chuột phải vào &ldquo;thư mục muốn commit&rdquo; => chọn commit &hellip;
-<br><img src="/images/svn tutorial 10.png"/><br></li>
-<li>Trong cửa sổ commit:
-
-<ul>
-<li>Xem xét các tập tin có thay đổi hoặc tập tin mới hoặc tập tin bị xóa</li>
-<li>Viết các ghi chú để dễ dàng tìm kiếm sau này
-<br><img src="/images/svn tutorial 11.png"/><br></li>
-</ul>
-</li>
-<li>Chọn Ok và được kết quả
-<br><img src="/images/svn tutorial 12.png"/><br></li>
-</ul>
-</li>
-<li>Show log: xem các thay đổi xảy trên 1 tập tin hoặc thư mục nào đó
-
-<ul>
-<li>Chuột phải vào thư mục/tập tin mới theo dõi
-<br><img src="/images/svn tutorial 13.png"/><br></li>
-<li>Trong màn hình Log messages
-
-<ul>
-<li>Danh sách các thay đổi</li>
-<li>Chọn 1 thay đổi sẽ xem được:
-
-<ul>
-<li>Các thư mục/tập tin thay đổi trong phiên bản đó</li>
-<li>Ghi chú</li>
-</ul>
-</li>
-<li>Muốn xem tập tin đã thay đổi gì có thể double-click vào tập tin đó
-<br><img src="/images/svn tutorial 14.png"/><br></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Resovle conflict: xảy ra khi 2 người dùng cùng thay đổi trên 1 tập tin
-
-<ul>
-<li>Xảy ra khi người dùng thực hiện update trước khi commit
-<br><img src="/images/svn tutorial 15.png"/><br></li>
-<li>Click chuột phải vào tập tin bị conflict và chọn chức năng edit conflict
-<br><img src="/images/svn tutorial 16.png"/><br></li>
-<li>Màn hình chỉnh sửa conflict hiện ra như sau
-<br><img src="/images/svn tutorial 17.png"/><br></li>
-<li>Click chuột phải vào dòng &ldquo;??????????????????????&rdquo; để chọn nội dung muốn dùng
-<br><img src="/images/svn tutorial 18.png"/><br></li>
-<li>Sau khi quyết định xong thì chọn đã giải quyết conflict
-<br><img src="/images/svn tutorial 19.png"/><br></li>
-<li>Kết quả như sau
-<br><img src="/images/svn tutorial 20.png"/><br></li>
-<li>Thực hiện commit như bình thường
-<br><img src="/images/svn tutorial 21.png"/><br></li>
-<li>Nhấn ok và kết thúc</li>
-</ul>
-</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
+    </div>
 </div>
 
-
-  <footer>
-    <p class="meta">
-      
-  
-
-<span class="byline author vcard">Posted by <span class="fn">trphloc</span></span>
-
-      
+</header>
 
 
+        <div id="main-content">
 
-
-
-
-
-
-  
-
-
-<time datetime="2014-05-08T10:18:39+07:00" pubdate data-updated="true">May 8<span>th</span>, 2014</time>
-      
-
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/guide/'>guide</a>, <a class='category' href='/blog/categories/svn/'>svn</a>, <a class='category' href='/blog/categories/tutorial/'>tutorial</a>, <a class='category' href='/blog/categories/windows/'>windows</a>
-  
-</span>
-
-
-    </p>
-    
-      <div class="sharing">
-  
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://trphloc.github.io/blog/2014/05/08/svn-tutorial/" data-via="" data-counturl="http://trphloc.github.io/blog/2014/05/08/svn-tutorial/" >Tweet</a>
-  
-  
-  
+            <!--[if lte IE 9]>
+<div class="row upgrade-row">
+    <div class="col-lg-12">
+        <div class="upgrade">
+            <i class="upgrade__icon fa fa-warning"></i>
+            <h1 class="upgrade__title h6">Ohnoes!</h1>
+            <p class="upgrade__text">
+                Unfortunately, certain parts of this site may not display correctly in your version of Internet Explorer!<br>
+                If possible, you should consider <a href="http://browsehappy.com/">upgrading your browser</a>.
+            </p>
+        </div>
+    </div>
 </div>
+<!-- <![endif]-->
+
+
+            
+
+            <div class="row top-xs center-sm center-md center-lg site-wrapper">
+                
+                <div class="col-xs-12 col-sm-10 col-md-8 col-lg-8">
+                
+                    <article class="article article--single">
+    <header class="article__header">
+    
+        <h1 class="article__title">Hướng dẫn sử dụng subversion (tortoise svn) trên windows</h1>
+    
 
     
-    <p class="meta">
-      
-        <a class="basic-alignment left" href="/blog/2014/04/21/setup-junit-windows/" title="Previous Post: Hướng dẫn sử dụng junit trong eclipse">&laquo; Hướng dẫn sử dụng junit trong eclipse</a>
-      
-      
-        <a class="basic-alignment right" href="/blog/2014/07/30/vector-c-plus-plus/" title="Next Post: Hướng dẫn sử dụng Vector C++">Hướng dẫn sử dụng Vector C++ &raquo;</a>
-      
-    </p>
-  </footer>
+        <div class="article__meta clearfix">
+            
+
+
+
+
+
+
+    <time class="article__date pull-left" datetime="" pubdate><i class="fa fa-calendar"></i> </time>
+
+
+
+
+            
+
+    <div class="article__tags pull-left">
+        <i class="fa fa-tags"></i>
+        <ul class="unstyled">
+        
+
+            
+                <li><a class='category' href='/blog/categories/guide/'>guide</a></li>
+            
+                <li><a class='category' href='/blog/categories/svn/'>svn</a></li>
+            
+                <li><a class='category' href='/blog/categories/tutorial/'>tutorial</a></li>
+            
+                <li><a class='category' href='/blog/categories/windows/'>windows</a></li>
+            
+        
+        </ul>
+    </div>
+
+
+            
+        </div>
+    
+</header>
+
+
+
+
+    
+<!-- ================================================================= -->
+<p>##Thông tin cơ bản
+- Subversion: công cụ giúp lập trình viên quản lý các phiên bản/sự thay đổi của mã nguồn
+- Lưu ý: chỉ cập nhật các phiên bản chạy được lên máy chủ
+- Trong bài viết này hướng dẫn sử dụng công cụ Tortoise svn trên windows
+<!-- ================================================================= -->
+##Môi trường sử dụng
+- Windows 8.1
+- Tortoise svn 1.8.4
+<!-- ================================================================= -->
+##Cài đặt
+- Truy cập vào trang web http://tortoisesvn.net/ để tải phiên bản tortoise svn phù hợp
+<br /><img src="/images/svn tutorial 1.png" /><br />
+- Chạy chương trình và để các thông số mặc định. Sau khi cài đặt xong, kết quả như sau
+<br /><img src="/images/svn tutorial 2.png" /><br />
+<!-- ================================================================= -->
+##Một số chức năng thường sử dụng
+- Check-out
+- Update
+- Commit
+- Show log
+- Resovle conflict
+<!-- ================================================================= -->
+##Hướng dẫn
+- Check-out: sử dụng để tải toàn bộ tài liệu trên máy chủ về thư mục làm việc
+	+ Tạo thư mục làm việc =&gt; chuột phải vào thư mục =&gt; chọn check-out
+	<br /><img src="/images/svn tutorial 3.png" /><br />
+	+ Trong màn hình Check-out: chú ý các thông tin sau
+		+ URL of repository: đường dẫn chỉ đến máy chủ
+		+ Checkout directory: thư mục làm việc
+		+ Checkout Depth: toàn bộ hay từng phần
+		+ Revision: tải phiên bản mới nhất hay là phiên bản cũ
+		+ =&gt; Trong ví dụ này chọn phiên bản mới nhất và tải toàn bộ
+	<br /><img src="/images/svn tutorial 4.png" /><br />
+	+ Kết quả sẽ tải toàn bộ về thư mục làm việc
+	<br /><img src="/images/svn tutorial 5.png" /><br />
+- Update: đọc các thay đổi của những thành viên khác trong nhóm trên máy chủ và lưu xuống thư mục làm việc
+	+ Mở thư mục =&gt; click chuột phải =&gt; chọn update
+	<br /><img src="/images/svn tutorial 6.png" /><br />
+	+ Kết quả: sẽ hiển thị các thay đổi, tài khoản người thay đổi và ghi chú cho mỗi thay đổi
+	<br /><img src="/images/svn tutorial 7.png" /><br />
+- Commit: cập nhật các thay đổi trong thư mục làm việc lên máy chủ
+	+ Lưu ý: phải thực hiện hành động “update” trước
+	+ Khi thay đổi, thư mục làm việc có ký hiệu khác màu xanh lá =&gt; có thay đổi =&gt; khi làm xong 1 việc nên commit
+	<br /><img src="/images/svn tutorial 8.png" /><br />
+		+ Một số ký hiệu
+		<br /><img src="/images/svn tutorial 8 1.png" /><br />
+	+ Thực hiện: chuột phải vào “thư mục muốn commit” =&gt; chọn commit …
+	<br /><img src="/images/svn tutorial 10.png" /><br />
+	+ Trong cửa sổ commit: 
+		+ Xem xét các tập tin có thay đổi hoặc tập tin mới hoặc tập tin bị xóa
+		+ Viết các ghi chú để dễ dàng tìm kiếm sau này
+	<br /><img src="/images/svn tutorial 11.png" /><br />
+	+ Chọn Ok và được kết quả
+	<br /><img src="/images/svn tutorial 12.png" /><br />
+- Show log: xem các thay đổi xảy trên 1 tập tin hoặc thư mục nào đó
+	+ Chuột phải vào thư mục/tập tin mới theo dõi
+	<br /><img src="/images/svn tutorial 13.png" /><br />
+	+ Trong màn hình Log messages
+		+ Danh sách các thay đổi
+		+ Chọn 1 thay đổi sẽ xem được:
+			+ Các thư mục/tập tin thay đổi trong phiên bản đó
+			+ Ghi chú
+		+ Muốn xem tập tin đã thay đổi gì có thể double-click vào tập tin đó
+	<br /><img src="/images/svn tutorial 14.png" /><br />
+- Resovle conflict: xảy ra khi 2 người dùng cùng thay đổi trên 1 tập tin
+	+ Xảy ra khi người dùng thực hiện update trước khi commit
+	<br /><img src="/images/svn tutorial 15.png" /><br />
+	+ Click chuột phải vào tập tin bị conflict và chọn chức năng edit conflict
+	<br /><img src="/images/svn tutorial 16.png" /><br />
+	+ Màn hình chỉnh sửa conflict hiện ra như sau
+	<br /><img src="/images/svn tutorial 17.png" /><br />
+	+ Click chuột phải vào dòng “??????????????????????” để chọn nội dung muốn dùng
+	<br /><img src="/images/svn tutorial 18.png" /><br />
+	+ Sau khi quyết định xong thì chọn đã giải quyết conflict
+	<br /><img src="/images/svn tutorial 19.png" /><br />
+	+ Kết quả như sau
+	<br /><img src="/images/svn tutorial 20.png" /><br />
+	+ Thực hiện commit như bình thường
+	<br /><img src="/images/svn tutorial 21.png" /><br />
+	+ Nhấn ok và kết thúc
+<!-- ================================================================= --></p>
+
+
+
 </article>
 
-</div>
 
-<aside class="sidebar">
-  
-    <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
+
+                </div>
+
+                
+                <aside class="sidebar col-xs-12 col-md-4 col-lg-4">
+                    <div class="row">
+
+  <img class="hero__gravatar" src="/images/gravatar.jpg" width="150" height="150">
+
     
-      <li class="post">
-        <a href="/blog/2015/03/31/bugzilla/">Bugzilla</a>
-      </li>
+
     
-      <li class="post">
-        <a href="/blog/2015/03/31/perl/">Perl</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2015/03/16/nokia-x/">Nokia X</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2015/03/06/c-plus-plus/">C++</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2015/02/04/test-management/">Test Management</a>
-      </li>
-    
-  </ul>
+<section class="social col-xs-12 col-sm-6 col-md-12">
+    <h1>
+        Follow me!
+    </h1>
+    <ul class="unstyled">
+        
+        
+        
+        
+        <li><a class="github" href="//github.com/trphloc"><i class="fa fa-github"></i> Github</a></li>
+        <li><a class="googleplus" href="//plus.google.com/117995923407783054772"><i class="fa fa-google-plus-square"></i> Google+</a></li>
+        
+        
+        
+        
+        
+        <li><a class="stackoverflow" href="//stackoverflow.com/users/4848966/phuoc-loc-truong"><i class="fa fa-stack-overflow"></i> StackOverflow</a></li>
+        <li><a class="twitter" href="//twitter.com/trphloc"><i class="fa fa-twitter"></i> Twitter</a></li>
+        <li><a class="youtube" href="//youtube.com/user/trphloc"><i class="fa fa-youtube"></i> YouTube</a></li>
+    </ul>
+</section>
+
+
+
+  <section class="hire--aside col-xs-12 col-sm-10 col-md-12">
+  <h1>Search
+  </h1>
+  <form action="http://google.com/search" method="get" >
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:www.trphloc.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+  </form>
+        </section>  
+
+    <section id="recent-posts" class="col-xs-12 col-sm-6 col-md-12">
+    <h1>Recent Posts</h1>
+    <ul class="divided">
+        
+        <li class="post">
+            <a href="/blog/2015/04/30/mono-project/">Mono-project</a>
+        </li>
+        
+        <li class="post">
+            <a href="/blog/2015/03/31/bugzilla/">Bugzilla</a>
+        </li>
+        
+        <li class="post">
+            <a href="/blog/2015/03/31/perl/">Perl</a>
+        </li>
+        
+        <li class="post">
+            <a href="/blog/2015/03/16/nokia-x/">Nokia X</a>
+        </li>
+        
+        <li class="post">
+            <a href="/blog/2015/03/06/c-plus-plus/">C++</a>
+        </li>
+        
+    </ul>
 </section>
 
 
 
 
 
-  
-</aside>
+
+</div>
+
+                </aside>
+                
+            </div>
+        </div>
+
+        
+
+    
+    
 
 
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
-  Copyright &copy; 2015 - Phuoc-Loc Truong -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+
+
+<footer class="footer">
+    <div class="row middle-xs">
+        
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <p class="footer__copyright">
+    All content copyright trphloc, email: trphloc.<br>
 </p>
 
+        </div>
+        
+        
+    </div>
 </footer>
-  
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="//crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
+<script defer src="/javascripts/octopress.js"></script>
 
 
 
@@ -373,25 +334,13 @@ Lưu ý: chỉ cập nhật các phiên bản chạy được &hellip;">
 
 
 
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = '//platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
 
 
 
-<script type="text/javascript">
-    jQuery(document).ready(function() {
-        // Put a TOC right before the entry content.
-        generateTOC('Table of Contents');
-    });
-</script>
 
 
-</body>
+
+
+    </body>
+
 </html>

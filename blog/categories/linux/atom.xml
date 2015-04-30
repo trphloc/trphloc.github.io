@@ -1,62 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Linux | Phuoc-Loc's blog]]></title>
-  <link href="http://trphloc.github.io/blog/categories/linux/atom.xml" rel="self"/>
-  <link href="http://trphloc.github.io/"/>
-  <updated>2015-03-31T14:41:44+07:00</updated>
-  <id>http://trphloc.github.io/</id>
-  <author>
-    <name><![CDATA[Phuoc-Loc Truong]]></name>
-    <email><![CDATA[trphloc@gmail.com]]></email>
-  </author>
-  <generator uri="http://octopress.org/">Octopress</generator>
+    <title><![CDATA[Category: linux | Phuoc-Loc 's blog]]></title>
+    <link href="http://www.trphloc.com/blog/categories/linux/atom.xml" rel="self"/>
+    <link href="http://www.trphloc.com/"/>
+    <updated>2015-04-30T22:22:23+07:00</updated>
+    <id>http://www.trphloc.com/</id>
+    <author>
+        <name><![CDATA[trphloc]]></name>
+        <email><![CDATA[trphloc]]></email>
+      </author>
+    <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Shell Notes]]></title>
-    <link href="http://trphloc.github.io/blog/2014/09/30/shell-notes/"/>
-    <updated>2014-09-30T17:27:38+07:00</updated>
-    <id>http://trphloc.github.io/blog/2014/09/30/shell-notes</id>
-    <content type="html"><![CDATA[<!-- ================================================================= -->
-
-
-<h2>Tạo 1 tập tin thực thi</h2>
-
-<ul>
-<li>Tạo một tập tin abc</li>
+    
+    <entry>
+        <title type="html"><![CDATA[Shell notes]]></title>
+        <link href="http://www.trphloc.com/blog/2014/09/30/shell-notes/"/>
+        <updated>2014-09-30T17:27:38+07:00</updated>
+        <id>http://www.trphloc.com/blog/2014/09/30/shell-notes</id>
+        <content type="html"><![CDATA[<ul id="markdown-toc">
+  <li><a href="#to-1-tp-tin-thc-thi">Tạo 1 tập tin thực thi</a></li>
 </ul>
 
+<!-- ================================================================= -->
 
-<p>```</p>
-
-<pre><code>#!/bin/bash
-</code></pre>
-
-<p>```</p>
-
+<h2 id="to-1-tp-tin-thc-thi">Tạo 1 tập tin thực thi</h2>
 <ul>
-<li>Chỉnh cấu hình cho tập tin có thể thực thi</li>
+  <li>Tạo một tập tin abc</li>
 </ul>
 
-
-<p>```</p>
-
-<pre><code>chmod 755 abc
-chmod +x abc
-</code></pre>
-
-<p>```</p>
+<p><code>
+	#!/bin/bash
+</code></p>
 
 <ul>
-<li>Thực thi các lệnh trong tập tin abc</li>
+  <li>Chỉnh cấu hình cho tập tin có thể thực thi</li>
 </ul>
 
+<p><code>
+	chmod 755 abc
+	chmod +x abc
+</code></p>
+
+<ul>
+  <li>Thực thi các lệnh trong tập tin abc</li>
+</ul>
 
 <p><code>
 ./abc
 </code></p>
 ]]></content>
-  </entry>
-  
+    </entry>
+    
 </feed>

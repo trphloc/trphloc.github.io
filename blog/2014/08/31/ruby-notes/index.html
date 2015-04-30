@@ -1,62 +1,58 @@
-<p>XRB&mdash;&ndash;
+<p>XRB—
 layout: post
-title: &ldquo;Ruby notes&rdquo;
+title: “Ruby notes”
 date: 2014-08-31 21:07:13 +0700
 comments: true
-author: trphloc</p>
+author: trphloc
+categories: [ruby, RubyDevKit, windows, setup, install]
+—</p>
 
-<h2>categories: [ruby, RubyDevKit, windows, setup, install]</h2>
+<ul id="markdown-toc">
+  <li><a href="#ci-t-ruby-200-trn-mi-trng-windows">Cài đặt Ruby 2.0.0 trên môi trường windows</a></li>
+  <li><a href="#ci-t-rubydevkit-trn-mi-trng-windows">Cài đặt RubyDevKit trên môi trường windows</a></li>
+  <li><a href="#ruby-trn-mac-os---maverick">Ruby trên Mac OS - Maverick</a></li>
+  <li><a href="#bundle-trn-mac-os---maverick">Bundle trên Mac OS - Maverick</a></li>
+</ul>
 
 <!-- ================================================================= -->
 
-
-<h2>Cài đặt Ruby 2.0.0 trên môi trường windows</h2>
-
+<h2 id="ci-t-ruby-200-trn-mi-trng-windows">Cài đặt Ruby 2.0.0 trên môi trường windows</h2>
 <ul>
-<li>Môi trường Windows và Ruby 2.0.0</li>
-<li>Truy cập <a href="http://rubyinstaller.org/">trang chủ của Ruby</a></li>
-<li>Vào mục <a href="http://rubyinstaller.org/downloads/">downloads</a> để tải phiên bản phù hợp (phiên bản 2.0.0)</li>
-<li>Chạy tập tin Ruby &hellip;.msi và làm theo hướng dẫn (chọn thư mục cài đặt C:\abc\Ruby200)</li>
-<li>Thêm đường dẫn &ldquo;C:\abc\Ruby200\bin&rdquo; vào biến môi trường (Environment variables) &ldquo;Path&rdquo;</li>
+  <li>Môi trường Windows và Ruby 2.0.0</li>
+  <li>Truy cập <a href="http://rubyinstaller.org/">trang chủ của Ruby</a></li>
+  <li>Vào mục <a href="http://rubyinstaller.org/downloads/">downloads</a> để tải phiên bản phù hợp (phiên bản 2.0.0)</li>
+  <li>Chạy tập tin Ruby ….msi và làm theo hướng dẫn (chọn thư mục cài đặt C:\abc\Ruby200)</li>
+  <li>Thêm đường dẫn “C:\abc\Ruby200\bin” vào biến môi trường (Environment variables) “Path”</li>
 </ul>
-
 
 <!-- ================================================================= -->
 
-
-<h2>Cài đặt RubyDevKit trên môi trường windows</h2>
-
+<h2 id="ci-t-rubydevkit-trn-mi-trng-windows">Cài đặt RubyDevKit trên môi trường windows</h2>
 <ul>
-<li>Môi trường Windows và Ruby DevKit 4.7.2</li>
-<li>Truy cập <a href="http://rubyinstaller.org/">trang chủ của Ruby</a></li>
-<li>Vào mục <a href="http://rubyinstaller.org/downloads/">downloads</a> xem và download phần Development Kit (phiên bản 4.7.2 cho 64bits tên file DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe)</li>
-<li>Chạy tập tin DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe và làm theo hướng dẫn (chọn thư mục cài đặt C:\abc\RubyDevKit)</li>
-<li>Thêm đường dẫn &ldquo;C:\abc\RubyDevKit\bin&rdquo; vào biến môi trường (Environment variables) &ldquo;Path&rdquo;</li>
+  <li>Môi trường Windows và Ruby DevKit 4.7.2</li>
+  <li>Truy cập <a href="http://rubyinstaller.org/">trang chủ của Ruby</a></li>
+  <li>Vào mục <a href="http://rubyinstaller.org/downloads/">downloads</a> xem và download phần Development Kit (phiên bản 4.7.2 cho 64bits tên file DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe)</li>
+  <li>Chạy tập tin DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe và làm theo hướng dẫn (chọn thư mục cài đặt C:\abc\RubyDevKit)</li>
+  <li>Thêm đường dẫn “C:\abc\RubyDevKit\bin” vào biến môi trường (Environment variables) “Path”</li>
 </ul>
-
 
 <!-- ================================================================= -->
 
-
-<h2>Ruby trên Mac OS &ndash; Maverick</h2>
+<h2 id="ruby-trn-mac-os---maverick">Ruby trên Mac OS - Maverick</h2>
 
 <ul>
-<li>Đã có sẵn</li>
+  <li>Đã có sẵn</li>
 </ul>
-
 
 <!-- ================================================================= -->
 
-
-<h2>Bundle trên Mac OS &ndash; Maverick</h2>
+<h2 id="bundle-trn-mac-os---maverick">Bundle trên Mac OS - Maverick</h2>
 
 <ul>
-<li>Chạy các lệnh sau</li>
+  <li>Chạy các lệnh sau</li>
 </ul>
 
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>sudo gem install bundler
-</span><span class='line'>bundle install</span></code></pre></td></tr></table></div></figure>
-
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">sudo gem install bundler
+</span><span class="line">bundle install</span></code></pre></td></tr></table></div></figure></notextile></div>

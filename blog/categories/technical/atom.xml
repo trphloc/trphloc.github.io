@@ -1,82 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Technical | Phuoc-Loc's blog]]></title>
-  <link href="http://trphloc.github.io/blog/categories/technical/atom.xml" rel="self"/>
-  <link href="http://trphloc.github.io/"/>
-  <updated>2015-03-31T14:41:44+07:00</updated>
-  <id>http://trphloc.github.io/</id>
-  <author>
-    <name><![CDATA[Phuoc-Loc Truong]]></name>
-    <email><![CDATA[trphloc@gmail.com]]></email>
-  </author>
-  <generator uri="http://octopress.org/">Octopress</generator>
+    <title><![CDATA[Category: technical | Phuoc-Loc 's blog]]></title>
+    <link href="http://www.trphloc.com/blog/categories/technical/atom.xml" rel="self"/>
+    <link href="http://www.trphloc.com/"/>
+    <updated>2015-04-30T22:22:23+07:00</updated>
+    <id>http://www.trphloc.com/</id>
+    <author>
+        <name><![CDATA[trphloc]]></name>
+        <email><![CDATA[trphloc]]></email>
+      </author>
+    <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Windows Notes]]></title>
-    <link href="http://trphloc.github.io/blog/2014/08/08/windows-notes/"/>
-    <updated>2014-08-08T18:07:41+07:00</updated>
-    <id>http://trphloc.github.io/blog/2014/08/08/windows-notes</id>
-    <content type="html"><![CDATA[<h2>Đang cập nhật</h2>
+    
+    <entry>
+        <title type="html"><![CDATA[Windows notes]]></title>
+        <link href="http://www.trphloc.com/blog/2014/08/08/windows-notes/"/>
+        <updated>2014-08-08T18:07:41+07:00</updated>
+        <id>http://www.trphloc.com/blog/2014/08/08/windows-notes</id>
+        <content type="html"><![CDATA[<ul id="markdown-toc">
+  <li><a href="#mt-s-th-thut">Một số thủ thuật</a></li>
+  <li><a href="#mt-s-lnh-command">Một số lệnh command</a></li>
+</ul>
 
 <!-- ================================================================= -->
 
-
-<h2>Một số thủ thuật</h2>
-
-<ul>
-<li>Tạo USB khôi phục cho windows, Linux, và Mac
+<h2 id="mt-s-th-thut">Một số thủ thuật</h2>
 
 <ul>
-<li><a href="http://www.pcworld.com.vn/articles/cong-nghe/lam-the-nao/2014/08/1235685/tao-usb-khoi-phuc-cho-windows-linux-mac-va-chrome-os/">Tham khảo</a></li>
+  <li>Tạo USB khôi phục cho windows, Linux, và Mac
+    <ul>
+      <li><a href="http://www.pcworld.com.vn/articles/cong-nghe/lam-the-nao/2014/08/1235685/tao-usb-khoi-phuc-cho-windows-linux-mac-va-chrome-os/">Tham khảo</a></li>
+    </ul>
+  </li>
+  <li>Phần mềm hỗ trợ download
+    <ul>
+      <li>http://www.tincongnghe.com.vn/2014/08/391621</li>
+    </ul>
+  </li>
+  <li>Ổ cứng mạng NAS - buffalo
+    <ul>
+      <li>http://ducquang415.com/view-43494/kien-thuc-co-ban-va-huong-dan-su-dung-nas-buffalo–o-cung-mang/</li>
+    </ul>
+  </li>
 </ul>
-</li>
-<li>Phần mềm hỗ trợ download
-
-<ul>
-<li><a href="http://www.tincongnghe.com.vn/2014/08/391621">http://www.tincongnghe.com.vn/2014/08/391621</a></li>
-</ul>
-</li>
-<li>Ổ cứng mạng NAS &ndash; buffalo
-
-<ul>
-<li><a href="http://ducquang415.com/view-43494/kien-thuc-co-ban-va-huong-dan-su-dung-nas-buffalo--o-cung-mang/">http://ducquang415.com/view-43494/kien-thuc-co-ban-va-huong-dan-su-dung-nas-buffalo--o-cung-mang/</a></li>
-</ul>
-</li>
-</ul>
-
 
 <!-- ================================================================= -->
 
-
-<h2>Một số lệnh command</h2>
-
+<h2 id="mt-s-lnh-command">Một số lệnh command</h2>
 <ul>
-<li>Tạo một symbolic link: mklink [[/d] | [/h] | [/j]] <Link> <Target>
-
-<ul>
-<li>/d tạo một thư mục &ndash; directory symbolic link (mặc định là tạo tập tin &ndash; file)</li>
-<li>/h tạo một hard link thay vì symbolic link</li>
-<li>/j tạo directory junction</li>
-<li>link: đường dẫn</li>
-<li>target: nơi liên kết tới</li>
-<li>Ví dụ: mklink /d \MyDocs \Users\User1\Documents tạo \MyDocs liên kết tới Documents</li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>Tạo một symbolic link: mklink [[/d]</td>
+          <td>[/h]</td>
+          <td>[/j]] <link /> <target /></td>
+        </tr>
+      </tbody>
+    </table>
+    <ul>
+      <li>/d tạo một thư mục - directory symbolic link (mặc định là tạo tập tin - file)</li>
+      <li>/h tạo một hard link thay vì symbolic link</li>
+      <li>/j tạo directory junction</li>
+      <li>link: đường dẫn</li>
+      <li>target: nơi liên kết tới</li>
+      <li>Ví dụ: mklink /d \MyDocs \Users\User1\Documents tạo \MyDocs liên kết tới Documents</li>
+    </ul>
+  </li>
+  <li>runas /user:Administrator cmd</li>
+  <li>Xóa thư mục
+    <ul>
+      <li>rmdir c:\test /s</li>
+      <li>rmdir c:\test /s /q</li>
+    </ul>
+  </li>
+  <li>where command_name: tìm vị trí của lệnh command</li>
+  <li>nslookup: truy vết domain</li>
 </ul>
-</li>
-<li>runas /user:Administrator cmd</li>
-<li>Xóa thư mục
-
-<ul>
-<li>rmdir c:\test /s</li>
-<li>rmdir c:\test /s /q</li>
-</ul>
-</li>
-<li>where command_name: tìm vị trí của lệnh command</li>
-<li>nslookup: truy vết domain</li>
-</ul>
-
 ]]></content>
-  </entry>
-  
+    </entry>
+    
 </feed>

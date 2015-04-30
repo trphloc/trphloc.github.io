@@ -1,271 +1,187 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Config | Phuoc-Loc's blog]]></title>
-  <link href="http://trphloc.github.io/blog/categories/config/atom.xml" rel="self"/>
-  <link href="http://trphloc.github.io/"/>
-  <updated>2015-03-31T14:41:44+07:00</updated>
-  <id>http://trphloc.github.io/</id>
-  <author>
-    <name><![CDATA[Phuoc-Loc Truong]]></name>
-    <email><![CDATA[trphloc@gmail.com]]></email>
-  </author>
-  <generator uri="http://octopress.org/">Octopress</generator>
+    <title><![CDATA[Category: config | Phuoc-Loc 's blog]]></title>
+    <link href="http://www.trphloc.com/blog/categories/config/atom.xml" rel="self"/>
+    <link href="http://www.trphloc.com/"/>
+    <updated>2015-04-30T22:22:23+07:00</updated>
+    <id>http://www.trphloc.com/</id>
+    <author>
+        <name><![CDATA[trphloc]]></name>
+        <email><![CDATA[trphloc]]></email>
+      </author>
+    <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Hướng Dẫn Sử Dụng Junit Trong Eclipse]]></title>
-    <link href="http://trphloc.github.io/blog/2014/04/21/setup-junit-windows/"/>
-    <updated>2014-04-21T14:16:02+07:00</updated>
-    <id>http://trphloc.github.io/blog/2014/04/21/setup-junit-windows</id>
-    <content type="html"><![CDATA[<!-- ================================================================= -->
-
-
-<h2>Giới thiệu Unit test</h2>
-
-<ul>
-<li>Unit testing là phương pháp kiểm thử được thực hiện bằng cách sử dụng các đoạn mã có cấu trúc giống như các đối tượng được xây dựng để kiểm tra các thành phần nhỏ trong hệ thống phần mềm như các lớp, hàm, thủ tục, phương thức, …</li>
-<li>Sau khi đã soạn ra các đoạn mã, quá trình unit testing có thể được thực hiện tự động, liên tục hoặc định kì được gọi để thăm dò và phát hiện các lỗi kĩ thuật trong suốt quá trình  phát triển.</li>
-<li>Các trạng thải trong quá trình unit testing
-
-<ul>
-<li>Pass</li>
-<li>Fail</li>
-<li>Ignore</li>
-</ul>
-</li>
-</ul>
-
-
+    
+    <entry>
+        <title type="html"><![CDATA[Hướng dẫn sử dụng junit trong eclipse]]></title>
+        <link href="http://www.trphloc.com/blog/2014/04/21/setup-junit-windows/"/>
+        <updated>2014-04-21T14:16:02+07:00</updated>
+        <id>http://www.trphloc.com/blog/2014/04/21/setup-junit-windows</id>
+        <content type="html"><![CDATA[
 <!-- ================================================================= -->
-
-
-<h2>Giới thiệu JUnit</h2>
-
-<ul>
-<li>Bộ xUnit là các công cụ hỗ trợ thực hiện unit testing với các ngôn ngữ khác nhau:
-
-<ul>
-<li>CppUnit dùng để test các đoạn mã viết bằng ngôn ngữ C++.</li>
-<li>NUnit dùng để test các đoạn mã viết bằng các ngôn ngữ trong .NET Framework.</li>
-<li>&hellip;</li>
-</ul>
-</li>
-<li>JUnit đã được tích hợp sẵn trong các IDE thông dụng (Netbean, Eclipse) hỗ trợ lập trình java. Nếu công cụ bạn sử dụng không hỗ trợ thì có thể download tại trang web <a href="http://www.junit.org.">http://www.junit.org.</a></li>
-</ul>
-
-
+<p>## Giới thiệu Unit test
+- Unit testing là phương pháp kiểm thử được thực hiện bằng cách sử dụng các đoạn mã có cấu trúc giống như các đối tượng được xây dựng để kiểm tra các thành phần nhỏ trong hệ thống phần mềm như các lớp, hàm, thủ tục, phương thức, …
+- Sau khi đã soạn ra các đoạn mã, quá trình unit testing có thể được thực hiện tự động, liên tục hoặc định kì được gọi để thăm dò và phát hiện các lỗi kĩ thuật trong suốt quá trình  phát triển.
+- Các trạng thải trong quá trình unit testing
+	+ Pass
+	+ Fail
+	+ Ignore
 <!-- ================================================================= -->
-
-
-<h2>Môi trường</h2>
-
-<ul>
-<li>Windows 8.1</li>
-<li><a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">JDK 7x</a></li>
-<li><a href="www.eclipse.org/downloads/">Eclipse (Phiên bản kepler)</a> và JUnit</li>
-</ul>
-
-
+## Giới thiệu JUnit
+- Bộ xUnit là các công cụ hỗ trợ thực hiện unit testing với các ngôn ngữ khác nhau:
+	+ CppUnit dùng để test các đoạn mã viết bằng ngôn ngữ C++.
+	+ NUnit dùng để test các đoạn mã viết bằng các ngôn ngữ trong .NET Framework.
+	+ …
+- JUnit đã được tích hợp sẵn trong các IDE thông dụng (Netbean, Eclipse) hỗ trợ lập trình java. Nếu công cụ bạn sử dụng không hỗ trợ thì có thể download tại trang web http://www.junit.org.
 <!-- ================================================================= -->
-
-
-<h2>Hướng dẫn sử dụng</h2>
-
-<p>Trong phần này, tôi tạo ra 1 lớp đối tượng PhanSo (thuộc tính và một số hàm) và lớp đối tượng để kiểm thử (PhanSoTest)</p>
-
-<ul>
-<li>Tao Project
-
-<ol>
-<li> Menu File => New => Project&hellip;
-<img src="http://trphloc.github.io/images/setup junit windows 2.png"/></li>
-<li> Chọn Java Project trong hộp thoại New Project và nhấn Next
-<img src="http://trphloc.github.io/images/setup junit windows 3.png"/></li>
-<li> Trong hộp thoại New Java Project điền thông tin và chọn Next
+## Môi trường
+- Windows 8.1
+- <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">JDK 7x</a>
+- <a href="www.eclipse.org/downloads/">Eclipse (Phiên bản kepler)</a> và JUnit
+<!-- ================================================================= -->
+## Hướng dẫn sử dụng
+Trong phần này, tôi tạo ra 1 lớp đối tượng PhanSo (thuộc tính và một số hàm) và lớp đối tượng để kiểm thử (PhanSoTest)</p>
 
 <ul>
-<li>Project name: tên của project</li>
-<li>Chọn jre: phiên bản của thư viện và máy ảo java
-<img src="http://trphloc.github.io/images/setup junit windows 4.png"/></li>
+  <li>Tao Project
+    <ol>
+      <li>Menu File =&gt; New =&gt; Project…
+  <img src="http://www.trphloc.com/images/setup junit windows 2.png" /></li>
+      <li>Chọn Java Project trong hộp thoại New Project và nhấn Next
+  <img src="http://www.trphloc.com/images/setup junit windows 3.png" /></li>
+      <li>Trong hộp thoại New Java Project điền thông tin và chọn Next
+        <ul>
+          <li>Project name: tên của project</li>
+          <li>Chọn jre: phiên bản của thư viện và máy ảo java
+  <img src="http://www.trphloc.com/images/setup junit windows 4.png" /></li>
+        </ul>
+      </li>
+      <li>Cấu hình thư viện (nếu không có thì để mặc định) và nhấn Finish
+  <img src="http://www.trphloc.com/images/setup junit windows 5.png" /></li>
+      <li>Kết quả</li>
+    </ol>
+
+    <p><img src="http://www.trphloc.com/images/setup junit windows 6.png" /></p>
+  </li>
+  <li>Tạo lớp trong java (PhanSo)
+    <ol>
+      <li>Click chuột phải vào thư mục src =&gt; chọn New =&gt; chọn Class
+  <img src="http://www.trphloc.com/images/setup junit windows 10.png" /></li>
+      <li>Trong hộp thoại New Java Class điền các giá trị sau và chọn Finish
+        <ul>
+          <li>Package: demo =&gt; phân nhóm các lớp đối tượng</li>
+          <li>Name: PhanSo</li>
+          <li>SuperClass: lớp cha (nếu có)</li>
+          <li>Interfaces: các interface cần thực thi (nếu có)
+  <img src="http://www.trphloc.com/images/setup junit windows 11.png" /></li>
+        </ul>
+      </li>
+      <li>Trong lớp PhanSo, định nghĩa các thuộc tính, hàm khởi tạo mặc định và hàm cộng
+  <img src="http://www.trphloc.com/images/setup junit windows 12.png" /></li>
+    </ol>
+  </li>
+  <li>Tạo lớp PhanSoTest trong test package
+    <ol>
+      <li>Chuột phải vào Project =&gt; chọn New =&gt; chọn Junit Test case
+  <img src="http://www.trphloc.com/images/setup junit windows 16.png" /></li>
+      <li>Trong hộp thoại New Junit Test case chú ý các thuộc tính sau và chọn Next
+        <ul>
+          <li>Package: tên package</li>
+          <li>Name: tên lớp</li>
+          <li>Class under Test: tên lớp được test
+  <img src="http://www.trphloc.com/images/setup junit windows 17.png" /></li>
+        </ul>
+      </li>
+      <li>Muốn test hàm/phương thức nào thì chọn và nhấn Finish
+  <img src="http://www.trphloc.com/images/setup junit windows 18.png" /></li>
+      <li>Kết quả </li>
+    </ol>
+
+    <p><img src="http://www.trphloc.com/images/setup junit windows 19.png" /></p>
+  </li>
+  <li>Sử dụng các hàm AssertXXX để so sánh kết quả
+  <img src="http://www.trphloc.com/images/setup junit windows 20.png" /></li>
+  <li>Chạy Junit bằng cách click chuột phải vào project =&gt; chọn Run as =&gt; chọn Junit
+  <img src="http://www.trphloc.com/images/setup junit windows 21.png" /></li>
 </ul>
-</li>
-<li> Cấu hình thư viện (nếu không có thì để mặc định) và nhấn Finish
-<img src="http://trphloc.github.io/images/setup junit windows 5.png"/></li>
-<li> Kết quả</li>
-</ol>
-
-
-<p>  <img src="http://trphloc.github.io/images/setup junit windows 6.png"/></p></li>
-<li>Tạo lớp trong java (PhanSo)
-
-<ol>
-<li> Click chuột phải vào thư mục src => chọn New => chọn Class
-<img src="http://trphloc.github.io/images/setup junit windows 10.png"/></li>
-<li> Trong hộp thoại New Java Class điền các giá trị sau và chọn Finish
-
-<ul>
-<li>Package: demo => phân nhóm các lớp đối tượng</li>
-<li>Name: PhanSo</li>
-<li>SuperClass: lớp cha (nếu có)</li>
-<li>Interfaces: các interface cần thực thi (nếu có)
-<img src="http://trphloc.github.io/images/setup junit windows 11.png"/></li>
-</ul>
-</li>
-<li> Trong lớp PhanSo, định nghĩa các thuộc tính, hàm khởi tạo mặc định và hàm cộng
-<img src="http://trphloc.github.io/images/setup junit windows 12.png"/></li>
-</ol>
-</li>
-<li>Tạo lớp PhanSoTest trong test package
-
-<ol>
-<li> Chuột phải vào Project => chọn New => chọn Junit Test case
-<img src="http://trphloc.github.io/images/setup junit windows 16.png"/></li>
-<li> Trong hộp thoại New Junit Test case chú ý các thuộc tính sau và chọn Next
-
-<ul>
-<li>Package: tên package</li>
-<li>Name: tên lớp</li>
-<li>Class under Test: tên lớp được test
-<img src="http://trphloc.github.io/images/setup junit windows 17.png"/></li>
-</ul>
-</li>
-<li> Muốn test hàm/phương thức nào thì chọn và nhấn Finish
-<img src="http://trphloc.github.io/images/setup junit windows 18.png"/></li>
-<li> Kết quả</li>
-</ol>
-
-
-<p>  <img src="http://trphloc.github.io/images/setup junit windows 19.png"/></p></li>
-<li>Sử dụng các hàm AssertXXX để so sánh kết quả
-  <img src="http://trphloc.github.io/images/setup junit windows 20.png"/></li>
-<li>Chạy Junit bằng cách click chuột phải vào project => chọn Run as => chọn Junit
-  <img src="http://trphloc.github.io/images/setup junit windows 21.png"/></li>
-</ul>
-
 ]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Cài đặt Wamp và Cấu Hình Dreamweaver để Chạy Php]]></title>
-    <link href="http://trphloc.github.io/blog/2014/04/18/setup-wamp-and-config-dreamweaver/"/>
-    <updated>2014-04-18T14:16:02+07:00</updated>
-    <id>http://trphloc.github.io/blog/2014/04/18/setup-wamp-and-config-dreamweaver</id>
-    <content type="html"><![CDATA[<!-- ================================================================= -->
-
-
-<h2>Giới thiệu</h2>
-
-<ul>
-<li>Cài đặt phần mềm để lập trình php => dành cho người mới bắt đầu</li>
-<li>Cấu hình dreamweaver để viết code và chạy thử php</li>
-</ul>
-
-
+    </entry>
+    
+    <entry>
+        <title type="html"><![CDATA[Cài đặt wamp và cấu hình dreamweaver để chạy php]]></title>
+        <link href="http://www.trphloc.com/blog/2014/04/18/setup-wamp-and-config-dreamweaver/"/>
+        <updated>2014-04-18T14:16:02+07:00</updated>
+        <id>http://www.trphloc.com/blog/2014/04/18/setup-wamp-and-config-dreamweaver</id>
+        <content type="html"><![CDATA[
 <!-- ================================================================= -->
-
-
-<h2>Môi trường</h2>
-
-<ul>
-<li>Windows 8.1</li>
-<li>Wamp</li>
-<li>Dreamweaver CS6 và CS3</li>
-</ul>
-
-
+<p>## Giới thiệu
+- Cài đặt phần mềm để lập trình php =&gt; dành cho người mới bắt đầu
+- Cấu hình dreamweaver để viết code và chạy thử php
 <!-- ================================================================= -->
-
-
-<h2>Cài đặt wamp</h2>
-
-<ul>
-<li>Truy cập <a href="http://www.wampserver.com/en/">trang web của wamp</a></li>
-<li>Vào mục download để tải phiên bản phù hợp (chú ý win 32bits hay 64bits) => tập tin &ldquo;Wampserver xxx.exe&rdquo;</li>
-<li>Chạy tập tin để cài đặt (nên để mặc định) => có thể chọn thư mục cài đặt (C:\wamp)</li>
-<li>Sau khi cài xong, chạy wampserver sẽ có biểu tưởng màu xanh trên taskbar của windows như hình bên dưới<br>
-<img src="http://trphloc.github.io/images/2014-04-18-setup-wamp-and-config-dreamweaver 1.png"/> <br></li>
-<li>Nếu biểu tượng màu cam thì có thể do đụng độ port => Chỉnh lại như sau: <br></li>
-</ul>
-
-
+## Môi trường
+- Windows 8.1
+- Wamp
+- Dreamweaver CS6 và CS3
+<!-- ================================================================= -->
+## Cài đặt wamp
+- Truy cập <a href="http://www.wampserver.com/en/">trang web của wamp</a>
+- Vào mục download để tải phiên bản phù hợp (chú ý win 32bits hay 64bits) =&gt; tập tin “Wampserver xxx.exe”
+- Chạy tập tin để cài đặt (nên để mặc định) =&gt; có thể chọn thư mục cài đặt (C:\wamp)
+- Sau khi cài xong, chạy wampserver sẽ có biểu tưởng màu xanh trên taskbar của windows như hình bên dưới<br />
+<img src="http://www.trphloc.com/images/2014-04-18-setup-wamp-and-config-dreamweaver 1.png" /> <br />
+- Nếu biểu tượng màu cam thì có thể do đụng độ port =&gt; Chỉnh lại như sau: <br /></p>
 <ol>
-<li> Chuột trái vào biểu tượng => apache => httpd.conf <br> </li>
-<img src="http://trphloc.github.io/images/2014-04-18-setup-wamp-and-config-dreamweaver 2.png"/> <br>
+<li> Chuột trái vào biểu tượng =&gt; apache =&gt; httpd.conf <br /> </li>
+<img src="http://www.trphloc.com/images/2014-04-18-setup-wamp-and-config-dreamweaver 2.png" /> <br />
 <li> Tìm vào chỉnh port cho phù hợp: như trong hình là 8082 </li>
-<img src="http://trphloc.github.io/images/2014-04-18-setup-wamp-and-config-dreamweaver 3.png"/>
+<img src="http://www.trphloc.com/images/2014-04-18-setup-wamp-and-config-dreamweaver 3.png" />
 <li> Khởi động lại tất cả services </li>
-<img src="http://trphloc.github.io/images/2014-04-18-setup-wamp-and-config-dreamweaver 4.png"/>
+<img src="http://www.trphloc.com/images/2014-04-18-setup-wamp-and-config-dreamweaver 4.png" />
 </ol>
-
-
 <ul>
-<li>Kết quả
-<img src="http://trphloc.github.io/images/2014-04-18-setup-wamp-and-config-dreamweaver 11.png"/></li>
-</ul>
-
-
-<br>
-
-
+  <li>Kết quả
+<img src="http://www.trphloc.com/images/2014-04-18-setup-wamp-and-config-dreamweaver 11.png" />
+<br />
 <!-- ================================================================= -->
-
-
-<h2>Thực thi tập tin *.php</h2>
-
-<ul>
-<li>Sao chép vào thư mục &ldquo;&lt;Thư mục cài đặt>\www&rdquo; => Ví dụ: thư mục &ldquo;abc&rdquo; chứa tập tin &ldquo;1.php&rdquo; trong &ldquo;www&rdquo;
-<img src="http://trphloc.github.io/images/2014-04-18-setup-wamp-and-config-dreamweaver 5.png"/></li>
-<li>Chạy tập tin &ldquo;1.php&rdquo; bằng cách sử dụng đường link &ldquo;<a href="http://localhost:8082/abc/1.php">http://localhost:8082/abc/1.php</a>&rdquo;
-<img src="http://trphloc.github.io/images/2014-04-18-setup-wamp-and-config-dreamweaver 6.png"/></li>
-</ul>
-
-
-<br>
-
-
+## Thực thi tập tin *.php</li>
+  <li>Sao chép vào thư mục “<thư mục="" cài="" đặt="">\www" =&gt; Ví dụ: thư mục "abc" chứa tập tin "1.php" trong "www"
+<img src="http://www.trphloc.com/images/2014-04-18-setup-wamp-and-config-dreamweaver 5.png" /></thư></li>
+  <li>Chạy tập tin “1.php” bằng cách sử dụng đường link “http://localhost:8082/abc/1.php”
+<img src="http://www.trphloc.com/images/2014-04-18-setup-wamp-and-config-dreamweaver 6.png" />
+<br />
 <!-- ================================================================= -->
-
-
-<h2>Thực thi tập tin *.php sử dụng dreamweaver CS6</h2>
-
+## Thực thi tập tin *.php sử dụng dreamweaver CS6</li>
+</ul>
 <ol>
 <li> Tạo site </li>
-<img src="http://trphloc.github.io/images/2014-04-18-setup-wamp-and-config-dreamweaver 7.png"/>
+<img src="http://www.trphloc.com/images/2014-04-18-setup-wamp-and-config-dreamweaver 7.png" />
 <li>Thông tin của site </li>
-<img src="http://trphloc.github.io/images/2014-04-18-setup-wamp-and-config-dreamweaver 8.png"/>
-<li>Thông tin server của site => lưu ý thông tin trong <b>"Server Folder"</b> và <b>"Web Url"</b> </li>
-<img src="http://trphloc.github.io/images/2014-04-18-setup-wamp-and-config-dreamweaver 9.png"/>
-<img src="http://trphloc.github.io/images/2014-04-18-setup-wamp-and-config-dreamweaver 10.png"/>
+<img src="http://www.trphloc.com/images/2014-04-18-setup-wamp-and-config-dreamweaver 8.png" />
+<li>Thông tin server của site =&gt; lưu ý thông tin trong <b>"Server Folder"</b> và <b>"Web Url"</b> </li>
+<img src="http://www.trphloc.com/images/2014-04-18-setup-wamp-and-config-dreamweaver 9.png" />
+<img src="http://www.trphloc.com/images/2014-04-18-setup-wamp-and-config-dreamweaver 10.png" />
 <li>Sau đó có thể chạy bằng F12 </li>
 </ol>
-
-
-<br>
-
-
+<p><br />
 <!-- ================================================================= -->
-
-
-<h2>Thực thi tập tin *.php sử dụng dreamweaver CS3</h2>
-
+## Thực thi tập tin *.php sử dụng dreamweaver CS3</p>
 <ol>
 <li> Tạo site: tên site và đường dẫn thực thi </li>
-<img src="http://trphloc.github.io/images/2014-04-18-setup-wamp-and-config-dreamweaver 12.png"/>
+<img src="http://www.trphloc.com/images/2014-04-18-setup-wamp-and-config-dreamweaver 12.png" />
 <li> Chọn ngôn ngữ thực thi là php và mysql</li>
-<img src="http://trphloc.github.io/images/2014-04-18-setup-wamp-and-config-dreamweaver 13.png"/>
+<img src="http://www.trphloc.com/images/2014-04-18-setup-wamp-and-config-dreamweaver 13.png" />
 <li> Chọn thư mục chứa các tập tin php </li>
-<img src="http://trphloc.github.io/images/2014-04-18-setup-wamp-and-config-dreamweaver 14.png"/>
+<img src="http://www.trphloc.com/images/2014-04-18-setup-wamp-and-config-dreamweaver 14.png" />
 <li> Chọn thư mục bên trong server </li>
-<img src="http://trphloc.github.io/images/2014-04-18-setup-wamp-and-config-dreamweaver 15.png"/>
+<img src="http://www.trphloc.com/images/2014-04-18-setup-wamp-and-config-dreamweaver 15.png" />
 <li> Chọn lại đường dẫn khi thực thi </li>
-<img src="http://trphloc.github.io/images/2014-04-18-setup-wamp-and-config-dreamweaver 16.png"/>
-<li> Chọn done và xong => nhớ kiểm thư mục sẽ thực thi trong wamp </li>
-<img src="http://trphloc.github.io/images/2014-04-18-setup-wamp-and-config-dreamweaver 17.png"/>
-<img src="http://trphloc.github.io/images/2014-04-18-setup-wamp-and-config-dreamweaver 18.png"/>
+<img src="http://www.trphloc.com/images/2014-04-18-setup-wamp-and-config-dreamweaver 16.png" />
+<li> Chọn done và xong =&gt; nhớ kiểm thư mục sẽ thực thi trong wamp </li>
+<img src="http://www.trphloc.com/images/2014-04-18-setup-wamp-and-config-dreamweaver 17.png" />
+<img src="http://www.trphloc.com/images/2014-04-18-setup-wamp-and-config-dreamweaver 18.png" />
 </ol>
-
 ]]></content>
-  </entry>
-  
+    </entry>
+    
 </feed>

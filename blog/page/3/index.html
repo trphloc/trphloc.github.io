@@ -1,1808 +1,1980 @@
+<!doctype html>
+    <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+    <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+    <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+    <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>Phuoc-Loc's blog</title>
-  <meta name="author" content="Phuoc-Loc Truong">
+    
+      
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Phuoc-Loc 's blog</title>
+        <meta name="author" content="trphloc">
+        
+        <meta name="description" content="eclipse notes Eclipse development Một số phím tắt Windows Mac Một số thư mục/tập tin tự phát sinh trong eclipse (có thể xóa) Cài đặt Maven trên &hellip;">
+        
+        <meta name="viewport" content="width=device-width">
+        <link rel="canonical" href="http://www.trphloc.com/blog/page/3">
 
-  
-  <meta name="description" content="Một số lệnh trên terminate sudo: thực hiện lệch dưới quyền admin
-ls: liệt kê danh sách tập tin ls | tr &lsquo;\n&rsquo; &lsquo;\n&rsquo; cd: di &hellip;">
-  
+        <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic' rel='stylesheet' type='text/css'>
+        <link href="http://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet" type="text/css">
 
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link href="/favicon.png" rel="icon">
+        <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet">
+        <link href="/atom.xml" rel="alternate" title="Phuoc-Loc 's blog" type="application/atom+xml">
+    </head>
 
-  
-  <link rel="canonical" href="http://trphloc.github.io/blog/page/3">
-  <link href="/favicon.png" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="Phuoc-Loc's blog" type="application/atom+xml">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-<script src="/javascripts/jquery.tableofcontents.min.js" type="text/javascript"></script>
-<script src="/javascripts/generate-toc.js" type="text/javascript"></script>
 
-  
+    <body >
 
-</head>
-
-<body   >
-  <header role="banner"><hgroup>
-  <h1><a href="/">Phuoc-Loc's blog</a></h1>
-  
-    <h2>Một số hướng dẫn ...</h2>
-  
-</hgroup>
-
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss email">
-  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-    <li><a href="trphloc@gmail.com" rel="subscribe-email" title="subscribe via email">Email</a></li>
-  
-</ul>
-  
-<form action="https://www.google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:trphloc.github.io" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
-<ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
-  <li><a href="/lat-vat">Lặt vặt</a></li>
+        <header id="header">
+    <div class="row">
+    <div class="col-xs-12 col-sm-8 col-md-4">
+        <a href="/" class="site-title">Phuoc-Loc 's blog</a>
+    </div>
+    <div class="col-xs-12 col-sm-4 col-md-8">
+        <nav>
+    <input type="checkbox" id="toggle">
+    <label for="toggle" class="toggle" data-open="Main Menu" data-close="Close Menu"></label>
+    <ul class="menu">
+    <li><a href="/">Trang chủ</a></li>
+    <li><a href="/blog/archives">Danh mục</a></li>
+    <li><a href="/lat-vat">Lặt vặt</a></li>
 </ul>
 
 </nav>
-  <div id="main">
-    <div id="content">
-      <div class="blog-index">
-  
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/08/01/mac-os-notes/">Mac Notes</a></h1>
-    
-    
-      <p class="meta">
-        
 
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-08-01T21:23:57+07:00" pubdate data-updated="true">Aug 1<span>st</span>, 2014</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><!-- ================================================================= -->
-
-
-<h2>Một số lệnh trên terminate</h2>
-
-<ul>
-<li>sudo: thực hiện lệch dưới quyền admin</li>
-<li>ls: liệt kê danh sách tập tin
-
-<ul>
-<li>ls | tr &lsquo;\n&rsquo; &lsquo;\n&rsquo;</li>
-</ul>
-</li>
-<li>cd: di chuyển tới thư mục</li>
-<li>sudo chmod -R 777 XXX: chỉnh permission của thư mục XXX (-R: bao gồm cả thư mục con)</li>
-<li>chmod +x file: chuyển thành tập tin thực thi được</li>
-<li>sudo chown -R trphloc:admin /directory => thay đổi chủ sở hữu của thư mục</li>
-<li>Tìm vị trí của lệnh: which name</li>
-<li>Thêm đường dẫn tới biến PATH
-
-<ul>
-<li>export PATH=xxx:$PATH</li>
-<li>Chỉnh sửa tập tin .profile trong thư mục home</li>
-</ul>
-</li>
-<li>Tạo một liên kết (symbolic link): chi tiết <a href="http://linux.about.com/od/commands/l/blcmdl1_ln.htm">link1</a> <a href="http://hints.macworld.com/article.php?story=2001110610290643">link2</a>
-
-<ul>
-<li>Di chuyển tới thư mục cần tạo</li>
-<li>ln -Ffhinsv src dis => src: thư mục cần liên kết, dis tên liên kết</li>
-<li>Vd: ln -s /Volumes/Classic/ Classic</li>
-</ul>
-</li>
-<li>uname -a: thông tin hệ thống</li>
-<li>df -h: thông tin lưu trữ</li>
-<li>source scripts: thực thi scripts</li>
-<li>Hiển thị tất cả tập tin trong Finder (thực thi 2 lệnh sau)
-
-<ul>
-<li>defaults write com.apple.finder AppleShowAllFiles YES</li>
-<li>killall Finder /System/Library/CoreServices/Finder.app</li>
-<li>Nếu muốn hiển thị bình thường thì chỉnh YES thành NO trong câu lệnh 1</li>
-</ul>
-</li>
-<li>rm file_name: xóa tập tin</li>
-<li>rm -rf directory_name: xóa thư mục (r: recursive, f: force)</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Một số lệnh sử dụng monitor hệ thống</h2>
-
-<ul>
-<li>opensnoop:
-
-<ul>
-<li>sudo opensnoop -n applicationName</li>
-<li>sudo opensnoop -p PID</li>
-<li>sudo opensnoop -f filename</li>
-<li>Tham khảo: <a href="http://osxdaily.com/2010/10/06/monitor-how-and-when-a-process-accesses-files-with-opensnoop/">http://osxdaily.com/2010/10/06/monitor-how-and-when-a-process-accesses-files-with-opensnoop/</a></li>
-</ul>
-</li>
-<li>Tham khảo: <a href="http://dtrace.org/blogs/brendan/2011/10/10/top-10-dtrace-scripts-for-mac-os-x/">http://dtrace.org/blogs/brendan/2011/10/10/top-10-dtrace-scripts-for-mac-os-x/</a></li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Một số thao tác</h2>
-
-<ul>
-<li>Ctrol-Shift-Power: sleep</li>
-<li>Power (2s): hộp thoại sleep/shutdown/restart</li>
-<li>Command-C: copy</li>
-<li>Command-V: paste</li>
-<li>Command-Option-V: paste (cut)</li>
-<li>Command-M: thu nhỏ màn hình</li>
-<li>Command-Tab và phím lên/xuống: để di chuyển đến màn hình đang thu nhỏ</li>
-<li>Command-Shift-3: chụp toàn bộ màn hình (4: chụp 1 phần)</li>
-<li>Danh sách phím tắt: <a href="http://support.apple.com/kb/ht1343">tham khảo</a></li>
-<li>Delete: chức năng backspace</li>
-<li>Fn-Delete: chức năng delete</li>
-<li>Thay đổi shortcut của chương trình: <a href="http://lifehacker.com/5720087/how-to-remap-any-keyboard-shortcut-in-mac-os-x">http://lifehacker.com/5720087/how-to-remap-any-keyboard-shortcut-in-mac-os-x</a>
-
-<ul>
-<li>Thay đổi paste (cut) thành Control-Command-V: System References => Keyboard => Shortcuts => chọn App Shortcuts => Nhấn dấu + => chọn Finder => điền <strong>Move Item Here</strong> trong menu tile => chọn phím <strong>Control-Command-V</strong> trong Keyboard Shortcuts => chọn OK.</li>
-</ul>
-</li>
-</ul>
-
-
-<h3>Sử dụng các phím F1, F2, &hellip; như mặc định</h3>
-
-<ul>
-<li>Trong MAC, dòng phím trên cùng là kết hợp của F1, F2, &hellip; và các chức năng. Muốn sử dụng các phím F1, F2, &hellip; phải dùng kèm với phím fn</li>
-<li>Để F1, F2, &hellip; là mặc định thì chỉnh như sau
-
-<ul>
-<li>Chạy System Preferences từ Apple menu.</li>
-<li>Chọn Keyboard (hoặc Keyboard &amp; Mouse trong Mac OS X v10.5.8 và các phiên bản sớm hơn).</li>
-<li>Chọn Keyboard, nếu có</li>
-<li>Chọn enable &ldquo;Use all F1, F2, etc. keys as standard function keys.&rdquo;</li>
-</ul>
-</li>
-</ul>
-
-
-<h3>Cấu hình zoom</h3>
-
-<ul>
-<li>System Preference => Accessibility => trong phần bên trái chọn zoom và chỉnh phím tắt cho phù hợp</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Apache</h2>
-
-<ul>
-<li>Cài đặt
-
-<ul>
-<li>Đã được cài mặt định trong mac</li>
-<li>Tham khảo: <a href="http://jason.pureconcepts.net/2012/10/install-apache-php-mysql-mac-os-x/">link</a></li>
-</ul>
-</li>
-<li>Sử dụng
-
-<ul>
-<li>sudo su</li>
-<li>apachectl start: khởi động => chạy localhost sẽ thấy &ldquo;It works&rdquo;</li>
-<li>apachectl restart</li>
-</ul>
-</li>
-<li>Kích hoạt php
-
-<ul>
-<li>Sao lưu tập tin cấu hình
-
-<ul>
-<li>cd /etc/apache2/</li>
-<li>cp httpd.conf httpd.conf.bak</li>
-</ul>
-</li>
-<li>Thay đổi tập tin cấu hình bằng chương trình vi
-
-<ul>
-<li>vi httpd.conf</li>
-<li>Bỏ dấu # trước dòng LoadModule php5_module libexec/apache2/libphp5.sLoado</li>
-<li>Bỏ dấu # trước module CGI để có thực thi được một số ngôn ngữ scripts khác</li>
-</ul>
-</li>
-<li>Lưu lại và khởi động lại</li>
-</ul>
-</li>
-<li>Tạo virtualHosts
-
-<ul>
-<li>&ldquo;<a href="http://localhost/somesite/">http://localhost/somesite/</a>&rdquo; liên kết với &ldquo;/Library/WebServer/Documents/somesite&rdquo;</li>
-</ul>
-</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>MySQL sử dụng xampp</h2>
-
-<ul>
-<li>Tạo symbolic link của tập tin my.cnf</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>sudo ln -Ffhinsv /Applications/XAMPP/etc/my.cnf /etc/my.cnf</span></code></pre></td></tr></table></div></figure>
-
-
-
-
-<!-- ================================================================= -->
-
-
-<h2>MySQL</h2>
-
-<ul>
-<li>Cài đặt
-
-<ul>
-<li>Download tại trang <a href="http://dev.mysql.com/downloads/mysql/">http://dev.mysql.com/downloads/mysql/</a></li>
-<li>Cài đặt</li>
-<li>Cập nhật đường dẫn path tới mysql (khi khởi động không cần đường dẫn)
-
-<ul>
-<li>export PATH=/usr/local/mysql/bin:$PATH</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Sử dụng
-
-<ul>
-<li>Lệnh mysql để chạy</li>
-<li>Đăng nhập: mysql -u username</li>
-<li>Hiển thị danh sách người dùng (root)
-
-<ul>
-<li>select * from mysql.user;</li>
-<li>desc mysql.user;</li>
-<li>select host, user, password from mysql.user;</li>
-</ul>
-</li>
-<li>Tạo người dùng: (root)
-
-<ul>
-<li>CREATE USER &lsquo;admin&rsquo;@&lsquo;localhost&rsquo;;</li>
-<li>GRANT ALL PRIVILEGES ON <em>.</em> TO &lsquo;admin&rsquo;@&lsquo;localhost&rsquo;;</li>
-</ul>
-</li>
-<li>Cập nhật mật khẩu: (root)
-
-<ul>
-<li>UPDATE mysql.user SET Password=PASSWORD(&lsquo;YOUR_PASSWORD&rsquo;) WHERE Host=&lsquo;localhost&rsquo; AND User=&lsquo;root&rsquo;;</li>
-</ul>
-</li>
-<li>Phân quyền cho database
-
-<ul>
-<li>GRANT ALL ON mydb.* TO &lsquo;someuser&rsquo;@&lsquo;somehost&rsquo;;</li>
-</ul>
-</li>
-<li>Tạo cơ sở dữ liệu: create database name</li>
-<li>Khởi động nhanh server: sudo /usr/local/mysql/support-files/mysql.server start (nếu cập nhật path thì không cần đường dẫn)</li>
-<li>Dừng: sudo /usr/local/mysql/support-files/mysql.server stop</li>
-<li>Khởi động lại: sudo /usr/local/mysql/support-files/mysql.server restart</li>
-<li>Bật log để theo dõi các thay đổi trên mysql (tất cả)</li>
-</ul>
-</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>SET GLOBAL log_output = "FILE"; //which is set by default.
-</span><span class='line'>    SET GLOBAL general_log_file = "/path/to/your/logfile.log";
-</span><span class='line'>    SET GLOBAL general_log = 'ON';</span></code></pre></td></tr></table></div></figure>
-
-
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>SET GLOBAL log_output = 'TABLE';
-</span><span class='line'>    SET GLOBAL general_log = 'ON';
-</span><span class='line'>    //Take a look at the table mysql.general_log</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>Một số lỗi:
-
-<ul>
-<li>Warning: mysql_connect(): [2002] No such file or directory
-
-<ul>
-<li>Nếu có <em>/tmp/mysql.sock</em> và không có <em>/var/mysql/mysql.sock</em>
-
-<ul>
-<li>cd /var</li>
-<li>sudo mkdir mysql</li>
-<li>sudo chmod 755 mysql</li>
-<li>cd mysql</li>
-<li>ln -s /tmp/mysql.sock mysql.sock</li>
-</ul>
-</li>
-<li>Nếu không có <em>/tmp/mysql.sock</em> và có <em>/var/mysql/mysql.sock</em>
-
-<ul>
-<li>cd /tmp</li>
-<li>ln -s /var/mysql/mysql.sock mysql.sock</li>
-<li>Tham khảo: <a href="http://stackoverflow.com/questions/4219970/warning-mysql-connect-2002-no-such-file-or-directory-trying-to-connect-vi">http://stackoverflow.com/questions/4219970/warning-mysql-connect-2002-no-such-file-or-directory-trying-to-connect-vi</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Lỗi trên không cần sửa => có thể start mysql trong System References
-
-<ul>
-<li>Tham khảo:
-
-<ul>
-<li><a href="http://stackoverflow.com/questions/1676688/php-mysql-connection-not-working-2002-no-such-file-or-directory">http://stackoverflow.com/questions/1676688/php-mysql-connection-not-working-2002-no-such-file-or-directory</a></li>
-<li><a href="http://stackoverflow.com/questions/26514757/how-to-get-mysql-server-working-after-osx-yosemite-upgrade/26523977#26523977">http://stackoverflow.com/questions/26514757/how-to-get-mysql-server-working-after-osx-yosemite-upgrade/26523977#26523977</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>PHP</h2>
-
-<ul>
-<li>Cài đặt 5.5 <a href="http://coolestguidesontheplanet.com/upgrade-to-php-5-4-or-5-5-mac-osx-10-8-mountain-lion/">link</a>
-
-<ul>
-<li>curl -s <a href="http://php-osx.liip.ch/install.sh">http://php-osx.liip.ch/install.sh</a> | bash -s 5.5</li>
-</ul>
-</li>
-<li>Cài đặt <strong>mcrypt</strong>
-
-<ul>
-<li>Cài đặt <strong>Xcode command line tools</strong> (nếu chưa có): xcode-select &mdash;install</li>
-<li>Tạo thư mục <strong>mcrypt</strong> trong thư mục home
-
-<ul>
-<li>cd ~</li>
-<li>mkdir mcrypt</li>
-</ul>
-</li>
-<li>Download libmcrypt từ <a href="http://sourceforge.net/projects/mcrypt/files/Libmcrypt/">sourceforge</a> hoặc <a href="files/libmcrypt-2.5.8.tar.gz">phiên bản 2.5.6</a></li>
-<li>Vào thư mục mcrypt, giải nén tập tin mới download và xóa tập tin nén
-
-<ul>
-<li>cd ~/mcrypt</li>
-<li>tar -zxvf libmcrypt-2.5.8.tar.gz</li>
-<li>rm *.gz</li>
-</ul>
-</li>
-<li>Vào thư mục libmcrypt và cài đặt
-
-<ul>
-<li>cd ~/mcrypt/libmcrypt-2.5.8</li>
-<li>./configure</li>
-<li>make</li>
-<li>sudo make install</li>
-</ul>
-</li>
-<li>Tải Autoconf và cài đặt
-
-<ul>
-<li>Tải tại đường dẫn <a href="http://ftp.gnu.org/gnu/autoconf/autoconf-latest.tar.gz">http://ftp.gnu.org/gnu/autoconf/autoconf-latest.tar.gz</a> hoặc <a href="files/autoconf-latest.tar.gz">tại đây</a></li>
-<li>Giải nén vào thư mục ~/mcrypt</li>
-<li>cd ~/mcrypt/autoconf-2.69</li>
-<li>./configure</li>
-<li>make</li>
-<li>sudo make install</li>
-</ul>
-</li>
-<li>Biên dịch mcrypt php extension
-
-<ul>
-<li>Tải src của php tại đường dẫn <a href="http://php.net/releases/index.php">http://php.net/releases/index.php</a> hoặc <a href="files/php-5.5.16.tar.gz">tại đây</a></li>
-<li>Giải nén vào thư mục ~/mcrypt</li>
-<li>cd ~/mcrypt/php-5.5.16/ext/mcrypt/</li>
-<li>/usr/bin/phpize => Kết quả: <img src="/images/php-mcrypt1.png"></li>
-<li>./configure</li>
-<li>make</li>
-<li>sudo make install => Kết quả: <img src="/images/php-mcrypt2.png" ></li>
-</ul>
-</li>
-<li>Kích hoạt mcrypt.so hay một số module khác của php
-
-<ul>
-<li>Mở tập tin /etc/php.ini (nếu chưa có thì copy từ /etc/php.ini.default</li>
-<li>Thêm dòng &ldquo;extension=mcrypt.so&rdquo;</li>
-</ul>
-</li>
-<li>Khởi động lại apache => sudo apachectl restart</li>
-<li>Tham khảo: <a href="http://coolestguidesontheplanet.com/how-to-install-mcrypt-for-php-on-mac-osx-lion-10-7-development-server/">10.7 và 10.8</a> hoặc <a href="http://coolestguidesontheplanet.com/install-mcrypt-php-mac-osx-10-9-mavericks-development-server/">10.9</a></li>
-</ul>
-</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Kết nối PHP và MySQL</h2>
-
-<ul>
-<li>Sư dụng các lệnh sau (phải chạy dưới quyền root)
-
-<ul>
-<li>cd /var</li>
-<li>mkdir mysql</li>
-<li>cd mysql</li>
-<li>ln -s /tmp/mysql.sock mysql.sock</li>
-</ul>
-</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>vi editor</h2>
-
-<ul>
-<li>Sử dụng
-
-<ul>
-<li>Bắt đầu: vi tentaptin</li>
-<li>Thoát và lưu: ZZ hoặc :wq</li>
-<li>Thoát và không lưu: :q</li>
-<li>Lưu: :w</li>
-</ul>
-</li>
-<li>Di chuyển trang
-
-<ul>
-<li>G &ndash; di chuyển tới dòng cuối cùng trong tập tin</li>
-<li>xG &ndash; di chuyển tơí dòng x</li>
-<li>^F &ndash; pagedown</li>
-<li>^D &ndash; pagedown</li>
-<li>^U &ndash; pageup</li>
-</ul>
-</li>
-<li>Thêm
-
-<ul>
-<li>r &ndash; thay ký tự ngay con trỏ bằng ký tự liền sau</li>
-<li>i &ndash; thêm trước con trỏ</li>
-<li>a &ndash; thêm sau con trỏ</li>
-<li>A &ndash; thêm vào cuối dòng</li>
-</ul>
-</li>
-<li>Xoá
-
-<ul>
-<li>x &ndash; xóa ký tự ngay con trỏ</li>
-<li>dd &ndash; xóa dòng ngay con trỏ</li>
-<li>dw &ndash; xóa từ ngay con trỏ</li>
-<li>db &ndash; xóa từ trước con trỏ</li>
-</ul>
-</li>
-<li>Tìm kiếm
-
-<ul>
-<li>? &ndash; tìm từ phía sau</li>
-<li>/ &ndash; tìm từ phía trước</li>
-</ul>
-</li>
-<li><a href="http://www.cs.rit.edu/~cslab/vi.html">Tham khảo</a></li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Homebrew</h2>
-
-<ul>
-<li>Chạy lệnh sau trong terminal</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>Tham khảo: <a href="http://brew.sh/">http://brew.sh/</a></li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Axel &ndash; chương trình hỗ trợ download</h2>
-
-<h3>Cài đặt</h3>
-
-<ul>
-<li><b>Phải cài đặt homebrew trước</b>, thực thi lệnh sau</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>brew install axel</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>Sử dụng</h3>
-
-<ul>
-<li>axel url</li>
-<li>Ví dụ: axel -n 10 <a href="http://example.com/some_file.mov">http://example.com/some_file.mov</a></li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Aria2 &ndash; chương trình hỗ trợ download</h2>
-
-<h3>Cài đặt</h3>
-
-<ul>
-<li><b>Phải cài đặt homebrew trước</b>, thực thi lệnh sau</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>brew install aria2</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>Sử dụng</h3>
-
-<ul>
-<li>aria2c [options]</li>
-<li>Một số tham số</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>-d, --dir=&lt;DIR&gt;</span></code></pre></td></tr></table></div></figure>
-
-
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>-i, --input-file=&lt;FILE&gt;</span></code></pre></td></tr></table></div></figure>
-
-
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>-l, --log=&lt;LOG&gt;</span></code></pre></td></tr></table></div></figure>
-
-
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>-j, --max-concurrent-downloads=&lt;N&gt;</span></code></pre></td></tr></table></div></figure>
-
-
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>-V, --check-integrity[=true|false]</span></code></pre></td></tr></table></div></figure>
-
-
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>-c, --continue[=true|false]</span></code></pre></td></tr></table></div></figure>
-
-
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>-h, --help[=&lt;TAG&gt;|&lt;KEYWORD&gt;]</span></code></pre></td></tr></table></div></figure>
-
-
-
-
-<!-- ================================================================= -->
-
-
-<h2>p7zip &ndash; chương trình nén và giải nén tập tin/thư mục</h2>
-
-<h3>Cài đặt</h3>
-
-<ul>
-<li><b>Phải cài đặt homebrew trước</b>, thực thi lệnh sau để cài đặt</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>brew install p7zip</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>Tạo symbolic link trong thư mục /bin bằng lệnh sau</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>sudo ln -s /usr/local/lib/p7zip/7za /bin/7za</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>Sử dụng</h3>
-
-<ul>
-<li>7za x a.zip -o* => giải nén tập tin a vào thư mục a</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
-<span class='line-number'>33</span>
-<span class='line-number'>34</span>
-<span class='line-number'>35</span>
-<span class='line-number'>36</span>
-<span class='line-number'>37</span>
-<span class='line-number'>38</span>
-<span class='line-number'>39</span>
-<span class='line-number'>40</span>
-<span class='line-number'>41</span>
-<span class='line-number'>42</span>
-<span class='line-number'>43</span>
-<span class='line-number'>44</span>
-<span class='line-number'>45</span>
-<span class='line-number'>46</span>
-<span class='line-number'>47</span>
-<span class='line-number'>48</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>Usage: 7za &lt;command&gt; [&lt;switches&gt;...] &lt;archive_name&gt; [&lt;file_names&gt;...]
-</span><span class='line'>       [&lt;@listfiles...&gt;]
-</span><span class='line'>
-</span><span class='line'>&lt;Commands&gt;
-</span><span class='line'>  a: Add files to archive
-</span><span class='line'>  b: Benchmark
-</span><span class='line'>  d: Delete files from archive
-</span><span class='line'>  e: Extract files from archive (without using directory names)
-</span><span class='line'>  l: List contents of archive
-</span><span class='line'>  t: Test integrity of archive
-</span><span class='line'>  u: Update files to archive
-</span><span class='line'>  x: eXtract files with full paths
-</span><span class='line'>&lt;Switches&gt;
-</span><span class='line'>  -ai[r[-|0]]{@listfile|!wildcard}: Include archives
-</span><span class='line'>  -ax[r[-|0]]{@listfile|!wildcard}: eXclude archives
-</span><span class='line'>  -bd: Disable percentage indicator
-</span><span class='line'>  -i[r[-|0]]{@listfile|!wildcard}: Include filenames
-</span><span class='line'>  -m{Parameters}: set compression Method
-</span><span class='line'>  -o{Directory}: set Output directory
-</span><span class='line'>  -p{Password}: set Password
-</span><span class='line'>  -r[-|0]: Recurse subdirectories
-</span><span class='line'>  -scs{UTF-8 | WIN | DOS}: set charset for list files
-</span><span class='line'>  -sfx[{name}]: Create SFX archive
-</span><span class='line'>  -si[{name}]: read data from stdin
-</span><span class='line'>  -slt: show technical information for l (List) command
-</span><span class='line'>  -so: write data to stdout
-</span><span class='line'>  -ssc[-]: set sensitive case mode
-</span><span class='line'>  -t{Type}: Set type of archive
-</span><span class='line'>  -u[-][p#][q#][r#][x#][y#][z#][!newArchiveName]: Update options
-</span><span class='line'>  -v{Size}[b|k|m|g]: Create volumes
-</span><span class='line'>  -w[{path}]: assign Work directory. Empty path means a temporary directory
-</span><span class='line'>  -x[r[-|0]]]{@listfile|!wildcard}: eXclude filenames
-</span><span class='line'>  -y: assume Yes on all queries
-</span><span class='line'>
-</span><span class='line'>$ ./7za a 7za.7z 7za 
-</span><span class='line'>
-</span><span class='line'>7-Zip (A) [64] 9.20  Copyright (c) 1999-2010 Igor Pavlov  2010-11-18
-</span><span class='line'>p7zip Version 9.20 (locale=de_DE.UTF-8,Utf16=on,HugeFiles=on,4 CPUs)
-</span><span class='line'>Scanning
-</span><span class='line'>
-</span><span class='line'>Creating archive 7za.7z
-</span><span class='line'>
-</span><span class='line'>Compressing  7za      
-</span><span class='line'>
-</span><span class='line'>Everything is Ok
-</span><span class='line'>
-</span><span class='line'>$ ls
-</span><span class='line'>7za    7za.7z</span></code></pre></td></tr></table></div></figure>
-
-
-
-
-<!-- ================================================================= -->
-
-
-<h2>unrar &ndash; chương trình giải nén tập tin rar</h2>
-
-<h3>Cài đặt</h3>
-
-<ul>
-<li><b>Phải cài đặt homebrew trước</b>, thực thi lệnh sau để cài đặt</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>brew install unrar</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>Tạo symbolic link trong thư mục /bin bằng lệnh sau</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>sudo ln -s /usr/local/bin/unrar /bin/unrar</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>Sử dụng</h3>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>unrar -pPASSWORD -y -ad x &lt;filename&gt;</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>Tham khảo</h3>
-
-<ul>
-<li><a href="http://best-mac-tips.com/2013/02/02/extract-rar-archive-command-line-mac-terminal/">http://best-mac-tips.com/2013/02/02/extract-rar-archive-command-line-mac-terminal/</a></li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Excel</h2>
-
-<ul>
-<li>Ctrl-U: sửa ô hiện hành</li>
-<li>Command-T: chuyển đổi địa chỉ trong công thức thành tuyệt đối, tương đối</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Cài đặt java</h2>
-
-<ul>
-<li>JDK 7</li>
-<li>JavaForOSX2014-001 => <a href="http://support.apple.com/kb/DL1572?viewlocale=en_US&amp;locale=en_US">http://support.apple.com/kb/DL1572?viewlocale=en_US&amp;locale=en_US</a></li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Cài đặt lập trình android</h2>
-
-<ul>
-<li>Android studio: <a href="http://developer.android.com/sdk/index.html">http://developer.android.com/sdk/index.html</a></li>
-<li>Virtual box: <a href="https://www.virtualbox.org/wiki/Downloads">https://www.virtualbox.org/wiki/Downloads</a></li>
-<li>Genymotion: <a href="https://www.genymotion.com/#!/">https://www.genymotion.com/#!/</a></li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Phần mềm đọc tập tin chm</h2>
-
-<ul>
-<li>Tên phần mềm: ichm</li>
-<li>Link: <a href="https://code.google.com/p/ichm/">https://code.google.com/p/ichm/</a></li>
-</ul>
-
+    </div>
 </div>
-  
-  
+
+</header>
 
 
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/07/30/vector-c-plus-plus/">Hướng Dẫn Sử Dụng Vector C++</a></h1>
-    
-    
-      <p class="meta">
-        
+        <div id="main-content">
 
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-07-30T11:29:24+07:00" pubdate data-updated="true">Jul 30<span>th</span>, 2014</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><!-- ================================================================= -->
-
-
-<h2>Đang cập nhật</h2>
-
-<h2>Các phần và hàm thường dùng</h2>
-
-<ul>
-<li>Iterator &ndash; duyệt</li>
-<li>Capacity &ndash; số lượng</li>
-<li>Element access &ndash; truy cập từng phần tử</li>
-<li>Modifiers &ndash; thêm/xóa</li>
-<li>Tài liệu tham khảo: <a href="http://www.cplusplus.com/reference/vector/vector/">http://www.cplusplus.com/reference/vector/vector/</a></li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Iterators &ndash; duyệt</h2>
-
-<ul>
-<li>begin: vị trí bắt đầu</li>
-<li>end: vị trí kết thúc</li>
-<li>rbegin: vị trí bắt đầu của danh sách đảo ngược</li>
-<li>rend: vị trí kết thúc của danh sách đảo ngược</li>
-<li>cbegin, cend, crbegin, crend: không thay đổi &hellip;</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Capacity &ndash; số lượng</h2>
-
-<ul>
-<li>size: số lượng phần tử</li>
-<li>maxsize: số lượng tối đa</li>
-<li>resize: thay đổi số lượng</li>
-<li>empty: kiểm tra rỗng</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Element access &ndash; truy cập từng phần tử</h2>
-
-<ul>
-<li>operator[]: truy cập phần tử thứ i</li>
-<li>at: truy cập phần tử thứ i</li>
-<li>front: truy cập phần tử đầu tiên</li>
-<li>back: truy cập phần tử cuối cùng</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Modifiers &ndash; thêm/xóa</h2>
-
-<ul>
-<li>push_back: thêm phần tử vào cuối</li>
-<li>pop_back: xóa phần tử cuối</li>
-<li>insert: thêm phần tử</li>
-<li>erase: xóa phần tử</li>
-<li>swap:</li>
-<li>clear:</li>
-</ul>
-
+            <!--[if lte IE 9]>
+<div class="row upgrade-row">
+    <div class="col-lg-12">
+        <div class="upgrade">
+            <i class="upgrade__icon fa fa-warning"></i>
+            <h1 class="upgrade__title h6">Ohnoes!</h1>
+            <p class="upgrade__text">
+                Unfortunately, certain parts of this site may not display correctly in your version of Internet Explorer!<br>
+                If possible, you should consider <a href="http://browsehappy.com/">upgrading your browser</a>.
+            </p>
+        </div>
+    </div>
 </div>
-  
-  
+<!-- <![endif]-->
 
 
-    </article>
-  
-  
-    <article>
-      
-  <header>
+            
+
+            <div class="row top-xs center-sm center-md center-lg site-wrapper">
+                
+                <div class="col-xs-12 col-sm-10 col-md-8 col-lg-8">
+                
+                        
     
-      <h1 class="entry-title"><a href="/blog/2014/05/08/svn-tutorial/">Hướng Dẫn Sử Dụng Subversion (Tortoise Svn) Trên Windows</a></h1>
-    
-    
-      <p class="meta">
         
+        <article class="article article--index">
+            <header class="article__header">
+    
+        <h1 class="h2 article__title">
+            <a href="/blog/2014/08/05/eclipse-notes/">eclipse notes</a>
+        </h1>
+    
+
+    
+        <div class="article__meta clearfix">
+            
 
 
 
 
 
 
+    <time class="article__date pull-left" datetime="" pubdate><i class="fa fa-calendar"></i> </time>
 
 
-  
 
 
-<time datetime="2014-05-08T10:18:39+07:00" pubdate data-updated="true">May 8<span>th</span>, 2014</time>
+            
+
+    <div class="article__tags pull-left">
+        <i class="fa fa-tags"></i>
+        <ul class="unstyled">
         
-      </p>
+            
+                <li><a class='category' href='/blog/categories/eclipse/'>Eclipse</a></li>
+            
+                <li><a class='category' href='/blog/categories/development/'>development</a></li>
+            
+            
+        </ul>
+    </div>
+
+
+            
+        </div>
     
-  </header>
+</header>
 
 
-  <div class="entry-content"><!-- ================================================================= -->
 
 
-<h2>Thông tin cơ bản</h2>
-
-<ul>
-<li>Subversion: công cụ giúp lập trình viên quản lý các phiên bản/sự thay đổi của mã nguồn</li>
-<li>Lưu ý: chỉ cập nhật các phiên bản chạy được lên máy chủ</li>
-<li>Trong bài viết này hướng dẫn sử dụng công cụ Tortoise svn trên windows</li>
+    <ul id="markdown-toc">
+  <li><a href="#mt-s-phm-tt">Một số phím tắt</a>    <ul>
+      <li><a href="#windows">Windows</a></li>
+      <li><a href="#mac">Mac</a></li>
+    </ul>
+  </li>
+  <li><a href="#mt-s-th-mctp-tin-t-pht-sinh-trong-eclipse-c-th-xa">Một số thư mục/tập tin tự phát sinh trong eclipse (có thể xóa)</a></li>
+  <li><a href="#ci-t-maven-trn-windows">Cài đặt Maven trên windows</a></li>
+  <li><a href="#ci-t-tomcat-trn-windows">Cài đặt Tomcat trên windows</a></li>
+  <li><a href="#pht-sinh-keystore">Phát sinh keystore</a></li>
+  <li><a href="#ci-t-plugin">Cài đặt plugin</a>    <ul>
+      <li><a href="#cch-1">Cách 1</a></li>
+      <li><a href="#cch-2">Cách 2</a></li>
+    </ul>
+  </li>
 </ul>
-
 
 <!-- ================================================================= -->
 
+<h2 id="mt-s-phm-tt">Một số phím tắt</h2>
 
-<h2>Môi trường sử dụng</h2>
+<h3 id="windows">Windows</h3>
 
 <ul>
-<li>Windows 8.1</li>
-<li>Tortoise svn 1.8.4</li>
+  <li><b>Ctrl + Shift + L: xem danh sách phím tắt</b></li>
+  <li>Alt + Shift + Q, P: xem package explorer</li>
+  <li>Alt + Shift + Q, C: xem console</li>
+  <li>Alt + Shift + Q, L: xem error Log</li>
+  <li>Alt + F5: update project</li>
+  <li>Ctrl + Shift + O: thêm các thư viện còn thiếu</li>
+  <li>Ctrl + Shift + R: mở tập tin workspace</li>
+  <li>Ctrl + Shift + T: mở tập tin trong jar, thư viện, …</li>
+  <li>Ctrl + H: tìm kiếm</li>
+  <li>Ctrl + M: phóng to cửa sổ hiện hành</li>
+  <li>Alt + F7: Next Page</li>
+  <li>Alt + Page down: Next sub-tab</li>
+  <li>Ctrl + F6: Next Editor</li>
+  <li>Ctrl + F7: Next View</li>
+  <li>Ctrl + 1: quick fix</li>
 </ul>
 
+<h3 id="mac">Mac</h3>
+
+<ul>
+  <li><b> CMD + Shift + L: xem danh sách phím tắt </b></li>
+  <li>Alt + CMD + Q, P: xem package explorer</li>
+  <li>Alt + CMD + Q, C: xem console</li>
+  <li>Alt + CMD + Q, L: xem error log</li>
+  <li>Alt + F5: update project</li>
+  <li>CMD + Shift + O: thêm các thư viện còn thiếu</li>
+  <li>CMD + Shift + R: mở tập tin workspace</li>
+  <li>CMD + Shift + T: mở tập tin trong jar, thư viện, …</li>
+  <li>CMD + H: tìm kiếm</li>
+  <li>Ctrl + M: phóng to cửa sổ hiện hành</li>
+  <li>CMD + F6: Next Editor</li>
+  <li>CMD + F7: Next View</li>
+</ul>
 
 <!-- ================================================================= -->
 
+<h2 id="mt-s-th-mctp-tin-t-pht-sinh-trong-eclipse-c-th-xa">Một số thư mục/tập tin tự phát sinh trong eclipse (có thể xóa)</h2>
 
-<h2>Cài đặt</h2>
-
-<ul>
-<li>Truy cập vào trang web <a href="http://tortoisesvn.net/">http://tortoisesvn.net/</a> để tải phiên bản tortoise svn phù hợp</li>
-</ul>
-
-
-<br><img src="/images/svn tutorial 1.png"/><br>
-
-
-<ul>
-<li>Chạy chương trình và để các thông số mặc định. Sau khi cài đặt xong, kết quả như sau</li>
-</ul>
-
-
-<br><img src="/images/svn tutorial 2.png"/><br>
-
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">.settings
+</span><span class="line">.classpath
+</span><span class="line">.project
+</span><span class="line">gen
+</span><span class="line">bin
+</span><span class="line">target</span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <!-- ================================================================= -->
 
-
-<h2>Một số chức năng thường sử dụng</h2>
-
+<h2 id="ci-t-maven-trn-windows">Cài đặt Maven trên windows</h2>
 <ul>
-<li>Check-out</li>
-<li>Update</li>
-<li>Commit</li>
-<li>Show log</li>
-<li>Resovle conflict</li>
+  <li>Link to download: <a href="http://maven.apache.org/download.cgi">Apache maven</a>
+    <ul>
+      <li>Tải tập tin nhị phân mới nhất (tùy vào phiên bản)</li>
+    </ul>
+  </li>
+  <li>Giải nén vào thư mục. Ví dụ: C\abc\Maven</li>
+  <li>Điền đường dẫn “C\abc\Maven\bin” vào biến tài nguyên của windows</li>
 </ul>
-
 
 <!-- ================================================================= -->
 
-
-<h2>Hướng dẫn</h2>
-
+<h2 id="ci-t-tomcat-trn-windows">Cài đặt Tomcat trên windows</h2>
 <ul>
-<li>Check-out: sử dụng để tải toàn bộ tài liệu trên máy chủ về thư mục làm việc
-
-<ul>
-<li>Tạo thư mục làm việc => chuột phải vào thư mục => chọn check-out
-<br><img src="/images/svn tutorial 3.png"/><br></li>
-<li>Trong màn hình Check-out: chú ý các thông tin sau
-
-<ul>
-<li>URL of repository: đường dẫn chỉ đến máy chủ</li>
-<li>Checkout directory: thư mục làm việc</li>
-<li>Checkout Depth: toàn bộ hay từng phần</li>
-<li>Revision: tải phiên bản mới nhất hay là phiên bản cũ</li>
-<li>=> Trong ví dụ này chọn phiên bản mới nhất và tải toàn bộ
-<br><img src="/images/svn tutorial 4.png"/><br></li>
+  <li>Link to download: <a href="http://tomcat.apache.org/download-70.cgi">Apache tomcat 7.0</a></li>
+  <li>Giải nén vào thư mục. ví dụ: C\abc\Tomcat7.0</li>
+  <li>Mở Eclipse =&gt; menu windows =&gt; chọn preferences =&gt; chọn Server =&gt; chọn Runtime Environments</li>
+  <li>Nhấn nút Add =&gt; chọn Apache =&gt; chọn Apache tomcat 7.0 =&gt; chọn Next</li>
+  <li>Chọn đường dẫn C\abc\Tomcat7.0 và JRE phù hợp</li>
+  <li>Chọn Finish</li>
 </ul>
-</li>
-<li>Kết quả sẽ tải toàn bộ về thư mục làm việc
-<br><img src="/images/svn tutorial 5.png"/><br></li>
-</ul>
-</li>
-<li>Update: đọc các thay đổi của những thành viên khác trong nhóm trên máy chủ và lưu xuống thư mục làm việc
-
-<ul>
-<li>Mở thư mục => click chuột phải => chọn update
-<br><img src="/images/svn tutorial 6.png"/><br></li>
-<li>Kết quả: sẽ hiển thị các thay đổi, tài khoản người thay đổi và ghi chú cho mỗi thay đổi
-<br><img src="/images/svn tutorial 7.png"/><br></li>
-</ul>
-</li>
-<li>Commit: cập nhật các thay đổi trong thư mục làm việc lên máy chủ
-
-<ul>
-<li>Lưu ý: phải thực hiện hành động &ldquo;update&rdquo; trước</li>
-<li>Khi thay đổi, thư mục làm việc có ký hiệu khác màu xanh lá => có thay đổi => khi làm xong 1 việc nên commit
-<br><img src="/images/svn tutorial 8.png"/><br>
-
-<ul>
-<li>Một số ký hiệu
-<br><img src="/images/svn tutorial 8 1.png"/><br></li>
-</ul>
-</li>
-<li>Thực hiện: chuột phải vào &ldquo;thư mục muốn commit&rdquo; => chọn commit &hellip;
-<br><img src="/images/svn tutorial 10.png"/><br></li>
-<li>Trong cửa sổ commit:
-
-<ul>
-<li>Xem xét các tập tin có thay đổi hoặc tập tin mới hoặc tập tin bị xóa</li>
-<li>Viết các ghi chú để dễ dàng tìm kiếm sau này
-<br><img src="/images/svn tutorial 11.png"/><br></li>
-</ul>
-</li>
-<li>Chọn Ok và được kết quả
-<br><img src="/images/svn tutorial 12.png"/><br></li>
-</ul>
-</li>
-<li>Show log: xem các thay đổi xảy trên 1 tập tin hoặc thư mục nào đó
-
-<ul>
-<li>Chuột phải vào thư mục/tập tin mới theo dõi
-<br><img src="/images/svn tutorial 13.png"/><br></li>
-<li>Trong màn hình Log messages
-
-<ul>
-<li>Danh sách các thay đổi</li>
-<li>Chọn 1 thay đổi sẽ xem được:
-
-<ul>
-<li>Các thư mục/tập tin thay đổi trong phiên bản đó</li>
-<li>Ghi chú</li>
-</ul>
-</li>
-<li>Muốn xem tập tin đã thay đổi gì có thể double-click vào tập tin đó
-<br><img src="/images/svn tutorial 14.png"/><br></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Resovle conflict: xảy ra khi 2 người dùng cùng thay đổi trên 1 tập tin
-
-<ul>
-<li>Xảy ra khi người dùng thực hiện update trước khi commit
-<br><img src="/images/svn tutorial 15.png"/><br></li>
-<li>Click chuột phải vào tập tin bị conflict và chọn chức năng edit conflict
-<br><img src="/images/svn tutorial 16.png"/><br></li>
-<li>Màn hình chỉnh sửa conflict hiện ra như sau
-<br><img src="/images/svn tutorial 17.png"/><br></li>
-<li>Click chuột phải vào dòng &ldquo;??????????????????????&rdquo; để chọn nội dung muốn dùng
-<br><img src="/images/svn tutorial 18.png"/><br></li>
-<li>Sau khi quyết định xong thì chọn đã giải quyết conflict
-<br><img src="/images/svn tutorial 19.png"/><br></li>
-<li>Kết quả như sau
-<br><img src="/images/svn tutorial 20.png"/><br></li>
-<li>Thực hiện commit như bình thường
-<br><img src="/images/svn tutorial 21.png"/><br></li>
-<li>Nhấn ok và kết thúc</li>
-</ul>
-</li>
-</ul>
-
 
 <!-- ================================================================= -->
 
-</div>
-  
-  
+<h2 id="pht-sinh-keystore">Phát sinh keystore</h2>
+<ul>
+  <li>Mở cmd</li>
+  <li>Chạy lệnh và làm theo hướng dẫn: keytool -genkey -alias tomcat -keyalg RSA </li>
+  <li>Keystore sẽ được lưu trong: “C:\Users\trphloc.keystore” (trphloc: là tên tài khoản trên máy)</li>
+  <li>Vào thư mục cài đặt tomcat (C:\abc\Tomcat7.0) =&gt; vào thư mục conf =&gt; mở tập tin server.xml</li>
+  <li>Tìm đoạn sau</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>linenos:true </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">&lt;!--
+</span><span class="line">&lt;Connector port="8443" protocol="HTTP/1.1" SSLEnabled="true"
+</span><span class="line">    maxThreads="150" scheme="https" secure="true"
+</span><span class="line">    clientAuth="false" sslProtocol="TLS" /&gt;
+</span><span class="line">--&gt;</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<ul>
+  <li>Bỏ comment và sửa thành như sau: trong đó “password” thay bằng password của bạn khi tạo keystore</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>linenos:true </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">Connector SSLEnabled="true" acceptCount="100" clientAuth="false"
+</span><span class="line">    disableUploadTimeout="true" enableLookups="false" maxThreads="25"
+</span><span class="line">    port="8443" keystoreFile="/Users/loiane/.keystore" keystorePass="password"
+</span><span class="line">    protocol="org.apache.coyote.http11.Http11NioProtocol" scheme="https"
+</span><span class="line">    secure="true" sslProtocol="TLS" /&gt;</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<!-- ================================================================= -->
+
+<h2 id="ci-t-plugin">Cài đặt plugin</h2>
+
+<h3 id="cch-1">Cách 1</h3>
+
+<ul>
+  <li>Menu Help =&gt; chọn Install New Software</li>
+  <li>Chọn add site:
+    <ul>
+      <li>Gõ tên: …</li>
+      <li>Gõ đường dẫn đến server</li>
+    </ul>
+  </li>
+  <li>Chọn plugin cần cài đặt trong danh sách bên dưới</li>
+  <li>Chọn next</li>
+  <li>Chọn accept và next …</li>
+</ul>
+
+<h3 id="cch-2">Cách 2</h3>
+
+<ul>
+  <li>Vào menu Help =&gt; Eclipse Marketplace =&gt; Gõ “tên” vào ô tìm kiếm =&gt; chọn tìm</li>
+  <li>Chọn install</li>
+  <li>Chọn all và nhấn nút Confirm</li>
+</ul>
 
 
-    </article>
-  
-  
-    <article>
-      
-  <header>
+
+        </article>
+        <hr>
     
-      <h1 class="entry-title"><a href="/blog/2014/04/21/setup-junit-windows/">Hướng Dẫn Sử Dụng Junit Trong Eclipse</a></h1>
-    
-    
-      <p class="meta">
         
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-04-21T14:16:02+07:00" pubdate data-updated="true">Apr 21<span>st</span>, 2014</time>
-        
-      </p>
+        <article class="article article--index">
+            <header class="article__header">
     
-  </header>
+        <h1 class="h2 article__title">
+            <a href="/blog/2014/08/01/mac-os-notes/">Mac notes</a>
+        </h1>
+    
+
+    
+        <div class="article__meta clearfix">
+            
 
 
-  <div class="entry-content"><!-- ================================================================= -->
 
 
-<h2>Giới thiệu Unit test</h2>
 
-<ul>
-<li>Unit testing là phương pháp kiểm thử được thực hiện bằng cách sử dụng các đoạn mã có cấu trúc giống như các đối tượng được xây dựng để kiểm tra các thành phần nhỏ trong hệ thống phần mềm như các lớp, hàm, thủ tục, phương thức, …</li>
-<li>Sau khi đã soạn ra các đoạn mã, quá trình unit testing có thể được thực hiện tự động, liên tục hoặc định kì được gọi để thăm dò và phát hiện các lỗi kĩ thuật trong suốt quá trình  phát triển.</li>
-<li>Các trạng thải trong quá trình unit testing
 
-<ul>
-<li>Pass</li>
-<li>Fail</li>
-<li>Ignore</li>
+    <time class="article__date pull-left" datetime="" pubdate><i class="fa fa-calendar"></i> </time>
+
+
+
+
+            
+
+    <div class="article__tags pull-left">
+        <i class="fa fa-tags"></i>
+        <ul class="unstyled">
+        
+            
+                <li><a class='category' href='/blog/categories/mac/'>Mac</a></li>
+            
+                <li><a class='category' href='/blog/categories/terminal/'>Terminal</a></li>
+            
+                <li><a class='category' href='/blog/categories/apache/'>apache</a></li>
+            
+                <li><a class='category' href='/blog/categories/mysql/'>mysql</a></li>
+            
+                <li><a class='category' href='/blog/categories/php/'>php</a></li>
+            
+            
+        </ul>
+    </div>
+
+
+            
+        </div>
+    
+</header>
+
+
+
+
+    <ul id="markdown-toc">
+  <li><a href="#mt-s-lnh-trn-terminate">Một số lệnh trên terminate</a></li>
+  <li><a href="#mt-s-lnh-s-dng-monitor-h-thng">Một số lệnh sử dụng monitor hệ thống</a></li>
+  <li><a href="#mt-s-thao-tc">Một số thao tác</a>    <ul>
+      <li><a href="#s-dng-cc-phm-f1-f2--nh-mc-nh">Sử dụng các phím F1, F2, … như mặc định</a></li>
+      <li><a href="#cu-hnh-zoom">Cấu hình zoom</a></li>
+    </ul>
+  </li>
+  <li><a href="#apache">Apache</a></li>
+  <li><a href="#mysql-s-dng-xampp">MySQL sử dụng xampp</a></li>
+  <li><a href="#mysql">MySQL</a></li>
+  <li><a href="#php">PHP</a></li>
+  <li><a href="#kt-ni-php-v-mysql">Kết nối PHP và MySQL</a></li>
+  <li><a href="#vi-editor">vi editor</a></li>
+  <li><a href="#homebrew">Homebrew</a></li>
+  <li><a href="#axel---chng-trnh-h-tr-download">Axel - chương trình hỗ trợ download</a>    <ul>
+      <li><a href="#ci-t">Cài đặt</a></li>
+      <li><a href="#s-dng">Sử dụng</a></li>
+    </ul>
+  </li>
+  <li><a href="#aria2---chng-trnh-h-tr-download">Aria2 - chương trình hỗ trợ download</a>    <ul>
+      <li><a href="#ci-t-1">Cài đặt</a></li>
+      <li><a href="#s-dng-1">Sử dụng</a></li>
+    </ul>
+  </li>
+  <li><a href="#p7zip---chng-trnh-nn-v-gii-nn-tp-tinth-mc">p7zip - chương trình nén và giải nén tập tin/thư mục</a>    <ul>
+      <li><a href="#ci-t-2">Cài đặt</a></li>
+      <li><a href="#s-dng-2">Sử dụng</a></li>
+    </ul>
+  </li>
+  <li><a href="#unrar---chng-trnh-gii-nn-tp-tin-rar">unrar - chương trình giải nén tập tin rar</a>    <ul>
+      <li><a href="#ci-t-3">Cài đặt</a></li>
+      <li><a href="#s-dng-3">Sử dụng</a></li>
+      <li><a href="#tham-kho">Tham khảo</a></li>
+    </ul>
+  </li>
+  <li><a href="#excel">Excel</a></li>
+  <li><a href="#ci-t-java">Cài đặt java</a></li>
+  <li><a href="#ci-t-lp-trnh-android">Cài đặt lập trình android</a></li>
+  <li><a href="#phn-mm-c-tp-tin-chm">Phần mềm đọc tập tin chm</a></li>
 </ul>
-</li>
-</ul>
-
 
 <!-- ================================================================= -->
 
-
-<h2>Giới thiệu JUnit</h2>
-
+<h2 id="mt-s-lnh-trn-terminate">Một số lệnh trên terminate</h2>
 <ul>
-<li>Bộ xUnit là các công cụ hỗ trợ thực hiện unit testing với các ngôn ngữ khác nhau:
-
-<ul>
-<li>CppUnit dùng để test các đoạn mã viết bằng ngôn ngữ C++.</li>
-<li>NUnit dùng để test các đoạn mã viết bằng các ngôn ngữ trong .NET Framework.</li>
-<li>&hellip;</li>
+  <li>sudo: thực hiện lệch dưới quyền admin</li>
+  <li>ls: liệt kê danh sách tập tin
+    <ul>
+      <li>
+        <table>
+          <tbody>
+            <tr>
+              <td>ls</td>
+              <td>tr ‘\n’ ‘\n’</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+    </ul>
+  </li>
+  <li>cd: di chuyển tới thư mục</li>
+  <li>sudo chmod -R 777 XXX: chỉnh permission của thư mục XXX (-R: bao gồm cả thư mục con)</li>
+  <li>chmod +x file: chuyển thành tập tin thực thi được</li>
+  <li>sudo chown -R trphloc:admin /directory =&gt; thay đổi chủ sở hữu của thư mục</li>
+  <li>Tìm vị trí của lệnh: which name</li>
+  <li>Thêm đường dẫn tới biến PATH
+    <ul>
+      <li>export PATH=xxx:$PATH</li>
+      <li>Chỉnh sửa tập tin .profile trong thư mục home</li>
+    </ul>
+  </li>
+  <li>Tạo một liên kết (symbolic link): chi tiết <a href="http://linux.about.com/od/commands/l/blcmdl1_ln.htm">link1</a> <a href="http://hints.macworld.com/article.php?story=2001110610290643">link2</a>
+    <ul>
+      <li>Di chuyển tới thư mục cần tạo</li>
+      <li>ln -Ffhinsv src dis =&gt; src: thư mục cần liên kết, dis tên liên kết</li>
+      <li>Vd: ln -s /Volumes/Classic/ Classic</li>
+    </ul>
+  </li>
+  <li>uname -a: thông tin hệ thống</li>
+  <li>df -h: thông tin lưu trữ</li>
+  <li>source scripts: thực thi scripts</li>
+  <li>Hiển thị tất cả tập tin trong Finder (thực thi 2 lệnh sau)
+    <ul>
+      <li>defaults write com.apple.finder AppleShowAllFiles YES</li>
+      <li>killall Finder /System/Library/CoreServices/Finder.app</li>
+      <li>Nếu muốn hiển thị bình thường thì chỉnh YES thành NO trong câu lệnh 1</li>
+    </ul>
+  </li>
+  <li>rm file_name: xóa tập tin</li>
+  <li>rm -rf directory_name: xóa thư mục (r: recursive, f: force)</li>
 </ul>
-</li>
-<li>JUnit đã được tích hợp sẵn trong các IDE thông dụng (Netbean, Eclipse) hỗ trợ lập trình java. Nếu công cụ bạn sử dụng không hỗ trợ thì có thể download tại trang web <a href="http://www.junit.org.">http://www.junit.org.</a></li>
-</ul>
-
 
 <!-- ================================================================= -->
 
-
-<h2>Môi trường</h2>
+<h2 id="mt-s-lnh-s-dng-monitor-h-thng">Một số lệnh sử dụng monitor hệ thống</h2>
 
 <ul>
-<li>Windows 8.1</li>
-<li><a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">JDK 7x</a></li>
-<li><a href="www.eclipse.org/downloads/">Eclipse (Phiên bản kepler)</a> và JUnit</li>
+  <li>opensnoop:
+    <ul>
+      <li>sudo opensnoop -n applicationName</li>
+      <li>sudo opensnoop -p PID</li>
+      <li>sudo opensnoop -f filename</li>
+      <li>Tham khảo: http://osxdaily.com/2010/10/06/monitor-how-and-when-a-process-accesses-files-with-opensnoop/</li>
+    </ul>
+  </li>
+  <li>Tham khảo: http://dtrace.org/blogs/brendan/2011/10/10/top-10-dtrace-scripts-for-mac-os-x/</li>
 </ul>
-
 
 <!-- ================================================================= -->
 
+<h2 id="mt-s-thao-tc">Một số thao tác</h2>
+<ul>
+  <li>Ctrol-Shift-Power: sleep</li>
+  <li>Power (2s): hộp thoại sleep/shutdown/restart</li>
+  <li>Command-C: copy</li>
+  <li>Command-V: paste</li>
+  <li>Command-Option-V: paste (cut)</li>
+  <li>Command-M: thu nhỏ màn hình</li>
+  <li>Command-Tab và phím lên/xuống: để di chuyển đến màn hình đang thu nhỏ</li>
+  <li>Command-Shift-3: chụp toàn bộ màn hình (4: chụp 1 phần)</li>
+  <li>Danh sách phím tắt: <a href="http://support.apple.com/kb/ht1343">tham khảo</a></li>
+  <li>Delete: chức năng backspace</li>
+  <li>Fn-Delete: chức năng delete</li>
+  <li>Thay đổi shortcut của chương trình: http://lifehacker.com/5720087/how-to-remap-any-keyboard-shortcut-in-mac-os-x
+    <ul>
+      <li>Thay đổi paste (cut) thành Control-Command-V: System References =&gt; Keyboard =&gt; Shortcuts =&gt; chọn App Shortcuts =&gt; Nhấn dấu + =&gt; chọn Finder =&gt; điền <strong>Move Item Here</strong> trong menu tile =&gt; chọn phím <strong>Control-Command-V</strong> trong Keyboard Shortcuts =&gt; chọn OK.</li>
+    </ul>
+  </li>
+</ul>
 
-<h2>Hướng dẫn sử dụng</h2>
-
-<p>Trong phần này, tôi tạo ra 1 lớp đối tượng PhanSo (thuộc tính và một số hàm) và lớp đối tượng để kiểm thử (PhanSoTest)</p>
+<h3 id="s-dng-cc-phm-f1-f2--nh-mc-nh">Sử dụng các phím F1, F2, … như mặc định</h3>
 
 <ul>
-<li>Tao Project
+  <li>Trong MAC, dòng phím trên cùng là kết hợp của F1, F2, … và các chức năng. Muốn sử dụng các phím F1, F2, … phải dùng kèm với phím fn</li>
+  <li>Để F1, F2, … là mặc định thì chỉnh như sau
+    <ul>
+      <li>Chạy System Preferences từ Apple menu.</li>
+      <li>Chọn Keyboard (hoặc Keyboard &amp; Mouse trong Mac OS X v10.5.8 và các phiên bản sớm hơn).</li>
+      <li>Chọn Keyboard, nếu có</li>
+      <li>Chọn enable “Use all F1, F2, etc. keys as standard function keys.”</li>
+    </ul>
+  </li>
+</ul>
 
+<h3 id="cu-hnh-zoom">Cấu hình zoom</h3>
+
+<ul>
+  <li>System Preference =&gt; Accessibility =&gt; trong phần bên trái chọn zoom và chỉnh phím tắt cho phù hợp</li>
+</ul>
+
+<!-- ================================================================= -->
+
+<h2 id="apache">Apache</h2>
+<ul>
+  <li>Cài đặt
+    <ul>
+      <li>Đã được cài mặt định trong mac</li>
+      <li>Tham khảo: <a href="http://jason.pureconcepts.net/2012/10/install-apache-php-mysql-mac-os-x/">link</a></li>
+    </ul>
+  </li>
+  <li>Sử dụng 
+    <ul>
+      <li>sudo su</li>
+      <li>apachectl start: khởi động =&gt; chạy localhost sẽ thấy “It works”</li>
+      <li>apachectl restart </li>
+    </ul>
+  </li>
+  <li>Kích hoạt php
+    <ul>
+      <li>Sao lưu tập tin cấu hình
+        <ul>
+          <li>cd /etc/apache2/</li>
+          <li>cp httpd.conf httpd.conf.bak</li>
+        </ul>
+      </li>
+      <li>Thay đổi tập tin cấu hình bằng chương trình vi
+        <ul>
+          <li>vi httpd.conf</li>
+          <li>Bỏ dấu # trước dòng LoadModule php5_module libexec/apache2/libphp5.sLoado</li>
+          <li>Bỏ dấu # trước module CGI để có thực thi được một số ngôn ngữ scripts khác</li>
+        </ul>
+      </li>
+      <li>Lưu lại và khởi động lại</li>
+    </ul>
+  </li>
+  <li>Tạo virtualHosts
+    <ul>
+      <li>“http://localhost/somesite/” liên kết với “/Library/WebServer/Documents/somesite”</li>
+    </ul>
+  </li>
+</ul>
+
+<!-- ================================================================= -->
+
+<h2 id="mysql-s-dng-xampp">MySQL sử dụng xampp</h2>
+<ul>
+  <li>Tạo symbolic link của tập tin my.cnf</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">sudo ln -Ffhinsv /Applications/XAMPP/etc/my.cnf /etc/my.cnf</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<!-- ================================================================= -->
+
+<h2 id="mysql">MySQL</h2>
+<ul>
+  <li>Cài đặt
+    <ul>
+      <li>Download tại trang <a href="http://dev.mysql.com/downloads/mysql/">http://dev.mysql.com/downloads/mysql/</a></li>
+      <li>Cài đặt</li>
+      <li>Cập nhật đường dẫn path tới mysql (khi khởi động không cần đường dẫn)
+        <ul>
+          <li>export PATH=/usr/local/mysql/bin:$PATH</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Sử dụng 
+    <ul>
+      <li>Lệnh mysql để chạy</li>
+      <li>Đăng nhập: mysql -u username</li>
+      <li>Hiển thị danh sách người dùng (root)
+        <ul>
+          <li>select * from mysql.user;</li>
+          <li>desc mysql.user;</li>
+          <li>select host, user, password from mysql.user;</li>
+        </ul>
+      </li>
+      <li>Tạo người dùng: (root)
+        <ul>
+          <li>CREATE USER ‘admin’@’localhost’;</li>
+          <li>GRANT ALL PRIVILEGES ON <em>.</em> TO ‘admin’@’localhost’;</li>
+        </ul>
+      </li>
+      <li>Cập nhật mật khẩu: (root)
+        <ul>
+          <li>UPDATE mysql.user SET Password=PASSWORD(‘YOUR_PASSWORD’) WHERE Host=’localhost’ AND User=’root’;</li>
+        </ul>
+      </li>
+      <li>Phân quyền cho database
+        <ul>
+          <li>GRANT ALL ON mydb.* TO ‘someuser’@’somehost’;</li>
+        </ul>
+      </li>
+      <li>Tạo cơ sở dữ liệu: create database name</li>
+      <li>Khởi động nhanh server: sudo /usr/local/mysql/support-files/mysql.server start (nếu cập nhật path thì không cần đường dẫn)</li>
+      <li>Dừng: sudo /usr/local/mysql/support-files/mysql.server stop</li>
+      <li>Khởi động lại: sudo /usr/local/mysql/support-files/mysql.server restart</li>
+      <li>Bật log để theo dõi các thay đổi trên mysql (tất cả)</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">SET GLOBAL log_output = "FILE"; //which is set by default.
+</span><span class="line">	  SET GLOBAL general_log_file = "/path/to/your/logfile.log";
+</span><span class="line">	  SET GLOBAL general_log = 'ON';</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">SET GLOBAL log_output = 'TABLE';
+</span><span class="line">	  SET GLOBAL general_log = 'ON';
+</span><span class="line">	  //Take a look at the table mysql.general_log</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<ul>
+  <li>Một số lỗi:
+    <ul>
+      <li>Warning: mysql_connect(): [2002] No such file or directory
+        <ul>
+          <li>Nếu có <em>/tmp/mysql.sock</em> và không có <em>/var/mysql/mysql.sock</em>
+            <ul>
+              <li>cd /var </li>
+              <li>sudo mkdir mysql</li>
+              <li>sudo chmod 755 mysql</li>
+              <li>cd mysql</li>
+              <li>ln -s /tmp/mysql.sock mysql.sock</li>
+            </ul>
+          </li>
+          <li>Nếu không có <em>/tmp/mysql.sock</em> và có <em>/var/mysql/mysql.sock</em>
+            <ul>
+              <li>cd /tmp</li>
+              <li>ln -s /var/mysql/mysql.sock mysql.sock</li>
+              <li>Tham khảo: http://stackoverflow.com/questions/4219970/warning-mysql-connect-2002-no-such-file-or-directory-trying-to-connect-vi</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Lỗi trên không cần sửa =&gt; có thể start mysql trong System References
+        <ul>
+          <li>Tham khảo:
+            <ul>
+              <li>http://stackoverflow.com/questions/1676688/php-mysql-connection-not-working-2002-no-such-file-or-directory</li>
+              <li>http://stackoverflow.com/questions/26514757/how-to-get-mysql-server-working-after-osx-yosemite-upgrade/26523977#26523977</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<!-- ================================================================= -->
+
+<h2 id="php">PHP</h2>
+<ul>
+  <li>Cài đặt 5.5 <a href="http://coolestguidesontheplanet.com/upgrade-to-php-5-4-or-5-5-mac-osx-10-8-mountain-lion/">link</a>
+    <ul>
+      <li>
+        <table>
+          <tbody>
+            <tr>
+              <td>curl -s http://php-osx.liip.ch/install.sh</td>
+              <td>bash -s 5.5</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+    </ul>
+  </li>
+  <li>Cài đặt <strong>mcrypt</strong>
+    <ul>
+      <li>Cài đặt <strong>Xcode command line tools</strong> (nếu chưa có): xcode-select –install</li>
+      <li>Tạo thư mục <strong>mcrypt</strong> trong thư mục home
+        <ul>
+          <li>cd ~</li>
+          <li>mkdir mcrypt</li>
+        </ul>
+      </li>
+      <li>Download libmcrypt từ <a href="http://sourceforge.net/projects/mcrypt/files/Libmcrypt/">sourceforge</a> hoặc <a href="files/libmcrypt-2.5.8.tar.gz">phiên bản 2.5.6</a></li>
+      <li>Vào thư mục mcrypt, giải nén tập tin mới download và xóa tập tin nén
+        <ul>
+          <li>cd ~/mcrypt</li>
+          <li>tar -zxvf libmcrypt-2.5.8.tar.gz</li>
+          <li>rm *.gz</li>
+        </ul>
+      </li>
+      <li>Vào thư mục libmcrypt và cài đặt
+        <ul>
+          <li>cd ~/mcrypt/libmcrypt-2.5.8</li>
+          <li>./configure</li>
+          <li>make</li>
+          <li>sudo make install</li>
+        </ul>
+      </li>
+      <li>Tải Autoconf và cài đặt
+        <ul>
+          <li>Tải tại đường dẫn http://ftp.gnu.org/gnu/autoconf/autoconf-latest.tar.gz hoặc <a href="files/autoconf-latest.tar.gz">tại đây</a></li>
+          <li>Giải nén vào thư mục ~/mcrypt</li>
+          <li>cd ~/mcrypt/autoconf-2.69</li>
+          <li>./configure</li>
+          <li>make</li>
+          <li>sudo make install</li>
+        </ul>
+      </li>
+      <li>Biên dịch mcrypt php extension
+        <ul>
+          <li>Tải src của php tại đường dẫn http://php.net/releases/index.php hoặc <a href="files/php-5.5.16.tar.gz">tại đây</a></li>
+          <li>Giải nén vào thư mục ~/mcrypt</li>
+          <li>cd ~/mcrypt/php-5.5.16/ext/mcrypt/</li>
+          <li>/usr/bin/phpize =&gt; Kết quả: <img src="/images/php-mcrypt1.png" /></li>
+          <li>./configure</li>
+          <li>make</li>
+          <li>sudo make install =&gt; Kết quả: <img src="/images/php-mcrypt2.png" /></li>
+        </ul>
+      </li>
+      <li>Kích hoạt mcrypt.so hay một số module khác của php
+        <ul>
+          <li>Mở tập tin /etc/php.ini (nếu chưa có thì copy từ /etc/php.ini.default</li>
+          <li>Thêm dòng “extension=mcrypt.so”</li>
+        </ul>
+      </li>
+      <li>Khởi động lại apache =&gt; sudo apachectl restart</li>
+      <li>Tham khảo: <a href="http://coolestguidesontheplanet.com/how-to-install-mcrypt-for-php-on-mac-osx-lion-10-7-development-server/">10.7 và 10.8</a> hoặc <a href="http://coolestguidesontheplanet.com/install-mcrypt-php-mac-osx-10-9-mavericks-development-server/">10.9</a></li>
+    </ul>
+  </li>
+</ul>
+
+<!-- ================================================================= -->
+
+<h2 id="kt-ni-php-v-mysql">Kết nối PHP và MySQL</h2>
+<ul>
+  <li>Sư dụng các lệnh sau (phải chạy dưới quyền root)
+    <ul>
+      <li>cd /var</li>
+      <li>mkdir mysql</li>
+      <li>cd mysql</li>
+      <li>ln -s /tmp/mysql.sock mysql.sock</li>
+    </ul>
+  </li>
+</ul>
+
+<!-- ================================================================= -->
+
+<h2 id="vi-editor">vi editor</h2>
+
+<ul>
+  <li>Sử dụng
+    <ul>
+      <li>Bắt đầu: vi tentaptin</li>
+      <li>Thoát và lưu: ZZ hoặc :wq</li>
+      <li>Thoát và không lưu: :q</li>
+      <li>Lưu: :w</li>
+    </ul>
+  </li>
+  <li>Di chuyển trang
+    <ul>
+      <li>G - di chuyển tới dòng cuối cùng trong tập tin</li>
+      <li>xG - di chuyển tơí dòng x</li>
+      <li>^F - pagedown</li>
+      <li>^D - pagedown</li>
+      <li>^U - pageup</li>
+    </ul>
+  </li>
+  <li>Thêm
+    <ul>
+      <li>r - thay ký tự ngay con trỏ bằng ký tự liền sau</li>
+      <li>i - thêm trước con trỏ</li>
+      <li>a - thêm sau con trỏ</li>
+      <li>A - thêm vào cuối dòng</li>
+    </ul>
+  </li>
+  <li>Xoá
+    <ul>
+      <li>x - xóa ký tự ngay con trỏ</li>
+      <li>dd - xóa dòng ngay con trỏ</li>
+      <li>dw - xóa từ ngay con trỏ</li>
+      <li>db - xóa từ trước con trỏ</li>
+    </ul>
+  </li>
+  <li>Tìm kiếm
+    <ul>
+      <li>? - tìm từ phía sau</li>
+      <li>/ - tìm từ phía trước</li>
+    </ul>
+  </li>
+  <li><a href="http://www.cs.rit.edu/~cslab/vi.html">Tham khảo</a></li>
+</ul>
+
+<!-- ================================================================= -->
+
+<h2 id="homebrew">Homebrew</h2>
+
+<ul>
+  <li>Chạy lệnh sau trong terminal</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<ul>
+  <li>Tham khảo: http://brew.sh/</li>
+</ul>
+
+<!-- ================================================================= -->
+
+<h2 id="axel---chng-trnh-h-tr-download">Axel - chương trình hỗ trợ download</h2>
+
+<h3 id="ci-t">Cài đặt</h3>
+
+<ul>
+  <li><b>Phải cài đặt homebrew trước</b>, thực thi lệnh sau</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">brew install axel</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h3 id="s-dng">Sử dụng</h3>
+
+<ul>
+  <li>axel url</li>
+  <li>Ví dụ: axel -n 10 http://example.com/some_file.mov</li>
+</ul>
+
+<!-- ================================================================= -->
+
+<h2 id="aria2---chng-trnh-h-tr-download">Aria2 - chương trình hỗ trợ download</h2>
+
+<h3 id="ci-t-1">Cài đặt</h3>
+
+<ul>
+  <li><b>Phải cài đặt homebrew trước</b>, thực thi lệnh sau</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">brew install aria2</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h3 id="s-dng-1">Sử dụng</h3>
+
+<ul>
+  <li>aria2c [options]</li>
+  <li>Một số tham số</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">-d, --dir=&lt;DIR&gt;</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">-i, --input-file=&lt;FILE&gt;</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">-l, --log=&lt;LOG&gt;</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">-j, --max-concurrent-downloads=&lt;N&gt;</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">-V, --check-integrity[=true|false]</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">-c, --continue[=true|false]</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">-h, --help[=&lt;TAG&gt;|&lt;KEYWORD&gt;]</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<!-- ================================================================= -->
+
+<h2 id="p7zip---chng-trnh-nn-v-gii-nn-tp-tinth-mc">p7zip - chương trình nén và giải nén tập tin/thư mục</h2>
+
+<h3 id="ci-t-2">Cài đặt</h3>
+
+<ul>
+  <li><b>Phải cài đặt homebrew trước</b>, thực thi lệnh sau để cài đặt</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">brew install p7zip</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<ul>
+  <li>Tạo symbolic link trong thư mục /bin bằng lệnh sau</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">sudo ln -s /usr/local/lib/p7zip/7za /bin/7za</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h3 id="s-dng-2">Sử dụng</h3>
+
+<ul>
+  <li>7za x a.zip -o* =&gt; giải nén tập tin a vào thư mục a </li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+<span class="line-number">17</span>
+<span class="line-number">18</span>
+<span class="line-number">19</span>
+<span class="line-number">20</span>
+<span class="line-number">21</span>
+<span class="line-number">22</span>
+<span class="line-number">23</span>
+<span class="line-number">24</span>
+<span class="line-number">25</span>
+<span class="line-number">26</span>
+<span class="line-number">27</span>
+<span class="line-number">28</span>
+<span class="line-number">29</span>
+<span class="line-number">30</span>
+<span class="line-number">31</span>
+<span class="line-number">32</span>
+<span class="line-number">33</span>
+<span class="line-number">34</span>
+<span class="line-number">35</span>
+<span class="line-number">36</span>
+<span class="line-number">37</span>
+<span class="line-number">38</span>
+<span class="line-number">39</span>
+<span class="line-number">40</span>
+<span class="line-number">41</span>
+<span class="line-number">42</span>
+<span class="line-number">43</span>
+<span class="line-number">44</span>
+<span class="line-number">45</span>
+<span class="line-number">46</span>
+<span class="line-number">47</span>
+<span class="line-number">48</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">Usage: 7za &lt;command&gt; [&lt;switches&gt;...] &lt;archive_name&gt; [&lt;file_names&gt;...]
+</span><span class="line">       [&lt;@listfiles...&gt;]
+</span><span class="line">
+</span><span class="line">&lt;Commands&gt;
+</span><span class="line">  a: Add files to archive
+</span><span class="line">  b: Benchmark
+</span><span class="line">  d: Delete files from archive
+</span><span class="line">  e: Extract files from archive (without using directory names)
+</span><span class="line">  l: List contents of archive
+</span><span class="line">  t: Test integrity of archive
+</span><span class="line">  u: Update files to archive
+</span><span class="line">  x: eXtract files with full paths
+</span><span class="line">&lt;Switches&gt;
+</span><span class="line">  -ai[r[-|0]]{@listfile|!wildcard}: Include archives
+</span><span class="line">  -ax[r[-|0]]{@listfile|!wildcard}: eXclude archives
+</span><span class="line">  -bd: Disable percentage indicator
+</span><span class="line">  -i[r[-|0]]{@listfile|!wildcard}: Include filenames
+</span><span class="line">  -m{Parameters}: set compression Method
+</span><span class="line">  -o{Directory}: set Output directory
+</span><span class="line">  -p{Password}: set Password
+</span><span class="line">  -r[-|0]: Recurse subdirectories
+</span><span class="line">  -scs{UTF-8 | WIN | DOS}: set charset for list files
+</span><span class="line">  -sfx[{name}]: Create SFX archive
+</span><span class="line">  -si[{name}]: read data from stdin
+</span><span class="line">  -slt: show technical information for l (List) command
+</span><span class="line">  -so: write data to stdout
+</span><span class="line">  -ssc[-]: set sensitive case mode
+</span><span class="line">  -t{Type}: Set type of archive
+</span><span class="line">  -u[-][p#][q#][r#][x#][y#][z#][!newArchiveName]: Update options
+</span><span class="line">  -v{Size}[b|k|m|g]: Create volumes
+</span><span class="line">  -w[{path}]: assign Work directory. Empty path means a temporary directory
+</span><span class="line">  -x[r[-|0]]]{@listfile|!wildcard}: eXclude filenames
+</span><span class="line">  -y: assume Yes on all queries
+</span><span class="line">
+</span><span class="line">$ ./7za a 7za.7z 7za 
+</span><span class="line">
+</span><span class="line">7-Zip (A) [64] 9.20  Copyright (c) 1999-2010 Igor Pavlov  2010-11-18
+</span><span class="line">p7zip Version 9.20 (locale=de_DE.UTF-8,Utf16=on,HugeFiles=on,4 CPUs)
+</span><span class="line">Scanning
+</span><span class="line">
+</span><span class="line">Creating archive 7za.7z
+</span><span class="line">
+</span><span class="line">Compressing  7za      
+</span><span class="line">
+</span><span class="line">Everything is Ok
+</span><span class="line">
+</span><span class="line">$ ls
+</span><span class="line">7za    7za.7z</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<!-- ================================================================= -->
+
+<h2 id="unrar---chng-trnh-gii-nn-tp-tin-rar">unrar - chương trình giải nén tập tin rar</h2>
+
+<h3 id="ci-t-3">Cài đặt</h3>
+
+<ul>
+  <li><b>Phải cài đặt homebrew trước</b>, thực thi lệnh sau để cài đặt</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">brew install unrar</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<ul>
+  <li>Tạo symbolic link trong thư mục /bin bằng lệnh sau</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">sudo ln -s /usr/local/bin/unrar /bin/unrar</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h3 id="s-dng-3">Sử dụng</h3>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">unrar -pPASSWORD -y -ad x &lt;filename&gt;</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h3 id="tham-kho">Tham khảo</h3>
+<ul>
+  <li>http://best-mac-tips.com/2013/02/02/extract-rar-archive-command-line-mac-terminal/</li>
+</ul>
+
+<!-- ================================================================= -->
+
+<h2 id="excel">Excel</h2>
+<ul>
+  <li>Ctrl-U: sửa ô hiện hành</li>
+  <li>Command-T: chuyển đổi địa chỉ trong công thức thành tuyệt đối, tương đối</li>
+</ul>
+
+<!-- ================================================================= -->
+
+<h2 id="ci-t-java">Cài đặt java</h2>
+<ul>
+  <li>JDK 7</li>
+  <li>JavaForOSX2014-001 =&gt; http://support.apple.com/kb/DL1572?viewlocale=en_US&amp;locale=en_US</li>
+</ul>
+
+<!-- ================================================================= -->
+
+<h2 id="ci-t-lp-trnh-android">Cài đặt lập trình android</h2>
+<ul>
+  <li>Android studio: http://developer.android.com/sdk/index.html</li>
+  <li>Virtual box: https://www.virtualbox.org/wiki/Downloads</li>
+  <li>Genymotion: https://www.genymotion.com/#!/</li>
+</ul>
+
+<!-- ================================================================= -->
+
+<h2 id="phn-mm-c-tp-tin-chm">Phần mềm đọc tập tin chm</h2>
+<ul>
+  <li>Tên phần mềm: ichm</li>
+  <li>Link: https://code.google.com/p/ichm/</li>
+</ul>
+
+
+
+        </article>
+        <hr>
+    
+        
+        <article class="article article--index">
+            <header class="article__header">
+    
+        <h1 class="h2 article__title">
+            <a href="/blog/2014/07/30/vector-c-plus-plus/">Hướng dẫn sử dụng Vector C++</a>
+        </h1>
+    
+
+    
+        <div class="article__meta clearfix">
+            
+
+
+
+
+
+
+    <time class="article__date pull-left" datetime="" pubdate><i class="fa fa-calendar"></i> </time>
+
+
+
+
+            
+
+    <div class="article__tags pull-left">
+        <i class="fa fa-tags"></i>
+        <ul class="unstyled">
+        
+            
+                <li><a class='category' href='/blog/categories/c-plus-plus/'>C++</a></li>
+            
+                <li><a class='category' href='/blog/categories/vector/'>vector</a></li>
+            
+            
+        </ul>
+    </div>
+
+
+            
+        </div>
+    
+</header>
+
+
+
+
+    
+<!-- ================================================================= -->
+<p>## Đang cập nhật
+## Các phần và hàm thường dùng
+- Iterator - duyệt
+- Capacity - số lượng
+- Element access - truy cập từng phần tử
+- Modifiers - thêm/xóa
+- Tài liệu tham khảo: http://www.cplusplus.com/reference/vector/vector/</p>
+
+<!-- ================================================================= -->
+<p>## Iterators - duyệt
+- begin: vị trí bắt đầu
+- end: vị trí kết thúc
+- rbegin: vị trí bắt đầu của danh sách đảo ngược
+- rend: vị trí kết thúc của danh sách đảo ngược
+- cbegin, cend, crbegin, crend: không thay đổi …</p>
+
+<!-- ================================================================= -->
+<p>## Capacity - số lượng
+- size: số lượng phần tử
+- maxsize: số lượng tối đa
+- resize: thay đổi số lượng
+- empty: kiểm tra rỗng</p>
+
+<!-- ================================================================= -->
+<p>## Element access - truy cập từng phần tử
+- operator[]: truy cập phần tử thứ i
+- at: truy cập phần tử thứ i
+- front: truy cập phần tử đầu tiên
+- back: truy cập phần tử cuối cùng</p>
+
+<!-- ================================================================= -->
+<p>## Modifiers - thêm/xóa
+- push_back: thêm phần tử vào cuối
+- pop_back: xóa phần tử cuối
+- insert: thêm phần tử
+- erase: xóa phần tử
+- swap: 
+- clear:</p>
+
+
+
+        </article>
+        <hr>
+    
+        
+        <article class="article article--index">
+            <header class="article__header">
+    
+        <h1 class="h2 article__title">
+            <a href="/blog/2014/05/08/svn-tutorial/">Hướng dẫn sử dụng subversion (tortoise svn) trên windows</a>
+        </h1>
+    
+
+    
+        <div class="article__meta clearfix">
+            
+
+
+
+
+
+
+    <time class="article__date pull-left" datetime="" pubdate><i class="fa fa-calendar"></i> </time>
+
+
+
+
+            
+
+    <div class="article__tags pull-left">
+        <i class="fa fa-tags"></i>
+        <ul class="unstyled">
+        
+            
+                <li><a class='category' href='/blog/categories/guide/'>guide</a></li>
+            
+                <li><a class='category' href='/blog/categories/svn/'>svn</a></li>
+            
+                <li><a class='category' href='/blog/categories/tutorial/'>tutorial</a></li>
+            
+                <li><a class='category' href='/blog/categories/windows/'>windows</a></li>
+            
+            
+        </ul>
+    </div>
+
+
+            
+        </div>
+    
+</header>
+
+
+
+
+    
+<!-- ================================================================= -->
+<p>##Thông tin cơ bản
+- Subversion: công cụ giúp lập trình viên quản lý các phiên bản/sự thay đổi của mã nguồn
+- Lưu ý: chỉ cập nhật các phiên bản chạy được lên máy chủ
+- Trong bài viết này hướng dẫn sử dụng công cụ Tortoise svn trên windows
+<!-- ================================================================= -->
+##Môi trường sử dụng
+- Windows 8.1
+- Tortoise svn 1.8.4
+<!-- ================================================================= -->
+##Cài đặt
+- Truy cập vào trang web http://tortoisesvn.net/ để tải phiên bản tortoise svn phù hợp
+<br /><img src="/images/svn tutorial 1.png" /><br />
+- Chạy chương trình và để các thông số mặc định. Sau khi cài đặt xong, kết quả như sau
+<br /><img src="/images/svn tutorial 2.png" /><br />
+<!-- ================================================================= -->
+##Một số chức năng thường sử dụng
+- Check-out
+- Update
+- Commit
+- Show log
+- Resovle conflict
+<!-- ================================================================= -->
+##Hướng dẫn
+- Check-out: sử dụng để tải toàn bộ tài liệu trên máy chủ về thư mục làm việc
+	+ Tạo thư mục làm việc =&gt; chuột phải vào thư mục =&gt; chọn check-out
+	<br /><img src="/images/svn tutorial 3.png" /><br />
+	+ Trong màn hình Check-out: chú ý các thông tin sau
+		+ URL of repository: đường dẫn chỉ đến máy chủ
+		+ Checkout directory: thư mục làm việc
+		+ Checkout Depth: toàn bộ hay từng phần
+		+ Revision: tải phiên bản mới nhất hay là phiên bản cũ
+		+ =&gt; Trong ví dụ này chọn phiên bản mới nhất và tải toàn bộ
+	<br /><img src="/images/svn tutorial 4.png" /><br />
+	+ Kết quả sẽ tải toàn bộ về thư mục làm việc
+	<br /><img src="/images/svn tutorial 5.png" /><br />
+- Update: đọc các thay đổi của những thành viên khác trong nhóm trên máy chủ và lưu xuống thư mục làm việc
+	+ Mở thư mục =&gt; click chuột phải =&gt; chọn update
+	<br /><img src="/images/svn tutorial 6.png" /><br />
+	+ Kết quả: sẽ hiển thị các thay đổi, tài khoản người thay đổi và ghi chú cho mỗi thay đổi
+	<br /><img src="/images/svn tutorial 7.png" /><br />
+- Commit: cập nhật các thay đổi trong thư mục làm việc lên máy chủ
+	+ Lưu ý: phải thực hiện hành động “update” trước
+	+ Khi thay đổi, thư mục làm việc có ký hiệu khác màu xanh lá =&gt; có thay đổi =&gt; khi làm xong 1 việc nên commit
+	<br /><img src="/images/svn tutorial 8.png" /><br />
+		+ Một số ký hiệu
+		<br /><img src="/images/svn tutorial 8 1.png" /><br />
+	+ Thực hiện: chuột phải vào “thư mục muốn commit” =&gt; chọn commit …
+	<br /><img src="/images/svn tutorial 10.png" /><br />
+	+ Trong cửa sổ commit: 
+		+ Xem xét các tập tin có thay đổi hoặc tập tin mới hoặc tập tin bị xóa
+		+ Viết các ghi chú để dễ dàng tìm kiếm sau này
+	<br /><img src="/images/svn tutorial 11.png" /><br />
+	+ Chọn Ok và được kết quả
+	<br /><img src="/images/svn tutorial 12.png" /><br />
+- Show log: xem các thay đổi xảy trên 1 tập tin hoặc thư mục nào đó
+	+ Chuột phải vào thư mục/tập tin mới theo dõi
+	<br /><img src="/images/svn tutorial 13.png" /><br />
+	+ Trong màn hình Log messages
+		+ Danh sách các thay đổi
+		+ Chọn 1 thay đổi sẽ xem được:
+			+ Các thư mục/tập tin thay đổi trong phiên bản đó
+			+ Ghi chú
+		+ Muốn xem tập tin đã thay đổi gì có thể double-click vào tập tin đó
+	<br /><img src="/images/svn tutorial 14.png" /><br />
+- Resovle conflict: xảy ra khi 2 người dùng cùng thay đổi trên 1 tập tin
+	+ Xảy ra khi người dùng thực hiện update trước khi commit
+	<br /><img src="/images/svn tutorial 15.png" /><br />
+	+ Click chuột phải vào tập tin bị conflict và chọn chức năng edit conflict
+	<br /><img src="/images/svn tutorial 16.png" /><br />
+	+ Màn hình chỉnh sửa conflict hiện ra như sau
+	<br /><img src="/images/svn tutorial 17.png" /><br />
+	+ Click chuột phải vào dòng “??????????????????????” để chọn nội dung muốn dùng
+	<br /><img src="/images/svn tutorial 18.png" /><br />
+	+ Sau khi quyết định xong thì chọn đã giải quyết conflict
+	<br /><img src="/images/svn tutorial 19.png" /><br />
+	+ Kết quả như sau
+	<br /><img src="/images/svn tutorial 20.png" /><br />
+	+ Thực hiện commit như bình thường
+	<br /><img src="/images/svn tutorial 21.png" /><br />
+	+ Nhấn ok và kết thúc
+<!-- ================================================================= --></p>
+
+
+
+        </article>
+        <hr>
+    
+        
+        <article class="article article--index">
+            <header class="article__header">
+    
+        <h1 class="h2 article__title">
+            <a href="/blog/2014/04/21/setup-junit-windows/">Hướng dẫn sử dụng junit trong eclipse</a>
+        </h1>
+    
+
+    
+        <div class="article__meta clearfix">
+            
+
+
+
+
+
+
+    <time class="article__date pull-left" datetime="" pubdate><i class="fa fa-calendar"></i> </time>
+
+
+
+
+            
+
+    <div class="article__tags pull-left">
+        <i class="fa fa-tags"></i>
+        <ul class="unstyled">
+        
+            
+                <li><a class='category' href='/blog/categories/junit/'>JUnit</a></li>
+            
+                <li><a class='category' href='/blog/categories/config/'>config</a></li>
+            
+                <li><a class='category' href='/blog/categories/eclipse/'>eclipse</a></li>
+            
+                <li><a class='category' href='/blog/categories/install/'>install</a></li>
+            
+                <li><a class='category' href='/blog/categories/setup/'>setup</a></li>
+            
+            
+        </ul>
+    </div>
+
+
+            
+        </div>
+    
+</header>
+
+
+
+
+    
+<!-- ================================================================= -->
+<p>## Giới thiệu Unit test
+- Unit testing là phương pháp kiểm thử được thực hiện bằng cách sử dụng các đoạn mã có cấu trúc giống như các đối tượng được xây dựng để kiểm tra các thành phần nhỏ trong hệ thống phần mềm như các lớp, hàm, thủ tục, phương thức, …
+- Sau khi đã soạn ra các đoạn mã, quá trình unit testing có thể được thực hiện tự động, liên tục hoặc định kì được gọi để thăm dò và phát hiện các lỗi kĩ thuật trong suốt quá trình  phát triển.
+- Các trạng thải trong quá trình unit testing
+	+ Pass
+	+ Fail
+	+ Ignore
+<!-- ================================================================= -->
+## Giới thiệu JUnit
+- Bộ xUnit là các công cụ hỗ trợ thực hiện unit testing với các ngôn ngữ khác nhau:
+	+ CppUnit dùng để test các đoạn mã viết bằng ngôn ngữ C++.
+	+ NUnit dùng để test các đoạn mã viết bằng các ngôn ngữ trong .NET Framework.
+	+ …
+- JUnit đã được tích hợp sẵn trong các IDE thông dụng (Netbean, Eclipse) hỗ trợ lập trình java. Nếu công cụ bạn sử dụng không hỗ trợ thì có thể download tại trang web http://www.junit.org.
+<!-- ================================================================= -->
+## Môi trường
+- Windows 8.1
+- <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">JDK 7x</a>
+- <a href="www.eclipse.org/downloads/">Eclipse (Phiên bản kepler)</a> và JUnit
+<!-- ================================================================= -->
+## Hướng dẫn sử dụng
+Trong phần này, tôi tạo ra 1 lớp đối tượng PhanSo (thuộc tính và một số hàm) và lớp đối tượng để kiểm thử (PhanSoTest)</p>
+
+<ul>
+  <li>Tao Project
+    <ol>
+      <li>Menu File =&gt; New =&gt; Project…
+  <img src="/images/setup junit windows 2.png" /></li>
+      <li>Chọn Java Project trong hộp thoại New Project và nhấn Next
+  <img src="/images/setup junit windows 3.png" /></li>
+      <li>Trong hộp thoại New Java Project điền thông tin và chọn Next
+        <ul>
+          <li>Project name: tên của project</li>
+          <li>Chọn jre: phiên bản của thư viện và máy ảo java
+  <img src="/images/setup junit windows 4.png" /></li>
+        </ul>
+      </li>
+      <li>Cấu hình thư viện (nếu không có thì để mặc định) và nhấn Finish
+  <img src="/images/setup junit windows 5.png" /></li>
+      <li>Kết quả</li>
+    </ol>
+
+    <p><img src="/images/setup junit windows 6.png" /></p>
+  </li>
+  <li>Tạo lớp trong java (PhanSo)
+    <ol>
+      <li>Click chuột phải vào thư mục src =&gt; chọn New =&gt; chọn Class
+  <img src="/images/setup junit windows 10.png" /></li>
+      <li>Trong hộp thoại New Java Class điền các giá trị sau và chọn Finish
+        <ul>
+          <li>Package: demo =&gt; phân nhóm các lớp đối tượng</li>
+          <li>Name: PhanSo</li>
+          <li>SuperClass: lớp cha (nếu có)</li>
+          <li>Interfaces: các interface cần thực thi (nếu có)
+  <img src="/images/setup junit windows 11.png" /></li>
+        </ul>
+      </li>
+      <li>Trong lớp PhanSo, định nghĩa các thuộc tính, hàm khởi tạo mặc định và hàm cộng
+  <img src="/images/setup junit windows 12.png" /></li>
+    </ol>
+  </li>
+  <li>Tạo lớp PhanSoTest trong test package
+    <ol>
+      <li>Chuột phải vào Project =&gt; chọn New =&gt; chọn Junit Test case
+  <img src="/images/setup junit windows 16.png" /></li>
+      <li>Trong hộp thoại New Junit Test case chú ý các thuộc tính sau và chọn Next
+        <ul>
+          <li>Package: tên package</li>
+          <li>Name: tên lớp</li>
+          <li>Class under Test: tên lớp được test
+  <img src="/images/setup junit windows 17.png" /></li>
+        </ul>
+      </li>
+      <li>Muốn test hàm/phương thức nào thì chọn và nhấn Finish
+  <img src="/images/setup junit windows 18.png" /></li>
+      <li>Kết quả </li>
+    </ol>
+
+    <p><img src="/images/setup junit windows 19.png" /></p>
+  </li>
+  <li>Sử dụng các hàm AssertXXX để so sánh kết quả
+  <img src="/images/setup junit windows 20.png" /></li>
+  <li>Chạy Junit bằng cách click chuột phải vào project =&gt; chọn Run as =&gt; chọn Junit
+  <img src="/images/setup junit windows 21.png" /></li>
+</ul>
+
+
+
+        </article>
+        <hr>
+    
+        
+        <article class="article article--index">
+            <header class="article__header">
+    
+        <h1 class="h2 article__title">
+            <a href="/blog/2014/04/18/setup-wamp-and-config-dreamweaver/">Cài đặt wamp và cấu hình dreamweaver để chạy php</a>
+        </h1>
+    
+
+    
+        <div class="article__meta clearfix">
+            
+
+
+
+
+
+
+    <time class="article__date pull-left" datetime="" pubdate><i class="fa fa-calendar"></i> </time>
+
+
+
+
+            
+
+    <div class="article__tags pull-left">
+        <i class="fa fa-tags"></i>
+        <ul class="unstyled">
+        
+            
+                <li><a class='category' href='/blog/categories/config/'>config</a></li>
+            
+                <li><a class='category' href='/blog/categories/dreamwearver/'>dreamwearver</a></li>
+            
+                <li><a class='category' href='/blog/categories/install/'>install</a></li>
+            
+                <li><a class='category' href='/blog/categories/php/'>php</a></li>
+            
+                <li><a class='category' href='/blog/categories/setup/'>setup</a></li>
+            
+                <li><a class='category' href='/blog/categories/wamp/'>wamp</a></li>
+            
+            
+        </ul>
+    </div>
+
+
+            
+        </div>
+    
+</header>
+
+
+
+
+    
+<!-- ================================================================= -->
+<p>## Giới thiệu
+- Cài đặt phần mềm để lập trình php =&gt; dành cho người mới bắt đầu
+- Cấu hình dreamweaver để viết code và chạy thử php
+<!-- ================================================================= -->
+## Môi trường
+- Windows 8.1
+- Wamp
+- Dreamweaver CS6 và CS3
+<!-- ================================================================= -->
+## Cài đặt wamp
+- Truy cập <a href="http://www.wampserver.com/en/">trang web của wamp</a>
+- Vào mục download để tải phiên bản phù hợp (chú ý win 32bits hay 64bits) =&gt; tập tin “Wampserver xxx.exe”
+- Chạy tập tin để cài đặt (nên để mặc định) =&gt; có thể chọn thư mục cài đặt (C:\wamp)
+- Sau khi cài xong, chạy wampserver sẽ có biểu tưởng màu xanh trên taskbar của windows như hình bên dưới<br />
+<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 1.png" /> <br />
+- Nếu biểu tượng màu cam thì có thể do đụng độ port =&gt; Chỉnh lại như sau: <br /></p>
 <ol>
-<li> Menu File => New => Project&hellip;
-<img src="/images/setup junit windows 2.png"/></li>
-<li> Chọn Java Project trong hộp thoại New Project và nhấn Next
-<img src="/images/setup junit windows 3.png"/></li>
-<li> Trong hộp thoại New Java Project điền thông tin và chọn Next
-
-<ul>
-<li>Project name: tên của project</li>
-<li>Chọn jre: phiên bản của thư viện và máy ảo java
-<img src="/images/setup junit windows 4.png"/></li>
-</ul>
-</li>
-<li> Cấu hình thư viện (nếu không có thì để mặc định) và nhấn Finish
-<img src="/images/setup junit windows 5.png"/></li>
-<li> Kết quả</li>
-</ol>
-
-
-<p>  <img src="/images/setup junit windows 6.png"/></p></li>
-<li>Tạo lớp trong java (PhanSo)
-
-<ol>
-<li> Click chuột phải vào thư mục src => chọn New => chọn Class
-<img src="/images/setup junit windows 10.png"/></li>
-<li> Trong hộp thoại New Java Class điền các giá trị sau và chọn Finish
-
-<ul>
-<li>Package: demo => phân nhóm các lớp đối tượng</li>
-<li>Name: PhanSo</li>
-<li>SuperClass: lớp cha (nếu có)</li>
-<li>Interfaces: các interface cần thực thi (nếu có)
-<img src="/images/setup junit windows 11.png"/></li>
-</ul>
-</li>
-<li> Trong lớp PhanSo, định nghĩa các thuộc tính, hàm khởi tạo mặc định và hàm cộng
-<img src="/images/setup junit windows 12.png"/></li>
-</ol>
-</li>
-<li>Tạo lớp PhanSoTest trong test package
-
-<ol>
-<li> Chuột phải vào Project => chọn New => chọn Junit Test case
-<img src="/images/setup junit windows 16.png"/></li>
-<li> Trong hộp thoại New Junit Test case chú ý các thuộc tính sau và chọn Next
-
-<ul>
-<li>Package: tên package</li>
-<li>Name: tên lớp</li>
-<li>Class under Test: tên lớp được test
-<img src="/images/setup junit windows 17.png"/></li>
-</ul>
-</li>
-<li> Muốn test hàm/phương thức nào thì chọn và nhấn Finish
-<img src="/images/setup junit windows 18.png"/></li>
-<li> Kết quả</li>
-</ol>
-
-
-<p>  <img src="/images/setup junit windows 19.png"/></p></li>
-<li>Sử dụng các hàm AssertXXX để so sánh kết quả
-  <img src="/images/setup junit windows 20.png"/></li>
-<li>Chạy Junit bằng cách click chuột phải vào project => chọn Run as => chọn Junit
-  <img src="/images/setup junit windows 21.png"/></li>
-</ul>
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/04/18/setup-wamp-and-config-dreamweaver/">Cài đặt Wamp và Cấu Hình Dreamweaver để Chạy Php</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-04-18T14:16:02+07:00" pubdate data-updated="true">Apr 18<span>th</span>, 2014</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><!-- ================================================================= -->
-
-
-<h2>Giới thiệu</h2>
-
-<ul>
-<li>Cài đặt phần mềm để lập trình php => dành cho người mới bắt đầu</li>
-<li>Cấu hình dreamweaver để viết code và chạy thử php</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Môi trường</h2>
-
-<ul>
-<li>Windows 8.1</li>
-<li>Wamp</li>
-<li>Dreamweaver CS6 và CS3</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Cài đặt wamp</h2>
-
-<ul>
-<li>Truy cập <a href="http://www.wampserver.com/en/">trang web của wamp</a></li>
-<li>Vào mục download để tải phiên bản phù hợp (chú ý win 32bits hay 64bits) => tập tin &ldquo;Wampserver xxx.exe&rdquo;</li>
-<li>Chạy tập tin để cài đặt (nên để mặc định) => có thể chọn thư mục cài đặt (C:\wamp)</li>
-<li>Sau khi cài xong, chạy wampserver sẽ có biểu tưởng màu xanh trên taskbar của windows như hình bên dưới<br>
-<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 1.png"/> <br></li>
-<li>Nếu biểu tượng màu cam thì có thể do đụng độ port => Chỉnh lại như sau: <br></li>
-</ul>
-
-
-<ol>
-<li> Chuột trái vào biểu tượng => apache => httpd.conf <br> </li>
-<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 2.png"/> <br>
+<li> Chuột trái vào biểu tượng =&gt; apache =&gt; httpd.conf <br /> </li>
+<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 2.png" /> <br />
 <li> Tìm vào chỉnh port cho phù hợp: như trong hình là 8082 </li>
-<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 3.png"/>
+<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 3.png" />
 <li> Khởi động lại tất cả services </li>
-<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 4.png"/>
+<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 4.png" />
 </ol>
-
-
 <ul>
-<li>Kết quả
-<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 11.png"/></li>
-</ul>
-
-
-<br>
-
-
+  <li>Kết quả
+<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 11.png" />
+<br />
 <!-- ================================================================= -->
-
-
-<h2>Thực thi tập tin *.php</h2>
-
-<ul>
-<li>Sao chép vào thư mục &ldquo;&lt;Thư mục cài đặt>\www&rdquo; => Ví dụ: thư mục &ldquo;abc&rdquo; chứa tập tin &ldquo;1.php&rdquo; trong &ldquo;www&rdquo;
-<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 5.png"/></li>
-<li>Chạy tập tin &ldquo;1.php&rdquo; bằng cách sử dụng đường link &ldquo;<a href="http://localhost:8082/abc/1.php">http://localhost:8082/abc/1.php</a>&rdquo;
-<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 6.png"/></li>
-</ul>
-
-
-<br>
-
-
+## Thực thi tập tin *.php</li>
+  <li>Sao chép vào thư mục “<thư mục="" cài="" đặt="">\www&#8221; =&gt; Ví dụ: thư mục &#8220;abc&#8221; chứa tập tin &#8220;1.php&#8221; trong &#8220;www&#8221;
+<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 5.png" /></thư></li>
+  <li>Chạy tập tin “1.php” bằng cách sử dụng đường link “http://localhost:8082/abc/1.php”
+<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 6.png" />
+<br />
 <!-- ================================================================= -->
-
-
-<h2>Thực thi tập tin *.php sử dụng dreamweaver CS6</h2>
-
+## Thực thi tập tin *.php sử dụng dreamweaver CS6</li>
+</ul>
 <ol>
 <li> Tạo site </li>
-<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 7.png"/>
+<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 7.png" />
 <li>Thông tin của site </li>
-<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 8.png"/>
-<li>Thông tin server của site => lưu ý thông tin trong <b>&#8220;Server Folder&#8221;</b> và <b>&#8220;Web Url&#8221;</b> </li>
-<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 9.png"/>
-<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 10.png"/>
+<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 8.png" />
+<li>Thông tin server của site =&gt; lưu ý thông tin trong <b>&#8220;Server Folder&#8221;</b> và <b>&#8220;Web Url&#8221;</b> </li>
+<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 9.png" />
+<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 10.png" />
 <li>Sau đó có thể chạy bằng F12 </li>
 </ol>
-
-
-<br>
-
-
+<p><br />
 <!-- ================================================================= -->
-
-
-<h2>Thực thi tập tin *.php sử dụng dreamweaver CS3</h2>
-
+## Thực thi tập tin *.php sử dụng dreamweaver CS3</p>
 <ol>
 <li> Tạo site: tên site và đường dẫn thực thi </li>
-<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 12.png"/>
+<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 12.png" />
 <li> Chọn ngôn ngữ thực thi là php và mysql</li>
-<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 13.png"/>
+<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 13.png" />
 <li> Chọn thư mục chứa các tập tin php </li>
-<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 14.png"/>
+<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 14.png" />
 <li> Chọn thư mục bên trong server </li>
-<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 15.png"/>
+<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 15.png" />
 <li> Chọn lại đường dẫn khi thực thi </li>
-<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 16.png"/>
-<li> Chọn done và xong => nhớ kiểm thư mục sẽ thực thi trong wamp </li>
-<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 17.png"/>
-<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 18.png"/>
+<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 16.png" />
+<li> Chọn done và xong =&gt; nhớ kiểm thư mục sẽ thực thi trong wamp </li>
+<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 17.png" />
+<img src="/images/2014-04-18-setup-wamp-and-config-dreamweaver 18.png" />
 </ol>
 
-</div>
-  
-  
 
 
-    </article>
-  
-  
-    <article>
-      
-  <header>
+        </article>
+        <hr>
     
-      <h1 class="entry-title"><a href="/blog/2014/04/14/github-pages/">Github Pages</a></h1>
-    
-    
-      <p class="meta">
         
+        <article class="article article--index">
+            <header class="article__header">
+    
+        <h1 class="h2 article__title">
+            <a href="/blog/2014/04/14/github-pages/">Github pages</a>
+        </h1>
+    
+
+    
+        <div class="article__meta clearfix">
+            
 
 
 
 
 
 
+    <time class="article__date pull-left" datetime="" pubdate><i class="fa fa-calendar"></i> </time>
 
 
-  
 
 
-<time datetime="2014-04-14T16:33:14+07:00" pubdate data-updated="true">Apr 14<span>th</span>, 2014</time>
+            
+
+    <div class="article__tags pull-left">
+        <i class="fa fa-tags"></i>
+        <ul class="unstyled">
         
-      </p>
+            
+                <li><a class='category' href='/blog/categories/blog/'>blog</a></li>
+            
+                <li><a class='category' href='/blog/categories/github/'>github</a></li>
+            
+                <li><a class='category' href='/blog/categories/install/'>install</a></li>
+            
+                <li><a class='category' href='/blog/categories/jekyll/'>jekyll</a></li>
+            
+                <li><a class='category' href='/blog/categories/octopress/'>octopress</a></li>
+            
+                <li><a class='category' href='/blog/categories/setup/'>setup</a></li>
+            
+            
+        </ul>
+    </div>
+
+
+            
+        </div>
     
-  </header>
+</header>
 
 
-  <div class="entry-content"><!-- ================================================================= -->
 
 
-<h2>Thông tin cơ bản</h2>
-
-<ul>
-<li>GitHub Pages: một dự án để mọi người tạo trang web cá nhân hoặc nhóm. Nó chỉ là một repo trên GitHub, trong đó chứa các tập tin web và được trỏ đến domain xxx.github.io</li>
-<li>Một số cách để sử dụng GitHub Pages
-  &mdash; Thêm trang web lên trên repo
-  &mdash; Sử dụng Jekyll: <a href="http://jekyllrb.com/docs/home/">Link</a>
-  &mdash; Sử dụng Octopress: <a href="http://octopress.org/docs/">Link</a>
-  => Trong bài viết này sẽ hướng dẫn sử dụng octopress trên github</li>
+    <ul id="markdown-toc">
+  <li><a href="#thng-tin-c-bn">Thông tin cơ bản</a></li>
+  <li><a href="#cng-c-s-dng">Công cụ sử dụng</a></li>
+  <li><a href="#hng-dn">Hướng dẫn</a>    <ul>
+      <li><a href="#ci-t-python-276">Cài đặt Python 2.7.6</a></li>
+      <li><a href="#ci-t-ruby-200-v-ruby-devkit">Cài đặt Ruby 2.0.0 và Ruby DevKit</a></li>
+      <li><a href="#ci-t-v-s-dng-git-trn-windows">Cài đặt và sử dụng git trên windows</a></li>
+    </ul>
+  </li>
+  <li><a href="#cc-bc-thc-hin">Các bước thực hiện</a></li>
+  <li><a href="#mt-s-c-php-thng-dng">Một số cú pháp thông dụng</a></li>
+  <li><a href="#ci-t-v-s-dng-mc-lc-trong-octopress">Cài đặt và sử dụng mục lục trong octopress</a></li>
+  <li><a href="#s-dng-theme">Sử dụng theme</a></li>
+  <li><a href="#ti-liu-tham-kho">Tài liệu tham khảo</a></li>
 </ul>
-
 
 <!-- ================================================================= -->
 
-
-<h2>Công cụ sử dụng</h2>
+<h2 id="thng-tin-c-bn">Thông tin cơ bản</h2>
 
 <ul>
-<li>Python 2.7.6</li>
-<li>Ruby 2.0.0</li>
-<li>Ruby DevKit 4.7.2</li>
+  <li>GitHub Pages: một dự án để mọi người tạo trang web cá nhân hoặc nhóm. Nó chỉ là một repo trên GitHub, trong đó chứa các tập tin web và được trỏ đến domain xxx.github.io</li>
+  <li>Một số cách để sử dụng GitHub Pages
+  – Thêm trang web lên trên repo
+  – Sử dụng Jekyll: <a href="http://jekyllrb.com/docs/home/">Link</a>
+  – Sử dụng Octopress: <a href="http://octopress.org/docs/">Link</a>
+  =&gt; Trong bài viết này sẽ hướng dẫn sử dụng octopress trên github</li>
 </ul>
-
 
 <!-- ================================================================= -->
 
-
-<h2>Hướng dẫn</h2>
-
-<h3>Cài đặt Python 2.7.6</h3>
+<h2 id="cng-c-s-dng">Công cụ sử dụng</h2>
 
 <ul>
-<li><a href="/blog/2014/08/27/python-notes/">Hướng dẫn cài đặt</a></li>
+  <li>Python 2.7.6</li>
+  <li>Ruby 2.0.0</li>
+  <li>Ruby DevKit 4.7.2</li>
 </ul>
-
-
-<h3>Cài đặt Ruby 2.0.0 và Ruby DevKit</h3>
-
-<ul>
-<li><a href="/blog/2014/08/31/ruby-notes/">Hướng dẫn cài đặt</a></li>
-</ul>
-
-
-<h3>Cài đặt và sử dụng git trên windows</h3>
-
-<ul>
-<li><a href="/blog/2014/08/31/git-notes/">Hướng dẫn cài đặt</a></li>
-</ul>
-
 
 <!-- ================================================================= -->
 
+<h2 id="hng-dn">Hướng dẫn</h2>
 
-<h2>Các bước thực hiện</h2>
-
-<ul>
-<li>B1: Tạo 1 tài khoản github</li>
-<li>B2: Download src của octopress từ <a href="https://github.com/imathis/octopress">https://github.com/imathis/octopress</a></li>
-<li>B3: Sử dụng với các lệnh sau (bundle exec)
+<h3 id="ci-t-python-276">Cài đặt Python 2.7.6</h3>
 
 <ul>
-<li>rake new_post[&ldquo;&hellip;&rdquo;]: tạo 1 bài post
-=> Sử dụng trong zsh: <strong>bundle exec rake &ldquo;new_post[test]&rdquo;</strong></li>
-<li>rake new_page[&ldquo;&hellip;&rdquo;]: tạo 1 trang mới</li>
-<li>rake preview: xem trên localhost</li>
-<li>rake generate: phát sinh trang html</li>
-<li>rake deploy: up len github (nhập user và password của tài khoản trên github)</li>
-<li>Nếu có lỗi không thể deploy thì có thể làm tay
+  <li><a href="/blog/2014/08/27/python-notes/">Hướng dẫn cài đặt</a></li>
+</ul>
+
+<h3 id="ci-t-ruby-200-v-ruby-devkit">Cài đặt Ruby 2.0.0 và Ruby DevKit</h3>
 
 <ul>
-<li>Tạo thư mục chứa các tập tin/thư mục để đưa lên sever. Sử dụng lệnh: &ldquo;mkdir _deploy&rdquo;</li>
-<li>Tạo kết nối của thư mục <em>deploy và repo của github. Sử dụng lệnh: &ldquo;git clone &lt;deploy_repo> </em>deploy&rdquo;</li>
-<li>Khởi tạo. Sử dụng lệnh: &ldquo;rake gen_deploy&rdquo;</li>
+  <li><a href="/blog/2014/08/31/ruby-notes/">Hướng dẫn cài đặt</a></li>
 </ul>
-</li>
-<li>Nếu không nhận ra bundle
+
+<h3 id="ci-t-v-s-dng-git-trn-windows">Cài đặt và sử dụng git trên windows</h3>
 
 <ul>
-<li>cd C:/RubyDevKit</li>
-<li>ruby dk.rb init</li>
-<li>ruby dk.rb install</li>
-<li>cd thư mục chưa octopress</li>
-<li>gem install bundler</li>
-<li>gem install RedCloth -v &lsquo;4.2.9&rsquo;</li>
-<li>bundle install</li>
+  <li><a href="/blog/2014/08/31/git-notes/">Hướng dẫn cài đặt</a></li>
 </ul>
-</li>
-</ul>
-</li>
-</ul>
-
 
 <!-- ================================================================= -->
 
-
-<h2>Một số cú pháp thông dụng</h2>
-
+<h2 id="cc-bc-thc-hin">Các bước thực hiện</h2>
 <ul>
-<li>Hình ảnh: &lt; Image sr=&ldquo;&rdquo;/></li>
-<li>Link tham khảo: [chuỗi mô tả](đường link)</li>
-<li>Code block:
-
-<ul>
-<li>{ % codeblock [lang:language] [title] [url] [link text] [start:#] [mark:#,#&ndash;#] [linenos:false] % }</li>
-<li>code snippet</li>
-<li>{ % endcodeblock % }</li>
-</ul>
-</li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Cài đặt và sử dụng mục lục trong octopress</h2>
-
-<ul>
-<li>Cài đặt
-
-<ul>
-<li>Download từ <a href="/files/jquery.toc.zip">link</a></li>
-<li>Giải nén
-
-<ul>
-<li>Copy các tập tin trong thư mục js vào thư mục &ldquo;source/javascripts&rdquo;</li>
-<li>Copy các tập tin trong thư mục css vào thư mục &ldquo;source/stylesheets&rdquo;</li>
-</ul>
-</li>
-<li>Tạo tập tin &ldquo;javascripts/generate-toc.js&rdquo; với nội dung sau</li>
-</ul>
-</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>function generateTOC(heading) {
-</span><span class='line'>         var container = jQuery("&lt;section>&lt;/section>");
-</span><span class='line'>     var div = jQuery("&lt;ul id='toc'>&lt;/ul>");
-</span><span class='line'>     var content = jQuery('.sidebar');
-</span><span class='line'>
-</span><span class='line'>     if (heading != undefined && heading != null) {
-</span><span class='line'>        container.append('&lt;h1 class="tocHeading">' + heading + '&lt;/h1>');
-</span><span class='line'>     }
-</span><span class='line'>
-</span><span class='line'>     div.tableOfContents("#content",{startLevel: 2});
-</span><span class='line'>     container.append(div);
-</span><span class='line'>     content.prepend(container);
-</span><span class='line'>  }</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>Thêm đoạn code sau vào tập tin &ldquo;source/_includes/custom/head.html&rdquo;</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;script src="http://code.jquery.com/jquery-1.10.1.min.js">&lt;/script>
-</span><span class='line'>     &lt;script src="/javascripts/jquery.tableofcontents.min.js" type="text/javascript">&lt;/script>
-</span><span class='line'>     &lt;script src="/javascripts/generate-toc.js" type="text/javascript">&lt;/script></span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>Thêm đoạn code sau vào tập tin &ldquo;source/_includes/custom/after_footer.html&rdquo;</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;script type="text/javascript">
-</span><span class='line'>    jQuery(document).ready(function() {
-</span><span class='line'>        // Put a TOC right before the entry content.
-</span><span class='line'>        generateTOC('Table of Contents');
-</span><span class='line'>    });
-</span><span class='line'>    &lt;/script></span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>Sử dụng: trong phần head của mỗi bài post hay page, thêm vào &ldquo;toc: true&rdquo;</li>
-<li>Tham khảo: <a href="http://jkamenik.github.io/blog/2013/07/07/octopress-toc/">link</a></li>
-</ul>
-
-
-<!-- ================================================================= -->
-
-
-<h2>Tài liệu tham khảo</h2>
-
-<ul>
-<li><a href="https://pages.github.com/">GitHub Pages</a></li>
-</ul>
-
-</div>
-  
-  
-
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-    <a class="next" href="/blog/page/2/">Newer &rarr;</a>
-    
-  </div>
-</div>
-<aside class="sidebar">
-  
-    <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/blog/2015/03/31/bugzilla/">Bugzilla</a>
+  <li>B1: Tạo 1 tài khoản github</li>
+  <li>B2: Download src của octopress từ https://github.com/imathis/octopress</li>
+  <li>B3: Sử dụng với các lệnh sau (bundle exec)
+    <ul>
+      <li>rake new_post[”…”]: tạo 1 bài post
+=&gt; Sử dụng trong zsh: <strong>bundle exec rake “new_post[test]”</strong></li>
+      <li>rake new_page[”…”]: tạo 1 trang mới</li>
+      <li>rake preview: xem trên localhost</li>
+      <li>rake generate: phát sinh trang html</li>
+      <li>rake deploy: up len github (nhập user và password của tài khoản trên github)</li>
+      <li>Nếu có lỗi không thể deploy thì có thể làm tay
+        <ul>
+          <li>Tạo thư mục chứa các tập tin/thư mục để đưa lên sever. Sử dụng lệnh: “mkdir _deploy”</li>
+          <li>Tạo kết nối của thư mục _deploy và repo của github. Sử dụng lệnh: “git clone <deploy_repo> _deploy&#8221;</deploy_repo></li>
+          <li>Khởi tạo. Sử dụng lệnh: “rake gen_deploy”</li>
+        </ul>
       </li>
-    
-      <li class="post">
-        <a href="/blog/2015/03/31/perl/">Perl</a>
+      <li>Nếu không nhận ra bundle
+        <ul>
+          <li>cd C:/RubyDevKit</li>
+          <li>ruby dk.rb init</li>
+          <li>ruby dk.rb install</li>
+          <li>cd thư mục chưa octopress</li>
+          <li>gem install bundler</li>
+          <li>gem install RedCloth -v ‘4.2.9’</li>
+          <li>bundle install</li>
+        </ul>
       </li>
-    
-      <li class="post">
-        <a href="/blog/2015/03/16/nokia-x/">Nokia X</a>
+    </ul>
+  </li>
+</ul>
+
+<!-- ================================================================= -->
+
+<h2 id="mt-s-c-php-thng-dng">Một số cú pháp thông dụng</h2>
+<ul>
+  <li>Hình ảnh: &lt; Image sr=””/&gt;</li>
+  <li>Link tham khảo: [chuỗi mô tả](đường link)</li>
+  <li>Code block:
+    <ul>
+      <li>{ % codeblock [lang:language] [title] [url] [link text] [start:#] [mark:#,#-#] [linenos:false] % }</li>
+      <li>code snippet</li>
+      <li>{ % endcodeblock % } </li>
+    </ul>
+  </li>
+</ul>
+
+<!-- ================================================================= -->
+
+<h2 id="ci-t-v-s-dng-mc-lc-trong-octopress">Cài đặt và sử dụng mục lục trong octopress</h2>
+<ul>
+  <li>Cài đặt
+    <ul>
+      <li>Download từ <a href="/files/jquery.toc.zip">link</a></li>
+      <li>Giải nén
+        <ul>
+          <li>Copy các tập tin trong thư mục js vào thư mục “source/javascripts”</li>
+          <li>Copy các tập tin trong thư mục css vào thư mục “source/stylesheets”</li>
+        </ul>
       </li>
+      <li>Tạo tập tin “javascripts/generate-toc.js” với nội dung sau</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">function generateTOC(heading) {
+</span><span class="line">  	   var container = jQuery("&lt;section&gt;&lt;/section&gt;");
+</span><span class="line">	   var div = jQuery("&lt;ul id='toc'&gt;&lt;/ul&gt;");
+</span><span class="line">	   var content = jQuery('.sidebar');
+</span><span class="line">
+</span><span class="line">	   if (heading != undefined &amp;&amp; heading != null) {
+</span><span class="line">	      container.append('&lt;h1 class="tocHeading"&gt;' + heading + '&lt;/h1&gt;');
+</span><span class="line">	   }
+</span><span class="line">
+</span><span class="line">	   div.tableOfContents("#content",{startLevel: 2});
+</span><span class="line">	   container.append(div);
+</span><span class="line">	   content.prepend(container);
+</span><span class="line">  }</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<ul>
+  <li>Thêm đoạn code sau vào tập tin “source/_includes/custom/head.html”</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">&lt;script src="http://code.jquery.com/jquery-1.10.1.min.js"&gt;&lt;/script&gt;
+</span><span class="line">     &lt;script src="/javascripts/jquery.tableofcontents.min.js" type="text/javascript"&gt;&lt;/script&gt;
+</span><span class="line">     &lt;script src="/javascripts/generate-toc.js" type="text/javascript"&gt;&lt;/script&gt;</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<ul>
+  <li>Thêm đoạn code sau vào tập tin “source/_includes/custom/after_footer.html”</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">&lt;script type="text/javascript"&gt;
+</span><span class="line">    jQuery(document).ready(function() {
+</span><span class="line">        // Put a TOC right before the entry content.
+</span><span class="line">        generateTOC('Table of Contents');
+</span><span class="line">    });
+</span><span class="line">    &lt;/script&gt;</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<ul>
+  <li>Sử dụng: trong phần head của mỗi bài post hay page, thêm vào “toc: true”</li>
+  <li>Tham khảo: <a href="http://jkamenik.github.io/blog/2013/07/07/octopress-toc/">link</a></li>
+</ul>
+
+<!-- ================================================================= -->
+
+<h2 id="s-dng-theme">Sử dụng theme</h2>
+<ul>
+  <li>Chọn theme trong link bên dưới</li>
+  <li>https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes</li>
+  <li>Làm theo hướng dẫn</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">cd octopress
+</span><span class="line">git submodule add GIT_URL .themes/THEME_NAME
+</span><span class="line">rake install['THEME_NAME']
+</span><span class="line">rake generate</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<ul>
+  <li>Một số theme yêu thích:
+    <ul>
+      <li>https://github.com/alexharris/calm-shallow-sea</li>
+      <li>https://github.com/sevenadrian/foxslide</li>
+      <li>https://github.com/mikeclarke/villainy-octopress-theme</li>
+      <li>https://github.com/syui/syui.github.io/tree/theme</li>
+      <li>https://github.com/deakolt/octoflow</li>
+      <li>https://github.com/annejohnson/octofound</li>
+      <li>https://github.com/coogie/oscailte/</li>
+    </ul>
+  </li>
+</ul>
+
+<!-- ================================================================= -->
+
+<h2 id="ti-liu-tham-kho">Tài liệu tham khảo</h2>
+<ul>
+  <li><a href="https://pages.github.com/">GitHub Pages</a></li>
+</ul>
+
+
+
+        </article>
+        <hr>
     
-      <li class="post">
-        <a href="/blog/2015/03/06/c-plus-plus/">C++</a>
-      </li>
+
+    <div class="pagination">
     
-      <li class="post">
-        <a href="/blog/2015/02/04/test-management/">Test Management</a>
-      </li>
+
     
-  </ul>
+        <a class="btn pull-right" href="">Newer &rarr;</a>
+    
+    </div>
+
+                </div>
+
+                
+                <aside class="sidebar col-xs-12 col-md-4 col-lg-4">
+                    <div class="row">
+
+  <img class="hero__gravatar" src="/images/gravatar.jpg" width="150" height="150">
+
+    
+
+    
+<section class="social col-xs-12 col-sm-6 col-md-12">
+    <h1>
+        Follow me!
+    </h1>
+    <ul class="unstyled">
+        
+        
+        
+        
+        <li><a class="github" href="//github.com/trphloc"><i class="fa fa-github"></i> Github</a></li>
+        <li><a class="googleplus" href="//plus.google.com/117995923407783054772"><i class="fa fa-google-plus-square"></i> Google+</a></li>
+        
+        
+        
+        
+        
+        <li><a class="stackoverflow" href="//stackoverflow.com/users/4848966/phuoc-loc-truong"><i class="fa fa-stack-overflow"></i> StackOverflow</a></li>
+        <li><a class="twitter" href="//twitter.com/trphloc"><i class="fa fa-twitter"></i> Twitter</a></li>
+        <li><a class="youtube" href="//youtube.com/user/trphloc"><i class="fa fa-youtube"></i> YouTube</a></li>
+    </ul>
+</section>
+
+
+
+  <section class="hire--aside col-xs-12 col-sm-10 col-md-12">
+  <h1>Search
+  </h1>
+  <form action="http://google.com/search" method="get" >
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:www.trphloc.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+  </form>
+        </section>  
+
+    <section id="recent-posts" class="col-xs-12 col-sm-6 col-md-12">
+    <h1>Recent Posts</h1>
+    <ul class="divided">
+        
+        <li class="post">
+            <a href="/blog/2015/04/30/mono-project/">Mono-project</a>
+        </li>
+        
+        <li class="post">
+            <a href="/blog/2015/03/31/bugzilla/">Bugzilla</a>
+        </li>
+        
+        <li class="post">
+            <a href="/blog/2015/03/31/perl/">Perl</a>
+        </li>
+        
+        <li class="post">
+            <a href="/blog/2015/03/16/nokia-x/">Nokia X</a>
+        </li>
+        
+        <li class="post">
+            <a href="/blog/2015/03/06/c-plus-plus/">C++</a>
+        </li>
+        
+    </ul>
 </section>
 
 
 
 
 
-  
-</aside>
 
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
-  Copyright &copy; 2015 - Phuoc-Loc Truong -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</div>
+
+                </aside>
+                
+            </div>
+        </div>
+
+        
+
+    
+    
+
+
+
+
+<footer class="footer">
+    <div class="row middle-xs">
+        
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <p class="footer__copyright">
+    All content copyright trphloc, email: trphloc.<br>
 </p>
 
+        </div>
+        
+        
+    </div>
 </footer>
-  
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="//crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
+<script defer src="/javascripts/octopress.js"></script>
 
 
 
@@ -1810,25 +1982,13 @@ ls: liệt kê danh sách tập tin ls | tr &lsquo;\n&rsquo; &lsquo;\n&rsquo; cd
 
 
 
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = '//platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
 
 
 
-<script type="text/javascript">
-    jQuery(document).ready(function() {
-        // Put a TOC right before the entry content.
-        generateTOC('Table of Contents');
-    });
-</script>
 
 
-</body>
+
+
+    </body>
+
 </html>

@@ -1,85 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Python | Phuoc-Loc's blog]]></title>
-  <link href="http://trphloc.github.io/blog/categories/python/atom.xml" rel="self"/>
-  <link href="http://trphloc.github.io/"/>
-  <updated>2015-03-31T14:41:44+07:00</updated>
-  <id>http://trphloc.github.io/</id>
-  <author>
-    <name><![CDATA[Phuoc-Loc Truong]]></name>
-    <email><![CDATA[trphloc@gmail.com]]></email>
-  </author>
-  <generator uri="http://octopress.org/">Octopress</generator>
+    <title><![CDATA[Category: python | Phuoc-Loc 's blog]]></title>
+    <link href="http://www.trphloc.com/blog/categories/python/atom.xml" rel="self"/>
+    <link href="http://www.trphloc.com/"/>
+    <updated>2015-04-30T22:22:23+07:00</updated>
+    <id>http://www.trphloc.com/</id>
+    <author>
+        <name><![CDATA[trphloc]]></name>
+        <email><![CDATA[trphloc]]></email>
+      </author>
+    <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Python Notes]]></title>
-    <link href="http://trphloc.github.io/blog/2014/08/27/python-notes/"/>
-    <updated>2014-08-27T16:28:01+07:00</updated>
-    <id>http://trphloc.github.io/blog/2014/08/27/python-notes</id>
-    <content type="html"><![CDATA[<!-- ================================================================= -->
-
-
-<h2>Cài đặt Python trên môi trường windows</h2>
-
-<h3>Môi trường</h3>
-
-<ul>
-<li>Windows 8.1</li>
-<li>Python 2.7.6</li>
+    
+    <entry>
+        <title type="html"><![CDATA[Python notes]]></title>
+        <link href="http://www.trphloc.com/blog/2014/08/27/python-notes/"/>
+        <updated>2014-08-27T16:28:01+07:00</updated>
+        <id>http://www.trphloc.com/blog/2014/08/27/python-notes</id>
+        <content type="html"><![CDATA[<ul id="markdown-toc">
+  <li><a href="#ci-t-python-trn-mi-trng-windows">Cài đặt Python trên môi trường windows</a>    <ul>
+      <li><a href="#mi-trng">Môi trường</a></li>
+      <li><a href="#thc-hin">Thực hiện</a></li>
+    </ul>
+  </li>
+  <li><a href="#ci-t-pip">Cài đặt pip</a>    <ul>
+      <li><a href="#mi-trng-windows">Môi trường windows</a></li>
+      <li><a href="#mi-trng-mac">Môi trường Mac</a></li>
+    </ul>
+  </li>
+  <li><a href="#ci-t-ipython-sau-khi--c-pip">Cài đặt iPython (sau khi đã có pip)</a></li>
+  <li><a href="#virtualenv">Virtualenv</a>    <ul>
+      <li><a href="#s-dng">Sử dụng</a></li>
+    </ul>
+  </li>
+  <li><a href="#python-trn-emacs">Python trên emacs</a>    <ul>
+      <li><a href="#ci-t-v-cu-hnh">Cài đặt và cấu hình</a></li>
+      <li><a href="#s-dng-1">Sử dụng</a></li>
+    </ul>
+  </li>
+  <li><a href="#python-toolsutilities">Python Tools/Utilities</a></li>
+  <li><a href="#mt-s-lu-">Một số lưu ý</a></li>
+  <li><a href="#subprocess">Subprocess</a></li>
 </ul>
-
-
-<h3>Thực hiện</h3>
-
-<ul>
-<li>Truy cập <a href="https://www.python.org">trang chủ của Python</a></li>
-<li>Vào mục <a href="https://www.python.org/downloads/">downloads</a> để tải phiên bản phù hợp (phiên bản 2.7.6)</li>
-<li>Chạy tập tin Python-&hellip;.msi và làm theo hướng dẫn (chọn thư mục cài đặt C:\abc\Python2.7.6)</li>
-<li>Thêm đường dẫn &ldquo;C:\abc\Python2.7.6&rdquo; vào biến môi trường (Environment variables) &ldquo;Path&rdquo;</li>
-</ul>
-
 
 <!-- ================================================================= -->
 
+<h2 id="ci-t-python-trn-mi-trng-windows">Cài đặt Python trên môi trường windows</h2>
 
-<h2>Cài đặt pip</h2>
+<h3 id="mi-trng">Môi trường</h3>
+
+<ul>
+  <li>Windows 8.1</li>
+  <li>Python 2.7.6</li>
+</ul>
+
+<h3 id="thc-hin">Thực hiện</h3>
+
+<ul>
+  <li>Truy cập <a href="https://www.python.org">trang chủ của Python</a></li>
+  <li>Vào mục <a href="https://www.python.org/downloads/">downloads</a> để tải phiên bản phù hợp (phiên bản 2.7.6)</li>
+  <li>Chạy tập tin Python-….msi và làm theo hướng dẫn (chọn thư mục cài đặt C:\abc\Python2.7.6)</li>
+  <li>Thêm đường dẫn “C:\abc\Python2.7.6” vào biến môi trường (Environment variables) “Path”</li>
+</ul>
+
+<!-- ================================================================= -->
+
+<h2 id="ci-t-pip">Cài đặt pip</h2>
 
 <p><a href="https://pip.pypa.io/en/latest/installing.html#install-pip">Tham khảo</a></p>
 
-<h3>Môi trường windows</h3>
+<h3 id="mi-trng-windows">Môi trường windows</h3>
 
 <ul>
-<li>Download từ <a href="/files/get-pip.py">link</a> nguồn: <a href="https://pip.pypa.io/en/latest/installing.html">https://pip.pypa.io/en/latest/installing.html</a></li>
-<li>Thực thi lệnh</li>
+  <li>Download từ <a href="/files/get-pip.py">link</a> nguồn: https://pip.pypa.io/en/latest/installing.html</li>
+  <li>Thực thi lệnh</li>
 </ul>
-
 
 <p><code>
 python get-pip.py
 </code></p>
 
 <ul>
-<li>Gán biến môi trường cho thư mục Scripts trong thư mục cài đặt Python</li>
+  <li>Gán biến môi trường cho thư mục Scripts trong thư mục cài đặt Python</li>
 </ul>
 
-
-<h3>Môi trường Mac</h3>
+<h3 id="mi-trng-mac">Môi trường Mac</h3>
 
 <ul>
-<li>Thực thi lệnh sau</li>
+  <li>Thực thi lệnh sau</li>
 </ul>
-
 
 <p><code>
 sudo easy_install pip
 </code></p>
 
 <ul>
-<li>Hoặc download và di chuyển tới thư mục chứa tập tin get-pip.py thực thi lệnh</li>
+  <li>Hoặc download và di chuyển tới thư mục chứa tập tin get-pip.py thực thi lệnh</li>
 </ul>
-
 
 <p><code>
 sudo python get-pip.py
@@ -87,13 +105,11 @@ sudo python get-pip.py
 
 <!-- ================================================================= -->
 
-
-<h2>Cài đặt iPython (sau khi đã có pip)</h2>
+<h2 id="ci-t-ipython-sau-khi--c-pip">Cài đặt iPython (sau khi đã có pip)</h2>
 
 <ul>
-<li>Thực thi lệnh sau để cài đặt:</li>
+  <li>Thực thi lệnh sau để cài đặt:</li>
 </ul>
-
 
 <p><code>
 pip install ipython
@@ -101,49 +117,41 @@ pip install ipython
 
 <!-- ================================================================= -->
 
-
-<h2>Virtualenv</h2>
-
-<h3>Cài đặt virtualenv</h3>
+<h2 id="virtualenv">Virtualenv</h2>
+<p>### Cài đặt virtualenv</p>
 
 <ul>
-<li>Trên windows: sử dụng lệnh: &ldquo;easy_install virtualenv&rdquo; trong cmd</li>
-<li>Trên Mac: sử dụng lệnh: &ldquo;sudo easy_install virtualenv&rdquo; trong terminal</li>
+  <li>Trên windows: sử dụng lệnh: “easy_install virtualenv” trong cmd</li>
+  <li>Trên Mac: sử dụng lệnh: “sudo easy_install virtualenv” trong terminal</li>
 </ul>
 
-
-<h3>Sử dụng</h3>
+<h3 id="s-dng">Sử dụng</h3>
 
 <ul>
-<li>Tạo môi trường tên abc
-
-<ul>
-<li>virtualenv &mdash;no-site-packages abc: tạo môi trường không sử dụng các packages</li>
-<li>virtualenv abc</li>
+  <li>Tạo môi trường tên abc
+    <ul>
+      <li>virtualenv –no-site-packages abc: tạo môi trường không sử dụng các packages</li>
+      <li>virtualenv abc</li>
+    </ul>
+  </li>
+  <li>Kích hoạt môi trường bằng cách chạy scripts của nó
+    <ul>
+      <li>“abc/bin/activate”: trên windows</li>
+      <li>“source working/bin/activate”: trên linux hay MAC</li>
+    </ul>
+  </li>
+  <li>Chạy lệnh “deactive” để thoát</li>
 </ul>
-</li>
-<li>Kích hoạt môi trường bằng cách chạy scripts của nó
-
-<ul>
-<li>&ldquo;abc/bin/activate&rdquo;: trên windows</li>
-<li>&ldquo;source working/bin/activate&rdquo;: trên linux hay MAC</li>
-</ul>
-</li>
-<li>Chạy lệnh &ldquo;deactive&rdquo; để thoát</li>
-</ul>
-
 
 <!-- ================================================================= -->
 
+<h2 id="python-trn-emacs">Python trên emacs</h2>
 
-<h2>Python trên emacs</h2>
-
-<h3>Cài đặt và cấu hình</h3>
+<h3 id="ci-t-v-cu-hnh">Cài đặt và cấu hình</h3>
 
 <ul>
-<li>Cài thêm gói role/flake8/jedi cho python: thực thi lệnh</li>
+  <li>Cài thêm gói role/flake8/jedi cho python: thực thi lệnh</li>
 </ul>
-
 
 <p><code>
 pip install flake8
@@ -152,9 +160,8 @@ pip install jedi
 </code></p>
 
 <ul>
-<li>Cài đặt Python-mode package, iPython package. Cấu hình</li>
+  <li>Cài đặt Python-mode package, iPython package. Cấu hình</li>
 </ul>
-
 
 <p><code>
 ; python-mode
@@ -178,86 +185,66 @@ pip install jedi
 </code></p>
 
 <ul>
-<li>Cài đặt elpy package</li>
-<li>Cấu hình trong emacs. Thêm vào file cấu hình .emacs:</li>
+  <li>Cài đặt elpy package</li>
+  <li>Cấu hình trong emacs. Thêm vào file cấu hình .emacs:</li>
 </ul>
-
 
 <p><code>
 (package-initialize)
 (elpy-enable)
 </code></p>
 
-<h3>Sử dụng</h3>
-
+<h3 id="s-dng-1">Sử dụng</h3>
 <ul>
-<li>Mở tập tin python, nhấn &ldquo;Ctrl-c !&rdquo; => cửa sổ thực thi của iPython sẽ hiện ra
-=> không sử dụng vì dùng command.</li>
+  <li>Mở tập tin python, nhấn “Ctrl-c !” =&gt; cửa sổ thực thi của iPython sẽ hiện ra
+=&gt; không sử dụng vì dùng command.</li>
 </ul>
-
 
 <!-- ================================================================= -->
 
-
-<h2>Python Tools/Utilities</h2>
-
+<h2 id="python-toolsutilities">Python Tools/Utilities</h2>
 <p>TODO TPL
-&ndash; <em>dis</em> module: disassembler
-&ndash; <em>pdb</em> module: debug
-&ndash; <em>profile</em> module
-&ndash; <em>tabnanny</em> module</p>
+- <em>dis</em> module: disassembler
+- <em>pdb</em> module: debug
+- <em>profile</em> module
+- <em>tabnanny</em> module</p>
 
 <!-- ================================================================= -->
 
-
-<h2>Một số lưu ý</h2>
-
+<h2 id="mt-s-lu-">Một số lưu ý</h2>
 <ul>
-<li>Tên biến:
-
-<ul>
-<li>Bắt đầu bởi A &ndash;> Z hoặc a &ndash;> z hoặc underscore(_)</li>
-<li>Không cho phép ký tự @, $, %</li>
-<li>Phân biệt viết hoa, viết thường</li>
-</ul>
-</li>
-<li>Code blocks: Không được bao bởi các dấu ( { [. Được nhận biết bởi dòng và <strong>canh lề</strong></li>
+  <li>Tên biến:
+    <ul>
+      <li>Bắt đầu bởi A -&gt; Z hoặc a -&gt; z hoặc underscore(_)</li>
+      <li>Không cho phép ký tự @, $, %</li>
+      <li>Phân biệt viết hoa, viết thường</li>
+    </ul>
+  </li>
+  <li>Code blocks: Không được bao bởi các dấu ( { [. Được nhận biết bởi dòng và <strong>canh lề</strong></li>
 </ul>
 
-
-<p>```
-if True:</p>
-
-<pre><code>print "Answer"
-print "True"
-</code></pre>
-
-<p>else:</p>
-
-<pre><code>print "Answer"
-</code></pre>
-
-<p>  print &ldquo;False&rdquo;
-```</p>
+<p><code>
+if True:
+    print "Answer"
+    print "True"
+else:
+    print "Answer"
+  print "False"
+</code></p>
 
 <ul>
-<li>1 dòng lệnh trên nhiều dòng sẽ dùng dấu <strong>\</strong></li>
+  <li>1 dòng lệnh trên nhiều dòng sẽ dùng dấu <strong>\</strong></li>
 </ul>
 
-
-<p>```
-total = item_one + \</p>
-
-<pre><code>    item_two + \
-    item_three
-</code></pre>
-
-<p>```</p>
+<p><code>
+total = item_one + \
+        item_two + \
+        item_three
+</code></p>
 
 <ul>
-<li>Dấu &lsquo;, &ldquo;, &rsquo;&lsquo;&rsquo; hoặc &rdquo;&ldquo;&rdquo;</li>
+  <li>Dấu ‘, “, ‘’’ hoặc “””</li>
 </ul>
-
 
 <p><code>
 word = 'word'
@@ -267,22 +254,19 @@ made up of multiple lines and sentences."""
 </code></p>
 
 <ul>
-<li>Ghi chú: sử dụng <strong>#</strong></li>
-<li>Xử lý</li>
+  <li>Ghi chú: sử dụng <strong>#</strong></li>
+  <li>Xử lý</li>
 </ul>
-
 
 <!-- ================================================================= -->
 
-
-<h2>Subprocess</h2>
+<h2 id="subprocess">Subprocess</h2>
 
 <ul>
-<li>import subprocess</li>
-<li>subprocess.call([some_command, some_argument, another_argument_or_path])</li>
+  <li>import subprocess</li>
+  <li>subprocess.call([some_command, some_argument, another_argument_or_path])</li>
 </ul>
-
 ]]></content>
-  </entry>
-  
+    </entry>
+    
 </feed>

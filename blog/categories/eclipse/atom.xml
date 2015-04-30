@@ -1,71 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Eclipse | Phuoc-Loc's blog]]></title>
-  <link href="http://trphloc.github.io/blog/categories/eclipse/atom.xml" rel="self"/>
-  <link href="http://trphloc.github.io/"/>
-  <updated>2015-03-31T14:41:44+07:00</updated>
-  <id>http://trphloc.github.io/</id>
-  <author>
-    <name><![CDATA[Phuoc-Loc Truong]]></name>
-    <email><![CDATA[trphloc@gmail.com]]></email>
-  </author>
-  <generator uri="http://octopress.org/">Octopress</generator>
+    <title><![CDATA[Category: Eclipse | Phuoc-Loc 's blog]]></title>
+    <link href="http://www.trphloc.com/blog/categories/eclipse/atom.xml" rel="self"/>
+    <link href="http://www.trphloc.com/"/>
+    <updated>2015-04-30T22:22:23+07:00</updated>
+    <id>http://www.trphloc.com/</id>
+    <author>
+        <name><![CDATA[trphloc]]></name>
+        <email><![CDATA[trphloc]]></email>
+      </author>
+    <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Eclipse Notes]]></title>
-    <link href="http://trphloc.github.io/blog/2014/08/05/eclipse-notes/"/>
-    <updated>2014-08-05T09:35:28+07:00</updated>
-    <id>http://trphloc.github.io/blog/2014/08/05/eclipse-notes</id>
-    <content type="html"><![CDATA[<!-- ================================================================= -->
-
-
-<h2>Một số phím tắt</h2>
-
-<h3>Windows</h3>
-
-<ul>
-<li><b>Ctrl + Shift + L: xem danh sách phím tắt</b></li>
-<li>Alt + Shift + Q, P: xem package explorer</li>
-<li>Alt + Shift + Q, C: xem console</li>
-<li>Alt + Shift + Q, L: xem error Log</li>
-<li>Alt + F5: update project</li>
-<li>Ctrl + Shift + O: thêm các thư viện còn thiếu</li>
-<li>Ctrl + Shift + R: mở tập tin workspace</li>
-<li>Ctrl + Shift + T: mở tập tin trong jar, thư viện, &hellip;</li>
-<li>Ctrl + H: tìm kiếm</li>
-<li>Ctrl + M: phóng to cửa sổ hiện hành</li>
-<li>Alt + F7: Next Page</li>
-<li>Alt + Page down: Next sub-tab</li>
-<li>Ctrl + F6: Next Editor</li>
-<li>Ctrl + F7: Next View</li>
-<li>Ctrl + 1: quick fix</li>
+    
+    <entry>
+        <title type="html"><![CDATA[eclipse notes]]></title>
+        <link href="http://www.trphloc.com/blog/2014/08/05/eclipse-notes/"/>
+        <updated>2014-08-05T09:35:28+07:00</updated>
+        <id>http://www.trphloc.com/blog/2014/08/05/eclipse-notes</id>
+        <content type="html"><![CDATA[<ul id="markdown-toc">
+  <li><a href="#mt-s-phm-tt">Một số phím tắt</a>    <ul>
+      <li><a href="#windows">Windows</a></li>
+      <li><a href="#mac">Mac</a></li>
+    </ul>
+  </li>
+  <li><a href="#mt-s-th-mctp-tin-t-pht-sinh-trong-eclipse-c-th-xa">Một số thư mục/tập tin tự phát sinh trong eclipse (có thể xóa)</a></li>
+  <li><a href="#ci-t-maven-trn-windows">Cài đặt Maven trên windows</a></li>
+  <li><a href="#ci-t-tomcat-trn-windows">Cài đặt Tomcat trên windows</a></li>
+  <li><a href="#pht-sinh-keystore">Phát sinh keystore</a></li>
+  <li><a href="#ci-t-plugin">Cài đặt plugin</a>    <ul>
+      <li><a href="#cch-1">Cách 1</a></li>
+      <li><a href="#cch-2">Cách 2</a></li>
+    </ul>
+  </li>
 </ul>
-
-
-<h3>Mac</h3>
-
-<ul>
-<li><b> CMD + Shift + L: xem danh sách phím tắt </b></li>
-<li>Alt + CMD + Q, P: xem package explorer</li>
-<li>Alt + CMD + Q, C: xem console</li>
-<li>Alt + CMD + Q, L: xem error log</li>
-<li>Alt + F5: update project</li>
-<li>CMD + Shift + O: thêm các thư viện còn thiếu</li>
-<li>CMD + Shift + R: mở tập tin workspace</li>
-<li>CMD + Shift + T: mở tập tin trong jar, thư viện, &hellip;</li>
-<li>CMD + H: tìm kiếm</li>
-<li>Ctrl + M: phóng to cửa sổ hiện hành</li>
-<li>CMD + F6: Next Editor</li>
-<li>CMD + F7: Next View</li>
-</ul>
-
 
 <!-- ================================================================= -->
 
+<h2 id="mt-s-phm-tt">Một số phím tắt</h2>
 
-<h2>Một số thư mục/tập tin tự phát sinh trong eclipse (có thể xóa)</h2>
+<h3 id="windows">Windows</h3>
+
+<ul>
+  <li><b>Ctrl + Shift + L: xem danh sách phím tắt</b></li>
+  <li>Alt + Shift + Q, P: xem package explorer</li>
+  <li>Alt + Shift + Q, C: xem console</li>
+  <li>Alt + Shift + Q, L: xem error Log</li>
+  <li>Alt + F5: update project</li>
+  <li>Ctrl + Shift + O: thêm các thư viện còn thiếu</li>
+  <li>Ctrl + Shift + R: mở tập tin workspace</li>
+  <li>Ctrl + Shift + T: mở tập tin trong jar, thư viện, …</li>
+  <li>Ctrl + H: tìm kiếm</li>
+  <li>Ctrl + M: phóng to cửa sổ hiện hành</li>
+  <li>Alt + F7: Next Page</li>
+  <li>Alt + Page down: Next sub-tab</li>
+  <li>Ctrl + F6: Next Editor</li>
+  <li>Ctrl + F7: Next View</li>
+  <li>Ctrl + 1: quick fix</li>
+</ul>
+
+<h3 id="mac">Mac</h3>
+
+<ul>
+  <li><b> CMD + Shift + L: xem danh sách phím tắt </b></li>
+  <li>Alt + CMD + Q, P: xem package explorer</li>
+  <li>Alt + CMD + Q, C: xem console</li>
+  <li>Alt + CMD + Q, L: xem error log</li>
+  <li>Alt + F5: update project</li>
+  <li>CMD + Shift + O: thêm các thư viện còn thiếu</li>
+  <li>CMD + Shift + R: mở tập tin workspace</li>
+  <li>CMD + Shift + T: mở tập tin trong jar, thư viện, …</li>
+  <li>CMD + H: tìm kiếm</li>
+  <li>Ctrl + M: phóng to cửa sổ hiện hành</li>
+  <li>CMD + F6: Next Editor</li>
+  <li>CMD + F7: Next View</li>
+</ul>
+
+<!-- ================================================================= -->
+
+<h2 id="mt-s-th-mctp-tin-t-pht-sinh-trong-eclipse-c-th-xa">Một số thư mục/tập tin tự phát sinh trong eclipse (có thể xóa)</h2>
 
 <p><code>
 .settings
@@ -78,124 +91,90 @@ target
 
 <!-- ================================================================= -->
 
-
-<h2>Cài đặt Maven trên windows</h2>
-
+<h2 id="ci-t-maven-trn-windows">Cài đặt Maven trên windows</h2>
 <ul>
-<li>Link to download: <a href="http://maven.apache.org/download.cgi">Apache maven</a>
-
-<ul>
-<li>Tải tập tin nhị phân mới nhất (tùy vào phiên bản)</li>
+  <li>Link to download: <a href="http://maven.apache.org/download.cgi">Apache maven</a>
+    <ul>
+      <li>Tải tập tin nhị phân mới nhất (tùy vào phiên bản)</li>
+    </ul>
+  </li>
+  <li>Giải nén vào thư mục. Ví dụ: C\abc\Maven</li>
+  <li>Điền đường dẫn “C\abc\Maven\bin” vào biến tài nguyên của windows</li>
 </ul>
-</li>
-<li>Giải nén vào thư mục. Ví dụ: C\abc\Maven</li>
-<li>Điền đường dẫn &ldquo;C\abc\Maven\bin&rdquo; vào biến tài nguyên của windows</li>
-</ul>
-
 
 <!-- ================================================================= -->
 
-
-<h2>Cài đặt Tomcat trên windows</h2>
-
+<h2 id="ci-t-tomcat-trn-windows">Cài đặt Tomcat trên windows</h2>
 <ul>
-<li>Link to download: <a href="http://tomcat.apache.org/download-70.cgi">Apache tomcat 7.0</a></li>
-<li>Giải nén vào thư mục. ví dụ: C\abc\Tomcat7.0</li>
-<li>Mở Eclipse => menu windows => chọn preferences => chọn Server => chọn Runtime Environments</li>
-<li>Nhấn nút Add => chọn Apache => chọn Apache tomcat 7.0 => chọn Next</li>
-<li>Chọn đường dẫn C\abc\Tomcat7.0 và JRE phù hợp</li>
-<li>Chọn Finish</li>
+  <li>Link to download: <a href="http://tomcat.apache.org/download-70.cgi">Apache tomcat 7.0</a></li>
+  <li>Giải nén vào thư mục. ví dụ: C\abc\Tomcat7.0</li>
+  <li>Mở Eclipse =&gt; menu windows =&gt; chọn preferences =&gt; chọn Server =&gt; chọn Runtime Environments</li>
+  <li>Nhấn nút Add =&gt; chọn Apache =&gt; chọn Apache tomcat 7.0 =&gt; chọn Next</li>
+  <li>Chọn đường dẫn C\abc\Tomcat7.0 và JRE phù hợp</li>
+  <li>Chọn Finish</li>
 </ul>
-
 
 <!-- ================================================================= -->
 
-
-<h2>Phát sinh keystore</h2>
-
+<h2 id="pht-sinh-keystore">Phát sinh keystore</h2>
 <ul>
-<li>Mở cmd</li>
-<li>Chạy lệnh và làm theo hướng dẫn: keytool -genkey -alias tomcat -keyalg RSA</li>
-<li>Keystore sẽ được lưu trong: &ldquo;C:\Users\trphloc.keystore&rdquo; (trphloc: là tên tài khoản trên máy)</li>
-<li>Vào thư mục cài đặt tomcat (C:\abc\Tomcat7.0) => vào thư mục conf => mở tập tin server.xml</li>
-<li>Tìm đoạn sau
+  <li>Mở cmd</li>
+  <li>Chạy lệnh và làm theo hướng dẫn: keytool -genkey -alias tomcat -keyalg RSA </li>
+  <li>Keystore sẽ được lưu trong: “C:\Users\trphloc.keystore” (trphloc: là tên tài khoản trên máy)</li>
+  <li>Vào thư mục cài đặt tomcat (C:\abc\Tomcat7.0) =&gt; vào thư mục conf =&gt; mở tập tin server.xml</li>
+  <li>Tìm đoạn sau
 <div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>linenos:true </span></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
 <span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/li>
-</span><span class='line'>&lt;/ul>
-</span><span class='line'>
-</span><span class='line'>
-</span><span class='line'>&lt;!--
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;!--
 </span><span class='line'>&lt;Connector port="8443" protocol="HTTP/1.1" SSLEnabled="true"
-</span><span class='line'>    maxThreads="150" scheme="https" secure="true"
-</span><span class='line'>    clientAuth="false" sslProtocol="TLS" />
-</span><span class='line'>-->
-</span><span class='line'>
-</span><span class='line'>
-</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div>
-&ndash; Bỏ comment và sửa thành như sau: trong đó &ldquo;password&rdquo; thay bằng password của bạn khi tạo keystore
+</span><span class='line'>  maxThreads="150" scheme="https" secure="true"
+</span><span class='line'>  clientAuth="false" sslProtocol="TLS" />
+</span><span class='line'>--></span></code></pre></td></tr></table></div></figure></notextile></div></li>
+  <li>Bỏ comment và sửa thành như sau: trong đó “password” thay bằng password của bạn khi tạo keystore
 <div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>linenos:true </span></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
 <span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>Connector SSLEnabled=&ldquo;true&rdquo; acceptCount=&ldquo;100&rdquo; clientAuth=&ldquo;false&rdquo;&lt;/p>
-</span><span class='line'>
-</span><span class='line'>&lt;pre>&lt;code>disableUploadTimeout="true" enableLookups="false" maxThreads="25"
-</span><span class='line'>port="8443" keystoreFile="/Users/loiane/.keystore" keystorePass="password"
-</span><span class='line'>protocol="org.apache.coyote.http11.Http11NioProtocol" scheme="https"
-</span><span class='line'>secure="true" sslProtocol="TLS" /&gt;
-</span><span class='line'>&lt;/code>&lt;/pre>
-</span><span class='line'>
-</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Connector SSLEnabled=”true” acceptCount=”100” clientAuth=”false”
+</span><span class='line'>  disableUploadTimeout=”true” enableLookups=”false” maxThreads=”25”
+</span><span class='line'>  port=”8443” keystoreFile=”/Users/loiane/.keystore” keystorePass=”password”
+</span><span class='line'>  protocol=”org.apache.coyote.http11.Http11NioProtocol” scheme=”https”
+</span><span class='line'>  secure=”true” sslProtocol=”TLS” /&gt;</span></code></pre></td></tr></table></div></figure></notextile></div></li>
+</ul>
 
 <!-- ================================================================= -->
 
+<h2 id="ci-t-plugin">Cài đặt plugin</h2>
 
-<h2>Cài đặt plugin</h2>
-
-<h3>Cách 1</h3>
-
-<ul>
-<li>Menu Help => chọn Install New Software</li>
-<li>Chọn add site:
+<h3 id="cch-1">Cách 1</h3>
 
 <ul>
-<li>Gõ tên: &hellip;</li>
-<li>Gõ đường dẫn đến server</li>
-</ul>
-</li>
-<li>Chọn plugin cần cài đặt trong danh sách bên dưới</li>
-<li>Chọn next</li>
-<li>Chọn accept và next &hellip;</li>
+  <li>Menu Help =&gt; chọn Install New Software</li>
+  <li>Chọn add site:
+    <ul>
+      <li>Gõ tên: …</li>
+      <li>Gõ đường dẫn đến server</li>
+    </ul>
+  </li>
+  <li>Chọn plugin cần cài đặt trong danh sách bên dưới</li>
+  <li>Chọn next</li>
+  <li>Chọn accept và next …</li>
 </ul>
 
-
-<h3>Cách 2</h3>
+<h3 id="cch-2">Cách 2</h3>
 
 <ul>
-<li>Vào menu Help => Eclipse Marketplace => Gõ &ldquo;tên&rdquo; vào ô tìm kiếm => chọn tìm</li>
-<li>Chọn install</li>
-<li>Chọn all và nhấn nút Confirm</li>
+  <li>Vào menu Help =&gt; Eclipse Marketplace =&gt; Gõ “tên” vào ô tìm kiếm =&gt; chọn tìm</li>
+  <li>Chọn install</li>
+  <li>Chọn all và nhấn nút Confirm</li>
 </ul>
-
 ]]></content>
-  </entry>
-  
+    </entry>
+    
 </feed>

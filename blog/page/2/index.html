@@ -12,7 +12,7 @@
         <title>Phuoc-Loc 's blog</title>
         <meta name="author" content="trphloc">
         
-        <meta name="description" content="Database Database cơ sở dữ liệu TODO - TPL Loại cơ sở dữ liệu Hệ quản trị cơ sở dữ liệu Công cụ quản trị cơ sơ dữ liệu Profiler Loại cơ sở dữ liệu &hellip;">
+        <meta name="description" content="Coding standards coding standards convention TODO - TPL Một số công cụ kiểm tra convention Một số công cụ kiểm tra convention Checkstyle Findbugs &hellip;">
         
         <meta name="viewport" content="width=device-width">
         <link rel="canonical" href="http://www.trphloc.com/blog/page/2">
@@ -31,6 +31,14 @@
 
         <header id="header">
     <div class="row">
+
+  <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-63048914-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+  </script>
+  
     <div class="col-xs-12 col-sm-8 col-md-4">
         <a href="/" class="site-title">Phuoc-Loc 's blog</a>
     </div>
@@ -77,6 +85,251 @@
                 <div class="col-xs-12 col-sm-10 col-md-8 col-lg-8">
                 
                         
+    
+        
+        <article class="article article--index">
+            <header class="article__header">
+    
+        <h1 class="h2 article__title">
+            <a href="/blog/2015/01/13/coding-standards/">Coding standards</a>
+        </h1>
+    
+
+    
+        <div class="article__meta clearfix">
+            
+
+
+
+
+
+
+    <time class="article__date pull-left" datetime="" pubdate><i class="fa fa-calendar"></i> </time>
+
+
+
+
+            
+
+    <div class="article__tags pull-left">
+        <i class="fa fa-tags"></i>
+        <ul class="unstyled">
+        
+            
+                <li><a class='category' href='/blog/categories/coding-standards/'>coding standards</a></li>
+            
+                <li><a class='category' href='/blog/categories/convention/'>convention</a></li>
+            
+            
+        </ul>
+    </div>
+
+
+            
+        </div>
+    
+</header>
+
+
+
+
+    <p>TODO - TPL</p>
+
+<ul id="markdown-toc">
+  <li><a href="#mt-s-cng-c-kim-tra-convention">Một số công cụ kiểm tra convention</a></li>
+</ul>
+
+<!-- ================================================================= -->
+
+<h2 id="mt-s-cng-c-kim-tra-convention">Một số công cụ kiểm tra convention</h2>
+<ul>
+  <li>Checkstyle</li>
+  <li>Findbugs</li>
+  <li>Fxcop</li>
+  <li>Cppcheck</li>
+</ul>
+
+
+
+        </article>
+        <hr>
+    
+        
+        <article class="article article--index">
+            <header class="article__header">
+    
+        <h1 class="h2 article__title">
+            <a href="/blog/2015/01/10/tools/">Tools</a>
+        </h1>
+    
+
+    
+        <div class="article__meta clearfix">
+            
+
+
+
+
+
+
+    <time class="article__date pull-left" datetime="" pubdate><i class="fa fa-calendar"></i> </time>
+
+
+
+
+            
+
+    <div class="article__tags pull-left">
+        <i class="fa fa-tags"></i>
+        <ul class="unstyled">
+        
+            
+                <li><a class='category' href='/blog/categories/tools/'>tools</a></li>
+            
+            
+        </ul>
+    </div>
+
+
+            
+        </div>
+    
+</header>
+
+
+
+
+    <p>TODO - TPL</p>
+
+<ul id="markdown-toc">
+  <li><a href="#autohotkey">AutoHotkey</a></li>
+  <li><a href="#mjolnir">Mjolnir</a></li>
+  <li><a href="#slate">Slate</a></li>
+  <li><a href="#sizeup">SizeUp</a></li>
+  <li><a href="#user-agent-for-browser">User agent for browser</a></li>
+</ul>
+
+<!-- ================================================================= -->
+
+<h2 id="autohotkey">AutoHotkey</h2>
+
+<ul>
+  <li>Sử dụng cho windows</li>
+  <li>Tham khảo:
+    <ul>
+      <li>http://www.autohotkey.com/</li>
+    </ul>
+  </li>
+</ul>
+
+<!-- ================================================================= -->
+
+<h2 id="mjolnir">Mjolnir</h2>
+
+<ul>
+  <li>Sử dụng cho Mac</li>
+  <li>Download: https://github.com/sdegutis/mjolnir/releases/latest</li>
+  <li>Cài đặt một số modules</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">brew install lua
+</span><span class="line">brew install luarocks
+</span><span class="line">mkdir -p ~/.luarocks
+</span><span class="line">echo 'rocks_servers = { "http://rocks.moonscript.org" }' &gt; ~/.luarocks/config.lua</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">luarocks install mjolnir.hotkey
+</span><span class="line">luarocks install mjolnir.application</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<ul>
+  <li>Cấu hình: tạo tập tin trong <strong>~/.mjolnir/init.lua</strong> =&gt; tham khảo thêm http://thume.ca/howto/2014/12/02/using-mjolnir-an-extensible-osx-window-manager/</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">local application = require "mjolnir.application"
+</span><span class="line">local hotkey = require "mjolnir.hotkey"
+</span><span class="line">local window = require "mjolnir.window"
+</span><span class="line">local fnutils = require "mjolnir.fnutils"</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<ul>
+  <li>Xóa</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">luarocks purge --tree=/usr/local
+</span><span class="line">brew uninstall lua luarocks
+</span><span class="line">rm ~/.luarocks/config.lua</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<ul>
+  <li>Tương tự: http://www.hammerspoon.org/go/</li>
+  <li>Chỉnh tham số hints để di chuyển về góc màn hình
+    <ul>
+      <li>Đường dẫn: “/usr/local/Cellar/luarocks/2.2.0_1/share/lua/5.2/mjolnir/th/”</li>
+      <li>Thay đổi 2 vị trí (62, 103)</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">local c = {x = fr.x + (fr.w/5), y = fr.y + (fr.h/5)}
+</span><span class="line">
+</span><span class="line">hints.newWinChar(win," -- " .. string.sub(win:title(), 0, 20))</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<ul>
+  <li>Tham khảo:
+    <ul>
+      <li>http://mjolnir.io/</li>
+      <li>http://thume.ca/howto/2014/12/02/using-mjolnir-an-extensible-osx-window-manager/</li>
+      <li>https://github.com/jhgg/Hydra-Config/tree/master/modules</li>
+    </ul>
+  </li>
+</ul>
+
+<!-- ================================================================= -->
+
+<h2 id="slate">Slate</h2>
+
+<ul>
+  <li>Sử dụng cho Mac</li>
+  <li>Tham khảo:
+    <ul>
+      <li>http://thume.ca/howto/2012/11/19/using-slate/</li>
+    </ul>
+  </li>
+</ul>
+
+<!-- ================================================================= -->
+
+<h2 id="sizeup">SizeUp</h2>
+
+<ul>
+  <li>Sử dụng cho Mac</li>
+</ul>
+
+<!-- ================================================================= -->
+
+<h2 id="user-agent-for-browser">User agent for browser</h2>
+
+<ul>
+  <li>http://osxdaily.com/2013/01/16/change-user-agent-chrome-safari-firefox/</li>
+</ul>
+
+
+
+        </article>
+        <hr>
     
         
         <article class="article article--index">
@@ -2590,268 +2843,6 @@ TODO TPL?</li>
         </article>
         <hr>
     
-        
-        <article class="article article--index">
-            <header class="article__header">
-    
-        <h1 class="h2 article__title">
-            <a href="/blog/2014/08/08/windows-notes/">Windows notes</a>
-        </h1>
-    
-
-    
-        <div class="article__meta clearfix">
-            
-
-
-
-
-
-
-    <time class="article__date pull-left" datetime="" pubdate><i class="fa fa-calendar"></i> </time>
-
-
-
-
-            
-
-    <div class="article__tags pull-left">
-        <i class="fa fa-tags"></i>
-        <ul class="unstyled">
-        
-            
-                <li><a class='category' href='/blog/categories/note/'>note</a></li>
-            
-                <li><a class='category' href='/blog/categories/technical/'>technical</a></li>
-            
-                <li><a class='category' href='/blog/categories/windows/'>windows</a></li>
-            
-            
-        </ul>
-    </div>
-
-
-            
-        </div>
-    
-</header>
-
-
-
-
-    <ul id="markdown-toc">
-  <li><a href="#mt-s-th-thut">Một số thủ thuật</a></li>
-  <li><a href="#mt-s-lnh-command">Một số lệnh command</a></li>
-</ul>
-
-<!-- ================================================================= -->
-
-<h2 id="mt-s-th-thut">Một số thủ thuật</h2>
-
-<ul>
-  <li>Tạo USB khôi phục cho windows, Linux, và Mac
-    <ul>
-      <li><a href="http://www.pcworld.com.vn/articles/cong-nghe/lam-the-nao/2014/08/1235685/tao-usb-khoi-phuc-cho-windows-linux-mac-va-chrome-os/">Tham khảo</a></li>
-    </ul>
-  </li>
-  <li>Phần mềm hỗ trợ download
-    <ul>
-      <li>http://www.tincongnghe.com.vn/2014/08/391621</li>
-    </ul>
-  </li>
-  <li>Ổ cứng mạng NAS - buffalo
-    <ul>
-      <li>http://ducquang415.com/view-43494/kien-thuc-co-ban-va-huong-dan-su-dung-nas-buffalo–o-cung-mang/</li>
-    </ul>
-  </li>
-</ul>
-
-<!-- ================================================================= -->
-
-<h2 id="mt-s-lnh-command">Một số lệnh command</h2>
-<ul>
-  <li>
-    <table>
-      <tbody>
-        <tr>
-          <td>Tạo một symbolic link: mklink [[/d]</td>
-          <td>[/h]</td>
-          <td>[/j]] <link /> <target /></td>
-        </tr>
-      </tbody>
-    </table>
-    <ul>
-      <li>/d tạo một thư mục - directory symbolic link (mặc định là tạo tập tin - file)</li>
-      <li>/h tạo một hard link thay vì symbolic link</li>
-      <li>/j tạo directory junction</li>
-      <li>link: đường dẫn</li>
-      <li>target: nơi liên kết tới</li>
-      <li>Ví dụ: mklink /d \MyDocs \Users\User1\Documents tạo \MyDocs liên kết tới Documents</li>
-    </ul>
-  </li>
-  <li>runas /user:Administrator cmd</li>
-  <li>Xóa thư mục
-    <ul>
-      <li>rmdir c:\test /s</li>
-      <li>rmdir c:\test /s /q</li>
-    </ul>
-  </li>
-  <li>where command_name: tìm vị trí của lệnh command</li>
-  <li>nslookup: truy vết domain</li>
-</ul>
-
-
-
-        </article>
-        <hr>
-    
-        
-        <article class="article article--index">
-            <header class="article__header">
-    
-        <h1 class="h2 article__title">
-            <a href="/blog/2014/08/05/java-notes/">java notes</a>
-        </h1>
-    
-
-    
-        <div class="article__meta clearfix">
-            
-
-
-
-
-
-
-    <time class="article__date pull-left" datetime="" pubdate><i class="fa fa-calendar"></i> </time>
-
-
-
-
-            
-
-    <div class="article__tags pull-left">
-        <i class="fa fa-tags"></i>
-        <ul class="unstyled">
-        
-            
-                <li><a class='category' href='/blog/categories/development/'>development</a></li>
-            
-                <li><a class='category' href='/blog/categories/java/'>java</a></li>
-            
-            
-        </ul>
-    </div>
-
-
-            
-        </div>
-    
-</header>
-
-
-
-
-    <ul id="markdown-toc">
-  <li><a href="#framework">Framework</a></li>
-  <li><a href="#th-vin">Thư viện</a></li>
-  <li><a href="#cng-c">Công cụ</a></li>
-  <li><a href="#portal---todo-tpl">Portal - (TODO TPL)</a></li>
-  <li><a href="#mt-s-li">Một số lỗi</a></li>
-</ul>
-
-<!-- ================================================================= -->
-
-<h2 id="framework">Framework</h2>
-<ul>
-  <li>Hibernate</li>
-  <li>strust</li>
-  <li>spring
-    <ul>
-      <li>spring mvc</li>
-    </ul>
-  </li>
-</ul>
-
-<!-- ================================================================= -->
-
-<h2 id="th-vin">Thư viện</h2>
-<ul>
-  <li>Jasper report</li>
-</ul>
-
-<!-- ================================================================= -->
-
-<h2 id="cng-c">Công cụ</h2>
-<ul>
-  <li>Jconsole</li>
-  <li>Jacoco: độ phủ code</li>
-  <li>Java melody</li>
-  <li>maven</li>
-  <li>ant</li>
-</ul>
-
-<!-- ================================================================= -->
-
-<h2 id="portal---todo-tpl">Portal - (TODO TPL)</h2>
-<ul>
-  <li>A portal is a web application that commonly provides personalization, single sign on, content aggregation from different sources, and hosts the presentation layer of information systems. Aggregation is the act of integrating content from different sources within a web page.</li>
-  <li>Three main parts
-    <ul>
-      <li>Portlet container</li>
-      <li>Content aggregator</li>
-      <li>Common services
-        <ul>
-          <li>Single sign on</li>
-          <li>Personalization</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>Elements of a portal page
-<img src="images/java-portal.png" />&lt;/img&gt;</li>
-  <li>Portlet
-    <ul>
-      <li>Similar to servlets, portlets are web components that are deployed inside of a container and generate dynamic content. On the technical side, a portlet is a class that implements the javax.portlet.Portlet interface and is packaged and deployed as a .war file inside of a portlet container</li>
-      <li>Similar to servlets
-        <ul>
-          <li>Portlets are managed by a specialized container.</li>
-          <li>Portlets generate dynamic content.</li>
-          <li>A portlet’s life cycle is managed by the container.</li>
-          <li>Portlets interact with web client via a request/response paradigm.</li>
-        </ul>
-      </li>
-      <li>Different from servlets
-        <ul>
-          <li>Portlets only generate markup fragments, not complete documents.</li>
-          <li>Portlets are not directly URL addressable. You cant send somebody URL of a portlet. You can send him the URL of the page containing a portlet.</li>
-          <li>Portlets cannot generate arbitrary content, since the content generated by a portlet is going to be part of portal page. If a portal server is asking for html/text, then all portlets should generate text/html content. On the other hand, if the portal server is asking for WML, then each portlet should generate WML content.</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>Tham khảo:
-    <ul>
-      <li>http://www.onjava.com/pub/a/onjava/2005/09/14/what-is-a-portlet.html</li>
-    </ul>
-  </li>
-</ul>
-
-<!-- ================================================================= -->
-
-<h2 id="mt-s-li">Một số lỗi</h2>
-
-<ul>
-  <li>operator is not allowed for source level below 1.7
-=&gt; In your project’s preferences, you must set the compiler –source option to 1.7 and –target option to 1.7 also. There are dedicated option boxes for that. <b>Right-click on the project. Choose Properties. Choose Java Compiler on the left. Choose 1.7 for the Compiler Compliance level. If the 2 drop-downs below that aren’t 1.7, uncheck Use default compliance settings and set those to 1.7. </b></li>
-</ul>
-
-
-
-
-        </article>
-        <hr>
-    
 
     <div class="pagination">
     
@@ -2914,6 +2905,14 @@ TODO TPL?</li>
     <ul class="divided">
         
         <li class="post">
+            <a href="/blog/2015/05/14/android-automation-test/">Android - automation test</a>
+        </li>
+        
+        <li class="post">
+            <a href="/blog/2015/05/14/selenium/">Selenium</a>
+        </li>
+        
+        <li class="post">
             <a href="/blog/2015/04/30/mono-project/">Mono-project</a>
         </li>
         
@@ -2923,14 +2922,6 @@ TODO TPL?</li>
         
         <li class="post">
             <a href="/blog/2015/03/31/perl/">Perl</a>
-        </li>
-        
-        <li class="post">
-            <a href="/blog/2015/03/16/nokia-x/">Nokia X</a>
-        </li>
-        
-        <li class="post">
-            <a href="/blog/2015/03/06/c-plus-plus/">C++</a>
         </li>
         
     </ul>

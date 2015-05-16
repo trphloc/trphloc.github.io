@@ -4,7 +4,7 @@
     <title><![CDATA[Category: mono | Phuoc-Loc 's blog]]></title>
     <link href="http://www.trphloc.com/blog/categories/mono/atom.xml" rel="self"/>
     <link href="http://www.trphloc.com/"/>
-    <updated>2015-05-01T01:01:30+07:00</updated>
+    <updated>2015-05-16T08:46:11+07:00</updated>
     <id>http://www.trphloc.com/</id>
     <author>
         <name><![CDATA[trphloc]]></name>
@@ -12,6 +12,40 @@
       </author>
     <generator uri="http://octopress.org/">Octopress</generator>
 
+    
+    <entry>
+        <title type="html"><![CDATA[Selenium]]></title>
+        <link href="http://www.trphloc.com/blog/2015/05/14/selenium/"/>
+        <updated>2015-05-14T07:00:32+07:00</updated>
+        <id>http://www.trphloc.com/blog/2015/05/14/selenium</id>
+        <content type="html"><![CDATA[<ul id="markdown-toc">
+  <li><a href="#selenium-ide">Selenium IDE</a></li>
+  <li><a href="#selenium">Selenium</a></li>
+  <li><a href="#selendroid---selenium-for-android">Selendroid - Selenium for android</a></li>
+</ul>
+
+<!-- ================================================================= -->
+<p>## Cài đặt</p>
+
+<h3 id="selenium-ide">Selenium IDE</h3>
+
+<ul>
+  <li>Sử dụng để record và thực thi test</li>
+</ul>
+
+<h3 id="selenium">Selenium</h3>
+
+<h3 id="selendroid---selenium-for-android">Selendroid - Selenium for android</h3>
+
+<!-- ================================================================= -->
+<p>## Tài liệu tham khảo</p>
+
+<ul>
+  <li>http://www.seleniumhq.org/download/</li>
+  <li>http://www.seleniumhq.org/docs/</li>
+</ul>
+]]></content>
+    </entry>
     
     <entry>
         <title type="html"><![CDATA[Mono-project]]></title>

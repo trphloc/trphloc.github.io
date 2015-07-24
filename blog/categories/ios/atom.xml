@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+    <title><![CDATA[Category: iOS | Phuoc-Loc 's blog]]></title>
+    <link href="http://www.trphloc.com/blog/categories/ios/atom.xml" rel="self"/>
+    <link href="http://www.trphloc.com/"/>
+    <updated>2015-07-24T12:15:00+07:00</updated>
+    <id>http://www.trphloc.com/</id>
+    <author>
+        <name><![CDATA[trphloc]]></name>
+        <email><![CDATA[trphloc]]></email>
+      </author>
+    <generator uri="http://octopress.org/">Octopress</generator>
+
+    
+    <entry>
+        <title type="html"><![CDATA[Jailbreak iPhone/iPad]]></title>
+        <link href="http://www.trphloc.com/blog/2015/07/24/jailbreak-iphone-slash-ipad/"/>
+        <updated>2015-07-24T09:53:15+07:00</updated>
+        <id>http://www.trphloc.com/blog/2015/07/24/jailbreak-iphone-slash-ipad</id>
+        <content type="html"><![CDATA[
+<!-- ================================================================= -->
+<p>## Hướng dẫn Jailbreak trên MacOS</p>
+
+<ul>
+  <li>B1: Tải phần mềm mới nhất của PP jailbreak trên trang http://www.iphonehacks.com/download-pp-jailbreak .</li>
+  <li>B2: Kết nối máy tính sử dụng USB cable.</li>
+  <li>B3: Tắt Passcode trong Settings &gt; Touch ID &amp; Passcode.</li>
+  <li>B4: Tắt Find my iPhone trong Settings &gt; iCloud &gt; Find my iPhone.</li>
+  <li>B5: Tắt iTunes và xCode trước khi mở PP Jailbreak.</li>
+  <li>B6: Mở file PP Jailbreak dmg và copy tập tin app vào thư mục Application.</li>
+  <li>B7: Mở ứng dụng PP Jailbreak. Sẽ xuất hiện màn hình như bên dưới</li>
+</ul>
+
+<p><img src="images/2015-07-24-iOS-jailbreak1.png" />&lt;/img&gt;</p>
+
+<ul>
+  <li>B8: Nhấn nút Jailbreak ở giữa màn hình để bắt đầu jailbreak.</li>
+  <li>B9: Chờ trong 1 khoảng thời gian để ứng dụng jailbreak máy.</li>
+  <li>B10: Sau khi jailbreak thành công sẽ có màn hình như bên dưới.</li>
+</ul>
+
+<p><img src="images/2015-07-24-iOS-jailbreak2.png" />&lt;/img&gt;</p>
+
+<!-- ================================================================= -->
+<p>## Cài đặt appsync</p>
+
+<ul>
+  <li>Mở ứng dụng Cydia</li>
+  <li>Chọn phần Sources &gt; Edit</li>
+  <li>Chọn Add để thêm các source sau vào
+    <ul>
+      <li>http://repo.appvv.com</li>
+      <li>http://repocydia.com</li>
+      <li>http://repo.hackyouriphone.org</li>
+      <li>http://cydia.angelxwind.net</li>
+      <li>Nếu có hỏi thì chọn “Add anyway” và update …</li>
+    </ul>
+  </li>
+  <li>Sau đó chọn done</li>
+  <li>Vào phần Search gõ AppSync &gt; Install</li>
+</ul>
+
+<!-- ================================================================= -->
+<p>## Tài liệu tham khảo</p>
+
+<ul>
+  <li>http://www.iphonehacks.com/2015/07/how-to-jailbreak-ios-8-4-on-mac-using-pp-jailbreak.html</li>
+</ul>
+]]></content>
+    </entry>
+    
+</feed>

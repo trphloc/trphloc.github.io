@@ -4,7 +4,7 @@
     <title><![CDATA[Category: tools | Phuoc-Loc 's blog]]></title>
     <link href="http://www.trphloc.com/blog/categories/tools/atom.xml" rel="self"/>
     <link href="http://www.trphloc.com/"/>
-    <updated>2015-05-31T16:01:26+07:00</updated>
+    <updated>2015-07-24T12:15:00+07:00</updated>
     <id>http://www.trphloc.com/</id>
     <author>
         <name><![CDATA[trphloc]]></name>
@@ -27,6 +27,8 @@
   <li><a href="#sizeup">SizeUp</a></li>
   <li><a href="#user-agent-for-browser">User agent for browser</a></li>
   <li><a href="#mi-trng-lp-trnh">Môi trường lập trình</a></li>
+  <li><a href="#so-snh-file">So sánh file</a></li>
+  <li><a href="#ssl">SSL</a></li>
 </ul>
 
 <!-- ================================================================= -->
@@ -144,6 +146,18 @@
 
 <ul>
   <li>Vagrant https://www.vagrantup.com/</li>
+</ul>
+
+<h2 id="so-snh-file">So sánh file</h2>
+
+<ul>
+  <li>NetDrive</li>
+</ul>
+
+<h2 id="ssl">SSL</h2>
+
+<ul>
+  <li>cloudflare</li>
 </ul>
 ]]></content>
     </entry>

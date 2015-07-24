@@ -4,7 +4,7 @@
     <title><![CDATA[Category: iOS | Phuoc-Loc 's blog]]></title>
     <link href="http://www.trphloc.com/blog/categories/ios/atom.xml" rel="self"/>
     <link href="http://www.trphloc.com/"/>
-    <updated>2015-07-24T12:15:00+07:00</updated>
+    <updated>2015-07-24T12:18:46+07:00</updated>
     <id>http://www.trphloc.com/</id>
     <author>
         <name><![CDATA[trphloc]]></name>
@@ -18,9 +18,15 @@
         <link href="http://www.trphloc.com/blog/2015/07/24/jailbreak-iphone-slash-ipad/"/>
         <updated>2015-07-24T09:53:15+07:00</updated>
         <id>http://www.trphloc.com/blog/2015/07/24/jailbreak-iphone-slash-ipad</id>
-        <content type="html"><![CDATA[
+        <content type="html"><![CDATA[<ul id="markdown-toc">
+  <li><a href="#hng-dn-jailbreak-trn-macos">Hướng dẫn Jailbreak trên MacOS</a></li>
+  <li><a href="#ci-t-appsync">Cài đặt appsync</a></li>
+  <li><a href="#ti-liu-tham-kho">Tài liệu tham khảo</a></li>
+</ul>
+
 <!-- ================================================================= -->
-<p>## Hướng dẫn Jailbreak trên MacOS</p>
+
+<h2 id="hng-dn-jailbreak-trn-macos">Hướng dẫn Jailbreak trên MacOS</h2>
 
 <ul>
   <li>B1: Tải phần mềm mới nhất của PP jailbreak trên trang http://www.iphonehacks.com/download-pp-jailbreak .</li>
@@ -32,7 +38,7 @@
   <li>B7: Mở ứng dụng PP Jailbreak. Sẽ xuất hiện màn hình như bên dưới</li>
 </ul>
 
-<p><img src="images/2015-07-24-iOS-jailbreak1.png" />&lt;/img&gt;</p>
+<p><img src="images/2015-07-24-iOS-jailbreak1.png" /></p>
 
 <ul>
   <li>B8: Nhấn nút Jailbreak ở giữa màn hình để bắt đầu jailbreak.</li>
@@ -40,10 +46,11 @@
   <li>B10: Sau khi jailbreak thành công sẽ có màn hình như bên dưới.</li>
 </ul>
 
-<p><img src="images/2015-07-24-iOS-jailbreak2.png" />&lt;/img&gt;</p>
+<p><img src="images/2015-07-24-iOS-jailbreak2.png" /></p>
 
 <!-- ================================================================= -->
-<p>## Cài đặt appsync</p>
+
+<h2 id="ci-t-appsync">Cài đặt appsync</h2>
 
 <ul>
   <li>Mở ứng dụng Cydia</li>
@@ -62,7 +69,8 @@
 </ul>
 
 <!-- ================================================================= -->
-<p>## Tài liệu tham khảo</p>
+
+<h2 id="ti-liu-tham-kho">Tài liệu tham khảo</h2>
 
 <ul>
   <li>http://www.iphonehacks.com/2015/07/how-to-jailbreak-ios-8-4-on-mac-using-pp-jailbreak.html</li>

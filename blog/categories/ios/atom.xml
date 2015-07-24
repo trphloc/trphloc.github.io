@@ -4,7 +4,7 @@
     <title><![CDATA[Category: iOS | Phuoc-Loc 's blog]]></title>
     <link href="http://www.trphloc.com/blog/categories/ios/atom.xml" rel="self"/>
     <link href="http://www.trphloc.com/"/>
-    <updated>2015-07-24T12:20:10+07:00</updated>
+    <updated>2015-07-24T22:56:18+07:00</updated>
     <id>http://www.trphloc.com/</id>
     <author>
         <name><![CDATA[trphloc]]></name>
@@ -21,6 +21,7 @@
         <content type="html"><![CDATA[<ul id="markdown-toc">
   <li><a href="#hng-dn-jailbreak-trn-macos">Hướng dẫn Jailbreak trên MacOS</a></li>
   <li><a href="#ci-t-appsync">Cài đặt appsync</a></li>
+  <li><a href="#x-l-li-khi-b-treo-to">Xử lý lỗi khi bị treo táo</a></li>
   <li><a href="#ti-liu-tham-kho">Tài liệu tham khảo</a></li>
 </ul>
 
@@ -70,10 +71,28 @@
 
 <!-- ================================================================= -->
 
+<h2 id="x-l-li-khi-b-treo-to">Xử lý lỗi khi bị treo táo</h2>
+
+<ul>
+  <li>B1: Download firmware mới nhất và tương thích với thiết bị iOS của bạn từ liên kết ở trên. Để firmware ở thư mục nào đó mà bạn dễ tìm kiếm.</li>
+  <li>B2: Kết nối iPhone bị treo táo vào máy tính, lúc này máy tính sẽ không nhận iPhone và bạn cần phải đưa iPhone về chế độ DFU Mode để iTunes có thể nhận iPhone. Nói nôm na ra thì DFU Mode là chế độ đặc biệt mà khi ở chế độ này iTunes sẽ nhận iPhone dù máy có bị treo, nhờ vậy bạn có thể tiến hành restore máy để khắc phục lỗi treo táo. Cách đưa iPhone về DFU
+    <ul>
+      <li>Kết nối iPhone bị treo táo vào máy tính</li>
+      <li>Nhấn đồng thời nút home và nguồn trong vài giây cho tới khi máy tắt hẳn</li>
+      <li>Sau đó bỏ nút nguồn ra nhưng vẫn tiếp tục giữ phím home cho tới khi iTunes báo có thiết bị iOS đang kết nối ở chế độ “Recovery mode”</li>
+      <li>Lưu ý là lúc iTunes báo nhận thì màn hình iPhone vẫn đen như đang tắt.</li>
+    </ul>
+  </li>
+  <li>B3: Trên iTunes, bạn có thể nhấn “restore” để iTunes tự download firmware mới nhất từ Apple. Hoặc các bạn có thể nhấn Shift + click vào Restore (Windows) hoặc Option + Restore (OS X) và chọn đường dẫn đến cái firmware mà bạn đã download ở bước 1. Chờ iTunes restore lại thiết bị và máy của bạn sẽ hết bị lỗi treo táo.</li>
+</ul>
+
+<!-- ================================================================= -->
+
 <h2 id="ti-liu-tham-kho">Tài liệu tham khảo</h2>
 
 <ul>
   <li>http://www.iphonehacks.com/2015/07/how-to-jailbreak-ios-8-4-on-mac-using-pp-jailbreak.html</li>
+  <li>http://www.techrum.vn/threads/co-ban-cach-khac-phuc-khi-thiet-bi-ios-bi-treo-logo-khoi-dong-loi-treo-tao.18662/</li>
 </ul>
 ]]></content>
     </entry>

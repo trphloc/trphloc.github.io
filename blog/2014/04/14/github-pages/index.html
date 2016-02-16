@@ -144,13 +144,17 @@
       <li><a href="#ci-t-python-276">Cài đặt Python 2.7.6</a></li>
       <li><a href="#ci-t-ruby-200-v-ruby-devkit">Cài đặt Ruby 2.0.0 và Ruby DevKit</a></li>
       <li><a href="#ci-t-v-s-dng-git-trn-windows">Cài đặt và sử dụng git trên windows</a></li>
+      <li><a href="#khc-phc-li-sau-khi-cp-nht-h-iu-hnh-macos">Khắc phục lỗi sau khi cập nhật hệ điều hành MacOS</a></li>
     </ul>
   </li>
-  <li><a href="#cc-bc-thc-hin">Các bước thực hiện</a></li>
-  <li><a href="#mt-s-c-php-thng-dng">Một số cú pháp thông dụng</a></li>
-  <li><a href="#ci-t-v-s-dng-mc-lc-trong-octopress">Cài đặt và sử dụng mục lục trong octopress</a></li>
-  <li><a href="#s-dng-theme">Sử dụng theme</a></li>
-  <li><a href="#ti-liu-tham-kho">Tài liệu tham khảo</a></li>
+  <li><a href="#add-rbenv-to-bash-so-that-it-loads-every-time-you-open-a-terminal">Add rbenv to bash so that it loads every time you open a terminal</a>    <ul>
+      <li><a href="#cc-bc-thc-hin">Các bước thực hiện</a></li>
+      <li><a href="#mt-s-c-php-thng-dng">Một số cú pháp thông dụng</a></li>
+      <li><a href="#ci-t-v-s-dng-mc-lc-trong-octopress">Cài đặt và sử dụng mục lục trong octopress</a></li>
+      <li><a href="#s-dng-theme">Sử dụng theme</a></li>
+      <li><a href="#ti-liu-tham-kho">Tài liệu tham khảo</a></li>
+    </ul>
+  </li>
 </ul>
 
 <!-- ================================================================= -->
@@ -196,6 +200,38 @@
 
 <ul>
   <li><a href="/blog/2014/08/31/git-notes/">Hướng dẫn cài đặt</a></li>
+</ul>
+
+<h3 id="khc-phc-li-sau-khi-cp-nht-h-iu-hnh-macos">Khắc phục lỗi sau khi cập nhật hệ điều hành MacOS</h3>
+
+<ul>
+  <li>Lỗi “warning: Insecure world writable” cho thư mục nào thì gọi lệnh “sudo chmod go-w …” cho thư mục đó</li>
+  <li>Lỗi “No such file or directory - jekyll”
+    <ul>
+      <li>Cài đặt lại ruby 2.2.3 cho mac os 10.11-el-capitan: https://gorails.com/setup/osx/10.11-el-capitan
+        <ul>
+          <li>brew install rbenv ruby-build</li>
+          <li>
+            <h1 id="add-rbenv-to-bash-so-that-it-loads-every-time-you-open-a-terminal">Add rbenv to bash so that it loads every time you open a terminal</h1>
+            <p>echo ‘if which rbenv &gt; /dev/null; then eval “$(rbenv init -)”; fi’ » ~/.bash_profile
+source ~/.bash_profile</p>
+          </li>
+          <li>rbenv install 2.2.3</li>
+          <li>rbenv global 2.2.3</li>
+          <li>ruby -v</li>
+        </ul>
+      </li>
+      <li>Vào trong thư mục chứa octopress thực thi các lệnh sau: https://github.com/imathis/octopress/issues/1749
+        <ul>
+          <li>rbenv local 2.2.3</li>
+          <li>gem install bundler</li>
+          <li>rbenv rehash</li>
+          <li>bundle install</li>
+        </ul>
+      </li>
+      <li>Xóa thư mục public</li>
+    </ul>
+  </li>
 </ul>
 
 <!-- ================================================================= -->
@@ -425,23 +461,23 @@
     <ul class="divided">
         
         <li class="post">
-            <a href="/blog/2015/07/24/jailbreak-iphone-slash-ipad/">Jailbreak iPhone/iPad</a>
+            <a href="/blog/2016/01/20/unity/">Unity</a>
         </li>
         
         <li class="post">
-            <a href="/blog/2015/05/18/hugo/">Hugo</a>
+            <a href="/blog/2016/01/08/http-debugging-proxy/">HTTP debugging proxy</a>
         </li>
         
         <li class="post">
-            <a href="/blog/2015/05/14/android-automation-test/">Android - automation test</a>
+            <a href="/blog/2016/01/04/control-panels-for-managing-a-linux-server/">Control Panels for Managing a CentOS Server</a>
         </li>
         
         <li class="post">
-            <a href="/blog/2015/05/14/selenium/">Selenium</a>
+            <a href="/blog/2015/08/03/swift-tutorial/">Swift tutorial</a>
         </li>
         
         <li class="post">
-            <a href="/blog/2015/04/30/mono-project/">Mono-project</a>
+            <a href="/blog/2015/07/29/centos/">CentOS</a>
         </li>
         
     </ul>

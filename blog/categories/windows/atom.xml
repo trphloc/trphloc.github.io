@@ -4,7 +4,7 @@
     <title><![CDATA[Category: windows | Phuoc-Loc 's blog]]></title>
     <link href="http://www.trphloc.com/blog/categories/windows/atom.xml" rel="self"/>
     <link href="http://www.trphloc.com/"/>
-    <updated>2015-07-24T22:58:06+07:00</updated>
+    <updated>2016-02-16T12:56:59+07:00</updated>
     <id>http://www.trphloc.com/</id>
     <author>
         <name><![CDATA[trphloc]]></name>
@@ -132,6 +132,7 @@ bundle install
         <content type="html"><![CDATA[<ul id="markdown-toc">
   <li><a href="#ci-t">Cài đặt</a></li>
   <li><a href="#mt-s-lnh-thng-dng-window-mac-linux">Một số lệnh thường dùng (window, mac, linux)</a></li>
+  <li><a href="#chuyn-1-branch-thnh-master">Chuyển 1 branch thành master</a></li>
 </ul>
 
 <!-- ================================================================= -->
@@ -235,6 +236,26 @@ bundle install
 </ul>
 
 <!-- ================================================================= -->
+
+<h2 id="chuyn-1-branch-thnh-master">Chuyển 1 branch thành master</h2>
+
+<ul>
+  <li>Muốn chuyển better_branch thành master
+    <ul>
+      <li>git checkout better_branch</li>
+      <li>git merge –strategy=ours master    # keep the content of this branch, but record a merge</li>
+      <li>git checkout master</li>
+      <li>git merge better_branch             # fast-forward master up to the merge</li>
+    </ul>
+  </li>
+  <li>Nếu muốn lịch sử rõ ràng thì nên làm lệnh sau
+    <ul>
+      <li>git merge –strategy=ours –no-commit master</li>
+      <li>git commit          # add information to the template merge message</li>
+    </ul>
+  </li>
+  <li>Tham khảo: http://stackoverflow.com/questions/2763006/change-the-current-branch-to-master-in-git</li>
+</ul>
 ]]></content>
     </entry>
     

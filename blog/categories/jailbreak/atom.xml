@@ -4,7 +4,7 @@
     <title><![CDATA[Category: Jailbreak | Phuoc-Loc 's blog]]></title>
     <link href="http://www.trphloc.com/blog/categories/jailbreak/atom.xml" rel="self"/>
     <link href="http://www.trphloc.com/"/>
-    <updated>2015-07-24T22:58:06+07:00</updated>
+    <updated>2016-02-16T12:56:59+07:00</updated>
     <id>http://www.trphloc.com/</id>
     <author>
         <name><![CDATA[trphloc]]></name>
@@ -14,6 +14,68 @@
 
     
     <entry>
+        <title type="html"><![CDATA[CentOS]]></title>
+        <link href="http://www.trphloc.com/blog/2015/07/29/centos/"/>
+        <updated>2015-07-29T12:29:53+07:00</updated>
+        <id>http://www.trphloc.com/blog/2015/07/29/centos</id>
+        <content type="html"><![CDATA[<ul id="markdown-toc">
+  <li><a href="#download-v-ci-t">Download và cài đặt</a></li>
+  <li><a href="#ci-t-apt-get">Cài đặt apt-get</a></li>
+</ul>
+
+<!-- ================================================================= -->
+<p>## Các bước khi bắt đầu</p>
+
+<ul>
+  <li>
+    <ol>
+      <li>Cấu hình mạng:
+        <ul>
+          <li>centos 7 - http://www.krizna.com/centos/setup-network-centos-7/</li>
+          <li>centos 6 -
+            <ul>
+              <li>https://gist.github.com/fernandoaleman/2172388</li>
+              <li>http://superuser.com/questions/637798/unable-to-access-the-internet-in-centos-from-a-static-ip</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li>Cài đặt apt: http://everyday-tech.com/apt-get-on-centos/
+(sử dụng yum thay vì apt
+<code>
+  yum install apt
+</code></li>
+    </ol>
+  </li>
+</ul>
+
+<p>https://www.rackaid.com/blog/linux-screen-tutorial-and-how-to/#switching
+https://tournasdimitrios1.wordpress.com/2010/11/04/linux-the-screen-command-a-must-for-ssh/</p>
+
+<!-- ================================================================= -->
+
+<h2 id="download-v-ci-t">Download và cài đặt</h2>
+
+<ul>
+  <li>…</li>
+</ul>
+
+<!-- ================================================================= -->
+
+<h2 id="ci-t-apt-get">Cài đặt apt-get</h2>
+
+<ul>
+  <li></li>
+  <li>Tham khảo: http://everyday-tech.com/apt-get-on-centos/</li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
         <title type="html"><![CDATA[Jailbreak iPhone/iPad]]></title>
         <link href="http://www.trphloc.com/blog/2015/07/24/jailbreak-iphone-slash-ipad/"/>
         <updated>2015-07-24T09:53:15+07:00</updated>
@@ -21,6 +83,7 @@
         <content type="html"><![CDATA[<ul id="markdown-toc">
   <li><a href="#hng-dn-jailbreak-trn-macos">Hướng dẫn Jailbreak trên MacOS</a></li>
   <li><a href="#ci-t-appsync">Cài đặt appsync</a></li>
+  <li><a href="#mt-s-tweak-ca-ios-84">Một số tweak của iOS 8.4</a></li>
   <li><a href="#x-l-li-khi-b-treo-to">Xử lý lỗi khi bị treo táo</a></li>
   <li><a href="#ti-liu-tham-kho">Tài liệu tham khảo</a></li>
 </ul>
@@ -67,6 +130,19 @@
   </li>
   <li>Sau đó chọn done</li>
   <li>Vào phần Search gõ AppSync &gt; Install</li>
+</ul>
+
+<!-- ================================================================= -->
+
+<h2 id="mt-s-tweak-ca-ios-84">Một số tweak của iOS 8.4</h2>
+
+<ul>
+  <li>Mirmir: mở nhiều ứng dụng cùng lúc</li>
+  <li>Callbar: thu nhỏ màn hình nghe điện thoại ở góc trên</li>
+  <li>StickerMe: nhắn tin iMessage giống giống facebook</li>
+  <li>Applocker/BioProtect: khóa ứng dụng</li>
+  <li>iFile: quản lý tập tin</li>
+  <li>Tham khảo: http://cydia.vn/tong-hop-cac-tweak-lam-cho-ios-8-4-cua-ban-hoan-hao/</li>
 </ul>
 
 <!-- ================================================================= -->

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+    <title><![CDATA[Category: centOS | Phuoc-Loc 's blog]]></title>
+    <link href="http://www.trphloc.com/blog/categories/centos/atom.xml" rel="self"/>
+    <link href="http://www.trphloc.com/"/>
+    <updated>2016-02-16T12:56:59+07:00</updated>
+    <id>http://www.trphloc.com/</id>
+    <author>
+        <name><![CDATA[trphloc]]></name>
+        <email><![CDATA[trphloc]]></email>
+      </author>
+    <generator uri="http://octopress.org/">Octopress</generator>
+
+    
+    <entry>
+        <title type="html"><![CDATA[CentOS]]></title>
+        <link href="http://www.trphloc.com/blog/2015/07/29/centos/"/>
+        <updated>2015-07-29T12:29:53+07:00</updated>
+        <id>http://www.trphloc.com/blog/2015/07/29/centos</id>
+        <content type="html"><![CDATA[<ul id="markdown-toc">
+  <li><a href="#download-v-ci-t">Download và cài đặt</a></li>
+  <li><a href="#ci-t-apt-get">Cài đặt apt-get</a></li>
+</ul>
+
+<!-- ================================================================= -->
+<p>## Các bước khi bắt đầu</p>
+
+<ul>
+  <li>
+    <ol>
+      <li>Cấu hình mạng:
+        <ul>
+          <li>centos 7 - http://www.krizna.com/centos/setup-network-centos-7/</li>
+          <li>centos 6 -
+            <ul>
+              <li>https://gist.github.com/fernandoaleman/2172388</li>
+              <li>http://superuser.com/questions/637798/unable-to-access-the-internet-in-centos-from-a-static-ip</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li>Cài đặt apt: http://everyday-tech.com/apt-get-on-centos/
+(sử dụng yum thay vì apt
+<code>
+  yum install apt
+</code></li>
+    </ol>
+  </li>
+</ul>
+
+<p>https://www.rackaid.com/blog/linux-screen-tutorial-and-how-to/#switching
+https://tournasdimitrios1.wordpress.com/2010/11/04/linux-the-screen-command-a-must-for-ssh/</p>
+
+<!-- ================================================================= -->
+
+<h2 id="download-v-ci-t">Download và cài đặt</h2>
+
+<ul>
+  <li>…</li>
+</ul>
+
+<!-- ================================================================= -->
+
+<h2 id="ci-t-apt-get">Cài đặt apt-get</h2>
+
+<ul>
+  <li></li>
+  <li>Tham khảo: http://everyday-tech.com/apt-get-on-centos/</li>
+</ul>
+]]></content>
+    </entry>
+    
+</feed>

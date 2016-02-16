@@ -4,7 +4,7 @@
     <title><![CDATA[Category: emacs | Phuoc-Loc 's blog]]></title>
     <link href="http://www.trphloc.com/blog/categories/emacs/atom.xml" rel="self"/>
     <link href="http://www.trphloc.com/"/>
-    <updated>2015-07-24T22:58:06+07:00</updated>
+    <updated>2016-02-16T12:56:59+07:00</updated>
     <id>http://www.trphloc.com/</id>
     <author>
         <name><![CDATA[trphloc]]></name>
@@ -307,6 +307,7 @@ made up of multiple lines and sentences."""
   <li><a href="#magit">Magit</a></li>
   <li><a href="#recent-files">Recent files</a></li>
   <li><a href="#highlight-symbol">Highlight-symbol</a></li>
+  <li><a href="#remote-server">Remote server</a></li>
 </ul>
 
 <h2 id="ang-cp-nht-todo">Đang cập nhật TODO</h2>
@@ -1080,6 +1081,16 @@ buffer is not visiting a file.”
 	(global-set-key (kbd "C-x M-a") 'highlight-symbol-query-replace)
 	(global-set-key (kbd "C-x a") 'highlight-symbol-remove-all)
 </code></p>
+
+<!-- ================================================================= -->
+
+<h2 id="remote-server">Remote server</h2>
+
+<ul>
+  <li>http://blog.habnab.it/blog/2013/06/25/emacsclient-and-tramp/</li>
+  <li>https://andy.wordpress.com/2013/01/03/automatic-emacsclient/</li>
+</ul>
+
 ]]></content>
     </entry>
     

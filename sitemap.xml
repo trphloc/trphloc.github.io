@@ -2,7 +2,7 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://www.trphloc.com/blog/2014/04/14/github-pages/</loc>
-        <lastmod>2015-05-18T13:27:29+07:00</lastmod>
+        <lastmod>2016-02-16T12:50:50+07:00</lastmod>
     </url>
     <url>
         <loc>http://www.trphloc.com/blog/2014/04/18/setup-wamp-and-config-dreamweaver/</loc>
@@ -38,7 +38,7 @@
     </url>
     <url>
         <loc>http://www.trphloc.com/blog/2014/08/15/emacs-notes/</loc>
-        <lastmod>2015-04-30T22:23:40+07:00</lastmod>
+        <lastmod>2015-11-26T10:05:08+07:00</lastmod>
     </url>
     <url>
         <loc>http://www.trphloc.com/blog/2014/08/27/python-notes/</loc>
@@ -46,7 +46,7 @@
     </url>
     <url>
         <loc>http://www.trphloc.com/blog/2014/08/31/git-notes/</loc>
-        <lastmod>2015-04-30T22:23:40+07:00</lastmod>
+        <lastmod>2015-08-03T11:49:49+07:00</lastmod>
     </url>
     <url>
         <loc>http://www.trphloc.com/blog/2014/08/31/ruby-notes/</loc>
@@ -70,7 +70,7 @@
     </url>
     <url>
         <loc>http://www.trphloc.com/blog/2015/01/10/tools/</loc>
-        <lastmod>2015-07-24T12:13:52+07:00</lastmod>
+        <lastmod>2016-01-19T18:49:59+07:00</lastmod>
     </url>
     <url>
         <loc>http://www.trphloc.com/blog/2015/01/13/coding-standards/</loc>
@@ -124,19 +124,41 @@
     </url>
     <url>
         <loc>http://www.trphloc.com/blog/2015/07/24/jailbreak-iphone-slash-ipad/</loc>
-        <lastmod>2015-07-24T22:55:49+07:00</lastmod>
+        <lastmod>2015-07-28T10:04:57+07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://www.trphloc.com/blog/2015/07/29/centos/</loc>
+        <lastmod>2016-01-06T12:01:08+07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://www.trphloc.com/blog/2015/08/03/swift-tutorial/</loc>
+        <lastmod>2015-08-03T14:20:59+07:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://www.trphloc.com/blog/2016/01/04/control-panels-for-managing-a-linux-server/
+        </loc>
+        <lastmod>2016-02-16T12:53:20+07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://www.trphloc.com/blog/2016/01/08/http-debugging-proxy/</loc>
+        <lastmod>2016-02-16T12:52:37+07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://www.trphloc.com/blog/2016/01/20/unity/</loc>
+        <lastmod>2016-02-16T12:52:04+07:00</lastmod>
     </url>
     <url>
         <loc>http://www.trphloc.com/blog/archives/</loc>
-        <lastmod>2015-07-24T22:55:49+07:00</lastmod>
+        <lastmod>2016-02-16T12:53:20+07:00</lastmod>
     </url>
     <url>
         <loc>http://www.trphloc.com/blog/</loc>
-        <lastmod>2015-07-24T22:55:49+07:00</lastmod>
+        <lastmod>2016-02-16T12:53:20+07:00</lastmod>
     </url>
     <url>
         <loc>http://www.trphloc.com/</loc>
-        <lastmod>2015-07-24T22:55:49+07:00</lastmod>
+        <lastmod>2016-02-16T12:53:20+07:00</lastmod>
     </url>
     <url>
         <loc>http://www.trphloc.com/keyword/</loc>

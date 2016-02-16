@@ -4,7 +4,7 @@
     <title><![CDATA[Category: iOS | Phuoc-Loc 's blog]]></title>
     <link href="http://www.trphloc.com/blog/categories/ios/atom.xml" rel="self"/>
     <link href="http://www.trphloc.com/"/>
-    <updated>2015-07-24T22:58:06+07:00</updated>
+    <updated>2016-02-16T12:56:59+07:00</updated>
     <id>http://www.trphloc.com/</id>
     <author>
         <name><![CDATA[trphloc]]></name>
@@ -14,6 +14,25 @@
 
     
     <entry>
+        <title type="html"><![CDATA[Swift tutorial]]></title>
+        <link href="http://www.trphloc.com/blog/2015/08/03/swift-tutorial/"/>
+        <updated>2015-08-03T14:03:01+07:00</updated>
+        <id>http://www.trphloc.com/blog/2015/08/03/swift-tutorial</id>
+        <content type="html"><![CDATA[<ul id="markdown-toc">
+  <li><a href="#ti-liu-tham-kho">Tài liệu tham khảo</a></li>
+</ul>
+
+<!-- ================================================================= -->
+
+<h2 id="ti-liu-tham-kho">Tài liệu tham khảo</h2>
+<ul>
+  <li>https://www.youtube.com/playlist?list=PL6gx4Cwl9DGDgp7nGSUnnXihbTLFZJ79B</li>
+  <li>https://www.youtube.com/playlist?list=PLxwBNxx9j4PUpjCEVwjqFvNecNvQ6Dj6G</li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
         <title type="html"><![CDATA[Jailbreak iPhone/iPad]]></title>
         <link href="http://www.trphloc.com/blog/2015/07/24/jailbreak-iphone-slash-ipad/"/>
         <updated>2015-07-24T09:53:15+07:00</updated>
@@ -21,6 +40,7 @@
         <content type="html"><![CDATA[<ul id="markdown-toc">
   <li><a href="#hng-dn-jailbreak-trn-macos">Hướng dẫn Jailbreak trên MacOS</a></li>
   <li><a href="#ci-t-appsync">Cài đặt appsync</a></li>
+  <li><a href="#mt-s-tweak-ca-ios-84">Một số tweak của iOS 8.4</a></li>
   <li><a href="#x-l-li-khi-b-treo-to">Xử lý lỗi khi bị treo táo</a></li>
   <li><a href="#ti-liu-tham-kho">Tài liệu tham khảo</a></li>
 </ul>
@@ -67,6 +87,19 @@
   </li>
   <li>Sau đó chọn done</li>
   <li>Vào phần Search gõ AppSync &gt; Install</li>
+</ul>
+
+<!-- ================================================================= -->
+
+<h2 id="mt-s-tweak-ca-ios-84">Một số tweak của iOS 8.4</h2>
+
+<ul>
+  <li>Mirmir: mở nhiều ứng dụng cùng lúc</li>
+  <li>Callbar: thu nhỏ màn hình nghe điện thoại ở góc trên</li>
+  <li>StickerMe: nhắn tin iMessage giống giống facebook</li>
+  <li>Applocker/BioProtect: khóa ứng dụng</li>
+  <li>iFile: quản lý tập tin</li>
+  <li>Tham khảo: http://cydia.vn/tong-hop-cac-tweak-lam-cho-ios-8-4-cua-ban-hoan-hao/</li>
 </ul>
 
 <!-- ================================================================= -->

@@ -4,7 +4,7 @@
     <title><![CDATA[Category: tools | Phuoc-Loc 's blog]]></title>
     <link href="http://www.trphloc.com/blog/categories/tools/atom.xml" rel="self"/>
     <link href="http://www.trphloc.com/"/>
-    <updated>2015-07-24T22:58:06+07:00</updated>
+    <updated>2016-02-16T12:56:59+07:00</updated>
     <id>http://www.trphloc.com/</id>
     <author>
         <name><![CDATA[trphloc]]></name>
@@ -29,6 +29,7 @@
   <li><a href="#mi-trng-lp-trnh">Môi trường lập trình</a></li>
   <li><a href="#so-snh-file">So sánh file</a></li>
   <li><a href="#ssl">SSL</a></li>
+  <li><a href="#hook---api-windows">Hook - api windows</a></li>
 </ul>
 
 <!-- ================================================================= -->
@@ -51,7 +52,7 @@
 <ul>
   <li>Sử dụng cho Mac</li>
   <li>Download: https://github.com/sdegutis/mjolnir/releases/latest</li>
-  <li>Cài đặt một số modules</li>
+  <li>Cài đặt một số modules (tìm trong link này: http://luarocks.org/search?q=mjolnir?q=mjolnir)</li>
 </ul>
 
 <p><code>
@@ -146,6 +147,7 @@
 
 <ul>
   <li>Vagrant https://www.vagrantup.com/</li>
+  <li>Docker https://www.docker.com/</li>
 </ul>
 
 <h2 id="so-snh-file">So sánh file</h2>
@@ -159,6 +161,15 @@
 <ul>
   <li>cloudflare</li>
 </ul>
+
+<h2 id="hook---api-windows">Hook - api windows</h2>
+
+<ul>
+  <li>API Monitor</li>
+  <li>Link: http://www.rohitab.com/apimonitor</li>
+</ul>
+
+<p>https://www.cloudflare.com/</p>
 ]]></content>
     </entry>
     

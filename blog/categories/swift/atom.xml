@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+    <title><![CDATA[Category: Swift | Phuoc-Loc 's blog]]></title>
+    <link href="http://www.trphloc.com/blog/categories/swift/atom.xml" rel="self"/>
+    <link href="http://www.trphloc.com/"/>
+    <updated>2016-02-16T12:56:59+07:00</updated>
+    <id>http://www.trphloc.com/</id>
+    <author>
+        <name><![CDATA[trphloc]]></name>
+        <email><![CDATA[trphloc]]></email>
+      </author>
+    <generator uri="http://octopress.org/">Octopress</generator>
+
+    
+    <entry>
+        <title type="html"><![CDATA[Swift tutorial]]></title>
+        <link href="http://www.trphloc.com/blog/2015/08/03/swift-tutorial/"/>
+        <updated>2015-08-03T14:03:01+07:00</updated>
+        <id>http://www.trphloc.com/blog/2015/08/03/swift-tutorial</id>
+        <content type="html"><![CDATA[<ul id="markdown-toc">
+  <li><a href="#ti-liu-tham-kho">Tài liệu tham khảo</a></li>
+</ul>
+
+<!-- ================================================================= -->
+
+<h2 id="ti-liu-tham-kho">Tài liệu tham khảo</h2>
+<ul>
+  <li>https://www.youtube.com/playlist?list=PL6gx4Cwl9DGDgp7nGSUnnXihbTLFZJ79B</li>
+  <li>https://www.youtube.com/playlist?list=PLxwBNxx9j4PUpjCEVwjqFvNecNvQ6Dj6G</li>
+</ul>
+]]></content>
+    </entry>
+    
+</feed>

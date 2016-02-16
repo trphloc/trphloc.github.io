@@ -12,7 +12,7 @@
         <title>Git Notes - Phuoc-Loc 's blog</title>
         <meta name="author" content="trphloc">
         
-        <meta name="description" content="Git Notes git install setup tutorial windows Cài đặt Một số lệnh thường dùng (window, mac, linux) Cài đặt Môi trường windows 8 Download tại trang &hellip;">
+        <meta name="description" content="Git Notes git install setup tutorial windows Cài đặt Một số lệnh thường dùng (window, mac, linux) Chuyển 1 branch thành master Cài đặt Môi trường &hellip;">
         
         <meta name="viewport" content="width=device-width">
         <link rel="canonical" href="http://www.trphloc.com/blog/2014/08/31/git-notes">
@@ -138,6 +138,7 @@
     <ul id="markdown-toc">
   <li><a href="#ci-t">Cài đặt</a></li>
   <li><a href="#mt-s-lnh-thng-dng-window-mac-linux">Một số lệnh thường dùng (window, mac, linux)</a></li>
+  <li><a href="#chuyn-1-branch-thnh-master">Chuyển 1 branch thành master</a></li>
 </ul>
 
 <!-- ================================================================= -->
@@ -242,6 +243,26 @@
 
 <!-- ================================================================= -->
 
+<h2 id="chuyn-1-branch-thnh-master">Chuyển 1 branch thành master</h2>
+
+<ul>
+  <li>Muốn chuyển better_branch thành master
+    <ul>
+      <li>git checkout better_branch</li>
+      <li>git merge –strategy=ours master    # keep the content of this branch, but record a merge</li>
+      <li>git checkout master</li>
+      <li>git merge better_branch             # fast-forward master up to the merge</li>
+    </ul>
+  </li>
+  <li>Nếu muốn lịch sử rõ ràng thì nên làm lệnh sau
+    <ul>
+      <li>git merge –strategy=ours –no-commit master</li>
+      <li>git commit          # add information to the template merge message</li>
+    </ul>
+  </li>
+  <li>Tham khảo: http://stackoverflow.com/questions/2763006/change-the-current-branch-to-master-in-git</li>
+</ul>
+
 
 
 </article>
@@ -299,23 +320,23 @@
     <ul class="divided">
         
         <li class="post">
-            <a href="/blog/2015/07/24/jailbreak-iphone-slash-ipad/">Jailbreak iPhone/iPad</a>
+            <a href="/blog/2016/01/20/unity/">Unity</a>
         </li>
         
         <li class="post">
-            <a href="/blog/2015/05/18/hugo/">Hugo</a>
+            <a href="/blog/2016/01/08/http-debugging-proxy/">HTTP debugging proxy</a>
         </li>
         
         <li class="post">
-            <a href="/blog/2015/05/14/android-automation-test/">Android - automation test</a>
+            <a href="/blog/2016/01/04/control-panels-for-managing-a-linux-server/">Control Panels for Managing a CentOS Server</a>
         </li>
         
         <li class="post">
-            <a href="/blog/2015/05/14/selenium/">Selenium</a>
+            <a href="/blog/2015/08/03/swift-tutorial/">Swift tutorial</a>
         </li>
         
         <li class="post">
-            <a href="/blog/2015/04/30/mono-project/">Mono-project</a>
+            <a href="/blog/2015/07/29/centos/">CentOS</a>
         </li>
         
     </ul>

@@ -4,7 +4,7 @@
     <title><![CDATA[Category: octopress | Phuoc-Loc 's blog]]></title>
     <link href="http://www.trphloc.com/blog/categories/octopress/atom.xml" rel="self"/>
     <link href="http://www.trphloc.com/"/>
-    <updated>2016-02-16T12:56:59+07:00</updated>
+    <updated>2016-03-04T14:54:58+07:00</updated>
     <id>http://www.trphloc.com/</id>
     <author>
         <name><![CDATA[trphloc]]></name>
@@ -111,6 +111,12 @@ source ~/.bash_profile</p>
         </ul>
       </li>
       <li>Xóa thư mục public</li>
+      <li>Xóa nội dung thư mục _deploy và gọi lệnh gen_deploy</li>
+    </ul>
+  </li>
+  <li>Lỗi “Could not find eventmachine-1.0.4 in any of the sources”
+    <ul>
+      <li>Chạy lệnh “gem install eventmachine -v ‘1.0.4’ – –with-cppflags=-I/usr/local/opt/openssl/include”</li>
     </ul>
   </li>
 </ul>

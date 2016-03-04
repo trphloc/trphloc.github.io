@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+    <title><![CDATA[Category: hot key | Phuoc-Loc 's blog]]></title>
+    <link href="http://www.trphloc.com/blog/categories/hot-key/atom.xml" rel="self"/>
+    <link href="http://www.trphloc.com/"/>
+    <updated>2016-03-04T14:54:58+07:00</updated>
+    <id>http://www.trphloc.com/</id>
+    <author>
+        <name><![CDATA[trphloc]]></name>
+        <email><![CDATA[trphloc]]></email>
+      </author>
+    <generator uri="http://octopress.org/">Octopress</generator>
+
+    
+    <entry>
+        <title type="html"><![CDATA[Phím tắt thông dụng trên Macbook]]></title>
+        <link href="http://www.trphloc.com/blog/2016/03/04/phim-tat-tren-macbook/"/>
+        <updated>2016-03-04T14:41:48+07:00</updated>
+        <id>http://www.trphloc.com/blog/2016/03/04/phim-tat-tren-macbook</id>
+        <content type="html"><![CDATA[<ul id="markdown-toc">
+  <li><a href="#phm-tt-c-bn">Phím tắt cơ bản</a></li>
+  <li><a href="#phm-tt-trn-trnh-duyt">Phím tắt trên trình duyệt</a></li>
+  <li><a href="#phm-tt-trn-itunes">Phím tắt trên iTunes</a></li>
+</ul>
+
+<!-- ================================================================= -->
+
+<h2 id="phm-tt-c-bn">Phím tắt cơ bản</h2>
+
+<ul>
+  <li>Command + C =&gt; Copy</li>
+  <li>Command + V =&gt; Paste</li>
+  <li>Command + Alt + V =&gt; Cut (Command + C = Chọn file để cut)</li>
+  <li>Command + Delete =&gt; Xoá</li>
+  <li>Command + Q =&gt; Thoát hoàn toàn ứng dụng.</li>
+  <li>Command + W =&gt; Thoát cửa sổ đang làm việc.</li>
+  <li>Command + M =&gt; Minimize.</li>
+  <li>Command + Shift + 3 =&gt; Chụp toàn màn hình.</li>
+  <li>Command + Shift + 4 + kéo chuột =&gt; Chụp màn hình vùng kéo chuột.</li>
+  <li>Command + Shift + 4 + Space =&gt; Chụp màn hình cửa sổ khi được trỏ chuột.</li>
+  <li>Spacebar =&gt; Quick look ( click vào thư mục cần xem trước )</li>
+  <li>Command + I ( đương nhiên phải click vào cái cần info nhé )</li>
+  <li>Command + “,” =&gt; Thiết lập, chỉnh sửa cài đặt chung</li>
+</ul>
+
+<!-- ================================================================= -->
+
+<h2 id="phm-tt-trn-trnh-duyt">Phím tắt trên trình duyệt</h2>
+
+<ul>
+  <li>Command + T =&gt; New tap</li>
+  <li>Command + R =&gt; Refresh</li>
+  <li>Command + Control + F =&gt; Full screen</li>
+  <li>Command + D =&gt; Đánh dấu trang vào Bookmark</li>
+  <li>Command + Link =&gt; Mở link trong tab mới</li>
+  <li>Command + “+” =&gt; Zoom in</li>
+  <li>Command + “-“ =&gt; Zoom out -</li>
+  <li>Command + 0 =&gt; Size mặc định của trang web</li>
+</ul>
+
+<!-- ================================================================= -->
+
+<h2 id="phm-tt-trn-itunes">Phím tắt trên iTunes</h2>
+
+<ul>
+  <li>Command + T =&gt; full visualizes</li>
+  <li>Spacebar =&gt; Play/Pause</li>
+  <li>Command + Shift + M =&gt; Mini itunes</li>
+</ul>
+
+<!-- ================================================================= -->
+]]></content>
+    </entry>
+    
+</feed>

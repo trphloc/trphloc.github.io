@@ -4,7 +4,7 @@
     <title><![CDATA[Phuoc-Loc 's blog]]></title>
     <link href="http://www.trphloc.com/atom.xml" rel="self"/>
     <link href="http://www.trphloc.com/"/>
-    <updated>2016-02-16T12:56:59+07:00</updated>
+    <updated>2016-03-04T14:54:58+07:00</updated>
     <id>http://www.trphloc.com/</id>
     <author>
         <name><![CDATA[trphloc]]></name>
@@ -12,6 +12,66 @@
     </author>
     <generator uri="http://octopress.org/">Octopress</generator>
 
+    
+    <entry>
+        <title type="html"><![CDATA[Phím tắt thông dụng trên Macbook]]></title>
+        <link href="http://www.trphloc.com/blog/2016/03/04/phim-tat-tren-macbook/"/>
+        <updated>2016-03-04T14:41:48+07:00</updated>
+        <id>http://www.trphloc.com/blog/2016/03/04/phim-tat-tren-macbook</id>
+        <content type="html"><![CDATA[<ul id="markdown-toc">
+  <li><a href="#phm-tt-c-bn">Phím tắt cơ bản</a></li>
+  <li><a href="#phm-tt-trn-trnh-duyt">Phím tắt trên trình duyệt</a></li>
+  <li><a href="#phm-tt-trn-itunes">Phím tắt trên iTunes</a></li>
+</ul>
+
+<!-- ================================================================= -->
+
+<h2 id="phm-tt-c-bn">Phím tắt cơ bản</h2>
+
+<ul>
+  <li>Command + C =&gt; Copy</li>
+  <li>Command + V =&gt; Paste</li>
+  <li>Command + Alt + V =&gt; Cut (Command + C = Chọn file để cut)</li>
+  <li>Command + Delete =&gt; Xoá</li>
+  <li>Command + Q =&gt; Thoát hoàn toàn ứng dụng.</li>
+  <li>Command + W =&gt; Thoát cửa sổ đang làm việc.</li>
+  <li>Command + M =&gt; Minimize.</li>
+  <li>Command + Shift + 3 =&gt; Chụp toàn màn hình.</li>
+  <li>Command + Shift + 4 + kéo chuột =&gt; Chụp màn hình vùng kéo chuột.</li>
+  <li>Command + Shift + 4 + Space =&gt; Chụp màn hình cửa sổ khi được trỏ chuột.</li>
+  <li>Spacebar =&gt; Quick look ( click vào thư mục cần xem trước )</li>
+  <li>Command + I ( đương nhiên phải click vào cái cần info nhé )</li>
+  <li>Command + “,” =&gt; Thiết lập, chỉnh sửa cài đặt chung</li>
+</ul>
+
+<!-- ================================================================= -->
+
+<h2 id="phm-tt-trn-trnh-duyt">Phím tắt trên trình duyệt</h2>
+
+<ul>
+  <li>Command + T =&gt; New tap</li>
+  <li>Command + R =&gt; Refresh</li>
+  <li>Command + Control + F =&gt; Full screen</li>
+  <li>Command + D =&gt; Đánh dấu trang vào Bookmark</li>
+  <li>Command + Link =&gt; Mở link trong tab mới</li>
+  <li>Command + “+” =&gt; Zoom in</li>
+  <li>Command + “-“ =&gt; Zoom out -</li>
+  <li>Command + 0 =&gt; Size mặc định của trang web</li>
+</ul>
+
+<!-- ================================================================= -->
+
+<h2 id="phm-tt-trn-itunes">Phím tắt trên iTunes</h2>
+
+<ul>
+  <li>Command + T =&gt; full visualizes</li>
+  <li>Spacebar =&gt; Play/Pause</li>
+  <li>Command + Shift + M =&gt; Mini itunes</li>
+</ul>
+
+<!-- ================================================================= -->
+]]></content>
+    </entry>
     
     <entry>
         <title type="html"><![CDATA[Unity]]></title>
@@ -1105,6 +1165,7 @@ https://tournasdimitrios1.wordpress.com/2010/11/04/linux-the-screen-command-a-mu
       <li>http://mjolnir.io/</li>
       <li>http://thume.ca/howto/2014/12/02/using-mjolnir-an-extensible-osx-window-manager/</li>
       <li>https://github.com/jhgg/Hydra-Config/tree/master/modules</li>
+      <li>Thư mục thư viện trong 0repos</li>
     </ul>
   </li>
 </ul>
@@ -1165,65 +1226,6 @@ https://tournasdimitrios1.wordpress.com/2010/11/04/linux-the-screen-command-a-mu
 </ul>
 
 <p>https://www.cloudflare.com/</p>
-]]></content>
-    </entry>
-    
-    <entry>
-        <title type="html"><![CDATA[Database]]></title>
-        <link href="http://www.trphloc.com/blog/2015/01/10/database/"/>
-        <updated>2015-01-10T16:04:13+07:00</updated>
-        <id>http://www.trphloc.com/blog/2015/01/10/database</id>
-        <content type="html"><![CDATA[<p>TODO - TPL</p>
-
-<ul id="markdown-toc">
-  <li><a href="#loi-c-s-d-liu">Loại cơ sở dữ liệu</a></li>
-  <li><a href="#h-qun-tr-c-s-d-liu">Hệ quản trị cơ sở dữ liệu</a></li>
-  <li><a href="#cng-c-qun-tr-c-s-d-liu">Công cụ quản trị cơ sơ dữ liệu</a></li>
-  <li><a href="#profiler">Profiler</a></li>
-</ul>
-
-<!-- ================================================================= -->
-
-<h2 id="loi-c-s-d-liu">Loại cơ sở dữ liệu</h2>
-<ul>
-  <li>Navigational DBMS</li>
-  <li>Relational DBMS</li>
-  <li>Object-oriented</li>
-  <li>NoSQL và NewSQL</li>
-</ul>
-
-<!-- ================================================================= -->
-
-<h2 id="h-qun-tr-c-s-d-liu">Hệ quản trị cơ sở dữ liệu</h2>
-<ul>
-  <li>Oracle</li>
-  <li>MongoDB</li>
-  <li>Cassandra</li>
-  <li>Hbase</li>
-  <li>SAP</li>
-  <li>Postgre</li>
-  <li>MySQL</li>
-  <li>IBM DB2</li>
-  <li>SQL server</li>
-  <li>Access</li>
-</ul>
-
-<!-- ================================================================= -->
-
-<h2 id="cng-c-qun-tr-c-s-d-liu">Công cụ quản trị cơ sơ dữ liệu</h2>
-<ul>
-  <li>Navicat</li>
-  <li>Oracle sql developer tool</li>
-  <li>http://www.gfi.com/blog/top-10-free-database-tools-for-sys-admins/</li>
-  <li>http://en.wikipedia.org/wiki/Comparison_of_database_tools</li>
-</ul>
-
-<!-- ================================================================= -->
-
-<h2 id="profiler">Profiler</h2>
-<ul>
-  <li>SQL Profiler sử dụng cho SQL server</li>
-</ul>
 ]]></content>
     </entry>
     
